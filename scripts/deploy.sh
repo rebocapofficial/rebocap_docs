@@ -59,7 +59,7 @@ log() { echo "[$(date '+%H:%M:%S')] $*"; }
 # ─── Proxy (for GitHub access) ──────────────────────────────
 PROXY_URL="http://127.0.0.1:${PROXY_PORT}"
 
-if curl -s --max-time 2 -x "$PROXY_URL" https://github.com > /dev/null 2>&1; then
+if curl -so /dev/null -L --max-time 5 -x "$PROXY_URL" https://github.com; then
   export https_proxy="$PROXY_URL"
   export http_proxy="$PROXY_URL"
   log "Using proxy $PROXY_URL for GitHub access"
