@@ -35,3 +35,12 @@ static/img/ue_plugin/ue_user_guide.mp4
 *.swp
 *.swo
 .claude
+
+# Secrets & credentials (never commit real configs)
+.env
+scripts/proxy/xray-config.json
+
+# Deploy runtime
+.deploy-prev-manifest.txt
+.deploy-new-manifest.txt
+build_staging/

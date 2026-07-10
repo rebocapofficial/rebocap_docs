@@ -24,6 +24,7 @@ STAGING_DIR="$PROJECT_DIR/build_staging"
 LIVE_DIR="$PROJECT_DIR/build"
 PREV_MANIFEST="$PROJECT_DIR/.deploy-prev-manifest.txt"
 NEW_MANIFEST="$PROJECT_DIR/.deploy-new-manifest.txt"
+PROXY_PORT="${PROXY_PORT:-10809}"
 
 # Source secret env vars if .env exists (WEBHOOK_SECRET, ALI_*)
 if [ -f "$PROJECT_DIR/.env" ]; then
@@ -32,6 +33,20 @@ fi
 
 DCDN_DOMAIN="${DCDN_DOMAIN:-doc.rebocap.com}"
 
+# ─── Proxy (for GitHub access over GFW) ─────────────────────
+# If the local Xray HTTP proxy is available, route GitHub
+# traffic through it.  All standard CLI tools (git, curl, npm)
+# respect https_proxy / http_proxy.
+PROXY_URL="http://127.0.0.1:${PROXY_PORT}"
+
+if curl -s --max-time 2 -x "$PROXY_URL" https://github.com > /dev/null 2>&1; then
+  export https_proxy="$PROXY_URL"
+  export http_proxy="$PROXY_URL"
+  log "Using proxy $PROXY_URL for GitHub access"
+else
+  log "Proxy not available at $PROXY_URL — connecting directly"
+fi
+
 cd "$PROJECT_DIR"
 
 log() { echo "[$(date '+%H:%M:%S')] $*"; }
@@ -39,14 +54,24 @@ log() { echo "[$(date '+%H:%M:%S')] $*"; }
 log "=== Deploy start ==="
 
 # ═══════════════════════════════════════════════════════════
-# Step 1 — Git pull
+# Step 1 — Git pull (with stash to survive local modifications)
 # ═══════════════════════════════════════════════════════════
+
+# Stash any local changes so pull always succeeds.
+# (gitignored files like .env and xray-config.json are unaffected.)
+STASHED=false
+if ! git diff --quiet || ! git diff --cached --quiet; then
+  git stash push -m "auto-deploy-stash-$(date +%s)" 2>&1
+  STASHED=true
+  log "Local changes stashed before pull"
+fi
+
 if [ "${1:-}" != "--force" ]; then
   git fetch origin main 2>&1
   LOCAL=$(git rev-parse HEAD)
   REMOTE=$(git rev-parse origin/main)
 
-  if [ "$LOCAL" = "$REMOTE" ]; then
+  if [ "$LOCAL" = "$REMOTE" ] && [ "$STASHED" = false ]; then
     log "No new commits — skipping build"
     exit 0
   fi
@@ -55,6 +80,18 @@ fi
 
 git checkout main
 git pull origin main
+
+# Restore stashed local changes on top of pulled code.
+# If conflicts occur, keep the pulled version (server follows repo).
+if [ "$STASHED" = true ]; then
+  if git stash pop 2>&1; then
+    log "Restored local changes"
+  else
+    log "Stash conflicts — keeping pulled version, dropping local changes"
+    git checkout --theirs . 2>/dev/null || true
+    git stash drop 2>/dev/null || true
+  fi
+fi
 
 # ═══════════════════════════════════════════════════════════
 # Step 2 — Dependencies (only if package.json changed)

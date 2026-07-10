@@ -1,0 +1,50 @@
+{
+  "_comment": "Copy to xray-config.json and fill in your VLESS server info.  xray-config.json is gitignored.",
+  "log": {
+    "loglevel": "warning",
+    "access": "/var/log/xray/access.log",
+    "error": "/var/log/xray/error.log"
+  },
+  "inbounds": [{
+    "port": 10809,
+    "listen": "127.0.0.1",
+    "protocol": "http",
+    "tag": "http-in",
+    "settings": {
+      "timeout": 300,
+      "allowTransparent": false
+    }
+  }],
+  "outbounds": [{
+    "protocol": "vless",
+    "tag": "proxy",
+    "settings": {
+      "vnext": [{
+        "address": "YOUR_SERVER_IP",
+        "port": 12450,
+        "users": [{
+          "id": "YOUR_VLESS_UUID",
+          "encryption": "none"
+        }]
+      }]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "none",
+      "tcpSettings": {
+        "header": { "type": "none" }
+      }
+    }
+  }, {
+    "protocol": "freedom",
+    "tag": "direct",
+    "settings": {}
+  }],
+  "routing": {
+    "rules": [{
+      "type": "field",
+      "inboundTag": ["http-in"],
+      "outboundTag": "proxy"
+    }]
+  }
+}
