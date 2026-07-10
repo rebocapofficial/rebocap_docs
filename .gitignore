@@ -36,6 +36,8 @@ static/img/ue_plugin/ue_user_guide.mp4
 *.swo
 .claude
 
+scripts/proxy/
+
 # Secrets & credentials (never commit real configs)
 .env
 scripts/proxy/xray-config.json
