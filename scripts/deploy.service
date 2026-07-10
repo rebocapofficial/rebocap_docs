@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-User=nginx
+User=root
 WorkingDirectory=/opt/rebocap_docs
 EnvironmentFile=/opt/rebocap_docs/.env
 ExecStart=/usr/local/node/bin/node /opt/rebocap_docs/scripts/webhook-server.mjs
