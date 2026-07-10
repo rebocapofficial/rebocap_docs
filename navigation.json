@@ -37,6 +37,11 @@
             "label": "Be sure to read all the contents in this directory for the first use",
             "type": "page",
             "path": "docs/tutorial/README.md"
+          },
+          {
+            "label": "15 set unboxing",
+            "type": "page",
+            "path": "docs/rebocap-tutorials/15-set.mdx"
           }
         ]
       },
