@@ -42,6 +42,11 @@
             "label": "15 set unboxing",
             "type": "page",
             "path": "docs/rebocap-tutorials/15-set.mdx"
+          },
+          {
+            "label": "6 set unboxing",
+            "type": "page",
+            "path": "docs/rebocap-tutorials/6-set-unboxing.mdx"
           }
         ]
       },
