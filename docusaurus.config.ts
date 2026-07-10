@@ -98,8 +98,9 @@ const config: Config = {
           // Locale-aware sidebar — uses DOCUSAURUS_CURRENT_LOCALE
           // env var to select the right language at build time.
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/rebocap/rebocap-doc/tree/main/',
+          editUrl: 'https://github.com/rebocapofficial/rebocap_docs/tree/main/',
           showLastUpdateTime: false,
+          numberPrefixParser: false,
         },
         blog: false,
         theme: {
