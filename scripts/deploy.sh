@@ -36,7 +36,7 @@ done
 PROJECT_DIR="${PROJECT_DIR:-/opt/rebocap_docs}"
 STAGING_DIR="$PROJECT_DIR/../build"
 # nginx serves from here — can be on a different disk / partition
-OUTPUT_DIR="${OUTPUT_DIR:-/data/wwwroot/default/doc.hamer.xin}"
+OUTPUT_DIR="${OUTPUT_DIR:-/data/wwwroot/doc.hamer.xin}"
 PREV_MANIFEST="$PROJECT_DIR/.deploy-prev-manifest.txt"
 NEW_MANIFEST="$PROJECT_DIR/.deploy-new-manifest.txt"
 PROXY_PORT="${PROXY_PORT:-10809}"
