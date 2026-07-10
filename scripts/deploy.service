@@ -5,18 +5,14 @@ After=network.target
 [Service]
 Type=simple
 User=nginx
-WorkingDirectory=/opt/rebocap-doc
-EnvironmentFile=/opt/rebocap-doc/.env
-ExecStart=/usr/bin/node /opt/rebocap-doc/scripts/webhook-server.mjs
+WorkingDirectory=/opt/rebocap_docs
+EnvironmentFile=/opt/rebocap_docs/.env
+ExecStart=/usr/bin/node /opt/rebocap_docs/scripts/webhook-server.mjs
 Restart=always
 RestartSec=5
 
-# Security hardening
 NoNewPrivileges=yes
 PrivateTmp=yes
-ProtectSystem=strict
-ProtectHome=yes
-ReadWritePaths=/opt/rebocap-doc
 
 [Install]
 WantedBy=multi-user.target

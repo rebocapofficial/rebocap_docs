@@ -7,8 +7,8 @@
 #    2. npm ci (only if package.json changed)
 #    3. docusaurus build → staging dir
 #    4. pagefind index
-#    5. atomic switch to production
-#    6. Alibaba DCDN cache refresh (only changed HTML)
+#    5. rsync to nginx serving directory
+#    6. Alibaba DCDN cache refresh (only changed HTML, prod only)
 #
 #  Usage:
 #    ./scripts/deploy.sh                # check git, deploy if new
@@ -16,7 +16,7 @@
 #    ./scripts/deploy.sh --dev          # skip CDN refresh (for testing)
 #
 #  Cron (polling) — run every 5 min:
-#    */5 * * * * bash /opt/rebocap-doc/scripts/deploy.sh >> /var/log/rebocap-deploy.log 2>&1
+#    */5 * * * * bash /opt/rebocap_docs/scripts/deploy.sh >> /var/log/rebocap-deploy.log 2>&1
 #
 #  Env:
 #    DEPLOY_MODE=dev   — same as --dev, skip CDN refresh
@@ -33,29 +33,30 @@ for arg in "$@"; do
   esac
 done
 
-# DEPLOY_MODE env var also controls CDN behavior
-if [ "${DEPLOY_MODE:-}" = "dev" ]; then
-  SKIP_CDN=true
-fi
-
-PROJECT_DIR="${PROJECT_DIR:-/opt/rebocap-doc}"
+PROJECT_DIR="${PROJECT_DIR:-/opt/rebocap_docs}"
 STAGING_DIR="$PROJECT_DIR/build_staging"
-LIVE_DIR="$PROJECT_DIR/build"
+# nginx serves from here — can be on a different disk / partition
+OUTPUT_DIR="${OUTPUT_DIR:-/data/wwwroot/default/rebocap_doc_new}"
 PREV_MANIFEST="$PROJECT_DIR/.deploy-prev-manifest.txt"
 NEW_MANIFEST="$PROJECT_DIR/.deploy-new-manifest.txt"
 PROXY_PORT="${PROXY_PORT:-10809}"
 
-# Source secret env vars if .env exists (WEBHOOK_SECRET, ALI_*)
+# Source secret env vars if .env exists
 if [ -f "$PROJECT_DIR/.env" ]; then
   set -a; source "$PROJECT_DIR/.env"; set +a
 fi
 
+# DEPLOY_MODE env var → --dev behavior
+if [ "${DEPLOY_MODE:-}" = "dev" ]; then
+  SKIP_CDN=true
+fi
+
 DCDN_DOMAIN="${DCDN_DOMAIN:-doc.rebocap.com}"
 
-# ─── Proxy (for GitHub access over GFW) ─────────────────────
-# If the local Xray HTTP proxy is available, route GitHub
-# traffic through it.  All standard CLI tools (git, curl, npm)
-# respect https_proxy / http_proxy.
+cd "$PROJECT_DIR"
+log() { echo "[$(date '+%H:%M:%S')] $*"; }
+
+# ─── Proxy (for GitHub access) ──────────────────────────────
 PROXY_URL="http://127.0.0.1:${PROXY_PORT}"
 
 if curl -s --max-time 2 -x "$PROXY_URL" https://github.com > /dev/null 2>&1; then
@@ -63,21 +64,14 @@ if curl -s --max-time 2 -x "$PROXY_URL" https://github.com > /dev/null 2>&1; the
   export http_proxy="$PROXY_URL"
   log "Using proxy $PROXY_URL for GitHub access"
 else
-  log "Proxy not available at $PROXY_URL — connecting directly"
+  log "Proxy not available — connecting directly"
 fi
-
-cd "$PROJECT_DIR"
-
-log() { echo "[$(date '+%H:%M:%S')] $*"; }
 
 log "=== Deploy start ==="
 
 # ═══════════════════════════════════════════════════════════
-# Step 1 — Git pull (with stash to survive local modifications)
+# Step 1 — Git pull (stash local changes to avoid conflicts)
 # ═══════════════════════════════════════════════════════════
-
-# Stash any local changes so pull always succeeds.
-# (gitignored files like .env and xray-config.json are unaffected.)
 STASHED=false
 if ! git diff --quiet || ! git diff --cached --quiet; then
   git stash push -m "auto-deploy-stash-$(date +%s)" 2>&1
@@ -100,40 +94,33 @@ fi
 git checkout main
 git pull origin main
 
-# Restore stashed local changes on top of pulled code.
-# If conflicts occur, keep the pulled version (server follows repo).
 if [ "$STASHED" = true ]; then
   if git stash pop 2>&1; then
     log "Restored local changes"
   else
-    log "Stash conflicts — keeping pulled version, dropping local changes"
+    log "Stash conflicts — keeping pulled version"
     git checkout --theirs . 2>/dev/null || true
     git stash drop 2>/dev/null || true
   fi
 fi
 
 # ═══════════════════════════════════════════════════════════
-# Step 2 — Dependencies (only if package.json changed)
+# Step 2 — Dependencies
 # ═══════════════════════════════════════════════════════════
-LOCK_HASH=""
-if [ -f "package-lock.json" ]; then
-  LOCK_HASH=$(sha256sum package-lock.json | cut -d' ' -f1)
-fi
-
 npm ci --prefer-offline 2>&1 | tail -3
 
 # ═══════════════════════════════════════════════════════════
 # Step 3 — Save previous manifest (for CDN diff)
 # ═══════════════════════════════════════════════════════════
-if [ -d "$LIVE_DIR" ]; then
-  find "$LIVE_DIR" -type f \( -name '*.html' -o -name '*.js' -o -name '*.css' \) \
-    | sed "s|^$LIVE_DIR/||" | sort > "$PREV_MANIFEST"
+if [ -d "$OUTPUT_DIR" ]; then
+  find "$OUTPUT_DIR" -type f \( -name '*.html' -o -name '*.js' -o -name '*.css' \) \
+    | sed "s|^$OUTPUT_DIR/||" | sort > "$PREV_MANIFEST"
 else
   :> "$PREV_MANIFEST"
 fi
 
 # ═══════════════════════════════════════════════════════════
-# Step 4 — Build to staging
+# Step 4 — Build
 # ═══════════════════════════════════════════════════════════
 log "Building Docusaurus..."
 rm -rf "$STAGING_DIR"
@@ -141,41 +128,33 @@ rm -rf "$STAGING_DIR"
 npx docusaurus build --out-dir "$STAGING_DIR" 2>&1 | tail -5
 log "Docusaurus build OK"
 
-# pagefind search index (runs on staging)
 log "Running pagefind..."
 npx pagefind --site "$STAGING_DIR" 2>&1 | tail -3 || log "(pagefind skipped or done)"
 
 # ═══════════════════════════════════════════════════════════
-# Step 5 — Atomic switch to production
+# Step 5 — Publish to nginx serving directory
 # ═══════════════════════════════════════════════════════════
 find "$STAGING_DIR" -type f \( -name '*.html' -o -name '*.js' -o -name '*.css' \) \
   | sed "s|^$STAGING_DIR/||" | sort > "$NEW_MANIFEST"
 
-# Rsync staging → live (fast, only copies changed files)
-if [ -d "$LIVE_DIR" ]; then
-  rsync -a --delete "$STAGING_DIR"/ "$LIVE_DIR"/
-  rm -rf "$STAGING_DIR"
-else
-  mv "$STAGING_DIR" "$LIVE_DIR"
-fi
-
-log "Build switched to production"
+mkdir -p "$OUTPUT_DIR"
+rsync -a --delete "$STAGING_DIR"/ "$OUTPUT_DIR"/
+rm -rf "$STAGING_DIR"
+log "Published to $OUTPUT_DIR"
 
 # ═══════════════════════════════════════════════════════════
-# Step 6 — Alibaba DCDN refresh (skipped in dev mode)
+# Step 6 — Alibaba DCDN refresh (prod only)
 # ═══════════════════════════════════════════════════════════
 if [ "$SKIP_CDN" = true ]; then
   log "Dev mode — skipping CDN refresh"
 elif [ -n "${ALI_ACCESS_KEY_ID:-}" ] && [ -n "${ALI_ACCESS_KEY_SECRET:-}" ]; then
 
-  # Find changed HTML files only
   CHANGED=$(comm -13 "$PREV_MANIFEST" "$NEW_MANIFEST" 2>/dev/null | grep '\.html$' || true)
 
   URLS=""
   COUNT=0
   while IFS= read -r f; do
     [ -z "$f" ] && continue
-    # "docs/QA/index.html" → "/docs/QA"
     url_path="/${f%/index.html}"
     [ "$url_path" = "/index.html" ] && url_path="/"
     URLS="$URLS https://$DCDN_DOMAIN$url_path"
@@ -184,20 +163,14 @@ elif [ -n "${ALI_ACCESS_KEY_ID:-}" ] && [ -n "${ALI_ACCESS_KEY_SECRET:-}" ]; the
 
   if [ "$COUNT" -gt 0 ]; then
     log "Refreshing CDN for $COUNT changed HTML files..."
-    # Also always refresh root + docs root
     URLS="https://$DCDN_DOMAIN/ https://$DCDN_DOMAIN/docs/ $URLS"
     node "$PROJECT_DIR/scripts/cdn-refresh.mjs" $URLS 2>&1 || log "CDN refresh failed (non-fatal)"
   else
     log "No HTML changes, skipping CDN refresh"
   fi
 
-elif [ -n "${ALI_ACCESS_KEY_ID:-}" ]; then
-  :
 else
   log "Skipping CDN refresh (ALI_ACCESS_KEY_ID not set)"
 fi
-
-# Clean up old staging dirs (older than 1 day)
-find "$PROJECT_DIR" -maxdepth 1 -name 'build_staging*' -mtime +1 -exec rm -rf {} + 2>/dev/null || true
 
 log "=== Deploy complete ==="
