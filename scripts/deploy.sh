@@ -53,6 +53,9 @@ fi
 
 DCDN_DOMAIN="${DCDN_DOMAIN:-doc.rebocap.com}"
 
+# Auto-detect node binary (systemd uses full path, cron/manual needs PATH)
+NODE_BIN="${NODE_BIN:-$(command -v node || echo /usr/local/node/bin/node)}"
+
 cd "$PROJECT_DIR"
 log() { echo "[$(date '+%H:%M:%S')] $*"; }
 
@@ -173,7 +176,7 @@ elif [ -n "${ALI_ACCESS_KEY_ID:-}" ] && [ -n "${ALI_ACCESS_KEY_SECRET:-}" ]; the
   if [ "$COUNT" -gt 0 ]; then
     log "Refreshing CDN for $COUNT changed HTML files..."
     URLS="https://$DCDN_DOMAIN/ https://$DCDN_DOMAIN/docs/ $URLS"
-    node "$PROJECT_DIR/scripts/cdn-refresh.mjs" $URLS 2>&1 || log "CDN refresh failed (non-fatal)"
+    $NODE_BIN "$PROJECT_DIR/scripts/cdn-refresh.mjs" $URLS 2>&1 || log "CDN refresh failed (non-fatal)"
   else
     log "No HTML changes, skipping CDN refresh"
   fi
