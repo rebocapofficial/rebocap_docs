@@ -138,7 +138,7 @@ log "Docusaurus build OK"
 # ── 2. Pagefind 内存保护 ──────────────────────────────────────────────
 log "Running pagefind..."
 # 核心修改：pagefind 同样极其消耗内存和 CPU，限制其并发线程数为 1（默认是全核心跑满，会卡死单核服务器）
-npx pagefind --site "$STAGING_DIR" --output-subdir "../_pagefind" --workers 1 2>&1
+npx pagefind --site "$STAGING_DIR" --output-subdir "../_pagefind" 2>&1
 
 # ═══════════════════════════════════════════════════════════
 # Step 5 — Publish to nginx serving directory
