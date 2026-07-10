@@ -13,11 +13,30 @@
 #  Usage:
 #    ./scripts/deploy.sh                # check git, deploy if new
 #    ./scripts/deploy.sh --force        # skip git check, rebuild
+#    ./scripts/deploy.sh --dev          # skip CDN refresh (for testing)
 #
 #  Cron (polling) — run every 5 min:
 #    */5 * * * * bash /opt/rebocap-doc/scripts/deploy.sh >> /var/log/rebocap-deploy.log 2>&1
+#
+#  Env:
+#    DEPLOY_MODE=dev   — same as --dev, skip CDN refresh
 # ============================================================
 set -euo pipefail
+
+FORCE=false
+SKIP_CDN=false
+
+for arg in "$@"; do
+  case "$arg" in
+    --force) FORCE=true ;;
+    --dev)   SKIP_CDN=true ;;
+  esac
+done
+
+# DEPLOY_MODE env var also controls CDN behavior
+if [ "${DEPLOY_MODE:-}" = "dev" ]; then
+  SKIP_CDN=true
+fi
 
 PROJECT_DIR="${PROJECT_DIR:-/opt/rebocap-doc}"
 STAGING_DIR="$PROJECT_DIR/build_staging"
@@ -66,7 +85,7 @@ if ! git diff --quiet || ! git diff --cached --quiet; then
   log "Local changes stashed before pull"
 fi
 
-if [ "${1:-}" != "--force" ]; then
+if [ "$FORCE" = false ]; then
   git fetch origin main 2>&1
   LOCAL=$(git rev-parse HEAD)
   REMOTE=$(git rev-parse origin/main)
@@ -143,9 +162,11 @@ fi
 log "Build switched to production"
 
 # ═══════════════════════════════════════════════════════════
-# Step 6 — Alibaba DCDN refresh
+# Step 6 — Alibaba DCDN refresh (skipped in dev mode)
 # ═══════════════════════════════════════════════════════════
-if [ -n "${ALI_ACCESS_KEY_ID:-}" ] && [ -n "${ALI_ACCESS_KEY_SECRET:-}" ]; then
+if [ "$SKIP_CDN" = true ]; then
+  log "Dev mode — skipping CDN refresh"
+elif [ -n "${ALI_ACCESS_KEY_ID:-}" ] && [ -n "${ALI_ACCESS_KEY_SECRET:-}" ]; then
 
   # Find changed HTML files only
   CHANGED=$(comm -13 "$PREV_MANIFEST" "$NEW_MANIFEST" 2>/dev/null | grep '\.html$' || true)
