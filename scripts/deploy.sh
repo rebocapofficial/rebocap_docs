@@ -34,7 +34,7 @@ for arg in "$@"; do
 done
 
 PROJECT_DIR="${PROJECT_DIR:-/opt/rebocap_docs}"
-STAGING_DIR="$PROJECT_DIR/build_staging"
+STAGING_DIR="$PROJECT_DIR/../build"
 # nginx serves from here — can be on a different disk / partition
 OUTPUT_DIR="${OUTPUT_DIR:-/data/wwwroot/default/rebocap_doc_new}"
 PREV_MANIFEST="$PROJECT_DIR/.deploy-prev-manifest.txt"
@@ -125,11 +125,20 @@ fi
 log "Building Docusaurus..."
 rm -rf "$STAGING_DIR"
 
-npx docusaurus build --out-dir "$STAGING_DIR" 2>&1 | tail -5
+# 核心修改：注入内存限制，并且去掉 tail -5，以便爆内存时能看到完整的错误日志
+NODE_OPTIONS="--max-old-space-size=1536" npx docusaurus build --out-dir "$STAGING_DIR" 2>&1
+
+# 检查上一步 Docusaurus 编译是否真的成功
+if [ ${PIPESTATUS[0]} -ne 0 ]; then
+    log "Docusaurus build FAILED! Please check the logs above."
+    exit 1
+fi
 log "Docusaurus build OK"
 
+# ── 2. Pagefind 内存保护 ──────────────────────────────────────────────
 log "Running pagefind..."
-npx pagefind --site "$STAGING_DIR" 2>&1 | tail -3 || log "(pagefind skipped or done)"
+# 核心修改：pagefind 同样极其消耗内存和 CPU，限制其并发线程数为 1（默认是全核心跑满，会卡死单核服务器）
+npx pagefind --site "$STAGING_DIR" --output-subdir "../_pagefind" --workers 1 2>&1
 
 # ═══════════════════════════════════════════════════════════
 # Step 5 — Publish to nginx serving directory

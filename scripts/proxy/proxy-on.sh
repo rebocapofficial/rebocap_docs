@@ -16,7 +16,7 @@ PROXY_PORT="${PROXY_PORT:-10809}"
 PROXY_URL="http://127.0.0.1:${PROXY_PORT}"
 
 # Check if proxy is actually running
-if ! curl -s --max-time 2 -x "$PROXY_URL" https://github.com > /dev/null 2>&1; then
+if ! curl -so /dev/null -L --max-time 5 -x "$PROXY_URL" https://github.com > /dev/null 2>&1; then
   echo "[WARN] Proxy not responding at $PROXY_URL" >&2
   echo "       Start it: sudo systemctl start xray-proxy" >&2
 fi
