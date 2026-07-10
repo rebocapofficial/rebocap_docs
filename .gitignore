@@ -46,3 +46,7 @@ scripts/proxy/xray-config.json
 .deploy-prev-manifest.txt
 .deploy-new-manifest.txt
 build_staging/
+
+# Backups
+backups/
+
