@@ -3,7 +3,7 @@ sidebar_position: 1
 title: "Unboxing Check"
 ---
 
-## Unboxing Check
+## Unboxing Check （15 set）
 
 - The product currently uses a drawer color box + regular carton packaging, with air column cushions surrounding all six sides for added cushioning.
 - Product List
