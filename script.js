@@ -1,0 +1,1 @@
+const axios = require('axios'); const cheerio = require('cheerio'); axios.get('https://tina.io/docs/reference/collections/').then(r => { const $ = cheerio.load(r.data); const t = $('body').text(); console.log(t.substring(t.indexOf('match'), t.indexOf('match') + 1000)); })

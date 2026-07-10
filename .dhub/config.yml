@@ -1,0 +1,94 @@
+# Dhub Configuration
+# ===================
+# Dhub is a Git-based CMS for Docusaurus.  It connects to your GitHub
+# repo and provides a Notion-like WYSIWYG editor for your docs.
+#
+# This config tells Dhub about your content structure.  Dhub auto-
+# detects Docusaurus projects via docusaurus.config.ts, but this file
+# gives it explicit knowledge of your collections and their fields.
+#
+# After connecting your repo at https://dhub.dev:
+#   1. Dhub reads this config to understand your content model
+#   2. Team members can edit docs in the WYSIWYG editor
+#   3. Changes are committed back to your Git repo
+#   4. Your existing CI/CD builds & deploys as normal
+
+# The Docusaurus project root — detected automatically, but explicit
+# is safer.
+project:
+  type: docusaurus
+  docs_path: docs
+  static_path: static
+  i18n_path: i18n
+  config_file: docusaurus.config.ts
+
+# Content collections Dhub will manage
+collections:
+  # ── English docs (default locale) ──
+  - name: docs
+    label: Documentation (English)
+    path: docs
+    format: md
+    frontmatter:
+      - name: title
+        type: string
+        label: Title
+        required: true
+      - name: sidebar_position
+        type: number
+        label: Sidebar Position
+      - name: description
+        type: string
+        label: Description
+      - name: hide_table_of_contents
+        type: boolean
+        label: Hide Table of Contents
+
+  # ── 简体中文 ──
+  - name: docs-zh-hans
+    label: Documentation (简体中文)
+    path: i18n/zh-Hans/docusaurus-plugin-content-docs/current
+    format: md
+    frontmatter:
+      - name: title
+        type: string
+        label: Title
+        required: true
+
+  # ── 日本語 ──
+  - name: docs-ja
+    label: Documentation (日本語)
+    path: i18n/ja/docusaurus-plugin-content-docs/current
+    format: md
+    frontmatter:
+      - name: title
+        type: string
+        label: Title
+        required: true
+
+  # ── 繁體中文 ──
+  - name: docs-zh-hant
+    label: Documentation (繁體中文)
+    path: i18n/zh-Hant/docusaurus-plugin-content-docs/current
+    format: md
+    frontmatter:
+      - name: title
+        type: string
+        label: Title
+        required: true
+
+# Media / static assets
+media:
+  # Where images and files are stored
+  path: static/img
+  # Public URL prefix for uploaded files
+  public_path: /img
+
+# Locale configuration (mirrors docusaurus.config.ts i18n section)
+locales:
+  default: en
+  supported:
+    - en
+    - zh-Hans
+    - ja
+    - zh-Hant

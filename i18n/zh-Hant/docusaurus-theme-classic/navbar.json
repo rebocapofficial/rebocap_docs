@@ -1,0 +1,10 @@
+{
+  "logo.alt": {
+    "message": "REBOCAP",
+    "description": "The alt text of navbar logo"
+  },
+  "title": {
+    "message": "Rebocap 文件",
+    "description": "The title in the navbar"
+  }
+}

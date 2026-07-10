@@ -1,0 +1,9 @@
+{
+  "label": "Help Manual",
+  "position": 3,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "ui_help_doc/README"
+  }
+}

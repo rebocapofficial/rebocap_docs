@@ -1,0 +1,6 @@
+{
+  "copyright": {
+    "message": "Copyright © {year} rebocap official. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

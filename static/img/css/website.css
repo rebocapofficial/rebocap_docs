@@ -1,0 +1,10 @@
+img {
+    display: block;
+    margin:0 auto;
+}
+.markdown-section a:visited {
+    color: #EE8866;
+}
+.markdown-section a{
+    text-decoration: underline;
+}

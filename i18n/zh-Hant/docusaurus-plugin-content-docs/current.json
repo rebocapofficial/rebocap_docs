@@ -1,0 +1,50 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Rebocap Documentation": {
+    "message": "Rebocap 文件",
+    "description": "The label for category 'Rebocap Documentation' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Rebocap Tutorials": {
+    "message": "Rebocap 教程",
+    "description": "The label for category 'Rebocap Tutorials' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Help Manual": {
+    "message": "幫助手冊",
+    "description": "The label for category 'Help Manual' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Control Area": {
+    "message": "控制區",
+    "description": "The label for category 'Control Area' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Frequently Asked Questions": {
+    "message": "常見問題",
+    "description": "The label for category 'Frequently Asked Questions' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Software Integration": {
+    "message": "軟體接入",
+    "description": "The label for category 'Software Integration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.SteamVR Protocol Integration": {
+    "message": "SteamVR 協議接入",
+    "description": "The label for category 'SteamVR Protocol Integration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.VMC Protocol Integration": {
+    "message": "VMC 協議接入",
+    "description": "The label for category 'VMC Protocol Integration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Plugins": {
+    "message": "插件",
+    "description": "The label for category 'Plugins' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.SDK": {
+    "message": "SDK",
+    "description": "The label for category 'SDK' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Product Certification": {
+    "message": "產品認證",
+    "description": "The label for category 'Product Certification' in sidebar 'docsSidebar'"
+  }
+}

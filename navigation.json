@@ -1,0 +1,209 @@
+[
+  {
+    "label": "Docs",
+    "type": "tab",
+    "path": "docs",
+    "children": [
+      {
+        "label": "Navigation Directory",
+        "type": "page",
+        "path": "docs/README.md"
+      },
+      {
+        "label": "Rebocap Tutorials",
+        "type": "folder",
+        "children": [
+          {
+            "label": "Unboxing Check",
+            "type": "page",
+            "path": "docs/tutorial/hardware_check.md"
+          },
+          {
+            "label": "Tracker Installation on Strap",
+            "type": "page",
+            "path": "docs/tutorial/instroction_for_straps.md"
+          },
+          {
+            "label": "Software Download",
+            "type": "page",
+            "path": "docs/tutorial/software_install.md"
+          },
+          {
+            "label": "Connection",
+            "type": "page",
+            "path": "docs/tutorial/connect_and_use.md"
+          },
+          {
+            "label": "Be sure to read all the contents in this directory for the first use",
+            "type": "page",
+            "path": "docs/tutorial/README.md"
+          }
+        ]
+      },
+      {
+        "label": "Help Manual",
+        "type": "folder",
+        "children": [
+          {
+            "label": "UI Sections",
+            "type": "page",
+            "path": "docs/ui_help_doc/README.md"
+          },
+          {
+            "label": "Hardware List Information",
+            "type": "page",
+            "path": "docs/ui_help_doc/info.md"
+          },
+          {
+            "label": "Sensor Overview",
+            "type": "page",
+            "path": "docs/ui_help_doc/remap.md"
+          },
+          {
+            "label": "3D Preview Feature",
+            "type": "page",
+            "path": "docs/ui_help_doc/view.md"
+          },
+          {
+            "label": "Control Area",
+            "type": "folder",
+            "children": [
+              {
+                "label": "Status Panel",
+                "type": "page",
+                "path": "docs/ui_help_doc/control/connect.md"
+              },
+              {
+                "label": "Upper Leg Compensation",
+                "type": "page",
+                "path": "docs/ui_help_doc/control/cap_param.md"
+              },
+              {
+                "label": "Manual Skeleton Adjustment",
+                "type": "page",
+                "path": "docs/ui_help_doc/control/skeleton_setting.md"
+              },
+              {
+                "label": "Hardware Configuration",
+                "type": "page",
+                "path": "docs/ui_help_doc/control/config.md"
+              },
+              {
+                "label": "[Connection Panel](connect)",
+                "type": "page",
+                "path": "docs/ui_help_doc/control/README.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Frequently Asked Questions",
+        "type": "group",
+        "children": [
+          {
+            "label": "Does it support Mac and Linux",
+            "type": "page",
+            "path": "docs/QA/README.md"
+          },
+          {
+            "label": "How to Identify Whether the Magnetic Field Environment is Good",
+            "type": "page",
+            "path": "docs/QA/magnet.md"
+          }
+        ]
+      },
+      {
+        "label": "Software Integration",
+        "type": "group",
+        "children": [
+          {
+            "label": "Tips",
+            "type": "page",
+            "path": "docs/third_party_software_access/README.md"
+          },
+          {
+            "label": "SteamVR Protocol Integration",
+            "type": "folder",
+            "children": [
+              {
+                "label": "Tips (steamvr)",
+                "type": "page",
+                "path": "docs/third_party_software_access/steamvr/README.md"
+              },
+              {
+                "label": "VRChat Basic Settings",
+                "type": "page",
+                "path": "docs/third_party_software_access/steamvr/vrchat.md"
+              }
+            ]
+          },
+          {
+            "label": "VMC Protocol Integration",
+            "type": "folder",
+            "children": [
+              {
+                "label": "Tips (VMC)",
+                "type": "page",
+                "path": "docs/third_party_software_access/VMC/README.md"
+              },
+              {
+                "label": "warudo Integration",
+                "type": "page",
+                "path": "docs/third_party_software_access/VMC/warudo.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Plugins",
+        "type": "folder",
+        "children": [
+          {
+            "label": "Official Plugin Collection",
+            "type": "page",
+            "path": "docs/plugins/plugins.md"
+          },
+          {
+            "label": "Blender Plugin Download",
+            "type": "page",
+            "path": "docs/plugins/blender.md"
+          },
+          {
+            "label": "UE Plugin Download",
+            "type": "page",
+            "path": "docs/plugins/ue.md"
+          },
+          {
+            "label": "Unity Demo Package Download",
+            "type": "page",
+            "path": "docs/plugins/unity.md"
+          }
+        ]
+      },
+      {
+        "label": "SDK",
+        "type": "group",
+        "children": [
+          {
+            "label": "SDK Interface Description",
+            "type": "page",
+            "path": "docs/SDK/README.md"
+          }
+        ]
+      },
+      {
+        "label": "Product Certification",
+        "type": "group",
+        "children": [
+          {
+            "label": "Product and Communication Related Certifications",
+            "type": "page",
+            "path": "docs/product_certification/README.md"
+          }
+        ]
+      }
+    ]
+  }
+]

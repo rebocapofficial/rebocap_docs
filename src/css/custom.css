@@ -1,0 +1,218 @@
+/**
+ * Rebocap Documentation — Custom Styles
+ * Multi-language optimized font stack + theme overrides.
+ */
+
+/* ── Font Stack ───────────────────────────────────────────────────────────
+ * System fonts optimized for CJK + Latin scripts across all platforms.
+ * No web font downloads — uses what's already installed on the user's OS.
+ *
+ * Sans-serif (body):
+ *   macOS/iOS:  SF Pro → PingFang (zh) / Hiragino Sans (ja)
+ *   Windows:    Segoe UI → Microsoft YaHei (zh) / Yu Gothic (ja)
+ *   Android:    Roboto → Noto Sans CJK
+ *   Linux:      Noto Sans
+ *
+ * Monospace (code):
+ *   macOS:      SF Mono
+ *   Windows:    Cascadia Code → Consolas
+ *   Linux:      DejaVu Sans Mono
+ */
+:root {
+  --ifm-font-family-base:
+    /* Latin first for best rendering */
+    'Inter', '-apple-system', 'BlinkMacSystemFont',
+    /* Windows Latin */
+    'Segoe UI', 'Roboto',
+    /* macOS/iOS CJK */
+    'PingFang SC', 'PingFang TC', 'Hiragino Sans GB', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
+    /* Windows CJK */
+    'Microsoft YaHei', 'Microsoft JhengHei', 'Yu Gothic', 'Meiryo', 'Malgun Gothic',
+    /* Android/Linux fallback */
+    'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP',
+    /* Final fallbacks */
+    'Helvetica Neue', 'Arial', sans-serif;
+
+  --ifm-font-family-monospace:
+    'Cascadia Code', 'SF Mono', 'Fira Code', 'Fira Mono',
+    'Roboto Mono', 'Menlo', 'Monaco', 'Consolas',
+    'Liberation Mono', 'Courier New', monospace;
+
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.7;
+
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 93%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability, use a lighter palette in dark mode */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* ── Typography ────────────────────────────────────────────────────────── */
+.markdown h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.markdown h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.markdown h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.markdown p, .markdown li {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ── SVG Image Mapper ──────────────────────────────────────────────────── */
+.image-mapper-shape {
+  fill: rgba(0, 0, 0, 0.6);
+}
+.image-mapper-shape:hover {
+  fill: rgba(0, 0, 0, 0.1);
+}
+g:hover .image-mapper-shape {
+  stroke: red;
+  stroke-width: 4;
+}
+.image-text {
+  font-family: Verdana, sans-serif;
+  font-size: 22px;
+  fill: rgba(0, 0, 0, 0);
+}
+g:hover .image-text {
+  fill: greenyellow;
+}
+g {
+  background: #00000000;
+}
+
+/* ── Accordion / Details ───────────────────────────────────────────────── */
+.markdown details {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.markdown details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+.markdown details[open] summary {
+  margin-bottom: 0.75rem;
+}
+
+/* ── Image captions ────────────────────────────────────────────────────── */
+.markdown img + em {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* ── Table scrolling ───────────────────────────────────────────────────── */
+.markdown table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* ── Navbar logo sizing ────────────────────────────────────────────────── */
+.navbar__logo img {
+  height: 2rem;
+}
+
+/* ── Pagefind search panel ─────────────────────────────────────────────── */
+#pagefind-search-panel,
+#pagefind-search-panel .pagefind-ui,
+#pagefind-search-panel .pagefind-ui__form,
+#pagefind-search-panel .pagefind-ui__search-input,
+#pagefind-search-panel .pagefind-ui__results,
+#pagefind-search-panel .pagefind-ui__result {
+  background: #fff !important;
+}
+[data-theme="dark"] #pagefind-search-panel,
+[data-theme="dark"] #pagefind-search-panel .pagefind-ui,
+[data-theme="dark"] #pagefind-search-panel .pagefind-ui__form,
+[data-theme="dark"] #pagefind-search-panel .pagefind-ui__search-input,
+[data-theme="dark"] #pagefind-search-panel .pagefind-ui__results,
+[data-theme="dark"] #pagefind-search-panel .pagefind-ui__result {
+  background: #242526 !important;
+}
+
+#pagefind-search-panel .pagefind-ui__search-input {
+  font-size: 1.1rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  color: #1c1e21 !important;
+  border: 1px solid #dadde1 !important;
+}
+[data-theme="dark"] #pagefind-search-panel .pagefind-ui__search-input {
+  color: #e3e3e3 !important;
+  border-color: #444950 !important;
+}
+
+#pagefind-search-panel .pagefind-ui__search-clear {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none !important;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #606770;
+}
+
+#pagefind-search-panel .pagefind-ui__result {
+  border: 1px solid #e4e6e8;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin: 0.4rem 0;
+}
+[data-theme="dark"] #pagefind-search-panel .pagefind-ui__result {
+  border-color: #444950;
+}
+
+#pagefind-search-panel .pagefind-ui__result-link {
+  color: #2e8555 !important;
+  font-weight: 600;
+}
+#pagefind-search-panel .pagefind-ui__result-excerpt {
+  color: #444950 !important;
+}
+[data-theme="dark"] #pagefind-search-panel .pagefind-ui__result-excerpt {
+  color: #b0b3b8 !important;
+}
+
+/* Hide keyboard shortcut on mobile */
+@media (max-width: 768px) {
+  .hide-on-mobile { display: none; }
+  #pagefind-search-panel {
+    width: 96vw;
+    left: 2vw;
+    transform: none;
+    top: 0.75rem;
+  }
+}
