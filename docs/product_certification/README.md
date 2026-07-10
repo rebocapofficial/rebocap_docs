@@ -59,7 +59,7 @@ International safety standard certification for products with lithium batteries,
 
 <Tabs>
   <TabItem value="Tab 1">
-    end of FAQ 1
+    end of FAQ3
   </TabItem>
 
   <TabItem value="Tab 2">
