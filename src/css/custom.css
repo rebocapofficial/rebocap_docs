@@ -216,3 +216,53 @@ g {
     top: 0.75rem;
   }
 }
+/* 缩减右侧 TOC 目录项的上下内边距（改薄高亮背景色的上下留边）并加上动效 */
+.table-of-contents__link {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  display: block !important; /* 改为 block 并设置 100% 宽度，使其横向贯通 */
+  width: 100%;
+  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  position: relative;
+}
+
+/* 鼠标悬停时的平滑向右微移与颜色渐变 */
+.table-of-contents__link:hover {
+  transform: translateX(6px);
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none !important;
+}
+
+/* 激活状态（滚动到当前章节）时的发光与加粗平移 */
+.table-of-contents__link--active {
+  font-weight: 600 !important;
+  transform: translateX(4px);
+  color: var(--ifm-color-primary) !important;
+  text-shadow: 0 0 1px rgba(46, 133, 85, 0.2);
+}
+
+/* 暗色模式下激活项的微妙呼吸发光 */
+[data-theme='dark'] .table-of-contents__link--active {
+  text-shadow: 0 0 8px rgba(37, 194, 160, 0.35);
+}
+
+/* 全局缩减正文中大标题/子标题背景色块的上下留边 */
+.markdown h2 span {
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+}
+
+/* 将 TOC 目录内所有文字（默认作为子标题的大小）调大 */
+.table-of-contents span {
+  font-size: 0.85rem !important;
+}
+
+/* 将以 1-6 开头的（大标题）字号调小，使其与子标题排版更和谐 */
+.table-of-contents a[href^="#1"] span,
+.table-of-contents a[href^="#2"] span,
+.table-of-contents a[href^="#3"] span,
+.table-of-contents a[href^="#4"] span,
+.table-of-contents a[href^="#5"] span,
+.table-of-contents a[href^="#6"] span {
+  font-size: 0.95rem !important;
+}
