@@ -83,7 +83,7 @@ if ! git diff --quiet || ! git diff --cached --quiet; then
 fi
 
 if [ "$FORCE" = false ]; then
-  git fetch origin main 2>&1
+  git fetch origin 2>&1
   LOCAL=$(git rev-parse HEAD)
   REMOTE=$(git rev-parse origin/main)
 
