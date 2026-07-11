@@ -53,8 +53,10 @@ fi
 
 DCDN_DOMAIN="${DCDN_DOMAIN:-doc.rebocap.com}"
 
-# Auto-detect node binary (systemd uses full path, cron/manual needs PATH)
+# Auto-detect node binary and fix PATH (systemd has minimal PATH)
 NODE_BIN="${NODE_BIN:-$(command -v node || echo /usr/local/node/bin/node)}"
+NODE_DIR="$(dirname "$NODE_BIN")"
+export PATH="$NODE_DIR:$PATH"
 
 cd "$PROJECT_DIR"
 log() { echo "[$(date '+%H:%M:%S')] $*"; }
