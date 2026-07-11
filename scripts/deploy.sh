@@ -94,6 +94,7 @@ if [ "$FORCE" = false ]; then
   log "New commits: ${LOCAL:0:7} → ${REMOTE:0:7}"
 fi
 
+
 git checkout main
 git pull origin main
 
