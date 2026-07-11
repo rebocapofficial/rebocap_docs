@@ -58,6 +58,7 @@ NODE_BIN="${NODE_BIN:-$(command -v node || echo /usr/local/node/bin/node)}"
 NODE_DIR="$(dirname "$NODE_BIN")"
 export PATH="$NODE_DIR:$PATH"
 
+
 cd "$PROJECT_DIR"
 log() { echo "[$(date '+%H:%M:%S')] $*"; }
 
