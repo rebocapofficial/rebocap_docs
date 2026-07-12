@@ -266,3 +266,40 @@ g {
 .table-of-contents a[href^="#6"] span {
   font-size: 0.95rem !important;
 }
+
+/* 亮色模式下的步骤文字颜色：深蓝色 */
+.tutorial-step-text {
+  color: #3b26b3 !important;
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+
+/* 暗黑模式下的步骤文字颜色自动切换为高对比度的粉浅蓝色 */
+[data-theme='dark'] .tutorial-step-text {
+  color: #a3b8ff !important;
+}
+
+/* 亮色模式下的步骤标题颜色：深蓝色 */
+.tutorial-step-title {
+  color: #1e3a8a !important;
+}
+
+/* 暗黑模式下的步骤标题颜色自动切换为高对比度的浅天蓝色 */
+[data-theme='dark'] .tutorial-step-title {
+  color: #7bb5ff !important;
+}
+
+/* 亮色模式下的步骤说明注释文字：深紫罗兰色 */
+.tutorial-step-caption {
+  color: #4b2bbd !important;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* 暗黑模式下的步骤说明注释文字：自动转为高对比度的粉紫色/亮浅紫色 */
+[data-theme='dark'] .tutorial-step-caption {
+  color: #c7b3ff !important;
+}
+
+
