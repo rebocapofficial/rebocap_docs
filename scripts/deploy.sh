@@ -106,21 +106,15 @@ fi
 log "=== Deploy start ==="
 
 # ═══════════════════════════════════════════════════════════
-# Step 1 — Git pull (stash local changes to avoid conflicts)
+# Step 1 — Sync with remote (deploy server must match remote exactly)
 # ═══════════════════════════════════════════════════════════
-STASHED=false
-if ! git diff --quiet || ! git diff --cached --quiet; then
-  git stash push -m "auto-deploy-stash-$(date +%s)" 2>&1
-  STASHED=true
-  log "Local changes stashed before pull"
-fi
+git fetch origin 2>&1
 
 if [ "$FORCE" = false ]; then
-  git fetch origin 2>&1
   LOCAL=$(git rev-parse HEAD)
   REMOTE=$(git rev-parse origin/main)
 
-  if [ "$LOCAL" = "$REMOTE" ] && [ "$STASHED" = false ]; then
+  if [ "$LOCAL" = "$REMOTE" ]; then
     log "No new commits — skipping build"
     exit 0
   fi
@@ -128,19 +122,11 @@ if [ "$FORCE" = false ]; then
   REMOTE_COMMIT_FOR_MSG="${REMOTE:0:7}"
 fi
 
-
+# Abort any in-progress merge, discard ALL local changes, force-sync to remote
+git merge --abort 2>/dev/null || true
 git checkout main
-git pull origin main
-
-if [ "$STASHED" = true ]; then
-  if git stash pop 2>&1; then
-    log "Restored local changes"
-  else
-    log "Stash conflicts — keeping pulled version"
-    git checkout --theirs . 2>/dev/null || true
-    git stash drop 2>/dev/null || true
-  fi
-fi
+git reset --hard origin/main
+log "Synced to origin/main (${REMOTE_COMMIT_FOR_MSG:-forced})"
 
 # ═══════════════════════════════════════════════════════════
 # Step 2 — Dependencies
