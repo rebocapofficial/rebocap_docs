@@ -4,6 +4,7 @@
  * Run:  node scripts/webhook-server.mjs
  * Env:  WEBHOOK_SECRET  — GitHub webhook secret (required)
  *       WEBHOOK_PORT    — listen port (default 9000)
+ *       FEISHU_WEBHOOK  — Feishu bot webhook URL (optional)
  *
  * GitHub webhook settings:
  *   Payload URL:  http://<your-server>:9000/webhook
@@ -18,11 +19,26 @@ import { execSync } from "child_process";
 
 const PORT = parseInt(process.env.WEBHOOK_PORT || "9000", 10);
 const SECRET = process.env.WEBHOOK_SECRET;
+const FEISHU_WEBHOOK = process.env.FEISHU_WEBHOOK || "";
 const DEPLOY_SCRIPT = "bash scripts/deploy.sh";
 
 if (!SECRET) {
   console.error("FATAL: WEBHOOK_SECRET env var is required.");
   process.exit(1);
+}
+
+// ─── Feishu notification ─────────────────────────────────────────────────────
+
+function notifyFeishu(title, detail) {
+  if (!FEISHU_WEBHOOK) return;
+  const emoji = title === "success" ? "✅" : "❌";
+  const msg = `文档后台服务 ${emoji} ${title}：${detail}`;
+
+  fetch(FEISHU_WEBHOOK, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ msg_type: "text", content: { text: msg } }),
+  }).catch(() => {});
 }
 
 // ─── Signature verification ──────────────────────────────────────────────────
@@ -41,10 +57,15 @@ function verifySignature(payload, signature) {
 
 function runDeploy() {
   console.log(`[${new Date().toISOString()}] Triggering deploy...`);
-  const child = execSync(DEPLOY_SCRIPT, {
-    stdio: "inherit",
-    timeout: 10 * 60 * 1000, // 10 min timeout
-  });
+  try {
+    execSync(DEPLOY_SCRIPT, {
+      stdio: "inherit",
+      timeout: 10 * 60 * 1000, // 10 min timeout
+    });
+  } catch (err) {
+    console.error(`[${new Date().toISOString()}] Deploy FAILED:`, err.message);
+    notifyFeishu("failure", `Webhook 触发的部署执行失败: ${err.message.slice(0, 200)}`);
+  }
 }
 
 // ─── HTTP Server ─────────────────────────────────────────────────────────────
@@ -68,6 +89,7 @@ const server = createServer((req, res) => {
       // Verify signature
       if (!verifySignature(body, signature)) {
         console.log(`[${new Date().toISOString()}] Invalid signature — rejected`);
+        notifyFeishu("failure", "GitHub Webhook 签名验证失败，请检查 WEBHOOK_SECRET 是否一致");
         res.writeHead(401);
         res.end("Invalid signature");
         return;
@@ -101,6 +123,7 @@ const server = createServer((req, res) => {
         runDeploy();
       } catch (err) {
         console.error("Error processing webhook:", err.message);
+        notifyFeishu("failure", `GitHub Webhook 解析失败: ${err.message.slice(0, 200)}`);
         if (!res.headersSent) {
           res.writeHead(400);
           res.end("Bad request");

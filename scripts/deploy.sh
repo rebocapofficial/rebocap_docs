@@ -23,6 +23,36 @@
 # ============================================================
 set -euo pipefail
 
+FEISHU_WEBHOOK="${FEISHU_WEBHOOK:-}"
+
+# ─── Feishu notification ────────────────────────────────────
+# Last error message (updated by inline failure handlers)
+LAST_ERROR=""
+
+notify_feishu() {
+  local type="$1"    # "success" or "failure"
+  local detail="$2"
+
+  local emoji
+  if [ "$type" = "success" ]; then
+    emoji="✅"
+  else
+    emoji="❌"
+  fi
+
+  local msg="文档后台服务 ${emoji} ${type}：${detail}"
+
+  curl -so /dev/null -X POST "$FEISHU_WEBHOOK" \
+    -H "Content-Type: application/json" \
+    -d "$(printf '{"msg_type":"text","content":{"text":"%s"}}' "$msg")" \
+    2>/dev/null || true
+}
+
+# Trap unexpected errors
+trap 'code=$?; if [ $code -ne 0 ] && [ "$LAST_ERROR" != "sent" ]; then
+  notify_feishu "failure" "脚本异常退出 (exit code=$code)，请检查服务器日志。ssh 执行: journalctl -u rebocap-deploy --no-pager -n 80"
+fi; exit $code' ERR
+
 FORCE=false
 SKIP_CDN=false
 
@@ -95,6 +125,7 @@ if [ "$FORCE" = false ]; then
     exit 0
   fi
   log "New commits: ${LOCAL:0:7} → ${REMOTE:0:7}"
+  REMOTE_COMMIT_FOR_MSG="${REMOTE:0:7}"
 fi
 
 
@@ -138,6 +169,8 @@ NODE_OPTIONS="--max-old-space-size=1536" npx docusaurus build --out-dir "$STAGIN
 # 检查上一步 Docusaurus 编译是否真的成功
 if [ ${PIPESTATUS[0]} -ne 0 ]; then
     log "Docusaurus build FAILED! Please check the logs above."
+    LAST_ERROR="sent"
+    notify_feishu "failure" "Docusaurus 编译失败，请检查服务器日志。ssh 执行: journalctl -u rebocap-deploy --no-pager -n 80"
     exit 1
 fi
 log "Docusaurus build OK"
@@ -190,3 +223,4 @@ else
 fi
 
 log "=== Deploy complete ==="
+notify_feishu "success" "部署完成。新 commits: ${REMOTE_COMMIT_FOR_MSG:-?} ，站点已更新 → ${DCDN_DOMAIN}"
