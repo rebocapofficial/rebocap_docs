@@ -302,4 +302,10 @@ g {
   color: #c7b3ff !important;
 }
 
+/* 全局给正文里的所有图片加上统一的 6px 圆角 */
+.markdown img {
+  border-radius: 6px;
+}
+
+
 
