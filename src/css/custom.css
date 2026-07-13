@@ -111,6 +111,7 @@ g {
   border-radius: var(--ifm-global-radius);
   padding: 1rem;
   margin-bottom: 1rem;
+  display: flow-root; /* 建立 BFC，防止外边距折叠导致动画结束时高度突然抖动 */
 }
 .markdown details summary {
   cursor: pointer;
@@ -120,6 +121,15 @@ g {
 .markdown details[open] summary {
   margin-bottom: 0.75rem;
 }
+/* 消除 details 内部折叠内容容器首尾元素的外边距，防止 Docusaurus 展开动画结束高度计算不准导致抖动 */
+.markdown details > :not(summary) *:first-child {
+  margin-top: 0 !important;
+}
+.markdown details > :not(summary) *:last-child {
+  margin-bottom: 0 !important;
+}
+
+
 
 /* ── Image captions ────────────────────────────────────────────────────── */
 .markdown img + em {
@@ -306,6 +316,63 @@ g {
 .markdown img {
   border-radius: 6px;
 }
+
+/* ── CUSTOM TUTORIAL LAYOUT SYSTEM (MODULAR DESIGN) ─────────────────────── */
+
+/* [1] 专用图片比例缩放容器 */
+/* ------------------------------------------------------------- */
+/* 特定部位 ID 标识小卡片图，限制宽度为 50% 并居中显示 */
+.tracker-id-img-container img {
+  max-width: 50% !important;
+  height: auto;
+}
+
+/* 局部内容区图片等比例缩放（70% 宽度） */
+.img-width-70 img {
+  max-width: 70% !important;
+  height: auto;
+}
+
+/* 局部内容区图片等比例缩放（80% 宽度） */
+.img-width-80 img {
+  max-width: 80% !important;
+  height: auto;
+}
+
+
+/* [2] 教程文档高亮色块与旗帜标题 */
+/* ------------------------------------------------------------- */
+/* 统一色块大标题 (例如：1 - 检查包裹) */
+.tutorial-main-heading {
+  color: #000000 !important;
+  padding: 4px 12px !important;
+  border-radius: 6px;
+  display: block;
+  font-size: 1.5em;
+}
+
+/* 侧边贴合的旗帜风格副标题 (例如：方式 A/B/C) */
+.tutorial-heading-flag {
+  color: #000000 !important;
+  padding: 4px 12px !important;
+  border-radius: 0 6px 6px 0;
+  display: inline-block;
+  margin-left: -20px;
+  margin-bottom: -15px;
+}
+/* ───────────────────────────────────────────────────────────────────────── */
+
+/* [3] 页面底部的“最后更新时间”样式微调（低调显示） */
+.theme-last-updated {
+  font-weight: normal !important;
+  color: rgba(0, 0, 0, 0.65) !important; /* 65% opacity black for 80% look, very soft and readable */
+}
+[data-theme='dark'] .theme-last-updated {
+  color: rgba(255, 255, 255, 0.5) !important; /* 暗黑模式下更淡的灰色 */
+}
+
+
+
 
 
 

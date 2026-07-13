@@ -99,7 +99,7 @@ const config: Config = {
           // env var to select the right language at build time.
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/rebocapofficial/rebocap_docs/tree/main/',
-          showLastUpdateTime: false,
+          showLastUpdateTime: true,
           numberPrefixParser: false,
         },
         blog: false,
