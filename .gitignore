@@ -50,3 +50,5 @@ build_staging/
 # Backups
 backups/
 
+# AI Warning Memo (Local reference only, DO NOT COMMIT/PUSH)
+AI_WARNING_MEMO.md
