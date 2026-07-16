@@ -73,7 +73,7 @@ const config: Config = {
   //    /zh-Hant/docs/   → 繁體中文
   // ============================================================
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'zh-Hans',
     locales: ['en', 'zh-Hans', 'ja', 'zh-Hant'],
     localeConfigs: {
       en: { label: 'English', direction: 'ltr' },

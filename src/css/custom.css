@@ -129,6 +129,11 @@ g {
   margin-bottom: 0 !important;
 }
 
+/* 允许展开折叠项内的图片放大时不被 overflow: hidden 截断 */
+.markdown details[open] > div {
+  overflow: visible !important;
+}
+
 
 
 /* ── Image captions ────────────────────────────────────────────────────── */
