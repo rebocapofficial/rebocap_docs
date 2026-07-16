@@ -130,7 +130,8 @@ g {
 }
 
 /* 允许展开折叠项内的图片放大时不被 Docusaurus 内部容器的 overflow: hidden 截断 */
-.markdown details[open] [class*="collapsibleContent"] {
+.markdown details[open],
+.markdown details[open] * {
   overflow: visible !important;
 }
 
