@@ -164,7 +164,7 @@ const config: Config = {
       additionalLanguages: ['csharp', 'cpp', 'python'],
     },
     zoom: {
-      selector: '.markdown :not(em) > img',
+      selector: '.markdown :not(em) > img:not(.zoomable-image-trigger)',
     },
   },
 };
