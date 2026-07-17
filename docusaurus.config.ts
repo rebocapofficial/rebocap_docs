@@ -119,6 +119,7 @@ const config: Config = {
     require.resolve('docusaurus-plugin-image-zoom'),
   ],
 
+
   themeConfig: {
     image: 'img/logo_w_white.svg',
     navbar: {
@@ -164,7 +165,7 @@ const config: Config = {
       additionalLanguages: ['csharp', 'cpp', 'python'],
     },
     zoom: {
-      selector: '.markdown :not(em) > img',
+      selector: '.docusaurus-disable-medium-zoom',
     },
   },
 };

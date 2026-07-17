@@ -131,8 +131,14 @@ g {
 
 
 
-
-/* ── Image captions ────────────────────────────────────────────────────── */
+/* 为文档中所有可放大的普通插图、折叠图、动图统一添加放大光标与基础样式 */
+.markdown img:not(a img) {
+  cursor: zoom-in;
+}
+.markdown details img {
+  border-radius: 8px;
+  cursor: zoom-in;
+}
 .markdown img + em {
   display: block;
   text-align: center;
