@@ -153,6 +153,10 @@ cannot combine two 6‑tracker sets together.</span>
 <div style="flex: 1.5; min-width: 250px;">
 <strong>1 - Turn off extra displayed tracker points.</strong><br />
 Open [Set 'SteamVR'Nodes] → Turn off [Left/Right Upper Arm]
+<details className="plain-details"><summary>Details</summary>
+The software originally intended to use the [Auto Hide Joints] feature to automatically hide unused tracker points,<br />
+but it was found that this feature could not auto-check. This has been fixed in the V02 Beta02 software.
+</details>
 </div>
 </div>
 
@@ -165,6 +169,10 @@ Open [Set 'SteamVR'Nodes] → Turn off [Left/Right Upper Arm]
 <div style="flex: 1.5; min-width: 250px;">
 <strong>2 - Turn off the feature that stuck running globally.</strong><br />
 → [Motion Params] → Turn off [Vertical IK & Horizontal IK]
+<details className="plain-details"><summary>Details</summary>
+This feature was originally intended as a sub-function within the [Anti-Slip] module,<br />
+but it accidentally stayed in a globally active state. This has been fixed in the V02 Beta02 software.
+</details>
 </div>
 </div>
 

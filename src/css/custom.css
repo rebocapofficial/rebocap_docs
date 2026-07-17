@@ -497,7 +497,7 @@ g {
   color: rgba(255, 255, 255, 0.5) !important; /* 暗黑模式下更淡的灰色 */
 }
 
-/* 纯文本无边框细节展开块 */
+/* 纯文本细节展开块（保留原生绿线，仅压缩间距） */
 details.plain-details {
   border: none !important;
   background: transparent !important;
@@ -506,9 +506,41 @@ details.plain-details {
   margin: 0 !important;
 }
 details.plain-details summary {
-  padding-left: 0 !important;
   background: transparent !important;
+  padding-top: 0 !important;
+  padding-bottom: 4px !important; /* 线贴着文字下面 */
+  margin-bottom: 0 !important;
 }
-details.plain-details summary::before {
-  /* let Docusaurus arrow stay if they want, or we can adjust it if needed */
+details.plain-details[open] summary {
+  margin-bottom: 0 !important;
+  /* 移除我自定义的灰线，完全保留 Docusaurus 原生的绿线 */
+}
+
+/* 折叠内容区块紧凑 */
+details.plain-details > div {
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  padding-top: 6px !important;
+}
+/* 强行剥夺子元素的第一行外边距，真正实现文字贴紧 */
+details.plain-details > div > p,
+details.plain-details > div > div,
+details.plain-details > div > ul,
+details.plain-details > div > ol {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* 隐藏专门给 TOC 用的纯文本占位大标题（保证正文排版只显示自定义色块标题） */
+#new-device-guide,
+#special-statement-toc {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
