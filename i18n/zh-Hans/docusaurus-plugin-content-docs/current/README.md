@@ -91,7 +91,7 @@ background: #00000000;
 # 导航目录
 ### Rebocap 教程
 * [使用教程](tutorial/README)
-  * [开箱检查](tutorial/hardware_check)
+  * [硬件说明](tutorial/hardware_check)
   * [绑带使用介绍](tutorial/instroction_for_straps)
   * [软件下载安装](tutorial/software_install)
   * [连接和使用](tutorial/connect_and_use)

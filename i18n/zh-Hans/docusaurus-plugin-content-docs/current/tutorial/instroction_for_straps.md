@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
-title: "跟踪器安装到绑带上"
+title: "绑带安装指南"
 ---
 
-## 跟踪器安装到绑带上
+## 绑带安装指南
 <a id="tracker_common_install_method"></a>
 
 ### 跟踪器安装通用绑法

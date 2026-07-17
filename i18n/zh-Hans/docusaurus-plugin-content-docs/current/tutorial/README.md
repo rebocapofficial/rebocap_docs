@@ -4,7 +4,7 @@ title: "首次使用务必依次阅读本目录下所有内容"
 ---
 
 ## 首次使用务必依次阅读本目录下所有内容
-- [开箱检查及硬件介绍](hardware_check)
+- [硬件说明](hardware_check)
 - [绑带使用介绍](instroction_for_straps)
 - [软件下载安装](software_install)
 - [连接和使用](connect_and_use)

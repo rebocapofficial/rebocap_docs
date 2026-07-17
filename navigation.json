@@ -11,8 +11,13 @@
       },
       {
         "label": "Rebocap Tutorials",
-        "type": "folder",
+        "type": "group",
         "children": [
+          {
+            "label": "Software Download",
+            "type": "page",
+            "path": "docs/tutorial/software_install.md"
+          },
           {
             "label": "Unboxing Check",
             "type": "page",
@@ -22,11 +27,6 @@
             "label": "Tracker Installation on Strap",
             "type": "page",
             "path": "docs/tutorial/instroction_for_straps.md"
-          },
-          {
-            "label": "Software Download",
-            "type": "page",
-            "path": "docs/tutorial/software_install.md"
           },
           {
             "label": "Connection",
@@ -52,7 +52,7 @@
       },
       {
         "label": "Help Manual",
-        "type": "folder",
+        "type": "group",
         "children": [
           {
             "label": "UI Sections",
@@ -168,7 +168,7 @@
       },
       {
         "label": "Plugins",
-        "type": "folder",
+        "type": "group",
         "children": [
           {
             "label": "Official Plugin Collection",

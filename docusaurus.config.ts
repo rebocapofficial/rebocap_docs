@@ -117,6 +117,30 @@ const config: Config = {
 
   plugins: [
     require.resolve('docusaurus-plugin-image-zoom'),
+    function customDevServerPlugin() {
+      return {
+        name: 'custom-dev-server-plugin',
+        configureWebpack(config, isServer) {
+          if (isServer) return {};
+          return {
+            devServer: {
+              setupMiddlewares: (middlewares, devServer) => {
+                if (!devServer) return middlewares;
+                const path = require('path');
+                const express = require('express');
+                const staticImgPath = path.join(__dirname, 'static/img');
+                
+                // Serve directly from disk to bypass baseUrl routing issues
+                devServer.app.use('/img', express.static(staticImgPath));
+                devServer.app.use('/static/img', express.static(staticImgPath));
+                
+                return middlewares;
+              },
+            },
+          };
+        },
+      };
+    },
   ],
 
 

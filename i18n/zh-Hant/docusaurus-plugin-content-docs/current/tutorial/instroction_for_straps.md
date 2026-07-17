@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
-title: "跟蹤器安裝到綁帶上"
+title: "綁帶安裝指南"
 ---
 
-## 跟蹤器安裝到綁帶上
+## 綁帶安裝指南
 <a id="tracker_common_install_method"></a>
 
 ### 跟蹤器安裝通用綁法
