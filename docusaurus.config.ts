@@ -116,6 +116,16 @@ const config: Config = {
   ],
 
   plugins: [
+    function customRedirectPlugin() {
+      return {
+        name: 'custom-redirect-plugin',
+        async postBuild() {
+          const generateAllRedirects = require('./scripts/generate-redirects.js');
+          const path = require('path');
+          generateAllRedirects(path.join(__dirname, 'build'));
+        }
+      };
+    },
     require.resolve('docusaurus-plugin-image-zoom'),
     function customDevServerPlugin() {
       return {

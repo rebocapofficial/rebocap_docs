@@ -49,11 +49,11 @@ function walkDir(dir, callback) {
   }
 }
 
-function processLocale(docusaurusLocale, legacyLocale) {
+function processLocale(docusaurusLocale, legacyLocale, buildDir) {
   // English is at build/docs, others are at build/<locale>/docs
   const docsBasePath = docusaurusLocale === 'en' 
-    ? path.join(BUILD_DIR, 'docs') 
-    : path.join(BUILD_DIR, docusaurusLocale, 'docs');
+    ? path.join(buildDir, 'docs') 
+    : path.join(buildDir, docusaurusLocale, 'docs');
 
   if (!fs.existsSync(docsBasePath)) {
     console.warn(`[Redirects] Warning: Docs path not found for locale ${docusaurusLocale}: ${docsBasePath}`);
@@ -80,9 +80,9 @@ function processLocale(docusaurusLocale, legacyLocale) {
       // e.g. build/zh_cn/ui_help_doc/control/connect.html
       let destFile;
       if (urlPath === '') {
-         destFile = path.join(BUILD_DIR, legacyLocale, 'index.html');
+         destFile = path.join(buildDir, legacyLocale, 'index.html');
       } else {
-         destFile = path.join(BUILD_DIR, legacyLocale, `${urlPath}.html`);
+         destFile = path.join(buildDir, legacyLocale, `${urlPath}.html`);
       }
 
       ensureDirSync(path.dirname(destFile));
@@ -94,18 +94,23 @@ function processLocale(docusaurusLocale, legacyLocale) {
   console.log(`[Redirects] Generated ${generatedCount.count} redirect files for ${legacyLocale} -> ${docusaurusLocale}`);
 }
 
-function main() {
+function generateAllRedirects(buildDir) {
   console.log('[Redirects] Starting generation of legacy redirect files...');
-  if (!fs.existsSync(BUILD_DIR)) {
-    console.error('[Redirects] Error: Build directory does not exist. Run this script after Docusaurus build.');
-    process.exit(1);
+  if (!fs.existsSync(buildDir)) {
+    console.error('[Redirects] Error: Build directory does not exist.');
+    return;
   }
 
   for (const [docusaurusLocale, legacyLocale] of Object.entries(LOCALE_MAP)) {
-    processLocale(docusaurusLocale, legacyLocale);
+    processLocale(docusaurusLocale, legacyLocale, buildDir);
   }
   
   console.log('[Redirects] Done!');
 }
 
-main();
+module.exports = generateAllRedirects;
+
+// If run directly via node
+if (require.main === module) {
+  generateAllRedirects(BUILD_DIR);
+}
