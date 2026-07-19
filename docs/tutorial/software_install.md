@@ -2,18 +2,118 @@
 sidebar_position: 3
 title: "Software Download"
 ---
-## Software Download
-Currently, the available version is `Release`. Click the `Download Rebocap` link below to download it. The `Beta` version is a public test build that offers better performance but has not yet been extensively validated.
+<!-- ==================== Flag A: Install software Start ==================== -->
+<div style="border-left: 6px solid #88b49c; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
-This software currently supports **Windows 10** and later only：
+## Download {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #88b49c; margin-top: 0; display: inline-block;">Download</h2>
 
-Beta Version:
-- **Click here [Download Rebocap V02 Beta02](/img/files/rebocap_release_v02_beta02.exe)**
+Currently, the available version is `Release`. Click the download link below.<br />
+The `Beta` version is a public test build, which works better in areas with significant magnetic interference, but has not yet been extensively validated.
 
-Stable Release Version:
-- **Click here [Download Rebocap](/img/files/rebocap_release_v01.exe)**
 
-> Note: The software must be used while connected to the internet. If you wish to use it offline, please connect through a mobile hotspot, start the software, wait for 30 seconds, and then disconnect the network (you can check the logs; as long as the logs show that the network verification succeeded, you may disconnect).
+
+**Stable Release** -  [Download Rebocap V01](/img/files/rebocap_release_v01.exe)
+
+
+**Beta Version** - [Download Rebocap V02 Beta02](/img/files/rebocap_release_v02_beta02.exe)
+
+
+
+
+
+
+
+- Version Selection:\
+  V01 - Suitable for environments with stable magnetic fields, recommended for dancing.<br />
+  V02 Beta02 - Default settings are optimized for the 6-tracker set, and it uses a new algorithm to actively identify strong interference sources, maintaining orientation even on trampolines.
+
+
+- It is recommended to install on a non-system drive (do not install on the C drive).
+
+
+
+<!-- ==================== Details Start ==================== -->
+
+<details>
+<summary> Check supported firmware versions for the software.</summary>
+   &emsp;&emsp; Some firmware versions have major algorithm changes and are incompatible with older software versions. <br /> 
+
+
+   &emsp;&emsp; When switching back to an older software version, the firmware must be downgraded accordingly.<br /> 
+
+   &emsp;&emsp;&emsp; release_v01 - ◼️tracker : V6 / V7  ,  📡receiver : V6 / V7 <br /> 
+
+   &emsp;&emsp;&emsp; release_v02 beta02 - ◼️tracker : V15  ,  📡receiver : V6 / V7 <br /> 
+
+   &emsp;&emsp;&emsp; (Unpublished) release_v02 beta02.1 - ◼️tracker : V16  ,  📡receiver : V6 / V7 / V8 <br /> 
+
+</details>
+<!-- ==================== Details End ==================== -->
+
+
+
+
+
+
+<!-- ==================== Details Start ==================== -->
+<details>
+<summary>If using the V01 version in VR mode, the following settings need to be changed.</summary>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![v01_off_1](../../../../../static/img/unboxing/expand/v01_off_1-en.png)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+<strong>1 - Turn off extra displayed tracking points.</strong><br />
+Open [Configure 'SteamVR' output nodes] → Turn off [Left/Right Upper Arm]
+<details className="plain-details"><summary>Details</summary>
+The software originally planned to use the [Auto-hide joints] function to automatically hide unused tracking points,<br />
+but it was found that this function could not automatically check. This has been fixed in the V02 Beta02 software.
+</details>
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![v01_off_2](../../../../../static/img/unboxing/expand/v01_off_2-en.png)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+<strong>2 - Turn off functions that may incorrectly get stuck working globally.</strong><br />
+→ [Motion Parameters] → Turn off [Vertical IK & Horizontal IK]
+<details className="plain-details"><summary>Details</summary>
+This function was originally a sub-function in the [Anti-slip] module,<br />
+but it would unexpectedly remain active globally. This has been fixed in the V02 Beta02 software.
+
+</details>
+</div>
+</div>
+
+</details>
+<!-- ==================== Details End ==================== -->
+
+
+
+
+
+</div>
+<!-- ==================== Flag A: Install software End ==================== -->
+
+
+
+
+
+
+
+Notes:
+> The software currently only supports **Windows 10** and above.<br>
+> The software must be used while connected to the internet. If you wish to use it offline, please connect through a mobile hotspot, start the software, wait for 30 seconds, and then disconnect the network.<br>
+(As long as the [Log window] shows that the network verification was successful, you can disconnect the network)
 
 ## Software Installation
 1. Double-click rebocap_release_v01.exe (the current version is rebocap_release_v01.exe)

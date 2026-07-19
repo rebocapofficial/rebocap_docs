@@ -2,16 +2,118 @@
 sidebar_position: 3
 title: "軟體下載"
 ---
-## 軟體下載
-目前為 `Release` 版本，點擊下方 `下載 Rebocap` 下載連結。`Beta` 版本為公開測試版本，效果更好，但尚未大規模驗證。
+<!-- ==================== 旗帜 A：Install software 开始 ==================== -->
+<div style="border-left: 6px solid #88b49c; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
-目前軟體僅支援 **Windows 10** 及以上系統版本：
-- **點擊這裡 [下載 Rebocap](/img/files/rebocap_release_v01.exe)**
+## 下載 {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #88b49c; margin-top: 0; display: inline-block;">下載</h2>
 
-Beta 版本
-- **點擊這裡 [下載 Rebocap V02 Beta02](/img/files/rebocap_release_v02_beta02.exe)**
+目前為 Release 版本，點擊下方 `下載連結` <br />
+ Beta 版本為公開測試版本，應對磁場干擾明顯的區域效果更好，但是尚未大規模驗證。
 
-> 注意：軟體必須在連網狀態下使用；若希望離線使用，請使用手機熱點網路，啟動軟體 30 秒後再斷開網路即可（可查看日誌，只要日誌顯示網路校驗成功，即可斷網）。
+
+
+**正式版本** -  [下載 Rebocap V01](/img/files/rebocap_release_v01.exe)
+
+
+**Beta版本** - [下載 Rebocap V02 Beta02](/img/files/rebocap_release_v02_beta02.exe)
+
+
+
+
+
+
+
+- 版本選擇：\
+  V01 - 適合磁場穩定的環境，適用於跳舞。<br />
+  V02 Beta02 - 默認開關針對6追蹤器套裝優化，並採用全新算法可以主動判斷強干擾源，甚至在彈簧床上保持朝向。
+
+
+- 推薦安裝在非系統碟（不要裝在 C 碟）。
+
+
+
+<!-- ==================== 折叠页 开始 ==================== -->
+
+<details>
+<summary> 查看軟體對應支持的固件版本。</summary>
+   &emsp;&emsp; 部分固件版本有重大算法變更，與舊版軟體不相容。 <br /> 
+
+
+   &emsp;&emsp; 當切換回舊版軟體時，需要相應地降級固件。<br /> 
+
+   &emsp;&emsp;&emsp; release_v01 - ◼️tracker : V6 / V7  ,  📡receiver : V6 / V7 <br /> 
+
+   &emsp;&emsp;&emsp; release_v02 beta02 - ◼️tracker : V15  ,  📡receiver : V6 / V7 <br /> 
+
+   &emsp;&emsp;&emsp; (未公開) release_v02 beta02.1 - ◼️tracker : V16  ,  📡receiver : V6 / V7 / V8 <br /> 
+
+</details>
+<!-- ==================== 折叠页 结束 ==================== -->
+
+
+
+
+
+
+<!-- ==================== 折叠页 开始 ==================== -->
+<details>
+<summary>如果在VR模式使用 V01 版本，需要更改以下設置。</summary>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![v01_off_1](../../../../../static/img/unboxing/expand/v01_off_1-cnt.png)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+<strong>1 - 關閉額外顯示的追蹤點。</strong><br />
+打開 [配置'SteamVR'輸出節點] → 關閉 [左/右上臂]
+<details className="plain-details"><summary>詳情</summary>
+軟體原計畫使用[關節自動隱藏]功能自動隱藏未使用的追蹤點，<br />
+後發現該功能無法自動檢查，在V02 Beta02軟體中已修復。
+</details>
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![v01_off_2](../../../../../static/img/unboxing/expand/v01_off_2-cnt.png)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+<strong>2 - 關閉會錯誤卡在全局工作的功能。</strong><br />
+→ [運動參數] → 關閉 [縱向 IK & 橫向 IK]
+<details className="plain-details"><summary>詳情</summary>
+該功能原定為[防止腳滑]模組裡的子功能，<br />
+但會意外處於全局工作狀態，在V02 Beta02軟體中已修復。
+
+</details>
+</div>
+</div>
+
+</details>
+<!-- ==================== 折叠页 结束 ==================== -->
+
+
+
+
+
+</div>
+<!-- ==================== 旗帜 A：Install software 结束 ==================== -->
+
+
+
+
+
+
+
+注意事項：
+> 當前軟體僅支援**Windows 10**及以上系統版本。<br>
+> 軟體必須在聯網狀態下使用，如果希望離線使用，請使用手機熱點網絡，開啟軟體30秒以後再斷開網絡即可。<br>
+（在[日誌視窗]中只要顯示網絡校驗成功，即可斷開網絡）
 
 ## 軟體安裝
 1. 雙擊 rebocap_release_v01.exe（當前版本為 rebocap_release_v01.exe）

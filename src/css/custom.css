@@ -534,6 +534,7 @@ details.plain-details > div > ol {
 
 /* 隐藏专门给 TOC 用的纯文本占位大标题（保证正文排版只显示自定义色块标题） */
 #new-device-guide,
+#software-download-toc,
 #special-statement-toc {
   position: absolute;
   width: 1px;

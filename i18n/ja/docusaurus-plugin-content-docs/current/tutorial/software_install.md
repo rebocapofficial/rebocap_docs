@@ -2,18 +2,118 @@
 sidebar_position: 3
 title: "ソフトウェアダウンロード"
 ---
-## ソフトウェアダウンロード
-現在は `Release` バージョンです。下の `ダウンロード Rebocap` リンクをクリックしてください。`Beta` バージョンは公開テスト版で、パフォーマンスはより優れていますが、まだ大規模な検証は行われていません。
+<!-- ==================== Flag A: Install software Start ==================== -->
+<div style="border-left: 6px solid #88b49c; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
-本ソフトウェアは **Windows 10** 以上のシステムのみをサポートしています：
+## ダウンロード {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #88b49c; margin-top: 0; display: inline-block;">ダウンロード</h2>
 
-Beta バージョン:
-- **ここをクリック [Rebocap V02 Beta02 をダウンロード](/img/files/rebocap_release_v02_beta02.exe)**
+現在は `Release` バージョンです。以下のダウンロードリンクをクリックしてください。<br />
+ `Beta` バージョンは公開テストビルドであり、磁気干渉が顕著な環境でのパフォーマンスが優れていますが、まだ広範な検証は行われていません。
 
-安定版（あんていばん）:
-- **ここをクリック [Rebocap をダウンロード](/img/files/rebocap_release_v01.exe)**
 
-> 注意：ソフトウェアはオンライン状態で使用する必要があります。オフラインで使用したい場合は、スマホのホットスポットなどでネットワークに接続し、ソフトウェアを起動して30秒後にネットワークを切断してください（ログを確認し、ネットワーク認証が成功と表示されれば切断して構いません）。
+
+**正式版 (Release)** -  [Rebocap V01 をダウンロード](/img/files/rebocap_release_v01.exe)
+
+
+**Beta版** - [Rebocap V02 Beta02 をダウンロード](/img/files/rebocap_release_v02_beta02.exe)
+
+
+
+
+
+
+
+- バージョンの選択:\
+  V01 - 磁場が安定している環境に適しており、ダンスに最適です。<br />
+  V02 Beta02 - デフォルト設定は6点トラッカーセット向けに最適化されています。新しいアルゴリズムを採用し、強い干渉源を能動的に判断することで、トランポリン上でも向きを維持できます。
+
+
+- システムドライブ以外（Cドライブ以外）へのインストールを推奨します。
+
+
+
+<!-- ==================== Details Start ==================== -->
+
+<details>
+<summary> ソフトウェアがサポートするファームウェアのバージョンを確認する</summary>
+   &emsp;&emsp; 一部のファームウェアバージョンにはアルゴリズムの大きな変更が含まれており、古いソフトウェアと互換性がありません。<br /> 
+
+
+   &emsp;&emsp; 古いソフトウェアバージョンに戻す場合は、ファームウェアもダウングレードする必要があります。<br /> 
+
+   &emsp;&emsp;&emsp; release_v01 - ◼️tracker : V6 / V7  ,  📡receiver : V6 / V7 <br /> 
+
+   &emsp;&emsp;&emsp; release_v02 beta02 - ◼️tracker : V15  ,  📡receiver : V6 / V7 <br /> 
+
+   &emsp;&emsp;&emsp; (未公開) release_v02 beta02.1 - ◼️tracker : V16  ,  📡receiver : V6 / V7 / V8 <br /> 
+
+</details>
+<!-- ==================== Details End ==================== -->
+
+
+
+
+
+
+<!-- ==================== Details Start ==================== -->
+<details>
+<summary>VRモードでV01バージョンを使用する場合、以下の設定を変更する必要があります。</summary>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![v01_off_1](../../../../../static/img/unboxing/expand/v01_off_1-ja.png)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+<strong>1 - 余分に表示されるトラッキングポイントをオフにする。</strong><br />
+['SteamVR'出力ノードの構成]を開く → [左/右上腕]をオフにする
+<details className="plain-details"><summary>詳細</summary>
+ソフトウェアは当初「関節の自動非表示」機能を使用して、使用されていないトラッキングポイントを自動的に隠す予定でした。<br />
+しかし、この機能が自動チェックできないことが判明し、V02 Beta02ソフトウェアで修正されました。
+</details>
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![v01_off_2](../../../../../static/img/unboxing/expand/v01_off_2-ja.png)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+<strong>2 - 全体で誤って動作し続ける機能をオフにする。</strong><br />
+→ [モーションパラメータ] → [縦方向IK & 横方向IK] をオフにする
+<details className="plain-details"><summary>詳細</summary>
+この機能は当初「足の滑り防止」モジュール内のサブ機能として予定されていました。<br />
+しかし、予期せず全体で動作し続ける問題があり、V02 Beta02ソフトウェアで修正されました。
+
+</details>
+</div>
+</div>
+
+</details>
+<!-- ==================== Details End ==================== -->
+
+
+
+
+
+</div>
+<!-- ==================== Flag A: Install software End ==================== -->
+
+
+
+
+
+
+
+注意事項:
+> 現在のソフトウェアは**Windows 10**以降のOSのみサポートしています。<br>
+> ソフトウェアはインターネット接続環境で使用する必要があります。オフラインで使用したい場合は、スマートフォンのテザリング機能を使用してネットワークに接続し、ソフトウェアを起動して30秒待ってからネットワークを切断してください。<br>
+（[ログウィンドウ]でネットワーク検証の成功が表示されていれば、ネットワークを切断しても問題ありません）
 
 ## ソフトウェアインストール
 1. rebocap_release_v01.exe をダブルクリック（現在のバージョンは rebocap_release_v01.exe）
