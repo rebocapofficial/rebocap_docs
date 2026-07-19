@@ -63,7 +63,7 @@ title: "ソフトウェアダウンロード"
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![v01_off_1](../../../../../static/img/unboxing/expand/v01_off_1-ja.png)
+![v01_off_1](../../static/img/unboxing/expand/v01_off_1-ja.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -80,7 +80,7 @@ title: "ソフトウェアダウンロード"
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![v01_off_2](../../../../../static/img/unboxing/expand/v01_off_2-ja.png)
+![v01_off_2](../../static/img/unboxing/expand/v01_off_2-ja.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">

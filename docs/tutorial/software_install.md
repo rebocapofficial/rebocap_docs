@@ -63,7 +63,7 @@ The `Beta` version is a public test build, which works better in areas with sign
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![v01_off_1](../../../../../static/img/unboxing/expand/v01_off_1-en.png)
+![v01_off_1](../../static/img/unboxing/expand/v01_off_1-en.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -80,7 +80,7 @@ but it was found that this function could not automatically check. This has been
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![v01_off_2](../../../../../static/img/unboxing/expand/v01_off_2-en.png)
+![v01_off_2](../../static/img/unboxing/expand/v01_off_2-en.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
