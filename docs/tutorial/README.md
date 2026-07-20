@@ -7,7 +7,7 @@ title: "Be sure to read all the contents in this directory for the first use"
 - [Unboxing Inspection and Hardware Introduction](hardware_check)
 - [Introduction to Strap Usage](instroction_for_straps)
 - [Software Download and Installation](software_install)
-- [Connection and Usage](connect_and_use)
+- [Connection Guide](connect_and_use)
 
 ## Must-Know Items
 - [Magnetic Field Calibration](../ui_help_doc/control/config#magnet_calibrate)

@@ -1,9 +1,10 @@
 ---
 sidebar_position: 4
-title: "连接"
+title: "连接指南"
+sidebar_label: "连接指南"
 ---
 
-# 连接
+# 连接指南
 1. 点亮要连接的跟踪器
    > 支持的跟踪器组合模式见 [上一个章节](instroction_for_straps#follow_mode)
 2. 将接收器插入电脑USB接口中

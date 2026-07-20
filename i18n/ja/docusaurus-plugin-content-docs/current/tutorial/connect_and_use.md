@@ -1,9 +1,10 @@
 ---
 sidebar_position: 4
-title: "接続"
+title: "接続ガイド"
+sidebar_label: "接続ガイド"
 ---
 
-# 接続
+# 接続ガイド
 1. 接続するトラッカーの電源を入れる
    > サポートされているトラッカーの組み合わせモードについては [前の章](instroction_for_straps#follow_mode) を参照してください
 2. レシーバーをコンピュータのUSBポートに挿入する

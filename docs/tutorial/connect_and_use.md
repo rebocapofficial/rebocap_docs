@@ -1,9 +1,10 @@
 ---
 sidebar_position: 4
-title: "Connection"
+title: "Connection Guide"
+sidebar_label: "Connection Guide"
 ---
 
-# Connection
+# Connection Guide
 1. Power on the tracker you want to connect
    > Supported tracker combination modes can be found in the [previous chapter](instroction_for_straps#follow_mode)
 2. Insert the receiver into the computer's USB port

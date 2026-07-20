@@ -7,7 +7,7 @@ title: "首次使用務必依次閱讀本目錄下所有內容"
 - [開箱檢查及硬體介紹](hardware_check)
 - [綁帶使用介紹](instroction_for_straps)
 - [軟體下載安裝](software_install)
-- [連接和使用](connect_and_use)
+- [連接指南](connect_and_use)
 
 ## 必須了解項
 - [磁場校準](../ui_help_doc/control/config#magnet_calibrate)

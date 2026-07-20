@@ -7,7 +7,7 @@ title: "初めて使用する際は必ずこのディレクトリ内のすべて
 - [開封チェックとハードウェア紹介](hardware_check)
 - [ストラップの使用紹介](instroction_for_straps)
 - [ソフトウェアのダウンロードとインストール](software_install)
-- [接続と使用](connect_and_use)
+- [接続ガイド](connect_and_use)
 
 ## 必須理解項目
 - [磁場校正](../ui_help_doc/control/config#magnet_calibrate)
