@@ -1,5 +1,6 @@
 ---
 sidebar_position: 9
+unlisted: true
 ---
 
 # SteamVR 操作指南

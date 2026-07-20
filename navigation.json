@@ -39,11 +39,6 @@
             "path": "docs/tutorial/README.md"
           },
           {
-            "label": "SteamVR操作指南",
-            "type": "page",
-            "path": "docs/rebocap-tutorials/steamvr_guide.md"
-          },
-          {
             "label": "15 set unboxing",
             "type": "page",
             "path": "docs/rebocap-tutorials/15-set-unboxing.mdx"
