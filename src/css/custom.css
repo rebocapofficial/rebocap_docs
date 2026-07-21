@@ -178,7 +178,7 @@ g {
 
 #pagefind-search-panel .pagefind-ui__search-input {
   font-size: 1.1rem;
-  padding: 0.65rem 0.75rem;
+  padding: 0.65rem 0.75rem 0.65rem 2.5rem; /* Increased left padding for magnifying glass */
   border-radius: 0.5rem;
   width: 100%;
   box-sizing: border-box;
