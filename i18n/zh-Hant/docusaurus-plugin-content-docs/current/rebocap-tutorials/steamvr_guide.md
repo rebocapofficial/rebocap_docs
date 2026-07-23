@@ -119,7 +119,7 @@ sidebar_position: 9
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 <strong> 追蹤點的顯示和隱藏</strong><br />
- 在軟體 [ 配置 SteamVR 輸出節點 ] 裡控制追蹤點的顯示和隱藏，<br />
+ 在軟體 [ 配置 SteamVR 输出节点 ] 裡控制追蹤點的顯示和隱藏，<br />
  無需在 SteamVR 的管理選單中操作。<br />
 
  <details className="plain-details"><summary>註</summary>

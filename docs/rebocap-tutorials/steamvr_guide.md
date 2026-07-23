@@ -119,7 +119,7 @@ Re-enabling Rebocap add-ons requires restarting SteamVR.
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 <strong> Showing and Hiding Tracking Points</strong><br />
- Control tracking point visibility in the software under [ Configure SteamVR Output Nodes ],<br />
+ Control tracking point visibility in the software under [ Set SteamVR Nodes ],<br />
  without needing to operate in SteamVR's management menu.<br />
 
  <details className="plain-details"><summary>Note</summary>

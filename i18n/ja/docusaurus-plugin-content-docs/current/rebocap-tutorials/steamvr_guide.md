@@ -119,7 +119,7 @@ Rebocapのアドオンを再有効化した後は、SteamVRの再起動が必要
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 <strong> トラッキング点の表示と非表示</strong><br />
- ソフトウェアの [ SteamVR出力ノードの設定 ] でトラッキング点の表示/非表示を制御できます。<br />
+ ソフトウェアの [ SteamVR 出力ノード設定 ] でトラッキング点の表示/非表示を制御できます。<br />
  SteamVRの管理メニューで操作する必要はありません。<br />
 
  <details className="plain-details"><summary>注</summary>
