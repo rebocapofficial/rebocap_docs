@@ -85,7 +85,6 @@ const config: Config = {
 
   markdown: {
     format: 'md',
-    mermaid: true,
   },
 
   presets: [
@@ -115,7 +114,6 @@ const config: Config = {
     ],
   ],
 
-  themes: ['@docusaurus/theme-mermaid'],
 
   plugins: [
     require.resolve('docusaurus-plugin-image-zoom'),
