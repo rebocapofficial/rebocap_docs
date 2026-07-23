@@ -98,7 +98,7 @@ const config: Config = {
           // Locale-aware sidebar — uses DOCUSAURUS_CURRENT_LOCALE
           // env var to select the right language at build time.
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/rebocapofficial/rebocap_docs/tree/main/',
+          // editUrl: 'https://github.com/rebocapofficial/rebocap_docs/tree/main/',
           showLastUpdateTime: true,
           numberPrefixParser: false,
         },
@@ -114,6 +114,8 @@ const config: Config = {
       },
     ],
   ],
+
+  themes: ['@docusaurus/theme-mermaid'],
 
   plugins: [
     require.resolve('docusaurus-plugin-image-zoom'),

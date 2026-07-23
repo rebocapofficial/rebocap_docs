@@ -1,0 +1,66 @@
+
+
+
+当前有2个网页服务器，
+我们git过去的网页服务器为测试服务器，他的网址为：doc.hamer.xin 
+还有个正式服务器，他的网址为doc.rebocap.com
+
+因为软件打开正式服有一些特定的后缀什么的不能改变
+
+
+对于多国语言来说
+简体中文 zh_cn
+英语 en_US
+日本语 ja_JP
+繁体中文 zh_TW
+
+
+
+以下rebocap的操作软件里点击帮助或问号按钮时会打开的 doc.rebocap.com 的所有地址
+
+
+https://doc.rebocap.com/zh_cn/ui_help_doc/control/connect.html#status
+
+
+
+
+https://doc.rebocap.com/zh_cn/ui_help_doc/control/connect.html#calibrate
+
+
+
+https://doc.rebocap.com/zh_cn/ui_help_doc/control/connect.html#vr_pannel
+
+
+
+https://doc.rebocap.com/zh_cn/ui_help_doc/control/cap_param.html#up_leg_com
+
+
+https://doc.rebocap.com/zh_cn/ui_help_doc/control/cap_param.html#lower_leg_com
+
+
+https://doc.rebocap.com/zh_cn/ui_help_doc/control/cap_param.html#other_com
+
+
+https://doc.rebocap.com/zh_cn/ui_help_doc/control/skeleton_setting.html#manual_skeleton
+
+
+https://doc.rebocap.com/zh_cn/ui_help_doc/control/skeleton_setting.html#skeleton_import
+
+
+https://doc.rebocap.com/zh_cn/ui_help_doc/control/config.html#hardware_config
+
+
+https://doc.rebocap.com/zh_cn/ui_help_doc/control/config.html#system_config
+
+https://doc.rebocap.com/zh_cn/tutorial/software_install.html
+
+
+https://doc.rebocap.com/zh_cn/ui_help_doc/control/connect.html#cal_pc_panel
+
+
+
+
+
+
+
+

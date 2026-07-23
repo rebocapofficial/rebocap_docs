@@ -1,0 +1,192 @@
+Created At: 2026-07-13T16:03:00Z
+Completed At: 2026-07-13T16:03:02Z
+
+				The command completed successfully.
+				Output:
+				<truncated 193 lines>
++- 把S Pose的弯腰 + 低头拆分出来单独记录。<br />
++- 可以避免因 S 姿态引起的身体畸变<br />（常见于坐下后骨架系统向侧面倾斜）。
++</div>
++</div>
++<!-- ==================== 步骤 4 结束 ==================== -->
++
++</div>
++
++
++
++
++<!-- ==================== 旗帜 校准姿势 结束 ==================== -->
++
++
++
++<!-- ============ 标题 ======== 检查包裹内容 ==================== -->
++## <span class="tutorial-main-heading" style="background: #cbddff;">PC模式 - 外部程序连接</span>
++
++<!-- ==================== 旗帜 软件内录制 开始 ==================== -->
++<div style="border-left: 6px solid #ffe6cc; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
++
++## <span class="tutorial-heading-flag" style="background: #ffe6cc;">软件内录制</span>
++
++<div style="display: flex; flex-direction: row; gap: 30px; flex-wrap: wrap; align-items: flex-start; margin: 25px 0;">
++<div style="flex: 1; min-width: 250px; text-align: center;">
++
++![record_setup](../../../../../static/img/unboxing/record_setup.png)
++
++</div>
++<div style="flex: 1.5; min-width: 300px" class="tutorial-step-text">
++- 使用建议:<br />
++- .rebo_anim 为软件原生数据，对于较长录制建议导出作为备份，并且可以使用【离线播放】重播。<br />
++- .bvh不能使用含有中文的文件夹路径保存。<br />
++- 直接储存的fbx为传统动画所用的骨架文件，需要在编辑工具中重映射使用，
++多数时候，不要开启【根动画】,避免导出文件后出错。
++</div>
++</div>
++
++</div>
++<!-- ==================== 旗帜 软件内录制 结束 ==================== -->
++
++<!-- ==================== 旗帜 虚拟偶像（VTube） 开始 ==================== -->
++<div style="border-left: 6px solid #ffd6eb; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
++
++## <span class="tutorial-heading-flag" style="background: #ffd6eb;">虚拟偶像（VTube）</span>
++
++<div style="display: flex; flex-direction: row; gap: 30px; flex-wrap: wrap; align-items: flex-start; margin: 25px 0;">
++<div style="flex: 1; min-width: 250px; text-align: center;">
++
++![vmc_setup](../../../../../static/img/unboxing/vmc_setup.png)
++
++</div>
++<div style="flex: 1.5; min-width: 300px" class="tutorial-step-text">
++
++- 云镜、抖音直播伴侣、MetaVance等软件做有对应功能直接使用。<br />
++- 支持使用VMC通道向Warudo这类偶像软件连接。<br />
++
++
++<!-- ============ 跳转 网页 ==================== -->
++
++<div style="margin-top: 15px; margin-bottom: 20px; display: flex; gap: 12px; flex-wrap: wrap;">
++  <a href="https://www.bilibili.com/video/BV1z7hFzfEw6/" target="_blank" class="button button--primary" style="text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; font-size: 1.0rem; padding: 6px 18px;">
++    连接云镜 
++  </a>
++  <a href="https://www.bilibili.com/video/BV1fPbwzbEak" target="_blank" class="button button--primary" style="text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; font-size: 1.0rem; padding: 6px 18px;">
++    连接 抖音·直播伴侣
++  <a href="https://www.bilibili.com/video/BV1fPbwzbEak" target="_blank" class="button button--primary" style="text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; font-size: 1.0rem; padding: 6px 18px;">
++    连接Warudo
++  </a>
+ </div>
++
++
++</div>
++</div>
++
+ </div>
++<!-- ==================== 旗帜 虚拟偶像（VTube） 结束 ==================== -->
++
++<!-- ==================== 旗帜 直连插件 开始 ==================== -->
++<div style="border-left: 6px solid #d6f5ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
++
++## <span class="tutorial-heading-flag" style="background: #d6f5ff;">直连插件</span>
++
++<!-- ============ 跳转 网页 ==================== -->
++
++<div style="margin-top: 15px; margin-bottom: 20px; display: flex; gap: 12px; flex-wrap: wrap;">
++  <a href="https://doc.rebocap.com/zh_cn/plugins/blender.html" target="_blank" class="button button--primary" style="text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; font-size: 1.0rem; padding: 6px 18px;">
++    Blender 
++  </a>
++  <a href="https://doc.rebocap.com/zh_cn/plugins/ue.html" target="_blank" class="button button--primary" style="text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; font-size: 1.0rem; padding: 6px 18px;">
++    UE 
++  <a href="https://doc.rebocap.com/zh_cn/plugins/unity.html" target="_blank" class="button button--primary" style="text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; font-size: 1.0rem; padding: 6px 18px;">
++    Unity 
++  </a>
++  <a href="https://doc.rebocap.com/zh_cn/SDK/" target="_blank" class="button button--primary" style="text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; font-size: 1.0rem; padding: 6px 18px;">
++    SDK 
++  </a>
++</div>
++
++
++
++
++</div>
++<!-- ==================== 旗帜 直连插件 结束 ==================== -->
++
++
++
++
++
++
++
++
++
++
++
++
+ 
+ 
+ 
+ <!-- ============= 标题 ======= 进入SteamVR ==================== -->
+-## <span class="tutorial-main-heading" style="background: #c8e0ff;">7 - 进入 SteamVR</span>
++## <span class="tutorial-main-heading" style="background: #c8e0ff;">VR模式 -  外部程序连接</span>
+ 
+ <!-- ==================== 旗帜 Connection 开始 ==================== -->
+ <div style="border-left: 6px solid #6481ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+@@ -607,10 +824,51 @@ sidebar_position: 7
+ </div>
+ <!-- ==================== 旗帜 Connection 结束 ==================== -->
+ 
++
++<!-- ==================== 旗帜 传感器搭配与输出模式 开始 ==================== -->
++<div style="border-left: 6px solid #b3ded4; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
++
++## <span class="tutorial-heading-flag" style="background: #e6f4f0;">VR游戏点数搭配与输出模式</span>
++
++<!-- 左右分栏：左图（修长人像）右图与字（说明文字） -->
++<div style="display: flex; flex-direction: row; gap: 30px; flex-wrap: wrap; align-items: center;">
++  <!-- 左侧人像（限制宽度为 30%，避免过大） -->
++  <div style="flex: 1; min-width: 200px; max-width: 280px; text-align: center;">
++
++
++![15_wear_body_vr]( ../../../../../static/img/unboxing/15_wear_body_vr.png )
++
++
++  </div>
++  
++  <!-- 右侧说明与对比图 -->
++  <div style="flex: 2; min-width: 300px;" class="tutorial-step-text">
++    <div style="margin-bottom: 20px; text-align: center;">
++
++
++![vr_tracker_point]( ../../../../../static/img/unboxing/vr_tracker_point.png )
++
++
++    </div>
++    <p style="margin-bottom: 15px;">
++      💡 对于VR游戏的使用有 10、8、6 点传感器这3种搭配，如果不使用脚掌传感器，请保持【AI引擎】开启。
++    </p>
++    <p style="margin-bottom: 15px;">
++      🧤 使用【替换控制器位置】或追踪手套时，可以使用至14个追踪器。
++    </p>
++    <p style="margin-bottom: 15px;">
++      💻 使用【VR 输出】时（模拟头显坐标），可以使用至15个追踪器。<em>（仅技术型玩家可探索）</em>
++    </p>
++  </div>
++</div>
++
++</div>
++<!-- ==================== 旗帜 传感器搭配与输出模式 结束 ==================== -->
++
+ <!-- ==================== 旗帜 VR – Calibration posture guide 开始 ==================== -->
+ <div style="border-left: 6px solid #f1e3ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+ 
+-## <span class="tutorial-heading-flag" style="background: #f1e3ff;">VR – 校准姿态图鉴</span>
++## <span class="tutorial-heading-flag" style="background: #f1e3ff;">校准姿态图鉴</span>
+ 
+ <!-- ==================== 步骤 1：A pose 开始 ==================== -->
+ <div style="display: flex; flex-direction: row; gap: 30px; flex-wrap: wrap; align-items: flex-start; margin: 25px 0;">
+@@ -725,3 +983,6 @@ sidebar_position: 7
+ 
+ </div>
+ <!-- ==================== 旗帜 Enter game (example: VRChat) 结束 ==================== -->
++
++
++
+

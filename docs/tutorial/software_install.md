@@ -13,10 +13,10 @@ The `Beta` version is a public test build, which works better in areas with sign
 
 
 
-**Stable Release** -  [Download Rebocap V01](/img/files/rebocap_release_v01.exe)
+**Stable Release** -  [Download Rebocap V01](https://doc.rebocap.com/img/files/rebocap_release_v01.exe)
 
 
-**Beta Version** - [Download Rebocap V02 Beta02](/img/files/rebocap_release_v02_beta02.exe)
+**Beta Version** - [Download Rebocap V02 Beta02](https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe)
 
 
 

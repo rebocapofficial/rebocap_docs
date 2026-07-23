@@ -195,16 +195,7 @@ g {
 }
 
 #pagefind-search-panel .pagefind-ui__search-clear {
-  position: absolute;
-  right: 1rem;
-  top: 0.7rem;
-  background: none !important;
-  border: none;
-  font-size: 1.3rem;
-  cursor: pointer;
-  color: #606770;
-  padding: 0;
-  line-height: 1;
+  display: none !important;
 }
 
 #pagefind-search-panel .pagefind-ui__result {
@@ -226,6 +217,66 @@ g {
 }
 [data-theme="dark"] #pagefind-search-panel .pagefind-ui__result-excerpt {
   color: #b0b3b8 !important;
+}
+
+/* ============================================================
+ *  Horizontal Mindmap Tree Styling (Markdown List Based)
+ * ============================================================ */
+.horizontal-tree-container {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: var(--ifm-code-background);
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+/* Branch level ul */
+.horizontal-tree-container > ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Branch level li (Main conditions) */
+.horizontal-tree-container > ul > li {
+  padding-left: 1.2rem !important;
+  border-left: 3px solid var(--ifm-color-primary);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ifm-color-primary-darker);
+  margin: 0 !important;
+}
+
+/* Leaf level ul */
+.horizontal-tree-container > ul > li > ul {
+  list-style: none !important;
+  padding-left: 0.5rem !important;
+  margin-top: 0.6rem !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-weight: normal;
+}
+
+/* Leaf level li (Recommendations) */
+.horizontal-tree-container > ul > li > ul > li {
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 6px;
+  padding: 0.65rem 1rem;
+  font-size: 0.93rem;
+  line-height: 1.55;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  color: var(--ifm-font-color-base);
+  margin: 0 !important;
+}
+
+.horizontal-tree-container > ul > li > ul > li strong {
+  color: var(--ifm-color-primary-dark);
 }
 
 /* Hide keyboard shortcut on mobile */

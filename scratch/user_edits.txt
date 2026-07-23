@@ -1,0 +1,77 @@
+Created At: 2026-07-13T17:26:12Z
+Completed At: 2026-07-13T17:26:15Z
+
+				The command completed successfully.
+				Output:
+				<truncated 143 lines>
+content":"Created At: 2026-07-13T16:04:25Z\nCompleted At: 2026-07-13T16:04:27Z\n\n\t\t\t\tThe command completed success
+fully.\n\t\t\t\tOutput:\n\t\t\t\t<truncated 198 lines>\n+\n+</div>\n+\n+\n+\n+\n+<!-- ==================== � У׼�
+� � ==================== -->\n+\n+\n+\n+<!-- ============ � ======== � ==================== -->\n+## 
+<span class=\"tutorial-main-heading\" style=\"background: #cbddff;\">PCģʽ - �ⲿ�</span>\n+\n+<!-- ===========
+========= � �¼� �ʼ ==================== -->\n+<div style=\"border-left: 6px solid #ffe6cc; padding-left: 20
+px; margin-top: 10px; margin-bottom: 20px;\">\n+\n+## <span class=\"tutorial-heading-flag\" style=\"background: #ffe6cc
+;\">�¼�</span>\n+\n+<div style=\"display: flex; flex-direction: row; gap: 30px; flex-wrap: wrap; align-items: fl
+ex-start; margin: 25px 0;\">\n+<div style=\"flex: 1; min-width: 250px; text-align: center;\">\n+\n+![record_setup](../.
+./../../../static/img/unboxing/record_setup.png)\n+\n+</div>\n+<div style=\"flex: 1.5; min-width: 300px\" class=\"tutor
+ial-step-text\">\n+- ʹ�ý�:<br />\n+- .rebo_anim Ϊ�ԭ�ݣ�ڽϳ�¼�ƽ�鵼�Ϊ�ݣ�ҿ�ʹ�á�߲�
+�ز�<br />\n+- .bvh�ʹ�ú�ĵ�ļ�·�档<br />\n+- ֱ�Ӵ�fbxΪ�ͳ�õĹǼ�ļ�Ҫ�ڱ༭�
+�ӳ�ʹ�ã�\n+�ʱ�򣬲�Ҫ�,�⵼�ļ�\n </div>\n </div>\n \n+</div>\n+<!-- ==================
+== � �¼� � ==================== -->\n+\n+<!-- ==================== � �ż�VTube� �ʼ ===========
+========= -->\n+<div style=\"border-left: 6px solid #ffd6eb; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;
+\">\n+\n+## <span class=\"tutorial-heading-flag\" style=\"background: #ffd6eb;\">�ż�VTube�</span>\n+\n+<div sty
+le=\"display: flex; flex-direction: row; gap: 30px; flex-wrap: wrap; align-items: flex-start; margin: 25px 0;\">\n+<div
+ style=\"flex: 1; min-width: 250px; text-align: center;\">\n+\n+![vmc_setup](../../../../../static/img/unboxing/vmc_set
+up.png)\n+\n+</div>\n+<div style=\"flex: 1.5; min-width: 300px\" class=\"tutorial-step-text\">\n+\n+- �ƾ�ֱ�
+�MetaVance�ж�Ӧ�ֱ�ʹ�á�<br />\n+- ֧�ʹ�VMCͨ�Warudo�ż�ӡ�<br />\n+\n+\n+<!-- ===========
+= �ת �ҳ ==================== -->\n+\n+<div style=\"margin-top: 15px; margin-bottom: 20px; display: flex; gap: 12px;
+ flex-wrap: wrap;\">\n+  <a href=\"https://www.bilibili.com/video/BV1z7hFzfEw6/\" target=\"_blank\" class=\"button butt
+on--primary\" style=\"text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; font-size: 1
+.0rem; padding: 6px 18px;\">\n+    �ƾ� \n+  </a>\n+  <a href=\"https://www.bilibili.com/video/BV1fPbwzbEak\" targe
+t=\"_blank\" class=\"button button--primary\" style=\"text-decoration: none; border-radius: 6px; display: inline-block;
+ font-weight: bold; font-size: 1.0rem; padding: 6px 18px;\">\n+    � �ֱ�\n+  <a href=\"https://www.bilibil
+i.com/video/BV1fPbwzbEak\" target=\"_blank\" class=\"button button--primary\" style=\"text-decoration: none; border-rad
+ius: 6px; display: inline-block; font-weight: bold; font-size: 1.0rem; padding: 6px 18px;\">\n+    �Warudo\n+  </a>\
+n+</div>\n+\n+\n+</div>\n+</div>\n+\n+</div>\n+<!-- ==================== � �ż�VTube� � ==================
+== -->\n+\n+<!-- ==================== � ֱ� �ʼ ==================== -->\n+<div style=\"border-left: 6px solid
+ #d6f5ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;\">\n+\n+## <span class=\"tutorial-heading-flag\" s
+tyle=\"background: #d6f5ff;\">ֱ�</span>\n+\n+<!-- ============ �ת �ҳ ==================== -->\n+\n+<div style
+=\"margin-top: 15px; margin-bottom: 20px; display: flex; gap: 12px; flex-wrap: wrap;\">\n+  <a href=\"https://doc.reboc
+ap.com/zh_cn/plugins/blender.html\" target=\"_blank\" class=\"button button--primary\" style=\"text-decoration: none; b
+order-radius: 6px; display: inline-block; font-weight: bold; font-size: 1.0rem; padding: 6px 18px;\">\n+    Blender \n+
+  </a>\n+  <a href=\"https://doc.rebocap.com/zh_cn/plugins/ue.html\" target=\"_blank\" class=\"button button--primary\"
+ style=\"text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; font-size: 1.0rem; paddin
+g: 6px 18px;\">\n+    UE \n+  <a href=\"https://doc.rebocap.com/zh_cn/plugins/unity.html\" target=\"_blank\" class=\"bu
+tton button--primary\" style=\"text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; fon
+t-size: 1.0rem; padding: 6px 18px;\">\n+    Unity \n+  </a>\n+  <a href=\"https://doc.rebocap.com/zh_cn/SDK/\" target=\
+"_blank\" class=\"button button--primary\" style=\"text-decoration: none; border-radius: 6px; display: inline-block; fo
+nt-weight: bold; font-size: 1.0rem; padding: 6px 18px;\">\n+    SDK \n+  </a>\n+</div>\n+\n+\n+\n+\n+</div>\n+<!-- ====
+================ � ֱ� � ==================== -->\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n \n \n <!-- ======
+======= � ======= �SteamVR ==================== -->\n-## <span class=\"tutorial-main-heading\" style=\"background
+: #c8e0ff;\">7 - � SteamVR</span>\n+## <span class=\"tutorial-main-heading\" style=\"background: #c8e0ff;\">VRģʽ -
+  �ⲿ�</span>\n \n <!-- ==================== � Connection �ʼ ==================== -->\n <div style=\"borde
+r-left: 6px solid #6481ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;\">\n@@ -607,10 +824,43 @@ sidebar
+_position: 7\n </div>\n <!-- ==================== � Connection � ==================== -->\n \n+\n+<!-- ==========
+========== � �ģʽ �ʼ ==================== -->\n+<div style={{ borderLeft: '6px solid #b3ded4', pad
+dingLeft: '20px', marginTop: '10px', marginBottom: '20px' }}>\n+\n+## <span class=\"tutorial-heading-flag\" style={{ ba
+ckground: '#e6f4f0' }}>VR�Ϸ�ģʽ</span>\n+\n+<!-- �ҷ�ͼ�޳�ͼ�֣�˵�֣� -->\n+<
+div style={{ display: 'flex', flexDirection: 'row', gap: '30px', flexWrap: 'wrap', alignItems: 'center' }}>\n+  <!-- �
+�ƿ�Ϊ 30%� -->\n+  <div style={{ flex: '1', minWidth: '200px', maxWidth: '280px', textAlign: 'c
+enter' }}>\n+    <img src={require('../../../../../static/img/unboxing/15_wear_body_vr.png').default} alt=\"15 Wear Bod
+y Avatar\" style={{ maxWidth: '100%', height: 'auto', borderRadius: '8px' }} />\n+  </div>\n+  \n+  <!-- �Ҳ�˵�Ա�
+ͼ -->\n+  <div style={{ flex: '2', minWidth: '300px' }} class=\"tutorial-step-text\">\n+    <div style={{ marginBottom
+: '20px', textAlign: 'center' }}>\n+      <img src={require('../../../../../static/img/unboxing/vr_tracker_point.png').
+default} alt=\"VR Game Modes\" style={{ maxWidth: '100%', height: 'auto', borderRadius: '8px' }} />\n+    </div>\n+    
+<p style={{ marginBottom: '15px' }}>\n+      ?? �VR�Ϸ�ʹ� 10�8�6 �㴫�3�ִ�䣬�ʹ�ý�ƴ�뱣
+�֡�AI�桿�\n+    </p>\n+    <p style={{ marginBottom: '15px' }}>\n+      ?? ʹ�á�滻�λ�á�׷�ʱ�
+ʹ�14�׷�\n+    </p>\n+    <p style={{ marginBottom: '15px' }}>\n+      ?? ʹ�á�VR �ʱ�ģ�ͷ�꣩�
+�ʹ�15�׷�<em>�ҿ�̽�</em>\n+    </p>\n+  </div>\n+</div>\n+\n+</div>\n+<!-- ==================
+== � �ģʽ � ==================== -->\n+\n <!-- ==================== � VR �C Calibration posture
+ guide �ʼ ==================== -->\n <div style=\"border-left: 6px solid #f1e3ff; padding-left: 20px; margin-top: 10p
+x; margin-bottom: 20px;\">\n \n-## <span class=\"tutorial-heading-flag\" style=\"background: #f1e3ff;\">VR �C У׼�̬ͼ
+�</span>\n+## <span class=\"tutorial-heading-flag\" style=\"background: #f1e3ff;\">У׼�̬ͼ�</span>\n \n <!-- =====
+=============== � 1�A pose �ʼ ==================== -->\n <div style=\"display: flex; flex-direction: row; gap: 30
+px; flex-wrap: wrap; align-items: flex-start; margin: 25px 0;\">\n@@ -725,3 +975,6 @@ sidebar_position: 7\n \n </div>\n
+ <!-- ==================== � Enter game (example: VRChat) � ==================== -->\n+\n+\n+\n\n"}
+
+
+

@@ -21,10 +21,10 @@ title: "软件下载"
 
 
 
-**正式版本** -  [下载 Rebocap V01](/img/files/rebocap_release_v01.exe)
+**正式版本** -  [下载 Rebocap V01](https://doc.rebocap.com/img/files/rebocap_release_v01.exe)
 
 
-**Beta版本** - [下载 Rebocap V02 Beta02](/img/files/rebocap_release_v02_beta02.exe)
+**Beta版本** - [下载 Rebocap V02 Beta02](https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe)
 
 
 

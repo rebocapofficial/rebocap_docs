@@ -47,6 +47,11 @@
             "label": "6 set unboxing",
             "type": "page",
             "path": "docs/rebocap-tutorials/6-set-unboxing.mdx"
+          },
+          {
+            "label": "SteamVR Guide",
+            "type": "page",
+            "path": "docs/rebocap-tutorials/steamvr_guide.md"
           }
         ]
       },
@@ -119,7 +124,7 @@
           {
             "label": "How to Identify Whether the Magnetic Field Environment is Good",
             "type": "page",
-            "path": "docs/QA/magnet.md"
+            "path": "docs/QA/magnet.mdx"
           }
         ]
       },

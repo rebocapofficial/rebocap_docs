@@ -13,10 +13,10 @@ title: "ソフトウェアダウンロード"
 
 
 
-**正式版 (Release)** -  [Rebocap V01 をダウンロード](/img/files/rebocap_release_v01.exe)
+**正式版 (Release)** -  [Rebocap V01 をダウンロード](https://doc.rebocap.com/img/files/rebocap_release_v01.exe)
 
 
-**Beta版** - [Rebocap V02 Beta02 をダウンロード](/img/files/rebocap_release_v02_beta02.exe)
+**Beta版** - [Rebocap V02 Beta02 をダウンロード](https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe)
 
 
 
