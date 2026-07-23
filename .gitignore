@@ -41,6 +41,8 @@ scripts/proxy/
 # Secrets & credentials (never commit real configs)
 .env
 scripts/proxy/xray-config.json
+deepseek的api_使用这个api但不要把这个文件上传到git.txt
+
 
 # Deploy runtime
 .deploy-prev-manifest.txt

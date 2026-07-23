@@ -6,9 +6,11 @@ declare global {
 
 let loaded = false;
 
-async function ensurePagefind(): Promise<void> {
-  if (loaded) return;
-  if (window.PagefindUI) { loaded = true; return; }
+async function ensurePagefind(): Promise<boolean> {
+  if (typeof window !== "undefined" && window.PagefindUI) {
+    loaded = true;
+    return true;
+  }
 
   return new Promise((resolve) => {
     if (!document.querySelector('link[href*="pagefind-ui"]')) {
@@ -20,7 +22,14 @@ async function ensurePagefind(): Promise<void> {
     const script = document.createElement("script");
     script.src = "/pagefind/pagefind-ui.js";
     script.async = true;
-    script.onload = () => { loaded = true; resolve(); };
+    script.onload = () => {
+      const isOk = typeof window.PagefindUI === "function";
+      loaded = isOk;
+      resolve(isOk);
+    };
+    script.onerror = () => {
+      resolve(false);
+    };
     document.head.appendChild(script);
   });
 }
@@ -29,7 +38,7 @@ let container: HTMLDivElement | null = null;
 let backdrop: HTMLDivElement | null = null;
 
 export async function openSearch(): Promise<void> {
-  await ensurePagefind();
+  const isPagefindAvailable = await ensurePagefind();
 
   if (!container) {
     // Thin dark backdrop (click to close)
@@ -48,7 +57,9 @@ export async function openSearch(): Promise<void> {
       "display:none;position:fixed;top:4rem;left:50%;" +
       "transform:translateX(-50%);z-index:1001;" +
       "width:min(680px,92vw);max-height:70vh;" +
-      "background:#fff;border-radius:12px;" +
+      "background:var(--ifm-card-background-color, #fff);" +
+      "color:var(--ifm-font-color-base, #1c1e21);" +
+      "border-radius:12px;" +
       "box-shadow:0 8px 40px rgba(0,0,0,0.18);" +
       "padding:1.5rem;overflow-y:auto;";
 
@@ -57,12 +68,28 @@ export async function openSearch(): Promise<void> {
     container.appendChild(target);
     document.body.appendChild(container);
 
-    new window.PagefindUI!({
-      element: "#pagefind-search-target",
-      showImages: false,
-      showSubResults: true,
-      resetStyles: true,
-    });
+    if (isPagefindAvailable && window.PagefindUI) {
+      new window.PagefindUI({
+        element: "#pagefind-search-target",
+        showImages: false,
+        showSubResults: true,
+        resetStyles: true,
+      });
+    } else {
+      target.innerHTML = `
+        <div style="padding: 0.5rem 0.25rem; line-height: 1.6;">
+          <h4 style="margin: 0 0 0.5rem 0; color: #6366f1; display: flex; align-items: center; gap: 0.4rem;">
+            💡 本地开发模式提示
+          </h4>
+          <p style="margin: 0 0 0.75rem 0; font-size: 0.9rem; opacity: 0.85;">
+            传统 Pagefind 关键词静态索引需要在打包生成发布版本时自动构建（运行 <code>npm run build</code> 后生效）。
+          </p>
+          <div style="padding: 0.75rem 1rem; border-radius: 8px; background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.25); font-size: 0.9rem;">
+            ✨ <strong>请直接点击导航栏的【AI 智搜】按钮</strong>，即可实时体验基于 DeepSeek 大模型的智能文档问答！
+          </div>
+        </div>
+      `;
+    }
   }
 
   backdrop!.style.display = "block";
