@@ -169,6 +169,15 @@ export default function AiSearchModal({ isOpen, onClose }: AiSearchModalProps): 
         body: JSON.stringify({ query: q, contextDocs, locale }),
       });
 
+      const contentType = res.headers.get('content-type') || '';
+      if (!contentType.includes('application/json')) {
+        throw new Error(
+          locale.startsWith('zh')
+            ? '部署服务器未开启 /api/ai-search 后端代理服务。请检查生产服务器配置（如 Vercel / Nginx 接口代理）。'
+            : 'The deployment server has not enabled the /api/ai-search backend service. Please check your server setup.'
+        );
+      }
+
       const data = await res.json();
       if (!res.ok) {
         throw new Error(data.error || 'DeepSeek API 响应异常');
