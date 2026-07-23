@@ -1,52 +1,77 @@
 ---
 sidebar_position: 5
-title: "首次使用务必依次阅读本目录下所有内容"
+title: "新手入门与快速指南"
 ---
 
-## 首次使用务必依次阅读本目录下所有内容
-- [硬件说明](hardware_check)
-- [绑带使用介绍](instroction_for_straps)
-- [软件下载安装](software_install)
-- [连接指南](connect_and_use)
+# 新手入门与快速指南
 
-## 必须了解项
-- [磁场校准](../ui_help_doc/control/config#magnet_calibrate)
+欢迎使用 Rebocap！如果您是第一次收到并使用 Rebocap 追踪器，建议根据您所购买的设备套装选择对应的全流程开箱使用教程。
 
-:::danger 首次充电一般需要做磁场校准，后续建议间隔一段时间完成一次磁场校准
+---
 
+## 🚀 1. 按套装快速开始
 
-- 磁场校准看可以参考文档中（上边磁场校准链接下方），和社区合作完成的校准视频。
-- 磁场校准必须掌握，并且其中注意事项非常重要，如果未按照注意事项来，那么校准结果将会错误，磁场校准可以反复校准。
+请根据您持有的设备套装选择对应的教程，教程将包含包裹检查、绑带佩戴、软件与固件更新、设备校准及进入 SteamVR 的完整流程：
 
+<div style="display: flex; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+  <a href="/zh-Hans/docs/rebocap-tutorials/6-set-unboxing" style="flex: 1; min-width: 260px; padding: 16px 20px; border: 1px solid var(--ifm-color-primary-light); border-radius: 8px; text-decoration: none; background-color: var(--ifm-card-background-color, #f8f9fa);">
+    <h3 style="margin: 0 0 8px 0; color: var(--ifm-color-primary);">📦 6 点套装开箱到使用</h3>
+    <p style="margin: 0; font-size: 0.9em; color: var(--ifm-font-color-base);">包含：包裹检查、绑带佩戴、软件固件、陀螺仪与磁场校准、进入 SteamVR 等完整步骤。</p>
+  </a>
+
+  <a href="/zh-Hans/docs/rebocap-tutorials/15-set-unboxing" style="flex: 1; min-width: 260px; padding: 16px 20px; border: 1px solid var(--ifm-color-primary-light); border-radius: 8px; text-decoration: none; background-color: var(--ifm-card-background-color, #f8f9fa);">
+    <h3 style="margin: 0 0 8px 0; color: var(--ifm-color-primary);">📦 15 点套装开箱到使用</h3>
+    <p style="margin: 0; font-size: 0.9em; color: var(--ifm-font-color-base);">包含：快拆与宽绑带安装、全身体位佩戴、软件固件、校准图鉴及深度设置。</p>
+  </a>
+</div>
+
+---
+
+## ⚠️ 2. 核心注意事项（磁场校准）
+
+- 磁场校准是保证空间追踪精度的核心关键步骤。建议在**首次充电完成后**，或**更换使用房间环境后**及时进行磁场校准。
+- 详细校准操作与注意事项请参阅：👉 **[磁场环境 QA / 磁场校准图鉴](../QA/magnet)**
+
+:::danger 磁场校准注意事项
+- 磁场校准必须熟练掌握，注意事项非常重要。若未按照规范操作，可能会导致校准结果偏差。
+- 磁场校准可以随时反复重新校准，若遇到姿态漂移可优先尝试重新磁校准。
 :::
 
+---
 
+## 🎮 3. 外部软件与游戏连接
 
-<a id="video_tutorial"></a>
+完成基础校准后，您可以将动作数据输出至以下软件与游戏：
 
-## 视频教程
-视频教程为辅助选项，文档的介绍更详细，并且关于过程中遇到的问题也会提到。另外，视频教程为基础教程，不包含链接到第三方软件，例如 [SteamVR 以及其它第三方直播软件连接请查看这里](https://doc.rebocap.com/zh_cn/tutorial/connect_and_use.html#third_party)，[插件如 Blender、Unity、UE等请查看这里](../plugins/plugins)，更多问题可以到[社区提问](../README#community)
+- **SteamVR / VRChat**：请查阅全新编制的 👉 **[SteamVR 操作指南](../rebocap-tutorials/steamvr_guide)**（包含 SteamVR 边界配置、节点显示与隐藏、常见连接排查）。
+- **3D 动画与第三方插件**：如需接入 Blender、Unity、UE 或 Vtuber 软件，请查看 👉 **[直连插件与应用接入](../plugins/plugins)**。
 
-:::danger 如果需要更好的效果，或者遇到各种问题，请完整阅读文字版本教程
+---
 
+## 📺 4. 视频教程与社区支持
 
-- 比如脚底穿戴方式影响很大
-- 比如是否需要开启抗磁
-- 比如是否需要打开 AI 引擎
-- 怎么和其它软件连接
+视频教程为辅助学习选项，文字版教程包含更详细的问题排查与细节说明。
 
+:::info 首次使用视频教程
+以下是与社区成员合作创建的首次使用教程视频，建议打开声音完整观看一遍后再上手操作：
+
+[首次使用教程视频 (Bilibili)](https://www.bilibili.com/video/BV1vb66Y2EeD)
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113758953276032&bvid=BV1vb66Y2EeD&cid=27665304028&p=1&autoplay=0&muted=0&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%; height: 400px; margin-top: 10px;"></iframe>
 :::
 
-
-### 
-:::info 以下是和社区成员合作创建的首次使用教程视频，建议打开声音完成观看，看完一遍以后再上手操作。
-
-
-[首次使用教程视频](https://www.bilibili.com/video/BV1vb66Y2EeD)
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113758953276032&bvid=BV1vb66Y2EeD&cid=27665304028&p=1&autoplay=0&muted=0&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
+:::danger 常见排查与效果优化提示
+如果需要获得更好的动作捕捉效果或遇到使用疑问，请确保阅读文字版详细教程：
+- 脚底追踪器的穿戴方向与松紧度对接地防滑影响很大；
+- 强磁干扰环境下建议了解是否需要开启抗磁；
+- 未穿戴足部追踪器时，可了解是否需要打开 AI 引擎自动预测姿态；
+- 更多疑难解答可随时到 [社区提问与交流](../README#community)。
 :::
 
+---
 
-
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+### 📂 单项教程快速回顾
+如需单独查阅特定基础模块，可访问以下单项说明：
+- [硬件与配件检查](hardware_check)
+- [绑带使用与佩戴介绍](instroction_for_straps)
+- [软件下载与安装说明](software_install)
+- [基础连接指南](connect_and_use)
