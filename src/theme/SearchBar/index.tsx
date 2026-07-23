@@ -64,30 +64,34 @@ function SearchButton(): React.ReactNode {
     return () => document.removeEventListener("keydown", handler);
   }, []);
 
+  const SHOW_AI_SEARCH = false; // 临时隐藏开关：需要重新开启时设为 true 即可
+
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
       {/* AI Smart Search Button */}
-      <button
-        type="button"
-        onClick={() => setIsAiOpen(true)}
-        className="navbar__link clean-btn"
-        style={{
-          background: "none",
-          border: "1px solid var(--ifm-color-emphasis-300)",
-          borderRadius: "1.5rem",
-          padding: "0.25rem 0.75rem",
-          color: "var(--ifm-color-emphasis-600)",
-          cursor: "pointer",
-          fontSize: "0.875rem",
-          marginRight: "0.5rem",
-          display: "flex",
-          alignItems: "center",
-          gap: "0.35rem",
-          height: "2rem",
-        }}
-      >
-        <span>{AI_SEARCH_LABEL[locale] || AI_SEARCH_LABEL.en}</span>
-      </button>
+      {SHOW_AI_SEARCH && (
+        <button
+          type="button"
+          onClick={() => setIsAiOpen(true)}
+          className="navbar__link clean-btn"
+          style={{
+            background: "none",
+            border: "1px solid var(--ifm-color-emphasis-300)",
+            borderRadius: "1.5rem",
+            padding: "0.25rem 0.75rem",
+            color: "var(--ifm-color-emphasis-600)",
+            cursor: "pointer",
+            fontSize: "0.875rem",
+            marginRight: "0.5rem",
+            display: "flex",
+            alignItems: "center",
+            gap: "0.35rem",
+            height: "2rem",
+          }}
+        >
+          <span>{AI_SEARCH_LABEL[locale] || AI_SEARCH_LABEL.en}</span>
+        </button>
+      )}
 
       {/* Classic Pagefind Search Button */}
       <button
