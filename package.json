@@ -25,13 +25,10 @@
     "cheerio": "^1.2.0",
     "clsx": "^2.0.0",
     "docusaurus-plugin-image-zoom": "^2.0.0",
-    "markmap-lib": "^0.18.12",
-    "markmap-view": "^0.18.12",
     "pagefind": "^1.5.2",
     "prism-react-renderer": "^2.4.0",
     "react": "^18.3.0",
-    "react-dom": "^18.3.0",
-    "remark-markmap": "^1.1.5"
+    "react-dom": "^18.3.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.6.0",
