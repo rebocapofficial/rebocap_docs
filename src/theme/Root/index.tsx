@@ -280,10 +280,25 @@ export default function RootWrapper({ children }: Props): JSX.Element {
             wrapper.style.display = 'block';
           }
 
+          const lang = document.documentElement.lang || 'zh-Hans';
+          let btnText = '⛶ 网页内放大';
+          let btnTitle = '在当前浏览器的范围/窗口内放大视频 (也可直接双击视频画面放大)';
+          
+          if (lang === 'en') {
+            btnText = '⛶ In-page Zoom';
+            btnTitle = 'Zoom video within the current browser window (or double-click to zoom)';
+          } else if (lang === 'ja') {
+            btnText = '⛶ ページ内で拡大';
+            btnTitle = '現在のブラウザウィンドウ内でビデオを拡大します（ダブルクリックでも拡大できます）';
+          } else if (lang === 'zh-Hant') {
+            btnText = '⛶ 網頁內放大';
+            btnTitle = '在當前瀏覽器的範圍/窗口內放大視頻 (也可直接雙擊視頻畫面放大)';
+          }
+
           const btn = document.createElement('button');
           btn.className = 'video-inbrowser-zoom-btn';
-          btn.innerHTML = '⛶ 网页内沉浸放大';
-          btn.title = '在当前浏览器的范围/窗口内沉浸放大视频 (也可直接双击视频画面放大)';
+          btn.innerHTML = btnText;
+          btn.title = btnTitle;
           btn.style.position = 'absolute';
           btn.style.top = '12px';
           btn.style.right = '12px';
