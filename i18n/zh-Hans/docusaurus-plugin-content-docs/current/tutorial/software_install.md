@@ -44,7 +44,7 @@ title: "软件下载"
 <!-- ==================== 折叠页 开始 ==================== -->
 
 <details>
-<summary> 查看软件对应支持的固件版本。</summary>
+<summary> 查看软件对应支持的固件版本和操作说明。</summary>
    &emsp;&emsp; 部分固件版本有重大算法变更，与旧版软件不兼容。 <br /> 
 
 
@@ -55,6 +55,43 @@ title: "软件下载"
    &emsp;&emsp;&emsp; release_v02 beta02 - ◼️tracker : V15  ,  📡receiver : V6 / V7 <br /> 
 
    &emsp;&emsp;&emsp; (未公开) release_v02 beta02.1 - ◼️tracker : V16  ,  📡receiver : V6 / V7 / V8 <br /> 
+
+
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<video autoPlay loop muted playsInline width="100%" src="/img/softawre_install/show_version_log.mp4"></video>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+**固件操作说明**<br />
+- 打开日志窗口以查看每个追踪器的实际固件版本 <br /> 
+（日志窗口位于软件中的“连接与关机”下方）。
+
+</div>
+</div>
+
+<br/>
+
+- 追踪器是通过无线 📶 进行更新的 — 无需使用 USB 数据线。<br /> 
+🚫 请勿同时更新追踪器和接收器。<br /> 
+
+
+- 如果更新失败，需要重启追踪器并再次点击更新。<br /> 
+&emsp;&emsp;🟩绿灯 – 快闪：追踪器工作正常<br /> 
+&emsp;&emsp;🟩绿灯 – 慢闪：追踪器正在等待接收器信号<br /> 
+&emsp;&emsp;🟦蓝灯：追踪器正在接收固件数据<br /> 
+&emsp;&emsp;🟨黄灯：更新失败（手动按下 🔘 按钮重启，然后重新更新）<br /> 
+&emsp;&emsp;⬜白色：更新成功（通常在 10s 后自动重启，如果无法自动重启需要手动重启）<br /> 
+
+- 当 📡接收器更新完成后，断开并重新插入 USB，然后 🔄重启软件。
+
+
+
+
+
 
 </details>
 <!-- ==================== 折叠页 结束 ==================== -->
@@ -105,6 +142,14 @@ title: "软件下载"
 </details>
 <!-- ==================== 折叠页 结束 ==================== -->
 
+<br/>
+
+注意事项：
+> 当前软件仅支持**Windows 10**及以上系统版本。<br>
+> 软件必须在联网状态下使用，如果希望离线使用，请使用手机热点网络，开启软件30秒以后再断开网络即可。<br>
+（在[日志窗口]中只要显示网络校验成功，即可断开网络）
+
+
 
 
 
@@ -118,10 +163,6 @@ title: "软件下载"
 
 
 
-注意事项：
-> 当前软件仅支持**Windows 10**及以上系统版本。<br>
-> 软件必须在联网状态下使用，如果希望离线使用，请使用手机热点网络，开启软件30秒以后再断开网络即可。<br>
-（在[日志窗口]中只要显示网络校验成功，即可断开网络）
 
 ## 软件安装
 1. 双击 rebocap_release_v01.exe（当前版本为 rebocap_release_v01.exe）

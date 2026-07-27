@@ -36,7 +36,7 @@ The `Beta` version is a public test build, which works better in areas with sign
 <!-- ==================== Details Start ==================== -->
 
 <details>
-<summary> Check supported firmware versions for the software.</summary>
+<summary> Check supported firmware versions and operating instructions.</summary>
    &emsp;&emsp; Some firmware versions have major algorithm changes and are incompatible with older software versions. <br /> 
 
 
@@ -47,6 +47,26 @@ The `Beta` version is a public test build, which works better in areas with sign
    &emsp;&emsp;&emsp; release_v02 beta02 - ◼️tracker : V15  ,  📡receiver : V6 / V7 <br /> 
 
    &emsp;&emsp;&emsp; (Unpublished) release_v02 beta02.1 - ◼️tracker : V16  ,  📡receiver : V6 / V7 / V8 <br /> 
+
+
+
+**Firmware operating instructions**
+- Open the log window to see each tracker actual firmware version <br /> 
+(the log window is located under "Connect & Power Off" in the software).
+
+
+- The trackers are updated wirelessly 📶 — no USB cable is needed.<br /> 
+🚫 Do not update the tracker and receiver at the same time.<br /> 
+
+
+- If the update fails, need restart the tracker and click update again.<br /> 
+&emsp;&emsp;🟩Green – fast blink: Tracker working normally<br /> 
+&emsp;&emsp;🟩Green – slow blink: Tracker waiting for receiver signal<br /> 
+&emsp;&emsp;🟦Blue: Tracker is receiving firmware data<br /> 
+&emsp;&emsp;🟨Yellow: Update failed (manually press the 🔘 button to restart, then retry the update)<br /> 
+&emsp;&emsp;⬜White: Update successful (usually auto‑restarts after 10s; if not, restart manually)<br />
+
+-  When 📡receiver update done, unplug and replug the USB, and 🔄restart the software.
 
 </details>
 <!-- ==================== Details End ==================== -->
@@ -73,6 +93,10 @@ Open [Configure 'SteamVR' output nodes] → Turn off [Left/Right Upper Arm]
 The software originally planned to use the [Auto-hide joints] function to automatically hide unused tracking points,<br />
 but it was found that this function could not automatically check. This has been fixed in the V02 Beta02 software.
 </details>
+
+
+
+
 
 </div>
 </div>
