@@ -50,10 +50,22 @@ The `Beta` version is a public test build, which works better in areas with sign
 
 
 
-**Firmware operating instructions**
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<video autoPlay loop muted playsInline width="100%" src="/img/softawre_install/show_version_log.mp4"></video>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+**Firmware operating instructions**<br />
 - Open the log window to see each tracker actual firmware version <br /> 
 (the log window is located under "Connect & Power Off" in the software).
 
+</div>
+</div>
+
+<br/>
 
 - The trackers are updated wirelessly 📶 — no USB cable is needed.<br /> 
 🚫 Do not update the tracker and receiver at the same time.<br /> 

@@ -50,10 +50,22 @@ title: "ソフトウェアダウンロード"
 
 
 
-**ファームウェア操作説明**
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<video autoPlay loop muted playsInline width="100%" src="/img/softawre_install/show_version_log.mp4"></video>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+**ファームウェア操作説明**<br />
 - ログウィンドウを開いて、各トラッカーの実際のファームウェアバージョンを確認します <br /> 
 （ログウィンドウは、ソフトウェアの「接続と电源オフ」の下にあります）。
 
+</div>
+</div>
+
+<br/>
 
 - トラッカーはワイヤレス 📶 で更新されます。USBケーブルは不要です。<br /> 
 🚫 トラッカーとレシーバーを同時に更新しないでください。<br /> 

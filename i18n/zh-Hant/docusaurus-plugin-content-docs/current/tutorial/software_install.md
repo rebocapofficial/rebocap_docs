@@ -50,10 +50,22 @@ title: "軟體下載"
 
 
 
-**韌體操作說明**
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<video autoPlay loop muted playsInline width="100%" src="/img/softawre_install/show_version_log.mp4"></video>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+**韌體操作說明**<br />
 - 打開日誌視窗以查看每個追蹤器的實際韌體版本 <br /> 
 （日誌視窗位於軟體中的“連接與關機”下方）。
 
+</div>
+</div>
+
+<br/>
 
 - 追蹤器是透過無線 📶 進行更新的 — 無需使用 USB 數據線。<br /> 
 🚫 請勿同時更新追蹤器和接收器。<br /> 
