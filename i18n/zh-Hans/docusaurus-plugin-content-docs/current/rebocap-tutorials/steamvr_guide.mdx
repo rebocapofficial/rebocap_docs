@@ -2,6 +2,9 @@
 sidebar_position: 9
 ---
 
+import CarouselManager from '@site/src/components/CarouselManager';
+
+
 # SteamVR 操作指南
 
 这里将推荐一些SteamVR的设置，以及一些常见问题。
@@ -326,16 +329,5 @@ sidebar_position: 9
 
 
 
-import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<BrowserOnly>
-  {() => {
-    if (typeof document !== 'undefined' && !document.getElementById('carousel-script')) {
-      const s = document.createElement('script');
-      s.id = 'carousel-script';
-      s.src = '/js/custom_carousel.js';
-      document.head.appendChild(s);
-    }
-    return null;
-  }}
-</BrowserOnly>
+<CarouselManager />

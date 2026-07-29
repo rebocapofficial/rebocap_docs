@@ -3,6 +3,9 @@ sidebar_position: 9
 format: mdx
 ---
 
+import CarouselManager from '@site/src/components/CarouselManager';
+
+
 # SteamVR Guide
 
 Here are some recommended settings for SteamVR and solutions to common issues.
@@ -320,16 +323,5 @@ This means tracking points can still be provided to SteamVR even without a physi
 This bug is pending fix by the team in future updates.
 
 
-import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<BrowserOnly>
-  {() => {
-    if (typeof document !== 'undefined' && !document.getElementById('carousel-script')) {
-      const s = document.createElement('script');
-      s.id = 'carousel-script';
-      s.src = '/js/custom_carousel.js';
-      document.head.appendChild(s);
-    }
-    return null;
-  }}
-</BrowserOnly>
+<CarouselManager />
