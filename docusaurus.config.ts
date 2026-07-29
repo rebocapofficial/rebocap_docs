@@ -121,6 +121,9 @@ const config: Config = {
   ],
 
 
+  scripts: ['/js/custom_carousel.js?v=3'],
+
+
   themeConfig: {
     image: 'img/logo_w_white.svg',
     navbar: {

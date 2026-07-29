@@ -88,12 +88,20 @@ function initCarousels() {
   });
 }
 
-if (!window.carouselObserverSetup) {
+function setupObserver() {
+  if (window.carouselObserverSetup) return;
+  if (!document.body) {
+    setTimeout(setupObserver, 50);
+    return;
+  }
   window.carouselObserverSetup = true;
-  const observer = new MutationObserver((mutations) => {
+  const observer = new MutationObserver(() => {
      initCarousels();
   });
   observer.observe(document.body, { childList: true, subtree: true });
+  
+  setInterval(initCarousels, 1000);
+  initCarousels();
 }
 
-setTimeout(initCarousels, 100);
+setupObserver();
