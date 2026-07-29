@@ -1,5 +1,6 @@
----
+﻿---
 sidebar_position: 9
+format: mdx
 ---
 
 # SteamVR Guide
@@ -12,16 +13,102 @@ Here are some recommended settings for SteamVR and solutions to common issues.
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
+<style>
+.html-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+}
+.html-carousel-slides {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* 4:3 aspect ratio */
+}
+.html-carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.html-carousel-slide img, .html-carousel-slide video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.html-carousel input[type="radio"] {
+  display: none;
+}
+#slide1:checked ~ .html-carousel-slides .slide1,
+#slide2:checked ~ .html-carousel-slides .slide2,
+#slide3:checked ~ .html-carousel-slides .slide3 {
+  opacity: 1;
+  pointer-events: auto;
+}
+.html-carousel-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 10;
+}
+.html-carousel-controls label {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #000;
+}
+#slide1:checked ~ .html-carousel-controls label[for="slide1"],
+#slide2:checked ~ .html-carousel-controls label[for="slide2"],
+#slide3:checked ~ .html-carousel-controls label[for="slide3"] {
+  background: #fff;
+  transform: scale(1.2);
+}
+</style>
 
-![steamvr_windows](/img/steamvr_guide/steamvr_windows.jpg)
-
+<div class="html-carousel">
+  <input type="radio" name="carousel" id="slide1" checked />
+  <input type="radio" name="carousel" id="slide2" />
+  <input type="radio" name="carousel" id="slide3" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/steamvr_windows.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <img src="/img/steamvr_guide/steamvr_windows.jpg" />
+    </div>
+    <div class="html-carousel-slide slide3">
+      <video src="/img/steamvr_guide/test_video.mp4" controls preload="metadata"></video>
+    </div>
+  </div>
+  
+  <div class="html-carousel-controls">
+    <label for="slide1" title="Image 1"></label>
+    <label for="slide2" title="Image 2"></label>
+    <label for="slide3" title="Video"></label>
+  </div>
 </div>
-<div style="flex: 1.5; min-width: 250px;">
-<strong> - Try to use SteamVR's desktop window to control the Rebocap software.</strong><br />
-The built-in system menu overlay on some VR headsets may pause/sleep SteamVR data,<br />
-(Virtual Desktop is not affected by this, but avoid Quest system sleep)<br />
-and returning to SteamVR resets the headset orientation,
-which can cause Rebocap's body orientation to misalign in SteamVR or record an incorrect direction during calibration.
+<strong> - Try to use SteamVR's desktop window to control the rebocap software.</strong><br />
+Returning to the built-in system of some VR headsets will stop/hibernate SteamVR data,<br />
+and direction misalignment will occur when returning to SteamVR.<br />
+( <u>Virtual Desktop</u> is not affected by this issue, but avoid Quest system sleep )<br />
 <details className="plain-details"><summary>Details</summary>
 ·················<br />
 
@@ -138,3 +225,7 @@ This means tracking points can still be provided to SteamVR even without a physi
 
 
 This bug is pending fix by the team in future updates.
+
+
+
+

@@ -17,11 +17,10 @@ sidebar_position: 9
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong> - できるだけSteamVRのデスクトップウィンドウからRebocapソフトウェアを操作してください。</strong><br />
-一部のVRヘッドセットでは、内蔵システム画面に戻るとSteamVRのデータが停止/スリープ状態になります。<br />
-(Virtual Desktopはこの問題の影響を受けませんが、Questシステムのスリープを回避してください)<br />
-また、SteamVRに戻る際にヘッドセットの向きがリセットされ、
-SteamVR内でRebocapの体の向きがずれたり、キャリブレーション時に誤った向きが記録される原因となります。
+<strong> - できるだけSteamVRのデスクトップウィンドウからrebocapソフトウェアを操作してください。</strong><br />
+一部のVRヘッドセットでは、内蔵システム画面に戻るとSteamVRのデータが停止/スリープ状態になり、<br />
+再度SteamVRに戻った際に方向のずれが発生する場合があります。<br />
+( <u>Virtual Desktop</u>はこの問題の影響を受けませんが、Questシステムのスリープを回避してください )<br />
 <details className="plain-details"><summary>詳細</summary>
 ·················<br />
 

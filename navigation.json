@@ -51,7 +51,7 @@
           {
             "label": "SteamVR Guide",
             "type": "page",
-            "path": "docs/rebocap-tutorials/steamvr_guide.md"
+            "path": "docs/rebocap-tutorials/steamvr_guide.mdx"
           }
         ]
       },

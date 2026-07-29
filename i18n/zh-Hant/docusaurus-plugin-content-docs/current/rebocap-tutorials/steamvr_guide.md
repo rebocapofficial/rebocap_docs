@@ -17,11 +17,10 @@ sidebar_position: 9
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong> - 盡量使用 steamvr 的桌面視窗去操控 rebocap 軟體。</strong><br />
-一些 vr 頭顯返回到內置系統的介面會停止/休眠 steamvr 的數據，<br />
-(Virtual Desktop 不受該問題影響，但要避免 quest 系統休眠)<br />
-以及返回 steamvr 時重置頭顯的方向，
-這會在 steamvr 中出現 rebocap 的身體方向錯位或校準時記錄錯誤的方向。
+<strong> - 儘量使用steamvr的桌面窗口去操控rebocap軟體。</strong><br />
+一些vr頭顯返回到內置系統後會停止/休眠steamvr的數據，<br />
+在重新返回steamvr後會出現方向錯位。<br />
+( <u>Virtual Desktop</u>不受該問題影響，但要避免quest系統休眠 )<br />
 <details className="plain-details"><summary>詳情</summary>
 ·················<br />
 
