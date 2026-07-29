@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+.html-carousel { position: relative; width: 400px; margin: 0 auto; }
+.html-carousel-slides { position: relative; width: 100%; height: 300px; background: #eee; border: 1px solid #ddd; }
+.html-carousel-slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; display: flex; align-items: center; justify-content: center; font-size: 2em; transition: opacity 0.3s; pointer-events: none; }
+.html-carousel input[type="radio"] { display: none; }
+#slide1:checked ~ .html-carousel-slides .slide1,
+#slide2:checked ~ .html-carousel-slides .slide2,
+#slide3:checked ~ .html-carousel-slides .slide3 { opacity: 1; pointer-events: auto; }
+.html-carousel-controls { margin-top: 10px; width: 100%; display: flex; justify-content: space-between; align-items: center; }
+.html-carousel-arrows { display: flex; align-items: center; width: 40px; justify-content: center; font-size: 2em; background: #ddd; }
+.html-carousel-arrows label { display: none; cursor: pointer; user-select: none; }
+#slide1:checked ~ .html-carousel-controls .arrow-left-1,
+#slide2:checked ~ .html-carousel-controls .arrow-left-2,
+#slide3:checked ~ .html-carousel-controls .arrow-left-3,
+#slide1:checked ~ .html-carousel-controls .arrow-right-1,
+#slide2:checked ~ .html-carousel-controls .arrow-right-2,
+#slide3:checked ~ .html-carousel-controls .arrow-right-3 { display: block; }
+.html-carousel-dots { display: flex; justify-content: center; gap: 8px; }
+.html-carousel-dots label { cursor: pointer; width: 10px; height: 10px; border-radius: 5px; background: #ccc; }
+#slide1:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"],
+#slide3:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide3"] { background: #555; width: 24px; }
+</style>
+</head>
+<body>
+<div class="html-carousel">
+  <input type="radio" name="carousel" id="slide1" checked />
+  <input type="radio" name="carousel" id="slide2" />
+  <input type="radio" name="carousel" id="slide3" />
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">Slide 1</div>
+    <div class="html-carousel-slide slide2">Slide 2</div>
+    <div class="html-carousel-slide slide3">Slide 3</div>
+  </div>
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide3" class="arrow-left-1">&#10094;</label>
+      <label for="slide1" class="arrow-left-2">&#10094;</label>
+      <label for="slide2" class="arrow-left-3">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide2" class="arrow-right-1">&#10095;</label>
+      <label for="slide3" class="arrow-right-2">&#10095;</label>
+      <label for="slide1" class="arrow-right-3">&#10095;</label>
+    </div>
+  </div>
+</div>
+</body>
+</html>
