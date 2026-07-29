@@ -50,7 +50,15 @@ Here are some recommended settings for SteamVR and solutions to common issues.
 .html-carousel input[type="radio"] {
   display: none;
 }
-#slide1:checked ~ .html-carousel-slides .slide1,
+.html-carousel-slide.slide1 {
+  opacity: 1;
+  pointer-events: auto;
+}
+#slide2:checked ~ .html-carousel-slides .slide1,
+#slide3:checked ~ .html-carousel-slides .slide1 {
+  opacity: 0;
+  pointer-events: none;
+}
 #slide2:checked ~ .html-carousel-slides .slide2,
 #slide3:checked ~ .html-carousel-slides .slide3 {
   opacity: 1;
@@ -85,10 +93,21 @@ Here are some recommended settings for SteamVR and solutions to common issues.
 .html-carousel-arrows label:hover {
   color: var(--ifm-color-primary, #000);
 }
-#slide1:checked ~ .html-carousel-controls .arrow-left-1,
+.arrow-left-1, .arrow-right-1 {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+}
+#slide2:checked ~ .html-carousel-controls .arrow-left-1,
+#slide3:checked ~ .html-carousel-controls .arrow-left-1,
+#slide2:checked ~ .html-carousel-controls .arrow-right-1,
+#slide3:checked ~ .html-carousel-controls .arrow-right-1 {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
 #slide2:checked ~ .html-carousel-controls .arrow-left-2,
 #slide3:checked ~ .html-carousel-controls .arrow-left-3,
-#slide1:checked ~ .html-carousel-controls .arrow-right-1,
 #slide2:checked ~ .html-carousel-controls .arrow-right-2,
 #slide3:checked ~ .html-carousel-controls .arrow-right-3 {
   opacity: 1;
@@ -108,7 +127,15 @@ Here are some recommended settings for SteamVR and solutions to common issues.
   background: #ccc;
   transition: all 0.3s ease;
 }
-#slide1:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
+.html-carousel-dots label[for="slide1"] {
+  background: var(--ifm-color-primary, #555);
+  width: 24px;
+}
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
+#slide3:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"] {
+  background: #ccc;
+  width: 10px;
+}
 #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"],
 #slide3:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide3"] {
   background: var(--ifm-color-primary, #555);
