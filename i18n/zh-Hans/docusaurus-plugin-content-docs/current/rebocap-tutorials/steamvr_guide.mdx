@@ -58,22 +58,51 @@ sidebar_position: 9
   margin-top: 10px;
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.html-carousel-arrows {
+  display: flex;
+  align-items: center;
+  width: 20px;
   justify-content: center;
-  gap: 10px;
 }
-.html-carousel-controls label {
+.html-carousel-arrows label {
+  display: none;
   cursor: pointer;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #ccc;
-  border: 1px solid #999;
+  font-size: 16px;
+  color: #888;
+  user-select: none;
 }
-#slide1:checked ~ .html-carousel-controls label[for="slide1"],
-#slide2:checked ~ .html-carousel-controls label[for="slide2"],
-#slide3:checked ~ .html-carousel-controls label[for="slide3"] {
-  background: #fff;
-  transform: scale(1.2);
+.html-carousel-arrows label:hover {
+  color: var(--ifm-color-primary, #000);
+}
+#slide1:checked ~ .html-carousel-controls .arrow-left-1,
+#slide2:checked ~ .html-carousel-controls .arrow-left-2,
+#slide3:checked ~ .html-carousel-controls .arrow-left-3,
+#slide1:checked ~ .html-carousel-controls .arrow-right-1,
+#slide2:checked ~ .html-carousel-controls .arrow-right-2,
+#slide3:checked ~ .html-carousel-controls .arrow-right-3 {
+  display: block;
+}
+.html-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.html-carousel-dots label {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #ccc;
+  transition: all 0.3s ease;
+}
+#slide1:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"],
+#slide3:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide3"] {
+  background: var(--ifm-color-primary, #555);
+  width: 24px;
 }
 </style>
 
@@ -95,9 +124,21 @@ sidebar_position: 9
   </div>
   
   <div class="html-carousel-controls">
-    <label for="slide1" title="Image 1"></label>
-    <label for="slide2" title="Image 2"></label>
-    <label for="slide3" title="Video"></label>
+    <div class="html-carousel-arrows">
+      <label for="slide3" class="arrow-left-1">&#10094;</label>
+      <label for="slide1" class="arrow-left-2">&#10094;</label>
+      <label for="slide2" class="arrow-left-3">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide1" title="Image 1"></label>
+      <label for="slide2" title="Image 2"></label>
+      <label for="slide3" title="Video"></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide2" class="arrow-right-1">&#10095;</label>
+      <label for="slide3" class="arrow-right-2">&#10095;</label>
+      <label for="slide1" class="arrow-right-3">&#10095;</label>
+    </div>
   </div>
 </div>
 </div>
