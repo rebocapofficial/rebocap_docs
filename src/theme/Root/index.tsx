@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import OriginalRoot from "@theme-original/Root";
 import type RootType from "@theme/Root";
 import type { WrapperProps } from "@docusaurus/types";
+import CarouselManager from '@site/src/components/CarouselManager';
 
 function BackToTop(): JSX.Element {
   const [visible, setVisible] = useState(false);
@@ -379,6 +380,7 @@ export default function RootWrapper({ children }: Props): JSX.Element {
     <>
       <OriginalRoot>{children}</OriginalRoot>
       <BackToTop />
+      <CarouselManager />
     </>
   );
 }
