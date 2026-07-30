@@ -1,15 +1,14 @@
----
+﻿---
 sidebar_position: 9
-format: mdx
 ---
 
-# SteamVR Guide
+# SteamVR 操作指南
 
-Here are some recommended settings for SteamVR and solutions to common issues.
+這裡將推薦一些 SteamVR 的設定，以及一些常見問題。
 
 
-## VR Headset / Streaming Software Recommendations
-### VR Headset Settings
+## VR 頭顯 / 串流軟體操作建議
+### VR 頭顯的設定
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -199,12 +198,12 @@ Here are some recommended settings for SteamVR and solutions to common issues.
 <!-- === 轮播图组件 代码结束 === -->
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong> - Try to use SteamVR's desktop window to control the rebocap software.</strong><br />
-Returning to the built-in system of some VR headsets will stop/hibernate SteamVR data,<br />
-and direction misalignment will occur when returning to SteamVR.<br />
-( <u>Virtual Desktop</u> is not affected by this issue, but avoid Quest system sleep )<br />
-<details className="plain-details"><summary>Cannot display after clicking the image?</summary>
-Try to recenter or reset the main dashboard in the SteamVR menu.<br />
+<strong> - 儘量使用steamvr的桌面窗口去操控rebocap軟體。</strong><br />
+一些vr頭顯返回到內置系統後會停止/休眠steamvr的數據，<br />
+在重新返回steamvr後會出現方向錯位。<br />
+( <u>Virtual Desktop</u>不受該問題影響，但要避免quest系統休眠 )<br />
+<details className="plain-details"><summary>點擊圖片後無法顯示？</summary>
+在steamvr的選單中嘗試重新置中或重置主面板<br />
 </details>
 
 </div>
@@ -215,11 +214,11 @@ Try to recenter or reset the main dashboard in the SteamVR menu.<br />
 
 
 
-- For standalone headsets like Quest or Pico, draw the play boundary slightly larger than your actual room size<br />
-to prevent triggering boundary popups that disrupt headset tracking data in SteamVR.
+- Quest、Pico 這類一體機頭顯的安全範圍需要畫到比實際房間大一圈，<br />
+避免觸發安全邊界時導致 steamvr 端的頭顯數據中斷
 
-- If the headset remains fixed in place when walking or crouching, it indicates that positional tracking is disabled in the VR headset system.<br />
-(Enable Play Boundary on Quest system; enable [Positional Tracking] on Pico system)
+- 如果走動/蹲起時頭顯固定在原地，說明 vr 頭顯系統內的定位系統未開啟。<br />
+（quest 系統需要打開遊玩邊界，pico 系統打開 [定位追蹤]）
 
 
 
@@ -232,19 +231,19 @@ to prevent triggering boundary popups that disrupt headset tracking data in Stea
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong>2 options are recommended to be disabled:</strong>
+<strong>有 2 個選項建議關閉：</strong>
 <br />
 
 > <strong>1 - Center to play space</strong><br />
- When double-clicking the left controller Home button to return to VD desktop, the headset in SteamVR space rotates 180° backward,<br />
-which may cause Rebocap to record an incorrect orientation during calibration.
+ 在雙擊左手 home 鍵返回 VD 的電腦桌面時，steamvr 空間中的頭顯向後旋轉 180°<br />
+可能會導致 rebocap 在校準時記錄錯誤的朝向。
 
 
 
 > <strong>2 - Emulate SteamVR vive trackers</strong><br />
- This feature passes Quest system's AI body tracking points into SteamVR, but causes tracking point overlaps and conflicts in VRChat.<br />
- If you only want to enable specific custom tracking points, you can use a plugin to configure it.<br />
- 🌐 [Plugin GitHub Repository](https://github.com/DenTechs/Virtual_Desktop_Body_Tracking_Configurator)
+ 這個功能把 quest 系統的 AI 全身追蹤點傳入 steamvr 中，但在 vrchat 中出現追蹤點重疊，搶奪控制權。<br />
+ 如果想只啟用他局部指定的追蹤點，可以使用外掛程式來調整。<br />
+ 🌐 [外掛程式的 github](https://github.com/DenTechs/Virtual_Desktop_Body_Tracking_Configurator)
 
 
 </div>
@@ -254,39 +253,39 @@ which may cause Rebocap to record an incorrect orientation during calibration.
 
 
 ### SteamVR
-- Disable SteamVR boundaries<br />
-Default boundaries limit the maximum movement range of tracking points like an invisible wall.<br />
-If the VR headset misaligns at 2.4m height, trackers may appear unable to exceed headset height when lying down and lifting legs,<br />
-because SteamVR's default ceiling height is 2.4m, and tracking points cannot pass through the ceiling.
+- 關閉 steamvr 的邊界<br />
+預設邊界會限制追蹤點的最大移動範圍，像空氣牆一樣。<br />
+如果 VR 頭顯錯誤定位在 2.4 米高度，可能在躺下後抬腿時呈現追蹤器無法超過頭顯的高度，<br />
+因為 SteamVR 預設的天花板高度為 2.4 米，而追蹤點無法穿過天花板。
 
-- Recenter VR headset orientation in advance<br />
-Press and hold the 'Right Controller Home Button' to reset VR headset system orientation,<br />
-which resets the SteamVR virtual horizon arrow to face straight ahead. If orientation is accidentally lost, use this feature to realign the coordinate system.
+- 提前重置 vr 頭顯的角度<br />
+按住 '右手控制器 home 鍵' 讓 VR 頭顯重置系統方向，<br />
+這會讓 steamvr 虛擬地平線箭頭重置到你視線的前方，在意外丟失方向後可以利用該功能重新對正座標系。
 
-- Prompt popup when launching games<br />
-Select any community binding configuration in the background,<br />
-and after activating it, the prompt will no longer appear on subsequent launches.
+- 打開遊戲後彈出提示<br />
+隨意選擇背景中的一個社群配置，<br />
+激活後在下一次啟動就不會出現了。
 
-## Unable to Connect to SteamVR
-Please check the following items:
+## 無法連接 SteamVR
+檢查以下內容：
 
-<strong> 1 - Click Calibration while SteamVR is running.</strong><br />
-If SteamVR is not running, Rebocap cannot detect whether VR exists in the system.
+<strong> 1 - 在開啟 SteamVR 的狀態點擊校準。</strong><br />
+不啟動 SteamVR，rebocap 無法知道系統裡是否有 VR。
 
-<strong> 2 - Check SteamVR Drivers.</strong><br />
-Open Rebocap's [Log Window] records, which automatically check upon launching Rebocap.
-If needed, you can force install drivers in the [Settings] page.
+<strong> 2 - 查看 SteamVR 驅動程式。</strong><br />
+打開 rebocap 的 [日誌視窗] 記錄，每次開啟 rebocap 時會自動檢查。
+如有需要，可以在 [配置] 頁面中強制安裝。
 
-<strong> 3 - Check SteamVR Add-ons.</strong><br />
-If SteamVR crashes unexpectedly, it often forcibly disables all add-ons.<br />
-Re-enabling Rebocap add-ons requires restarting SteamVR.
-
-
+<strong> 3 - 檢查 SteamVR 的附加元件。</strong><br />
+如果 Steamvr 出現意外崩潰，往往會強制關閉所有附加元件。<br />
+重新開啟 rebocap 的載入後需要重啟 SteamVR。
 
 
 
 
-## Showing and Hiding SteamVR Tracking Points
+
+
+## SteamVR 追蹤點的顯示和隱藏
 
 
 
@@ -294,17 +293,17 @@ Re-enabling Rebocap add-ons requires restarting SteamVR.
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_windows](/img/steamvr_guide/v01_off_1-en.png)
+![steamvr_windows](/img/steamvr_guide/v01_off_1-cnt.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong> Showing and Hiding Tracking Points</strong><br />
- Control tracking point visibility in the software under [ Set SteamVR Nodes ],<br />
- without needing to operate in SteamVR's management menu.<br />
+<strong> 追蹤點的顯示和隱藏</strong><br />
+ 在軟體 [ 配置 SteamVR 输出节点 ] 裡控制追蹤點的顯示和隱藏，<br />
+ 無需在 SteamVR 的管理選單中操作。<br />
 
- <details className="plain-details"><summary>Note</summary>
-Trackers do not connect directly to SteamVR. Physical trackers control the skeleton system, which creates corresponding tracking points and feeds them into SteamVR.<br />
-This means tracking points can still be provided to SteamVR even without a physical tracker on that body part.
+ <details className="plain-details"><summary>註</summary>
+追蹤器不是直連 SteamVR，物理追蹤器操縱骨架系統，從骨架系統上創建對應的追蹤點輸入到 SteamVR 中，<br />
+也就是說沒有對應的追蹤器，依然可以向 SteamVR 提供追蹤點。
 
 </details>
 
@@ -312,12 +311,9 @@ This means tracking points can still be provided to SteamVR even without a physi
 </div>
 </div>
 
-## Tracking Points Set but Game Fails to Recognize Feet and Waist
+## 設定了追蹤點的部位但遊戲無法識別到腳和腰
 
-- Some games use OpenVR environment to identify tracking, but the driver included with current Rebocap Release has a bug causing unrecognized trackers, which cannot be recognized even if modified in SteamVR settings.
-
-
-This bug is pending fix by the team in future updates.
+- 一些遊戲使用 openVR 環境來識別追蹤，但目前 rebocap Release 所帶的驅動程式會處於無法識別的 BUG，即便 steamvr 中修改了對應的設定也無法識別。
 
 
-
+該 BUG 等待工作組後續修復。
