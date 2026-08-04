@@ -171,7 +171,7 @@ title: "软件下载"
    * 开始菜单打开
    * 桌面快捷方式打开
 
-![安装步骤](/img/setup_steps.gif)
+![安装步骤](../../../../../static/img/setup_steps.gif)
 
 ## 软件更新说明
 

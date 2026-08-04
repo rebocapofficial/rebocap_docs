@@ -23,19 +23,19 @@ title: "3D 預覽功能"
 <summary>查看詳情</summary>
 
     
-  ![shutdown 3d render](/img/close_3d_view.gif)
+  ![shutdown 3d render](../../../../../static/img/close_3d_view.gif)
 
   
 </details>
 
-![3d preview](/img/3d_view_1.png)
+![3d preview](../../../../../static/img/3d_view_1.png)
 
 # 日誌功能
 用於查看是否有警告信息等
 
 ### 打開方式
 
-![3d preview](/img/open_log.gif)
+![3d preview](../../../../../static/img/open_log.gif)
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

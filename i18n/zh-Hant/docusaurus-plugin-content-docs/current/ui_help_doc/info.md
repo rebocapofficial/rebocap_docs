@@ -16,7 +16,7 @@ title: "硬體列表資訊"
 - 第五列
   > 磁場絕對值大小，單位是 uT，磁場一般一致性好就是顯示綠色，如果個別很高或者很低會顯示紅色，磁場怎麼看，具體請查閱 磁場檢測和診斷
 
-![img.png](/img/hardware_list_info.png)
+![img.png](../../../../../static/img/hardware_list_info.png)
 
 <a id="hardware_detail"></a>
 
@@ -46,7 +46,7 @@ title: "硬體列表資訊"
 - 陀螺儀
   > 三軸校準後陀螺儀，如果追蹤器完全靜止，這裡的數值離0點超過0.2，建議進行 陀螺儀校準
 
-![img.png](/img/hardware_detail_cn.png)
+![img.png](../../../../../static/img/hardware_detail_cn.png)
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

@@ -1,0 +1,9 @@
+{
+  "label": "VMC Protocol Integration",
+  "position": 99,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "third_party_software_access/VMC/README"
+  }
+}

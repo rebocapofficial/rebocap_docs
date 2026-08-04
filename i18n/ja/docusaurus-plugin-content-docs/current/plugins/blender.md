@@ -52,7 +52,7 @@ title: "Blender プラグインダウンロード"
 :::
 
 
-![Blenderインストール位置示意図](/img/for_blender_install/blender_23.png)
+![Blenderインストール位置示意図](../../../../../static/img/for_blender_install/blender_23.png)
 
 
 # ボーンバインディング

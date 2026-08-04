@@ -1,0 +1,237 @@
+---
+sidebar_position: 2
+title: "Cómo Identificar si el Entorno del Campo Magnético es Bueno"
+---
+
+
+# Cómo Identificar si el Entorno del Campo Magnético es Bueno
+Para los dispositivos de captura de movimiento, la consideración principal es la consistencia de la dirección del campo magnético (específicamente el rumbo), que se refiere a la dirección paralela al suelo, es decir, las direcciones este, sur, oeste y norte.
+
+A veces, puede haber una interferencia magnética mínima, pero aún así puede tener un ligero efecto angular en la dirección. También puede haber áreas individuales con fuerte interferencia que no afectan la dirección de la brújula, como cuando la dirección del campo magnético de la fuente de interferencia es perpendicular al suelo o coincide con la dirección del campo magnético de la Tierra.
+
+Por lo tanto, todas las mediciones deben basarse en la dirección, mientras que la fuerza del campo magnético sirve como una herramienta de juicio auxiliar. Además, la fuerza del campo magnético de la Tierra varía en diferentes dimensiones; cuanto más cerca estés de los polos, más fuerte será el campo magnético, y cuanto más cerca estés del ecuador, más débil será. Por lo tanto, si ves referencias a la fuerza del campo magnético en videos de ciertos bloggers, generalmente no son muy significativas, ya que puedes tener una diferencia de latitud significativa con ellos. Por ejemplo, la fuerza del campo magnético en Pekín, China, es de aproximadamente 55uT, mientras que en Shenzhen, China, es de aproximadamente 35uT. Además, el campo magnético también está influenciado por factores geográficos, por lo que la información sobre la fuerza del campo magnético generalmente es solo de referencia. **¡La fuerza del campo magnético en diferentes regiones no es comparable; solo la fuerza del campo magnético dentro de la misma habitación es comparable!**
+
+### Fuentes de Interferencia del Campo Magnético
+|    Fuente de Interferencia     |                                              Nivel de Interferencia                                               |
+|:--------------------------:|:----------------------------------------------------------------------------------------------------------------:|
+|          Imán            |                                             Extremadamente fuerte, no te acerques                                             |
+|          Objetos de Hierro      |                               Relacionado con el tamaño; cuanto más grande sea el objeto, más fuerte será la interferencia. Por ejemplo, si usas tornillos de hierro en una mesa, mantente alejado unos 30cm.                               |
+|        Acero Inoxidable 304 |                       Generalmente no magnético, pero puede tener alguna interferencia debido a procesos de fabricación, y está relacionado con el tamaño, aproximadamente 1/5 del nivel de interferencia de los objetos de hierro.                        |
+|        Carga Inalámbrica    |                                        Fuerte interferencia cerca de la bobina, especialmente durante la carga.                                        |
+|          Computadora          |                                           Interferencia significativa cerca de los altavoces.                                            |
+|          Teléfono Móvil      |                                           Interferencia significativa cerca del altavoz del teléfono.                                           |
+|          Enrutador            |                                       **Básicamente sin interferencia a menos que haya bloques de hierro contrapesados.**                                        |
+|          Ratón             |                                       **Básicamente sin interferencia a menos que haya bloques de hierro contrapesados.**                                        |
+|          Controlador VR      |                                           Generalmente tiene interferencia dentro de los 30cm.                                            |
+|          Auriculares           |                             Generalmente, no hay interferencia si te mantienes alejado entre 30-40cm, excepto en algunos dispositivos de auriculares específicos, como pico4pro.                              |
+|  Cerca de Cables Domésticos de 220V |                                            Habrá interferencia cuando la corriente sea grande.                                            |
+|          Altavoz           |                                           Interferencia significativa, ¡intenta mantenerte alejado!                                            |
+|        Auriculares Montados en la Cabeza |                                           Interferencia significativa, ¡intenta mantenerte alejado!                                            |
+|        Auriculares Bluetooth    |                                     ¡El Bluetooth no interfiere con el campo magnético, pero el micrófono de los auriculares puede tener interferencia!                                      |
+|        Mesa de Madera        |                                     Habrá interferencia notable si se usan tornillos de hierro en las juntas; sin interferencia en otras áreas.                                     |
+|        Regleta de Enchufes         |                                         Depende del tamaño de la corriente; mayor corriente significa mayor interferencia.                                         |
+|        Horno Microondas      |                                     Interferencia extremadamente alta; después de encenderse, ¡hay una interferencia significativa en un área amplia!                                      |
+|        Calentador de Agua        |                                       Contiene elementos de hierro en el metal; generalmente, hay interferencia dentro de 1 metro.                                        |
+|          Pared              |                                  Si se trata de un muro de carga o columna de hormigón armado, hay interferencia significativa dentro de los 0,5 metros.                                   |
+|          Suelo             | La mayoría de los suelos tienen alguna interferencia (los suelos de madera solo tienen una capa superficial; la capa interior aún tiene una estructura de acero).<br/>Hay cierta interferencia cerca de la superficie del suelo, dependiendo del material de acero; algunos suelos básicamente no tienen interferencia por encima de 10 cm de altura, mientras que otros pueden requerir más de 60 cm o incluso 100 cm. |
+
+¡La información anterior es solo de referencia! ¡Consulta las medidas reales!
+
+<a id="use_phsical_compass"></a>
+
+### Medición con una Brújula Física
+Usa una brújula física para realizar mediciones de múltiples puntos, verifica la dirección del campo magnético y comprueba la consistencia de la dirección de la aguja de la brújula. Se recomienda colocar la brújula física sobre una gran caja de cartón rectangular para asegurar la consistencia direccional de la brújula tanto como sea posible. Al leer la diferencia de grados de la aguja de la brújula, puedes evaluar la calidad del entorno del campo magnético.
+
+Un buen entorno de campo magnético tendrá direcciones consistentes en todos los puntos. Si solo la dirección del campo magnético cerca del suelo a una altura de 10~20 cm es inconsistente, mientras que otras direcciones son consistentes, el entorno del campo magnético aún se puede considerar bueno. (Nuestro software tiene restricciones direccionales en los tobillos, por lo que puede ser inmune a la interferencia magnética en los sensores de los pies).
+
+Sin embargo, si la dirección a la altura del muslo y los sensores magnéticos de la cintura son inconsistentes, puede provocar fácilmente un pequeño ángulo de autorrotación en la cintura al sentarse, comúnmente conocido como inclinación. (Esto se refiere a no usar algoritmos antimagnéticos y no estar en modo de trabajo de 6 ejes).
+
+**Generalmente, consideramos que una diferencia de dirección de 5 grados indica una buena consistencia del campo magnético, dependiendo de la sensibilidad del usuario a la dirección de su esqueleto virtual.**
+
+### Medición con una Brújula Electrónica
+> Esta sección solo presenta el uso de la brújula de un teléfono móvil para la medición
+
+La brújula de un teléfono móvil es relativamente menos precisa en comparación con una brújula física y también requiere calibración. También se recomienda colocar el teléfono en una caja de cartón rectangular grande para evitar cambiar la dirección del teléfono y afectar las lecturas. Para medidas y resultados específicos, consulta [Medición con una Brújula Física](#use_phsical_compass).
+
+:::danger Precauciones al usar la Brújula de un Teléfono Móvil
+
+
+La brújula en una aplicación móvil solo adopta datos del sensor magnético cuando se abre por primera vez; posteriormente, usa el giroscopio para mantener el funcionamiento de la brújula. Por lo tanto, cualquier interferencia magnética hará que la brújula siempre apunte en una dirección.
+
+¡El método de medición correcto es cerrar el proceso de la brújula después de medir cada punto, luego volver a abrir la aplicación de la brújula!
+
+:::
+
+
+### Medición con una Aplicación de Grabación de Sensores Móviles
+Se recomienda descargar la aplicación phyphox para la medición. Aquí está la [descarga para Android en versión china](../../img/files/base.apk).
+También puedes descargarla desde el [sitio web oficial](https://phyphox.org/download/).
+
+Después de instalar la aplicación, ábrela y sigue las instrucciones a continuación para comenzar a grabar. Luego, muévete para registrar la fuerza del campo magnético de tres ejes en varios lugares. **¡Asegúrate de que la dirección del teléfono siempre apunte en una dirección!** Puedes colocarlo sobre una caja de cartón cuadrada grande para garantizar más fácilmente la consistencia direccional del teléfono.
+
+<div align="center">
+<img src="/img/mag_app1-en.jpg" alt="left" width="30%" />
+<img src="/img/mag_app2-en.jpg" alt="left" width="30%" />
+</div>
+
+Si el resultado muestra tres curvas planas (asegúrate de que el teléfono se haya trasladado entre posiciones, una curva plana en un solo punto no tiene sentido), indica un buen entorno de campo magnético. De lo contrario, diagnostica cuidadosamente la dirección del campo magnético. Se recomienda medir a diferentes alturas simultáneamente.
+
+:::info Consejo
+
+
+Este tipo de grabación continua de campo magnético de tres ejes está muy influenciada por el movimiento personal. La orientación puede cambiar fácilmente durante el movimiento, y cualquier cambio direccional causará picos. Por lo tanto, este método generalmente no se recomienda. ¡Algunos usuarios pueden cambiar con frecuencia su orientación durante la medición, lo que hace que los resultados sean aún menos confiables!
+
+:::
+
+
+### Medición con Sensores Rebocap
+
+Después de la calibración del campo magnético, los sensores Rebocap tienen una mayor precisión de medición que varios teléfonos inteligentes. Por lo tanto, si tienes un equipo Rebocap, usa los sensores Rebocap para la medición. Puedes colocar uno de los sensores en la caja de carga con los contactos de carga hacia arriba, luego selecciona un nodo para ver la rotación 3D de ese nodo.
+
+¡Asegúrate de apagar el modo antimagnético; de lo contrario, los resultados de la medición no serán válidos!
+
+Luego verifica la consistencia de la dirección de la caja del cubo en cada punto. Si todos son consistentes, indica un buen entorno de campo magnético. Si es inconsistente, al usar el modo no antimagnético, el esqueleto del cuerpo virtual tendrá desviaciones cerca de los puntos de medición correspondientes.
+
+Además, podemos utilizar sensores Rebocap calibrados para campos magnéticos para medir la fuerza del campo magnético ([mira aquí para determinar si se necesita calibración](#detect_need_magnet_calibrate)), midiendo el nivel de interferencia de diferentes fuentes. [Los sensores Rebocap calibrados tienen una mayor precisión de medición de la fuerza del campo magnético que usar un teléfono].
+
+<a id="detect_need_magnet_calibrate"></a>
+
+# Cómo Determinar si se Necesita Calibración del Campo Magnético
+### Comprobación Cualitativa General
+Si ya se usaron y activaron, puedes verificar la fuerza del campo magnético en la [lista de información del hardware](../ui_help_doc/info). Generalmente, una fuerza general consistente aparecerá toda verde, mientras que aquellos que excedan el rango promedio significativamente aparecerán amarillos o incluso rojos. Por lo tanto, presta especial atención a los nodos amarillos y rojos para la [detección de nodo único](#single_node_magnet_check).
+
+Sin embargo, hay una situación donde las fuentes de interferencia en ciertas áreas son de hecho grandes, lo cual se puede probar nuevamente lejos de la fuente de interferencia.
+
+Otra forma de juzgar es que la fuerza del campo magnético de los rastreadores izquierdo y derecho a la misma altura debe ser consistente. Desde el suelo hasta la cabeza, el cambio en la fuerza del campo magnético es generalmente consistente. Por ejemplo, ambos pies están alrededor de 35, las pantorrillas alrededor de 39, los muslos alrededor de 45 y el pecho y la cintura alrededor de 46. Esto generalmente se debe a factores ambientales más que a la desviación del campo magnético.
+
+Los métodos de juicio anteriores son todos cualitativos. Para saber si es necesaria la calibración, específicamente [consulta aquí](#single_node_magnet_check).
+
+<a id="single_node_magnet_check"></a>
+
+### Detección de Nodo Único
+Abre el nodo para verificar la fuerza del campo magnético, luego encuentra un punto en el espacio, punto a, muévete al punto a, presiona el interruptor del sensor para reiniciar, y gira lentamente alrededor del punto a a lo largo de los tres ejes mientras observas los cambios en la fuerza del campo magnético. Por ejemplo, podemos detenernos durante 1 segundo con cada una de las 6 caras hacia arriba para verificar la fuerza del campo magnético. Si la fuerza del campo magnético es completamente consistente, no se necesita calibración; de lo contrario, se requiere calibración.
+
+También podemos verificar la fuerza relativa del campo magnético. Si el rango de variación está dentro de 0.1, generalmente, no se necesita recalibración. Sin embargo, si no estás seguro, puedes realizar la calibración del campo magnético para ver si la consistencia mejora después de la calibración.
+
+:::info Explicación del Principio
+
+
+Si hay un desplazamiento del campo magnético, la fuerza del campo magnético será inconsistente cuando el sensor esté en diferentes direcciones. Por ejemplo, supongamos que el eje x tiene un desplazamiento de 15uT. Si la dirección del campo magnético está alineada con el eje x, la fuerza del campo magnético es 45uT. Cuando el campo magnético está en la misma dirección que el eje x positivo, el valor medido es 60uT, y en la dirección opuesta, es 30uT. Sin desplazamiento, el resultado de la medición sería 45uT.
+
+Sin embargo, la fuerza del campo magnético en nuestra habitación siempre tendrá alguna interferencia. El campo magnético en una habitación específica a menudo muestra pequeñas fluctuaciones, por lo que una variación de aproximadamente 1~3uT durante la medición es normal. Se debe observar el valor medio.
+
+:::
+
+
+:::warning Consejo
+
+
+El punto espacial detectado debe estar lejos de fuentes de interferencia, preferiblemente a medio metro de la computadora, y rotar alrededor de un punto en el espacio.
+
+:::
+
+
+# Cómo Elegir el Modo Antimagnético
+
+
+
+
+
+# Otros Problemas Comunes
+
+- Después de dormir, el pecho o la cintura está completamente torcido
+  > Si usas el modo de 6 ejes, esto se debe a la deriva a largo plazo. Si el nodo se aleja del pecho para evitar las fluctuaciones causadas por la respiración, nuestro algoritmo puede suprimir la deriva del giroscopio.
+  > 
+  > Si usas el modo antimagnético, si el [tamaño relativo del campo magnético](../ui_help_doc/info#hardware_detail) no está alrededor de 1.0 durante mucho tiempo después de acostarte, el sensor esencialmente también está trabajando en modo de 6 ejes.
+
+- Al usar el modo antimagnético, todavía hay una ligera curvatura en la cintura al sentarse
+  > En el modo antimagnético, la elección entre usar el modo de 6 ejes o el magnetómetro se basa principalmente en la fuerza del campo magnético. Si la fuerza del campo magnético es consistente, pero hay una ligera desviación angular al ponerse de pie y sentarse, el algoritmo antimagnético no puede reconocerla, por lo que aún habrá pequeñas desviaciones angulares. Considera usar el modo de 6 ejes sin el magnetómetro para resolver este problema.
+  >
+  > El algoritmo antimagnético aborda principalmente los campos magnéticos deficientes en ciertos puntos, pero en la mayoría de las áreas y durante la mayor parte de los tiempos de uso, el entorno del campo magnético es bueno. Por ejemplo, cuando el mango está cerca del sensor o se mueve temporalmente frente a la computadora, el efecto antimagnético es muy notable. Sin embargo, para los pequeños errores de campo magnético angular y la fuerza de campo magnético consistente, el algoritmo antimagnético actualmente no puede lograr un buen reconocimiento. Por favor, espera las actualizaciones.
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+# Cómo Elegir el Modo Antimagnético
+
+<div className="horizontal-mindmap-container">
+  <div className="hm-root-badge">Entorno del Campo Magnético</div>
+  <div className="hm-branches-wrapper">
+    
+    <div className="hm-branch">
+      <div className="hm-branch-title">Entornos de Campo Magnético Consistente</div>
+      <div className="hm-leaf-list">
+        <div className="hm-leaf-item"><b>Bailando:</b> Desactiva el modo antimagnético, fuerza magnética por encima de 10, evita usar 6 ejes.</div>
+        <div className="hm-leaf-item"><b>Bailes de Ritmo Lento:</b> Usa el modo antimagnético, fuerza magnética 12, evita usar 6 ejes.</div>
+        <div className="hm-leaf-item"><b>Socialización Normal y Sueño:</b> Usa el modo antimagnético, fuerza magnética 12, evita usar 6 ejes.</div>
+      </div>
+    </div>
+
+    <div className="hm-branch">
+      <div className="hm-branch-title">Interferencia en Algunas Áreas (por ejemplo, el suelo)</div>
+      <div className="hm-leaf-list">
+        <div className="hm-leaf-item"><b>Bailando:</b> Desactiva el modo antimagnético, fuerza magnética por encima de 10 (algunos nodos pueden cambiar en ciertas posiciones).</div>
+        <div className="hm-leaf-item"><b>Bailando:</b> Usa el modo antimagnético, fuerza magnética 12 (no apto para uso continuo; se recomienda pausar durante unos segundos después de 1-3 minutos).</div>
+        <div className="hm-leaf-item"><b>Bailando:</b> Modo de 6 ejes: Se necesita recalibración después de un uso prolongado.</div>
+        <div className="hm-leaf-item"><b>Bailes de Ritmo Lento:</b> Usa el modo antimagnético, fuerza magnética 12, evita usar 6 ejes.</div>
+        <div className="hm-leaf-item"><b>Socialización Normal y Sueño:</b> Usa el modo antimagnético, fuerza magnética 12, evita usar 6 ejes.</div>
+      </div>
+    </div>
+
+    <div className="hm-branch">
+      <div className="hm-branch-title">Entorno de Campo Magnético Limitado (por ejemplo, Camas de Muelles o Habitaciones Cerca de Transformadores)</div>
+      <div className="hm-leaf-list">
+        <div className="hm-leaf-item"><b>Durmiendo:</b> Modo antimagnético, luego usa 6 ejes.</div>
+        <div className="hm-leaf-item"><b>Bailando y Bailes de Ritmo Lento:</b> Modo de 6 ejes: Se necesita recalibración después de un uso prolongado.</div>
+        <div className="hm-leaf-item"><b>Socialización Regular:</b> Reduce el movimiento y otras actividades; la recalibración generalmente se puede retrasar.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+# Cómo Elegir el Modo Antimagnético
+
+<div className="horizontal-tree-container">
+
+- **Entorno del Campo Magnético**
+  - **Entornos de Campo Magnético Consistente**
+    - **Bailando:** Desactiva el modo antimagnético, fuerza magnética por encima de 10, evita usar 6 ejes.
+    - **Bailes de Ritmo Lento:** Usa el modo antimagnético, fuerza magnética 12, evita usar 6 ejes.
+    - **Socialización Normal y Sueño:** Usa el modo antimagnético, fuerza magnética 12, evita usar 6 ejes.
+  - **Interferencia en Algunas Áreas (por ejemplo, el suelo)**
+    - **Bailando:** Desactiva el modo antimagnético, fuerza magnética por encima de 10 (algunos nodos pueden cambiar en ciertas posiciones).
+    - **Bailando:** Usa el modo antimagnético, fuerza magnética 12 (no apto para uso continuo; se recomienda pausar durante unos segundos después de 1-3 minutos).
+    - **Bailando:** Modo de 6 ejes: Se necesita recalibración después de un uso prolongado.
+    - **Bailes de Ritmo Lento:** Usa el modo antimagnético, fuerza magnética 12, evita usar 6 ejes.
+    - **Socialización Normal y Sueño:** Usa el modo antimagnético, fuerza magnética 12, evita usar 6 ejes.
+  - **Entorno de Campo Magnético Limitado (por ejemplo, Camas de Muelles o Habitaciones Cerca de Transformadores)**
+    - **Durmiendo:** Modo antimagnético, luego usa 6 ejes.
+    - **Bailando y Bailes de Ritmo Lento:** Modo de 6 ejes: Se necesita recalibración después de un uso prolongado.
+    - **Socialización Regular:** Reduce el movimiento y otras actividades; la recalibración generalmente se puede retrasar.
+
+</div>
+
+
+# Cómo Elegir el Modo Antimagnético
+
+<div className="horizontal-tree-container">
+
+- **Entornos de Campo Magnético Consistente**
+  - **Bailando:** Desactiva el modo antimagnético, fuerza magnética por encima de 10, evita usar 6 ejes.
+  - **Bailes de Ritmo Lento:** Usa el modo antimagnético, fuerza magnética 12, evita usar 6 ejes.
+  - **Socialización Normal y Sueño:** Usa el modo antimagnético, fuerza magnética 12, evita usar 6 ejes.
+- **Interferencia en Algunas Áreas (por ejemplo, el suelo)**
+  - **Bailando:** Desactiva el modo antimagnético, fuerza magnética por encima de 10 (algunos nodos pueden cambiar en ciertas posiciones).
+  - **Bailando:** Usa el modo antimagnético, fuerza magnética 12 (no apto para uso continuo; se recomienda pausar durante unos segundos después de 1-3 minutos).
+  - **Bailando:** Modo de 6 ejes: Se necesita recalibración después de un uso prolongado.
+  - **Bailes de Ritmo Lento:** Usa el modo antimagnético, fuerza magnética 12, evita usar 6 ejes.
+  - **Socialización Normal y Sueño:** Usa el modo antimagnético, fuerza magnética 12, evita usar 6 ejes.
+- **Entorno de Campo Magnético Limitado (por ejemplo, Camas de Muelles o Habitaciones Cerca de Transformadores)**
+  - **Durmiendo:** Modo antimagnético, luego usa 6 ejes.
+  - **Bailando y Bailes de Ritmo Lento:** Modo de 6 ejes: Se necesita recalibración después de un uso prolongado.
+  - **Socialización Regular:** Reduce el movimiento y otras actividades; la recalibración generalmente se puede retrasar.
+
+</div>
+

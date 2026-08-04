@@ -74,12 +74,20 @@ const config: Config = {
   // ============================================================
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hans', 'ja', 'zh-Hant'],
+    locales: ['en', 'zh-Hans', 'zh-Hant', 'ja', 'es', 'fr', 'de', 'ko', 'ru', 'pt', 'it', 'ar'],
     localeConfigs: {
       en: { label: 'English', direction: 'ltr' },
       'zh-Hans': { label: '简体中文', direction: 'ltr' },
-      ja: { label: '日本語', direction: 'ltr' },
       'zh-Hant': { label: '繁體中文', direction: 'ltr' },
+      ja: { label: '日本語', direction: 'ltr' },
+      es: { label: 'Español', direction: 'ltr' },
+      fr: { label: 'Français', direction: 'ltr' },
+      de: { label: 'Deutsch', direction: 'ltr' },
+      ko: { label: '한국어', direction: 'ltr' },
+      ru: { label: 'Русский', direction: 'ltr' },
+      pt: { label: 'Português', direction: 'ltr' },
+      it: { label: 'Italiano', direction: 'ltr' },
+      ar: { label: 'العربية', direction: 'rtl' },
     },
   },
 

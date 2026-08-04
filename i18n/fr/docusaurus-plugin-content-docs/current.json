@@ -1,0 +1,46 @@
+{
+  "version.label": {
+    "message": "Suivant",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Rebocap Tutorials": {
+    "message": "Tutoriels Rebocap",
+    "description": "The label for category 'Rebocap Tutorials' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Help Manual": {
+    "message": "Manuel d'aide",
+    "description": "The label for category 'Help Manual' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Control Area": {
+    "message": "Zone de contrôle",
+    "description": "The label for category 'Control Area' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Frequently Asked Questions": {
+    "message": "Foire aux questions",
+    "description": "The label for category 'Frequently Asked Questions' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Software Integration": {
+    "message": "Intégration logicielle",
+    "description": "The label for category 'Software Integration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.SteamVR Protocol Integration": {
+    "message": "Intégration SteamVR",
+    "description": "The label for category 'SteamVR Protocol Integration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.VMC Protocol Integration": {
+    "message": "Intégration VMC",
+    "description": "The label for category 'VMC Protocol Integration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Plugins": {
+    "message": "Plugins",
+    "description": "The label for category 'Plugins' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.SDK": {
+    "message": "SDK",
+    "description": "The label for category 'SDK' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Product Certification": {
+    "message": "Certification",
+    "description": "The label for category 'Product Certification' in sidebar 'docsSidebar'"
+  }
+}

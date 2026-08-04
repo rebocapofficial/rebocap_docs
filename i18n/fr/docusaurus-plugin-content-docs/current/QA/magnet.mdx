@@ -1,0 +1,237 @@
+---
+sidebar_position: 2
+title: "Comment Identifier si l'Environnement Magnétique est Bon"
+---
+
+
+# Comment Identifier si l'Environnement Magnétique est Bon
+Pour les appareils de capture de mouvement, la considération principale est la cohérence de la direction du champ magnétique (en particulier le cap), qui se réfère à la direction parallèle au sol, c'est-à-dire les directions est, sud, ouest et nord.
+
+Parfois, il peut y avoir une interférence magnétique minime, mais elle peut quand même avoir un léger effet angulaire sur la direction. Il peut également y avoir des zones individuelles avec de fortes interférences qui n'affectent pas la direction de la boussole, comme lorsque la direction du champ magnétique de la source d'interférence est perpendiculaire au sol ou coïncide avec la direction du champ magnétique terrestre.
+
+Par conséquent, toutes les mesures doivent être basées sur la direction, tandis que la force du champ magnétique sert d'outil de jugement auxiliaire. De plus, la force du champ magnétique terrestre varie selon les dimensions ; plus vous êtes proche des pôles, plus le champ magnétique est fort, et plus vous êtes proche de l'équateur, plus le champ magnétique est faible. Ainsi, si vous voyez des références à la force du champ magnétique dans les vidéos de certains blogueurs, elles ne sont généralement pas très significatives, car vous pouvez avoir une différence de latitude importante avec eux. Par exemple, la force du champ magnétique à Pékin, en Chine, est d'environ 55uT, tandis qu'à Shenzhen, en Chine, elle est d'environ 35uT. De plus, le champ magnétique est également influencé par des facteurs géographiques, de sorte que les informations sur la force du champ magnétique ne sont généralement qu'à titre de référence. **La force du champ magnétique dans différentes régions n'est pas comparable ; seule la force du champ magnétique au sein de la même pièce est comparable !**
+
+### Sources d'Interférence du Champ Magnétique
+|    Source d'Interférence   |                                              Niveau d'Interférence                                               |
+|:--------------------------:|:----------------------------------------------------------------------------------------------------------------:|
+|          Aimant            |                                             Extrêmement fort, ne pas s'approcher                                             |
+|          Objets en Fer      |                               Lié à la taille ; plus l'objet est grand, plus l'interférence est forte. Par exemple, si vous utilisez des vis en fer sur une table, restez à environ 30 cm.                               |
+|        Acier Inoxydable 304 |                       Généralement non magnétique, mais peut présenter quelques interférences dues aux processus de fabrication, et c'est lié à la taille, environ 1/5 du niveau d'interférence des objets en fer.                        |
+|        Charge sans fil    |                                        Forte interférence près de la bobine, en particulier pendant la charge.                                        |
+|          Ordinateur          |                                           Interférence importante près des haut-parleurs.                                            |
+|          Téléphone Portable      |                                           Interférence importante près du haut-parleur du téléphone.                                           |
+|          Routeur            |                                       **Essentiellement aucune interférence à moins qu'il n'y ait des blocs de fer lestés.**                                        |
+|          Souris             |                                       **Essentiellement aucune interférence à moins qu'il n'y ait des blocs de fer lestés.**                                        |
+|          Contrôleur VR      |                                           A généralement des interférences dans un rayon de 30 cm.                                            |
+|          Casque           |                             Généralement, il n'y a pas d'interférence si vous restez à 30-40 cm, sauf pour certains appareils spécifiques, comme le pico4pro.                              |
+|  Près des câbles domestiques 220V |                                            Il y aura des interférences lorsque le courant est important.                                            |
+|          Haut-parleur           |                                           Interférence importante, essayez de rester à l'écart !                                            |
+|        Casque monté sur la tête |                                           Interférence importante, essayez de rester à l'écart !                                            |
+|        Casque Bluetooth    |                                     Le Bluetooth n'interfère pas avec le champ magnétique, mais le microphone du casque peut avoir des interférences !                                      |
+|        Table en Bois        |                                     Il y aura des interférences notables si des vis en fer sont utilisées aux joints ; pas d'interférence dans les autres zones.                                     |
+|        Multiprise         |                                         Dépend de la taille du courant ; un courant plus important signifie une interférence plus grande.                                         |
+|        Four à Micro-ondes      |                                     Interférence extrêmement élevée ; après avoir été allumé, il y a une interférence significative sur une large zone !                                      |
+|        Chauffe-eau        |                                       Contient des éléments de fer dans le métal ; généralement, il y a des interférences dans un rayon de 1 mètre.                                        |
+|          Mur              |                                  S'il s'agit d'un mur porteur ou d'une colonne en béton armé, il y a une interférence significative dans un rayon de 0,5 mètre.                                   |
+|          Plancher             | La plupart des planchers ont quelques interférences (les planchers en bois n'ont qu'une couche de surface ; la couche intérieure a toujours une structure en acier).<br/>Il y a quelques interférences près de la surface du sol, selon le matériau en acier ; certains planchers n'ont pratiquement aucune interférence au-dessus de 10 cm de hauteur, tandis que d'autres peuvent nécessiter plus de 60 cm voire 100 cm. |
+
+Les informations ci-dessus sont fournies à titre de référence uniquement ! Veuillez vous référer aux mesures réelles !
+
+<a id="use_phsical_compass"></a>
+
+### Mesure avec une Boussole Physique
+Utilisez une boussole physique pour effectuer des mesures en plusieurs points, vérifiez la direction du champ magnétique et vérifiez la cohérence de la direction de l'aiguille de la boussole. Il est recommandé de placer la boussole physique sur une grande boîte en carton rectangulaire pour assurer autant que possible la cohérence directionnelle de la boussole. En lisant la différence de degrés de l'aiguille de la boussole, vous pouvez évaluer la qualité de l'environnement magnétique.
+
+Un bon environnement magnétique aura des directions cohérentes en tous points. Si seule la direction du champ magnétique près du sol à une hauteur de 10 à 20 cm est incohérente, tandis que les autres directions sont cohérentes, l'environnement magnétique peut toujours être considéré comme bon. (Notre logiciel a des contraintes directionnelles sur les chevilles, il peut donc être immunisé contre les interférences magnétiques sur les capteurs de pied).
+
+Cependant, si la direction des capteurs magnétiques à hauteur de cuisse et de taille est incohérente, cela peut facilement entraîner un petit angle d'auto-rotation à la taille en s'asseyant, communément appelé inclinaison. (Cela fait référence au fait de ne pas utiliser d'algorithmes anti-magnétiques et de ne pas être en mode de fonctionnement à 6 axes).
+
+**En général, nous considérons qu'une différence de direction dans les 5 degrés indique une bonne cohérence du champ magnétique, selon la sensibilité de l'utilisateur à la direction de son squelette virtuel.**
+
+### Mesure avec une Boussole Électronique
+> Cette section présente uniquement l'utilisation de la boussole d'un téléphone portable pour la mesure
+
+Une boussole de téléphone portable est relativement moins précise qu'une boussole physique et nécessite également un calibrage. Il est également recommandé de placer le téléphone sur une grande boîte en carton rectangulaire pour éviter de changer la direction du téléphone et d'affecter les lectures. Pour des mesures et des résultats spécifiques, veuillez vous référer à [Mesure avec une Boussole Physique](#use_phsical_compass).
+
+:::danger Précautions pour l'Utilisation d'une Boussole de Téléphone Portable
+
+
+La boussole dans une application mobile n'adopte les données du capteur magnétique que lors de sa première ouverture ; par la suite, elle utilise le gyroscope pour maintenir le fonctionnement de la boussole. Par conséquent, toute interférence magnétique fera pointer la boussole toujours dans une direction.
+
+La méthode de mesure correcte consiste à tuer le processus de la boussole après avoir mesuré chaque point, puis à rouvrir l'application de boussole !
+
+:::
+
+
+### Mesure avec une Application d'Enregistrement de Capteurs Mobiles
+Il est recommandé de télécharger l'application phyphox pour la mesure. Voici la [version chinoise Android à télécharger](../../img/files/base.apk).
+Vous pouvez également le télécharger depuis le [site officiel](https://phyphox.org/download/).
+
+Après avoir installé l'application, ouvrez-la et suivez les instructions ci-dessous pour démarrer l'enregistrement. Ensuite, déplacez-vous pour enregistrer la force du champ magnétique à trois axes à divers endroits. **Assurez-vous que la direction du téléphone pointe toujours dans une seule direction !!!** Vous pouvez le placer sur une grande boîte en carton carrée pour assurer plus facilement la cohérence directionnelle du téléphone.
+
+<div align="center">
+<img src="/img/mag_app1-en.jpg" alt="left" width="30%" />
+<img src="/img/mag_app2-en.jpg" alt="left" width="30%" />
+</div>
+
+Si le résultat montre trois courbes plates (assurez-vous que le téléphone a été translaté entre les positions, une courbe plate à un seul point n'a pas de sens), cela indique un bon environnement magnétique. Sinon, diagnostiquez soigneusement la direction du champ magnétique. Il est recommandé de mesurer à différentes hauteurs simultanément.
+
+:::info Astuce
+
+
+Ce type d'enregistrement continu du champ magnétique sur trois axes est fortement influencé par les mouvements personnels. L'orientation peut facilement changer pendant le mouvement, et tout changement directionnel provoquera des pics. Par conséquent, cette méthode n'est généralement pas recommandée. Certains utilisateurs peuvent fréquemment changer d'orientation pendant la mesure, rendant les résultats encore moins fiables !!!
+
+:::
+
+
+### Mesure avec les Capteurs Rebocap
+
+Après le calibrage du champ magnétique, les capteurs Rebocap ont une précision de mesure supérieure à celle des différents smartphones. Par conséquent, si vous avez un équipement Rebocap, utilisez les capteurs Rebocap pour la mesure. Vous pouvez placer l'un des capteurs dans le boîtier de charge avec les contacts de charge vers le haut, puis sélectionner un nœud pour afficher la rotation 3D de ce nœud.
+
+Assurez-vous de désactiver le mode anti-magnétique ; sinon, les résultats de la mesure seront invalides !!!
+
+Ensuite, vérifiez la cohérence de la direction de la boîte cubique à chaque point. S'ils sont tous cohérents, cela indique un bon environnement magnétique. En cas d'incohérence, lors de l'utilisation du mode non-anti-magnétique, le squelette corporel virtuel présentera des déviations près des points de mesure correspondants.
+
+De plus, nous pouvons utiliser des capteurs Rebocap calibrés pour les champs magnétiques pour mesurer la force du champ magnétique ([voir ici pour déterminer si le calibrage est nécessaire](#detect_need_magnet_calibrate)), mesurant le niveau d'interférence de différentes sources. [Les capteurs Rebocap calibrés ont une précision de mesure de la force du champ magnétique supérieure à celle de l'utilisation d'un téléphone].
+
+<a id="detect_need_magnet_calibrate"></a>
+
+# Comment Déterminer si un Calibrage du Champ Magnétique est Nécessaire
+### Vérification Qualitative Globale
+S'il est déjà porté et activé, vous pouvez vérifier la force du champ magnétique dans la [liste d'informations sur le matériel](../ui_help_doc/info). Généralement, une force globale cohérente apparaîtra tout en vert, tandis que celles qui dépassent considérablement la plage moyenne apparaîtront en jaune ou même en rouge. Par conséquent, accordez une attention particulière aux nœuds jaunes et rouges pour la [détection de nœud unique](#single_node_magnet_check).
+
+Cependant, il y a une situation où les sources d'interférence dans certaines zones sont en effet importantes, ce qui peut être testé à nouveau loin de la source d'interférence.
+
+Une autre façon de juger est que la force du champ magnétique des trackers gauche et droit à la même hauteur devrait être cohérente. Du sol à la tête, le changement de la force du champ magnétique est généralement cohérent. Par exemple, les deux pieds sont autour de 35, les mollets autour de 39, les cuisses autour de 45, et la poitrine et la taille autour de 46. Ceci est généralement dû à des facteurs environnementaux plutôt qu'à une déviation du champ magnétique.
+
+Les méthodes de détermination ci-dessus sont toutes des jugements qualitatifs pour savoir si un calibrage est nécessaire, pour plus de détails [référez-vous ici](#single_node_magnet_check).
+
+<a id="single_node_magnet_check"></a>
+
+### Détection de Nœud Unique
+Ouvrez le nœud pour vérifier la force du champ magnétique, puis trouvez un point dans l'espace, le point a, déplacez-vous vers le point a, appuyez sur l'interrupteur du capteur pour redémarrer, et tournez lentement autour du point a le long de trois axes tout en observant les changements de force du champ magnétique. Par exemple, nous pouvons nous arrêter pendant 1 seconde avec chacune des 6 faces tournées vers le haut pour vérifier la force du champ magnétique. Si la force du champ magnétique est complètement cohérente, le calibrage n'est pas nécessaire ; sinon, le calibrage est requis.
+
+Nous pouvons également vérifier la force relative du champ magnétique. Si la plage de variation se situe dans les 0,1, en général, un recalibrage n'est pas nécessaire. Cependant, si vous n'êtes pas sûr, vous pouvez effectuer un calibrage du champ magnétique pour voir si la cohérence s'améliore après le calibrage.
+
+:::info Explication du Principe
+
+
+S'il y a un décalage de champ magnétique, la force du champ magnétique sera incohérente lorsque le capteur est dans différentes directions. Par exemple, supposons que l'axe x a un décalage de 15uT. Si la direction du champ magnétique est alignée avec l'axe x, la force du champ magnétique est de 45uT. Lorsque le champ magnétique est dans la même direction que l'axe x positif, la valeur mesurée est de 60uT, et dans la direction opposée, elle est de 30uT. Sans décalage, le résultat de la mesure sera de 45uT.
+
+Cependant, la force du champ magnétique dans notre pièce aura toujours des interférences. Le champ magnétique dans une pièce spécifique présente souvent de petites fluctuations, de sorte qu'une variation d'environ 1 à 3uT pendant la mesure est normale. La valeur moyenne doit être observée.
+
+:::
+
+
+:::warning Astuce
+
+
+Le point spatial détecté doit être éloigné des sources d'interférence, de préférence à un demi-mètre de l'ordinateur, et pivoter autour d'un point dans l'espace.
+
+:::
+
+
+# Comment Choisir le Mode Anti-Magnétique
+
+
+
+
+
+# Autres Problèmes Courants
+
+- Après le sommeil, la poitrine ou la taille est complètement tordue
+  > S'il utilise le mode à 6 axes, cela est dû à une dérive à long terme. Si le nœud est éloigné de la poitrine pour éviter les fluctuations causées par la respiration, notre algorithme peut supprimer la dérive du gyroscope.
+  > 
+  > Lors de l'utilisation du mode anti-magnétique, si la [taille relative du champ magnétique](../ui_help_doc/info#hardware_detail) n'est pas autour de 1,0 pendant une longue période après s'être allongé, le capteur fonctionne essentiellement aussi en mode à 6 axes.
+
+- En utilisant le mode anti-magnétique, il y a encore une légère flexion de la taille en position assise
+  > En mode anti-magnétique, le choix entre l'utilisation des 6 axes ou du magnétomètre est principalement basé sur la force du champ magnétique. Si la force du champ magnétique est cohérente, mais qu'il y a un léger écart angulaire lors de la position debout ou assise, l'algorithme anti-magnétique ne peut pas le reconnaître, il y aura donc toujours de petits écarts angulaires. Pensez à utiliser le mode à 6 axes sans le magnétomètre pour résoudre ce problème.
+  >
+  > L'algorithme anti-magnétique traite principalement les champs magnétiques faibles en certains points, mais dans la plupart des zones et pendant la plupart des temps d'utilisation, l'environnement magnétique est bon. Par exemple, lorsque la poignée est proche du capteur ou temporairement déplacée devant l'ordinateur, l'effet anti-magnétique est très visible. Cependant, pour les petites erreurs de champ magnétique angulaire et la force cohérente du champ magnétique, l'algorithme anti-magnétique ne peut actuellement pas atteindre une bonne reconnaissance. Veuillez attendre les mises à jour.
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+# Comment Choisir le Mode Anti-Magnétique
+
+<div className="horizontal-mindmap-container">
+  <div className="hm-root-badge">Environnement de Champ Magnétique</div>
+  <div className="hm-branches-wrapper">
+    
+    <div className="hm-branch">
+      <div className="hm-branch-title">Environnements de Champ Magnétique Cohérents</div>
+      <div className="hm-leaf-list">
+        <div className="hm-leaf-item"><b>Danse :</b> Désactivez le mode anti-magnétique, force magnétique supérieure à 10, évitez d'utiliser le 6 axes.</div>
+        <div className="hm-leaf-item"><b>Danse Lente :</b> Utilisez le mode anti-magnétique, force magnétique 12, évitez d'utiliser le 6 axes.</div>
+        <div className="hm-leaf-item"><b>Socialisation Normale et Sommeil :</b> Utilisez le mode anti-magnétique, force magnétique 12, évitez d'utiliser le 6 axes.</div>
+      </div>
+    </div>
+
+    <div className="hm-branch">
+      <div className="hm-branch-title">Interférence dans Certaines Zones (ex. Planchers)</div>
+      <div className="hm-leaf-list">
+        <div className="hm-leaf-item"><b>Danse :</b> Désactivez le mode anti-magnétique, force magnétique supérieure à 10 (certains nœuds peuvent se déplacer dans certaines positions).</div>
+        <div className="hm-leaf-item"><b>Danse :</b> Utilisez le mode anti-magnétique, force magnétique 12 (ne convient pas à une utilisation continue ; recommandez de faire une pause de quelques secondes après 1 à 3 minutes).</div>
+        <div className="hm-leaf-item"><b>Danse :</b> Mode 6 axes : Recalibrage nécessaire après une utilisation prolongée.</div>
+        <div className="hm-leaf-item"><b>Danse Lente :</b> Utilisez le mode anti-magnétique, force magnétique 12, évitez d'utiliser le 6 axes.</div>
+        <div className="hm-leaf-item"><b>Socialisation Normale et Sommeil :</b> Utilisez le mode anti-magnétique, force magnétique 12, évitez d'utiliser le 6 axes.</div>
+      </div>
+    </div>
+
+    <div className="hm-branch">
+      <div className="hm-branch-title">Environnement de Champ Magnétique Limité (ex. Lits à Ressorts ou Pièces Près de Transformateurs)</div>
+      <div className="hm-leaf-list">
+        <div className="hm-leaf-item"><b>Sommeil :</b> Mode anti-magnétique, puis utilisez le 6 axes.</div>
+        <div className="hm-leaf-item"><b>Danse et Danse Lente :</b> Mode 6 axes : Recalibrage nécessaire après une utilisation prolongée.</div>
+        <div className="hm-leaf-item"><b>Socialisation Régulière :</b> Réduisez les mouvements et autres activités ; le recalibrage peut généralement être retardé.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+# Comment Choisir le Mode Anti-Magnétique
+
+<div className="horizontal-tree-container">
+
+- **Environnement de Champ Magnétique**
+  - **Environnements de Champ Magnétique Cohérents**
+    - **Danse :** Désactivez le mode anti-magnétique, force magnétique supérieure à 10, évitez d'utiliser le 6 axes.
+    - **Danse Lente :** Utilisez le mode anti-magnétique, force magnétique 12, évitez d'utiliser le 6 axes.
+    - **Socialisation Normale et Sommeil :** Utilisez le mode anti-magnétique, force magnétique 12, évitez d'utiliser le 6 axes.
+  - **Interférence dans Certaines Zones (ex. Planchers)**
+    - **Danse :** Désactivez le mode anti-magnétique, force magnétique supérieure à 10 (certains nœuds peuvent se déplacer dans certaines positions).
+    - **Danse :** Utilisez le mode anti-magnétique, force magnétique 12 (ne convient pas à une utilisation continue ; recommandez de faire une pause de quelques secondes après 1 à 3 minutes).
+    - **Danse :** Mode 6 axes : Recalibrage nécessaire après une utilisation prolongée.
+    - **Danse Lente :** Utilisez le mode anti-magnétique, force magnétique 12, évitez d'utiliser le 6 axes.
+    - **Socialisation Normale et Sommeil :** Utilisez le mode anti-magnétique, force magnétique 12, évitez d'utiliser le 6 axes.
+  - **Environnement de Champ Magnétique Limité (ex. Lits à Ressorts ou Pièces Près de Transformateurs)**
+    - **Sommeil :** Mode anti-magnétique, puis utilisez le 6 axes.
+    - **Danse et Danse Lente :** Mode 6 axes : Recalibrage nécessaire après une utilisation prolongée.
+    - **Socialisation Régulière :** Réduisez les mouvements et autres activités ; le recalibrage peut généralement être retardé.
+
+</div>
+
+
+# Comment Choisir le Mode Anti-Magnétique
+
+<div className="horizontal-tree-container">
+
+- **Environnements de Champ Magnétique Cohérents**
+  - **Danse :** Désactivez le mode anti-magnétique, force magnétique supérieure à 10, évitez d'utiliser le 6 axes.
+  - **Danse Lente :** Utilisez le mode anti-magnétique, force magnétique 12, évitez d'utiliser le 6 axes.
+  - **Socialisation Normale et Sommeil :** Utilisez le mode anti-magnétique, force magnétique 12, évitez d'utiliser le 6 axes.
+- **Interférence dans Certaines Zones (ex. Planchers)**
+  - **Danse :** Désactivez le mode anti-magnétique, force magnétique supérieure à 10 (certains nœuds peuvent se déplacer dans certaines positions).
+  - **Danse :** Utilisez le mode anti-magnétique, force magnétique 12 (ne convient pas à une utilisation continue ; recommandez de faire une pause de quelques secondes après 1 à 3 minutes).
+  - **Danse :** Mode 6 axes : Recalibrage nécessaire après une utilisation prolongée.
+  - **Danse Lente :** Utilisez le mode anti-magnétique, force magnétique 12, évitez d'utiliser le 6 axes.
+  - **Socialisation Normale et Sommeil :** Utilisez le mode anti-magnétique, force magnétique 12, évitez d'utiliser le 6 axes.
+- **Environnement de Champ Magnétique Limité (ex. Lits à Ressorts ou Pièces Près de Transformateurs)**
+  - **Sommeil :** Mode anti-magnétique, puis utilisez le 6 axes.
+  - **Danse et Danse Lente :** Mode 6 axes : Recalibrage nécessaire après une utilisation prolongée.
+  - **Socialisation Régulière :** Réduisez les mouvements et autres activités ; le recalibrage peut généralement être retardé.
+
+</div>
+

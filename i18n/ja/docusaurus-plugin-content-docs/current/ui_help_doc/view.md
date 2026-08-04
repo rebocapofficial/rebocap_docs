@@ -23,19 +23,19 @@ title: "3Dプレビュー機能"
 <summary>詳細を見る</summary>
 
     
-  ![shutdown 3d render](/img/close_3d_view-jp.gif)
+  ![shutdown 3d render](../../../../../static/img/close_3d_view-jp.gif)
 
   
 </details>
 
-![3d preview](/img/3d_view_1.png)
+![3d preview](../../../../../static/img/3d_view_1.png)
 
 # ログ機能
 警告情報などがあるかどうかを確認するために使用
 
 ### 開く方法
 
-![3d preview](/img/open_log-jp.gif)
+![3d preview](../../../../../static/img/open_log-jp.gif)
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

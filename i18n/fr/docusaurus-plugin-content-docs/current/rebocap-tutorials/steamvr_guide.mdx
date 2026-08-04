@@ -1,0 +1,321 @@
+---
+sidebar_position: 9
+format: mdx
+---
+
+# Guide SteamVR
+
+Voici quelques paramètres recommandés pour SteamVR et des solutions aux problèmes courants.
+
+
+## Recommandations pour le casque VR / Logiciel de streaming
+### Paramètres du casque VR
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+<!-- === 轮播图组件 代码开始 === -->
+<style>
+.html-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.html-carousel-slides {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* 4:3 aspect ratio */
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.html-carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.html-carousel-slide img, .html-carousel-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.html-carousel input[type="radio"] {
+  display: none;
+}
+.html-carousel-slide.slide1 {
+  opacity: 1;
+  pointer-events: auto;
+}
+#slide2:checked ~ .html-carousel-slides .slide1 {
+  opacity: 0;
+  pointer-events: none;
+}
+#slide2:checked ~ .html-carousel-slides .slide2 {
+  opacity: 1;
+  pointer-events: auto;
+}
+.html-carousel-controls {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.html-carousel-arrows {
+  position: relative;
+  width: 20px;
+  height: 24px;
+}
+@media (hover: hover) {
+  .html-carousel-arrows {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .html-carousel:hover .html-carousel-arrows {
+    opacity: 1;
+  }
+}
+.html-carousel-arrows label {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.html-carousel-arrows label:hover {
+  color: var(--ifm-color-primary, #000);
+}
+.html-carousel-arrows .arrow-left-1, .html-carousel-arrows .arrow-right-1 {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+}
+#slide2:checked ~ .html-carousel-controls .arrow-left-1,
+#slide2:checked ~ .html-carousel-controls .arrow-right-1 {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+#slide2:checked ~ .html-carousel-controls .arrow-left-2,
+#slide2:checked ~ .html-carousel-controls .arrow-right-2 {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+}
+.html-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.html-carousel-dots label {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #ccc;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.html-carousel-dots label[for="slide1"] {
+  background: rgba(128, 128, 128, 0.4);
+  width: 24px;
+}
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"] {
+  background: #ccc;
+  width: 10px;
+}
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"] {
+  background: rgba(128, 128, 128, 0.4);
+  width: 24px;
+}
+.html-carousel-progress-bar {
+  width: 100%;
+  height: 2px;
+  background: rgba(128, 128, 128, 0.15);
+  margin: 0;
+  border-radius: 1px;
+  opacity: 0.3;
+  overflow: hidden;
+  position: relative;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+.html-carousel-progress-bar::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; height: 100%;
+  width: var(--carousel-progress, 0%);
+  background: var(--ifm-color-primary, #555);
+  transition: width 0.1s linear;
+}
+</style>
+
+<div class="html-carousel">
+  <input type="radio" name="carousel" id="slide1" defaultChecked />
+  <input type="radio" name="carousel" id="slide2" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/steamvr_windows.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <video src="/img/steamvr_guide/steamvr_windows_video.mp4" autoplay muted playsinline preload="auto"></video>
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide2" class="arrow-left-1">&#10094;</label>
+      <label for="slide1" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide1" title="Image 1"></label>
+      <label for="slide2" title="Video"></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide2" class="arrow-right-1">&#10095;</label>
+      <label for="slide1" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+<!-- === 轮播图组件 代码结束 === -->
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+<strong> - Essayez d'utiliser la fenêtre de bureau de SteamVR pour contrôler le logiciel rebocap.</strong><br />
+Revenir au système intégré de certains casques VR arrêtera/mettra en veille les données SteamVR,<br />
+et un désalignement de direction se produira lors du retour à SteamVR.<br />
+( <u>Virtual Desktop</u> n'est pas affecté par ce problème, mais évitez la mise en veille du système Quest )<br />
+<details className="plain-details"><summary>Impossible d'afficher le bureau après avoir cliqué sur l'icône ?</summary>
+Essayez de recentrer ou de réinitialiser le tableau de bord principal dans le menu SteamVR.<br />
+</details>
+
+</div>
+</div>
+
+
+
+
+
+
+- Pour les casques autonomes comme Quest ou Pico, tracez la limite de jeu légèrement plus grande que la taille réelle de votre pièce<br />
+pour éviter de déclencher des pop-ups de limite qui perturbent les données de suivi du casque dans SteamVR.
+
+- Si le casque reste fixe lors de la marche ou de l'accroupissement, cela indique que le suivi de position est désactivé dans le système du casque VR.<br />
+(Activez la limite de jeu sur le système Quest ; activez le [Suivi de position] sur le système Pico)
+
+
+
+
+### Virtual Desktop 
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![vd_settings](../../../../../static/img/steamvr_guide/vd_settings.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+<strong>Il est recommandé de désactiver 2 options :</strong>
+<br />
+
+> <strong>1 - Centrer sur l'espace de jeu (Center to play space)</strong><br />
+ Lors d'un double-clic sur le bouton Accueil de la manette gauche pour revenir au bureau VD, le casque dans l'espace SteamVR tourne de 180° vers l'arrière,<br />
+ce qui peut amener Rebocap à enregistrer une orientation incorrecte lors de l'étalonnage.
+
+
+
+> <strong>2 - Émuler les trackers Vive SteamVR (Emulate SteamVR vive trackers)</strong><br />
+ Cette fonctionnalité transmet les points de suivi corporel de l'IA du système Quest dans SteamVR, mais provoque des chevauchements de points de suivi et des conflits dans VRChat.<br />
+ Si vous souhaitez uniquement activer certains points de suivi personnalisés, vous pouvez utiliser un plugin pour le configurer.<br />
+ 🌐 [Dépôt GitHub du plugin](https://github.com/DenTechs/Virtual_Desktop_Body_Tracking_Configurator)
+
+
+</div>
+</div>
+
+
+
+
+### SteamVR
+- Désactiver les limites SteamVR<br />
+Les limites par défaut restreignent la plage de mouvement maximale des points de suivi comme un mur invisible.<br />
+Si le casque VR se désaligne à 2,4 m de hauteur, les trackers peuvent sembler incapables de dépasser la hauteur du casque lorsque vous vous allongez et levez les jambes,<br />
+car la hauteur de plafond par défaut de SteamVR est de 2,4 m et les points de suivi ne peuvent pas traverser le plafond.
+
+- Recentrer l'orientation du casque VR à l'avance<br />
+Maintenez enfoncé le 'Bouton Accueil de la manette droite' pour réinitialiser l'orientation du système du casque VR,<br />
+ce qui réinitialise la flèche de l'horizon virtuel SteamVR pour qu'elle pointe droit devant. Si l'orientation est accidentellement perdue, utilisez cette fonctionnalité pour réaligner le système de coordonnées.
+
+- Pop-up d'invite lors du lancement de jeux<br />
+Sélectionnez n'importe quelle configuration de raccourcis de la communauté en arrière-plan,<br />
+et après l'avoir activée, l'invite n'apparaîtra plus lors des lancements ultérieurs.
+
+## Impossible de se connecter à SteamVR
+Veuillez vérifier les éléments suivants :
+
+<strong> 1 - Cliquez sur Étalonnage pendant que SteamVR est en cours d'exécution.</strong><br />
+Si SteamVR n'est pas en cours d'exécution, Rebocap ne peut pas détecter si la VR existe dans le système.
+
+<strong> 2 - Vérifier les pilotes SteamVR.</strong><br />
+Ouvrez les enregistrements de la [Fenêtre de journal] de Rebocap, qui vérifient automatiquement au lancement de Rebocap.
+Si nécessaire, vous pouvez forcer l'installation des pilotes dans la page [Paramètres].
+
+<strong> 3 - Vérifier les modules complémentaires SteamVR.</strong><br />
+Si SteamVR plante de manière inattendue, il désactive souvent de force tous les modules complémentaires.<br />
+La réactivation des modules complémentaires Rebocap nécessite de redémarrer SteamVR.
+
+
+
+
+
+
+## Afficher et masquer les points de suivi SteamVR
+
+
+
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-en.png)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+<strong> Afficher et masquer les points de suivi</strong><br />
+ Contrôlez la visibilité des points de suivi dans le logiciel sous [ Set SteamVR Nodes ],<br />
+ sans avoir besoin d'opérer dans le menu de gestion de SteamVR.<br />
+
+ <details className="plain-details"><summary>Remarque</summary>
+Les trackers ne se connectent pas directement à SteamVR. Les trackers physiques contrôlent le système squelettique, qui crée les points de suivi correspondants et les transmet à SteamVR.<br />
+Cela signifie que des points de suivi peuvent toujours être fournis à SteamVR même sans tracker physique sur cette partie du corps.
+
+</details>
+
+
+</div>
+</div>
+
+## Points de suivi définis mais le jeu ne reconnaît pas les pieds et la taille
+
+- Certains jeux utilisent l'environnement OpenVR pour identifier le suivi, mais le pilote inclus dans la version actuelle de Rebocap comporte un bug provoquant la non-reconnaissance des trackers, qui ne peuvent pas être reconnus même s'ils sont modifiés dans les paramètres de SteamVR.
+
+
+Ce bug est en attente de correction par l'équipe dans les futures mises à jour.
+

@@ -1,0 +1,18 @@
+{
+  "logo.alt": {
+    "message": "REBOCAP",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Online Store": {
+    "message": "온라인 스토어",
+    "description": "Navbar item with label Online Store"
+  },
+  "item.label.Forum": {
+    "message": "포럼",
+    "description": "Navbar item with label Forum"
+  },
+  "item.label.Official Site": {
+    "message": "공식 사이트",
+    "description": "Navbar item with label Official Site"
+  }
+}

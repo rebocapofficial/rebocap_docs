@@ -16,7 +16,7 @@ The hardware list information is used for global preview.
 - Fifth Column
   > Absolute value of the magnetic field, measured in uT. A consistent magnetic field is generally displayed in green. If some values are very high or very low, it will be displayed in red. For details on how to assess the magnetic field, please refer to Magnetic Field Detection and Diagnosis
 
-![img.png](/img/hardware_list_info-en.png)
+![img.png](../../static/img/hardware_list_info-en.png)
 
 <a id="hardware_detail"></a>
 
@@ -46,7 +46,7 @@ Click on an item in the list to view detailed hardware information.
 - Gyroscope
   > Gyroscope after three-axis calibration. If the tracker is completely stationary and the value here is more than 0.2 away from zero, it is recommended to perform Gyroscope Calibration
 
-![img.png](/img/hardware_detail-en.png)
+![img.png](../../static/img/hardware_detail-en.png)
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

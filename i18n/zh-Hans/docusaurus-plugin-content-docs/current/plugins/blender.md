@@ -53,7 +53,7 @@ title: "Blender 插件下载"
 :::
 
 
-![Blender安装位置示意图](/img/for_blender_install/blender_23.png)
+![Blender安装位置示意图](../../../../../static/img/for_blender_install/blender_23.png)
 
 
 # 骨骼绑定

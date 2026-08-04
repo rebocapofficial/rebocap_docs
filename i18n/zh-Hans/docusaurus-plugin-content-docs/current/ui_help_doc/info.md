@@ -16,7 +16,7 @@ title: "硬件列表信息"
 - 第五列
   > 磁场绝对值大小，单位是 uT，磁场一般一致性好就是显示绿色，如果个别很高或者很低会显示红色，磁场怎么看，具体请查阅 磁场检测和诊断
 
-![img.png](/img/hardware_list_info.png)
+![img.png](../../../../../static/img/hardware_list_info.png)
 
 <a id="hardware_detail"></a>
 
@@ -46,7 +46,7 @@ title: "硬件列表信息"
 - 陀螺仪
   > 三轴校准后陀螺仪，如果跟踪器完全静止，这里的数值离0点超过0.2，建议进行 陀螺仪校准
 
-![img.png](/img/hardware_detail_cn.png)
+![img.png](../../../../../static/img/hardware_detail_cn.png)
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

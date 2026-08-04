@@ -158,7 +158,7 @@ title: "軟體下載"
    * 從開始選單開啟  
    * 從桌面捷徑開啟  
 
-![安裝步驟](/img/setup_steps.gif)
+![安裝步驟](../../../../../static/img/setup_steps.gif)
 
 ## 軟體更新說明
 

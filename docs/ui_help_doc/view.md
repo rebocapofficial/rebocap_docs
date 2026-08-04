@@ -23,19 +23,19 @@ title: "3D Preview Feature"
 <summary>View Details</summary>
 
     
-  ![shutdown 3d render](/img/close_3d_view-en.gif)
+  ![shutdown 3d render](../../static/img/close_3d_view-en.gif)
 
   
 </details>
 
-![3d preview](/img/3d_view_1.png)
+![3d preview](../../static/img/3d_view_1.png)
 
 # Log Feature
 Used to check for warning messages, etc.
 
 ### How to Open
 
-![3d preview](/img/open_log-en.gif)
+![3d preview](../../static/img/open_log-en.gif)
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

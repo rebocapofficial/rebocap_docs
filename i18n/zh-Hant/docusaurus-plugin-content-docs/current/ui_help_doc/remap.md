@@ -7,7 +7,7 @@ title: "傳感器整體預覽"
 
 如下圖所示，對應關節部位綠色則代表傳感器已連接，灰色則表示未連接。圖中左側即為人體自身的左側，比如下圖中左腳的傳感器沒有連接，右邊下腿的傳感器也沒有連接。
 
-![img.png](/img/2d_view.png)
+![img.png](../../../../../static/img/2d_view.png)
 
 <a id="tracker_replace"></a>
 
@@ -56,7 +56,7 @@ title: "傳感器整體預覽"
   > 左下腿替換以後沒有被點亮，因此會發生校準失敗的現象！！！
 * 右下腿
 
-![img.png](/img/2d_view_replace.png)
+![img.png](../../../../../static/img/2d_view_replace.png)
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

@@ -79,7 +79,7 @@ If users find that there are fewer tracking points, it is likely that they have 
 After completing the basic settings mentioned above, follow the steps below:
 1. Press the Y button on the left controller to open the settings panel.
 2. Click the little person icon on the panel (provided that the virtual tracker in SteamVR has been activated; otherwise, the icon here will not match the one in the image below. If unclear, please refer to [SteamVR Integration](README)).
-    > ![Full Body Calibration Button](/img/vrchat_calibrate.png)
+    > ![Full Body Calibration Button](../../../static/img/vrchat_calibrate.png)
 3. Adjust your standing posture and strike a T-pose, ensuring that the tracking point on the top of your foot is near the top of your foot. If the green range sphere is open, try to make the sphere as small as possible (users familiar with IK can adjust it themselves).
     > If you find that the top of your foot is below the floor, this is often caused by a bug in VRChat. VRChat has issues with ground recognition; for example, if you place the controller on the real floor, the position of the controller in VRChat may be below the floor (the same applies if it is floating).
     > 

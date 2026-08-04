@@ -146,20 +146,41 @@ fi
 # ═══════════════════════════════════════════════════════════
 # Step 4 — Build
 # ═══════════════════════════════════════════════════════════
-log "Building Docusaurus..."
+# 核心修改：分批串行编译，彻底绕过内存溢出 (OOM) 限制
+log "Building Docusaurus sequentially (Low Memory Mode)..."
 rm -rf "$STAGING_DIR"
+mkdir -p "$STAGING_DIR"
 
-# 核心修改：注入内存限制，并且去掉 tail -5，以便爆内存时能看到完整的错误日志
-NODE_OPTIONS="--max-old-space-size=1536" npx docusaurus build --out-dir "$STAGING_DIR" 2>&1
+LOCALES="en zh-Hans zh-Hant ja es fr de ko ru pt it ar"
+for loc in $LOCALES; do
+  log "Building locale: $loc"
+  if [ "$loc" = "en" ]; then
+    OUT_DIR="$STAGING_DIR"
+  else
+    OUT_DIR="$STAGING_DIR/$loc"
+  fi
+  
+  NODE_OPTIONS="--max-old-space-size=1200" npx docusaurus build --locale "$loc" --out-dir "$OUT_DIR" 2>&1
+  
+  if [ ${PIPESTATUS[0]} -ne 0 ]; then
+      log "Docusaurus build FAILED on locale $loc!"
+      LAST_ERROR="sent"
+      notify_feishu "failure" "Docusaurus 编译失败 ($loc)，请检查日志。"
+      exit 1
+  fi
 
-# 检查上一步 Docusaurus 编译是否真的成功
-if [ ${PIPESTATUS[0]} -ne 0 ]; then
-    log "Docusaurus build FAILED! Please check the logs above."
-    LAST_ERROR="sent"
-    notify_feishu "failure" "Docusaurus 编译失败，请检查服务器日志。ssh 执行: journalctl -u rebocap-deploy --no-pager -n 80"
-    exit 1
-fi
-log "Docusaurus build OK"
+  # [SLIM SCRIPT] Real-Time Garbage Collection: Deduplicate identical assets using symlinks
+  if [ "$loc" != "en" ]; then
+    for asset in img assets js admin; do
+      if [ -d "$OUT_DIR/$asset" ]; then
+        rm -rf "$OUT_DIR/$asset"
+        ln -s "../$asset" "$OUT_DIR/$asset"
+      fi
+    done
+    log "Slim: Replaced redundant assets for $loc with symlinks to root"
+  fi
+done
+log "Docusaurus sequential build OK"
 
 # ── 2. Pagefind 内存保护 ──────────────────────────────────────────────
 log "Running pagefind..."

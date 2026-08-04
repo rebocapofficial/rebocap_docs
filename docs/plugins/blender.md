@@ -52,7 +52,7 @@ If some users fail to install, please find the original installation location of
 :::
 
 
-![Blender Installation Location Diagram](/img/for_blender_install/blender_23.png)
+![Blender Installation Location Diagram](../../static/img/for_blender_install/blender_23.png)
 
 # Skeleton Binding
 1. Automatic binding of VRM skeleton

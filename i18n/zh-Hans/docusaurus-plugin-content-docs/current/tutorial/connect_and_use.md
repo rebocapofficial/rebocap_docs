@@ -10,7 +10,7 @@ sidebar_label: "连接指南"
 2. 将接收器插入电脑USB接口中
 3. 打开 Rebocap 软件点击连接
 
-![连接接收器](/img/connect.gif)
+![连接接收器](../../../../../static/img/connect.gif)
 
 <a id="how_to_solve_cannot_connect"></a>
 
@@ -28,7 +28,7 @@ sidebar_label: "连接指南"
 * 确保驱动没有被更换，这里可以按照下图所示操作来回滚接收器串口驱动，如果还不能连接，拔掉接收器重新插入。
   >   连接后无法校准，并且无法修改RGB灯颜色，也可以尝试回滚驱动
 
-    ![回滚接收器驱动](/img/rollback_driver.gif)
+    ![回滚接收器驱动](../../../../../static/img/rollback_driver.gif)
 
 
 </details>

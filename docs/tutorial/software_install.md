@@ -158,7 +158,7 @@ Notes:
    * Open from the Start Menu
    * Open via the desktop shortcut
 
-![Installation Steps](/img/setup_steps-en.gif)
+![Installation Steps](../../static/img/setup_steps-en.gif)
 
 ## Software Update Notes
 

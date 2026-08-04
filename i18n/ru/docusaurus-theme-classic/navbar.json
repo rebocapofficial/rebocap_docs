@@ -1,0 +1,18 @@
+{
+  "logo.alt": {
+    "message": "REBOCAP",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Online Store": {
+    "message": "Магазин",
+    "description": "Navbar item with label Online Store"
+  },
+  "item.label.Forum": {
+    "message": "Форум",
+    "description": "Navbar item with label Forum"
+  },
+  "item.label.Official Site": {
+    "message": "Официальный сайт",
+    "description": "Navbar item with label Official Site"
+  }
+}

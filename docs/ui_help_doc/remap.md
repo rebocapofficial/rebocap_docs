@@ -7,7 +7,7 @@ title: "Sensor Overview"
 
 As shown in the figure below, a green color indicates that the sensor is connected to the corresponding joint, while gray indicates that it is not connected. The left side of the image represents the left side of the human body; for example, in the image below, the sensor on the left foot is not connected, and the sensor on the right lower leg is also not connected.
 
-![img.png](/img/2d_view.png)
+![img.png](../../static/img/2d_view.png)
 
 <a id="tracker_replace"></a>
 
@@ -56,7 +56,7 @@ As shown in the figure below, all four points of the left and right hands have b
   > The left lower leg was not activated after replacement, so a calibration failure will occur!!!
 * Right Lower Leg
 
-![img.png](/img/2d_view_replace.png)
+![img.png](../../static/img/2d_view_replace.png)
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

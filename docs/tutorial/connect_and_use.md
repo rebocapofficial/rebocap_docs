@@ -10,7 +10,7 @@ sidebar_label: "Connection Guide"
 2. Insert the receiver into the computer's USB port
 3. Open the Rebocap software and click connect
 
-![Connect Receiver](/img/connect-en.gif)
+![Connect Receiver](../../static/img/connect-en.gif)
 
 <a id="how_to_solve_cannot_connect"></a>
 
@@ -28,7 +28,7 @@ sidebar_label: "Connection Guide"
 * Ensure that the driver has not been replaced. You can follow the steps shown in the image below to roll back the receiver's serial port driver. If it still cannot connect, unplug the receiver and reinsert it.
   > If calibration cannot be performed after connecting, and the RGB light color cannot be changed, you can also try rolling back the driver.
 
-    ![Rollback Receiver Driver](/img/rollback_driver-en.gif)
+    ![Rollback Receiver Driver](../../static/img/rollback_driver-en.gif)
 
 
 </details>

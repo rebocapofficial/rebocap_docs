@@ -16,7 +16,7 @@ title: "ハードウェアリスト情報"
 - 第五列
   > 磁場の絶対値の大きさ、単位はuTで、磁場が一般的に一貫性が良い場合は緑色で表示されます。個別に非常に高いまたは非常に低い場合は赤色で表示されます。磁場の見方については、具体的には 磁場検出と診断 を参照してください。
 
-![img.png](/img/hardware_list_info-jp.png)
+![img.png](../../../../../static/img/hardware_list_info-jp.png)
 
 <a id="hardware_detail"></a>
 
@@ -46,7 +46,7 @@ title: "ハードウェアリスト情報"
 - ジャイロスコープ
   > 三軸キャリブレーション後のジャイロスコープで、トラッカーが完全に静止している場合、ここでの数値が0点を超えて0.2を超える場合は、ジャイロスコープキャリブレーションを行うことをお勧めします。
 
-![img.png](/img/hardware_detail-jp.png)
+![img.png](../../../../../static/img/hardware_detail-jp.png)
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

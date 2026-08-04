@@ -298,7 +298,7 @@ title: "Rebocap ユーザーマニュアル"
    * スタートメニューから起動
    * デスクトップショートカットから起動
 
-![インストール手順](/img/setup_steps-jp.gif)
+![インストール手順](../../../../../static/img/setup_steps-jp.gif)
 
 
 <br/><br/><br/><br/>
@@ -309,7 +309,7 @@ title: "Rebocap ユーザーマニュアル"
 2. レシーバーをコンピュータのUSBポートに挿入する
 3. Rebocapソフトウェアを開いて接続をクリックする
 
-![接続レシーバー](/img/connect-jp.gif)
+![接続レシーバー](../../../../../static/img/connect-jp.gif)
 
 
 ### 接続後の信号が弱いまたは不安定
