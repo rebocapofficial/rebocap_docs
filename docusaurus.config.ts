@@ -74,7 +74,7 @@ const config: Config = {
   // ============================================================
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hans', 'zh-Hant', 'ja', 'es', 'fr', 'de', 'ko', 'ru', 'pt', 'it', 'ar'],
+    locales: ['en', 'zh-Hans', 'zh-Hant', 'ja', 'es', 'fr', 'ko', 'ru'],
     localeConfigs: {
       en: { label: 'English', direction: 'ltr' },
       'zh-Hans': { label: '简体中文', direction: 'ltr' },

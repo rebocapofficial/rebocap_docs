@@ -60,7 +60,7 @@ function runDeploy() {
   try {
     execSync(DEPLOY_SCRIPT, {
       stdio: "inherit",
-      timeout: 10 * 60 * 1000, // 10 min timeout
+      timeout: 30 * 60 * 1000, // 30 min timeout
     });
   } catch (err) {
     console.error(`[${new Date().toISOString()}] Deploy FAILED:`, err.message);

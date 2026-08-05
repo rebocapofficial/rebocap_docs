@@ -151,7 +151,7 @@ log "Building Docusaurus sequentially (Low Memory Mode)..."
 rm -rf "$STAGING_DIR"
 mkdir -p "$STAGING_DIR"
 
-LOCALES="en zh-Hans zh-Hant ja es fr de ko ru pt it ar"
+LOCALES="en zh-Hans zh-Hant ja es fr ko ru"
 for loc in $LOCALES; do
   log "Building locale: $loc"
   if [ "$loc" = "en" ]; then
@@ -160,7 +160,7 @@ for loc in $LOCALES; do
     OUT_DIR="$STAGING_DIR/$loc"
   fi
   
-  NODE_OPTIONS="--max-old-space-size=1200" npx docusaurus build --locale "$loc" --out-dir "$OUT_DIR" 2>&1
+  NODE_OPTIONS="--max-old-space-size=1536" npx docusaurus build --locale "$loc" --out-dir "$OUT_DIR" 2>&1
   
   if [ ${PIPESTATUS[0]} -ne 0 ]; then
       log "Docusaurus build FAILED on locale $loc!"
