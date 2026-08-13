@@ -1,0 +1,25 @@
+﻿分类,中文,英文,日文,繁体中文,说明
+核心硬件设备名词 (Hardware Components),追踪器,Tracker,トラッカー,追蹤器,动捕硬件本体
+核心硬件设备名词 (Hardware Components),传感器,Sensor,センサー,感測器,物理学与传感器技术相关表述
+核心硬件设备名词 (Hardware Components),接收器 / USB 接收器,Receiver / USB Receiver,レシーバー / USBレシーバー,接收器 / USB 接收器,用于插在电脑上的 USB 无线狗
+核心硬件设备名词 (Hardware Components),充电盒,Charging Case  //注释：英语统一为Charging Case,充電ボックス,充電盒,15点套装自带的收纳充电盒
+穿戴与固定配件名词 (Wear & Setup Accessories),绑带 / 弹性绑带,Strap / Elastic Strap,ストラップ / 伸縮性ストラップ,綁帶 / 彈性綁帶,默认出厂配备的 2.5cm 窄绑带
+穿戴与固定配件名词 (Wear & Setup Accessories),宽绑带,Wide Strap,幅広ストラップ,寬綁帶,选配的 5cm 宽版魔术贴绑带
+穿戴与固定配件名词 (Wear & Setup Accessories),快拆底座,Quick Release Base,クイックリリースベース,快拆底座,安装在绑带上用于卡住追踪器的塑料卡扣底座
+穿戴与固定配件名词 (Wear & Setup Accessories),吸塑盘 / 吸塑托盘,Blister Tray,吸塑トレイ,吸塑盤,包装内部或充电盒内承载追踪器的塑料托盘
+校准与软件设置名词 (Calibration & Settings),陀螺仪校准,Gyroscope Calibration,ジャイロスコープ校正,陀螺儀校準,追踪器静置在地面上的零偏校准
+校准与软件设置名词 (Calibration & Settings),磁场校准,Magnetic Field Calibration,磁場校正,磁場校準,追踪器装入托盘中进行空间磁场分布记录
+校准与软件设置名词 (Calibration & Settings),简易磁场校准,Simple Magnetic Calibration,簡易磁場校正,簡易磁場校準,通过拿在手中手腕划8字完成的便捷磁校准
+校准与软件设置名词 (Calibration & Settings),磁场读数,Magnetic Readings / Magnetic Field Readings,磁場読数,磁場讀數,软件中显示的每个追踪器当前受磁场干扰的值
+T Pose、S Pose、B Pose 等身体姿势参考,校准姿态图鉴 / VR校准姿态图鉴,Calibration Posture Guide / VR Calibration Posture Guide,校正ポーズ図鑑 / VR校正ポーズ図鑑,校準姿態圖鑑 / VR校準姿態圖鑑,
+T Pose、S Pose、B Pose 等身体姿势参考,AI引擎,AI Engine,AIエンジン,AI引擎,针对未穿戴足部追踪器时自动预测姿态的防滑步悬空算法
+T Pose、S Pose、B Pose 等身体姿势参考,配置 SteamVR 输出节点,Set SteamVR Nodes,SteamVR 出力ノード設定,配置 SteamVR 输出节点,用来设置哪些追踪点在steamvr中显示或隐藏
+输出模式与连接通道 (Output Modes & Connectors),软件内录制,In-App Recording,アプリ内録画,軟體內錄製,在客户端直接记录动捕动作数据
+Warudo、直播伴侣等主播工具的模块,虚拟偶像 (VTube),Virtual Idol (VTube),バーチャルアイドル（VTube）,虛擬偶像 (VTube),
+Warudo、直播伴侣等主播工具的模块,直连插件,Direct Plugins,ダイレクトプラグイン,直連插件,Blender / UE / Unity / SDK 等直接通讯传输数据的插件
+Warudo、直播伴侣等主播工具的模块,替换控制器位置,Replace Controller Position,コントローラー位置を置換,替換控制器位置,模拟 VR 中手柄物理位置并进行替换输出的高级功能
+Warudo、直播伴侣等主播工具的模块,离线播放,Offline Playback,オフライン再生,離線播放,用于重新播放此前保存的 .rebo_anim 录制文件
+Warudo、直播伴侣等主播工具的模块,根动画,Root Animation / Root Motion,ルートアニメーション,根動畫,动画帧中包含角色中心质点（根骨骼）的位移动画
+校准,校准,Calibration,キャリブレーション,校准,
+校准,进阶校准,Advanced Calibration,高度なキャリブレーション,进阶校准,
+航向回正,航向回正,Reset Yaw,ヨーリセット,航向回正,

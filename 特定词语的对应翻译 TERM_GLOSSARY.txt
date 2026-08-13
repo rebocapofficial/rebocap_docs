@@ -3,6 +3,12 @@ Rebocap 官方技术名词多语言对齐备忘表 (Rebocap Term Glossary)
 ========================================================================================
 本文件用于规范 Rebocap 开箱与使用教程在多语言翻译中的核心词汇，以简体中文为主导。
 
+并且不同语言有档位区分的设定，这里只做简单说明，详情查看【翻译档位分配 translation_tiers_memo.txt】，
+
+
+
+对于T2和T3档位的语言在本文档里记录的技术名词需要用括号加上英语的单词
+
 ----------------------------------------------------------------------------------------
 一、 核心硬件设备名词 (Hardware Components)
 ----------------------------------------------------------------------------------------
@@ -10,24 +16,40 @@ Rebocap 官方技术名词多语言对齐备忘表 (Rebocap Term Glossary)
 【英    文】 Tracker
 【日    文】 トラッカー
 【繁体中文】 追蹤器
+【俄    文】 Трекер
+【韩    文】 트래커
+【法    文】 Tracker
+【西班牙文】 Tracker
 【说    明】 动捕硬件本体
 
 【简体中文】 传感器
 【英    文】 Sensor
 【日    文】 センサー
 【繁体中文】 感測器
+【俄    文】 Датчик
+【韩    文】 센서
+【法    文】 Capteur
+【西班牙文】 Sensor
 【说    明】 物理学与传感器技术相关表述
 
 【简体中文】 接收器 / USB 接收器
 【英    文】 Receiver / USB Receiver
 【日    文】 レシーバー / USBレシーバー
 【繁体中文】 接收器 / USB 接收器
+【俄    文】 Приемник / USB-приемник
+【韩    文】 리시버 / USB 리시버
+【法    文】 Récepteur / Récepteur USB
+【西班牙文】 Receptor / Receptor USB
 【说    明】 用于插在电脑上的 USB 无线狗
 
 【简体中文】 充电盒
 【英    文】  Charging Case  //注释：英语统一为Charging Case
 【日    文】 充電ボックス
 【繁体中文】 充電盒
+【俄    文】 Зарядный кейс
+【韩    文】 충전 케이스
+【法    文】 Boîtier de charge
+【西班牙文】 Estuche de carga
 【说    明】 15点套装自带的收纳充电盒
 
 ----------------------------------------------------------------------------------------
@@ -37,24 +59,40 @@ Rebocap 官方技术名词多语言对齐备忘表 (Rebocap Term Glossary)
 【英    文】 Strap / Elastic Strap
 【日    文】 ストラップ / 伸縮性ストラップ
 【繁体中文】 綁帶 / 彈性綁帶
+【俄    文】 Ремешок / Эластичный ремешок
+【韩    文】 스트랩 / 탄성 스트랩
+【法    文】 Sangle / Sangle élastique
+【西班牙文】 Correa / Correa elástica
 【说    明】 默认出厂配备的 2.5cm 窄绑带
 
 【简体中文】 宽绑带
 【英    文】 Wide Strap
 【日    文】 幅広ストラップ
 【繁体中文】 寬綁帶
+【俄    文】 Широкий ремешок
+【韩    文】 와이드 스트랩
+【法    文】 Sangle large
+【西班牙文】 Correa ancha
 【说    明】 选配的 5cm 宽版魔术贴绑带
 
 【简体中文】 快拆底座
 【英    文】 Quick Release Base
 【日    文】 クイックリリースベース
 【繁体中文】 快拆底座
+【俄    文】 Быстросъемная база
+【韩    文】 퀵 릴리스 베이스
+【法    文】 Base à dégagement rapide
+【西班牙文】 Base de liberación rápida
 【说    明】 安装在绑带上用于卡住追踪器的塑料卡扣底座
 
 【简体中文】 吸塑盘 / 吸塑托盘
 【英    文】 Blister Tray
 【日    文】 吸塑トレイ
 【繁体中文】 吸塑盤
+【俄    文】 Блистерный лоток
+【韩    文】 블리스터 트레이
+【法    文】 Plateau en plastique
+【西班牙文】 Bandeja de blíster
 【说    明】 包装内部或充电盒内承载追踪器的塑料托盘
 
 ----------------------------------------------------------------------------------------
@@ -64,42 +102,70 @@ Rebocap 官方技术名词多语言对齐备忘表 (Rebocap Term Glossary)
 【英    文】 Gyroscope Calibration
 【日    文】 ジャイロスコープ校正
 【繁体中文】 陀螺儀校準
+【俄    文】 Калибровка гироскопа
+【韩    文】 자이로스코프 캘리브레이션
+【法    文】 Étalonnage du gyroscope
+【西班牙文】 Calibración del giroscopio
 【说    明】 追踪器静置在地面上的零偏校准
 
 【简体中文】 磁场校准
 【英    文】 Magnetic Field Calibration
-【日    文】 磁場校正
+【日    文】 磁場キャリブレーション
 【繁体中文】 磁場校準
+【俄    文】 Калибровка магнитного поля
+【韩    文】 자기장 캘리브레이션
+【法    文】 Étalonnage du champ magnétique
+【西班牙文】 Calibración del campo magnético
 【说    明】 追踪器装入托盘中进行空间磁场分布记录
 
 【简体中文】 简易磁场校准
 【英    文】 Simple Magnetic Calibration
 【日    文】 簡易磁場校正
 【繁体中文】 簡易磁場校準
+【俄    文】 Простая калибровка магнитного поля
+【韩    文】 간편 자기장 캘리브레이션
+【法    文】 Étalonnage magnétique simple
+【西班牙文】 Calibración magnética simple
 【说    明】 通过拿在手中手腕划8字完成的便捷磁校准
 
 【简体中文】 磁场读数
 【英    文】 Magnetic Readings / Magnetic Field Readings
 【日    文】 磁場読数
 【繁体中文】 磁場讀數
+【俄    文】 Показания магнитного поля
+【韩    文】 자기장 판독값
+【法    文】 Lectures magnétiques
+【西班牙文】 Lecturas magnéticas
 【说    明】 软件中显示的每个追踪器当前受磁场干扰的值
 
 【简体中文】 校准姿态图鉴 / VR校准姿态图鉴
 【英    文】 Calibration Posture Guide / VR Calibration Posture Guide
 【日    文】 校正ポーズ図鑑 / VR校正ポーズ図鑑
 【繁体中文】 校準姿態圖鑑 / VR校準姿態圖鑑
+【俄    文】 Руководство по позам для калибровки / VR
+【韩    文】 캘리브레이션 자세 가이드 / VR 자세 가이드
+【法    文】 Guide des postures d'étalonnage / VR
+【西班牙文】 Guía de posturas de calibración / VR
 【说    明】 A Pose、T Pose、S Pose、B Pose 等身体姿势参考
 
 【简体中文】 AI引擎
 【英    文】 AI Engine
 【日    文】 AIエンジン
 【繁体中文】 AI引擎
+【俄    文】 движок AI
+【韩    文】 AI 엔진
+【法    文】 Moteur IA
+【西班牙文】 Motor de IA
 【说    明】 针对未穿戴足部追踪器时自动预测姿态的防滑步悬空算法
 
 【简体中文】 配置 SteamVR 输出节点
 【英    文】 Set SteamVR Nodes
 【日    文】 SteamVR 出力ノード設定
 【繁体中文】 配置 SteamVR 输出节点
+【俄    文】 Настройка узлов SteamVR
+【韩    文】 SteamVR 노드 설정
+【法    文】 Configurer les nœuds SteamVR
+【西班牙文】 Configurar nodos de SteamVR
 【说    明】 用来设置哪些追踪点在steamvr中显示或隐藏
 
 
@@ -114,36 +180,60 @@ Rebocap 官方技术名词多语言对齐备忘表 (Rebocap Term Glossary)
 【英    文】 In-App Recording
 【日    文】 アプリ内録画
 【繁体中文】 軟體內錄製
+【俄    文】 Запись в приложении
+【韩    文】 앱 내 녹화
+【法    文】 Enregistrement dans l'application
+【西班牙文】 Grabación en la aplicación
 【说    明】 在客户端直接记录动捕动作数据
 
 【简体中文】 虚拟偶像 (VTube)
 【英    文】 Virtual Idol (VTube)
 【日    文】 バーチャルアイドル（VTube）
 【繁体中文】 虛擬偶像 (VTube)
+【俄    文】 Виртуальный идол (VTube)
+【韩    文】 버추얼 아이돌 (VTube)
+【法    文】 Idole virtuelle (VTube)
+【西班牙文】 Ídolo virtual (VTube)
 【说    明】 对接云镜、Warudo、直播伴侣等主播工具的模块
 
 &emsp;&emsp;&emsp;&emsp;【简体中文】 直连插件
 【英    文】 Direct Plugins
 【日    文】 ダイレクトプラグイン
 【繁体中文】 直連插件
+【俄    文】 Плагины прямого подключения
+【韩    文】 다이렉트 플러그인
+【法    文】 Plugins de connexion directe
+【西班牙文】 Plugins de conexión directa
 【说    明】 Blender / UE / Unity / SDK 等直接通讯传输数据的插件
 
 【简体中文】 替换控制器位置
 【英    文】 Replace Controller Position
 【日    文】 コントローラー位置を置換
 【繁体中文】 替換控制器位置
+【俄    文】 Замена положения контроллера
+【韩    文】 컨트롤러 위치 교체
+【法    文】 Remplacer la position du contrôleur
+【西班牙文】 Reemplazar la posición del controlador
 【说    明】 模拟 VR 中手柄物理位置并进行替换输出的高级功能
 
 【简体中文】 离线播放
 【英    文】 Offline Playback
 【日    文】 オフライン再生
 【繁体中文】 離線播放
+【俄    文】 Офлайн-воспроизведение
+【韩    文】 오프라인 재생
+【法    文】 Lecture hors ligne
+【西班牙文】 Reproducción sin conexión
 【说    明】 用于重新播放此前保存的 .rebo_anim 录制文件
 
 【简体中文】 根动画
 【英    文】 Root Animation / Root Motion
 【日    文】 ルートアニメーション
 【繁体中文】 根動畫
+【俄    文】 Корневая анимация / Root Motion
+【韩    文】 루트 애니메이션 / 루트 모션
+【法    文】 Animation racine / Root Motion
+【西班牙文】 Animación raíz / Root Motion
 【说    明】 动画帧中包含角色中心质点（根骨骼）的位移动画
 ========================================================================================
 ----------------------------------------------------------------------------------------
@@ -153,12 +243,20 @@ Rebocap 官方技术名词多语言对齐备忘表 (Rebocap Term Glossary)
 【英    文】 Calibration
 【日    文】 キャリブレーション
 【繁体中文】 校准
+【俄    文】 Калибровка
+【韩    文】 캘리브레이션
+【法    文】 Étalonnage
+【西班牙文】 Calibración
 
 
 【简体中文】 进阶校准
 【英    文】 Advanced Calibration
 【日    文】 高度なキャリブレーション
 【繁体中文】 进阶校准
+【俄    文】 Расширенная калибровка
+【韩    文】 고급 캘리브레이션
+【法    文】 Étalonnage avancé
+【西班牙文】 Calibración avanzada
 
 
 ----------------------------------------------------------------------------------------
@@ -168,5 +266,9 @@ Rebocap 官方技术名词多语言对齐备忘表 (Rebocap Term Glossary)
 【英    文】 Reset Yaw
 【日    文】 ヨーリセット
 【繁体中文】 航向回正
+【俄    文】 Сброс рыскания (Reset Yaw)
+【韩    文】 요(Yaw) 리셋
+【法    文】 Réinitialiser le lacet (Yaw)
+【西班牙文】 Restablecer guiñada (Yaw)
 
 
