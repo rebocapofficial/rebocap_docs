@@ -53,10 +53,10 @@ El panel se divide en cuatro subpaneles. El panel `PC VR` se muestra según la s
 
 <a id="calibrate"></a>
 
-# Panel de Calibración General
+# Panel de Calibración (Calibration) General
 <img src="/img/connect_calibrate-en.png" alt="Calibration Panel" />
 
-1. **Botón de Calibración**
+1. **Botón de Calibración (Calibration)**
    
    La calibración general requiere adoptar tres posturas: A-Pose, S-Pose, T-Pose. Para obtener detalles sobre los elementos esenciales del movimiento y la calibración, [consulta aquí](../../tutorial/connect_and_use#pose_calibration).
    
@@ -65,9 +65,9 @@ El panel se divide en cuatro subpaneles. El panel `PC VR` se muestra según la s
     *    Reemplazo accidental de puntos, [consulta aquí](../remap#tracker_replace).
     *    Problemas con el controlador USB, [consulta aquí](../../tutorial/connect_and_use#how_to_solve_cannot_connect).
 
-2. **Botón de Calibración Avanzada**
+2. **Botón de Calibración Avanzada (Advanced Calibration)**
 
-   En comparación con el botón de calibración, esto agrega la postura B-Pose, principalmente para la calibración del ángulo de guiñada de los nodos de la cabeza, el pecho y la cintura. Otras funciones son consistentes con `Calibración`.
+   En comparación con el botón de calibración, esto agrega la postura B-Pose, principalmente para la calibración del ángulo de guiñada de los nodos de la cabeza, el pecho y la cintura. Otras funciones son consistentes con `Calibración (Calibration)`.
 
 3. **Interruptor de Modo de Seis Ejes**
 
@@ -124,7 +124,7 @@ El panel se divide en cuatro subpaneles. El panel `PC VR` se muestra según la s
    > Se utiliza para ajustar el desequilibrio de ambos pies, como cuando al sentarse, un pie está en el suelo y el otro pie está a 2 cm del suelo. También puede aliviar el problema de oscilación hacia arriba y hacia abajo durante el proceso de cambio de pie.
 
 10. **Reemplazar Pies por Hombros**
-   > Configuración avanzada, cuando está habilitada, los pies serán reemplazados automáticamente por hombros, con el pie izquierdo correspondiente al hombro izquierdo y el pie derecho al hombro derecho. Después de habilitarlo, debes activar el `Motor de IA` (`AI Engine`).
+   > Configuración avanzada, cuando está habilitada, los pies serán reemplazados automáticamente por hombros, con el pie izquierdo correspondiente al hombro izquierdo y el pie derecho al hombro derecho. Después de habilitarlo, debes activar el `Motor de IA (AI Engine)` (`AI Engine`).
 
 11. **Configurar qué puntos de seis ejes habilitan la funcionalidad de seis ejes**
    > En el modo de seis ejes predeterminado, todos los puntos tienen la función de seis ejes habilitada. Si desmarcas un punto, ese punto utilizará un modo que no es de seis ejes.
@@ -138,7 +138,7 @@ Estas configuraciones no afectan a los usuarios del modo VR, por lo que los usua
 
 1. **Almacenamiento en Búfer de Fotogramas**
 
-   Por defecto, el modo PC mantiene dos fotogramas de búfer (~34 ms). El búfer mejora la estabilidad; por ejemplo, puede reducir la deriva. Si solo capturas la parte superior del cuerpo, puedes desactivarlo para un seguimiento más en tiempo real. El almacenamiento en búfer de fotogramas se desactiva automáticamente cuando el `Motor de IA` (`AI Engine`) está habilitado.
+   Por defecto, el modo PC mantiene dos fotogramas de búfer (~34 ms). El búfer mejora la estabilidad; por ejemplo, puede reducir la deriva. Si solo capturas la parte superior del cuerpo, puedes desactivarlo para un seguimiento más en tiempo real. El almacenamiento en búfer de fotogramas se desactiva automáticamente cuando el `Motor de IA (AI Engine)` (`AI Engine`) está habilitado.
 
 2. **Modo Espejo**
 
@@ -146,7 +146,7 @@ Estas configuraciones no afectan a los usuarios del modo VR, por lo que los usua
 
 3. **Motor de IA (AI Engine)**
    > Después de habilitarlo, el desplazamiento general del personaje y el contacto del pie son decididos por un modelo de `IA` en lugar de los algoritmos y la heurística tradicionales.
-   > La versión para PC del motor de IA proporciona dos modelos: uno que requiere sensores en ambos pies (`con pie` o `with foot`) y otro que funciona sin sensores de pie (`sin pie` o `no foot`).
+   > La versión para PC del motor de IA (AI Engine) proporciona dos modelos: uno que requiere sensores en ambos pies (`con pie` o `with foot`) y otro que funciona sin sensores de pie (`sin pie` o `no foot`).
    > Si seleccionas el modelo `con pie` cuando no hay sensores de pie presentes, automáticamente volverá a `sin pie`, mientras que el modelo `sin pie` todavía funciona cuando hay sensores de pie disponibles.
 
 4. **Posición, Orientación y Postura**
@@ -171,7 +171,7 @@ Estas configuraciones no afectan a los usuarios del modo VR, por lo que los usua
    > Cuando está habilitado y SteamVR está conectado, los rastreadores virtuales se envían automáticamente a SteamVR. Si necesitas cambiar los nodos de salida del rastreador, cambia temporalmente al panel `VR`, ajusta la configuración de salida de VR y luego vuelve a cambiar. Las posiciones de salida aquí son los puntos de seguimiento en el esqueleto virtual actual y no se ven afectadas por el HMD (visor).
    > La comunidad ha proporcionado instrucciones para usar SteamVR sin un HMD. El equipo oficial no asume ninguna responsabilidad por las consecuencias. Solo en chino; utiliza la función de traducción de tu navegador para otros idiomas: https://forum.rebocap.site/t/vmt-rebocap/240
 
-6. **Grabación y Reproducción sin conexión**
+6. **Grabación y Reproducción sin conexión (Offline Playback)**
    
    **Grabación**
    > Flujo de trabajo básico: Iniciar Grabación → Detener Grabación → Exportar Movimiento. Aquí se pueden exportar tres formatos: fbx, bvh y dae. El soporte para la animación `MMD` está planeado para el futuro.
@@ -181,27 +181,27 @@ Estas configuraciones no afectan a los usuarios del modo VR, por lo que los usua
    > 
    > Si necesitas crear animaciones con el FBX, asegúrate de usar datos de rotación en lugar de las direcciones absolutas de los huesos contenidas en el FBX exportado. Más adelante invitaremos a los miembros de la comunidad a grabar tutoriales sobre cómo usar datos de captura de movimiento para hacer animaciones.
 
-   **Reproducción sin conexión**
+   **Reproducción sin conexión (Offline Playback)**
    > Propósito: Cargar y reproducir archivos de grabación en bruto `.rebo_anim` exportados sin conexión
-   > Uso: Haz clic en Carga Sin Conexión, selecciona el archivo de grabación en bruto y la reproducción comenzará automáticamente. Se comporta de la misma manera que el modo en línea. Antes de cargar, puedes cambiar el esqueleto del usuario, elegir si usar `IK`, si habilitar el `Motor de IA`, etc., y los cambios surten efecto de inmediato.
+   > Uso: Haz clic en Carga Sin Conexión, selecciona el archivo de grabación en bruto y la reproducción comenzará automáticamente. Se comporta de la misma manera que el modo en línea. Antes de cargar, puedes cambiar el esqueleto del usuario, elegir si usar `IK`, si habilitar el `Motor de IA (AI Engine)`, etc., y los cambios surten efecto de inmediato.
    > La velocidad de reproducción es ajustable, pero esto cambiará la velocidad de fotogramas de salida del SDK; actualmente no hay ninguna estrategia de remuestreo o interpolación. Puedes pausar, reproducir, hacer bucles, etc. Después de que finaliza el clip, la etiqueta del botón de estado de reproducción no se actualiza: presiona el botón de reproducción dos veces para volver a reproducir.
    > Las grabaciones son a 60 fps, por lo que puedes calcular el número de fotograma objetivo por duración; por ejemplo, para saltar a los 10.5 s, salta al fotograma 630. Cambiar el número de fotograma busca inmediatamente.
 
 :::info Uso de los datos predeterminados oficiales
 
-Si los usuarios desean saber si su propio software puede ser compatible, o simplemente desean verificar el efecto, pueden usar los datos sin conexión. En la etapa actual, los datos sin conexión son un video de baile; se recomienda cargar el esqueleto con anticipación, cambiar al `Motor de IA`, usar el modo `con pie` y activar `IK de Suelo`.
+Si los usuarios desean saber si su propio software puede ser compatible, o simplemente desean verificar el efecto, pueden usar los datos sin conexión. En la etapa actual, los datos sin conexión son un video de baile; se recomienda cargar el esqueleto con anticipación, cambiar al `Motor de IA (AI Engine)`, usar el modo `con pie` y activar `IK de Suelo`.
 Debido a que el intérprete usó el rastreador en el estómago en lugar de la cadera durante la grabación, se recomienda que en los parámetros de captura de movimiento, bajo la configuración `IK`, la Flexibilidad de la Cintura se establezca en 1.3, el Peso IK en 1.4 y la Inclinación de la Pierna a alrededor de 3.5.
 
 :::
 
 
-7. **Calibración de Doble Toque – Pecho**
+7. **Calibración (Calibration) de Doble Toque – Pecho**
     
     Después de habilitar esta opción, tocar dos veces el sensor puede activar la función. Tocar dos veces el sensor del pecho se usa para restablecer el origen.
     
     Nota: ¡Doble toque significa tocar el sensor en sí, no presionar el botón del sensor dos veces! ¡No presiones accidentalmente el botón! El intervalo entre los toques no debe ser mayor de 0.45 s ni menor de 0.2 s, y debes tocar con cierta fuerza.
 
-8. **Calibración de Doble Toque – Cintura**
+8. **Calibración (Calibration) de Doble Toque – Cintura**
 
    Después de habilitar esta opción, tocar dos veces el sensor puede activar la función. Tocar dos veces el sensor del pecho restablece el origen, mientras que tocar dos veces el sensor de la cintura activa la Calibración de Movimiento.
 
@@ -273,7 +273,7 @@ Debido a que el intérprete usó el rastreador en el estómago en lugar de la ca
 
 13. **Motor de IA (AI Engine)**
 
-   Después de encender el Motor de IA, se admite el seguimiento de 5 puntos: dos rastreadores en los tobillos (se recomienda aproximadamente 5 cm por encima de la articulación del tobillo), dos rastreadores en los muslos y un rastreador en la cintura. Esta es la configuración mínima requerida. Se pueden usar otros rastreadores de acuerdo con las necesidades reales. Si no se usan ciertos rastreadores, el modelo de IA predecirá la orientación de la planta del pie y los nodos del pecho.
+   Después de encender el Motor de IA (AI Engine), se admite el seguimiento de 5 puntos: dos rastreadores en los tobillos (se recomienda aproximadamente 5 cm por encima de la articulación del tobillo), dos rastreadores en los muslos y un rastreador en la cintura. Esta es la configuración mínima requerida. Se pueden usar otros rastreadores de acuerdo con las necesidades reales. Si no se usan ciertos rastreadores, el modelo de IA predecirá la orientación de la planta del pie y los nodos del pecho.
 
 14. **Alternador de función "Locomoción en el lugar y Reemplazar posición"**
 

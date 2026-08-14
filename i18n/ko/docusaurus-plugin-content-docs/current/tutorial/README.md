@@ -44,7 +44,7 @@ Rebocap에 오신 것을 환영합니다! 처음으로 Rebocap 트래커를 받�
 초기 보정을 완료한 후, 모션 데이터를 외부 소프트웨어와 게임에 스트리밍할 수 있습니다:
 
 - **SteamVR / VRChat**: 새로 생성된 👉 **[SteamVR 가이드](../rebocap-tutorials/steamvr_guide)**를 참조하세요(SteamVR 경계 설정, 노드 가시성 및 연결 문제 해결에 대한 내용 포함).
-- **3D 애니메이션 및 다이렉트 플러그인**: Blender, Unity, UE 또는 Vtuber 소프트웨어에 연결하는 경우 👉 **[다이렉트 플러그인 및 앱 연동](../plugins/plugins)**을 참조하세요.
+- **3D 애니메이션 및 다이렉트 플러그인 (Direct Plugins)**: Blender, Unity, UE 또는 Vtuber 소프트웨어에 연결하는 경우 👉 **[다이렉트 플러그인 (Direct Plugins) 및 앱 연동](../plugins/plugins)**을 참조하세요.
 
 ---
 

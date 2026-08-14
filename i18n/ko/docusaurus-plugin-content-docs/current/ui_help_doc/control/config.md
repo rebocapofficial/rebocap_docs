@@ -25,11 +25,11 @@ title: "하드웨어 구성"
 ### 2. 수신기 펌웨어 업데이트
 - 업데이트 방법과 설명은 위와 동일합니다.
 
-### 3. 트래커 캘리브레이션
+### 3. 트래커 캘리브레이션 (Calibration)
 
 <a id="gyro_calibrate"></a>
 
-#### 자이로스코프 캘리브레이션
+#### 자이로스코프 캘리브레이션 (Gyroscope Calibration)
 자이로스코프 캘리브레이션은 비교적 간단합니다. 트래커의 불을 켠 후 지면에 정지 상태로 두어 캘리브레이션합니다. 진동이 없어야 하며, 절대적으로 정지 상태여야 합니다(예: 케이스 팬으로 인한 진동이 있는 데스크탑 컴퓨터 케이스에서 멀리 떨어뜨림).
 
 :::info 일반적으로 자이로스코프는 반복해서 캘리브레이션할 필요가 없습니다. 상당한 온도 차이가 있는 경우 캘리브레이션이 필요할 수 있습니다. 6축을 사용할 때 캘리브레이션하는 것도 권장됩니다.
@@ -39,7 +39,7 @@ title: "하드웨어 구성"
 
 <a id="magnet_calibrate"></a>
 
-#### 자기장 캘리브레이션
+#### 자기장 캘리브레이션 (Magnetic Field Calibration)
 자기장 캘리브레이션은 비교적 번거롭고 시간이 많이 걸립니다. **하지만 자기장 캘리브레이션을 이해하는 것은 필수입니다!!!!!!**
 
 :::info 자기장 캘리브레이션이 필요한 이유
@@ -60,7 +60,7 @@ title: "하드웨어 구성"
 :::
 
 
-자기장 캘리브레이션 방법:
+자기장 캘리브레이션 (Magnetic Field Calibration) 방법:
   - 트래커를 충전 상자에 **충전 접점이 위를 향하도록 간격을 두고** 배치합니다. 충전 접점은 트래커의 노란색 금속 3개를 의미합니다(즉, 배치 방향은 충전할 때와 반대입니다).
     > 한 번에 최대 **8개**를 넣을 수 있으며 반드시 **간격을 두고 배치**해야 하고 **충전 접점이 위를 향해야** 합니다. 그렇지 않으면 상자가 가지고 있는 자기장이 트래커에 캘리브레이션됩니다!!!
   - 캘리브레이션 중에는 테이블 위에 두지 마십시오. **공중의 고정된 지점에서 캘리브레이션하는 것을 권장합니다.** 즉, 충전 상자를 공간의 고정된 지점을 중심으로 회전시키십시오.
@@ -78,7 +78,7 @@ title: "하드웨어 구성"
 :::info 다음은 커뮤니티 회원들과 공동 제작한 데모 가이드 비디오입니다. 처음 자기장 캘리브레이션을 진행할 때 끝까지 시청하는 것을 권장합니다.
 
 
-[자기장 캘리브레이션 데모 비디오](https://www.youtube.com/watch?v=JXry5wZhmtc)
+[자기장 캘리브레이션 (Magnetic Field Calibration) 데모 비디오](https://www.youtube.com/watch?v=JXry5wZhmtc)
 <iframe src="https://www.youtube.com/embed/JXry5wZhmtc" title="Rebocap Magnetic  Calibration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 :::

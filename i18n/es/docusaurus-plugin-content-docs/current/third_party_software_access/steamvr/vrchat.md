@@ -110,7 +110,7 @@ Después de completar las configuraciones básicas mencionadas anteriormente, si
   > 
   > Aquí hay un ejemplo extremo para que los jugadores lo entiendan: si el brazo del personaje virtual mide 3 metros de largo, pero la altura del personaje es de solo 1,7 metros, la posición de reposo normal de los brazos de una persona en realidad es en la cintura. Sin embargo, VRChat debe respetar la posición real de la mano, por lo que los brazos del personaje virtual solo se pueden doblar en un cierto ángulo.
 
-### ¿Por qué los pies de mi personaje están por debajo del piso durante la calibración?
+### ¿Por qué los pies de mi personaje están por debajo del piso durante la calibración (Calibration)?
 > Esto ya se ha explicado en el tercer punto de [Cómo Calibrar en VRChat](#calibration_in_vrc).
 
 ### ¿Por qué mis piernas no pueden enderezarse?

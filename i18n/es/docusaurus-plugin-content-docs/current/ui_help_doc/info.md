@@ -44,7 +44,7 @@ Haz clic en un elemento de la lista para ver la información detallada del hardw
 - Aceleración
   > Aceleración después de la calibración de tres ejes, normalizada a la aceleración gravitacional actual.
 - Giroscopio
-  > Giroscopio después de la calibración de tres ejes. Si el rastreador está completamente estacionario y el valor aquí está a más de 0.2 de distancia del cero, se recomienda realizar la Calibración del Giroscopio
+  > Giroscopio después de la calibración de tres ejes. Si el rastreador está completamente estacionario y el valor aquí está a más de 0.2 de distancia del cero, se recomienda realizar la Calibración del Giroscopio (Gyroscope Calibration)
 
 ![img.png](../../../../../static/img/hardware_detail-en.png)
 

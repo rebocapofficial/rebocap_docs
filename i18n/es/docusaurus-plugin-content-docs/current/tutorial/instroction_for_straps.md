@@ -149,7 +149,7 @@ Actualmente, no hay posiciones específicas recomendadas. Cualquier posición, s
 * Evite la deformación de la dirección del sensor causada por el tirón de la correa, como usar pantalones largos no ajustados, donde sentarse puede tirar de la correa y causar deformación, lo que lleva a un cruce severo de piernas del personaje virtual.
 * Evite la deformación de la dirección del sensor causada por la respiración, como usar en el pecho y el vientre.
 * Evite que los sensores queden suspendidos en la correa, como en la cintura y el pecho. Si está atado a la espalda, puede causar fácilmente sacudidas del sensor.
-* Si no usa la calibración avanzada, se recomienda que las superficies superiores de los rastreadores del pecho, la cintura y la cabeza sean paralelas a la parte delantera del cuerpo, en lugar de colocarse en el costado, ya sea en la parte delantera o trasera.
+* Si no usa la calibración avanzada (Advanced Calibration), se recomienda que las superficies superiores de los rastreadores del pecho, la cintura y la cabeza sean paralelas a la parte delantera del cuerpo, en lugar de colocarse en el costado, ya sea en la parte delantera o trasera.
 * **Evite la fricción con el suelo en la correa de la planta del pie, ya que esto afecta en gran medida el efecto**. Si usa una correa en la planta del pie, es mejor estar descalzo y colocar la correa en el hueco de la planta del pie, o al usar zapatos, <p>use cordones para asegurar el sensor en lugar de usar una correa</p>.
 
 :::info Puntos principales para ajustar y probar
@@ -157,7 +157,7 @@ Actualmente, no hay posiciones específicas recomendadas. Cualquier posición, s
 
 1. Rastreador de pierna superior: Para algunas personas, usar el rastreador de pierna superior entre 5 y 8 cm por encima de la rodilla en la parte delantera es mejor, mientras que otros descubren que usarlo en los lados de la pierna superior en la posición media es mejor. Tenga en cuenta el impacto del tirón de los pantalones en la correa.
 2. Rastreador de pie: La estabilidad del rastreador de pie determina directamente la calidad de seguimiento general. Asegúrese de que el rastreador de la planta del pie no se vea afectado por el tirón de la correa. Se recomienda usar cordones de los zapatos directamente para asegurarlo. Un método simple es simplemente enrollar el rastreador en los cordones, como se muestra en la imagen de la izquierda a continuación. Un método más complejo requiere que usted mismo asegure el rastreador o la liberación rápida a los cordones.
-3. Rastreador de cintura: En general, se recomienda colocar el rastreador de cintura en la parte posterior del cuerpo (si se usa para dormir, se puede colocar en la parte frontal del cuerpo, luego use la calibración avanzada). Se desaconseja encarecidamente colocarlo en el vientre.
+3. Rastreador de cintura: En general, se recomienda colocar el rastreador de cintura en la parte posterior del cuerpo (si se usa para dormir, se puede colocar en la parte frontal del cuerpo, luego use la calibración avanzada (Advanced Calibration)). Se desaconseja encarecidamente colocarlo en el vientre.
 4. Rastreadores de cintura y pecho: El uso de la liberación rápida aumenta la altura del centro de gravedad. Relativamente hablando, no usar la liberación rápida es más estable. Además, el uso del [método de unión complejo](#quick_fix_complex_install) para las correas es más estable.
 
 :::

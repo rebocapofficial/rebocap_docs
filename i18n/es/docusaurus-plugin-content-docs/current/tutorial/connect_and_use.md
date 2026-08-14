@@ -37,7 +37,7 @@ sidebar_label: "Guía de Conexión"
 * Si utilizas una computadora de escritorio, no coloques el receptor detrás del chasis.
 * Intenta mantener un área abierta de más de 5 cm junto al receptor, por ejemplo, no insertes una unidad USB junto al receptor. Si es posible, utilizar un cable de extensión puede ayudar a mejorar la señal.
 
-# Calibración
+# Calibración (Calibration)
 Por favor, consulta la imagen a continuación para ver las instrucciones de uso. La posición de uso específica varía de persona a persona. Para principios y detalles, por favor, consulta el [capítulo anterior](instroction_for_straps#tracker_position_recomendation).
 
 :::info Asegúrate de probar 15 puntos para el primer uso
@@ -53,10 +53,10 @@ Si los resultados de la prueba son deficientes, puede haber las siguientes razon
 
 <a id="pose_calibration"></a>
 
-### Calibración de Postura
+### Calibración (Calibration) de Postura
 Haz clic en el botón de Calibración de Postura (Pose Calibration) en la interfaz del software. La referencia de calibración de postura se muestra en la imagen de abajo, y hay sugerencias de imágenes correspondientes en el software. Asegúrate de leer todos los puntos clave y especificaciones de acción.
 
-- **Puntos Clave de Calibración**
+- **Puntos Clave de Calibración (Calibration)**
   * Después de hacer clic en Calibración de Postura, entra inmediatamente en la postura A (A-Pose) y permanece quieto.
     > El sistema comenzará a detectar si la persona está quieta 2 segundos después de hacer clic. Ten cuidado de controlar la amplitud de balanceo hacia adelante y hacia atrás, minimizando el movimiento tanto como sea posible para completar la inicialización de cada sensor. La duración de la detección es de 10 segundos; siempre que detecte que has estado quieto durante los últimos 2 segundos, entrará inmediatamente en el programa de calibración.
   * Durante el período de pitido rápido para cada acción, el sistema registrará los datos de postura correspondientes.
@@ -106,9 +106,9 @@ Las imágenes de izquierda a derecha son: `APose` `TPose` `SPose` `BPose`
 # Puntos Que Debes Saber
 Para evitar varios problemas durante el uso (como trackers que se inclinan inexplicablemente) y para garantizar una mejor experiencia de captura de movimiento, asegúrate de leer las siguientes instrucciones.
 
-### Calibración de Hardware
-- [Calibración de Campo Magnético](../ui_help_doc/control/config#magnetcalibrate)
-- [Calibración del Giroscopio](../ui_help_doc/control/config#gyrocalibrate)
+### Calibración (Calibration) de Hardware
+- [Calibración (Calibration) de Campo Magnético](../ui_help_doc/control/config#magnetcalibrate)
+- [Calibración del Giroscopio (Gyroscope Calibration)](../ui_help_doc/control/config#gyrocalibrate)
 
 ### Cómo Establecer la Configuración de Captura de Movimiento en el Software
 - Para la configuración del campo magnético, por favor lee las [Instrucciones Relacionadas con el Campo Magnético](../QA/magnet)

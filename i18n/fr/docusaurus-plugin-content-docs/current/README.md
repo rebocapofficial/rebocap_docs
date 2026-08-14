@@ -48,6 +48,6 @@ title: "Navigation dans le document"
 
 ## Vous n'avez pas encore d'appareil mais souhaitez tester le logiciel
 
-Vous pouvez utiliser la fonction [Lecture hors ligne] du logiciel rebocap pour lire un exemple de fichier afin de tester la connexion du SDK ou du plugin.
+Vous pouvez utiliser la fonction [Lecture hors ligne (Offline Playback)] du logiciel rebocap pour lire un exemple de fichier afin de tester la connexion du SDK ou du plugin.
 
 

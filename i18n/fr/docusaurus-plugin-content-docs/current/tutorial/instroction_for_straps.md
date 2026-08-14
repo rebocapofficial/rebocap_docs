@@ -101,22 +101,22 @@ Comparée à la méthode commune, le processus est plus encombrant et prend un p
 <a id="follow_mode"></a>
 
 ## Modes de port du Tracker
-> Après l'activation du `Moteur IA`, il est recommandé d'attacher le capteur du bas de la jambe à environ 5 cm au-dessus de la cheville.
+> Après l'activation du `Moteur IA (AI Engine)`, il est recommandé d'attacher le capteur du bas de la jambe à environ 5 cm au-dessus de la cheville.
 
 ### Modes pris en charge par le PC
 * Port complet à 15 points
-  > Prend en charge le `Moteur IA` (les deux modèles sont pris en charge) et sans moteur IA
+  > Prend en charge le `Moteur IA (AI Engine)` (les deux modèles sont pris en charge) et sans moteur IA (AI Engine)
 * Port à 13 points (sans la plante des pieds)
-  > Passe automatiquement au `Moteur IA` et est le modèle `sans pied`
+  > Passe automatiquement au `Moteur IA (AI Engine)` et est le modèle `sans pied`
 * Mode Haut du Corps
-  > Les deux bras, poitrine, taille (optionnel), il est recommandé de désactiver le `Moteur IA`
+  > Les deux bras, poitrine, taille (optionnel), il est recommandé de désactiver le `Moteur IA (AI Engine)`
 * Mode Bras Unique
   > Un total de 3 points pour un bras et la main correspondante
 * Mode Corps Complet à 6 points
   > Pourrait être pris en charge à l'avenir, en attente
 
 ### Modes pris en charge par la VR
-> Tous les modes VR prennent en charge l'activation du `Moteur IA`
+> Tous les modes VR prennent en charge l'activation du `Moteur IA (AI Engine)`
 
 * Mode VR à 10 points
   > 6 points sur les jambes, la poitrine, la taille, le bras supérieur gauche, le bras supérieur droit

@@ -172,7 +172,7 @@ Notas:
    > Nota: Al realizar la calibración de rumbo en PC, use una pose A de cuerpo completo; levantar los antebrazos y las palmas hacia adelante funciona mejor. Alternativamente, puede realizar directamente una Pose S, o sentarse y estirar los brazos hacia adelante también funciona)
 4. Si el software falla inesperadamente y se vuelve a abrir en 5 minutos, los resultados de calibración anteriores se aplicarán automáticamente; no es necesario recalibrar
 5. Durante la calibración de rumbo, el campo magnético se restablecerá (se restablecerá directamente a un campo relativo de 1.0). En otras palabras, si está acostado en la cama, utilizará el campo magnético en el momento de la calibración como referencia inicial para corregir.
-6. Se eliminó la restricción en la calibración del campo magnético; la calibración magnética simple (dibujar un número 8) ahora se puede hacer clic de forma predeterminada
+6. Se eliminó la restricción en la calibración del campo magnético (Magnetic Field Calibration); la calibración magnética simple (Simple Magnetic Calibration) (dibujar un número 8) ahora se puede hacer clic de forma predeterminada
    > Por defecto, la calibración está limitada a 8 sensores a la vez. Si agrega el archivo: `data/__no_limit_max_nodes__` en el directorio de datos, se eliminará el límite
 7. Se corrigió un error por el cual el movimiento del pie después de acostarse podía hacer que el esqueleto del personaje se dividiera.
 

@@ -12,7 +12,7 @@ title: "Compensación de la pierna superior"
 
     Habilita la función de compensación. Esta compensación se utiliza principalmente para contrarrestar las deformaciones causadas por los cambios en la forma del cuerpo o el tirón de las correas.
 
-2. **Calcular automáticamente durante la calibración**
+2. **Calcular automáticamente durante la calibración (Calibration)**
 
     Calcula en base a la deformación durante la postura S (S-Pose). Para obtener mejores resultados, se recomienda ajustar después de sentarse y usar el ajuste manual. Debido a los cambios en la posición de uso o a la fuerza desigual causada por la fricción de la correa, los resultados de la calibración automática pueden variar cada vez.
 

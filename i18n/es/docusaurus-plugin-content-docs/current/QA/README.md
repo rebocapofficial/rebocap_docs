@@ -22,22 +22,22 @@ title: "¿Soporta Mac y Linux?"
 
 <a id="not_static"></a>
 
-## Persona no detectada como estacionaria durante la calibración
+## Persona no detectada como estacionaria durante la calibración (Calibration)
 > Generalmente, mantener `Apose` puede involucrar algo de balanceo de ida y vuelta. Por favor intente controlarlo. Para instrucciones detalladas de calibración, por favor [consulte aquí](../tutorial/connect_and_use#pose_calibration).
 
 <a id="send_failed"></a>
 
-## Error al enviar datos de calibración
+## Error al enviar datos de calibración (Calibration)
 > Asegúrese de que no haya problemas con la fuerza de la señal, y primero verifique el controlador del receptor `USB`. Esto es causado usualmente por problemas del controlador `USB`. Para soluciones específicas, [consulte aquí](../tutorial/connect_and_use#how_to_solve_cannot_connect).
 
 <a id="need_calibrate_gyro"></a>
 
-## Es posible que los giroscopios de algunos nodos necesiten calibración
+## Es posible que los giroscopios de algunos nodos necesiten calibración (Calibration)
 > Esta información es principalmente un aviso, ya que la persona al no estar estacionaria también puede conducir a una detección incorrecta de la información estacionaria del giroscopio (sensor de velocidad angular en el rastreador). La clave es verificar los datos del giroscopio cuando el rastreador se coloca absolutamente quieto en el suelo. Aparte de algunos valores atípicos, la mayoría de las veces, los valores dentro de 0.3 son normales. De lo contrario, se recomienda la calibración. En el modo de 6 ejes, se recomienda calibrar el giroscopio antes de cada uso. Para métodos de calibración específicos, [consulte aquí](../ui_help_doc/control/config#gyro_calibrate).
 
 <a id="vr_height"></a>
 
-## En el modo VR, la altura solicitada durante la calibración no coincide con la altura personal
+## En el modo VR, la altura solicitada durante la calibración (Calibration) no coincide con la altura personal
 > El dispositivo Rebocap en sí no tiene la capacidad de medir la altura. La medición de altura se basa completamente en los datos proporcionados por los auriculares (headset). Para detalles, por favor [consulte aquí](../ui_help_doc/control/connect#vrpannel).
 
 <a id="port_open_failed"></a>
@@ -67,7 +67,7 @@ title: "¿Soporta Mac y Linux?"
 
 <a id="cal_exception"></a>
 
-## Excepción de calibración
+## Excepción de calibración (Calibration)
 - Considere que el modo de uso no cumple con los requisitos, [por favor consulte aquí](../tutorial/instroction_for_straps#followmode).
 - Considere las anomalías subyacentes del controlador, que requieren un retroceso del controlador y volver a conectar el receptor, [por favor consulte aquí](../tutorial/connect_and_use#how_to_solve_cannot_connect) (se necesitan ver métodos específicos en la sección ampliada).
 

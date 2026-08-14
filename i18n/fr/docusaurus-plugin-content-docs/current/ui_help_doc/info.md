@@ -40,11 +40,11 @@ Cliquez sur un élément de la liste pour afficher des informations détaillées
 - Signal passif
   > La force du signal reçue par le capteur du récepteur ; >-70 dbm est considéré comme une bonne qualité de signal.
 - Champ magnétique relatif
-  > C'est la taille relative par rapport à l'espace et au temps de l'A-Pose lors de la calibration. Une taille relative systématiquement à moins de 1,1 est généralement considérée comme un bon environnement de champ magnétique. Dans un bon environnement de champ magnétique, l'application d'algorithmes anti-magnétiques est plus efficace. Pour la détermination spécifique du champ magnétique et l'étalonnage, veuillez voir ici
+  > C'est la taille relative par rapport à l'espace et au temps de l'A-Pose lors de la calibration. Une taille relative systématiquement à moins de 1,1 est généralement considérée comme un bon environnement de champ magnétique. Dans un bon environnement de champ magnétique, l'application d'algorithmes anti-magnétiques est plus efficace. Pour la détermination spécifique du champ magnétique et l'étalonnage (Calibration), veuillez voir ici
 - Accélération
   > Accélération après étalonnage sur trois axes, normalisée à l'accélération gravitationnelle actuelle.
 - Gyroscope
-  > Gyroscope après étalonnage sur trois axes. Si le tracker est complètement immobile et que la valeur ici est éloignée de zéro de plus de 0,2, il est recommandé d'effectuer un étalonnage du gyroscope
+  > Gyroscope après étalonnage sur trois axes. Si le tracker est complètement immobile et que la valeur ici est éloignée de zéro de plus de 0,2, il est recommandé d'effectuer un étalonnage du gyroscope (Gyroscope Calibration)
 
 ![img.png](../../../../../static/img/hardware_detail-en.png)
 

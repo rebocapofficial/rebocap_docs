@@ -25,12 +25,12 @@ title: "Configuración de Hardware"
 ### 2. Actualización de Firmware del Receptor
 - El método de actualización y la descripción son los mencionados anteriormente.
 
-### 3. Calibración del Rastreador
+### 3. Calibración (Calibration) del Rastreador
 
 <a id="gyro_calibrate"></a>
 
-#### Calibración del Giroscopio
-La calibración del giroscopio es relativamente sencilla. Después de encender el rastreador, colócalo inmóvil en el suelo para calibrarlo. Ten en cuenta que debe estar absolutamente quieto, sin vibraciones, como por ejemplo manteniéndolo alejado de las torres de los ordenadores de escritorio (por las vibraciones causadas por los ventiladores).
+#### Calibración del Giroscopio (Gyroscope Calibration)
+La calibración del giroscopio (Gyroscope Calibration) es relativamente sencilla. Después de encender el rastreador, colócalo inmóvil en el suelo para calibrarlo. Ten en cuenta que debe estar absolutamente quieto, sin vibraciones, como por ejemplo manteniéndolo alejado de las torres de los ordenadores de escritorio (por las vibraciones causadas por los ventiladores).
 
 :::info Generalmente, los giroscopios no necesitan calibración repetida. Si hay una diferencia de temperatura significativa, la calibración puede ser necesaria. También se recomienda calibrar al usar 6 ejes.
 
@@ -39,18 +39,18 @@ La calibración del giroscopio es relativamente sencilla. Después de encender e
 
 <a id="magnet_calibrate"></a>
 
-#### Calibración del Campo Magnético
-La calibración del campo magnético es relativamente engorrosa y requiere tiempo. **¡Sin embargo, entender la calibración del campo magnético es esencial!!!!!!**
+#### Calibración del Campo Magnético (Magnetic Field Calibration)
+La calibración del campo magnético (Magnetic Field Calibration) es relativamente engorrosa y requiere tiempo. **¡Sin embargo, entender la calibración del campo magnético (Magnetic Field Calibration) es esencial!!!!!!**
 
-:::info Por qué es necesaria la Calibración del Campo Magnético
+:::info Por qué es necesaria la Calibración del Campo Magnético (Magnetic Field Calibration)
 
 
-La duración de la batería se degradará con el uso, causando cambios en los elementos internos de la batería. Durante la carga, un número muy pequeño de componentes puede transportar cantidades microscópicas de elementos de hierro, lo que también puede causar magnetización. Por lo tanto, el campo magnético de la propia placa de circuito PCB puede cambiar. La calibración del campo magnético se usa principalmente para eliminar el campo magnético transportado por el propio sensor, lo cual se denomina desviación magnética en el documento.
+La duración de la batería se degradará con el uso, causando cambios en los elementos internos de la batería. Durante la carga, un número muy pequeño de componentes puede transportar cantidades microscópicas de elementos de hierro, lo que también puede causar magnetización. Por lo tanto, el campo magnético de la propia placa de circuito PCB puede cambiar. La calibración del campo magnético (Magnetic Field Calibration) se usa principalmente para eliminar el campo magnético transportado por el propio sensor, lo cual se denomina desviación magnética en el documento.
 
 :::
 
 
-:::info Cómo determinar si hay Desviación Magnética (es decir, cuándo es necesaria la Calibración del Campo Magnético)
+:::info Cómo determinar si hay Desviación Magnética (es decir, cuándo es necesaria la Calibración del Campo Magnético (Magnetic Field Calibration))
 
 
 Puedes voltear el sensor en un punto fijo en el espacio por sus seis lados y observar la magnitud del valor del campo magnético del sensor. Si la diferencia está dentro de 2uT, la desviación magnética generalmente es pequeña, o [la diferencia relativa del campo magnético está dentro de 0.1](../info#detail_information).
@@ -75,10 +75,10 @@ A continuación hay un video de calibración que puedes ver con anticipación. L
 </video>
 </div>
 
-:::info A continuación se muestra un video de demostración creado en colaboración con miembros de la comunidad. Se recomienda verlo en su totalidad para la primera calibración del campo magnético.
+:::info A continuación se muestra un video de demostración creado en colaboración con miembros de la comunidad. Se recomienda verlo en su totalidad para la primera calibración del campo magnético (Magnetic Field Calibration).
 
 
-[Video de Demostración de la Calibración del Campo Magnético](https://www.youtube.com/watch?v=JXry5wZhmtc)
+[Video de Demostración de la Calibración del Campo Magnético (Magnetic Field Calibration)](https://www.youtube.com/watch?v=JXry5wZhmtc)
 <iframe src="https://www.youtube.com/embed/JXry5wZhmtc" title="Rebocap Magnetic  Calibration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 :::

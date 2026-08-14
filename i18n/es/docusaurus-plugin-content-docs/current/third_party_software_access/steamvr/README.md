@@ -52,7 +52,7 @@ Si se usa una correa en las plantas de los pies, es muy probable que se produzca
 - La transformación de coordenadas espaciales no se puede leer. [Por favor, consulta aquí](#other_notes)
 
 Si la vista previa 3D ya está inclinada, sigue los diagnósticos a continuación:
-- Es probable que haya ocurrido una desviación magnética, o el entorno del campo magnético sea deficiente. Si es el primer uso o un problema ocasional en usos posteriores, se recomienda realizar primero una calibración del campo magnético. [Para métodos de calibración específicos, consulta aquí](../../ui_help_doc/control/config#magnet_calibrate)
+- Es probable que haya ocurrido una desviación magnética, o el entorno del campo magnético sea deficiente. Si es el primer uso o un problema ocasional en usos posteriores, se recomienda realizar primero una calibración del campo magnético (Magnetic Field Calibration). [Para métodos de calibración específicos, consulta aquí](../../ui_help_doc/control/config#magnet_calibrate)
 - Descarta la posibilidad de que la correa esté inclinada y comprueba si algún tracker individual se ha quedado sin batería o se ha apagado inesperadamente.
 - Si hay problemas como piernas cruzadas u otros problemas en las piernas, lee detenidamente la [sección de correas](../../tutorial/instroction_for_straps) y la [sección de calibración de acción](../../tutorial/connect_and_use#pose_calibration) en el tutorial.
 - Si el problema aún no se puede resolver, por favor descarta la interferencia del campo magnético y recomendamos encarecidamente leer [este artículo](../../QA/magnet) a fondo.

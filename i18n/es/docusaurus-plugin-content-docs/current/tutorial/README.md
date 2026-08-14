@@ -27,14 +27,14 @@ Por favor, seleccione el tutorial correspondiente a su conjunto de equipos. Las 
 
 ---
 
-## ⚠️ 2. Aviso importante (Calibración del campo magnético)
+## ⚠️ 2. Aviso importante (Calibración del campo magnético (Magnetic Field Calibration))
 
-- La calibración del campo magnético es crucial para asegurar la precisión del seguimiento espacial. Se recomienda realizar la calibración magnética **después de la primera carga**, o siempre que se **mueva a un nuevo entorno de habitación**.
-- Para obtener instrucciones de calibración detalladas y precauciones, consulte: 👉 **[Preguntas frecuentes y Guía de calibración del campo magnético](../QA/magnet)**
+- La calibración del campo magnético (Magnetic Field Calibration) es crucial para asegurar la precisión del seguimiento espacial. Se recomienda realizar la calibración magnética **después de la primera carga**, o siempre que se **mueva a un nuevo entorno de habitación**.
+- Para obtener instrucciones de calibración detalladas y precauciones, consulte: 👉 **[Preguntas frecuentes y Guía de calibración del campo magnético (Magnetic Field Calibration)](../QA/magnet)**
 
-:::danger Precauciones para la calibración del campo magnético
-- La calibración del campo magnético debe dominarse, y las precauciones son muy importantes. Si no se siguen las precauciones, la precisión de la calibración se verá comprometida.
-- La calibración del campo magnético se puede realizar repetidamente en cualquier momento. Si experimenta desviación (drift), intente volver a calibrar el campo magnético primero.
+:::danger Precauciones para la calibración del campo magnético (Magnetic Field Calibration)
+- La calibración del campo magnético (Magnetic Field Calibration) debe dominarse, y las precauciones son muy importantes. Si no se siguen las precauciones, la precisión de la calibración se verá comprometida.
+- La calibración del campo magnético (Magnetic Field Calibration) se puede realizar repetidamente en cualquier momento. Si experimenta desviación (drift), intente volver a calibrar el campo magnético primero.
 :::
 
 ---

@@ -22,22 +22,22 @@ title: "Mac 및 Linux 지원 여부"
 
 <a id="not_static"></a>
 
-## 캘리브레이션 중 사람이 정지된 것으로 감지되지 않음
+## 캘리브레이션 (Calibration) 중 사람이 정지된 것으로 감지되지 않음
 > 일반적으로 `Apose`를 유지하면 앞뒤로 약간 흔들릴 수 있습니다. 제어해 보시기 바랍니다. 자세한 캘리브레이션 지침은 [여기에서 확인하세요](../tutorial/connect_and_use#pose_calibration).
 
 <a id="send_failed"></a>
 
-## 캘리브레이션 데이터 전송 실패
+## 캘리브레이션 (Calibration) 데이터 전송 실패
 > 신호 강도에 문제가 없는지 확인하고 먼저 `USB` 수신기 드라이버를 확인하세요. 이는 일반적으로 `USB` 드라이버 문제로 인해 발생합니다. 구체적인 해결 방법은 [여기를 참조하세요](../tutorial/connect_and_use#how_to_solve_cannot_connect).
 
 <a id="need_calibrate_gyro"></a>
 
-## 일부 노드 자이로스코프 캘리브레이션 필요
+## 일부 노드 자이로스코프 캘리브레이션 (Gyroscope Calibration) 필요
 > 이 정보는 주로 프롬프트입니다. 사람이 정지하지 않아도 자이로스코프(트래커의 각속도 센서) 정지 정보가 잘못 감지될 수 있기 때문입니다. 중요한 것은 트래커를 바닥에 완전히 정지된 상태로 놓았을 때 자이로스코프 데이터를 확인하는 것입니다. 몇 가지 예외를 제외하고 대부분의 경우 0.3 이내의 값은 정상입니다. 그렇지 않으면 캘리브레이션을 권장합니다. 6축 모드에서는 매번 사용하기 전에 자이로스코프를 캘리브레이션하는 것이 좋습니다. 구체적인 캘리브레이션 방법은 [여기를 참조하세요](../ui_help_doc/control/config#gyro_calibrate).
 
 <a id="vr_height"></a>
 
-## VR 모드에서 캘리브레이션 중 표시된 키가 개인의 키와 일치하지 않음
+## VR 모드에서 캘리브레이션 (Calibration) 중 표시된 키가 개인의 키와 일치하지 않음
 > Rebocap 장치 자체에는 키를 측정하는 기능이 없습니다. 키 측정은 전적으로 헤드셋에서 제공하는 데이터를 기반으로 합니다. 자세한 내용은 [여기를 참조하세요](../ui_help_doc/control/connect#vrpannel).
 
 <a id="port_open_failed"></a>
@@ -67,7 +67,7 @@ title: "Mac 및 Linux 지원 여부"
 
 <a id="cal_exception"></a>
 
-## 캘리브레이션 예외
+## 캘리브레이션 (Calibration) 예외
 - 착용 모드가 요구 사항을 충족하지 않는 경우, [여기를 참조하세요](../tutorial/instroction_for_straps#followmode).
 - 드라이버 롤백 및 수신기 재연결이 필요한 기본 드라이버 이상 고려, [여기를 참조하세요](../tutorial/connect_and_use#how_to_solve_cannot_connect) (구체적인 방법은 확장 섹션에서 확인해야 함).
 

@@ -124,7 +124,7 @@ Le panneau est divisé en quatre sous-panneaux. Le panneau `PC VR` s'affiche en 
    > Utilisé pour ajuster le déséquilibre des deux pieds, par exemple lorsqu'on s'assoit, un pied est au sol et l'autre est à 2 cm du sol. Il peut également atténuer le problème d'oscillation verticale lors du processus de basculement des pieds.
 
 10. **Remplacer les Pieds par les Épaules**
-   > Paramètre avancé, une fois activé, les pieds seront automatiquement remplacés par les épaules, le pied gauche correspondant à l'épaule gauche et le pied droit à l'épaule droite. Après l'avoir activé, vous devez activer le `Moteur IA`.
+   > Paramètre avancé, une fois activé, les pieds seront automatiquement remplacés par les épaules, le pied gauche correspondant à l'épaule gauche et le pied droit à l'épaule droite. Après l'avoir activé, vous devez activer le `Moteur IA (AI Engine)`.
 
 11. **Configurer quels points à six axes activent la fonctionnalité six-axes**
    > En mode six axes par défaut, tous les points ont la fonctionnalité six axes activée. Si vous décochez un point, ce point utilisera le mode non-six-axes.
@@ -138,15 +138,15 @@ Ces paramètres n'affectent pas les utilisateurs en mode VR, donc les utilisateu
 
 1. **Mise en Tampon de Trame (Frame Buffering)**
 
-   Par défaut, le mode PC conserve deux trames en mémoire tampon (~34 ms). La mise en tampon améliore la stabilité — par exemple, cela peut réduire la dérive. Si vous ne capturez que le haut du corps, vous pouvez la désactiver pour un suivi plus en temps réel. La mise en tampon de trame est désactivée automatiquement lorsque le `Moteur IA` est activé.
+   Par défaut, le mode PC conserve deux trames en mémoire tampon (~34 ms). La mise en tampon améliore la stabilité — par exemple, cela peut réduire la dérive. Si vous ne capturez que le haut du corps, vous pouvez la désactiver pour un suivi plus en temps réel. La mise en tampon de trame est désactivée automatiquement lorsque le `Moteur IA (AI Engine)` est activé.
 
 2. **Mode Miroir**
 
    Miroir gauche-droite, utile pour les streamers ; fonctionne comme un miroir, retournant l'image horizontalement.
 
-3. **Moteur IA**
+3. **Moteur IA (AI Engine)**
    > Après activation, le déplacement global du personnage et le contact des pieds sont décidés par un modèle `IA` au lieu des algorithmes traditionnels et des heuristiques.
-   > La version PC du moteur IA fournit deux modèles : l'un nécessitant des capteurs sur les deux pieds (`avec pied` / `with foot`) et l'autre fonctionnant sans capteurs sur les pieds (`sans pied` / `no foot`).
+   > La version PC du moteur IA (AI Engine) fournit deux modèles : l'un nécessitant des capteurs sur les deux pieds (`avec pied` / `with foot`) et l'autre fonctionnant sans capteurs sur les pieds (`sans pied` / `no foot`).
    > Si vous sélectionnez le modèle `avec pied` alors qu'aucun capteur de pied n'est présent, il repassera automatiquement à `sans pied`, tandis que le modèle `sans pied` fonctionne même lorsque les capteurs de pied sont disponibles.
 
 4. **Position, Orientation, et Pose**
@@ -171,7 +171,7 @@ Ces paramètres n'affectent pas les utilisateurs en mode VR, donc les utilisateu
    > Lorsqu'elle est activée et que SteamVR est connecté, les trackers virtuels sont automatiquement envoyés à SteamVR. Si vous devez modifier les nœuds de sortie des trackers, basculez temporairement vers le panneau `VR`, ajustez les paramètres de sortie VR, puis revenez. Les positions émises ici sont les points de suivi sur le squelette virtuel actuel et ne sont pas affectées par le casque HMD.
    > La communauté a fourni des instructions pour utiliser SteamVR sans casque HMD. L'équipe officielle n'assume aucune responsabilité quant aux conséquences. Disponible en chinois uniquement ; veuillez utiliser la fonction de traduction de votre navigateur pour d'autres langues : https://forum.rebocap.site/t/vmt-rebocap/240
 
-6. **Enregistrement et Lecture Hors Ligne**
+6. **Enregistrement et Lecture Hors Ligne (Offline Playback)**
    
    **Enregistrement**
    > Flux de travail de base : Démarrer l'enregistrement → Arrêter l'enregistrement → Exporter le mouvement. Trois formats peuvent être exportés ici : fbx, bvh, et dae. Le support de l'animation `MMD` est prévu pour l'avenir.
@@ -181,15 +181,15 @@ Ces paramètres n'affectent pas les utilisateurs en mode VR, donc les utilisateu
    > 
    > Si vous devez créer des animations avec le FBX, assurez-vous d'utiliser les données de rotation plutôt que les directions d'os absolues contenues dans le FBX exporté. Nous inviterons par la suite des membres de la communauté à enregistrer des tutoriels sur l'utilisation des données mocap pour faire des animations.
 
-   **Lecture Hors Ligne**
+   **Lecture Hors Ligne (Offline Playback)**
    > Objectif : Charger et lire des fichiers d'enregistrement bruts `.rebo_anim` exportés hors ligne
-   > Utilisation : Cliquez sur Charger Hors Ligne (Offline Load), sélectionnez le fichier d'enregistrement brut, et la lecture commence automatiquement. Il se comporte de la même manière que le mode en ligne. Avant le chargement, vous pouvez changer de squelette utilisateur, choisir d'utiliser l'`IK` ou non, d'activer ou non le `Moteur IA`, etc., et les changements prennent effet immédiatement.
+   > Utilisation : Cliquez sur Charger Hors Ligne (Offline Load), sélectionnez le fichier d'enregistrement brut, et la lecture commence automatiquement. Il se comporte de la même manière que le mode en ligne. Avant le chargement, vous pouvez changer de squelette utilisateur, choisir d'utiliser l'`IK` ou non, d'activer ou non le `Moteur IA (AI Engine)`, etc., et les changements prennent effet immédiatement.
    > La vitesse de lecture est réglable, mais cela changera le taux de trames de sortie du SDK ; il n'y a actuellement pas de stratégie de rééchantillonnage ou d'interpolation. Vous pouvez mettre en pause, lire, boucler, etc. Après la fin du clip, l'étiquette du bouton de l'état de lecture n'est pas mise à jour — appuyez deux fois sur le bouton de lecture pour rejouer.
    > Les enregistrements sont à 60 fps, vous pouvez donc calculer le numéro de trame cible par durée — par exemple, pour sauter à 10,5 s, sautez à la trame 630. Modifier le numéro de trame effectue une recherche immédiate.
 
 :::info Utilisation des données par défaut officielles
 
-Si les utilisateurs veulent savoir si leur propre logiciel peut être pris en charge, ou veulent simplement vérifier l'effet, ils peuvent utiliser les données hors ligne. Au stade actuel, les données hors ligne sont une vidéo de danse ; il est recommandé de télécharger le squelette à l'avance, de basculer sur le `Moteur IA`, d'utiliser le mode `avec pied` (with foot), et d'activer l'`IK au sol` (Ground IK).
+Si les utilisateurs veulent savoir si leur propre logiciel peut être pris en charge, ou veulent simplement vérifier l'effet, ils peuvent utiliser les données hors ligne. Au stade actuel, les données hors ligne sont une vidéo de danse ; il est recommandé de télécharger le squelette à l'avance, de basculer sur le `Moteur IA (AI Engine)`, d'utiliser le mode `avec pied` (with foot), et d'activer l'`IK au sol` (Ground IK).
 Puisque le performeur portait le tracker sur l'estomac au lieu de la hanche pendant l'enregistrement, il est recommandé que dans les paramètres de capture de mouvement, sous les réglages `IK`, la flexibilité de la taille soit réglée sur 1,3, le poids IK sur 1,4, et la flexion des jambes sur environ 3,5.
 
 :::
@@ -271,9 +271,9 @@ Puisque le performeur portait le tracker sur l'estomac au lieu de la hanche pend
 
    Principalement utilisé pour résoudre le problème où, lorsqu'on monte sur des plates-formes plus hautes que le niveau du sol (par exemple, après avoir mis l'appareil) ou qu'on descend sur des plates-formes plus basses que le niveau du sol, le sol virtuel est toujours calculé selon la hauteur initiale du sol, ce qui entraîne de mauvais effets. Dans d'autres cas, vous pouvez également ajuster cette valeur en fonction des besoins réels. Par exemple, certains joueurs peuvent définir la hauteur du sol virtuel légèrement au-dessus du sol réel (environ 3 à 5 cm), donnant au solveur IK plus d'espace et produisant un meilleur effet global.
 
-13. **Moteur IA**
+13. **Moteur IA (AI Engine)**
 
-   Après l'activation du Moteur IA, le suivi en 5 points est pris en charge : deux trackers sur les chevilles (recommandé environ 5 cm au-dessus de l'articulation de la cheville), deux trackers sur les cuisses, et un tracker sur la taille. C'est la configuration minimale requise. D'autres trackers peuvent être portés en fonction des besoins réels. Si certains trackers ne sont pas portés, le modèle d'IA prédira l'orientation des nœuds de la plante des pieds et de la poitrine.
+   Après l'activation du Moteur IA (AI Engine), le suivi en 5 points est pris en charge : deux trackers sur les chevilles (recommandé environ 5 cm au-dessus de l'articulation de la cheville), deux trackers sur les cuisses, et un tracker sur la taille. C'est la configuration minimale requise. D'autres trackers peuvent être portés en fonction des besoins réels. Si certains trackers ne sont pas portés, le modèle d'IA prédira l'orientation des nœuds de la plante des pieds et de la poitrine.
 
 14. **Bascule des Fonctionnalités "Locomotion sur place et Remplacement de Position"**
 
@@ -289,7 +289,7 @@ Puisque le performeur portait le tracker sur l'estomac au lieu de la hanche pend
 
     Lorsqu'elle est activée, si les nœuds des bras sont actifs, appuyer sur le bouton de calibration du lacet corrigera également l'angle de lacet des bras. Lors de la calibration, nous recommandons de placer vos bras symétriquement et naturellement le long du corps (à un angle d'environ 10 à 25 degrés de la poitrine). N'hésitez pas à expérimenter le placement de vos bras pour trouver la position de calibration qui semble la meilleure.
 
-17. **Remplacer la Position du Contrôleur**
+17. **Remplacer la Position du Contrôleur (Replace Controller Position)**
 
     Cette fonctionnalité nécessite également que la bascule "Locomotion sur place et Remplacement de Position" soit activée. Une fois activée, et avec les deux nœuds de sortie manuels activés, les points des trackers rebocap remplaceront les points de sortie des contrôleurs. Les contrôleurs doivent rester connectés pendant ce processus. Le but principal est de résoudre la perte de suivi lorsque les contrôleurs entrent dans les angles morts visuels du casque.  
     > Remarque : Pour certains contrôleurs, l'angle de lancer de rayon n'est pas aligné avec la direction du contrôleur. Dans ce cas, vous devez éditer `data/replace_controller_angle.txt` pour compenser. Par exemple, les contrôleurs `pico` nécessitent une valeur de 25 (faisant tourner le rayon vers l'avant de 25 degrés). Ajustez ceci en fonction de la direction du contrôleur en pose en T (T-pose). Après chaque modification, désactivez puis réactivez cette fonctionnalité pour que le changement prenne effet.
