@@ -146,39 +146,53 @@ fi
 # ═══════════════════════════════════════════════════════════
 # Step 4 — Build
 # ═══════════════════════════════════════════════════════════
-# 核心修改：分批串行编译，彻底绕过内存溢出 (OOM) 限制
-log "Building Docusaurus sequentially (Low Memory Mode)..."
+# 核心修改：使用原生构建，保障跨语言路由，同时限制内存
+log "Building Docusaurus natively (all locales)..."
+log "Clearing Docusaurus cache..."
+npx docusaurus clear
+
+# 移除画蛇添足的 for 循环，让 Docusaurus 原生一口气按顺序编译
+# 这样不仅能恢复完美的语言菜单，还能恢复根目录的自动跳转
+NODE_OPTIONS="--max-old-space-size=1536" npx docusaurus build 2>&1
+
+if [ ${PIPESTATUS[0]} -ne 0 ]; then
+    log "Docusaurus native build FAILED!"
+    LAST_ERROR="sent"
+    notify_feishu "failure" "Docusaurus 原生全量编译失败，请检查日志。"
+    exit 1
+fi
+
+# 构建成功后，将 build 产物移动到暂存区
 rm -rf "$STAGING_DIR"
-mkdir -p "$STAGING_DIR"
+mv build "$STAGING_DIR"
 
-LOCALES="en zh-Hans zh-Hant ja es fr ko ru"
+# [SLIM SCRIPT] Real-Time Garbage Collection: Deduplicate identical assets using symlinks
+# 原生编译会将英文放在根目录，其他语言放在子目录
+# 核心修复：采用文件级精准比对，保留小语种专属图片，只软链接完全相同的冗余文件
+LOCALES="zh-Hans zh-Hant ja es fr ko ru"
 for loc in $LOCALES; do
-  log "Building locale: $loc"
-  if [ "$loc" = "en" ]; then
-    OUT_DIR="$STAGING_DIR"
-  else
-    OUT_DIR="$STAGING_DIR/$loc"
-  fi
-  
-  NODE_OPTIONS="--max-old-space-size=1536" npx docusaurus build --locale "$loc" --out-dir "$OUT_DIR" 2>&1
-  
-  if [ ${PIPESTATUS[0]} -ne 0 ]; then
-      log "Docusaurus build FAILED on locale $loc!"
-      LAST_ERROR="sent"
-      notify_feishu "failure" "Docusaurus 编译失败 ($loc)，请检查日志。"
-      exit 1
-  fi
-
-  # [SLIM SCRIPT] Real-Time Garbage Collection: Deduplicate identical assets using symlinks
-  if [ "$loc" != "en" ]; then
-    for asset in img assets js admin; do
-      if [ -d "$OUT_DIR/$asset" ]; then
-        rm -rf "$OUT_DIR/$asset"
-        ln -s "../$asset" "$OUT_DIR/$asset"
-      fi
-    done
-    log "Slim: Replaced redundant assets for $loc with symlinks to root"
-  fi
+  for asset in img admin; do
+    if [ -d "$STAGING_DIR/$loc/$asset" ]; then
+      find "$STAGING_DIR/$loc/$asset" -type f | while read -r file; do
+        rel_path="${file#$STAGING_DIR/$loc/}"
+        root_file="$STAGING_DIR/$rel_path"
+        if [ -f "$root_file" ]; then
+          size_loc=$(stat -c%s "$file")
+          size_root=$(stat -c%s "$root_file")
+          if [ "$size_loc" -eq "$size_root" ]; then
+            rm -f "$file"
+            dir_count=$(echo "$rel_path" | grep -o "/" | wc -l)
+            up_str=""
+            for i in $(seq 1 $((dir_count + 1))); do
+              up_str="../$up_str"
+            done
+            ln -s "${up_str}${rel_path}" "$file"
+          fi
+        fi
+      done
+      log "Slim: Deduplicated identical files in $loc/$asset"
+    fi
+  done
 done
 log "Docusaurus sequential build OK"
 
