@@ -1,18 +1,22 @@
 ---
 sidebar_position: 9
-format: mdx
 ---
 
 # Руководство по SteamVR
 
 Здесь приведены рекомендуемые настройки для SteamVR и решения распространенных проблем.
 
+## <span class="tutorial-main-heading" style="background: #a2a7ec;">Рекомендации по VR-гарнитурам / ПО для стриминга</span>
 
-## <span class="tutorial-main-heading" style="background: #a2a7ec;">Рекомендации по VR-гарнитурам / ПО для потоковой передачи</span>
+
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### Настройки VR-гарнитуры {#software-download-toc}
-<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Настройки VR-гарнитуры</h2>
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR头显的设定</h2>
+
+
+
+
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -263,7 +267,32 @@ format: mdx
     </div>
   </div>
 </div>
-<!-<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<!-- === 轮播图组件 代码结束 === -->
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+<strong> - По возможности используйте окно рабочего стола SteamVR для управления rebocap.</strong><br />
+При возврате во встроенную систему некоторых VR-гарнитур передача данных SteamVR приостанавливается/переходит в спящий режим,<br />
+а при возврате в SteamVR может произойти сбой ориентации.<br />
+( <u>Virtual Desktop</u> не подвержен этой проблеме, но избегайте перехода системы Quest в спящий режим )<br />
+<details className="plain-details"><summary>Рабочий стол не отображается после нажатия на значок?</summary>
+<div style="margin-top: 10px;">
+<div style="max-width: 260px; margin-bottom: 8px;">
+
+![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -cns.jpg>)
+
+</div>
+Попробуйте центрировать или сбросить главную панель в меню SteamVR.<br />
+</div>
+</details>
+</div>
+</div>
+
+
+
+
+
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
 ![VR_boundary](../../../../../static/img/steamvr_guide/VR_boundary.jpg)
@@ -271,7 +300,8 @@ format: mdx
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-${item1}
+- Для автономных гарнитур, таких как Quest или Pico, рекомендуется нарисовать игровую зону чуть больше реальной в настройках системы,<br />
+чтобы предотвратить частое появление предупреждений о границах, которые вызывают ошибки в данных трекинга гарнитуры в SteamVR и приводят к деформации позы FBT.
 
 </div>
 </div>
@@ -279,22 +309,71 @@ ${item1}
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-${CAROUSEL_HTML}
+<div class="html-carousel">
+  <input type="radio" name="carousel2" id="slide3" defaultChecked />
+  <input type="radio" name="carousel2" id="slide4" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/VR_headset_tracking_lost.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <video src="/img/steamvr_guide/VR_headset_tracking_lost_video.mp4" autoplay muted playsinline preload="auto"></video>
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide4" class="arrow-left-1">&#10094;</label>
+      <label for="slide3" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide3" title="Image 1"></label>
+      <label for="slide4" title="Video"><svg viewBox="0 0 24 24" width="8" height="8" ><polygon points="8,4 20,12 8,20" /></svg></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide4" class="arrow-right-1">&#10095;</label>
+      <label for="slide3" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-${item2}
+
+
+
+
+
+
+
+
+- Если при ходьбе или приседании гарнитура остается на месте, это означает, что позиционный трекинг во встроенной системе отключен.<br />
+(Включите игровые границы в системе Quest; включите [Позиционный трекинг] в системе Pico)
 
 </div>
 </div>
 </div>
+
+
+
 
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### Virtual Desktop {#software-download-toc}
 <h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Virtual Desktop</h2>
 
+
+
+ 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
@@ -302,29 +381,32 @@ ${item2}
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong>Рекомендуется отключить 2 параметра:</strong>
+<strong>Рекомендуется отключить 2 опции:</strong>
 <br />
 
-> <strong>1 - Отцентрировать в игровом пространстве (Center to play space)</strong><br />
- При двойном нажатии кнопки Home на левом контроллере для возврата на рабочий стол VD, гарнитура в пространстве SteamVR поворачивается на 180° назад,<br />
-что может привести к записи неправильной ориентации Rebocap во время калибровки.
+> <strong>1 - Center to play space (Центрировать в игровой зоне)</strong><br />
+ При двойном нажатии кнопки Home на левом контроллере для возврата на рабочий стол VD гарнитура в пространстве SteamVR поворачивается на 180° назад,<br />
+что может привести к записи неверной ориентации rebocap при калибровке.
 
 
 
-> <strong>2 - Эмулировать трекеры SteamVR vive (Emulate SteamVR vive trackers)</strong><br />
- Эта функция передает ИИ-точки отслеживания тела системы Quest в SteamVR, но вызывает перекрытие точек отслеживания и конфликты в VRChat.<br />
- Если вы хотите включить только определенные пользовательские точки отслеживания, вы можете использовать плагин для их настройки.<br />
- 🌐 [Репозиторий плагина на GitHub](https://github.com/DenTechs/Virtual_Desktop_Body_Tracking_Configurator)
+>  <strong>2 - Emulate SteamVR vive trackers (Эмуляция трекеров SteamVR Vive)</strong><br />
+ Эта функция передает точки трекинга всего тела ИИ системы Quest в SteamVR, но в VRChat точки трекинга перекрываются, что вызывает конфликт управления.<br />
+ Если вы хотите использовать только определенные локальные точки трекинга, вы можете использовать плагин для настройки.<br />
+🌐 [GitHub плагина](https://github.com/DenTechs/Virtual_Desktop_Body_Tracking_Configurator)
 
 
 </div>
 </div>
 </div>
+
+
 
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### SteamVR {#software-download-toc}
 <h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">SteamVR</h2>
+
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -335,9 +417,9 @@ ${item2}
 <div style="flex: 1.5; min-width: 250px;">
 
 - Отключите границы SteamVR<br />
-Границы по умолчанию ограничивают максимальный диапазон движения точек отслеживания, словно невидимая стена.<br />
-Если гарнитура VR смещается на высоте 2.4 м, трекеры могут не превышать высоту гарнитуры в положении лежа или при поднятии ног,<br />
-поскольку высота потолка по умолчанию в SteamVR составляет 2.4 м, и точки отслеживания не могут пройти сквозь потолок.
+Границы по умолчанию ограничивают максимальный диапазон движения точек трекинга, как невидимая стена.<br />
+Если гарнитура VR ошибочно расположена на высоте 2,4 метра, при поднятии ног в положении лежа может казаться, что трекеры не могут превысить высоту гарнитуры,<br />
+поскольку высота потолка по умолчанию в SteamVR составляет 2,4 метра, и точки трекинга не могут проходить сквозь потолок.
 
 </div>
 </div>
@@ -350,9 +432,9 @@ ${item2}
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-- Заранее отцентрируйте ориентацию гарнитуры VR<br />
-Нажмите и удерживайте кнопку "Home на правом контроллере", чтобы сбросить ориентацию системы VR-гарнитуры,<br />
-что сбрасывает стрелку виртуального горизонта SteamVR для направления прямо. Если ориентация случайно потеряна, используйте эту функцию для перестройки системы координат.
+- Сбрасывайте ориентацию гарнитуры VR заранее<br />
+Нажмите и удерживайте кнопку «Home правого контроллера», чтобы сбросить ориентацию системы гарнитуры VR,<br />
+что приведет к сбросу виртуальной линии горизонта SteamVR так, чтобы она указывала прямо перед вами. При случайной потере ориентации используйте эту функцию для перестройки системы координат.
 
 </div>
 </div>
@@ -365,19 +447,38 @@ ${item2}
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-- Всплывающее окно с подсказкой при запуске игр<br />
-Выберите любую конфигурацию привязок сообщества в фоновом режиме,<br />
-и после ее активации подсказка больше не будет появляться при последующих запусках.
+- Всплывающее окно при запуске игр<br />
+Выберите любую конфигурацию привязки сообщества на заднем плане,<br />
+и после её активации запрос больше не будет появляться при последующих запусках.
 
 </div>
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## <span class="tutorial-main-heading" style="background: #a2a7ec;">Не удается подключиться к SteamVR</span>
 
+
+
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
-<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Пожалуйста, проверьте следующие элементы:</h2>
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Пожалуйста, проверьте следующее:</h2>
+
+
+
+
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -387,8 +488,8 @@ ${item2}
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-<strong> 1 - Нажмите «Калибровка» (Calibration) при запущенном SteamVR.</strong><br />
-Если SteamVR не запущен, Rebocap не сможет определить наличие VR в системе.
+<strong> 1 - Нажимайте кнопку калибровки при запущенном SteamVR.</strong><br />
+Если SteamVR не запущен, rebocap не сможет определить наличие VR в системе.
 
 </div>
 </div>
@@ -430,8 +531,8 @@ ${item2}
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-<strong> 2 - Проверьте драйверы SteamVR.</strong><br />
-Откройте [Окно журнала] записей Rebocap, которое автоматически проверяется при запуске Rebocap.
+<strong> 2 - Проверьте драйвер SteamVR.</strong><br />
+Откройте окно [Журнал логов] в rebocap. Проверка выполняется автоматически при каждом запуске.
 При необходимости вы можете принудительно установить драйверы на странице [Настройки].
 
 </div>
@@ -474,15 +575,21 @@ ${item2}
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-<strong> 3 - Проверьте дополнения SteamVR.</strong><br />
-Если SteamVR неожиданно закрывается, он часто принудительно отключает все дополнения.<br />
-Для повторного включения дополнений Rebocap требуется перезапуск SteamVR.
+<strong> 3 - Проверьте дополнения (Add-ons) SteamVR.</strong><br />
+Если SteamVR неожиданно завершает работу, он часто принудительно отключает все дополнения.<br />
+После повторного включения дополнений rebocap необходимо перезапустить SteamVR.
 
 </div>
 </div>
 </div>
 
-## Отображение и скрытие точек отслеживания SteamVR
+
+
+
+
+
+
+## Отображение и скрытие трекеров SteamVR
 
 
 
@@ -490,17 +597,17 @@ ${item2}
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-en.png)
+![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-cns.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong> Отображение и скрытие точек отслеживания</strong><br />
- Управляйте видимостью точек отслеживания в программе в разделе [Настроить узлы SteamVR],<br />
- без необходимости выполнять операции в меню управления SteamVR.<br />
+<strong> Отображение и скрытие точек трекинга</strong><br />
+ Управляйте видимостью точек трекинга в разделе ПО [ Настройка выходных узлов SteamVR ].<br />
+ Нет необходимости настраивать это в меню управления SteamVR.<br />
 
  <details className="plain-details"><summary>Примечание</summary>
-Трекеры не подключаются напрямую к SteamVR. Физические трекеры управляют системой скелета, которая создает соответствующие точки отслеживания и передает их в SteamVR.<br />
-Это означает, что точки отслеживания всё равно могут предоставляться в SteamVR, даже без физического трекера на этой части тела.
+Трекеры не подключены напрямую к SteamVR. Физические трекеры манипулируют скелетной системой, а на скелетной системе создаются соответствующие точки трекинга для ввода в SteamVR.<br />
+Это означает, что даже без физического трекера для определенной части тела, точки трекинга все равно могут передаваться в SteamVR.
 
 </details>
 
@@ -508,9 +615,20 @@ ${item2}
 </div>
 </div>
 
-## Точки отслеживания установлены, но игра не распознает ноги и талию
+## Точки трекинга настроены, но игра не распознает ноги и талию
 
-- Некоторые игры используют среду OpenVR для определения отслеживания, но драйвер, включенный в текущий выпуск Rebocap, имеет ошибку, вызывающую появление нераспознанных трекеров, которые нельзя распознать, даже если изменить настройки SteamVR.
+- Некоторые игры используют среду OpenVR для распознавания трекинга, но драйвер, поставляемый с текущей версией rebocap Release, содержит ошибку, из-за которой они не могут быть распознаны, даже если вы измените соответствующие настройки в SteamVR.
 
 
-Эта ошибка ожидает исправления командой в будущих обновлениях.
+Эта ошибка ожидает исправления командой разработчиков в будущих обновлениях.
+
+
+
+
+
+
+
+
+
+
+

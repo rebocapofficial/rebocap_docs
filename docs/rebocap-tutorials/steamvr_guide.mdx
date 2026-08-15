@@ -1,18 +1,22 @@
 ---
 sidebar_position: 9
-format: mdx
 ---
 
 # SteamVR Guide
 
 Here are some recommended settings for SteamVR and solutions to common issues.
 
-
 ## <span class="tutorial-main-heading" style="background: #a2a7ec;">VR Headset / Streaming Software Recommendations</span>
+
+
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### VR Headset Settings {#software-download-toc}
-<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR Headset Settings</h2>
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR头显的设定</h2>
+
+
+
+
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -280,7 +284,6 @@ and direction misalignment will occur when returning to SteamVR.<br />
 Try to recenter or reset the main dashboard in the SteamVR menu.<br />
 </div>
 </details>
-
 </div>
 </div>
 
@@ -298,7 +301,7 @@ Try to recenter or reset the main dashboard in the SteamVR menu.<br />
 <div style="flex: 1.5; min-width: 250px;">
 
 - For standalone headsets like Quest or Pico, draw the play boundary slightly larger than your actual room size<br />
-to prevent triggering boundary popups that disrupt headset tracking data in SteamVR.
+to prevent triggering boundary popups that disrupt headset tracking data in SteamVR, causing full-body deformation.
 
 </div>
 </div>
@@ -337,8 +340,21 @@ to prevent triggering boundary popups that disrupt headset tracking data in Stea
   </div>
 </div>
 
+
+
+
+
+
 </div>
 <div style="flex: 1.5; min-width: 250px;">
+
+
+
+
+
+
+
+
 
 - If the headset remains fixed in place when walking or crouching, it indicates that positional tracking is disabled in the VR headset system.<br />
 (Enable Play Boundary on Quest system; enable [Positional Tracking] on Pico system)
@@ -347,11 +363,17 @@ to prevent triggering boundary popups that disrupt headset tracking data in Stea
 </div>
 </div>
 
+
+
+
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### Virtual Desktop {#software-download-toc}
 <h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Virtual Desktop</h2>
 
+
+
+ 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
@@ -359,29 +381,32 @@ to prevent triggering boundary popups that disrupt headset tracking data in Stea
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong>2 options are recommended to be disabled:</strong>
+<strong>We recommend disabling 2 options:</strong>
 <br />
 
 > <strong>1 - Center to play space</strong><br />
- When double-clicking the left controller Home button to return to VD desktop, the headset in SteamVR space rotates 180° backward,<br />
-which may cause Rebocap to record an incorrect orientation during calibration.
+ When double-clicking the left home button to return to the VD desktop, the headset in the SteamVR space rotates 180° backward,<br />
+which may cause rebocap to record an incorrect orientation during calibration.
 
 
 
-> <strong>2 - Emulate SteamVR vive trackers</strong><br />
- This feature passes Quest system's AI body tracking points into SteamVR, but causes tracking point overlaps and conflicts in VRChat.<br />
- If you only want to enable specific custom tracking points, you can use a plugin to configure it.<br />
- 🌐 [Plugin GitHub Repository](https://github.com/DenTechs/Virtual_Desktop_Body_Tracking_Configurator)
+>  <strong>2 - Emulate SteamVR vive trackers</strong><br />
+ This function passes the AI full-body tracking points of the Quest system to SteamVR, but overlaps with our tracking points in VRChat, seizing control.<br />
+ If you only want to enable specific local tracking points, you can use a plugin to adjust it.<br />
+🌐 [Plugin GitHub Repository](https://github.com/DenTechs/Virtual_Desktop_Body_Tracking_Configurator)
 
 
 </div>
 </div>
 </div>
+
+
 
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### SteamVR {#software-download-toc}
 <h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">SteamVR</h2>
+
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -391,10 +416,10 @@ which may cause Rebocap to record an incorrect orientation during calibration.
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-- Disable SteamVR boundaries<br />
-Default boundaries limit the maximum movement range of tracking points like an invisible wall.<br />
-If the VR headset misaligns at 2.4m height, trackers may appear unable to exceed headset height when lying down and lifting legs,<br />
-because SteamVR's default ceiling height is 2.4m, and tracking points cannot pass through the ceiling.
+- Disable the SteamVR boundary<br />
+The default boundary restricts the maximum movement range of tracking points, acting like an invisible wall.<br />
+If the VR headset is incorrectly positioned at a height of 2.4 meters, raising your legs while lying down might show trackers unable to exceed the headset's height,<br />
+because SteamVR's default ceiling height is 2.4 meters, and tracking points cannot pass through the ceiling.
 
 </div>
 </div>
@@ -410,6 +435,9 @@ because SteamVR's default ceiling height is 2.4m, and tracking points cannot pas
 - Recenter VR headset orientation in advance<br />
 Press and hold the 'Right Controller Home Button' to reset VR headset system orientation,<br />
 which resets the SteamVR virtual horizon arrow to face straight ahead. If orientation is accidentally lost, use this feature to realign the coordinate system.
+
+</div>
+</div>
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -427,11 +455,30 @@ and after activating it, the prompt will no longer appear on subsequent launches
 </div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## <span class="tutorial-main-heading" style="background: #a2a7ec;">Unable to Connect to SteamVR</span>
+
+
 
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 <h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Please check the following items:</h2>
+
+
+
+
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -441,8 +488,8 @@ and after activating it, the prompt will no longer appear on subsequent launches
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-<strong> 1 - Click Calibration while SteamVR is running.</strong><br />
-If SteamVR is not running, Rebocap cannot detect whether VR exists in the system.
+<strong> 1 - Click calibrate while SteamVR is running.</strong><br />
+If SteamVR is not started, rebocap cannot detect if VR is present in the system.
 
 </div>
 </div>
@@ -484,8 +531,8 @@ If SteamVR is not running, Rebocap cannot detect whether VR exists in the system
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-<strong> 2 - Check SteamVR Drivers.</strong><br />
-Open Rebocap's [Log Window] records, which automatically check upon launching Rebocap.
+<strong> 2 - Check the SteamVR driver.</strong><br />
+Open the [Log Window] in rebocap. It automatically checks each time rebocap is launched.
 If needed, you can force install drivers in the [Settings] page.
 
 </div>
@@ -530,13 +577,19 @@ If needed, you can force install drivers in the [Settings] page.
 
 <strong> 3 - Check SteamVR Add-ons.</strong><br />
 If SteamVR crashes unexpectedly, it often forcibly disables all add-ons.<br />
-Re-enabling Rebocap add-ons requires restarting SteamVR.
+Re-enabling rebocap add-ons requires restarting SteamVR.
 
 </div>
 </div>
 </div>
 
-## Showing and Hiding SteamVR Tracking Points
+
+
+
+
+
+
+## Show and Hide SteamVR Trackers
 
 
 
@@ -544,17 +597,17 @@ Re-enabling Rebocap add-ons requires restarting SteamVR.
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_windows](../../static/img/steamvr_guide/v01_off_1-en.png)
+![steamvr_windows](../../static/img/steamvr_guide/v01_off_1-cns.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong> Showing and Hiding Tracking Points</strong><br />
- Control tracking point visibility in the software under [ Set SteamVR Nodes ],<br />
- without needing to operate in SteamVR's management menu.<br />
+<strong> Show and hide tracking points</strong><br />
+ Control the visibility of tracking points in the software's [ Configure SteamVR Output Nodes ] section.<br />
+ There is no need to configure this in the SteamVR management menu.<br />
 
  <details className="plain-details"><summary>Note</summary>
-Trackers do not connect directly to SteamVR. Physical trackers control the skeleton system, which creates corresponding tracking points and feeds them into SteamVR.<br />
-This means tracking points can still be provided to SteamVR even without a physical tracker on that body part.
+The trackers are not directly connected to SteamVR. The physical trackers manipulate the skeleton system, and corresponding tracking points are created on the skeleton system to input into SteamVR.<br />
+This means even without a physical tracker for a specific point, tracking points can still be provided to SteamVR.
 
 </details>
 
@@ -562,12 +615,20 @@ This means tracking points can still be provided to SteamVR even without a physi
 </div>
 </div>
 
-## Tracking Points Set but Game Fails to Recognize Feet and Waist
+## Configured Tracker Locations But Game Doesn't Recognize Feet and Waist
 
-- Some games use OpenVR environment to identify tracking, but the driver included with current Rebocap Release has a bug causing unrecognized trackers, which cannot be recognized even if modified in SteamVR settings.
+- Some games use the OpenVR environment to recognize tracking, but the driver included in the current rebocap Release has a bug where they cannot be recognized, even if you modify the corresponding settings in SteamVR.
 
 
-This bug is pending fix by the team in future updates.
+This bug is waiting for the development team to fix in a future update.
+
+
+
+
+
+
+
+
 
 
 

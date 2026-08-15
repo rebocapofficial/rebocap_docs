@@ -1,18 +1,22 @@
 ---
 sidebar_position: 9
-format: mdx
 ---
 
 # SteamVR 가이드
 
-SteamVR의 권장 설정 및 일반적인 문제에 대한 해결 방법입니다.
-
+SteamVR 권장 설정 및 일반적인 문제에 대한 해결책입니다.
 
 ## <span class="tutorial-main-heading" style="background: #a2a7ec;">VR 헤드셋 / 스트리밍 소프트웨어 권장 사항</span>
+
+
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### VR 헤드셋 설정 {#software-download-toc}
-<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR 헤드셋 설정</h2>
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR头显的设定</h2>
+
+
+
+
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -263,7 +267,32 @@ SteamVR의 권장 설정 및 일반적인 문제에 대한 해결 방법입니�
     </div>
   </div>
 </div>
-<!-<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<!-- === 轮播图组件 代码结束 === -->
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+<strong> - rebocap 소프트웨어를 제어할 때는 가급적 SteamVR의 데스크톱 창을 사용하세요.</strong><br />
+일부 VR 헤드셋의 내장 시스템으로 돌아가면 SteamVR 데이터가 중지/최절전 모드가 되며,<br />
+SteamVR로 돌아올 때 방향이 어긋나는 현상이 발생할 수 있습니다.<br />
+( <u>Virtual Desktop</u>은 이 문제의 영향을 받지 않지만 Quest 시스템의 절전 모드는 피해야 합니다. )<br />
+<details className="plain-details"><summary>아이콘을 클릭해도 데스크톱이 표시되지 않나요?</summary>
+<div style="margin-top: 10px;">
+<div style="max-width: 260px; margin-bottom: 8px;">
+
+![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -cns.jpg>)
+
+</div>
+SteamVR 메뉴에서 중앙을 다시 맞추거나 메인 대시보드를 리셋해 보세요.<br />
+</div>
+</details>
+</div>
+</div>
+
+
+
+
+
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
 ![VR_boundary](../../../../../static/img/steamvr_guide/VR_boundary.jpg)
@@ -271,7 +300,8 @@ SteamVR의 권장 설정 및 일반적인 문제에 대한 해결 방법입니�
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-${item1}
+- Quest나 Pico 같은 독립형 헤드셋의 경우, 시스템 내장 경계 설정에서 실제 플레이 공간보다 경계선을 약간 넓게 그리는 것이 좋습니다.<br />
+바닥에 눕거나 경계선에 접근할 때 잦은 경고 팝업이 발생하여 SteamVR 내 헤드셋 트래킹 데이터에 오류를 일으키고 전신 트래킹 자세가 변형되는 것을 방지하기 위함입니다.
 
 </div>
 </div>
@@ -279,22 +309,71 @@ ${item1}
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-${CAROUSEL_HTML}
+<div class="html-carousel">
+  <input type="radio" name="carousel2" id="slide3" defaultChecked />
+  <input type="radio" name="carousel2" id="slide4" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/VR_headset_tracking_lost.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <video src="/img/steamvr_guide/VR_headset_tracking_lost_video.mp4" autoplay muted playsinline preload="auto"></video>
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide4" class="arrow-left-1">&#10094;</label>
+      <label for="slide3" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide3" title="Image 1"></label>
+      <label for="slide4" title="Video"><svg viewBox="0 0 24 24" width="8" height="8" ><polygon points="8,4 20,12 8,20" /></svg></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide4" class="arrow-right-1">&#10095;</label>
+      <label for="slide3" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-${item2}
+
+
+
+
+
+
+
+
+- 걷거나 쭈그리고 앉을 때 헤드셋이 제자리에 고정된다면 VR 헤드셋 시스템 내의 위치 트래킹이 비활성화된 것입니다.<br />
+(Quest 시스템에서는 플레이 경계를 활성화하고, Pico 시스템에서는 [위치 트래킹]을 활성화하세요.)
 
 </div>
 </div>
 </div>
+
+
+
 
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### Virtual Desktop {#software-download-toc}
 <h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Virtual Desktop</h2>
 
+
+
+ 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
@@ -302,26 +381,32 @@ ${item2}
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong>2가지 옵션을 비활성화하는 것이 좋습니다:</strong>
+<strong>다음 2가지 옵션을 끄는 것을 권장합니다:</strong>
 <br />
 
 > <strong>1 - Center to play space</strong><br />
- 왼쪽 컨트롤러의 홈 버튼을 두 번 클릭하여 VD 데스크톱으로 돌아갈 때, SteamVR 공간의 헤드셋이 뒤로 180° 회전하여<br />
-보정 중 Rebocap이 잘못된 방향을 기록하게 될 수 있습니다.
+ 왼쪽 컨트롤러의 홈 버튼을 더블 클릭하여 VD 데스크톱으로 돌아갈 때, SteamVR 공간의 헤드셋이 뒤로 180° 회전하여<br />
+rebocap 캘리브레이션 시 잘못된 방향이 기록될 수 있습니다.
 
 
 
-> <strong>2 - Emulate SteamVR vive trackers</strong><br />
- 이 기능은 Quest 시스템의 AI 바디 트래킹 포인트를 SteamVR로 전달하지만, VRChat에서 트래킹 포인트 겹침 및 충돌을 일으킵니다.<br />
- 특정 사용자 정의 트래킹 포인트만 활성화하려면 플러그인을 사용하여 구성할 수 있습니다.<br />
- 🌐 [플러그인 GitHub 리포지토리](https://github.com/DenTechs/Virtual_Desktop_Body_Tracking_Configurator)
+>  <strong>2 - Emulate SteamVR vive trackers</strong><br />
+ 이 기능은 Quest 시스템의 AI 전신 트래킹 포인트를 SteamVR로 전송하지만, VRChat 내에서 트래킹 포인트가 겹쳐 제어권 충돌이 발생합니다.<br />
+ 특정 국소 트래킹 포인트만 활성화하려면 플러그인을 사용하여 조정할 수 있습니다.<br />
+🌐 [플러그인 GitHub](https://github.com/DenTechs/Virtual_Desktop_Body_Tracking_Configurator)
 
 
 </div>
 </div>
 </div>
 
-### SteamVR
+
+
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+
+### SteamVR {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">SteamVR</h2>
+
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -333,8 +418,8 @@ ${item2}
 
 - SteamVR 경계 비활성화<br />
 기본 경계는 보이지 않는 벽처럼 트래킹 포인트의 최대 이동 범위를 제한합니다.<br />
-VR 헤드셋이 2.4m 높이에서 어긋나면 누워서 다리를 들어 올릴 때 트래커가 헤드셋 높이를 초과할 수 없는 것처럼 보일 수 있습니다.<br />
-이는 SteamVR의 기본 천장 높이가 2.4m이고 트래킹 포인트가 천장을 통과할 수 없기 때문입니다.
+VR 헤드셋이 실수로 2.4m 높이에 잘못 배치된 경우, 누워서 다리를 들어 올릴 때 트래커가 헤드셋 높이를 초과하지 못하는 것처럼 보일 수 있습니다.<br />
+SteamVR의 기본 천장 높이가 2.4m이며 트래킹 포인트는 천장을 통과할 수 없기 때문입니다.
 
 </div>
 </div>
@@ -347,9 +432,9 @@ VR 헤드셋이 2.4m 높이에서 어긋나면 누워서 다리를 들어 올릴
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-- VR 헤드셋 방향을 미리 가운데로 맞추기<br />
-'오른쪽 컨트롤러 홈 버튼'을 길게 눌러 VR 헤드셋 시스템 방향을 재설정하면<br />
-SteamVR 가상 수평선 화살표가 정면을 향하도록 재설정됩니다. 방향을 실수로 잃어버린 경우 이 기능을 사용하여 좌표계를 다시 정렬하세요.
+- VR 헤드셋 방향 미리 리셋하기<br />
+'우측 컨트롤러 홈 버튼'을 길게 눌러 VR 헤드셋 시스템 방향을 리셋하면,<br />
+SteamVR의 가상 지평선 화살표가 시선 정면으로 리셋됩니다. 방향을 잃었을 때 이 기능을 사용하여 좌표계를 다시 정렬할 수 있습니다.
 
 </div>
 </div>
@@ -362,18 +447,38 @@ SteamVR 가상 수평선 화살표가 정면을 향하도록 재설정됩니다.
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-- 게임 실행 시 프롬프트 팝업<br />
-백그라운드에서 아무 커뮤니티 바인딩 구성이나 선택하고<br />
-활성화한 후에는 후속 실행 시 프롬프트가 더 이상 나타나지 않습니다.
+- 게임 실행 시 팝업 프롬프트<br />
+배경에 있는 커뮤니티 바인딩 구성 중 아무거나 선택하세요.<br />
+활성화한 후에는 다음 실행부터 더 이상 나타나지 않습니다.
 
 </div>
 </div>
+</div>
 
-## <span class="tutorial-main-heading" style="background: #a2a7ec;">SteamVR에 연결할 수 없음</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+## <span class="tutorial-main-heading" style="background: #a2a7ec;">SteamVR 연결 실패</span>
+
+
 
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
-<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">다음 항목을 확인해 주세요:</h2>
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">다음 항목들을 확인하세요:</h2>
+
+
+
+
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -383,8 +488,8 @@ SteamVR 가상 수평선 화살표가 정면을 향하도록 재설정됩니다.
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 
-<strong> 1 - SteamVR이 실행 중일 때 캘리브레이션을 클릭하세요.</strong><br />
-SteamVR이 실행되고 있지 않으면 Rebocap은 시스템에 VR이 존재하는지 감지할 수 없습니다.
+<strong> 1 - SteamVR이 켜진 상태에서 캘리브레이션을 클릭하세요.</strong><br />
+SteamVR을 시작하지 않으면 rebocap은 시스템에 VR이 있는지 감지할 수 없습니다.
 
 </div>
 </div>
@@ -427,8 +532,8 @@ SteamVR이 실행되고 있지 않으면 Rebocap은 시스템에 VR이 존재하
 <div style="flex: 1.5; min-width: 250px;">
 
 <strong> 2 - SteamVR 드라이버를 확인하세요.</strong><br />
-Rebocap을 시작할 때 자동으로 확인하는 Rebocap의 [로그 창] 기록을 엽니다.<br />
-필요한 경우 [설정] 페이지에서 드라이버를 강제로 설치할 수 있습니다.
+rebocap의 [로그 창]을 열어 확인하세요. rebocap을 실행할 때마다 자동으로 검사합니다.
+필요한 경우 [설정] 페이지에서 강제로 설치할 수 있습니다.
 
 </div>
 </div>
@@ -471,14 +576,20 @@ Rebocap을 시작할 때 자동으로 확인하는 Rebocap의 [로그 창] 기�
 <div style="flex: 1.5; min-width: 250px;">
 
 <strong> 3 - SteamVR 애드온을 확인하세요.</strong><br />
-SteamVR이 예기치 않게 충돌하는 경우 모든 애드온을 강제로 비활성화하는 경우가 많습니다.<br />
-Rebocap 애드온을 다시 활성화하려면 SteamVR을 다시 시작해야 합니다.
+SteamVR이 예기치 않게 충돌하면 모든 애드온이 강제로 비활성화되는 경우가 많습니다.<br />
+rebocap 애드온을 다시 활성화한 후에는 SteamVR을 재시작해야 합니다.
 
 </div>
 </div>
 </div>
 
-## SteamVR 트래킹 포인트 표시 및 숨기기
+
+
+
+
+
+
+## SteamVR 트래커 표시 및 숨기기
 
 
 
@@ -486,17 +597,17 @@ Rebocap 애드온을 다시 활성화하려면 SteamVR을 다시 시작해야 �
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-en.png)
+![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-cns.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
 <strong> 트래킹 포인트 표시 및 숨기기</strong><br />
- SteamVR의 관리 메뉴에서 조작할 필요 없이<br />
- 소프트웨어의 [ Set SteamVR Nodes ] 아래에서 트래킹 포인트 가시성을 제어합니다.<br />
+ 소프트웨어의 [ SteamVR 출력 노드 설정 ]에서 트래킹 포인트의 표시 여부를 제어합니다.<br />
+ SteamVR 관리 메뉴에서 조작할 필요가 없습니다.<br />
 
  <details className="plain-details"><summary>참고</summary>
-트래커는 SteamVR에 직접 연결되지 않습니다. 물리적 트래커는 스켈레톤 시스템을 제어하여 해당하는 트래킹 포인트를 생성하고 이를 SteamVR에 제공합니다.<br />
-이는 해당 신체 부위에 물리적 트래커가 없더라도 트래킹 포인트를 여전히 SteamVR에 제공할 수 있음을 의미합니다.
+트래커는 SteamVR에 직접 연결되는 것이 아닙니다. 물리적 트래커가 골격 시스템을 조작하고, 해당 골격 시스템에 생성된 트래킹 포인트가 SteamVR로 입력됩니다.<br />
+즉, 물리적 트래커가 부착되지 않은 부위라도 SteamVR에 트래킹 포인트를 제공할 수 있습니다.
 
 </details>
 
@@ -504,9 +615,20 @@ Rebocap 애드온을 다시 활성화하려면 SteamVR을 다시 시작해야 �
 </div>
 </div>
 
-## 트래킹 포인트는 설정되었지만 게임에서 발과 허리를 인식하지 못함
+## 트래킹 포인트를 설정했지만 게임에서 발과 허리를 인식하지 못함
 
-- 일부 게임은 트래킹을 식별하기 위해 OpenVR 환경을 사용하지만, 현재 Rebocap Release에 포함된 드라이버에는 트래커를 인식하지 못하는 버그가 있어 SteamVR 설정에서 수정해도 인식할 수 없습니다.
+- 일부 게임은 OpenVR 환경을 사용하여 트래킹을 인식하지만, 현재 rebocap Release에 포함된 드라이버에는 인식되지 않는 버그가 있으며 SteamVR에서 설정을 변경해도 인식되지 않습니다.
 
 
-이 버그는 향후 업데이트에서 팀에 의해 수정될 예정입니다.
+이 버그는 개발팀의 향후 업데이트에서 수정될 예정입니다.
+
+
+
+
+
+
+
+
+
+
+
