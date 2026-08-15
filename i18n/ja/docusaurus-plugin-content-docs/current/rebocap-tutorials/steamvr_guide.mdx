@@ -7,8 +7,11 @@ sidebar_position: 9
 ここでは、推奨するSteamVRの設定およびよくある質問について説明します。
 
 
-## VRヘッドセット / ストリーミングソフトの操作推奨
-### VRヘッドセットの設定
+## <span class="tutorial-main-heading" style="background: #a2a7ec;">VRヘッドセット / ストリーミングソフトの操作推奨</span>
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+
+### VRヘッドセットの設定 {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VRヘッドセットの設定</h2>
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -53,11 +56,17 @@ sidebar_position: 9
   opacity: 1;
   pointer-events: auto;
 }
-#slide2:checked ~ .html-carousel-slides .slide1 {
+#slide2:checked ~ .html-carousel-slides .slide1,
+#slide4:checked ~ .html-carousel-slides .slide1,
+#slide6:checked ~ .html-carousel-slides .slide1,
+#slide8:checked ~ .html-carousel-slides .slide1 {
   opacity: 0;
   pointer-events: none;
 }
-#slide2:checked ~ .html-carousel-slides .slide2 {
+#slide2:checked ~ .html-carousel-slides .slide2,
+#slide4:checked ~ .html-carousel-slides .slide2,
+#slide6:checked ~ .html-carousel-slides .slide2,
+#slide8:checked ~ .html-carousel-slides .slide2 {
   opacity: 1;
   pointer-events: auto;
 }
@@ -105,13 +114,25 @@ sidebar_position: 9
   z-index: 10;
 }
 #slide2:checked ~ .html-carousel-controls .arrow-left-1,
-#slide2:checked ~ .html-carousel-controls .arrow-right-1 {
+#slide2:checked ~ .html-carousel-controls .arrow-right-1,
+#slide4:checked ~ .html-carousel-controls .arrow-left-1,
+#slide4:checked ~ .html-carousel-controls .arrow-right-1,
+#slide6:checked ~ .html-carousel-controls .arrow-left-1,
+#slide6:checked ~ .html-carousel-controls .arrow-right-1,
+#slide8:checked ~ .html-carousel-controls .arrow-left-1,
+#slide8:checked ~ .html-carousel-controls .arrow-right-1 {
   opacity: 0;
   pointer-events: none;
   z-index: 1;
 }
 #slide2:checked ~ .html-carousel-controls .arrow-left-2,
-#slide2:checked ~ .html-carousel-controls .arrow-right-2 {
+#slide2:checked ~ .html-carousel-controls .arrow-right-2,
+#slide4:checked ~ .html-carousel-controls .arrow-left-2,
+#slide4:checked ~ .html-carousel-controls .arrow-right-2,
+#slide6:checked ~ .html-carousel-controls .arrow-left-2,
+#slide6:checked ~ .html-carousel-controls .arrow-right-2,
+#slide8:checked ~ .html-carousel-controls .arrow-left-2,
+#slide8:checked ~ .html-carousel-controls .arrow-right-2 {
   opacity: 1;
   pointer-events: auto;
   z-index: 10;
@@ -126,22 +147,68 @@ sidebar_position: 9
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background: #ccc;
+  background: rgba(128, 128, 128, 0.4);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.html-carousel-dots label[for="slide1"] {
-  background: rgba(128, 128, 128, 0.4);
+.html-carousel-dots svg {
+  fill: #ffffff;
+  transition: fill 0.3s ease;
+}
+.html-carousel-dots label[for="slide1"],
+.html-carousel-dots label[for="slide3"],
+.html-carousel-dots label[for="slide5"],
+.html-carousel-dots label[for="slide7"] {
+  background: rgba(80, 80, 80, 0.85);
   width: 24px;
 }
-#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"] {
-  background: #ccc;
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
+#slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide3"],
+#slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide5"],
+#slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide7"] {
+  background: rgba(128, 128, 128, 0.4);
   width: 10px;
 }
-#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"] {
-  background: rgba(128, 128, 128, 0.4);
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"],
+#slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide4"],
+#slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide6"],
+#slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide8"] {
+  background: rgba(80, 80, 80, 0.85);
   width: 24px;
+}
+[data-theme='dark'] .html-carousel-dots label {
+  background: rgba(255, 255, 255, 0.3);
+}
+[data-theme='dark'] .html-carousel-dots label[for="slide1"],
+[data-theme='dark'] .html-carousel-dots label[for="slide3"],
+[data-theme='dark'] .html-carousel-dots label[for="slide5"],
+[data-theme='dark'] .html-carousel-dots label[for="slide7"] {
+  background: rgba(255, 255, 255, 0.85);
+  width: 24px;
+}
+[data-theme='dark'] #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
+[data-theme='dark'] #slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide3"],
+[data-theme='dark'] #slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide5"],
+[data-theme='dark'] #slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide7"] {
+  background: rgba(255, 255, 255, 0.3);
+  width: 10px;
+}
+[data-theme='dark'] #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"],
+[data-theme='dark'] #slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide4"],
+[data-theme='dark'] #slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide6"],
+[data-theme='dark'] #slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide8"] {
+  background: rgba(255, 255, 255, 0.85);
+  width: 24px;
+}
+[data-theme='dark'] #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"] svg,
+[data-theme='dark'] #slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide4"] svg,
+[data-theme='dark'] #slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide6"] svg,
+[data-theme='dark'] #slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide8"] svg {
+  fill: #18191a;
 }
 .html-carousel-progress-bar {
   width: 100%;
@@ -187,7 +254,7 @@ sidebar_position: 9
     </div>
     <div class="html-carousel-dots">
       <label for="slide1" title="Image 1"></label>
-      <label for="slide2" title="Video"></label>
+      <label for="slide2" title="Video"><svg viewBox="0 0 24 24" width="8" height="8" ><polygon points="8,4 20,12 8,20" /></svg></label>
     </div>
     <div class="html-carousel-arrows">
       <label for="slide2" class="arrow-right-1">&#10095;</label>
@@ -195,35 +262,38 @@ sidebar_position: 9
     </div>
   </div>
 </div>
-<!-- === 轮播图组件 代码结束 === -->
+<!-<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![VR_boundary](../../../../../static/img/steamvr_guide/VR_boundary.jpg)
+
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong> - できるだけSteamVRのデスクトップウィンドウからrebocapソフトウェアを操作してください。</strong><br />
-一部のVRヘッドセットでは、内蔵システム画面に戻るとSteamVRのデータが停止/スリープ状態になり、<br />
-再度SteamVRに戻った際に方向のずれが発生する場合があります。<br />
-( <u>Virtual Desktop</u>はこの問題の影響を受けませんが、Questシステムのスリープを回避してください )<br />
-<details className="plain-details"><summary>アイコンをクリックしてもデスクトップが表示されませんか？</summary>
-SteamVRのメニューで再センタリングするか、メインダッシュボードをリセットしてみてください。<br />
-</details>
+
+${item1}
 
 </div>
 </div>
 
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
 
+${CAROUSEL_HTML}
 
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
+${item2}
 
+</div>
+</div>
+</div>
 
-- QuestやPicoなどの一体型VRヘッドセットのプレイエリア（安全境界）は、実際の部屋よりもひと回り大きく設定してください。<br />
-境界線が作動した際にSteamVR側のヘッドセット追跡データが中断されるのを防ぐためです。
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
-- 歩行やかがみ込みを行った際にヘッドセットの位置が固定されたままの場合は、VRヘッドセットシステム内の位置トラッキング機能が有効になっていません。<br />
-（Questシステムではプレイ境界線を有効にし、Picoシステムでは[位置トラッキング]を有効にしてください）
+### Virtual Desktop {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Virtual Desktop</h2>
 
-
-
-
-### Virtual Desktop 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
@@ -248,42 +318,164 @@ Rebocapのキャリブレーション時に誤った向きが記録される可�
 
 </div>
 </div>
-
-
-
+</div>
 
 ### SteamVR
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 - SteamVRの境界線を無効化する<br />
 デフォルトの境界線は、透明な壁のようにトラッキング点の最大移動範囲を制限します。<br />
 VRヘッドセットが誤って2.4mの高さに位置調整された場合、横になって足を上げた際にトラッカーがヘッドセット的高さを超えられなくなることがあります。<br />
 SteamVRのデフォルトの天井高が2.4mであり、トラッキング点が天井を通過できないためです。
 
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_reset_vr](../../../../../static/img/steamvr_guide/steamvr_reset_vr.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 - あらかじめVRヘッドセットの角度をリセットする<br />
 「右コントローラーのHomeボタン」を長押ししてVRヘッドセットのシステム方向をリセットすると、<br />
 SteamVRの仮想水平線の矢印が視線の正面にリセットされます。不意に向きがずれた場合に、この機能を使って座標系を再調整できます。
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_binding_prompt_pops](../../../../../static/img/steamvr_guide/steamvr_binding_prompt_pops.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 - 起動時にポップアップ通知が表示される場合<br />
 背景にあるコミュニティ構成のいずれかを適当に選択してください。<br />
 一度有効化すれば、次回起動時からは表示されなくなります。
 
-## SteamVRに接続できない場合
-以下の項目を確認してください：
+</div>
+</div>
+
+## <span class="tutorial-main-heading" style="background: #a2a7ec;">SteamVRに接続できない場合</span>
+
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">以下の項目を確認してください：</h2>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_runing](../../../../../static/img/steamvr_guide/steamvr_runing.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 <strong> 1 - SteamVRが起動している状態でキャリブレーションをクリックする。</strong><br />
 SteamVRが起動していないと、Rebocapはシステム内にVRが存在するかを検出できません。
 
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<div class="html-carousel">
+  <input type="radio" name="carousel3" id="slide5" defaultChecked />
+  <input type="radio" name="carousel3" id="slide6" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/check_steamvr_driver_1 -cns.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <img src="/img/steamvr_guide/check_steamvr_driver_2 -cns.jpg" />
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide6" class="arrow-left-1">&#10094;</label>
+      <label for="slide5" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide5" title="Image 1"></label>
+      <label for="slide6" title="Image 2"></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide6" class="arrow-right-1">&#10095;</label>
+      <label for="slide5" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 <strong> 2 - SteamVRドライバーを確認する。</strong><br />
-Rebocapの[ログウィンドウ]記録を開いて確認してください。Rebocap起動時に自動的にチェックされます。
+Rebocapの[ログウィンドウ]記録を開いて確認してください。Rebocap起動時に自動的にチェックされます。<br />
 必要に応じて、[設定]ページから手動で強制インストールが可能です。
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<div class="html-carousel">
+  <input type="radio" name="carousel4" id="slide7" defaultChecked />
+  <input type="radio" name="carousel4" id="slide8" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/check_steamvr_addons -cns.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <video src="/img/steamvr_guide/check_steamvr_addons_video -cns.mp4" autoplay muted playsinline preload="auto"></video>
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide8" class="arrow-left-1">&#10094;</label>
+      <label for="slide7" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide7" title="Image 1"></label>
+      <label for="slide8" title="Video"><svg viewBox="0 0 24 24" width="8" height="8"><polygon points="8,4 20,12 8,20" /></svg></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide8" class="arrow-right-1">&#10095;</label>
+      <label for="slide7" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 <strong> 3 - SteamVRのアドオンを確認する。</strong><br />
 SteamVRが予期せずクラッシュした場合、全アドオンが強制的に無効化されることがあります。<br />
 Rebocapのアドオンを再有効化した後は、SteamVRの再起動が必要です。
 
-
-
-
-
+</div>
+</div>
+</div>
 
 ## SteamVRトラッキング点の表示と非表示
 

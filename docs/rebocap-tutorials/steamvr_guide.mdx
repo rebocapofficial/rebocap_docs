@@ -8,8 +8,11 @@ format: mdx
 Here are some recommended settings for SteamVR and solutions to common issues.
 
 
-## VR Headset / Streaming Software Recommendations
-### VR Headset Settings
+## <span class="tutorial-main-heading" style="background: #a2a7ec;">VR Headset / Streaming Software Recommendations</span>
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+
+### VR Headset Settings {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR Headset Settings</h2>
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -54,11 +57,17 @@ Here are some recommended settings for SteamVR and solutions to common issues.
   opacity: 1;
   pointer-events: auto;
 }
-#slide2:checked ~ .html-carousel-slides .slide1 {
+#slide2:checked ~ .html-carousel-slides .slide1,
+#slide4:checked ~ .html-carousel-slides .slide1,
+#slide6:checked ~ .html-carousel-slides .slide1,
+#slide8:checked ~ .html-carousel-slides .slide1 {
   opacity: 0;
   pointer-events: none;
 }
-#slide2:checked ~ .html-carousel-slides .slide2 {
+#slide2:checked ~ .html-carousel-slides .slide2,
+#slide4:checked ~ .html-carousel-slides .slide2,
+#slide6:checked ~ .html-carousel-slides .slide2,
+#slide8:checked ~ .html-carousel-slides .slide2 {
   opacity: 1;
   pointer-events: auto;
 }
@@ -106,13 +115,25 @@ Here are some recommended settings for SteamVR and solutions to common issues.
   z-index: 10;
 }
 #slide2:checked ~ .html-carousel-controls .arrow-left-1,
-#slide2:checked ~ .html-carousel-controls .arrow-right-1 {
+#slide2:checked ~ .html-carousel-controls .arrow-right-1,
+#slide4:checked ~ .html-carousel-controls .arrow-left-1,
+#slide4:checked ~ .html-carousel-controls .arrow-right-1,
+#slide6:checked ~ .html-carousel-controls .arrow-left-1,
+#slide6:checked ~ .html-carousel-controls .arrow-right-1,
+#slide8:checked ~ .html-carousel-controls .arrow-left-1,
+#slide8:checked ~ .html-carousel-controls .arrow-right-1 {
   opacity: 0;
   pointer-events: none;
   z-index: 1;
 }
 #slide2:checked ~ .html-carousel-controls .arrow-left-2,
-#slide2:checked ~ .html-carousel-controls .arrow-right-2 {
+#slide2:checked ~ .html-carousel-controls .arrow-right-2,
+#slide4:checked ~ .html-carousel-controls .arrow-left-2,
+#slide4:checked ~ .html-carousel-controls .arrow-right-2,
+#slide6:checked ~ .html-carousel-controls .arrow-left-2,
+#slide6:checked ~ .html-carousel-controls .arrow-right-2,
+#slide8:checked ~ .html-carousel-controls .arrow-left-2,
+#slide8:checked ~ .html-carousel-controls .arrow-right-2 {
   opacity: 1;
   pointer-events: auto;
   z-index: 10;
@@ -127,22 +148,68 @@ Here are some recommended settings for SteamVR and solutions to common issues.
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background: #ccc;
+  background: rgba(128, 128, 128, 0.4);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.html-carousel-dots label[for="slide1"] {
-  background: rgba(128, 128, 128, 0.4);
+.html-carousel-dots svg {
+  fill: #ffffff;
+  transition: fill 0.3s ease;
+}
+.html-carousel-dots label[for="slide1"],
+.html-carousel-dots label[for="slide3"],
+.html-carousel-dots label[for="slide5"],
+.html-carousel-dots label[for="slide7"] {
+  background: rgba(80, 80, 80, 0.85);
   width: 24px;
 }
-#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"] {
-  background: #ccc;
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
+#slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide3"],
+#slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide5"],
+#slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide7"] {
+  background: rgba(128, 128, 128, 0.4);
   width: 10px;
 }
-#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"] {
-  background: rgba(128, 128, 128, 0.4);
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"],
+#slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide4"],
+#slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide6"],
+#slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide8"] {
+  background: rgba(80, 80, 80, 0.85);
   width: 24px;
+}
+[data-theme='dark'] .html-carousel-dots label {
+  background: rgba(255, 255, 255, 0.3);
+}
+[data-theme='dark'] .html-carousel-dots label[for="slide1"],
+[data-theme='dark'] .html-carousel-dots label[for="slide3"],
+[data-theme='dark'] .html-carousel-dots label[for="slide5"],
+[data-theme='dark'] .html-carousel-dots label[for="slide7"] {
+  background: rgba(255, 255, 255, 0.85);
+  width: 24px;
+}
+[data-theme='dark'] #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
+[data-theme='dark'] #slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide3"],
+[data-theme='dark'] #slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide5"],
+[data-theme='dark'] #slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide7"] {
+  background: rgba(255, 255, 255, 0.3);
+  width: 10px;
+}
+[data-theme='dark'] #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"],
+[data-theme='dark'] #slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide4"],
+[data-theme='dark'] #slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide6"],
+[data-theme='dark'] #slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide8"] {
+  background: rgba(255, 255, 255, 0.85);
+  width: 24px;
+}
+[data-theme='dark'] #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"] svg,
+[data-theme='dark'] #slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide4"] svg,
+[data-theme='dark'] #slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide6"] svg,
+[data-theme='dark'] #slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide8"] svg {
+  fill: #18191a;
 }
 .html-carousel-progress-bar {
   width: 100%;
@@ -188,7 +255,7 @@ Here are some recommended settings for SteamVR and solutions to common issues.
     </div>
     <div class="html-carousel-dots">
       <label for="slide1" title="Image 1"></label>
-      <label for="slide2" title="Video"></label>
+      <label for="slide2" title="Video"><svg viewBox="0 0 24 24" width="8" height="8" ><polygon points="8,4 20,12 8,20" /></svg></label>
     </div>
     <div class="html-carousel-arrows">
       <label for="slide2" class="arrow-right-1">&#10095;</label>
@@ -204,7 +271,14 @@ Returning to the built-in system of some VR headsets will stop/hibernate SteamVR
 and direction misalignment will occur when returning to SteamVR.<br />
 ( <u>Virtual Desktop</u> is not affected by this issue, but avoid Quest system sleep )<br />
 <details className="plain-details"><summary>Cannot display the desktop after clicking the icon?</summary>
+<div style="margin-top: 10px;">
+<div style="max-width: 260px; margin-bottom: 8px;">
+
+![steamvr_recenter](<../../static/img/steamvr_guide/steamvr_recenter -cns.jpg>)
+
+</div>
 Try to recenter or reset the main dashboard in the SteamVR menu.<br />
+</div>
 </details>
 
 </div>
@@ -215,16 +289,69 @@ Try to recenter or reset the main dashboard in the SteamVR menu.<br />
 
 
 
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![VR_boundary](../../static/img/steamvr_guide/VR_boundary.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 - For standalone headsets like Quest or Pico, draw the play boundary slightly larger than your actual room size<br />
 to prevent triggering boundary popups that disrupt headset tracking data in SteamVR.
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<div class="html-carousel">
+  <input type="radio" name="carousel2" id="slide3" defaultChecked />
+  <input type="radio" name="carousel2" id="slide4" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/VR_headset_tracking_lost.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <video src="/img/steamvr_guide/VR_headset_tracking_lost_video.mp4" autoplay muted playsinline preload="auto"></video>
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide4" class="arrow-left-1">&#10094;</label>
+      <label for="slide3" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide3" title="Image 1"></label>
+      <label for="slide4" title="Video"><svg viewBox="0 0 24 24" width="8" height="8" ><polygon points="8,4 20,12 8,20" /></svg></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide4" class="arrow-right-1">&#10095;</label>
+      <label for="slide3" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 - If the headset remains fixed in place when walking or crouching, it indicates that positional tracking is disabled in the VR headset system.<br />
 (Enable Play Boundary on Quest system; enable [Positional Tracking] on Pico system)
 
+</div>
+</div>
+</div>
 
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
+### Virtual Desktop {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Virtual Desktop</h2>
 
-### Virtual Desktop 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
@@ -249,42 +376,165 @@ which may cause Rebocap to record an incorrect orientation during calibration.
 
 </div>
 </div>
+</div>
 
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
+### SteamVR {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">SteamVR</h2>
 
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
 
-### SteamVR
+![steamvr_play_area](../../static/img/steamvr_guide/steamvr_play_area.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 - Disable SteamVR boundaries<br />
 Default boundaries limit the maximum movement range of tracking points like an invisible wall.<br />
 If the VR headset misaligns at 2.4m height, trackers may appear unable to exceed headset height when lying down and lifting legs,<br />
 because SteamVR's default ceiling height is 2.4m, and tracking points cannot pass through the ceiling.
 
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_reset_vr](../../static/img/steamvr_guide/steamvr_reset_vr.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 - Recenter VR headset orientation in advance<br />
 Press and hold the 'Right Controller Home Button' to reset VR headset system orientation,<br />
 which resets the SteamVR virtual horizon arrow to face straight ahead. If orientation is accidentally lost, use this feature to realign the coordinate system.
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_binding_prompt_pops](../../static/img/steamvr_guide/steamvr_binding_prompt_pops.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 - Prompt popup when launching games<br />
 Select any community binding configuration in the background,<br />
 and after activating it, the prompt will no longer appear on subsequent launches.
 
-## Unable to Connect to SteamVR
-Please check the following items:
+</div>
+</div>
+</div>
+
+## <span class="tutorial-main-heading" style="background: #a2a7ec;">Unable to Connect to SteamVR</span>
+
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Please check the following items:</h2>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_runing](../../static/img/steamvr_guide/steamvr_runing.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 <strong> 1 - Click Calibration while SteamVR is running.</strong><br />
 If SteamVR is not running, Rebocap cannot detect whether VR exists in the system.
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<div class="html-carousel">
+  <input type="radio" name="carousel3" id="slide5" defaultChecked />
+  <input type="radio" name="carousel3" id="slide6" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/check_steamvr_driver_1 -cns.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <img src="/img/steamvr_guide/check_steamvr_driver_2 -cns.jpg" />
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide6" class="arrow-left-1">&#10094;</label>
+      <label for="slide5" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide5" title="Image 1"></label>
+      <label for="slide6" title="Image 2"></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide6" class="arrow-right-1">&#10095;</label>
+      <label for="slide5" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 <strong> 2 - Check SteamVR Drivers.</strong><br />
 Open Rebocap's [Log Window] records, which automatically check upon launching Rebocap.
 If needed, you can force install drivers in the [Settings] page.
 
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<div class="html-carousel">
+  <input type="radio" name="carousel4" id="slide7" defaultChecked />
+  <input type="radio" name="carousel4" id="slide8" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/check_steamvr_addons -cns.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <video src="/img/steamvr_guide/check_steamvr_addons_video -cns.mp4" autoplay muted playsinline preload="auto"></video>
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide8" class="arrow-left-1">&#10094;</label>
+      <label for="slide7" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide7" title="Image 1"></label>
+      <label for="slide8" title="Video"><svg viewBox="0 0 24 24" width="8" height="8"><polygon points="8,4 20,12 8,20" /></svg></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide8" class="arrow-right-1">&#10095;</label>
+      <label for="slide7" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 <strong> 3 - Check SteamVR Add-ons.</strong><br />
 If SteamVR crashes unexpectedly, it often forcibly disables all add-ons.<br />
 Re-enabling Rebocap add-ons requires restarting SteamVR.
 
-
-
-
-
+</div>
+</div>
+</div>
 
 ## Showing and Hiding SteamVR Tracking Points
 

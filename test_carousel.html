@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -19,7 +19,7 @@
 #slide2:checked ~ .html-carousel-controls .arrow-right-2,
 #slide3:checked ~ .html-carousel-controls .arrow-right-3 { display: block; }
 .html-carousel-dots { display: flex; justify-content: center; gap: 8px; }
-.html-carousel-dots label { cursor: pointer; width: 10px; height: 10px; border-radius: 5px; background: #ccc; }
+.html-carousel-dots label { cursor: pointer; width: 10px; height: 10px; border-radius: 5px; background: #ccc; display: flex; align-items: center; justify-content: center; }
 #slide1:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
 #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"],
 #slide3:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide3"] { background: #555; width: 24px; }
@@ -43,7 +43,7 @@
     </div>
     <div class="html-carousel-dots">
       <label for="slide1"></label>
-      <label for="slide2"></label>
+      <label for="slide2" title="Video"><svg viewBox="0 0 24 24" width="8" height="8" style="fill: white;"><polygon points="8,4 20,12 8,20" /></svg></label>
       <label for="slide3"></label>
     </div>
     <div class="html-carousel-arrows">

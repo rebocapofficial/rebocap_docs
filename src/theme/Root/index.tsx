@@ -250,23 +250,32 @@ export default function RootWrapper({ children }: Props): JSX.Element {
         }
         videoEl.dataset.hasInbrowserZoom = 'true';
 
-        videoEl.addEventListener('dblclick', (e) => {
+        const handleDblClick = (e: MouseEvent) => {
           e.stopPropagation();
           e.preventDefault();
           openVideoZoom(videoEl);
-        });
+        };
+
+        videoEl.addEventListener('dblclick', handleDblClick);
 
         const parent = videoEl.parentNode;
         if (parent) {
           const originalWidthAttr = videoEl.getAttribute('width');
           const originalStyleWidth = videoEl.style.width;
+          const inCarousel = Boolean(videoEl.closest('.html-carousel-slide'));
 
           const wrapper = document.createElement('div');
           wrapper.className = 'video-zoom-wrapper';
           wrapper.style.position = 'relative';
           wrapper.style.maxWidth = '100%';
 
-          if (originalWidthAttr) {
+          if (inCarousel) {
+            wrapper.style.width = '100%';
+            wrapper.style.height = '100%';
+            wrapper.style.display = 'flex';
+            wrapper.style.alignItems = 'center';
+            wrapper.style.justifyContent = 'center';
+          } else if (originalWidthAttr) {
             wrapper.style.width =
               originalWidthAttr.includes('%') || originalWidthAttr.includes('px')
                 ? originalWidthAttr
@@ -280,6 +289,8 @@ export default function RootWrapper({ children }: Props): JSX.Element {
             wrapper.style.width = '100%';
             wrapper.style.display = 'block';
           }
+
+          wrapper.addEventListener('dblclick', handleDblClick);
 
           const lang = document.documentElement.lang || 'zh-Hans';
           let btnText = '⛶ 网页内放大';
@@ -356,8 +367,14 @@ export default function RootWrapper({ children }: Props): JSX.Element {
           wrapper.appendChild(videoEl);
           wrapper.appendChild(btn);
 
-          videoEl.style.width = '100%';
-          videoEl.style.height = 'auto';
+          if (inCarousel) {
+            videoEl.style.width = '100%';
+            videoEl.style.height = '100%';
+            videoEl.style.objectFit = 'contain';
+          } else {
+            videoEl.style.width = '100%';
+            videoEl.style.height = 'auto';
+          }
           videoEl.style.display = 'block';
         }
       });

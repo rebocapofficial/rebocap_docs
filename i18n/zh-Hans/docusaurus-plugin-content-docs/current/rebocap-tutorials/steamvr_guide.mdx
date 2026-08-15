@@ -6,8 +6,17 @@ sidebar_position: 9
 
 这里将推荐一些SteamVR的设置，以及一些常见问题。
 
-## VR头显 / 串流软件操作建议
-### VR头显的设定
+## <span class="tutorial-main-heading" style="background: #a2a7ec;">VR头显 / 串流软件操作建议</span>
+
+
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+
+### VR头显的设定 {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR头显的设定</h2>
+
+
+
+
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -52,11 +61,17 @@ sidebar_position: 9
   opacity: 1;
   pointer-events: auto;
 }
-#slide2:checked ~ .html-carousel-slides .slide1 {
+#slide2:checked ~ .html-carousel-slides .slide1,
+#slide4:checked ~ .html-carousel-slides .slide1,
+#slide6:checked ~ .html-carousel-slides .slide1,
+#slide8:checked ~ .html-carousel-slides .slide1 {
   opacity: 0;
   pointer-events: none;
 }
-#slide2:checked ~ .html-carousel-slides .slide2 {
+#slide2:checked ~ .html-carousel-slides .slide2,
+#slide4:checked ~ .html-carousel-slides .slide2,
+#slide6:checked ~ .html-carousel-slides .slide2,
+#slide8:checked ~ .html-carousel-slides .slide2 {
   opacity: 1;
   pointer-events: auto;
 }
@@ -104,13 +119,25 @@ sidebar_position: 9
   z-index: 10;
 }
 #slide2:checked ~ .html-carousel-controls .arrow-left-1,
-#slide2:checked ~ .html-carousel-controls .arrow-right-1 {
+#slide2:checked ~ .html-carousel-controls .arrow-right-1,
+#slide4:checked ~ .html-carousel-controls .arrow-left-1,
+#slide4:checked ~ .html-carousel-controls .arrow-right-1,
+#slide6:checked ~ .html-carousel-controls .arrow-left-1,
+#slide6:checked ~ .html-carousel-controls .arrow-right-1,
+#slide8:checked ~ .html-carousel-controls .arrow-left-1,
+#slide8:checked ~ .html-carousel-controls .arrow-right-1 {
   opacity: 0;
   pointer-events: none;
   z-index: 1;
 }
 #slide2:checked ~ .html-carousel-controls .arrow-left-2,
-#slide2:checked ~ .html-carousel-controls .arrow-right-2 {
+#slide2:checked ~ .html-carousel-controls .arrow-right-2,
+#slide4:checked ~ .html-carousel-controls .arrow-left-2,
+#slide4:checked ~ .html-carousel-controls .arrow-right-2,
+#slide6:checked ~ .html-carousel-controls .arrow-left-2,
+#slide6:checked ~ .html-carousel-controls .arrow-right-2,
+#slide8:checked ~ .html-carousel-controls .arrow-left-2,
+#slide8:checked ~ .html-carousel-controls .arrow-right-2 {
   opacity: 1;
   pointer-events: auto;
   z-index: 10;
@@ -125,22 +152,68 @@ sidebar_position: 9
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background: #ccc;
+  background: rgba(128, 128, 128, 0.4);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.html-carousel-dots label[for="slide1"] {
-  background: rgba(128, 128, 128, 0.4);
+.html-carousel-dots svg {
+  fill: #ffffff;
+  transition: fill 0.3s ease;
+}
+.html-carousel-dots label[for="slide1"],
+.html-carousel-dots label[for="slide3"],
+.html-carousel-dots label[for="slide5"],
+.html-carousel-dots label[for="slide7"] {
+  background: rgba(80, 80, 80, 0.85);
   width: 24px;
 }
-#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"] {
-  background: #ccc;
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
+#slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide3"],
+#slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide5"],
+#slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide7"] {
+  background: rgba(128, 128, 128, 0.4);
   width: 10px;
 }
-#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"] {
-  background: rgba(128, 128, 128, 0.4);
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"],
+#slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide4"],
+#slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide6"],
+#slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide8"] {
+  background: rgba(80, 80, 80, 0.85);
   width: 24px;
+}
+[data-theme='dark'] .html-carousel-dots label {
+  background: rgba(255, 255, 255, 0.3);
+}
+[data-theme='dark'] .html-carousel-dots label[for="slide1"],
+[data-theme='dark'] .html-carousel-dots label[for="slide3"],
+[data-theme='dark'] .html-carousel-dots label[for="slide5"],
+[data-theme='dark'] .html-carousel-dots label[for="slide7"] {
+  background: rgba(255, 255, 255, 0.85);
+  width: 24px;
+}
+[data-theme='dark'] #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
+[data-theme='dark'] #slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide3"],
+[data-theme='dark'] #slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide5"],
+[data-theme='dark'] #slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide7"] {
+  background: rgba(255, 255, 255, 0.3);
+  width: 10px;
+}
+[data-theme='dark'] #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"],
+[data-theme='dark'] #slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide4"],
+[data-theme='dark'] #slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide6"],
+[data-theme='dark'] #slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide8"] {
+  background: rgba(255, 255, 255, 0.85);
+  width: 24px;
+}
+[data-theme='dark'] #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"] svg,
+[data-theme='dark'] #slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide4"] svg,
+[data-theme='dark'] #slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide6"] svg,
+[data-theme='dark'] #slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide8"] svg {
+  fill: #18191a;
 }
 .html-carousel-progress-bar {
   width: 100%;
@@ -186,7 +259,7 @@ sidebar_position: 9
     </div>
     <div class="html-carousel-dots">
       <label for="slide1" title="Image 1"></label>
-      <label for="slide2" title="Video"></label>
+      <label for="slide2" title="Video"><svg viewBox="0 0 24 24" width="8" height="8" ><polygon points="8,4 20,12 8,20" /></svg></label>
     </div>
     <div class="html-carousel-arrows">
       <label for="slide2" class="arrow-right-1">&#10095;</label>
@@ -202,7 +275,14 @@ sidebar_position: 9
 在重新返回steamvr后会出现方向错位。<br />
 ( <u>Virtual Desktop</u>不受该问题影响，但要避免quest系统休眠 )<br />
 <details className="plain-details"><summary>点击图标后无法显示桌面？</summary>
+<div style="margin-top: 10px;">
+<div style="max-width: 260px; margin-bottom: 8px;">
+
+![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -cns.jpg>)
+
+</div>
 在steamvr的菜单中尝试重新居中或重置主面板<br />
+</div>
 </details>
 </div>
 </div>
@@ -212,16 +292,88 @@ sidebar_position: 9
 
 
 
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![VR_boundary](../../../../../static/img/steamvr_guide/VR_boundary.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 - Quest、Pico这类一体机头显的安全范围需要画到比实际房间大一圈，<br />
 避免触发安全边界时导致steamvr端的头显数据中断
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<div class="html-carousel">
+  <input type="radio" name="carousel2" id="slide3" defaultChecked />
+  <input type="radio" name="carousel2" id="slide4" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/VR_headset_tracking_lost.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <video src="/img/steamvr_guide/VR_headset_tracking_lost_video.mp4" autoplay muted playsinline preload="auto"></video>
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide4" class="arrow-left-1">&#10094;</label>
+      <label for="slide3" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide3" title="Image 1"></label>
+      <label for="slide4" title="Video"><svg viewBox="0 0 24 24" width="8" height="8" ><polygon points="8,4 20,12 8,20" /></svg></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide4" class="arrow-right-1">&#10095;</label>
+      <label for="slide3" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+
+
+
+
+
+
+
 
 - 如果走动/蹲起时头显固定在原地，说明vr头显系统内的定位系统未开启。<br />
 （quest系统需要打开游玩边界，pico系统打开[定位追踪]）
 
+</div>
+</div>
+</div>
 
 
 
-### Virtual Desktop 
+
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+
+### Virtual Desktop {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Virtual Desktop</h2>
+
+
+
+ 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
@@ -246,37 +398,191 @@ sidebar_position: 9
 
 </div>
 </div>
+</div>
 
 
 
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
-### SteamVR
+### SteamVR {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">SteamVR</h2>
+
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 - 关闭steamvr的边界<br />
 默认边界会限制追踪点的最大移动范围，像空气墙一样。<br />
 如果VR头显错误定位在2.4米高度，可能在躺下后抬腿时呈现追踪器无法超过头显的高度，<br />
 因为SteamVR默认的天花板高度为2.4米，而追踪点无法穿过天花板。
 
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_reset_vr](../../../../../static/img/steamvr_guide/steamvr_reset_vr.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 - 提前重置vr头显的角度<br />
 按住'右手控制器home键'让VR头显重置系统方向，<br />
 这会让steamvr虚拟地平线箭头重置到你视线的前方，在意外丢失方向后可以利用该功能重新对正坐标系 。
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_binding_prompt_pops](../../../../../static/img/steamvr_guide/steamvr_binding_prompt_pops.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 - 打开游戏后弹出提示<br />
 随意选择背景中的一个社区配置，<br />
 激活后在下一次启动就不会出现了 。
 
-## 无法连接SteamVR
-检查以下内容
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## <span class="tutorial-main-heading" style="background: #a2a7ec;">无法连接SteamVR</span>
+
+
+
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">检查以下内容</h2>
+
+
+
+
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_runing](../../../../../static/img/steamvr_guide/steamvr_runing.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 <strong> 1 - 在开启SteamVR的状态点击校准。</strong><br />
 不启动SteamVR，rebocap无法知道系统里是否有VR。
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<div class="html-carousel">
+  <input type="radio" name="carousel3" id="slide5" defaultChecked />
+  <input type="radio" name="carousel3" id="slide6" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/check_steamvr_driver_1 -cns.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <img src="/img/steamvr_guide/check_steamvr_driver_2 -cns.jpg" />
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide6" class="arrow-left-1">&#10094;</label>
+      <label for="slide5" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide5" title="Image 1"></label>
+      <label for="slide6" title="Image 2"></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide6" class="arrow-right-1">&#10095;</label>
+      <label for="slide5" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 <strong> 2 - 查看SteamVR驱动。</strong><br />
 打开rebocap的[日志窗口]记录，每次开启rebocap时候会自动检查。
 如有需要，可以在[配置]页面中强制安装
 
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<div class="html-carousel">
+  <input type="radio" name="carousel4" id="slide7" defaultChecked />
+  <input type="radio" name="carousel4" id="slide8" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/check_steamvr_addons -cns.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <video src="/img/steamvr_guide/check_steamvr_addons_video -cns.mp4" autoplay muted playsinline preload="auto"></video>
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide8" class="arrow-left-1">&#10094;</label>
+      <label for="slide7" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide7" title="Image 1"></label>
+      <label for="slide8" title="Video"><svg viewBox="0 0 24 24" width="8" height="8"><polygon points="8,4 20,12 8,20" /></svg></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide8" class="arrow-right-1">&#10095;</label>
+      <label for="slide7" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 <strong> 3 - 检查SteamVR的加载项。</strong><br />
 如果Steamvr出现意外崩溃，往往会强制关闭所有加载项。<br />
 重新开启rebocap的加载后需要重启SteamVR。
+
+</div>
+</div>
+</div>
+
 
 
 

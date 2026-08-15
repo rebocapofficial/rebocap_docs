@@ -8,8 +8,11 @@ format: mdx
 SteamVR의 권장 설정 및 일반적인 문제에 대한 해결 방법입니다.
 
 
-## VR 헤드셋 / 스트리밍 소프트웨어 권장 사항
-### VR 헤드셋 설정
+## <span class="tutorial-main-heading" style="background: #a2a7ec;">VR 헤드셋 / 스트리밍 소프트웨어 권장 사항</span>
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+
+### VR 헤드셋 설정 {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR 헤드셋 설정</h2>
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
@@ -54,11 +57,17 @@ SteamVR의 권장 설정 및 일반적인 문제에 대한 해결 방법입니�
   opacity: 1;
   pointer-events: auto;
 }
-#slide2:checked ~ .html-carousel-slides .slide1 {
+#slide2:checked ~ .html-carousel-slides .slide1,
+#slide4:checked ~ .html-carousel-slides .slide1,
+#slide6:checked ~ .html-carousel-slides .slide1,
+#slide8:checked ~ .html-carousel-slides .slide1 {
   opacity: 0;
   pointer-events: none;
 }
-#slide2:checked ~ .html-carousel-slides .slide2 {
+#slide2:checked ~ .html-carousel-slides .slide2,
+#slide4:checked ~ .html-carousel-slides .slide2,
+#slide6:checked ~ .html-carousel-slides .slide2,
+#slide8:checked ~ .html-carousel-slides .slide2 {
   opacity: 1;
   pointer-events: auto;
 }
@@ -106,13 +115,25 @@ SteamVR의 권장 설정 및 일반적인 문제에 대한 해결 방법입니�
   z-index: 10;
 }
 #slide2:checked ~ .html-carousel-controls .arrow-left-1,
-#slide2:checked ~ .html-carousel-controls .arrow-right-1 {
+#slide2:checked ~ .html-carousel-controls .arrow-right-1,
+#slide4:checked ~ .html-carousel-controls .arrow-left-1,
+#slide4:checked ~ .html-carousel-controls .arrow-right-1,
+#slide6:checked ~ .html-carousel-controls .arrow-left-1,
+#slide6:checked ~ .html-carousel-controls .arrow-right-1,
+#slide8:checked ~ .html-carousel-controls .arrow-left-1,
+#slide8:checked ~ .html-carousel-controls .arrow-right-1 {
   opacity: 0;
   pointer-events: none;
   z-index: 1;
 }
 #slide2:checked ~ .html-carousel-controls .arrow-left-2,
-#slide2:checked ~ .html-carousel-controls .arrow-right-2 {
+#slide2:checked ~ .html-carousel-controls .arrow-right-2,
+#slide4:checked ~ .html-carousel-controls .arrow-left-2,
+#slide4:checked ~ .html-carousel-controls .arrow-right-2,
+#slide6:checked ~ .html-carousel-controls .arrow-left-2,
+#slide6:checked ~ .html-carousel-controls .arrow-right-2,
+#slide8:checked ~ .html-carousel-controls .arrow-left-2,
+#slide8:checked ~ .html-carousel-controls .arrow-right-2 {
   opacity: 1;
   pointer-events: auto;
   z-index: 10;
@@ -127,22 +148,68 @@ SteamVR의 권장 설정 및 일반적인 문제에 대한 해결 방법입니�
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background: #ccc;
+  background: rgba(128, 128, 128, 0.4);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.html-carousel-dots label[for="slide1"] {
-  background: rgba(128, 128, 128, 0.4);
+.html-carousel-dots svg {
+  fill: #ffffff;
+  transition: fill 0.3s ease;
+}
+.html-carousel-dots label[for="slide1"],
+.html-carousel-dots label[for="slide3"],
+.html-carousel-dots label[for="slide5"],
+.html-carousel-dots label[for="slide7"] {
+  background: rgba(80, 80, 80, 0.85);
   width: 24px;
 }
-#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"] {
-  background: #ccc;
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
+#slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide3"],
+#slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide5"],
+#slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide7"] {
+  background: rgba(128, 128, 128, 0.4);
   width: 10px;
 }
-#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"] {
-  background: rgba(128, 128, 128, 0.4);
+#slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"],
+#slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide4"],
+#slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide6"],
+#slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide8"] {
+  background: rgba(80, 80, 80, 0.85);
   width: 24px;
+}
+[data-theme='dark'] .html-carousel-dots label {
+  background: rgba(255, 255, 255, 0.3);
+}
+[data-theme='dark'] .html-carousel-dots label[for="slide1"],
+[data-theme='dark'] .html-carousel-dots label[for="slide3"],
+[data-theme='dark'] .html-carousel-dots label[for="slide5"],
+[data-theme='dark'] .html-carousel-dots label[for="slide7"] {
+  background: rgba(255, 255, 255, 0.85);
+  width: 24px;
+}
+[data-theme='dark'] #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide1"],
+[data-theme='dark'] #slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide3"],
+[data-theme='dark'] #slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide5"],
+[data-theme='dark'] #slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide7"] {
+  background: rgba(255, 255, 255, 0.3);
+  width: 10px;
+}
+[data-theme='dark'] #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"],
+[data-theme='dark'] #slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide4"],
+[data-theme='dark'] #slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide6"],
+[data-theme='dark'] #slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide8"] {
+  background: rgba(255, 255, 255, 0.85);
+  width: 24px;
+}
+[data-theme='dark'] #slide2:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide2"] svg,
+[data-theme='dark'] #slide4:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide4"] svg,
+[data-theme='dark'] #slide6:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide6"] svg,
+[data-theme='dark'] #slide8:checked ~ .html-carousel-controls .html-carousel-dots label[for="slide8"] svg {
+  fill: #18191a;
 }
 .html-carousel-progress-bar {
   width: 100%;
@@ -188,7 +255,7 @@ SteamVR의 권장 설정 및 일반적인 문제에 대한 해결 방법입니�
     </div>
     <div class="html-carousel-dots">
       <label for="slide1" title="Image 1"></label>
-      <label for="slide2" title="Video"></label>
+      <label for="slide2" title="Video"><svg viewBox="0 0 24 24" width="8" height="8" ><polygon points="8,4 20,12 8,20" /></svg></label>
     </div>
     <div class="html-carousel-arrows">
       <label for="slide2" class="arrow-right-1">&#10095;</label>
@@ -196,35 +263,38 @@ SteamVR의 권장 설정 및 일반적인 문제에 대한 해결 방법입니�
     </div>
   </div>
 </div>
-<!-- === 轮播图组件 代码结束 === -->
+<!-<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![VR_boundary](../../../../../static/img/steamvr_guide/VR_boundary.jpg)
+
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong> - rebocap 소프트웨어를 제어하려면 SteamVR의 데스크톱 창을 사용해 보세요.</strong><br />
-일부 VR 헤드셋의 내장 시스템으로 돌아가면 SteamVR 데이터가 중지/절전 모드로 전환되며,<br />
-SteamVR로 돌아올 때 방향 불일치가 발생합니다.<br />
-( <u>Virtual Desktop</u>은 이 문제의 영향을 받지 않지만 Quest 시스템 절전 모드는 피하세요 )<br />
-<details className="plain-details"><summary>아이콘을 클릭한 후 데스크톱을 표시할 수 없나요?</summary>
-SteamVR 메뉴에서 메인 대시보드를 다시 가운데로 맞추거나 재설정해 보세요.<br />
-</details>
+
+${item1}
 
 </div>
 </div>
 
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
 
+${CAROUSEL_HTML}
 
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
+${item2}
 
+</div>
+</div>
+</div>
 
-- Quest 또는 Pico와 같은 독립형 헤드셋의 경우, SteamVR에서 헤드셋 트래킹 데이터를 방해하는 경계 팝업이 트리거되지 않도록<br />
-플레이 경계를 실제 방 크기보다 약간 더 크게 그리세요.
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
-- 걷거나 웅크릴 때 헤드셋이 제자리에 고정되어 있다면 VR 헤드셋 시스템에서 위치 추적이 비활성화되었음을 나타냅니다.<br />
-(Quest 시스템에서는 플레이 경계를 활성화하고, Pico 시스템에서는 [위치 추적]을 활성화하세요)
+### Virtual Desktop {#software-download-toc}
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Virtual Desktop</h2>
 
-
-
-
-### Virtual Desktop 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
@@ -249,42 +319,164 @@ SteamVR 메뉴에서 메인 대시보드를 다시 가운데로 맞추거나 재
 
 </div>
 </div>
-
-
-
+</div>
 
 ### SteamVR
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 - SteamVR 경계 비활성화<br />
 기본 경계는 보이지 않는 벽처럼 트래킹 포인트의 최대 이동 범위를 제한합니다.<br />
 VR 헤드셋이 2.4m 높이에서 어긋나면 누워서 다리를 들어 올릴 때 트래커가 헤드셋 높이를 초과할 수 없는 것처럼 보일 수 있습니다.<br />
 이는 SteamVR의 기본 천장 높이가 2.4m이고 트래킹 포인트가 천장을 통과할 수 없기 때문입니다.
 
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_reset_vr](../../../../../static/img/steamvr_guide/steamvr_reset_vr.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 - VR 헤드셋 방향을 미리 가운데로 맞추기<br />
 '오른쪽 컨트롤러 홈 버튼'을 길게 눌러 VR 헤드셋 시스템 방향을 재설정하면<br />
 SteamVR 가상 수평선 화살표가 정면을 향하도록 재설정됩니다. 방향을 실수로 잃어버린 경우 이 기능을 사용하여 좌표계를 다시 정렬하세요.
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_binding_prompt_pops](../../../../../static/img/steamvr_guide/steamvr_binding_prompt_pops.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 - 게임 실행 시 프롬프트 팝업<br />
 백그라운드에서 아무 커뮤니티 바인딩 구성이나 선택하고<br />
 활성화한 후에는 후속 실행 시 프롬프트가 더 이상 나타나지 않습니다.
 
-## SteamVR에 연결할 수 없음
-다음 항목을 확인해 주세요:
+</div>
+</div>
+
+## <span class="tutorial-main-heading" style="background: #a2a7ec;">SteamVR에 연결할 수 없음</span>
+
+<div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">다음 항목을 확인해 주세요:</h2>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![steamvr_runing](../../../../../static/img/steamvr_guide/steamvr_runing.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 <strong> 1 - SteamVR이 실행 중일 때 캘리브레이션을 클릭하세요.</strong><br />
 SteamVR이 실행되고 있지 않으면 Rebocap은 시스템에 VR이 존재하는지 감지할 수 없습니다.
 
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<div class="html-carousel">
+  <input type="radio" name="carousel3" id="slide5" defaultChecked />
+  <input type="radio" name="carousel3" id="slide6" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/check_steamvr_driver_1 -cns.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <img src="/img/steamvr_guide/check_steamvr_driver_2 -cns.jpg" />
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide6" class="arrow-left-1">&#10094;</label>
+      <label for="slide5" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide5" title="Image 1"></label>
+      <label for="slide6" title="Image 2"></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide6" class="arrow-right-1">&#10095;</label>
+      <label for="slide5" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
 <strong> 2 - SteamVR 드라이버를 확인하세요.</strong><br />
-Rebocap을 시작할 때 자동으로 확인하는 Rebocap의 [로그 창] 기록을 엽니다.
+Rebocap을 시작할 때 자동으로 확인하는 Rebocap의 [로그 창] 기록을 엽니다.<br />
 필요한 경우 [설정] 페이지에서 드라이버를 강제로 설치할 수 있습니다.
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+<div class="html-carousel">
+  <input type="radio" name="carousel4" id="slide7" defaultChecked />
+  <input type="radio" name="carousel4" id="slide8" />
+  
+  <div class="html-carousel-slides">
+    <div class="html-carousel-slide slide1">
+      <img src="/img/steamvr_guide/check_steamvr_addons -cns.jpg" />
+    </div>
+    <div class="html-carousel-slide slide2">
+      <video src="/img/steamvr_guide/check_steamvr_addons_video -cns.mp4" autoplay muted playsinline preload="auto"></video>
+    </div>
+  </div>
+
+  <div class="html-carousel-progress-bar"></div>
+  
+  <div class="html-carousel-controls">
+    <div class="html-carousel-arrows">
+      <label for="slide8" class="arrow-left-1">&#10094;</label>
+      <label for="slide7" class="arrow-left-2">&#10094;</label>
+    </div>
+    <div class="html-carousel-dots">
+      <label for="slide7" title="Image 1"></label>
+      <label for="slide8" title="Video"><svg viewBox="0 0 24 24" width="8" height="8"><polygon points="8,4 20,12 8,20" /></svg></label>
+    </div>
+    <div class="html-carousel-arrows">
+      <label for="slide8" class="arrow-right-1">&#10095;</label>
+      <label for="slide7" class="arrow-right-2">&#10095;</label>
+    </div>
+  </div>
+</div>
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
 
 <strong> 3 - SteamVR 애드온을 확인하세요.</strong><br />
 SteamVR이 예기치 않게 충돌하는 경우 모든 애드온을 강제로 비활성화하는 경우가 많습니다.<br />
 Rebocap 애드온을 다시 활성화하려면 SteamVR을 다시 시작해야 합니다.
 
-
-
-
-
+</div>
+</div>
+</div>
 
 ## SteamVR 트래킹 포인트 표시 및 숨기기
 
