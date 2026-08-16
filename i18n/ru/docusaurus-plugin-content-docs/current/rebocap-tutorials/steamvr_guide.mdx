@@ -12,7 +12,7 @@ sidebar_position: 9
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### Настройки VR-гарнитуры {#software-download-toc}
-<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR头显的设定</h2>
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Настройки VR-гарнитуры</h2>
 
 
 
@@ -278,7 +278,7 @@ sidebar_position: 9
 <div style="margin-top: 10px;">
 <div style="max-width: 260px; margin-bottom: 8px;">
 
-![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -cns.jpg>)
+![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -ru.jpg>)
 
 </div>
 Попробуйте центрировать или сбросить главную панель в меню SteamVR.<br />
@@ -411,7 +411,7 @@ sidebar_position: 9
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area.jpg)
+![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area%20-ru.jpg)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -547,7 +547,7 @@ sidebar_position: 9
   
   <div class="html-carousel-slides">
     <div class="html-carousel-slide slide1">
-      <img src="/img/steamvr_guide/check_steamvr_addons -cns.jpg" />
+      <img src="/img/steamvr_guide/check_steamvr_addons -ru.jpg" />
     </div>
     <div class="html-carousel-slide slide2">
       <video src="/img/steamvr_guide/check_steamvr_addons_video -cns.mp4" autoplay muted playsinline preload="auto"></video>
@@ -597,7 +597,7 @@ sidebar_position: 9
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-cns.png)
+![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-en.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -632,3 +632,33 @@ sidebar_position: 9
 
 
 
+
+
+## Атрибуты роли трекера установлены, но игра не распознает ступни и талию
+
+- Некоторые игры используют среду openVR для распознавания отслеживания, но текущий драйвер SteamVR rebocap V01/V02 имеет ошибку, из-за которой он не распознается из-за отсутствия имени [Relo],<br />
+Даже если соответствующие атрибуты изменены в SteamVR, они все равно не могут быть распознаны.<br />
+Текущий обходной путь - заменить его на старый файл driver_rebocap.dll.
+
+Эта ошибка ожидает исправления командой разработчиков в будущем обновлении.
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![p05dll](../../../../../static/img/steamvr_guide/p05dll.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+<a href="/img/steamvr_guide/(%20P05%20)%20%20%20%20driver_rebocap.dll" download target="_blank" class="button button--primary button--sm" style="margin-bottom: 15px; display: inline-block; font-size: 1em;">Скачать ( P05 ) driver_rebocap.dll</a><br />
+
+- Процесс замены:<br />
+1 - Держите rebocap и SteamVR закрытыми.<br />
+2 - Перейдите в папку установки rebocap,<br />
+Найдите папку "Rebocap\data\rebocap_driver\bin\win64",<br />
+Замените в ней файл driver_rebocap.dll.<br />
+(Удалите префикс "P05")<br />
+3 - Сначала запустите программное обеспечение Rebocap, дождитесь обновления файла драйвера SteamVR, а затем запустите SteamVR.
+
+</div>
+</div>

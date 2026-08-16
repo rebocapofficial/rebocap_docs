@@ -48,4 +48,12 @@ title: "Navegación del Documento"
 
 ## Todavía no tengo un dispositivo pero quiero probar el software
 
-Puedes usar la función de [Reproducción sin Conexión (Offline Playback)] del software rebocap para reproducir un archivo de muestra y probar la conexión del SDK o del complemento.
+Puedes descargar el software rebocap y utilizar la función de [Reproducción sin Conexión (Offline Playback)] para reproducir un archivo de muestra. Esto pondrá el software en estado de funcionamiento, permitiéndote probar la conexión del SDK o del complemento.
+
+
+
+## ¿No puedes abrir la tienda en línea?
+
+Hemos notado que, ocasionalmente, algunas redes regionales no pueden acceder a la página web de store.rebocap.site. Después de consultar con nuestro proveedor de servicios de red de la tienda, informaron que no hay problemas por su parte.<br/>
+Tras discutirlo con amigos de la industria, especulamos que las anomalías en el tiempo del sistema de la estación base local podrían haber causado la contaminación de la red.<br/>
+Recomendamos intentar usar una VPN, pedir a amigos en otras regiones que ayuden a verificar, o intentar iniciar sesión en la página web de la tienda utilizando un proveedor de red diferente.

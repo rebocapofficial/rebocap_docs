@@ -411,7 +411,7 @@ sidebar_position: 9
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area.jpg)
+![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area%20-cns.jpg)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -615,15 +615,34 @@ sidebar_position: 9
 </div>
 </div>
 
-## 设定了追踪点的部位但游戏无法识别到脚和腰
+## 设定了追踪点的部位属性但游戏无法识别到脚和腰
 
-- 一些游戏使用openVR环境来识别追踪，但目前rebocap Release所带的驱动会处于无法别识别的BUG，即便steamvr中修改了对应的设置也无法识别
-
+- 一些游戏使用openVR环境来识别追踪，但目前rebocap V01/V02 版本的Steamvr驱动会因为[Relo]名称缺失导致无法别识别的BUG，<br />
+即便steamvr中修改了对应的属性也无法识别。<br />
+目前的处理方法为更换旧版 driver_rebocap.dll 文件。
 
 该BUG等待修复等待工作组后续修复
 
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
 
+![p05dll](../../../../../static/img/steamvr_guide/p05dll.jpg)
 
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+<a href="/img/steamvr_guide/(%20P05%20)%20%20%20%20driver_rebocap.dll" download target="_blank" class="button button--primary button--sm" style="margin-bottom: 15px; display: inline-block; font-size: 1em;">下载 ( P05 ) driver_rebocap.dll</a><br />
+
+- 更换过程：<br />
+1 - rebocap和steamvr保持关闭。<br />
+2 - 进入安装rebocap的文件夹，<br />
+找到“Rebocap\data\rebocap_driver\bin\win64”文件夹，<br />
+替换其中的driver_rebocap.dll文件。<br />
+（移除“P05”前缀）<br />
+3 - 首先启动Rebocap软件，待其更新SteamVR驱动文件后，再启动SteamVR。
+
+</div>
+</div>
 
 
 

@@ -99,7 +99,7 @@ La version `Beta` est une version de test publique, qui fonctionne mieux dans le
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong>1 - Désactivez les points de suivi supplémentaires affichés.</strong><br />
+<strong>1 - Lorsqu'il n'y a pas de capteur pour le haut du bras, désactivez manuellement les points de suivi supplémentaires.</strong><br />
 Ouvrez [Configurer les nœuds de sortie 'SteamVR'] → Désactivez [Bras Supérieur Gauche/Droit]
 <details className="plain-details"><summary>Détails</summary>
 Le logiciel prévoyait à l'origine d'utiliser la fonction [Masquer automatiquement les articulations] pour masquer automatiquement les points de suivi inutilisés,<br />

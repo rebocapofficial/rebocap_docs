@@ -99,7 +99,7 @@ title: "ソフトウェアダウンロード"
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong>1 - 余分に表示されるトラッキングポイントをオフにする。</strong><br />
+<strong>1 - 上腕トラッカーがない場合は、手動で余分なトラッキングポイントをオフにしてください。</strong><br />
 ['SteamVR'出力ノードの構成]を開く → [左/右上腕]をオフにする
 <details className="plain-details"><summary>詳細</summary>
 ソフトウェアは当初「関節の自動非表示」機能を使用して、使用されていないトラッキングポイントを自動的に隠す予定でした。<br />

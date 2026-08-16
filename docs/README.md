@@ -48,5 +48,12 @@ title: "Document Navigation"
 
 ## Don't have a device yet but want to test the software
 
-You can use the [Offline Playback] feature of the rebocap software to play a sample file to test the SDK or plugin connection.
+You can download the rebocap software and use the [Offline Playback] feature to play a sample file. This will put the software in a working state, allowing you to test the SDK or plugin connection.
 
+
+
+## Can't open the online store?
+
+We have noticed that occasionally some regional networks cannot access the store.rebocap.site web page. After checking with our store network service provider, they reported no issues on their end.<br/>
+Following discussions with friends in the industry, we speculate that local base station system time anomalies might have caused network pollution.<br/>
+We recommend trying a VPN, asking friends in other regions for assistance, or trying to log in to the store web page using a different network provider.

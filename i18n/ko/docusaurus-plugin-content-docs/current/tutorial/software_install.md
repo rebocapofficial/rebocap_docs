@@ -99,7 +99,7 @@ title: "소프트웨어 다운로드"
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong>1 - 추가로 표시된 트래킹 포인트를 끕니다.</strong><br />
+<strong>1 - 상완 트래커가 없는 경우, 수동으로 추가 트래킹 포인트를 꺼주세요.</strong><br />
 [Configure 'SteamVR' output nodes]를 열고 → [Left/Right Upper Arm] 끄기
 <details className="plain-details"><summary>세부 정보</summary>
 소프트웨어는 원래 [Auto-hide joints(관절 자동 숨김)] 기능을 사용하여 사용되지 않는 트래킹 포인트를 자동으로 숨기려고 했지만,<br />

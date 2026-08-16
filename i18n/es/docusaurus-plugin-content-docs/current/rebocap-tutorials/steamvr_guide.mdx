@@ -12,7 +12,7 @@ Aquí hay algunas configuraciones recomendadas para SteamVR y soluciones a probl
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### Configuración del Visor VR {#software-download-toc}
-<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR头显的设定</h2>
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Configuración del visor VR</h2>
 
 
 
@@ -278,7 +278,7 @@ y se producirá una desalineación de dirección al volver a SteamVR.<br />
 <div style="margin-top: 10px;">
 <div style="max-width: 260px; margin-bottom: 8px;">
 
-![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -cns.jpg>)
+![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -es.jpg>)
 
 </div>
 Intenta volver a centrar o restablecer el panel principal en el menú de SteamVR.<br />
@@ -411,7 +411,7 @@ lo que puede causar que rebocap registre una orientación incorrecta durante la 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area.jpg)
+![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area%20-es.jpg)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -547,7 +547,7 @@ Si es necesario, puedes forcer la instalación de controladores en la página de
   
   <div class="html-carousel-slides">
     <div class="html-carousel-slide slide1">
-      <img src="/img/steamvr_guide/check_steamvr_addons -cns.jpg" />
+      <img src="/img/steamvr_guide/check_steamvr_addons -es.jpg" />
     </div>
     <div class="html-carousel-slide slide2">
       <video src="/img/steamvr_guide/check_steamvr_addons_video -cns.mp4" autoplay muted playsinline preload="auto"></video>
@@ -597,7 +597,7 @@ Volver a habilitar los complementos de rebocap requiere reiniciar SteamVR.
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-cns.png)
+![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-en.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -632,3 +632,33 @@ Este error está a la espera de ser solucionado por el equipo de desarrollo en u
 
 
 
+
+
+## Atributos de rol del rastreador configurados pero el juego no reconoce pies ni cintura
+
+- Algunos juegos utilizan el entorno openVR para reconocer el rastreo, pero el controlador de SteamVR de rebocap V01/V02 actual tiene un error por el cual no se reconoce debido a la falta del nombre [Relo],<br />
+Incluso si los atributos correspondientes se modifican en SteamVR, todavía no se pueden reconocer.<br />
+La solución actual es reemplazarlo con el archivo driver_rebocap.dll antiguo.
+
+Este error está esperando a ser solucionado por el equipo de desarrollo en una futura actualización.
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![p05dll](../../../../../static/img/steamvr_guide/p05dll.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+<a href="/img/steamvr_guide/(%20P05%20)%20%20%20%20driver_rebocap.dll" download target="_blank" class="button button--primary button--sm" style="margin-bottom: 15px; display: inline-block; font-size: 1em;">Descargar ( P05 ) driver_rebocap.dll</a><br />
+
+- Proceso de reemplazo:<br />
+1 - Mantenga rebocap y SteamVR cerrados.<br />
+2 - Vaya a la carpeta de instalación de rebocap,<br />
+Encuentre la carpeta "Rebocap\data\rebocap_driver\bin\win64",<br />
+Reemplace el archivo driver_rebocap.dll en ella.<br />
+(Elimine el prefijo "P05")<br />
+3 - Primero inicie el software Rebocap, espere a que actualice el archivo del controlador de SteamVR y luego inicie SteamVR.
+
+</div>
+</div>

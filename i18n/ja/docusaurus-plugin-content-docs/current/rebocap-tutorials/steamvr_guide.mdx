@@ -12,7 +12,7 @@ sidebar_position: 9
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### VRヘッドセットの設定 {#software-download-toc}
-<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR头显的设定</h2>
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VRヘッドセットの設定</h2>
 
 
 
@@ -278,7 +278,7 @@ SteamVRに戻った際に方向のズレが生じることがあります。<br 
 <div style="margin-top: 10px;">
 <div style="max-width: 260px; margin-bottom: 8px;">
 
-![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -cns.jpg>)
+![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -ja.jpg>)
 
 </div>
 SteamVRメニューで再センタリングするか、メインダッシュボードをリセットしてみてください。<br />
@@ -411,7 +411,7 @@ rebocapのキャリブレーション時に誤った向きが記録される可�
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area.jpg)
+![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area%20-ja.jpg)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -547,7 +547,7 @@ rebocapの[ログウィンドウ]記録を開いて確認してください。re
   
   <div class="html-carousel-slides">
     <div class="html-carousel-slide slide1">
-      <img src="/img/steamvr_guide/check_steamvr_addons -cns.jpg" />
+      <img src="/img/steamvr_guide/check_steamvr_addons -ja.jpg" />
     </div>
     <div class="html-carousel-slide slide2">
       <video src="/img/steamvr_guide/check_steamvr_addons_video -cns.mp4" autoplay muted playsinline preload="auto"></video>
@@ -597,7 +597,7 @@ rebocapのアドオンを再有効化した後は、SteamVRの再起動が必要
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-cns.png)
+![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-ja.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -632,3 +632,33 @@ rebocapのアドオンを再有効化した後は、SteamVRの再起動が必要
 
 
 
+
+
+## トラッキングポイントの役割属性を設定したが、ゲームが足と腰を認識できない
+
+- 一部のゲームはトラッキングを認識するためにopenVR環境を使用しますが、現在のrebocap V01/V02のSteamVRドライバーでは[Relo]という名前が欠落しているため、認識されないというバグがあります。<br />
+SteamVRで対応する属性を変更しても認識されません。<br />
+現在の対処法は、古い driver_rebocap.dll ファイルに交換することです。
+
+このバグは、今後のアップデートで開発チームによって修正される予定です。
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![p05dll](../../../../../static/img/steamvr_guide/p05dll.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+<a href="/img/steamvr_guide/(%20P05%20)%20%20%20%20driver_rebocap.dll" download target="_blank" class="button button--primary button--sm" style="margin-bottom: 15px; display: inline-block; font-size: 1em;">ダウンロード ( P05 ) driver_rebocap.dll</a><br />
+
+- 交換手順：<br />
+1 - rebocapとSteamVRを閉じたままにします。<br />
+2 - rebocapのインストールフォルダを開き、<br />
+「Rebocap\data\rebocap_driver\bin\win64」フォルダを見つけます。<br />
+その中のdriver_rebocap.dllファイルを置き換えます。<br />
+（「P05」という接頭辞を削除します）<br />
+3 - まずRebocapソフトウェアを起動し、SteamVRドライバーファイルが更新されるのを待ってからSteamVRを起動します。
+
+</div>
+</div>

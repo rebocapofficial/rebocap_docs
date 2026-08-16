@@ -12,7 +12,7 @@ Here are some recommended settings for SteamVR and solutions to common issues.
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### VR Headset Settings {#software-download-toc}
-<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR头显的设定</h2>
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR Headset Settings</h2>
 
 
 
@@ -278,7 +278,7 @@ and direction misalignment will occur when returning to SteamVR.<br />
 <div style="margin-top: 10px;">
 <div style="max-width: 260px; margin-bottom: 8px;">
 
-![steamvr_recenter](<../../static/img/steamvr_guide/steamvr_recenter -cns.jpg>)
+![steamvr_recenter](<../../static/img/steamvr_guide/steamvr_recenter -en.jpg>)
 
 </div>
 Try to recenter or reset the main dashboard in the SteamVR menu.<br />
@@ -411,7 +411,7 @@ which may cause rebocap to record an incorrect orientation during calibration.
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_play_area](../../static/img/steamvr_guide/steamvr_play_area.jpg)
+![steamvr_play_area](../../static/img/steamvr_guide/steamvr_play_area%20-en.jpg)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -547,7 +547,7 @@ If needed, you can force install drivers in the [Settings] page.
   
   <div class="html-carousel-slides">
     <div class="html-carousel-slide slide1">
-      <img src="/img/steamvr_guide/check_steamvr_addons -cns.jpg" />
+      <img src="/img/steamvr_guide/check_steamvr_addons -en.jpg" />
     </div>
     <div class="html-carousel-slide slide2">
       <video src="/img/steamvr_guide/check_steamvr_addons_video -cns.mp4" autoplay muted playsinline preload="auto"></video>
@@ -597,7 +597,7 @@ Re-enabling rebocap add-ons requires restarting SteamVR.
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_windows](../../static/img/steamvr_guide/v01_off_1-cns.png)
+![steamvr_windows](../../static/img/steamvr_guide/v01_off_1-en.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -632,3 +632,33 @@ This bug is waiting for the development team to fix in a future update.
 
 
 
+
+
+## Tracker role attributes set but the game cannot recognize feet and waist
+
+- Some games use the openVR environment to recognize tracking, but the current rebocap V01/V02 SteamVR driver has a bug where it cannot be recognized due to the missing [Relo] name,<br />
+Even if the corresponding attributes are modified in SteamVR, they still cannot be recognized.<br />
+The current workaround is to replace it with the older driver_rebocap.dll file.
+
+This bug is awaiting a fix by the development team in a future update.
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![p05dll](../../static/img/steamvr_guide/p05dll.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+<a href="/img/steamvr_guide/(%20P05%20)%20%20%20%20driver_rebocap.dll" download target="_blank" class="button button--primary button--sm" style="margin-bottom: 15px; display: inline-block; font-size: 1em;">Download ( P05 ) driver_rebocap.dll</a><br />
+
+- Replacement process:<br />
+1 - Keep rebocap and SteamVR closed.<br />
+2 - Go to the rebocap installation folder,<br />
+Find the "Rebocap\data\rebocap_driver\bin\win64" folder,<br />
+Replace the driver_rebocap.dll file in it.<br />
+(Remove the "P05" prefix)<br />
+3 - First start the Rebocap software, wait for it to update the SteamVR driver file, and then start SteamVR.
+
+</div>
+</div>

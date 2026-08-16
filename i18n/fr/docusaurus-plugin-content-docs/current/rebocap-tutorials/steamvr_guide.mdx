@@ -12,7 +12,7 @@ Voici quelques paramètres recommandés pour SteamVR et des solutions aux probl�
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### Paramètres du casque VR {#software-download-toc}
-<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR头显的设定</h2>
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">Paramètres du casque VR</h2>
 
 
 
@@ -278,7 +278,7 @@ et un désalignement de direction se produira lors du retour à SteamVR.<br />
 <div style="margin-top: 10px;">
 <div style="max-width: 260px; margin-bottom: 8px;">
 
-![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -cns.jpg>)
+![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -fr.jpg>)
 
 </div>
 Essayez de recentrer ou de réinitialiser le tableau de bord principal dans le menu SteamVR.<br />
@@ -411,7 +411,7 @@ ce qui peut amener rebocap à enregistrer une orientation incorrecte lors de l'�
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area.jpg)
+![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area%20-fr.jpg)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -547,7 +547,7 @@ Si nécessaire, vous pouvez forcer l'installation des pilotes dans la page [Para
   
   <div class="html-carousel-slides">
     <div class="html-carousel-slide slide1">
-      <img src="/img/steamvr_guide/check_steamvr_addons -cns.jpg" />
+      <img src="/img/steamvr_guide/check_steamvr_addons -fr.jpg" />
     </div>
     <div class="html-carousel-slide slide2">
       <video src="/img/steamvr_guide/check_steamvr_addons_video -cns.mp4" autoplay muted playsinline preload="auto"></video>
@@ -597,7 +597,7 @@ La réactivation des modules complémentaires rebocap nécessite le redémarrage
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-cns.png)
+![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-en.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -632,3 +632,33 @@ Ce bug est en attente d'une correction par l'équipe de développement lors d'un
 
 
 
+
+
+## Attributs de rôle du capteur configurés mais le jeu ne reconnaît pas les pieds et la taille
+
+- Certains jeux utilisent l'environnement openVR pour reconnaître le suivi, mais le pilote SteamVR rebocap V01/V02 actuel présente un bug où il ne peut pas être reconnu en raison du nom [Relo] manquant,<br />
+Même si les attributs correspondants sont modifiés dans SteamVR, ils ne peuvent toujours pas être reconnus.<br />
+La solution actuelle consiste à le remplacer par l'ancien fichier driver_rebocap.dll.
+
+Ce bug est en attente d'une correction par l'équipe de développement dans une future mise à jour.
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![p05dll](../../../../../static/img/steamvr_guide/p05dll.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+<a href="/img/steamvr_guide/(%20P05%20)%20%20%20%20driver_rebocap.dll" download target="_blank" class="button button--primary button--sm" style="margin-bottom: 15px; display: inline-block; font-size: 1em;">Télécharger ( P05 ) driver_rebocap.dll</a><br />
+
+- Processus de remplacement :<br />
+1 - Gardez rebocap et SteamVR fermés.<br />
+2 - Allez dans le dossier d'installation de rebocap,<br />
+Trouvez le dossier "Rebocap\data\rebocap_driver\bin\win64",<br />
+Remplacez-y le fichier driver_rebocap.dll.<br />
+(Supprimez le préfixe "P05")<br />
+3 - Démarrez d'abord le logiciel Rebocap, attendez qu'il mette à jour le fichier du pilote SteamVR, puis démarrez SteamVR.
+
+</div>
+</div>

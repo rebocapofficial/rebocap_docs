@@ -48,6 +48,12 @@ title: "Navigation dans le document"
 
 ## Vous n'avez pas encore d'appareil mais souhaitez tester le logiciel
 
-Vous pouvez utiliser la fonction [Lecture hors ligne (Offline Playback)] du logiciel rebocap pour lire un exemple de fichier afin de tester la connexion du SDK ou du plugin.
+Vous pouvez télécharger le logiciel rebocap et utiliser la fonction [Lecture hors ligne (Offline Playback)] pour lire un exemple de fichier. Cela mettra le logiciel en état de fonctionnement, vous permettant de tester la connexion du SDK ou du plugin.
 
 
+
+## Impossible d'ouvrir la boutique en ligne ?
+
+Nous avons remarqué que parfois certains réseaux régionaux ne peuvent pas accéder à la page web store.rebocap.site. Après vérification auprès du fournisseur de services réseau de notre boutique, ils ont signalé n'avoir aucun problème de leur côté.<br/>
+Après en avoir discuté avec des amis du secteur, nous supposons que des anomalies de l'heure du système de la station de base locale pourraient avoir causé une pollution du réseau.<br/>
+Nous recommandons d'essayer d'utiliser un VPN, de demander à des amis dans d'autres régions d'aider à vérifier, ou d'essayer de vous connecter à la page web de la boutique en utilisant un autre fournisseur de réseau.

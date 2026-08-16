@@ -99,7 +99,7 @@ The `Beta` version is a public test build, which works better in areas with sign
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong>1 - Turn off extra displayed tracking points.</strong><br />
+<strong>1 - When there is no upper arm tracker, manually turn off the extra displayed tracking points.</strong><br />
 Open [Configure 'SteamVR' output nodes] → Turn off [Left/Right Upper Arm]
 <details className="plain-details"><summary>Details</summary>
 The software originally planned to use the [Auto-hide joints] function to automatically hide unused tracking points,<br />

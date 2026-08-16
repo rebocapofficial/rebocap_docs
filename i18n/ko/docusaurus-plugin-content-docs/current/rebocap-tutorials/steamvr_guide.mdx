@@ -12,7 +12,7 @@ SteamVR 권장 설정 및 일반적인 문제에 대한 해결책입니다.
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### VR 헤드셋 설정 {#software-download-toc}
-<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR头显的设定</h2>
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR 헤드셋 설정</h2>
 
 
 
@@ -278,7 +278,7 @@ SteamVR로 돌아올 때 방향이 어긋나는 현상이 발생할 수 있습�
 <div style="margin-top: 10px;">
 <div style="max-width: 260px; margin-bottom: 8px;">
 
-![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -cns.jpg>)
+![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -ko.jpg>)
 
 </div>
 SteamVR 메뉴에서 중앙을 다시 맞추거나 메인 대시보드를 리셋해 보세요.<br />
@@ -411,7 +411,7 @@ rebocap 캘리브레이션 시 잘못된 방향이 기록될 수 있습니다.
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area.jpg)
+![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area%20-en.jpg)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -547,7 +547,7 @@ rebocap의 [로그 창]을 열어 확인하세요. rebocap을 실행할 때마�
   
   <div class="html-carousel-slides">
     <div class="html-carousel-slide slide1">
-      <img src="/img/steamvr_guide/check_steamvr_addons -cns.jpg" />
+      <img src="/img/steamvr_guide/check_steamvr_addons -en.jpg" />
     </div>
     <div class="html-carousel-slide slide2">
       <video src="/img/steamvr_guide/check_steamvr_addons_video -cns.mp4" autoplay muted playsinline preload="auto"></video>
@@ -597,7 +597,7 @@ rebocap 애드온을 다시 활성화한 후에는 SteamVR을 재시작해야 �
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-cns.png)
+![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-en.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -632,3 +632,33 @@ rebocap 애드온을 다시 활성화한 후에는 SteamVR을 재시작해야 �
 
 
 
+
+
+## 트래커 역할 속성을 설정했지만 게임에서 발과 허리를 인식하지 못함
+
+- 일부 게임은 트래킹 인식을 위해 openVR 환경을 사용하지만, 현재 rebocap V01/V02 SteamVR 드라이버에는 [Relo] 이름이 누락되어 인식되지 않는 버그가 있습니다.<br />
+SteamVR에서 해당 속성을 수정해도 여전히 인식되지 않습니다.<br />
+현재 해결 방법은 이전 버전의 driver_rebocap.dll 파일로 교체하는 것입니다。
+
+이 버그는 향후 업데이트에서 개발팀에 의해 수정될 예정입니다。
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![p05dll](../../../../../static/img/steamvr_guide/p05dll.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+<a href="/img/steamvr_guide/(%20P05%20)%20%20%20%20driver_rebocap.dll" download target="_blank" class="button button--primary button--sm" style="margin-bottom: 15px; display: inline-block; font-size: 1em;">다운로드 ( P05 ) driver_rebocap.dll</a><br />
+
+- 교체 과정:<br />
+1 - rebocap과 SteamVR을 닫아 둡니다。<br />
+2 - rebocap 설치 폴더로 이동하여<br />
+"Rebocap\data\rebocap_driver\bin\win64" 폴더를 찾습니다。<br />
+그 안의 driver_rebocap.dll 파일을 교체합니다。<br />
+("P05" 접두사 제거)<br />
+3 - 먼저 Rebocap 소프트웨어를 시작하고 SteamVR 드라이버 파일이 업데이트될 때까지 기다린 후 SteamVR을 시작합니다。
+
+</div>
+</div>

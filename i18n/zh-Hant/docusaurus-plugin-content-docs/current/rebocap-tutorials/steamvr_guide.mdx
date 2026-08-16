@@ -12,7 +12,7 @@ sidebar_position: 9
 <div style="border-left: 6px solid #aab0ff; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
 ### VR 頭顯的設定 {#software-download-toc}
-<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR头显的设定</h2>
+<h2 class="tutorial-heading-flag" style="background: #aab0ff; margin-top: 0; display: inline-block;">VR頭顯的設定</h2>
 
 
 
@@ -278,7 +278,7 @@ sidebar_position: 9
 <div style="margin-top: 10px;">
 <div style="max-width: 260px; margin-bottom: 8px;">
 
-![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -cns.jpg>)
+![steamvr_recenter](<../../../../../static/img/steamvr_guide/steamvr_recenter -cnt.jpg>)
 
 </div>
 在 SteamVR 的選單中嘗試重新置中或重設主面板<br />
@@ -411,7 +411,7 @@ sidebar_position: 9
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area.jpg)
+![steamvr_play_area](../../../../../static/img/steamvr_guide/steamvr_play_area%20-cnt.jpg)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -547,7 +547,7 @@ sidebar_position: 9
   
   <div class="html-carousel-slides">
     <div class="html-carousel-slide slide1">
-      <img src="/img/steamvr_guide/check_steamvr_addons -cns.jpg" />
+      <img src="/img/steamvr_guide/check_steamvr_addons -cnt.jpg" />
     </div>
     <div class="html-carousel-slide slide2">
       <video src="/img/steamvr_guide/check_steamvr_addons_video -cns.mp4" autoplay muted playsinline preload="auto"></video>
@@ -597,7 +597,7 @@ sidebar_position: 9
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
 
-![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-cns.png)
+![steamvr_windows](../../../../../static/img/steamvr_guide/v01_off_1-cnt.png)
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
@@ -632,3 +632,33 @@ sidebar_position: 9
 
 
 
+
+
+## 設定了追蹤點的部位屬性但遊戲無法識別到腳和腰
+
+- 一些遊戲使用openVR環境來識別追蹤，但目前rebocap V01/V02 版本的Steamvr驅動會因為[Relo]名稱缺失導致無法被識別的BUG，<br />
+即便steamvr中修改了對應的屬性也無法識別。<br />
+目前的處理方法為更換舊版 driver_rebocap.dll 檔案。
+
+該BUG等待修復等待工作組後續修復
+
+<div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
+<div style="flex: 1; min-width: 250px; text-align: center;">
+
+![p05dll](../../../../../static/img/steamvr_guide/p05dll.jpg)
+
+</div>
+<div style="flex: 1.5; min-width: 250px;">
+
+<a href="/img/steamvr_guide/(%20P05%20)%20%20%20%20driver_rebocap.dll" download target="_blank" class="button button--primary button--sm" style="margin-bottom: 15px; display: inline-block; font-size: 1em;">下載 ( P05 ) driver_rebocap.dll</a><br />
+
+- 更換過程：<br />
+1 - 保持rebocap和steamvr關閉。<br />
+2 - 進入安裝rebocap的資料夾，<br />
+找到“Rebocap\data\rebocap_driver\bin\win64”資料夾，<br />
+替換其中的driver_rebocap.dll檔案。<br />
+（移除“P05”前綴）<br />
+3 - 首先啟動Rebocap軟體，待其更新SteamVR驅動檔案後，再啟動SteamVR。
+
+</div>
+</div>

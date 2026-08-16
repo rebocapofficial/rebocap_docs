@@ -99,7 +99,7 @@ La versión `Beta` es una versión de prueba pública, que funciona mejor en ár
 
 </div>
 <div style="flex: 1.5; min-width: 250px;">
-<strong>1 - Apague los puntos de seguimiento mostrados adicionales.</strong><br />
+<strong>1 - Cuando no haya un rastreador de brazo superior, apague manualmente los puntos de rastreo adicionales.</strong><br />
 Abra [Configurar nodos de salida 'SteamVR'] → Desactive [Brazo superior izquierdo/derecho]
 <details className="plain-details"><summary>Detalles</summary>
 El software originalmente planeaba usar la función [Ocultar automáticamente articulaciones] para ocultar automáticamente los puntos de seguimiento no utilizados,<br />
