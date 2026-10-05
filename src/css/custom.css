@@ -158,6 +158,79 @@ g {
   height: 2rem;
 }
 
+.mobile-navbar-links {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  margin-bottom: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+/* On phones, use the logo's space for a larger, easy-to-tap navigation toggle. */
+@media (max-width: 996px) {
+  .navbar__brand {
+    display: flex;
+    margin-right: 0.5rem;
+    max-width: calc(100vw - 8rem);
+  }
+
+  .navbar__logo {
+    display: none;
+  }
+
+  .navbar__title {
+    display: block;
+    font-size: 1rem;
+  }
+
+  .navbar-sidebar {
+    --ifm-navbar-sidebar-width: 100%;
+    bottom: auto;
+    height: calc(100vh - var(--ifm-navbar-height));
+    height: calc(100dvh - var(--ifm-navbar-height));
+    left: 0;
+    top: var(--ifm-navbar-height);
+    transform: translate3d(0, -100%, 0);
+    width: 100%;
+  }
+
+  .navbar-sidebar--show .navbar-sidebar {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .navbar-sidebar__brand {
+    display: none;
+  }
+
+  .navbar-sidebar__items {
+    height: 100%;
+  }
+
+  .navbar-sidebar__items--show-secondary {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  .navbar-sidebar__item {
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+
+  .navbar-sidebar__backdrop {
+    top: var(--ifm-navbar-height);
+  }
+
+  .navbar__toggle {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 44px;
+    height: 44px;
+    justify-content: center;
+    margin-right: 0.5rem;
+    padding: 0;
+    width: 44px;
+  }
+}
+
 /* ── Pagefind search panel ─────────────────────────────────────────────── */
 #pagefind-search-panel,
 #pagefind-search-panel .pagefind-ui,

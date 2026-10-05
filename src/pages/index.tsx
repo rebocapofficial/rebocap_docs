@@ -10,25 +10,50 @@ const LOADING_TEXT: Record<string, string> = {
 
 function detectLanguagePath(): string {
   try {
-    // 在本地开发环境 (localhost) 下，Docusaurus 会直接在根路由 /docs/ 下服务当前语言。
-    // 避免跳转到生产环境的多语言子目录（如 /zh-Hans/docs/）导致 404。
-    if (typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")) {
+    // Keep the Docusaurus development server on its default-locale route.
+    // A production build served locally should still exercise language detection.
+    if (
+      process.env.NODE_ENV === "development" &&
+      (window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1")
+    ) {
       return "/docs/";
     }
-    const lang = navigator.language || "en";
-    if (lang.startsWith("ja")) return "/ja/docs/";
-    if (lang.startsWith("zh")) {
-      if (lang.includes("TW") || lang.includes("HK") || lang.includes("Hant")) {
-        return "/zh-Hant/docs/";
+
+    const preferredLanguages = [
+      ...(navigator.languages || []),
+      navigator.language,
+    ].filter((language): language is string => Boolean(language));
+    const localeRoutes: Record<string, string> = {
+      en: "/docs/",
+      es: "/es/docs/",
+      fr: "/fr/docs/",
+      ja: "/ja/docs/",
+      ko: "/ko/docs/",
+      ru: "/ru/docs/",
+    };
+
+    for (const language of preferredLanguages) {
+      const subtags = language.replace(/_/g, "-").toLowerCase().split("-");
+      const [languageCode, ...regionAndScript] = subtags;
+
+      if (languageCode === "zh") {
+        const isTraditional = regionAndScript.some(
+          (subtag) => subtag === "hant" || ["tw", "hk", "mo"].includes(subtag),
+        );
+        return isTraditional ? "/zh-Hant/docs/" : "/zh-Hans/docs/";
       }
-      return "/zh-Hans/docs/";
+
+      if (localeRoutes[languageCode]) {
+        return localeRoutes[languageCode];
+      }
     }
+
     return "/docs/";
   } catch {
     return "/docs/";
   }
 }
-
 function RedirectHandler(): JSX.Element {
   React.useEffect(() => {
     window.location.replace(detectLanguagePath());

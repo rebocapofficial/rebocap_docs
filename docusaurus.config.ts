@@ -135,6 +135,7 @@ const config: Config = {
   themeConfig: {
     image: 'img/logo_w_white.svg',
     navbar: {
+      title: t.title,
       logo: {
         alt: 'REBOCAP',
         src: 'img/logo_w_white.svg',
