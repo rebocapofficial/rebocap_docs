@@ -4,15 +4,15 @@ title: "팁"
 ---
 
 # 팁
-튜토리얼을 거치지 않고 이 페이지를 읽는 것은 의미가 없습니다. [먼저 튜토리얼을 읽어주세요](../tutorial/README)!!!
+튜토리얼을 거치지 않고 이 페이지를 읽는 것은 의미가 없습니다. [먼저 튜토리얼을 읽어주세요](../tutorial/README.md)!!!
 
 
 # 공식 일반 프로토콜 출력 액세스
 
-### [SteamVR 액세스](steamvr/README)
+### [SteamVR 액세스](steamvr/README.md)
 - [VRChat 액세스](steamvr/vrchat)
 
-### [VMC 액세스](VMC/README)
+### [VMC 액세스](VMC/README.md)
 - [Warudo 액세스](VMC/warudo)
 
 # 기타 액세스
@@ -45,7 +45,7 @@ title: "팁"
     > [시청하려면 여기를 클릭하세요](https://www.bilibili.com/video/BV1fPbwzbEak)
 
 
-Blender, UE 또는 Unity에 액세스하는 경우 [해당 플러그인을 확인하세요](../plugins/plugins)
+Blender, UE 또는 Unity에 액세스하는 경우 [해당 플러그인을 확인하세요](../plugins/plugins.md)
 
 더 많은 내용이 곧 제공될 예정입니다!
 

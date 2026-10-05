@@ -38,7 +38,7 @@ title: "Prend-il en charge Mac et Linux"
 <a id="vr_height"></a>
 
 ## En mode VR, la hauteur demandée lors de la calibration ne correspond pas à la hauteur de la personne
-> L'appareil Rebocap lui-même n'a pas la capacité de mesurer la taille. La mesure de la taille est entièrement basée sur les données fournies par le casque. Pour plus de détails, veuillez [voir ici](../ui_help_doc/control/connect#vrpannel).
+> L'appareil Rebocap lui-même n'a pas la capacité de mesurer la taille. La mesure de la taille est entièrement basée sur les données fournies par le casque. Pour plus de détails, veuillez [voir ici](../ui_help_doc/control/connect#vr_pannel).
 
 <a id="port_open_failed"></a>
 
@@ -55,7 +55,7 @@ title: "Prend-il en charge Mac et Linux"
 <a id="steamvr_connect"></a>
 
 ## SteamVR ne peut pas se connecter
-> Veuillez [voir ici](../third_party_software_access/steamvr/README#vr_cannot_connect).
+> Veuillez [voir ici](../third_party_software_access/steamvr/README.md#vr_cannot_connect).
 
 ## Ajustement du squelette inefficace
 > Veuillez [voir ici](../ui_help_doc/control/skeleton_setting#skeleton_not_valid).
@@ -68,15 +68,15 @@ title: "Prend-il en charge Mac et Linux"
 <a id="cal_exception"></a>
 
 ## Exception de calibration
-- Considérez que le mode de port ne répond pas aux exigences, [veuillez voir ici](../tutorial/instroction_for_straps#followmode).
+- Considérez que le mode de port ne répond pas aux exigences, [veuillez voir ici](../tutorial/instroction_for_straps#follow_mode).
 - Considérez des anomalies de pilote sous-jacentes, nécessitant une restauration du pilote et un rebranchement du récepteur, [veuillez voir ici](../tutorial/connect_and_use#how_to_solve_cannot_connect) (les méthodes spécifiques doivent être consultées dans la section développée).
 
 <a id="error_puts_on"></a>
 
 ## Le port ne répond pas aux exigences
 - Assurez-vous que les points portés sont allumés sur les parties correspondantes de la personne dans le diagramme en haut à gauche de l'interface utilisateur.
-- Assurez-vous que la fonction de remplacement n'est pas activée. Pour des méthodes d'activation et de désactivation spécifiques, [veuillez voir ici](../ui_help_doc/remap#trackerreplace).
-- Assurez-vous que le mode de port répond aux exigences, [veuillez voir ici](../tutorial/instroction_for_straps#followmode).
+- Assurez-vous que la fonction de remplacement n'est pas activée. Pour des méthodes d'activation et de désactivation spécifiques, [veuillez voir ici](../ui_help_doc/remap#tracker_replace).
+- Assurez-vous que le mode de port répond aux exigences, [veuillez voir ici](../tutorial/instroction_for_straps#follow_mode).
 
 <a id="height_error"></a>
 

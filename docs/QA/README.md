@@ -38,7 +38,7 @@ title: "Does it support Mac and Linux"
 <a id="vr_height"></a>
 
 ## In VR mode, the height prompted during calibration does not match personal height
-> The Rebocap device itself does not have the capability to measure height. Height measurement is entirely based on the data provided by the headset. For details, please [see here](../ui_help_doc/control/connect#vrpannel).
+> The Rebocap device itself does not have the capability to measure height. Height measurement is entirely based on the data provided by the headset. For details, please [see here](../ui_help_doc/control/connect#vr_pannel).
 
 <a id="port_open_failed"></a>
 
@@ -55,7 +55,7 @@ title: "Does it support Mac and Linux"
 <a id="steamvr_connect"></a>
 
 ## SteamVR cannot connect
-> Please [see here](../third_party_software_access/steamvr/README#vr_cannot_connect).
+> Please [see here](../third_party_software_access/steamvr/README.md#vr_cannot_connect).
 
 ## Skeleton adjustment ineffective
 > Please [see here](../ui_help_doc/control/skeleton_setting#skeleton_not_valid).
@@ -68,15 +68,15 @@ title: "Does it support Mac and Linux"
 <a id="cal_exception"></a>
 
 ## Calibration exception
-- Consider that the wearing mode does not meet the requirements, [please see here](../tutorial/instroction_for_straps#followmode).
+- Consider that the wearing mode does not meet the requirements, [please see here](../tutorial/instroction_for_straps#follow_mode).
 - Consider underlying driver anomalies, requiring a rollback of the driver and re-plugging the receiver, [please see here](../tutorial/connect_and_use#how_to_solve_cannot_connect) (specific methods need to be viewed in the expanded section).
 
 <a id="error_puts_on"></a>
 
 ## Wearing does not meet requirements
 - Ensure that the worn points are lit up on the corresponding parts of the person in the UI's top-left corner diagram.
-- Ensure that the replacement function is not enabled. For specific enabling and disabling methods, [please see here](../ui_help_doc/remap#trackerreplace).
-- Ensure that the wearing mode meets the requirements, [please see here](../tutorial/instroction_for_straps#followmode).
+- Ensure that the replacement function is not enabled. For specific enabling and disabling methods, [please see here](../ui_help_doc/remap#tracker_replace).
+- Ensure that the wearing mode meets the requirements, [please see here](../tutorial/instroction_for_straps#follow_mode).
 
 <a id="height_error"></a>
 

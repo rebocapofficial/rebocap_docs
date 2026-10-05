@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "Document Navigation"
 ---
 
+<span id="tutorial" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## New Device Guide {#new-device-guide}
 
 <div style="display: flex; gap: 20px; text-align: center; margin: 20px 0; align-items: flex-end;">
@@ -57,3 +59,36 @@ You can download the rebocap software and use the [Offline Playback] feature to 
 We have noticed that occasionally some regional networks cannot access the store.rebocap.site web page. After checking with our store network service provider, they reported no issues on their end.<br/>
 Following discussions with friends in the industry, we speculate that local base station system time anomalies might have caused network pollution.<br/>
 We recommend trying a VPN, asking friends in other regions for assistance, or trying to log in to the store web page using a different network provider.
+
+## Navigation Directory {#navigation_directory}
+
+### Rebocap Tutorial {#rebocap-tutorial}
+- [Getting Started & Quick Guide](tutorial/README.md)
+- [Hardware & Accessories Check](tutorial/hardware_check.md)
+- [Strap Usage & Wearing Guide](tutorial/instroction_for_straps.md)
+- [Software Download & Installation](tutorial/software_install.md)
+- [Connection Guide](tutorial/connect_and_use.md)
+
+### UI Section Function Introduction {#ui-section-function-introduction}
+- [Control Area](ui_help_doc/control/README.md)
+- [Hardware Information List](ui_help_doc/info.md)
+- [Hardware Connection Preview](ui_help_doc/remap.md)
+- [3D Preview Area](ui_help_doc/view.md)
+
+### Help Manual {#help-manual}
+- [UI Help Documentation](ui_help_doc/README.md)
+- [Configuration](ui_help_doc/control/config.md)
+
+### Frequently Asked Questions {#frequently-asked-questions}
+- [FAQ](QA/README.md)
+- [Magnetic Field Issues](QA/magnet.mdx)
+
+### Software Integration {#software-integration}
+- [Third-Party Software Integration](third_party_software_access/README.md)
+- [SteamVR Integration](third_party_software_access/steamvr/README.md)
+- [VMC Protocol Integration](third_party_software_access/VMC/README.md)
+
+### Others {#others}
+- [Plugins](plugins/plugins.md)
+- [SDK](SDK/README.md)
+- [Product Certification](product_certification/README.md)

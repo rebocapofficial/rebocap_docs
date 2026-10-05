@@ -45,7 +45,7 @@ Please refer to the image below for wearing instructions. The specific wearing p
 
 If the test results are poor, there may be the following reasons:
 1. Magnetic field issues; please [refer here](../QA/magnet) for specific solutions.
-2. The gyroscope may need calibration; please [refer here](../ui_help_doc/control/config#gyrocalibrate).
+2. The gyroscope may need calibration; please [refer here](../ui_help_doc/control/config#gyro_calibrate).
 3. Issues with wearing and pulling; please [read carefully and refer here](instroction_for_straps#tracker_position_on_body).
 
 :::
@@ -95,20 +95,20 @@ The images from left to right are: `APose` `TPose` `SPose` `BPose`
 <a id="third_party"></a>
 
 # Software Integration
-### SteamVr Integration [refer here](../third_party_software_access/steamvr/README)
+### SteamVr Integration [refer here](../third_party_software_access/steamvr/README.md)
 - VRChat Integration [refer here](../third_party_software_access/steamvr/vrchat)
 - Community integration tutorial [https://kdocs.cn/l/cbZLGg2QeEHk](https://kdocs.cn/l/cbZLGg2QeEHk)，if the link is inaccessible please <a href="/img/files/RebocapVRchatTutorialEnglish.pdf"  target="_blank" download="RebocapVRchatTutorialEnglish.pdf">download the PDF file</a> to view (offline file may not be updated promptly)
 
 
-### VMC Protocol User Integration [refer here](../third_party_software_access/VMC/README)
+### VMC Protocol User Integration [refer here](../third_party_software_access/VMC/README.md)
 - warudo Integration [refer here](../third_party_software_access/VMC/warudo)
 
 # Must-Know Items
 To avoid various issues during use (such as trackers inexplicably tilting) and to ensure a better motion capture experience, please make sure to read the following instructions.
 
 ### Hardware Calibration
-- [Magnetic Field Calibration](../ui_help_doc/control/config#magnetcalibrate)
-- [Gyroscope Calibration](../ui_help_doc/control/config#gyrocalibrate)
+- [Magnetic Field Calibration](../ui_help_doc/control/config#magnet_calibrate)
+- [Gyroscope Calibration](../ui_help_doc/control/config#gyro_calibrate)
 
 ### How to Set Motion Capture Configuration in Software
 - For magnetic field configuration, please read [Magnetic Field Related Instructions](../QA/magnet)

@@ -39,20 +39,15 @@ function sign(secret, method, params) {
   return createHmac("sha1", `${secret}&`).update(stringToSign).digest("base64");
 }
 
-async function refreshDcdn(urls, type = "File") {
+function commonParams(action) {
   const accessKeyId = process.env.ALI_ACCESS_KEY_ID;
   const accessKeySecret = process.env.ALI_ACCESS_KEY_SECRET;
-
   if (!accessKeyId || !accessKeySecret) {
-    console.error("Missing ALI_ACCESS_KEY_ID or ALI_ACCESS_KEY_SECRET env vars.");
-    process.exit(1);
+    throw new Error("Missing ALI_ACCESS_KEY_ID or ALI_ACCESS_KEY_SECRET env vars.");
   }
 
-  // Join URLs with newline as required by Alibaba Cloud API
-  const objectPath = urls.join("\n");
-
-  const params = {
-    Action: "RefreshDcdnObjectCaches",
+  return {
+    Action: action,
     Format: "JSON",
     Version: "2018-01-15",
     AccessKeyId: accessKeyId,
@@ -60,28 +55,61 @@ async function refreshDcdn(urls, type = "File") {
     SignatureVersion: "1.0",
     SignatureNonce: `${Date.now()}-${Math.random().toString(36).slice(2)}`,
     Timestamp: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
+  };
+}
+
+function toSignedUrl(params) {
+  params.Signature = sign(process.env.ALI_ACCESS_KEY_SECRET, "GET", params);
+  const query = Object.keys(params)
+    .map((key) => `${percentEncode(key)}=${percentEncode(params[key])}`)
+    .join("&");
+  return `https://dcdn.aliyuncs.com/?${query}`;
+}
+
+async function callDcdnApi(params) {
+  const response = await fetch(toSignedUrl(params), { signal: AbortSignal.timeout(30_000) });
+  let data;
+  try {
+    data = await response.json();
+  } catch {
+    throw new Error(`DCDN API returned non-JSON data (HTTP ${response.status}).`);
+  }
+  if (!response.ok || data.Code) {
+    throw new Error(`DCDN API request failed (HTTP ${response.status}, ${data.Code ?? "unknown"}): ${data.Message ?? "no message"}`);
+  }
+  return data;
+}
+
+async function refreshDcdn(urls, type = "File") {
+  // Join URLs with newline as required by Alibaba Cloud API
+  const objectPath = urls.join("\n");
+
+  const params = {
+    ...commonParams("RefreshDcdnObjectCaches"),
     ObjectPath: objectPath,
     ObjectType: type, // "File" for specific URLs, "Directory" for directory refresh
   };
-
-  params.Signature = sign(accessKeySecret, "GET", params);
-
-  const query = Object.keys(params)
-    .map((k) => `${percentEncode(k)}=${percentEncode(params[k])}`)
-    .join("&");
-
-  const url = `https://dcdn.aliyuncs.com/?${query}`;
+  if (type === "Directory") params.Force = "true";
 
   console.log(`Refreshing ${urls.length} URL(s), type=${type}...`);
+  const data = await callDcdnApi(params);
+  if (!data.RefreshTaskId) throw new Error("DCDN API response did not include RefreshTaskId.");
+  console.log(`CDN refresh submitted. TaskId: ${data.RefreshTaskId}`);
+  return data.RefreshTaskId;
+}
 
-  const res = await fetch(url);
-  const data = await res.json();
-
-  if (data.RefreshTaskId) {
-    console.log(`CDN refresh submitted. TaskId: ${data.RefreshTaskId}`);
-  } else {
-    console.error("CDN refresh API error:", JSON.stringify(data, null, 2));
+async function describeTasks(taskIds) {
+  const params = { ...commonParams("DescribeDcdnRefreshTaskById"), TaskId: taskIds.join(",") };
+  const data = await callDcdnApi(params);
+  const tasks = data.Tasks ?? [];
+  if (!tasks.length) throw new Error("DCDN returned no matching refresh tasks.");
+  for (const task of tasks) {
+    console.log(`${task.TaskId}: ${task.Status} (${task.Process ?? "unknown"})${task.Description ? ` — ${task.Description}` : ""}`);
   }
+  if (tasks.some((task) => ["Failed", "Timeout", "Canceled"].includes(task.Status))) {
+    throw new Error("At least one DCDN refresh task did not complete successfully.");
+  }
+  return tasks;
 }
 
 // ─── Main ────────────────────────────────────────────────────────────────────
@@ -89,19 +117,28 @@ async function refreshDcdn(urls, type = "File") {
 const args = process.argv.slice(2);
 
 if (args.length === 0) {
-  console.log("Usage: node cdn-refresh.mjs [--dir] <url1> <url2> ...");
+  console.log("Usage: node cdn-refresh.mjs [--dir] <url1> <url2> ... | --status <task-id[,task-id...]> ");
   process.exit(1);
 }
 
-let type = "File";
-let urls = args;
-
-if (args[0] === "--dir") {
-  type = "Directory";
-  urls = args.slice(1);
+try {
+  if (args[0] === "--status") {
+    const taskIds = (args[1] ?? "").split(",").filter(Boolean);
+    if (!taskIds.length || taskIds.length > 10) throw new Error("Provide between 1 and 10 comma-separated task IDs.");
+    await describeTasks(taskIds);
+  } else {
+    let type = "File";
+    let urls = args;
+    if (args[0] === "--dir") {
+      type = "Directory";
+      urls = args.slice(1);
+    }
+    if (!urls.length) throw new Error("Provide at least one URL to refresh.");
+    console.log(`URLs to refresh (${type}):`);
+    urls.forEach((url) => console.log(`  ${url}`));
+    await refreshDcdn(urls, type);
+  }
+} catch (error) {
+  console.error(`CDN refresh failed: ${error.message}`);
+  process.exitCode = 1;
 }
-
-console.log(`URLs to refresh (${type}):`);
-urls.forEach((u) => console.log(`  ${u}`));
-
-await refreshDcdn(urls, type);

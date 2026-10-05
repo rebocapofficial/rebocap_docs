@@ -37,7 +37,7 @@ title: "상태 패널"
 
     SteamVR을 사용하는 사용자만 VR 모드로 전환해야 합니다. 애니메이션 녹화 또는 비 VR 라이브 스트리밍과 같은 일반적인 시나리오의 경우 PC 모드로 전환하십시오. VR 모드로 전환했는데 VR이 연결되지 않으면 자동으로 PC 모드로 전환됩니다.
 
-    VR이 연결할 수 없으면 [여기를 참조하십시오](../../third_party_software_access/steamvr/README#vr_cannot_connect).
+    VR이 연결할 수 없으면 [여기를 참조하십시오](../../third_party_software_access/steamvr/README.md#vr_cannot_connect).
 
 5. 로그 스위치
 
@@ -214,7 +214,7 @@ title: "상태 패널"
 
 1. **SteamVR 연결 상태 표시기**
 
-   연결에 성공하면 표시기가 녹색으로 켜집니다. 그렇지 않으면 연결되지 않은 것입니다. 연결에 실패하면 [여기](../../third_party_software_access/steamvr/README#vr_cannot_connect)를 참조하십시오.
+   연결에 성공하면 표시기가 녹색으로 켜집니다. 그렇지 않으면 연결되지 않은 것입니다. 연결에 실패하면 [여기](../../third_party_software_access/steamvr/README.md#vr_cannot_connect)를 참조하십시오.
 
 2. **요(Yaw) 재설정**
 

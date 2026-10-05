@@ -12,7 +12,7 @@ title: "Rebocap ユーザーマニュアル"
 - 製品リスト
 
   - トラッカー x 15
-    > 各トラッカーの底部にはラベルがあり、ラベルには対応する数字コードと身体部位が描かれています。例えば、1号は左上腿、3号は左下腿です。トラッカーの位置は固定されており、[置き換え機能](../ui_help_doc/remap#trackerreplace)を使用しない限り変更できません。
+    > 各トラッカーの底部にはラベルがあり、ラベルには対応する数字コードと身体部位が描かれています。例えば、1号は左上腿、3号は左下腿です。トラッカーの位置は固定されており、[置き換え機能](../ui_help_doc/remap#tracker_replace)を使用しない限り変更できません。
   - レシーバー x 1
   - 充電ドック x 1
     > 収納用として使用でき、バッテリーは含まれていません。
@@ -325,7 +325,7 @@ title: "Rebocap ユーザーマニュアル"
 
 テストの結果が良くない場合、以下の理由が考えられます
 1. 磁場の問題。具体的な解決策については[こちらを参照してください](../QA/magnet)
-2. ジャイロスコープのキャリブレーションが必要な場合があります。詳細については[こちらを参照してください](../ui_help_doc/control/config#gyrocalibrate)
+2. ジャイロスコープのキャリブレーションが必要な場合があります。詳細については[こちらを参照してください](../ui_help_doc/control/config#gyro_calibrate)
 3. 装着の引っ張り問題については[こちらをよく読み、参照してください](instroction_for_straps#tracker_position_on_body)
 
 :::
@@ -375,20 +375,20 @@ title: "Rebocap ユーザーマニュアル"
 <a id="third_party"></a>
 
 # ソフトウェア接続
-### SteamVr 接続 [こちらをご覧ください](../third_party_software_access/steamvr/README)
+### SteamVr 接続 [こちらをご覧ください](../third_party_software_access/steamvr/README.md)
 - VRChat 接続 [こちらをご覧ください](../third_party_software_access/steamvr/vrchat)
 - コミュニティ接続チュートリアル [https://kdocs.cn/l/cnOltEt3BgQP](https://kdocs.cn/l/cnOltEt3BgQP)，リンクにアクセスできない場合は[PDF ファイルをダウンロード](/img/files/RebocapVRchatTutorial-Japanese.pdf)してご覧ください（オフラインファイルは最新でない場合があります）
 
 
-### VMC プロトコルユーザー接続 [こちらをご覧ください](../third_party_software_access/VMC/README)
+### VMC プロトコルユーザー接続 [こちらをご覧ください](../third_party_software_access/VMC/README.md)
 - warudo 接続 [こちらをご覧ください](../third_party_software_access/VMC/warudo)
 
 # 必須事項
 使用中に発生する様々な問題（例えばトラッカーが突然傾くなど）を避けるため、またより良いモーションキャプチャ体験を得るために、以下の説明を必ずお読みください。
 
 ### ハードウェアキャリブレーション
-- [磁場キャリブレーション](../ui_help_doc/control/config#magnetcalibrate)
-- [ジャイロキャリブレーション](../ui_help_doc/control/config#gyrocalibrate)
+- [磁場キャリブレーション](../ui_help_doc/control/config#magnet_calibrate)
+- [ジャイロキャリブレーション](../ui_help_doc/control/config#gyro_calibrate)
 
 ### ソフトウェアでのモーションキャプチャ設定方法
 - 磁場に関する設定については、[磁場関連の説明](../QA/magnet)をお読みください

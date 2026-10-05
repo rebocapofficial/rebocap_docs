@@ -37,7 +37,7 @@ title: "状態パネル"
 
     使用シーンに応じて切り替えます。SteamVRを使用するユーザーのみがVRシーンに切り替える必要があります。通常のシーン、例えばアニメーションの録画や非VRシーンのライブ配信の場合は、PCモードに切り替える必要があります。注意：VRモードに切り替えた場合、VRが接続されていないと自動的にPCモードに切り替わります。
 
-    VRが接続できない場合は[こちらを参照してください](../../third_party_software_access/steamvr/README#vr_cannot_connect)
+    VRが接続できない場合は[こちらを参照してください](../../third_party_software_access/steamvr/README.md#vr_cannot_connect)
 
 5. ログスイッチ
 
@@ -209,7 +209,7 @@ title: "状態パネル"
 
 1. **SteamVR 接続状態インジケーター**
 
-   接続に成功している場合は緑色で表示されます。接続できない場合は無色です。接続できない場合は[こちらを参照](../../third_party_software_access/steamvr/README#vr_cannot_connect)
+   接続に成功している場合は緑色で表示されます。接続できない場合は無色です。接続できない場合は[こちらを参照](../../third_party_software_access/steamvr/README.md#vr_cannot_connect)
 
 2. **ヨー軸リセット**
 

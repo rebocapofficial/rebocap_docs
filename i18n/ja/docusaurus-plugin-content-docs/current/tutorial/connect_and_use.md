@@ -46,7 +46,7 @@ sidebar_label: "接続ガイド"
 
 テストの結果が良くない場合、以下の理由が考えられます
 1. 磁場の問題。具体的な解決策については[こちらを参照してください](../QA/magnet)
-2. ジャイロスコープのキャリブレーションが必要な場合があります。詳細については[こちらを参照してください](../ui_help_doc/control/config#gyrocalibrate)
+2. ジャイロスコープのキャリブレーションが必要な場合があります。詳細については[こちらを参照してください](../ui_help_doc/control/config#gyro_calibrate)
 3. 装着の引っ張り問題については[こちらをよく読み、参照してください](instroction_for_straps#tracker_position_on_body)
 
 :::
@@ -96,20 +96,20 @@ sidebar_label: "接続ガイド"
 <a id="third_party"></a>
 
 # ソフトウェア接続
-### SteamVr 接続 [こちらをご覧ください](../third_party_software_access/steamvr/README)
+### SteamVr 接続 [こちらをご覧ください](../third_party_software_access/steamvr/README.md)
 - VRChat 接続 [こちらをご覧ください](../third_party_software_access/steamvr/vrchat)
 - コミュニティ接続チュートリアル [https://kdocs.cn/l/cnOltEt3BgQP](https://kdocs.cn/l/cnOltEt3BgQP)，リンクにアクセスできない場合は<a href="/img/files/RebocapVRchatTutorial-Japanese.pdf"  target="_blank" download="RebocapVRchat ガイド - 日本語.pdf">PDF ファイルをダウンロード</a>してご覧ください（オフラインファイルは最新でない場合があります）
 
 
-### VMC プロトコルユーザー接続 [こちらをご覧ください](../third_party_software_access/VMC/README)
+### VMC プロトコルユーザー接続 [こちらをご覧ください](../third_party_software_access/VMC/README.md)
 - warudo 接続 [こちらをご覧ください](../third_party_software_access/VMC/warudo)
 
 # 必須事項
 使用中に発生する様々な問題（例えばトラッカーが突然傾くなど）を避けるため、またより良いモーションキャプチャ体験を得るために、以下の説明を必ずお読みください。
 
 ### ハードウェアキャリブレーション
-- [磁場キャリブレーション](../ui_help_doc/control/config#magnetcalibrate)
-- [ジャイロキャリブレーション](../ui_help_doc/control/config#gyrocalibrate)
+- [磁場キャリブレーション](../ui_help_doc/control/config#magnet_calibrate)
+- [ジャイロキャリブレーション](../ui_help_doc/control/config#gyro_calibrate)
 
 ### ソフトウェアでのモーションキャプチャ設定方法
 - 磁場に関する設定については、[磁場関連の説明](../QA/magnet)をお読みください

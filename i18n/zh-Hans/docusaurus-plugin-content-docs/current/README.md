@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "文档导航"
 ---
 
+<span id="教程" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## 新设备入手 {#new-device-guide}
 
 <div style="display: flex; gap: 20px; text-align: center; margin: 20px 0; align-items: flex-end;">
@@ -67,3 +69,36 @@ title: "文档导航"
 我们注意到偶尔有些地区网络无法打开store.rebocap.site网页，商店网络服务商检测后反馈未发现此情况。<br/>
 经与相关行业朋友讨论，推测是当地基站系统时间异常导致了网络污染。<br/>
 建议尝试使用VPN、向其他地区的好友协助查看，或尝试使用其他网络供应商登录商店网页。
+
+## 文档目录 {#navigation_directory}
+
+### Rebocap 教程 {#rebocap-教程}
+- [新手入门与快速指南](tutorial/README.md)
+- [硬件说明](tutorial/hardware_check.md)
+- [绑带安装指南](tutorial/instroction_for_straps.md)
+- [软件下载与安装](tutorial/software_install.md)
+- [连接指南](tutorial/connect_and_use.md)
+
+### UI 分区功能介绍 {#ui-分区功能介绍}
+- [控制区](ui_help_doc/control/README.md)
+- [硬件信息列表](ui_help_doc/info.md)
+- [硬件连接预览](ui_help_doc/remap.md)
+- [3D 预览区](ui_help_doc/view.md)
+
+### 帮助手册 {#帮助手册}
+- [UI 帮助文档](ui_help_doc/README.md)
+- [配置说明](ui_help_doc/control/config.md)
+
+### 常见问题 {#常见问题}
+- [常见问题](QA/README.md)
+- [磁场问题](QA/magnet.mdx)
+
+### 软件接入 {#软件接入}
+- [第三方软件接入](third_party_software_access/README.md)
+- [SteamVR 接入](third_party_software_access/steamvr/README.md)
+- [VMC 协议接入](third_party_software_access/VMC/README.md)
+
+### 其它 {#其它}
+- [插件](plugins/plugins.md)
+- [SDK](SDK/README.md)
+- [产品认证](product_certification/README.md)

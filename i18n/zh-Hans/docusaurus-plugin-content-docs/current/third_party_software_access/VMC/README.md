@@ -4,7 +4,7 @@ title: "提示"
 ---
 
 # 提示
-没有阅读教程的情况下，阅读这个本页面没有任何意义，[请首先阅读教程](../tutorial/README)！！！！
+没有阅读教程的情况下，阅读这个本页面没有任何意义，[请首先阅读教程](../../tutorial/README.md)！！！！
 
 
 <a id="vmc_instroction"></a>
@@ -12,7 +12,7 @@ title: "提示"
 # VMC 使用
 vmc 协议使用非常简单，校准以后打开 vmc 协议即可，[具体见这里](../../ui_help_doc/control/connect#cal_pc_panel)，然后在其它软件中配置接收。VMC是一个通用动作捕捉协议，[具体请查看这里](https://protocol.vmc.info/english.html)
 
-如果你是主播，不清楚你使用的软件是否可以支持 `rebocap`，那么请查看你的软件是否支持 vmc 协议。当然，如果你的软件不支持，可以联系开发者使用我们提供的 [SDK](../../SDK/README) 接入，或者直接使用我们提供的[插件](../../plugins/plugins)接入。
+如果你是主播，不清楚你使用的软件是否可以支持 `rebocap`，那么请查看你的软件是否支持 vmc 协议。当然，如果你的软件不支持，可以联系开发者使用我们提供的 [SDK](../../SDK/README.md) 接入，或者直接使用我们提供的[插件](../../plugins/plugins.md)接入。
 
 :::info VMC 协议用户使用注意事项
 

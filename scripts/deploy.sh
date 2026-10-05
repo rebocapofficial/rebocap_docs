@@ -67,8 +67,6 @@ PROJECT_DIR="${PROJECT_DIR:-/opt/rebocap_docs}"
 STAGING_DIR="$PROJECT_DIR/../build"
 # nginx serves from here — can be on a different disk / partition
 OUTPUT_DIR="${OUTPUT_DIR:-/data/wwwroot/doc.hamer.xin}"
-PREV_MANIFEST="$PROJECT_DIR/.deploy-prev-manifest.txt"
-NEW_MANIFEST="$PROJECT_DIR/.deploy-new-manifest.txt"
 PROXY_PORT="${PROXY_PORT:-10809}"
 
 # Source secret env vars if .env exists
@@ -136,13 +134,6 @@ log "Synced to origin/main (${REMOTE_COMMIT_FOR_MSG:-forced})"
 # ═══════════════════════════════════════════════════════════
 # Step 3 — Save previous manifest (for CDN diff)
 # ═══════════════════════════════════════════════════════════
-if [ -d "$OUTPUT_DIR" ]; then
-  find "$OUTPUT_DIR" -type f \( -name '*.html' -o -name '*.js' -o -name '*.css' \) \
-    | sed "s|^$OUTPUT_DIR/||" | sort > "$PREV_MANIFEST"
-else
-  :> "$PREV_MANIFEST"
-fi
-
 # ═══════════════════════════════════════════════════════════
 # Step 4 — Build
 # ═══════════════════════════════════════════════════════════
@@ -163,6 +154,9 @@ if [ ${PIPESTATUS[0]} -ne 0 ]; then
 fi
 
 # 构建成功后，将 build 产物移动到暂存区
+log "Adding legacy heading aliases and checking internal page links..."
+"$NODE_BIN" "$PROJECT_DIR/scripts/add-legacy-anchor-aliases.mjs"
+"$NODE_BIN" "$PROJECT_DIR/scripts/check-internal-links.mjs"
 rm -rf "$STAGING_DIR"
 mv build "$STAGING_DIR"
 
@@ -204,8 +198,7 @@ npx pagefind --site "$STAGING_DIR" 2>&1
 # ═══════════════════════════════════════════════════════════
 # Step 5 — Publish to nginx serving directory
 # ═══════════════════════════════════════════════════════════
-find "$STAGING_DIR" -type f \( -name '*.html' -o -name '*.js' -o -name '*.css' \) \
-  | sed "s|^$STAGING_DIR/||" | sort > "$NEW_MANIFEST"
+CHANGED_FILES=$("$NODE_BIN" "$PROJECT_DIR/scripts/changed-web-files.mjs" "$OUTPUT_DIR" "$STAGING_DIR")
 
 mkdir -p "$OUTPUT_DIR"
 rsync -a --delete "$STAGING_DIR"/ "$OUTPUT_DIR"/
@@ -218,29 +211,40 @@ log "Published to $OUTPUT_DIR"
 if [ "$SKIP_CDN" = true ]; then
   log "Dev mode — skipping CDN refresh"
 elif [ -n "${ALI_ACCESS_KEY_ID:-}" ] && [ -n "${ALI_ACCESS_KEY_SECRET:-}" ]; then
-
-  CHANGED=$(comm -13 "$PREV_MANIFEST" "$NEW_MANIFEST" 2>/dev/null | grep '\.html$' || true)
-
-  URLS=""
+  URLS=()
   COUNT=0
+  if [ -n "$CHANGED_FILES" ]; then
+    URLS+=("https://$DCDN_DOMAIN/" "https://$DCDN_DOMAIN/docs/")
+  fi
   while IFS= read -r f; do
     [ -z "$f" ] && continue
-    url_path="/${f%/index.html}"
-    [ "$url_path" = "/index.html" ] && url_path="/"
-    URLS="$URLS https://$DCDN_DOMAIN$url_path"
+    if [ "$f" = "index.html" ]; then
+      url_path="/"
+    elif [[ "$f" = */index.html ]]; then
+      url_path="/${f%index.html}"
+    else
+      url_path="/$f"
+    fi
+    URLS+=("https://$DCDN_DOMAIN$url_path")
     COUNT=$((COUNT + 1))
-  done <<< "$CHANGED"
+    if [ "${#URLS[@]}" -ge 100 ]; then
+      "$NODE_BIN" "$PROJECT_DIR/scripts/cdn-refresh.mjs" "${URLS[@]}"
+      URLS=()
+    fi
+  done <<< "$CHANGED_FILES"
 
   if [ "$COUNT" -gt 0 ]; then
-    log "Refreshing CDN for $COUNT changed HTML files..."
-    URLS="https://$DCDN_DOMAIN/ https://$DCDN_DOMAIN/docs/ $URLS"
-    $NODE_BIN "$PROJECT_DIR/scripts/cdn-refresh.mjs" $URLS 2>&1 || log "CDN refresh failed (non-fatal)"
+    log "Refreshing CDN for $COUNT changed HTML/JS/CSS files..."
+    if [ "${#URLS[@]}" -gt 0 ]; then
+      "$NODE_BIN" "$PROJECT_DIR/scripts/cdn-refresh.mjs" "${URLS[@]}"
+    fi
   else
-    log "No HTML changes, skipping CDN refresh"
+    log "No HTML/JS/CSS changes, skipping CDN refresh"
   fi
 
 else
-  log "Skipping CDN refresh (ALI_ACCESS_KEY_ID not set)"
+  log "Production mode requires Alibaba DCDN credentials; refusing to report a successful deployment"
+  exit 1
 fi
 
 log "=== Deploy complete ==="

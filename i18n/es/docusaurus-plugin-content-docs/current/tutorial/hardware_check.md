@@ -10,7 +10,7 @@ title: "Comprobación de desempaquetado"
 
   - Rastreador x 15
 
-    > Cada rastreador tiene una etiqueta en la parte inferior con un código numérico correspondiente y la parte del cuerpo, como el n.º 1 para la parte superior de la pierna izquierda y el n.º 3 para la parte inferior de la pierna izquierda. La posición de los rastreadores es fija a menos que utilice la [función de reemplazo](../ui_help_doc/remap#trackerreplace).
+    > Cada rastreador tiene una etiqueta en la parte inferior con un código numérico correspondiente y la parte del cuerpo, como el n.º 1 para la parte superior de la pierna izquierda y el n.º 3 para la parte inferior de la pierna izquierda. La posición de los rastreadores es fija a menos que utilice la [función de reemplazo](../ui_help_doc/remap#tracker_replace).
   - Receptor x 1
   - Base de carga x 1
 

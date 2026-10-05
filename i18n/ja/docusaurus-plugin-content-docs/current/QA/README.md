@@ -38,7 +38,7 @@ title: "MacおよびLinuxのサポートについて"
 <a id="vr_height"></a>
 
 ## VRモードでキャリブレーション時の身長が個人の身長と一致しない
-> Rebocapデバイス自体には身長を測定する機能はありません。身長測定は完全にヘッドセットから提供されるデータを読み取っています。詳細は[こちらを参照](../ui_help_doc/control/connect#vrpannel)してください。
+> Rebocapデバイス自体には身長を測定する機能はありません。身長測定は完全にヘッドセットから提供されるデータを読み取っています。詳細は[こちらを参照](../ui_help_doc/control/connect#vr_pannel)してください。
 
 <a id="port_open_failed"></a>
 
@@ -55,7 +55,7 @@ title: "MacおよびLinuxのサポートについて"
 <a id="steamvr_connect"></a>
 
 ## SteamVRが接続できない
-> [こちらを参照](../third_party_software_access/steamvr/README#vr_cannot_connect)してください。
+> [こちらを参照](../third_party_software_access/steamvr/README.md#vr_cannot_connect)してください。
 
 <a id="skeleton_not_valid"></a>
 
@@ -70,15 +70,15 @@ title: "MacおよびLinuxのサポートについて"
 <a id="cal_exception"></a>
 
 ## キャリブレーション異常
-- 装着モードが要件を満たしていない可能性があります。[こちらを参照](../tutorial/instroction_for_straps#followmode)してください。
+- 装着モードが要件を満たしていない可能性があります。[こちらを参照](../tutorial/instroction_for_straps#follow_mode)してください。
 - 基本ドライバの異常を考慮し、ドライバをロールバックした後、レシーバーを再接続してください。[こちらを参照](../tutorial/connect_and_use#how_to_solve_cannot_connect)（具体的な方法は折りたたみ部分を展開して確認してください）。
 
 <a id="error_puts_on"></a>
 
 ## 装着が要件を満たしていない
 - 装着したポイントがUI左上の図の人物の対応する部位で点灯していることを確認してください。
-- 置換機能が有効になっていないことを確認してください。具体的な有効化と無効化の方法は[こちらを参照](../ui_help_doc/remap#trackerreplace)してください。
-- 装着モードが要件を満たしていることを確認してください。[こちらを参照](../tutorial/instroction_for_straps#followmode)してください。
+- 置換機能が有効になっていないことを確認してください。具体的な有効化と無効化の方法は[こちらを参照](../ui_help_doc/remap#tracker_replace)してください。
+- 装着モードが要件を満たしていることを確認してください。[こちらを参照](../tutorial/instroction_for_straps#follow_mode)してください。
 
 
 <a id="height_error"></a>

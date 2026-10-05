@@ -4,19 +4,20 @@ title: "提示"
 ---
 
 # 提示
-没有阅读教程的情况下，阅读这个本页面没有任何意义，[请首先阅读教程](../tutorial/README)！！！！
+没有阅读教程的情况下，阅读这个本页面没有任何意义，[请首先阅读教程](../tutorial/README.md)！！！！
 
 
 # 官方通用协议输出接入
 
-### [steamvr 接入](steamvr/README)
+### [steamvr 接入](steamvr/README.md)
 - [VRChat 接入](steamvr/vrchat)
 
-### [VMC 接入](VMC/README)
+### [VMC 接入](VMC/README.md)
 - [warudo 接入](VMC/warudo)
 
 # 其它接入
-如果是 blender、UE、Unity 的接入，[请查看对应的各个插件接入](../plugins/plugins)
+如果是 blender、UE、Unity 的接入，[请查看对应的各个插件接入](../plugins/plugins.md)
+
 
 ### [云镜虚拟直播](https://fancyjing.com/home)
 
@@ -45,6 +46,6 @@ title: "提示"
     > [点击这里查看](https://www.bilibili.com/video/BV1fPbwzbEak)
 
 
-如果是 blender、UE、Unity 的接入，[请查看对应的插件](../plugins/plugins)
+如果是 blender、UE、Unity 的接入，[请查看对应的插件](../plugins/plugins.md)
 
 其它敬请期待!

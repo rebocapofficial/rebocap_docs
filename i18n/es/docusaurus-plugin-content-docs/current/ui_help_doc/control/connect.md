@@ -37,7 +37,7 @@ El panel se divide en cuatro subpaneles. El panel `PC VR` se muestra según la s
 
     Solo los usuarios que usan SteamVR necesitan cambiar al modo VR. Para escenarios regulares como la grabación de animaciones o transmisiones en vivo que no sean de VR, cambia al modo PC. Ten en cuenta que si se cambia al modo VR y la VR no está conectada, cambiará automáticamente al modo PC.
 
-    Si la VR no se puede conectar, [consulta aquí](../../third_party_software_access/steamvr/README#vr_cannot_connect).
+    Si la VR no se puede conectar, [consulta aquí](../../third_party_software_access/steamvr/README.md#vr_cannot_connect).
 
 5. Interruptor de Registros (Logs)
 
@@ -214,7 +214,7 @@ Debido a que el intérprete usó el rastreador en el estómago en lugar de la ca
 
 1. **Indicador de estado de conexión de SteamVR**
 
-   Si la conexión es exitosa, el indicador se vuelve verde; de lo contrario, no está conectado. Si la conexión falla, consulta [aquí](../../third_party_software_access/steamvr/README#vr_cannot_connect).
+   Si la conexión es exitosa, el indicador se vuelve verde; de lo contrario, no está conectado. Si la conexión falla, consulta [aquí](../../third_party_software_access/steamvr/README.md#vr_cannot_connect).
 
 2. **Restablecimiento de guiñada (Yaw reset)**
 

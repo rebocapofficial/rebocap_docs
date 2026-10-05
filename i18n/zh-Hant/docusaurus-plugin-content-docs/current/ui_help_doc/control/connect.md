@@ -36,7 +36,7 @@ title: "狀態面板"
 
     只有用到 SteamVR 的用戶才需要切換為VR場景使用，如果是普通場景使用，比如錄製動畫，或者非VR場景直播，則需要切換到PC模式，注意，如果切換為VR模式，VR未連接，那麼會自動切換未PC模式。
 
-    VR 無法連接[請查看這裡](../../third_party_software_access/steamvr/README#vr_cannot_connect)
+    VR 無法連接[請查看這裡](../../third_party_software_access/steamvr/README.md#vr_cannot_connect)
 
 5. 日誌開關
 
@@ -214,7 +214,7 @@ title: "狀態面板"
 
 1. **SteamVR 連線狀態指示**
 
-   如果連線成功，則為綠色；否則代表未連線，無法連線[請查看這裡](../../third_party_software_access/steamvr/README#vr_cannot_connect)
+   如果連線成功，則為綠色；否則代表未連線，無法連線[請查看這裡](../../third_party_software_access/steamvr/README.md#vr_cannot_connect)
 
 2. **航向回正**
 

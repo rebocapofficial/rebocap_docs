@@ -37,7 +37,7 @@ The panel is divided into four sub-panels. The `PC VR` panel displays based on s
 
     Only users using SteamVR need to switch to VR mode. For regular scenarios like recording animations or non-VR live streaming, switch to PC mode. Note that if switched to VR mode and VR is not connected, it will automatically switch to PC mode.
 
-    If VR cannot connect, [please refer here](../../third_party_software_access/steamvr/README#vr_cannot_connect).
+    If VR cannot connect, [please refer here](../../third_party_software_access/steamvr/README.md#vr_cannot_connect).
 
 5. Log Switch
 
@@ -214,7 +214,7 @@ Because the performer wore the tracker on the stomach instead of the hip during 
 
 1. **SteamVR connection status indicator**
 
-   If the connection is successful the indicator turns green; otherwise it is not connected. If the connection fails, please refer to [here](../../third_party_software_access/steamvr/README#vr_cannot_connect).
+   If the connection is successful the indicator turns green; otherwise it is not connected. If the connection fails, please refer to [here](../../third_party_software_access/steamvr/README.md#vr_cannot_connect).
 
 2. **Yaw reset**
 

@@ -38,7 +38,7 @@ title: "是否支持Mac以及Linux"
 <a id="vr_height"></a>
 
 ## VR模式下，校準提示的身高和個人身高不相符
-> Rebocap 設備本身並不具備測量身高能力，身高測量完全讀取的是頭顯給出的數據，具體請[查看這裡](../ui_help_doc/control/connect#vrpannel)。
+> Rebocap 設備本身並不具備測量身高能力，身高測量完全讀取的是頭顯給出的數據，具體請[查看這裡](../ui_help_doc/control/connect#vr_pannel)。
 
 <a id="port_open_failed"></a>
 
@@ -55,7 +55,7 @@ title: "是否支持Mac以及Linux"
 <a id="steamvr_connect"></a>
 
 ## SteamVR 無法連接
-> 請[查看這裡](../third_party_software_access/steamvr/README#vr_cannot_connect)
+> 請[查看這裡](../third_party_software_access/steamvr/README.md#vr_cannot_connect)
 
 ## 骨架調節無效
 > 請[查看這裡](../ui_help_doc/control/skeleton_setting#skeleton_not_valid)
@@ -68,15 +68,15 @@ title: "是否支持Mac以及Linux"
 <a id="cal_exception"></a>
 
 ## 校準異常
-- 考慮穿戴模式不符合要求，[請查看這裡](../tutorial/instroction_for_straps#followmode)
+- 考慮穿戴模式不符合要求，[請查看這裡](../tutorial/instroction_for_straps#follow_mode)
 - 考慮底層驅動異常，需要回滾驅動後，重新插拔接收器，[請查看這裡](../tutorial/connect_and_use#how_to_solve_cannot_connect)（具體方法需要展開折疊部分查看）
 
 <a id="error_puts_on"></a>
 
 ## 穿戴不符合要求
 - 確保穿戴的點位在UI左上角圖中人物對應的部位被點亮
-- 確保替換功能沒有啟用，具體啟用和關閉方法，[請查看這裡](../ui_help_doc/remap#trackerreplace)
-- 確保佩戴模式符合要求，[請查看這裡](../tutorial/instroction_for_straps#followmode)
+- 確保替換功能沒有啟用，具體啟用和關閉方法，[請查看這裡](../ui_help_doc/remap#tracker_replace)
+- 確保佩戴模式符合要求，[請查看這裡](../tutorial/instroction_for_straps#follow_mode)
 
 
 <a id="height_error"></a>

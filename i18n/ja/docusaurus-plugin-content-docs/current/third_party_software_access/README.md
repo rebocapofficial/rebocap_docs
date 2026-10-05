@@ -4,18 +4,19 @@ title: "ヒント"
 ---
 
 # ヒント
-このページを読むことには意味がありませんので、[まずはチュートリアルをお読みください](../tutorial/README)！！！！
+このページを読むことには意味がありませんので、[まずはチュートリアルをお読みください](../tutorial/README.md)！！！！
 
 
 # 公式汎用プロトコル出力接続
 
-### [steamvr 接続](steamvr/README)
+### [steamvr 接続](steamvr/README.md)
 - [VRChat 接続](steamvr/vrchat)
 
-### [VMC 接続](VMC/README)
+### [VMC 接続](VMC/README.md)
 - [warudo 接続](VMC/warudo)
 
 # その他の接続
+
 
 ### [雲鏡バーチャルライブ配信](https://fancyjing.com/home)
 
@@ -44,6 +45,6 @@ title: "ヒント"
     > [こちらをクリックしてご覧ください](https://www.bilibili.com/video/BV1fPbwzbEak)
 
 
-blender、UE、Unity の接続については、[対応する各プラグインの接続を確認してください](../plugins/plugins)
+blender、UE、Unity の接続については、[対応する各プラグインの接続を確認してください](../plugins/plugins.md)
 
 その他はお楽しみに

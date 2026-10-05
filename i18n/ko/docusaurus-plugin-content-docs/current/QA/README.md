@@ -38,7 +38,7 @@ title: "Mac 및 Linux 지원 여부"
 <a id="vr_height"></a>
 
 ## VR 모드에서 캘리브레이션 (Calibration) 중 표시된 키가 개인의 키와 일치하지 않음
-> Rebocap 장치 자체에는 키를 측정하는 기능이 없습니다. 키 측정은 전적으로 헤드셋에서 제공하는 데이터를 기반으로 합니다. 자세한 내용은 [여기를 참조하세요](../ui_help_doc/control/connect#vrpannel).
+> Rebocap 장치 자체에는 키를 측정하는 기능이 없습니다. 키 측정은 전적으로 헤드셋에서 제공하는 데이터를 기반으로 합니다. 자세한 내용은 [여기를 참조하세요](../ui_help_doc/control/connect#vr_pannel).
 
 <a id="port_open_failed"></a>
 
@@ -55,7 +55,7 @@ title: "Mac 및 Linux 지원 여부"
 <a id="steamvr_connect"></a>
 
 ## SteamVR에 연결할 수 없음
-> [여기를 참조하세요](../third_party_software_access/steamvr/README#vr_cannot_connect).
+> [여기를 참조하세요](../third_party_software_access/steamvr/README.md#vr_cannot_connect).
 
 ## 골격 조정이 적용되지 않음
 > [여기를 참조하세요](../ui_help_doc/control/skeleton_setting#skeleton_not_valid).
@@ -68,15 +68,15 @@ title: "Mac 및 Linux 지원 여부"
 <a id="cal_exception"></a>
 
 ## 캘리브레이션 (Calibration) 예외
-- 착용 모드가 요구 사항을 충족하지 않는 경우, [여기를 참조하세요](../tutorial/instroction_for_straps#followmode).
+- 착용 모드가 요구 사항을 충족하지 않는 경우, [여기를 참조하세요](../tutorial/instroction_for_straps#follow_mode).
 - 드라이버 롤백 및 수신기 재연결이 필요한 기본 드라이버 이상 고려, [여기를 참조하세요](../tutorial/connect_and_use#how_to_solve_cannot_connect) (구체적인 방법은 확장 섹션에서 확인해야 함).
 
 <a id="error_puts_on"></a>
 
 ## 착용이 요구 사항을 충족하지 않음
 - UI 왼쪽 상단 다이어그램에서 사람의 해당 부위에 착용 지점이 켜져 있는지 확인하세요.
-- 교체 기능이 활성화되어 있지 않은지 확인하세요. 구체적인 활성화 및 비활성화 방법은 [여기를 참조하세요](../ui_help_doc/remap#trackerreplace).
-- 착용 모드가 요구 사항을 충족하는지 확인하세요, [여기를 참조하세요](../tutorial/instroction_for_straps#followmode).
+- 교체 기능이 활성화되어 있지 않은지 확인하세요. 구체적인 활성화 및 비활성화 방법은 [여기를 참조하세요](../ui_help_doc/remap#tracker_replace).
+- 착용 모드가 요구 사항을 충족하는지 확인하세요, [여기를 참조하세요](../tutorial/instroction_for_straps#follow_mode).
 
 <a id="height_error"></a>
 

@@ -3,7 +3,7 @@ sidebar_position: 2
 title: "warudo Integration"
 ---
 # warudo Integration
-Configure VMC reception only, do not change other settings. If changes are made, please reset them. First, check the effect with only rebocap connected. Additionally, make sure to upload the skeleton to rebocap, [see here](README#vmc_instroction). Otherwise, it may easily lead to floating feet or significant issues with overall motion tracking.
+Configure VMC reception only, do not change other settings. If changes are made, please reset them. First, check the effect with only rebocap connected. Additionally, make sure to upload the skeleton to rebocap, [see here](README.md#vmc_instroction). Otherwise, it may easily lead to floating feet or significant issues with overall motion tracking.
 
 Below is a screenshot flowchart, which is very simple. For VMC reception, apart from the annotations 1 and 2 in the image, if you are unsure about the configuration changes you made, do not modify them!
 

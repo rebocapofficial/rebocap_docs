@@ -3,7 +3,7 @@ sidebar_position: 2
 title: "Configuraciones Básicas de VRChat"
 ---
 
-**¡Antes de leer este tutorial, asegúrate de [leer cuidadosamente la integración de SteamVR](README)!!! Si el icono del tracker de rebocap en SteamVR nunca se ha iluminado, ¡este tutorial no tiene sentido!!!**
+**¡Antes de leer este tutorial, asegúrate de [leer cuidadosamente la integración de SteamVR](README.md)!!! Si el icono del tracker de rebocap en SteamVR nunca se ha iluminado, ¡este tutorial no tiene sentido!!!**
 
 # Configuraciones Básicas de VRChat
 
@@ -78,7 +78,7 @@ Si los usuarios encuentran que hay menos puntos de seguimiento, ¡es probable qu
 ### Cómo Calibrar en VRChat
 Después de completar las configuraciones básicas mencionadas anteriormente, sigue los pasos a continuación:
 1. Presiona el botón Y en el controlador izquierdo para abrir el panel de configuraciones.
-2. Haz clic en el icono de la persona pequeña en el panel (siempre que se haya activado el tracker virtual en SteamVR; de lo contrario, el icono aquí no coincidirá con el de la imagen a continuación. Si no está claro, consulta la [Integración con SteamVR](README)).
+2. Haz clic en el icono de la persona pequeña en el panel (siempre que se haya activado el tracker virtual en SteamVR; de lo contrario, el icono aquí no coincidirá con el de la imagen a continuación. Si no está claro, consulta la [Integración con SteamVR](README.md)).
     > ![Botón de Calibración de Cuerpo Completo](../../../../../../static/img/vrchat_calibrate.png)
 3. Ajusta tu postura de pie y adopta una postura T (T-pose), asegurándote de que el punto de seguimiento en la parte superior del pie esté cerca del empeine. Si la esfera de rango verde está abierta, intenta hacer que la esfera sea lo más pequeña posible (los usuarios familiarizados con IK pueden ajustarla ellos mismos).
     > Si descubres que la parte superior de tu pie está debajo del piso, esto a menudo es causado por un error en VRChat. VRChat tiene problemas con el reconocimiento del suelo; por ejemplo, si colocas el controlador en el piso real, la posición del controlador en VRChat puede estar debajo del piso (lo mismo se aplica si está flotando).
@@ -101,7 +101,7 @@ Después de completar las configuraciones básicas mencionadas anteriormente, si
 
 - Comprueba si la interfaz de vista previa 3D es normal.
 - Comprueba si el tracker en la interfaz predeterminada de SteamVR es normal.
-    > Para detalles específicos, [por favor consulta aquí](README#how_to_solve_tracker_slant).
+    > Para detalles específicos, [por favor consulta aquí](README.md#how_to_solve_tracker_slant).
 - Comprueba si las configuraciones de teclas en VRC son consistentes con el tutorial anterior.
 
 ### ¿Por qué los brazos del personaje no pueden enderezarse en VRC?

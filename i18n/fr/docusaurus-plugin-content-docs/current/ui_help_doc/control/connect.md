@@ -37,7 +37,7 @@ Le panneau est divisé en quatre sous-panneaux. Le panneau `PC VR` s'affiche en 
 
     Seuls les utilisateurs de SteamVR doivent passer en mode VR. Pour les scénarios classiques tels que l'enregistrement d'animations ou la diffusion en direct non VR, passez en mode PC. Notez que si vous passez en mode VR et que la VR n'est pas connectée, cela repassera automatiquement en mode PC.
 
-    Si la VR ne peut pas se connecter, [veuillez vous référer ici](../../third_party_software_access/steamvr/README#vr_cannot_connect).
+    Si la VR ne peut pas se connecter, [veuillez vous référer ici](../../third_party_software_access/steamvr/README.md#vr_cannot_connect).
 
 5. Commutateur de Journal
 
@@ -214,7 +214,7 @@ Puisque le performeur portait le tracker sur l'estomac au lieu de la hanche pend
 
 1. **Indicateur de l'état de connexion SteamVR**
 
-   Si la connexion réussit, l'indicateur devient vert ; sinon il n'est pas connecté. Si la connexion échoue, veuillez vous référer à [ici](../../third_party_software_access/steamvr/README#vr_cannot_connect).
+   Si la connexion réussit, l'indicateur devient vert ; sinon il n'est pas connecté. Si la connexion échoue, veuillez vous référer à [ici](../../third_party_software_access/steamvr/README.md#vr_cannot_connect).
 
 2. **Réinitialisation du Lacet (Yaw reset)**
 

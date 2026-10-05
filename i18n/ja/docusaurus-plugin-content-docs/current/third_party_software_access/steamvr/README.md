@@ -4,7 +4,7 @@ title: "ヒント"
 ---
 
 # ヒント
-チュートリアルを読まずにこのページを読むことには意味がありません。[まずはチュートリアルをお読みください](../tutorial/README)！！！！ 
+チュートリアルを読まずにこのページを読むことには意味がありません。[まずはチュートリアルをお読みください](../../tutorial/README.md)！！！！
 
 # SteamVR 接続手順
 1. 初めて使用する場合は、ソフトウェアを開いた後、必ず SteamVR を再起動してください。VR パネルの左上隅の緑色のインジケーターが点灯していれば、VR 接続が成功したことを示します。[接続できない場合はここを参照してください](#vr_cannot_connect)
@@ -65,13 +65,13 @@ title: "ヒント"
 1. `steamvr` が起動しているか確認する
 2. `rebocap` レシーバーが挿入され、[接続状態](../../ui_help_doc/control/connect#status)にあるか確認する
 3. `steamvr` 内で `rebocap` プラグインがブロックされていないか確認します。また、ここで `rebocap` プラグインがインストールされているか確認できます。
-   
+
    <div align="center">
     <img src="/img/steamvr_mask1-jp.png" alt="left" width="9%" />
     <img src="/img/steamvr_mask2-jp.png" alt="left" width="29%" />
     <img src="/img/steamvr_mask3-jp.png" alt="left" width="29%" />
     </div>
-   
+
 4. 第三のステップで `steamvr` プラグインがインストールされていない場合は、以下の手順で手動でコピーインストールしてください。
 - `steamvr` のインストールディレクトリを見つけます。デフォルトのインストール場所は `C:\Program Files (x86)\Steam\steamapps\common\SteamVR` で、プラグインの場所は `steamvr` ディレクトリ内の `driver` ディレクトリにあります。
   > `SteamVR` のインストール場所を変更した場合は、自分で探してください。

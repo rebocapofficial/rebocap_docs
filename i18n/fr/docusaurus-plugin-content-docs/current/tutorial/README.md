@@ -44,7 +44,7 @@ Veuillez sélectionner le tutoriel correspondant à votre kit d'équipement. Les
 Après avoir terminé la calibration initiale, vous pouvez transmettre des données de mouvement vers des logiciels et jeux externes :
 
 - **SteamVR / VRChat** : Veuillez vous référer au 👉 **[Guide SteamVR](../rebocap-tutorials/steamvr_guide)** nouvellement créé (couvre les paramètres de limite SteamVR, la visibilité des nœuds et le dépannage de la connexion).
-- **Animation 3D & Plugins Directs** : Si vous vous connectez à Blender, Unity, UE ou un logiciel Vtuber, voir 👉 **[Plugins Directs & Intégration d'applications](../plugins/plugins)**.
+- **Animation 3D & Plugins Directs** : Si vous vous connectez à Blender, Unity, UE ou un logiciel Vtuber, voir 👉 **[Plugins Directs & Intégration d'applications](../plugins/plugins.md)**.
 
 ---
 
@@ -64,7 +64,7 @@ Pour des performances de capture de mouvement optimales ou si vous rencontrez de
 - L'orientation du tracker de pied et la tension de la sangle ont un impact significatif sur le contact au sol et les performances antidérapantes ;
 - Dans des environnements avec de fortes interférences magnétiques, vérifiez s'il est nécessaire d'activer le mode antimagnétique ;
 - Lorsque les trackers de pied ne sont pas portés, vérifiez s'il faut activer l'AI Engine pour la prédiction automatique des poses ;
-- Pour d'autres questions, n'hésitez pas à demander dans le [Support & Communauté](../README#community).
+- Pour d'autres questions, n'hésitez pas à demander dans le [Support & Communauté](../README.md#community).
 :::
 
 ---

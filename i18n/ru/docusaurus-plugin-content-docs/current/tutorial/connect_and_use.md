@@ -45,7 +45,7 @@ sidebar_label: "Руководство по подключению"
 
 Если результаты теста неудовлетворительны, могут быть следующие причины:
 1. Проблемы с магнитным полем; пожалуйста, [обратитесь сюда](../QA/magnet) для конкретных решений.
-2. Гироскопу может потребоваться калибровка; пожалуйста, [обратитесь сюда](../ui_help_doc/control/config#gyrocalibrate).
+2. Гироскопу может потребоваться калибровка; пожалуйста, [обратитесь сюда](../ui_help_doc/control/config#gyro_calibrate).
 3. Проблемы с ношением и натяжением; пожалуйста, [внимательно прочтите и обратитесь сюда](instroction_for_straps#tracker_position_on_body).
 
 :::
@@ -95,20 +95,20 @@ sidebar_label: "Руководство по подключению"
 <a id="third_party"></a>
 
 # Интеграция с программным обеспечением
-### Интеграция SteamVr [обратитесь сюда](../third_party_software_access/steamvr/README)
+### Интеграция SteamVr [обратитесь сюда](../third_party_software_access/steamvr/README.md)
 - Интеграция VRChat [обратитесь сюда](../third_party_software_access/steamvr/vrchat)
 - Руководство по интеграции от сообщества [https://kdocs.cn/l/cbZLGg2QeEHk](https://kdocs.cn/l/cbZLGg2QeEHk), если ссылка недоступна, пожалуйста, <a href="/img/files/RebocapVRchatTutorialEnglish.pdf"  target="_blank" download="RebocapVRchatTutorialEnglish.pdf">скачайте PDF файл</a> для просмотра (офлайн файл может не обновляться своевременно)
 
 
-### Интеграция для пользователей протокола VMC [обратитесь сюда](../third_party_software_access/VMC/README)
+### Интеграция для пользователей протокола VMC [обратитесь сюда](../third_party_software_access/VMC/README.md)
 - Интеграция warudo [обратитесь сюда](../third_party_software_access/VMC/warudo)
 
 # Важные элементы
 Чтобы избежать различных проблем во время использования (например, необъяснимого наклона трекеров) и обеспечить лучший опыт захвата движений, пожалуйста, обязательно прочтите следующие инструкции.
 
 ### Калибровка (Calibration) оборудования
-- [Калибровка магнитного поля (Magnetic Field Calibration)](../ui_help_doc/control/config#magnetcalibrate)
-- [Калибровка гироскопа (Gyroscope Calibration)](../ui_help_doc/control/config#gyrocalibrate)
+- [Калибровка магнитного поля (Magnetic Field Calibration)](../ui_help_doc/control/config#magnet_calibrate)
+- [Калибровка гироскопа (Gyroscope Calibration)](../ui_help_doc/control/config#gyro_calibrate)
 
 ### Как установить конфигурацию захвата движений в программном обеспечении
 - Для конфигурации магнитного поля, пожалуйста, прочтите [Инструкции, связанные с магнитным полем](../QA/magnet)

@@ -44,7 +44,7 @@ title: "新手入门与快速指南"
 完成基础校准后，您可以将动作数据输出至以下软件与游戏：
 
 - **SteamVR / VRChat**：请查阅全新编制的 👉 **[SteamVR 操作指南](../rebocap-tutorials/steamvr_guide)**（包含 SteamVR 边界配置、节点显示与隐藏、常见连接排查）。
-- **3D 动画与第三方插件**：如需接入 Blender、Unity、UE 或 Vtuber 软件，请查看 👉 **[直连插件与应用接入](../plugins/plugins)**。
+- **3D 动画与第三方插件**：如需接入 Blender、Unity、UE 或 Vtuber 软件，请查看 👉 **[直连插件与应用接入](../plugins/plugins.md)**。
 
 ---
 
@@ -64,7 +64,7 @@ title: "新手入门与快速指南"
 - 脚底追踪器的穿戴方向与松紧度对接地防滑影响很大；
 - 强磁干扰环境下建议了解是否需要开启抗磁；
 - 未穿戴足部追踪器时，可了解是否需要打开 AI 引擎自动预测姿态；
-- 更多疑难解答可随时到 [社区提问与交流](../README#community)。
+- 更多疑难解答可随时到 [社区提问与交流](../README.md#community)。
 :::
 
 ---

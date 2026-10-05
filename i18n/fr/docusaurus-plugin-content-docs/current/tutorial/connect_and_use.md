@@ -45,7 +45,7 @@ Veuillez vous référer à l'image ci-dessous pour les instructions de port. La 
 
 Si les résultats du test sont médiocres, il peut y avoir les raisons suivantes :
 1. Problèmes de champ magnétique ; veuillez [vous référer ici](../QA/magnet) pour des solutions spécifiques.
-2. Le gyroscope peut nécessiter une calibration ; veuillez [vous référer ici](../ui_help_doc/control/config#gyrocalibrate).
+2. Le gyroscope peut nécessiter une calibration ; veuillez [vous référer ici](../ui_help_doc/control/config#gyro_calibrate).
 3. Problèmes liés au port et à la traction ; veuillez [lire attentivement et vous référer ici](instroction_for_straps#tracker_position_on_body).
 
 :::
@@ -95,20 +95,20 @@ Les images de gauche à droite sont : `APose` `TPose` `SPose` `BPose`
 <a id="third_party"></a>
 
 # Intégration de logiciels
-### Intégration SteamVr [référez-vous ici](../third_party_software_access/steamvr/README)
+### Intégration SteamVr [référez-vous ici](../third_party_software_access/steamvr/README.md)
 - Intégration VRChat [référez-vous ici](../third_party_software_access/steamvr/vrchat)
 - Tutoriel d'intégration de la communauté [https://kdocs.cn/l/cbZLGg2QeEHk](https://kdocs.cn/l/cbZLGg2QeEHk), si le lien est inaccessible, veuillez <a href="/img/files/RebocapVRchatTutorialEnglish.pdf"  target="_blank" download="RebocapVRchatTutorialEnglish.pdf">télécharger le fichier PDF</a> pour le visualiser (le fichier hors ligne peut ne pas être mis à jour rapidement)
 
 
-### Intégration des utilisateurs du protocole VMC [référez-vous ici](../third_party_software_access/VMC/README)
+### Intégration des utilisateurs du protocole VMC [référez-vous ici](../third_party_software_access/VMC/README.md)
 - Intégration warudo [référez-vous ici](../third_party_software_access/VMC/warudo)
 
 # Éléments indispensables à connaître
 Pour éviter divers problèmes lors de l'utilisation (tels que des trackers s'inclinant inexplicablement) et pour garantir une meilleure expérience de capture de mouvement, veuillez vous assurer de lire les instructions suivantes.
 
 ### Calibration du matériel
-- [Calibration du champ magnétique](../ui_help_doc/control/config#magnetcalibrate)
-- [Calibration du gyroscope](../ui_help_doc/control/config#gyrocalibrate)
+- [Calibration du champ magnétique](../ui_help_doc/control/config#magnet_calibrate)
+- [Calibration du gyroscope](../ui_help_doc/control/config#gyro_calibrate)
 
 ### Comment définir la configuration de capture de mouvement dans le logiciel
 - Pour la configuration du champ magnétique, veuillez lire les [Instructions relatives au champ magnétique](../QA/magnet)

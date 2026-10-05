@@ -4,18 +4,19 @@ title: "Tips"
 ---
 
 # Tips
-Reading this page without going through the tutorial is meaningless. [Please read the tutorial first](../tutorial/README)!!!
+Reading this page without going through the tutorial is meaningless. [Please read the tutorial first](../tutorial/README.md)!!!
 
 
 # Official General Protocol Output Access
 
-### [SteamVR Access](steamvr/README)
+### [SteamVR Access](steamvr/README.md)
 - [VRChat Access](steamvr/vrchat)
 
-### [VMC Access](VMC/README)
+### [VMC Access](VMC/README.md)
 - [Warudo Access](VMC/warudo)
 
 # Other Access
+
 
 ### [Yunjing Virtual Live Streaming](https://fancyjing.com/home)
 
@@ -45,7 +46,7 @@ Reading this page without going through the tutorial is meaningless. [Please rea
     > [Click here to watch](https://www.bilibili.com/video/BV1fPbwzbEak)
 
 
-If you are accessing Blender, UE, or Unity, [please check the corresponding plugins](../plugins/plugins)
+If you are accessing Blender, UE, or Unity, [please check the corresponding plugins](../plugins/plugins.md)
 
 More to come!
 

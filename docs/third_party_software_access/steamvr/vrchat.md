@@ -3,7 +3,7 @@ sidebar_position: 2
 title: "VRChat Basic Settings"
 ---
 
-**Before reading this tutorial, please make sure to [carefully read the SteamVR integration](README)!!! If the rebocap tracker icon on SteamVR has never lit up, this tutorial is meaningless!!!**
+**Before reading this tutorial, please make sure to [carefully read the SteamVR integration](README.md)!!! If the rebocap tracker icon on SteamVR has never lit up, this tutorial is meaningless!!!**
 
 # VRChat Basic Settings
 
@@ -78,7 +78,7 @@ If users find that there are fewer tracking points, it is likely that they have 
 ### How to Calibrate in VRChat
 After completing the basic settings mentioned above, follow the steps below:
 1. Press the Y button on the left controller to open the settings panel.
-2. Click the little person icon on the panel (provided that the virtual tracker in SteamVR has been activated; otherwise, the icon here will not match the one in the image below. If unclear, please refer to [SteamVR Integration](README)).
+2. Click the little person icon on the panel (provided that the virtual tracker in SteamVR has been activated; otherwise, the icon here will not match the one in the image below. If unclear, please refer to [SteamVR Integration](README.md)).
     > ![Full Body Calibration Button](../../../static/img/vrchat_calibrate.png)
 3. Adjust your standing posture and strike a T-pose, ensuring that the tracking point on the top of your foot is near the top of your foot. If the green range sphere is open, try to make the sphere as small as possible (users familiar with IK can adjust it themselves).
     > If you find that the top of your foot is below the floor, this is often caused by a bug in VRChat. VRChat has issues with ground recognition; for example, if you place the controller on the real floor, the position of the controller in VRChat may be below the floor (the same applies if it is floating).
@@ -101,7 +101,7 @@ After completing the basic settings mentioned above, follow the steps below:
 
 - Check if the 3D preview interface is normal.
 - Check if the tracker in the default SteamVR interface is normal.
-    > For specifics, [please refer here](README#how_to_solve_tracker_slant).
+    > For specifics, [please refer here](README.md#how_to_solve_tracker_slant).
 - Check if the key settings in VRC are consistent with the tutorial above.
 
 ### Why Can't the Character's Arms Straighten in VRC?

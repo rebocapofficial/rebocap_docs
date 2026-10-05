@@ -45,7 +45,7 @@ Por favor, consulta la imagen a continuación para ver las instrucciones de uso.
 
 Si los resultados de la prueba son deficientes, puede haber las siguientes razones:
 1. Problemas de campo magnético; por favor [consulta aquí](../QA/magnet) para soluciones específicas.
-2. Es posible que el giroscopio necesite calibración; por favor [consulta aquí](../ui_help_doc/control/config#gyrocalibrate).
+2. Es posible que el giroscopio necesite calibración; por favor [consulta aquí](../ui_help_doc/control/config#gyro_calibrate).
 3. Problemas con el uso y el estiramiento; por favor [lee detenidamente y consulta aquí](instroction_for_straps#tracker_position_on_body).
 
 :::
@@ -95,20 +95,20 @@ Las imágenes de izquierda a derecha son: `APose` `TPose` `SPose` `BPose`
 <a id="third_party"></a>
 
 # Integración de Software
-### Integración con SteamVR [consulta aquí](../third_party_software_access/steamvr/README)
+### Integración con SteamVR [consulta aquí](../third_party_software_access/steamvr/README.md)
 - Integración con VRChat [consulta aquí](../third_party_software_access/steamvr/vrchat)
 - Tutorial de integración de la comunidad [https://kdocs.cn/l/cbZLGg2QeEHk](https://kdocs.cn/l/cbZLGg2QeEHk), si el enlace es inaccesible, por favor <a href="/img/files/RebocapVRchatTutorialEnglish.pdf"  target="_blank" download="RebocapVRchatTutorialEnglish.pdf">descarga el archivo PDF</a> para verlo (el archivo sin conexión podría no actualizarse de inmediato)
 
 
-### Integración de Usuarios del Protocolo VMC [consulta aquí](../third_party_software_access/VMC/README)
+### Integración de Usuarios del Protocolo VMC [consulta aquí](../third_party_software_access/VMC/README.md)
 - Integración con warudo [consulta aquí](../third_party_software_access/VMC/warudo)
 
 # Puntos Que Debes Saber
 Para evitar varios problemas durante el uso (como trackers que se inclinan inexplicablemente) y para garantizar una mejor experiencia de captura de movimiento, asegúrate de leer las siguientes instrucciones.
 
 ### Calibración (Calibration) de Hardware
-- [Calibración (Calibration) de Campo Magnético](../ui_help_doc/control/config#magnetcalibrate)
-- [Calibración del Giroscopio (Gyroscope Calibration)](../ui_help_doc/control/config#gyrocalibrate)
+- [Calibración (Calibration) de Campo Magnético](../ui_help_doc/control/config#magnet_calibrate)
+- [Calibración del Giroscopio (Gyroscope Calibration)](../ui_help_doc/control/config#gyro_calibrate)
 
 ### Cómo Establecer la Configuración de Captura de Movimiento en el Software
 - Para la configuración del campo magnético, por favor lee las [Instrucciones Relacionadas con el Campo Magnético](../QA/magnet)

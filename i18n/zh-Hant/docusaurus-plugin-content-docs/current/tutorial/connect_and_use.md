@@ -46,7 +46,7 @@ sidebar_label: "連接指南"
 
 如果測試效果不佳，可能有以下原因
 1. 磁場問題，具體解決方案請[參考這裡](../QA/magnet)
-2. 陀螺儀可能需要校準，請[參考這裡](../ui_help_doc/control/config#gyrocalibrate)
+2. 陀螺儀可能需要校準，請[參考這裡](../ui_help_doc/control/config#gyro_calibrate)
 3. 穿戴拉扯問題，請[仔細閱讀並參考這裡](instroction_for_straps#tracker_position_on_body)
 
 :::
@@ -99,12 +99,12 @@ sidebar_label: "連接指南"
 <a id="third_party"></a>
 
 # 軟體接入
-### SteamVr 接入 [請看這裡](../third_party_software_access/steamvr/README)
+### SteamVr 接入 [請看這裡](../third_party_software_access/steamvr/README.md)
 - VRChat 接入 [請看這裡](../third_party_software_access/steamvr/vrchat)
 - 社群接入教程 [https://kdocs.cn/l/crsa6MIP1mOd](https://kdocs.cn/l/crsa6MIP1mOd)，若無法連結訪問請<a href="/img/files/RebocapVRchat指南-中文.pdf"  target="_blank" download="RebocapVRchat指南-中文.pdf">下載PDF檔案</a>查看（離線檔案更新可能不及時）
 
 
-### VMC 協議用戶接入 [請看這裡](../third_party_software_access/VMC/README)
+### VMC 協議用戶接入 [請看這裡](../third_party_software_access/VMC/README.md)
 - warudo 接入 [請看這裡](../third_party_software_access/VMC/warudo)
 
 ### 抖音直播伴侶接取 [請看這裡影片](https://www.bilibili.com/video/BV1fPbwzbEak)
@@ -115,8 +115,8 @@ sidebar_label: "連接指南"
 為了避免使用中遇到的各種問題（比如跟蹤器莫名其妙歪了等問題），也為了您有更好的動捕體驗，請務必閱讀下述說明。
 
 ### 硬體校準
-- [磁場校準](../ui_help_doc/control/config#magnetcalibrate)
-- [陀螺儀校準](../ui_help_doc/control/config#gyrocalibrate)
+- [磁場校準](../ui_help_doc/control/config#magnet_calibrate)
+- [陀螺儀校準](../ui_help_doc/control/config#gyro_calibrate)
 
 ### 軟體上動捕配置項怎麼設置
 - 關於磁場部分配置，請閱讀[磁場相關說明](../QA/magnet)

@@ -3,7 +3,7 @@ sidebar_position: 2
 title: "VRChat 基本设置"
 ---
 
-**阅读本教程之前，请务必[仔细阅读 SteamVR 的接入](README)！！！如果steamVR上 rebocap 的跟踪器图标都没有点亮过，本教程没有任何意义！！！**
+**阅读本教程之前，请务必[仔细阅读 SteamVR 的接入](README.md)！！！如果steamVR上 rebocap 的跟踪器图标都没有点亮过，本教程没有任何意义！！！**
 
 # VRChat 基本设置
 
@@ -76,7 +76,7 @@ title: "VRChat 基本设置"
 ### 如何在VRChat中进行校准
 前述基础设置完成后，按照如下流程：
 1. 按左手柄Y按钮打开设置面板
-2. 点击面板中的小人图标（前提是 steamVR 中虚拟跟踪器已经被激活了，否则这里的图标和下图不一致，不清楚请查看 [SteamVR接入](README)）
+2. 点击面板中的小人图标（前提是 steamVR 中虚拟跟踪器已经被激活了，否则这里的图标和下图不一致，不清楚请查看 [SteamVR接入](README.md)）
     > ![全身校准按钮](../../../../../../static/img/vrchat_calibrate.png)
 3. 调节站姿，摆出Tpose，让脚背的跟踪器点位在脚背附近，如果打开了绿色的范围球，让范围球尽量小点（对IK非常熟悉的用户，可以自行调节）
     > 如果发现脚背在地板下边，这个往往是 VRChat 的Bug导致，VRChat对地面识别存在问题，比如你将手柄放置在现实中的地板，VRChat中手柄的位置可能在地板下边（如果悬空也是同理）。
@@ -100,7 +100,7 @@ title: "VRChat 基本设置"
 
 - 查看3D预览界面是否正常
 - 查看SteamVR默认界面中的跟踪器是否正常
-    > 具体[请查看这里](README#how_to_solve_tracker_slant)
+    > 具体[请查看这里](README.md#how_to_solve_tracker_slant)
 - 检查 VRC 关键设置是否和上述教程一致
 
 ### 为什么VRC中人物手臂无法伸直

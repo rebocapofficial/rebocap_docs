@@ -3,7 +3,7 @@ sidebar_position: 2
 title: "Paramètres de base VRChat"
 ---
 
-**Avant de lire ce tutoriel, assurez-vous de [lire attentivement l'intégration SteamVR](README) !!! Si l'icône du tracker rebocap sur SteamVR ne s'est jamais allumée, ce tutoriel est inutile !!!**
+**Avant de lire ce tutoriel, assurez-vous de [lire attentivement l'intégration SteamVR](README.md) !!! Si l'icône du tracker rebocap sur SteamVR ne s'est jamais allumée, ce tutoriel est inutile !!!**
 
 # Paramètres de base VRChat
 
@@ -78,7 +78,7 @@ Si les utilisateurs constatent qu'il y a moins de points de suivi, il est probab
 ### Comment calibrer dans VRChat
 Après avoir terminé les paramètres de base mentionnés ci-dessus, suivez les étapes ci-dessous :
 1. Appuyez sur le bouton Y de la manette gauche pour ouvrir le panneau des paramètres.
-2. Cliquez sur l'icône de petit bonhomme sur le panneau (à condition que le tracker virtuel dans SteamVR ait été activé ; sinon, l'icône ici ne correspondra pas à celle de l'image ci-dessous. Si ce n'est pas clair, veuillez vous référer à [Intégration SteamVR](README)).
+2. Cliquez sur l'icône de petit bonhomme sur le panneau (à condition que le tracker virtuel dans SteamVR ait été activé ; sinon, l'icône ici ne correspondra pas à celle de l'image ci-dessous. Si ce n'est pas clair, veuillez vous référer à [Intégration SteamVR](README.md)).
     > ![Bouton de calibration du corps entier](../../../../../../static/img/vrchat_calibrate.png)
 3. Ajustez votre posture debout et prenez une pose en T (T-pose), en vous assurant que le point de suivi sur le dessus de votre pied est près du dessus de votre pied. Si la sphère de plage verte est ouverte, essayez de rendre la sphère aussi petite que possible (les utilisateurs familiers avec l'IK peuvent l'ajuster eux-mêmes).
     > Si vous trouvez que le dessus de votre pied est sous le sol, cela est souvent dû à un bug de VRChat. VRChat a des problèmes de reconnaissance du sol ; par exemple, si vous placez la manette sur le sol réel, la position de la manette dans VRChat peut se trouver sous le sol (il en va de même si elle flotte).
@@ -101,7 +101,7 @@ Après avoir terminé les paramètres de base mentionnés ci-dessus, suivez les 
 
 - Vérifiez si l'interface d'aperçu 3D est normale.
 - Vérifiez si le tracker dans l'interface SteamVR par défaut est normal.
-    > Pour plus de détails, [veuillez vous référer ici](README#how_to_solve_tracker_slant).
+    > Pour plus de détails, [veuillez vous référer ici](README.md#how_to_solve_tracker_slant).
 - Vérifiez si les paramètres clés dans VRC sont conformes au tutoriel ci-dessus.
 
 ### Pourquoi les bras du personnage ne peuvent-ils pas se tendre dans VRC ?

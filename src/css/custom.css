@@ -601,3 +601,9 @@ details.plain-details > div > ol {
   clip: rect(0,0,0,0);
   border: 0;
 }
+/* Compatibility targets for heading fragments in the former GitBook URLs. */
+.legacy-anchor-alias {
+  display: block;
+  height: 0;
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 1rem);
+}

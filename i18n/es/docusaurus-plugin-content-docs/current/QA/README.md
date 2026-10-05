@@ -38,7 +38,7 @@ title: "¿Soporta Mac y Linux?"
 <a id="vr_height"></a>
 
 ## En el modo VR, la altura solicitada durante la calibración (Calibration) no coincide con la altura personal
-> El dispositivo Rebocap en sí no tiene la capacidad de medir la altura. La medición de altura se basa completamente en los datos proporcionados por los auriculares (headset). Para detalles, por favor [consulte aquí](../ui_help_doc/control/connect#vrpannel).
+> El dispositivo Rebocap en sí no tiene la capacidad de medir la altura. La medición de altura se basa completamente en los datos proporcionados por los auriculares (headset). Para detalles, por favor [consulte aquí](../ui_help_doc/control/connect#vr_pannel).
 
 <a id="port_open_failed"></a>
 
@@ -55,7 +55,7 @@ title: "¿Soporta Mac y Linux?"
 <a id="steamvr_connect"></a>
 
 ## SteamVR no se puede conectar
-> Por favor [consulte aquí](../third_party_software_access/steamvr/README#vr_cannot_connect).
+> Por favor [consulte aquí](../third_party_software_access/steamvr/README.md#vr_cannot_connect).
 
 ## Ajuste de esqueleto ineficaz
 > Por favor [consulte aquí](../ui_help_doc/control/skeleton_setting#skeleton_not_valid).
@@ -68,15 +68,15 @@ title: "¿Soporta Mac y Linux?"
 <a id="cal_exception"></a>
 
 ## Excepción de calibración (Calibration)
-- Considere que el modo de uso no cumple con los requisitos, [por favor consulte aquí](../tutorial/instroction_for_straps#followmode).
+- Considere que el modo de uso no cumple con los requisitos, [por favor consulte aquí](../tutorial/instroction_for_straps#follow_mode).
 - Considere las anomalías subyacentes del controlador, que requieren un retroceso del controlador y volver a conectar el receptor, [por favor consulte aquí](../tutorial/connect_and_use#how_to_solve_cannot_connect) (se necesitan ver métodos específicos en la sección ampliada).
 
 <a id="error_puts_on"></a>
 
 ## El uso no cumple los requisitos
 - Asegúrese de que los puntos desgastados se iluminen en las partes correspondientes de la persona en el diagrama superior izquierdo de la interfaz de usuario.
-- Asegúrese de que la función de reemplazo no esté habilitada. Para métodos específicos de habilitación y deshabilitación, [por favor consulte aquí](../ui_help_doc/remap#trackerreplace).
-- Asegúrese de que el modo de uso cumpla con los requisitos, [por favor consulte aquí](../tutorial/instroction_for_straps#followmode).
+- Asegúrese de que la función de reemplazo no esté habilitada. Para métodos específicos de habilitación y deshabilitación, [por favor consulte aquí](../ui_help_doc/remap#tracker_replace).
+- Asegúrese de que el modo de uso cumpla con los requisitos, [por favor consulte aquí](../tutorial/instroction_for_straps#follow_mode).
 
 <a id="height_error"></a>
 

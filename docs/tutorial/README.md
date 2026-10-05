@@ -44,7 +44,7 @@ Please select the tutorial corresponding to your equipment set. The guides cover
 After completing initial calibration, you can stream motion data to external software and games:
 
 - **SteamVR / VRChat**: Please refer to the newly created 👉 **[SteamVR Guide](../rebocap-tutorials/steamvr_guide)** (covers SteamVR boundary settings, node visibility, and connection troubleshooting).
-- **3D Animation & Direct Plugins**: If connecting to Blender, Unity, UE, or Vtuber software, see 👉 **[Direct Plugins & App Integration](../plugins/plugins)**.
+- **3D Animation & Direct Plugins**: If connecting to Blender, Unity, UE, or Vtuber software, see 👉 **[Direct Plugins & App Integration](../plugins/plugins.md)**.
 
 ---
 
@@ -64,7 +64,7 @@ For optimal motion capture performance or if you encounter issues, please make s
 - Foot tracker orientation and strap tightness significantly impact floor contact and anti-slip performance;
 - In environments with strong magnetic interference, check whether anti-magnetic mode needs to be enabled;
 - When foot trackers are not worn, check whether to enable the AI Engine for automatic pose prediction;
-- For more questions, feel free to ask in the [Community & Support](../README#community).
+- For more questions, feel free to ask in the [Community & Support](../README.md#community).
 :::
 
 ---

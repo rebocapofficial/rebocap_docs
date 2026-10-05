@@ -45,7 +45,7 @@ sidebar_label: "연결 가이드"
 
 테스트 결과가 좋지 않은 경우 다음과 같은 이유가 있을 수 있습니다:
 1. 자기장 문제; 구체적인 해결 방법은 [여기 참조](../QA/magnet)하세요.
-2. 자이로스코프 보정이 필요할 수 있습니다; [여기 참조](../ui_help_doc/control/config#gyrocalibrate)하세요.
+2. 자이로스코프 보정이 필요할 수 있습니다; [여기 참조](../ui_help_doc/control/config#gyro_calibrate)하세요.
 3. 착용 및 당김 문제; [주의 깊게 읽고 여기 참조](instroction_for_straps#tracker_position_on_body)하세요.
 
 :::
@@ -95,20 +95,20 @@ sidebar_label: "연결 가이드"
 <a id="third_party"></a>
 
 # 소프트웨어 연동
-### SteamVr 연동 [[여기 참조](../third_party_software_access/steamvr/README)]
+### SteamVr 연동 [[여기 참조](../third_party_software_access/steamvr/README.md)]
 - VRChat 연동 [[여기 참조](../third_party_software_access/steamvr/vrchat)]
 - 커뮤니티 연동 튜토리얼 [https://kdocs.cn/l/cbZLGg2QeEHk](https://kdocs.cn/l/cbZLGg2QeEHk)，링크에 접속할 수 없는 경우 <a href="/img/files/RebocapVRchatTutorialEnglish.pdf"  target="_blank" download="RebocapVRchatTutorialEnglish.pdf">PDF 파일을 다운로드</a>하여 확인하세요 (오프라인 파일은 즉시 업데이트되지 않을 수 있습니다).
 
 
-### VMC 프로토콜 사용자 연동 [[여기 참조](../third_party_software_access/VMC/README)]
+### VMC 프로토콜 사용자 연동 [[여기 참조](../third_party_software_access/VMC/README.md)]
 - warudo 연동 [[여기 참조](../third_party_software_access/VMC/warudo)]
 
 # 필수 확인 항목
 사용 중 발생할 수 있는 여러 가지 문제(예: 트래커가 알 수 없는 이유로 기울어짐)를 방지하고 더 나은 모션 캡처 경험을 보장하기 위해 다음 지침을 반드시 읽어주세요.
 
 ### 하드웨어 보정
-- [자기장 보정](../ui_help_doc/control/config#magnetcalibrate)
-- [자이로스코프 보정](../ui_help_doc/control/config#gyrocalibrate)
+- [자기장 보정](../ui_help_doc/control/config#magnet_calibrate)
+- [자이로스코프 보정](../ui_help_doc/control/config#gyro_calibrate)
 
 ### 소프트웨어에서 모션 캡처 구성 설정 방법
 - 자기장 구성은 [자기장 관련 지침](../QA/magnet)을 읽어보세요.

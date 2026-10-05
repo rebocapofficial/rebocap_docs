@@ -3,7 +3,7 @@ sidebar_position: 2
 title: "Integración con warudo"
 ---
 # Integración con warudo
-Configura la recepción VMC únicamente, no cambies otras configuraciones. Si se realizan cambios, por favor, restablecelos. Primero, comprueba el efecto solo con rebocap conectado. Además, asegúrate de subir el esqueleto a rebocap, [mira aquí](README#vmc_instroction). De lo contrario, puede provocar fácilmente que los pies floten o problemas significativos con el seguimiento de movimiento general.
+Configura la recepción VMC únicamente, no cambies otras configuraciones. Si se realizan cambios, por favor, restablecelos. Primero, comprueba el efecto solo con rebocap conectado. Además, asegúrate de subir el esqueleto a rebocap, [mira aquí](README.md#vmc_instroction). De lo contrario, puede provocar fácilmente que los pies floten o problemas significativos con el seguimiento de movimiento general.
 
 A continuación se muestra un diagrama de flujo con capturas de pantalla, que es muy simple. Para la recepción de VMC, además de las anotaciones 1 y 2 en la imagen, si no estás seguro de los cambios de configuración que realizaste, ¡no los modifiques!
 

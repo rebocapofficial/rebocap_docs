@@ -3,7 +3,7 @@ sidebar_position: 2
 title: "warudo 接入"
 ---
 # warudo 接入
-配置 VMC 接收即可，其它設定不要動，如果動了，請重新設定，先查看只有 rebocap 接入的效果，另外，一定要上傳骨架到 rebocap 中，[見這裡](README#vmc_instroction)。否則容易導致腳底懸空，或者整體運動跟隨問題較大。
+配置 VMC 接收即可，其它設定不要動，如果動了，請重新設定，先查看只有 rebocap 接入的效果，另外，一定要上傳骨架到 rebocap 中，[見這裡](README.md#vmc_instroction)。否則容易導致腳底懸空，或者整體運動跟隨問題較大。
 
 下邊是截圖流程圖，非常簡單，VMC 接收，除了圖中標註的 1、2 外，如果你不清楚你修改的配置是什麼，那麼不要修改！
 

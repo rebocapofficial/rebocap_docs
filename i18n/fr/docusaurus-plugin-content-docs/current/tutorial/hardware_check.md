@@ -10,7 +10,7 @@ title: "Vérification du déballage"
 
   - Tracker x 15
 
-    > Chaque tracker a une étiquette sur le fond avec un code numéroté correspondant et une partie du corps, comme le n° 1 pour le haut de la jambe gauche et le n° 3 pour le bas de la jambe gauche. La position des trackers est fixe sauf si vous utilisez la [fonction de remplacement](../ui_help_doc/remap#trackerreplace).
+    > Chaque tracker a une étiquette sur le fond avec un code numéroté correspondant et une partie du corps, comme le n° 1 pour le haut de la jambe gauche et le n° 3 pour le bas de la jambe gauche. La position des trackers est fixe sauf si vous utilisez la [fonction de remplacement](../ui_help_doc/remap#tracker_replace).
   - Récepteur x 1
   - Base de chargement x 1
 

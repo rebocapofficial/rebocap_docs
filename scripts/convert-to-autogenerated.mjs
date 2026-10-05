@@ -102,13 +102,6 @@ const CATEGORIES = {
     ja:      { label: '製品認証',                       collapsed: false },
     'zh-Hant': { label: '產品認證',                     collapsed: false },
   },
-  // ── reborn_access ──
-  reborn_access: {
-    en:      { label: 'Reborn Access',                  collapsed: false },
-    'zh-Hans': { label: 'Reborn Access',                collapsed: false },
-    ja:      { label: 'Reborn Access',                 collapsed: false },
-    'zh-Hant': { label: 'Reborn Access',                collapsed: false },
-  },
 };
 
 // sidebar_position values per file, matching current sidebar order.
@@ -151,8 +144,6 @@ const POSITIONS = {
   'SDK/README':                                                     1,
   // ── product_certification ──
   'product_certification/README':                                   1,
-  // ── reborn_access ──
-  'reborn_access/README':                                           1,
 };
 
 // Top-level category ordering (position in _category_.json)
@@ -165,7 +156,6 @@ const TOP_LEVEL_ORDER = [
   'plugins',                    // 6
   'SDK',                        // 7
   'product_certification',      // 8
-  'reborn_access',              // 9
 ];
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────

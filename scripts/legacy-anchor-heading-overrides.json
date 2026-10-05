@@ -1,0 +1,58 @@
+{
+  "en_US/tutorial/connect_and_use.html": {
+    "connection": { "tag": "h1", "text": "Connection Guide", "occurrence": 0 }
+  },
+  "zh_cn/tutorial/connect_and_use.html": {
+    "连接": { "tag": "h1", "text": "连接指南", "occurrence": 0 }
+  },
+  "zh_TW/tutorial/connect_and_use.html": {
+    "連接": { "tag": "h1", "text": "連接指南", "occurrence": 0 }
+  },
+  "ja_JP/tutorial/connect_and_use.html": {
+    "接続": { "tag": "h1", "text": "接続ガイド", "occurrence": 0 }
+  },
+  "en_US/tutorial/index.html": {
+    "be-sure-to-read-all-the-contents-in-this-directory-for-the-first-use": { "tag": "h3", "text": "📂 Quick Review of Individual Topics", "occurrence": 0 },
+    "must-know-items": { "tag": "h2", "text": "⚠️ 2. Important Notice (Magnetic Field Calibration)", "occurrence": 0 },
+    "video_tutorial": { "tag": "h2", "text": "📺 4. Video Tutorial & Community Support", "occurrence": 0 }
+  },
+  "zh_cn/tutorial/index.html": {
+    "首次使用务必依次阅读本目录下所有内容": { "tag": "h3", "text": "📂 单项教程快速回顾", "occurrence": 0 },
+    "必须了解项": { "tag": "h2", "text": "⚠️ 2. 核心注意事项(磁场校准)", "occurrence": 0 },
+    "video_tutorial": { "tag": "h2", "text": "📺 4. 视频教程与社区支持", "occurrence": 0 }
+  },
+  "zh_TW/tutorial/index.html": {
+    "首次使用務必依次閱讀本目錄下所有內容": { "tag": "h3", "text": "📂 單項教學快速回顧", "occurrence": 0 },
+    "必須了解項": { "tag": "h2", "text": "⚠️ 2. 核心注意事項(磁場校準)", "occurrence": 0 },
+    "video_tutorial": { "tag": "h2", "text": "📺 4. 影片教學與社區支援", "occurrence": 0 }
+  },
+  "ja_JP/tutorial/index.html": {
+    "初めて使用する際は必ずこのディレクトリ内のすべての内容を順番に読む": { "tag": "h3", "text": "📂 個別トピックのクイックレビュー", "occurrence": 0 },
+    "必須理解項目": { "tag": "h2", "text": "⚠️ 2. 重要注意事項(磁場校正)", "occurrence": 0 },
+    "video_tutorial": { "tag": "h2", "text": "📺 4. 動画チュートリアルとコミュニティサポート", "occurrence": 0 }
+  },
+  "en_US/tutorial/software_install.html": {
+    "software-download": { "tag": "h2", "text": "Download", "occurrence": 0 }
+  },
+  "zh_cn/tutorial/software_install.html": {
+    "软件下载": { "tag": "h2", "text": "下载", "occurrence": 0 }
+  },
+  "zh_TW/tutorial/software_install.html": {
+    "軟體下載": { "tag": "h2", "text": "下載", "occurrence": 0 }
+  },
+  "ja_JP/tutorial/software_install.html": {
+    "ソフトウェアダウンロード": { "tag": "h2", "text": "ダウンロード", "occurrence": 0 }
+  },
+  "zh_cn/tutorial/hardware_check.html": {
+    "开箱检查": { "tag": "h2", "text": "硬件说明", "occurrence": 0 }
+  },
+  "zh_TW/tutorial/hardware_check.html": {
+    "開箱檢查": { "tag": "h2", "text": "硬體說明", "occurrence": 0 }
+  },
+  "zh_cn/tutorial/instroction_for_straps.html": {
+    "跟踪器安装到绑带上": { "tag": "h3", "text": "跟踪器安装通用绑法", "occurrence": 0 }
+  },
+  "zh_TW/tutorial/instroction_for_straps.html": {
+    "跟蹤器安裝到綁帶上": { "tag": "h3", "text": "跟蹤器安裝通用綁法", "occurrence": 0 }
+  }
+}

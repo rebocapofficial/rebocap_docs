@@ -4,7 +4,7 @@ title: "Conseils"
 ---
 
 # Conseils
-Lire cette page sans parcourir le tutoriel n'a pas de sens. [Veuillez lire le tutoriel d'abord](../tutorial/README) !!!!
+Lire cette page sans parcourir le tutoriel n'a pas de sens. [Veuillez lire le tutoriel d'abord](../../tutorial/README.md) !!!!
 
 # Étapes d'intégration SteamVR
 1. Pour la première utilisation, veuillez vous assurer de redémarrer SteamVR après avoir ouvert le logiciel. Un voyant vert dans le coin supérieur gauche du panneau VR indique une intégration VR réussie. [Si vous ne pouvez pas vous connecter, veuillez voir ici](#vr_cannot_connect)

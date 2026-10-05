@@ -4,15 +4,15 @@ title: "Conseils"
 ---
 
 # Conseils
-Lire cette page sans parcourir le tutoriel n'a pas de sens. [Veuillez d'abord lire le tutoriel](../tutorial/README) !!!
+Lire cette page sans parcourir le tutoriel n'a pas de sens. [Veuillez d'abord lire le tutoriel](../tutorial/README.md) !!!
 
 
 # Accès au protocole général officiel en sortie
 
-### [Accès SteamVR](steamvr/README)
+### [Accès SteamVR](steamvr/README.md)
 - [Accès VRChat](steamvr/vrchat)
 
-### [Accès VMC](VMC/README)
+### [Accès VMC](VMC/README.md)
 - [Accès Warudo](VMC/warudo)
 
 # Autre accès
@@ -45,7 +45,7 @@ Lire cette page sans parcourir le tutoriel n'a pas de sens. [Veuillez d'abord li
     > [Cliquez ici pour regarder](https://www.bilibili.com/video/BV1fPbwzbEak)
 
 
-Si vous accédez à Blender, UE ou Unity, [veuillez vérifier les plugins correspondants](../plugins/plugins)
+Si vous accédez à Blender, UE ou Unity, [veuillez vérifier les plugins correspondants](../plugins/plugins.md)
 
 Plus à venir !
 

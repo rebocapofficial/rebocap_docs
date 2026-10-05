@@ -10,7 +10,7 @@ title: "Unboxing Check"
 
   - Tracker x 15
 
-    > Each tracker has a label on the bottom with a corresponding number code and body part, such as No. 1 for the left upper leg and No. 3 for the left lower leg. The position of the trackers is fixed unless you use the [replacement function](../ui_help_doc/remap#trackerreplace).
+    > Each tracker has a label on the bottom with a corresponding number code and body part, such as No. 1 for the left upper leg and No. 3 for the left lower leg. The position of the trackers is fixed unless you use the [replacement function](../ui_help_doc/remap#tracker_replace).
   - Receiver x 1
   - Charging Base x 1
 

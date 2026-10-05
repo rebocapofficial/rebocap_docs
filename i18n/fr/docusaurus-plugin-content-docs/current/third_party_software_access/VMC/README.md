@@ -4,14 +4,14 @@ title: "Conseils"
 ---
 
 # Conseils
-Lire cette page sans parcourir le tutoriel n'a pas de sens, [veuillez d'abord lire le tutoriel](../tutorial/README) !!!!
+Lire cette page sans parcourir le tutoriel n'a pas de sens, [veuillez d'abord lire le tutoriel](../../tutorial/README.md) !!!!
 
 <a id="vmc_instroction"></a>
 
 # Utilisation de VMC
 Le protocole VMC est très simple à utiliser. Après la calibration, vous pouvez activer le protocole VMC, [voir les détails ici](../../ui_help_doc/control/connect#cal_pc_panel), puis configurer la réception dans d'autres logiciels. VMC est un protocole de capture de mouvement universel, [voir les détails ici](https://protocol.vmc.info/english.html).
 
-Si vous êtes un streamer et que vous ne savez pas si votre logiciel prend en charge `rebocap`, veuillez vérifier si votre logiciel prend en charge le protocole VMC. Si votre logiciel ne le prend pas en charge, vous pouvez contacter le développeur pour utiliser notre [SDK](../../SDK/README) fourni pour l'intégration, ou utiliser directement nos [plugins](../../plugins/plugins) fournis pour l'intégration.
+Si vous êtes un streamer et que vous ne savez pas si votre logiciel prend en charge `rebocap`, veuillez vérifier si votre logiciel prend en charge le protocole VMC. Si votre logiciel ne le prend pas en charge, vous pouvez contacter le développeur pour utiliser notre [SDK](../../SDK/README.md) fourni pour l'intégration, ou utiliser directement nos [plugins](../../plugins/plugins.md) fournis pour l'intégration.
 
 :::info Notes pour les utilisateurs du protocole VMC
 

@@ -4,17 +4,18 @@ title: "提示"
 ---
 
 # 提示
-沒有閱讀教程的情況下，閱讀這個本頁面沒有任何意義，[請首先閱讀教程](../tutorial/README)！！！！
+沒有閱讀教程的情況下，閱讀這個本頁面沒有任何意義，[請首先閱讀教程](../tutorial/README.md)！！！！
 
 # 官方通用協議輸出接入
 
-### [steamvr 接入](steamvr/README)
+### [steamvr 接入](steamvr/README.md)
 - [VRChat 接入](steamvr/vrchat)
 
-### [VMC 接入](VMC/README)
+### [VMC 接入](VMC/README.md)
 - [warudo 接入](VMC/warudo)
 
 # 其它接入
+
 
 ### [雲鏡虛擬直播](https://fancyjing.com/home)
 
@@ -43,6 +44,6 @@ title: "提示"
     > [點擊這裡查看](https://www.bilibili.com/video/BV1fPbwzbEak/?vd_source=ab5d09bf7008397786577e8b648e5cac)
 
 
-如果是 blender、UE、Unity 的接入，[請查看對應的各個插件接入](../plugins/plugins)
+如果是 blender、UE、Unity 的接入，[請查看對應的各個插件接入](../plugins/plugins.md)
 
 其它敬請期待
