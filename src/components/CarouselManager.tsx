@@ -52,16 +52,7 @@ export default function CarouselManager() {
           slides.forEach((slide, index) => {
             const video = slide.querySelector('video');
             if (video) {
-              if (index === activeIndex) {
-                video.muted = true;
-                if (video.readyState > 0) {
-                    video.currentTime = 0;
-                }
-                const playPromise = video.play();
-                if (playPromise !== undefined) {
-                    playPromise.catch(e => console.warn('Autoplay prevented:', e));
-                }
-              } else {
+              if (index !== activeIndex) {
                 video.pause();
               }
             }

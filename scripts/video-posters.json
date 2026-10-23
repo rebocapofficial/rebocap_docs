@@ -1,0 +1,134 @@
+{
+  "/img/foot_bind.mp4": {
+    "poster": "/img/video-posters/ec482390ceb044a8efd3.jpg",
+    "width": 960,
+    "height": 770,
+    "sha256": "ec482390ceb044a8efd3972b681a1c8c299d5c9aef75b9471294472927204220"
+  },
+  "/img/for_blender_install/blender_usage.mp4": {
+    "poster": "/img/video-posters/a2eea2cdd66faa2d8649.jpg",
+    "width": 960,
+    "height": 512,
+    "sha256": "a2eea2cdd66faa2d8649e0b8e342e56f7534cb95c6dcd776c30540cd0b96c74a"
+  },
+  "/img/hardware_check.mp4": {
+    "poster": "/img/video-posters/691c97e740ad6cb6fa56.jpg",
+    "width": 960,
+    "height": 722,
+    "sha256": "691c97e740ad6cb6fa5639fb12b9bcfaf3e48c22c56673086aee7c82b48c0bb5"
+  },
+  "/img/kuaichai_complex.mp4": {
+    "poster": "/img/video-posters/9001e20982df6fa452de.jpg",
+    "width": 960,
+    "height": 540,
+    "sha256": "9001e20982df6fa452de14eb8c7df03927addae3edf83d6b2787da0b4f98b324"
+  },
+  "/img/kuaichai_normal.mp4": {
+    "poster": "/img/video-posters/dce3d0a6af6b33e79512.jpg",
+    "width": 960,
+    "height": 540,
+    "sha256": "dce3d0a6af6b33e79512b658015d901667949fee05cf17d75ce144f0f740d69f"
+  },
+  "/img/mag_calibrate.mp4": {
+    "poster": "/img/video-posters/2f666975996c0806763d.jpg",
+    "width": 960,
+    "height": 540,
+    "sha256": "2f666975996c0806763d28461265d656a7a9902f65ef29405c21239b2e01732b"
+  },
+  "/img/reborn_access-en.mp4": {
+    "poster": "/img/video-posters/e975847c10051706763a.jpg",
+    "width": 960,
+    "height": 516,
+    "sha256": "e975847c10051706763ab81fe73a531f242e1a0b8ee1739280b980deeba00725"
+  },
+  "/img/reborn_access-jp.mp4": {
+    "poster": "/img/video-posters/e975847c10051706763a.jpg",
+    "width": 960,
+    "height": 516,
+    "sha256": "e975847c10051706763ab81fe73a531f242e1a0b8ee1739280b980deeba00725"
+  },
+  "/img/reborn_access.mp4": {
+    "poster": "/img/video-posters/e975847c10051706763a.jpg",
+    "width": 960,
+    "height": 516,
+    "sha256": "e975847c10051706763ab81fe73a531f242e1a0b8ee1739280b980deeba00725"
+  },
+  "/img/remap_config.mp4": {
+    "poster": "/img/video-posters/885beb868f67d6b9a3b2.jpg",
+    "width": 960,
+    "height": 1294,
+    "sha256": "885beb868f67d6b9a3b28098cd44e1e27b2907d20479ef7e125526bc377cc775"
+  },
+  "/img/root_complex.mp4": {
+    "poster": "/img/video-posters/7318c608be07cc5c85e9.jpg",
+    "width": 960,
+    "height": 540,
+    "sha256": "7318c608be07cc5c85e909a053e0bdd3925b48be6751a13480e07207b77d5b85"
+  },
+  "/img/root_normal.mp4": {
+    "poster": "/img/video-posters/6616eca79caf40164b99.jpg",
+    "width": 960,
+    "height": 540,
+    "sha256": "6616eca79caf40164b99adea853759a38504df99aea7c504d1fdd5ed84c1e555"
+  },
+  "/img/softawre_install/show_version_log.mp4": {
+    "poster": "/img/video-posters/44800a9086ec30367ca3.jpg",
+    "width": 960,
+    "height": 658,
+    "sha256": "44800a9086ec30367ca330d0290cf274776e4fbc6ed4bc55054bcc064873d613"
+  },
+  "/img/steamvr_example.mp4": {
+    "poster": "/img/video-posters/e198369080f489db95f9.jpg",
+    "width": 960,
+    "height": 660,
+    "sha256": "e198369080f489db95f9951701306f6bb933c546a4a00239424d1f012e2a4996"
+  },
+  "/img/steamvr_guide/check_steamvr_addons_video -cns.mp4": {
+    "poster": "/img/video-posters/2d89782a3b919c31c9e7.jpg",
+    "width": 960,
+    "height": 666,
+    "sha256": "2d89782a3b919c31c9e7120d057a54f615b60c24b609e908db3b99bbc92d794a"
+  },
+  "/img/steamvr_guide/steamvr_windows_video.mp4": {
+    "poster": "/img/video-posters/e7897d94d84f7c0031a8.jpg",
+    "width": 960,
+    "height": 640,
+    "sha256": "e7897d94d84f7c0031a8a89da358bf195882f9bec1b481613186b2b4a551c5d6"
+  },
+  "/img/steamvr_guide/VR_headset_tracking_lost_video.mp4": {
+    "poster": "/img/video-posters/2636b5c79cf159c1e2e9.jpg",
+    "width": 960,
+    "height": 1280,
+    "sha256": "2636b5c79cf159c1e2e9ad5e3bb0a72afd0f4116c122d368c60e1fa1a61f3f4e"
+  },
+  "/img/tracker_complex.mp4": {
+    "poster": "/img/video-posters/4acba110589a8eef688d.jpg",
+    "width": 960,
+    "height": 540,
+    "sha256": "4acba110589a8eef688d94ad5f51171e9bd6b86cc79d738cf6b7c75231a51549"
+  },
+  "/img/tracker_normal.mp4": {
+    "poster": "/img/video-posters/ce25555be3153a64a14c.jpg",
+    "width": 960,
+    "height": 540,
+    "sha256": "ce25555be3153a64a14c5e62503414df94600803e9a53bfc129cc58cf4bbe3ba"
+  },
+  "/img/ue_plugin/ue_user_guide.mp4": {
+    "poster": "/img/video-posters/a9a4a4b2182dc9c82310.jpg",
+    "width": 960,
+    "height": 502,
+    "sha256": "a9a4a4b2182dc9c8231057c2975dd8f6709442e9bb6745058882325d8ee42d79"
+  },
+  "/img/unity_replace_vrm.mp4": {
+    "poster": "/img/video-posters/e249496880ec87d4682b.jpg",
+    "width": 960,
+    "height": 514,
+    "sha256": "e249496880ec87d4682b4d3bc76863bb94d9bc93f6dd1c7e6eb9c1d7a283770e"
+  },
+  "/img/vrc_calibrate.mp4": {
+    "poster": "/img/video-posters/1d22f9fe8d8f02cf4891.jpg",
+    "width": 960,
+    "height": 562,
+    "sha256": "1d22f9fe8d8f02cf4891870feadfe48a6a1e230106b9657bf67b3700fcdbf9d2"
+  }
+}

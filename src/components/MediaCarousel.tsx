@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {videoPoster} from './onDemandVideo';
 
 export default function MediaCarousel({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,9 +31,11 @@ export default function MediaCarousel({ items }) {
         {isVideo ? (
           <video
             key={currentItem}
-            src={currentItem}
+            data-video-src={currentItem}
+            poster={videoPoster(currentItem)}
+            data-on-demand-video="true"
             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'contain' }}
-            autoPlay
+            preload="none"
             loop
             muted
             playsInline

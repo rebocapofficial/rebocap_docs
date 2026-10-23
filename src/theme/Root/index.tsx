@@ -3,6 +3,7 @@ import OriginalRoot from "@theme-original/Root";
 import type RootType from "@theme/Root";
 import type { WrapperProps } from "@docusaurus/types";
 import CarouselManager from '@site/src/components/CarouselManager';
+import {loadVideo} from '@site/src/components/onDemandVideo';
 
 function BackToTop(): JSX.Element {
   const [visible, setVisible] = useState(false);
@@ -136,6 +137,7 @@ export default function RootWrapper({ children }: Props): JSX.Element {
       if (document.getElementById('custom-zoom-overlay')) {
         return;
       }
+      loadVideo(targetVideo);
 
       const overlay = document.createElement('div');
       overlay.id = 'custom-zoom-overlay';
@@ -238,7 +240,7 @@ export default function RootWrapper({ children }: Props): JSX.Element {
     };
 
     const injectVideoEnhancements = () => {
-      const videos = document.querySelectorAll('.markdown video');
+      const videos = document.querySelectorAll('.markdown video, video[data-on-demand-video]');
       videos.forEach((video) => {
         const videoEl = video as HTMLVideoElement;
         if (
@@ -366,6 +368,19 @@ export default function RootWrapper({ children }: Props): JSX.Element {
           parent.insertBefore(wrapper, videoEl);
           wrapper.appendChild(videoEl);
           wrapper.appendChild(btn);
+          if (videoEl.hasAttribute('data-on-demand-video') && !videoEl.dataset.videoLoaded) {
+            const playButton = document.createElement('button');
+            playButton.type = 'button';
+            playButton.className = 'video-load-button';
+            playButton.textContent = '▶';
+            playButton.setAttribute('aria-label', document.documentElement.lang.startsWith('zh') ? '点击加载并播放视频' : 'Load and play video');
+            playButton.onclick = (event) => {
+              event.preventDefault();event.stopPropagation();
+              loadVideo(videoEl);
+              videoEl.play().catch(() => {});
+            };
+            wrapper.appendChild(playButton);
+          }
 
           if (inCarousel) {
             videoEl.style.width = '100%';

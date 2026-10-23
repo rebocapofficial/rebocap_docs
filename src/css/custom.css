@@ -570,6 +570,17 @@ g {
 /* 全局给正文里的所有图片加上统一的 6px 圆角 */
 .markdown img {
   border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown video { max-width: 100%; object-fit: contain; background: #000; }
+.video-load-button {
+  position: absolute;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 64px; height: 64px; border-radius: 50%; border: 2px solid white;
+  background: rgba(0,0,0,.7); color: white; font-size: 28px;
+  cursor: pointer; z-index: 2;
 }
 
 /* ── CUSTOM TUTORIAL LAYOUT SYSTEM (MODULAR DESIGN) ─────────────────────── */

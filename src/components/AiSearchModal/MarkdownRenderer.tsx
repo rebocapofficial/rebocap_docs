@@ -1,4 +1,5 @@
 import React from 'react';
+import {videoPoster} from '../onDemandVideo';
 
 export function parseMarkdown(text: string): React.ReactNode[] {
   if (!text) return [];
@@ -42,9 +43,12 @@ export function parseMarkdown(text: string): React.ReactNode[] {
           <video
             controls
             loop
-            preload="metadata"
+            preload="none"
+            poster={videoPoster(normalizedUrl)}
+            data-on-demand-video="true"
             style={{
               maxWidth: '85%',
+              aspectRatio: '16 / 9',
               maxHeight: '320px',
               borderRadius: '8px',
               border: '1px solid var(--ifm-color-emphasis-200, #e2e8f0)',
@@ -53,7 +57,7 @@ export function parseMarkdown(text: string): React.ReactNode[] {
               margin: '0 auto',
             }}
           >
-            <source src={normalizedUrl} type="video/mp4" />
+            <source data-video-src={normalizedUrl} type="video/mp4" />
             您的浏览器不支持视频播放。
           </video>
           <span style={{ fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)', display: 'block', marginTop: '0.35rem' }}>

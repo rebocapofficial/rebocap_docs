@@ -108,6 +108,12 @@ const config: Config = {
           // editUrl: 'https://github.com/rebocapofficial/rebocap_docs/tree/main/',
           showLastUpdateTime: true,
           numberPrefixParser: false,
+          rehypePlugins: [[require('./scripts/rehype-image-dimensions.cjs'), {
+            // Invalidate cached MDX when the media transform changes.
+            cacheKey: require('node:crypto').createHash('sha256').update(
+              require('node:fs').readFileSync(require.resolve('./scripts/rehype-image-dimensions.cjs')),
+            ).update(require('node:fs').readFileSync(require.resolve('./scripts/video-posters.json'))).digest('hex'),
+          }]],
         },
         blog: false,
         theme: {

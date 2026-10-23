@@ -42,3 +42,22 @@ Avoid self-closing non-void HTML elements such as `<a />` in `.md` files.
 Keep carousel CSS in `src/css/steamvr-carousel.css` rather than a literal MDX
 `<style>` body: quoted CSS selectors can be HTML-escaped by SSR but interpreted
 as raw text by the browser, causing hydration mismatches.
+
+## Media and first-load anchor positions
+
+`rehype-image-dimensions.cjs` reserves local image space at compile time,
+including images with percentage widths. Responsive CSS caps images at their
+container width and keeps height automatic. Videos reserve a stable frame and
+store their URLs as `data-video-src`, with `preload="none"` and no autoplay.
+`onDemandVideo.ts` attaches those URLs only in a user play/zoom action.
+Carousel changes must not call `play()` on an unrequested video.
+
+Videos show a static first-frame JPG before playback. The shared
+`video-posters.json` manifest maps MP4 paths to their posters and frame ratios.
+When adding/replacing an MP4, run `node scripts/generate-video-posters.mjs`
+with FFmpeg on PATH (or set `FFMPEG_PATH`), then commit the manifest and JPGs
+under `static/img/video-posters/`. Production deployments need no FFmpeg.
+
+`check-media-layout.mjs` checks all built pages for reserved image/video space
+and eager video sources. The hydration check also tests initial video sources
+and play-button behavior when run with `CHECK_MEDIA=1`.

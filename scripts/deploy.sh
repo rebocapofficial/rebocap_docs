@@ -156,6 +156,7 @@ fi
 # 构建成功后，将 build 产物移动到暂存区
 log "Checking source-rendered legacy heading aliases and internal page links..."
 "$NODE_BIN" "$PROJECT_DIR/scripts/check-anchor-aliases.mjs"
+"$NODE_BIN" "$PROJECT_DIR/scripts/check-media-layout.mjs"
 "$NODE_BIN" "$PROJECT_DIR/scripts/check-internal-links.mjs"
 rm -rf "$STAGING_DIR"
 mv build "$STAGING_DIR"

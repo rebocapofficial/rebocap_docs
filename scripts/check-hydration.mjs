@@ -28,6 +28,11 @@ async function check(page, aliases, injectMismatch=false) {
       w.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){},addListener(){},removeListener(){}});
       w.IntersectionObserver=class{observe(){}unobserve(){}disconnect(){}};
       w.ResizeObserver=class{observe(){}unobserve(){}disconnect(){}};
+      if(process.env.CHECK_MEDIA==='1') {
+        w.HTMLMediaElement.prototype.load=function(){this.dataset.testLoads=String(Number(this.dataset.testLoads||0)+1)};
+        w.HTMLMediaElement.prototype.play=function(){this.dataset.testPlays=String(Number(this.dataset.testPlays||0)+1);return Promise.resolve()};
+        w.HTMLMediaElement.prototype.pause=function(){};
+      }
       // jsdom has no layout. Give headings nonzero boxes so Docusaurus's TOC
       // visibility code doesn't recurse through zero-height ancestors forever.
       w.Element.prototype.getBoundingClientRect=()=>({top:0,left:0,bottom:1,right:1,width:1,height:1});
@@ -36,9 +41,21 @@ async function check(page, aliases, injectMismatch=false) {
   await new Promise(resolve=>dom.window.addEventListener('load',resolve,{once:true}));
   for(let i=0;i<50&&!dom.window.docusaurusRoot;i++) await new Promise(resolve=>setTimeout(resolve,100));
   for(let i=0;i<100&&dom.window.docusaurusRoot?._internalRoot?.current?.memoizedState?.isDehydrated;i++) await new Promise(resolve=>setTimeout(resolve,50));
+  // Let passive effects add the user-facing play controls after hydration.
+  await new Promise(resolve=>setTimeout(resolve,50));
   const missing=aliases.filter(a=>!dom.window.document.getElementById(a.id));
   if(!dom.window.docusaurusRoot) errors.push('React root not initialized');
   if(dom.window.docusaurusRoot?._internalRoot?.current?.memoizedState?.isDehydrated) errors.push('Hydration did not finish');
+  if(process.env.CHECK_MEDIA==='1'&&!injectMismatch) {
+    for(const video of dom.window.document.querySelectorAll('video[data-on-demand-video]')) {
+      if(video.getAttribute('src')||video.querySelector('source[src]')||video.dataset.testLoads||video.dataset.testPlays)errors.push('Video loaded before user interaction');
+      const button=video.closest('.video-zoom-wrapper')?.querySelector('.video-load-button');
+      if(!button){errors.push('Video play button missing');continue;}
+      button.click();
+      if(!video.dataset.videoLoaded||!video.dataset.testLoads||!video.dataset.testPlays)errors.push('Click did not load and play video');
+      for(const el of [video,...video.querySelectorAll('source')])if(el.dataset.videoSrc&&el.getAttribute('src')!==el.dataset.videoSrc)errors.push('Deferred video URL not restored');
+    }
+  }
   const hydration=errors.filter(e=>/418|423|425|hydration|Hydration/i.test(e));
   dom.window.close();
   return {page,missing:missing.map(a=>a.id),hydration,other:errors.filter(e=>!hydration.includes(e))};
