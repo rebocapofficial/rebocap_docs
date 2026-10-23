@@ -5,7 +5,7 @@ title: "SDK 接口說明"
 <span id="sdk-接口說明" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # SDK 接口說明
-目前DLL整體對外暴露8個端口，各個SDK是對DLL接口的封裝，可自行查看 cpp sdk中的 `include/rebocap_ws_sdk/rebocap_ws_sdk.h` 頭文件查看。
+目前 DLL 對外提供 8 個介面，各個 SDK 是對 DLL 介面的封裝，具體請查看 cpp sdk 中的 `include/rebocap_ws_sdk/rebocap_ws_sdk.h` 標頭檔。
 
 SDK 輸出的數值類型為四元數，可以支持多種坐標空間輸出【默認的 opengl右手坐標系、blender、unity、ue】，輸出的位移單位是 米。
 

@@ -16,10 +16,10 @@ title: "VRChat 基本設定"
  <img src="/img/vrchat_simple_setting.png" alt="left" width="45%" />
  </div>
 
-基礎 IK 設定介紹關鍵點介紹：
+基礎 IK 設定要點：
 1. 調節 VRChat 中的身高
 
-    > 使用者真實身高，這裡填寫和 Rebocap 中測量一致的身高即可，而不應該填寫你的真實身高！因為所有的跟踪器都是按照 Rebocap 測量的高度來模擬的
+    > 此處請填寫 Rebocap 顯示的身高，而不應該填寫你的真實身高！因為所有的跟踪器都是按照 Rebocap 測量的高度來模擬的
     > 
     > Rebocap 測量身高是頭顯身高 * 1.05，關於身高測量錯誤[請查看這裡](../../ui_help_doc/control/connect#vr_pannel)。
     > 
@@ -33,7 +33,7 @@ title: "VRChat 基本設定"
 
 2. 調節 VRChat 測量模式
 
-    > 剛使用VRChat全身動捕的使用者，統一使用 `Height` 模式！對 VRChat IK 熟悉的使用者，可以考慮使用 Arm 模式，配合 Arm
+    > 剛使用VRChat全身動捕的使用者，統一使用 `Height` 模式！對 VRChat IK 熟悉的使用者，可以考慮使用 Arm 模式，配合下文的手臂身高比例設定使用
 
 3. 是否允許全身追蹤
 
@@ -43,7 +43,7 @@ title: "VRChat 基本設定"
   > 這個可以自行調節查看不同效果，如果不清楚，可以使用 LockHip 或者 LockHead，效果會有比較大的出入，特別是在坐下或者躺下的姿態會存在出入
 
 ### vrchat 高級 IK 設定介紹
-打開基礎設定請按照以下步驟： 按手柄的 Y 按鈕召喚菜單->點擊world，出現大的設定面板->點擊齒輪圖標->選擇左側 `Tracking & IK`，如圖所示
+開啟進階設定請按照以下步驟： 按手柄的 Y 按鈕召喚菜單->點擊world，出現大的設定面板->點擊齒輪圖標->選擇左側 `Tracking & IK`，如圖所示
 <div align="center">
  <img src="/img/vrchat_advanced_setting.png" alt="left" width="24%" />
  <img src="/img/vrchat_advanced_setting2.png" alt="left" width="24%" />
@@ -113,7 +113,7 @@ title: "VRChat 基本設定"
 <span id="為什麼vrc中�人物手臂無法伸直" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### 為什麼VRC中人物手臂無法伸直
-- 和模型骨架與自身骨架不匹配導致，如果模型骨架的手臂偏短，就比較容易伸直，核心是骨骼比例和現實人物不一致導致。
+- 這是模型骨架與自身骨架不匹配導致的。作為對照，模型的手臂相對於真人偏短時，通常更容易伸直；相對於真人偏長時，為了讓虛擬手部與現實手部的位置保持一致，虛擬人物的手臂更容易彎曲。核心原因是模型的骨骼比例與真人不一致。
   > 高級玩家可以自行嘗試使用 Arm 模式，然後修改 `arm vs height ratio`。
   > 
   > 這裡舉個極端例子方便玩家理解，比如虛擬人物的手臂有3米，人物本身的高度只有1.7米，現實中人物雙臂正常下垂的位置在腰這裡，但是 VRChat 必須要尊重現實中手部的位置，那麼只能將虛擬人物的手臂彎曲一定的角度了。
@@ -140,7 +140,7 @@ title: "VRChat 基本設定"
 關於1、2兩個點，具體描述請仔細[閱讀教程部分](../../tutorial/instroction_for_straps#tracker_position_recomendation)
 
 ### 怎麼提升穩定性
-1. 綁帶使用[複雜綁定方法](../../tutorial/instroction_for_straps#quick_fix_complex_install)，或者使用購買寬綁帶
+1. 綁帶使用[複雜綁定方法](../../tutorial/instroction_for_straps#quick_fix_complex_install)，或者使用寬綁帶
 2. 腳底傳感器處理比較重要，[請查看這裡](../../tutorial/instroction_for_straps#tracker_position_on_body)
 3. 跳舞使用者，特別是激烈的熱舞，建議找到磁場環境相對較好，關閉抗磁模式使用
 

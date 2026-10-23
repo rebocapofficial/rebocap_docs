@@ -17,7 +17,7 @@ unity sdk v4 更新日誌
 unity sdk v3 更新日誌
 > 修復 il2cpp backend 模式下，無法打包以及打包後運行報錯的bug
 
-:::info 提示：必须安装`VRM`插件: [`UniVRM`](https://github.com/vrm-c/UniVRM/releases/tag/v0.117.0)
+:::info 提示：必須安裝`VRM`插件: [`UniVRM`](https://github.com/vrm-c/UniVRM/releases/tag/v0.117.0)
 
 :::
 

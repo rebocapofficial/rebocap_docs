@@ -16,14 +16,14 @@ title: "常見問題"
 <a id="poor_signal"></a>
 
 ## 信號質量較差怎麼處理
-> 首先檢查[信號強度](../ui_help_doc/info#hardware_detail)，確保接收器以及跟踪器附近沒有其它較強信號干擾或者屏蔽，比如接收器不要放置再機箱背部，另外接收器附近不要有U盤等。
+> 首先檢查[信號強度](../ui_help_doc/info#hardware_detail)，確保接收器以及跟踪器附近沒有其它較強信號干擾或者屏蔽，比如接收器不要放置在機箱背部，另外接收器附近不要有U盤等。
 > 
 > 其次確保 `CPU` 負載不要太高，或者`CPU`本身處於省電模式，儘量保障 `CPU` 負載在 70% 以內，同時排除 `CPU` 主頻太低問題，例如筆記本散熱不佳，可能導致主頻低於 `2.5GHz`。
 
 <a id="not_static"></a>
 
 ## 校準時未檢測到人物靜止
-> 一般情況下，我們保持 `Apose` 會存在前後一定幅度的前後晃動，請儘量控制，另外，校準細則請[參考這裡](../tutorial/connect_and_use#pose_calibration)。
+> 一般情況下，我們保持 `Apose` 會存在以一定幅度前後晃動，請儘量控制，另外，校準細則請[參考這裡](../tutorial/connect_and_use#pose_calibration)。
 
 <a id="send_failed"></a>
 
@@ -43,7 +43,7 @@ title: "常見問題"
 <a id="port_open_failed"></a>
 
 ## 廣播端口啟動失敗
-> 端口被佔用，或者上一个 `rebocap` 實例存在進程殘留，確保 `rebocap` 只會開啟一個，並且任務管理器中只存在一個 `rebocap` 進程。
+> 端口被佔用，或者上一個 `rebocap` 實例存在進程殘留，確保 `rebocap` 只會開啟一個，並且任務管理器中只存在一個 `rebocap` 進程。
 
 <a id="connect_failed"></a>
 
@@ -84,7 +84,7 @@ title: "常見問題"
 <a id="height_error"></a>
 
 ## 頭顯高度異常
-- 如果檢測高度低於10cm，那麼很有可能是steamvr驅動測異常，可能存在 unicode 系統名稱，也就是非英文系統名稱導致，後續會修復，目前的解決方案可以通過修改安裝位置嘗試解決（[請看這裡](../third_party_software_access/steamvr/#other_notes)），如果依然無法解決這個問題，[請論壇聯繫](https://forum.rebocap.site)，我們會有專門技術人員協助處理。
+- 如果檢測高度低於10cm，那麼很有可能是steamvr驅動檢測異常，可能存在 unicode 系統名稱，也就是非英文系統名稱導致，後續會修復，目前的解決方案可以通過修改安裝位置嘗試解決（[請看這裡](../third_party_software_access/steamvr/#other_notes)），如果依然無法解決這個問題，[請論壇聯繫](https://forum.rebocap.site)，我們會有專門技術人員協助處理。
 - 如果是頭顯高度和自身不匹配，可以首先[查看這裡](../ui_help_doc/control/connect#vr_pannel)，也可以看下論壇的帖子
   - [中文版本](https://forum.rebocap.site/t/rebocap/52/1)
   - [英文版本](https://forum.rebocap.site/t/how-to-solve-the-abnormal-height-detection-in-rebocap/53/1)

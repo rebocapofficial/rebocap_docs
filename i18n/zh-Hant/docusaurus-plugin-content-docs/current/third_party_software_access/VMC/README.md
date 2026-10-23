@@ -6,7 +6,7 @@ title: "VMC 協議接入"
 <span id="提示" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 提示
-沒有閱讀教程的情況下，閱讀這個本頁面沒有任何意義，[請首先閱讀教程](../../tutorial/README.md)！！！！
+沒有閱讀教程的情況下，閱讀本頁面沒有任何意義，[請首先閱讀教程](../../tutorial/README.md)！！！！
 
 
 <a id="vmc_instroction"></a>

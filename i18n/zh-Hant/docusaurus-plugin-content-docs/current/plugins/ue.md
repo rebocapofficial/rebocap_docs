@@ -6,7 +6,7 @@ title: "UE 插件下載"
 
 # UE 插件下載
 
-以下是下載連結，UE查看源代碼開發，可自行編譯，目前插件只適用於 `UE5` 版本。
+以下是下載連結。外掛提供原始碼，可自行檢視、修改與編譯，目前只適用於 `UE5` 版本。
 
 <a href="/img/ue_plugin/rebocap_unreal_engine_plugin_v2.zip" target="_blank" download="rebocap_unreal_engine_plugin.zip">ue plugin source</a>
 
@@ -28,7 +28,7 @@ title: "UE 插件下載"
 
 1. **在UE中新建工程**
 
-   藍圖或者c++工程均可，如果需要二次開發插件，需要建立`c++`項目，導入人物（人物的默認姿態必須是`T-Pose`，不可是`A-Pose`，否則手臂表現將會異常），然後打開工程所在文件夾，新建文件夾 `Plugins 文件夾`，然後將`rebocap_unreal_engine_plugin`放入到`Plugins`中，例如新建 `testV3`工程，那麼整體目錄結構如下：
+   藍圖或者c++工程均可，如果需要二次開發插件，需要建立`c++`項目，導入人物（人物的默認姿態必須是`T-Pose`，不可是`A-Pose`，否則手臂表現將會異常），然後打開工程所在文件夾，建立名為 `Plugins` 的資料夾，然後將`rebocap_unreal_engine_plugin`放入到`Plugins`中，例如新建 `testV3`工程，那麼整體目錄結構如下：
 
     <div align="center">
     <img src="/img/ue_plugin/ue1.png" alt="pic_left" width="80%" />
@@ -73,7 +73,7 @@ title: "UE 插件下載"
 
    主要動作控制相關代碼在`Source\rebocap\Private\rebocap_pose_node.cpp`中，其它屬於周邊相關代碼例如`dll`調用和`livelink`。其中，`Init_Foot_Vertices_And_SkeletalData` 函數用於獲取人物的默認骨架位置以及 `vert` 點位，計算雙腳腳底用於地面接觸的6個點【每隻腳6個】，由於是自動計算可能不夠精確，用戶可以自行找到腳底的6個點位傳參進去可能會更精確。
 
-   PS：腳低尺寸較大的可能會導致人物上下震盪，舉一個極端的例子，比如2米的大長腳，人物也只有2米，踮腳然後落地，如果需要保持腳尖接觸地面，肯定人物就會上下起伏。
+   PS：腳底尺寸較大的可能會導致人物上下震盪，舉一個極端的例子，比如2米的大長腳，人物也只有2米，踮腳然後落地，如果需要保持腳尖接觸地面，肯定人物就會上下起伏。
 
 5. **打包說明**
 
@@ -88,7 +88,7 @@ title: "UE 插件下載"
 2. 對於`runtime`模式（`standalone or game mode`，也就是打包後運行)，由於暫時還沒有找到`runtime`模式下獲取 mesh 頂點的方法，因此打包以後，自動骨骼註冊不包含腳底，腳底的表現會比 `Editor` 模式下差一點點，未來會解決這個問題。
 
 ### 視頻操作演示
-這裡沒有聲音，作為臨時使用，後續會更像
+這裡沒有聲音，作為臨時使用，後續會更新
 
 <div>
 <video id="video" controls preload="metadata" width="100%">
@@ -98,7 +98,7 @@ title: "UE 插件下載"
 
 <span id="meta-human（或者預設-apose-人物）修改為-tpose（apose-轉-tpose" class="legacy-anchor-alias" aria-hidden="true"></span>
 
-### Meta Human（或者預設 Apose 人物）修改為 TPose（APose 轉 TPose
+### MetaHuman（或預設 A-Pose 人物）轉為 T-Pose
 
 > 注意，A-pose 必須要和官方的一致才可以，否則建議自行手動修改角度，將 Apose 處理為 Tpose 臨時角度文件保存，具體參考下邊壓縮包內教程。
 

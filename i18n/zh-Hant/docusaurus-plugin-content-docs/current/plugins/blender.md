@@ -15,7 +15,7 @@ title: "Blender 插件下載"
 > -修復 rebocap 插件進程殘留 bug
 > -修復骨架導出 BUG，解決實時驅動情況下腳底不穩定的問題。
 > -支持所有 Python 3 的版本，例如可以支持 Blender 4.1
-> -支持 Mixamo 骨架直接，可以自動綁定
+> -支援直接使用 Mixamo 骨架，並可自動綁定
 > -修復 FBX 模型驅動的 bug
 > -修復動畫錄製軸向 bug
 > -增加骨骼吸附選取功能
@@ -23,8 +23,8 @@ title: "Blender 插件下載"
 
 <span id="blender-教程视频" class="legacy-anchor-alias" aria-hidden="true"></span>
 
-# Blender 教程视频
-注意：视频没有声音！
+# Blender 影片教學
+注意：影片沒有聲音！
 
 <div>
 <video id="video" controls preload="metadata" width="100%">
@@ -65,16 +65,16 @@ title: "Blender 插件下載"
 <span id="骨骼綁定" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 骨骼綁定
-1. VRM 骨骼自动绑定
-2. FBX 如果使用 Mixamo 骨骼规范，采用 direct 模式可以自动绑定，即 direct 模式下，可以驱动所有 Mixamo 的 avatar。
-  > 但是脚底的12个固定点位需要手动选择（如果对脚底效果要求不高，可以忽略）。
+1. VRM 骨骼自動綁定
+2. FBX 如果使用 Mixamo 骨骼規範，採用 direct 模式可以自動綁定，即 direct 模式下，可以驅動所有 Mixamo 的 avatar。
+  > 但是腳底的 12 個固定點位需要手動選擇（如果對腳底效果要求不高，可以忽略）。
 
 :::danger 提醒！！！
 
 
 必須在rebocap客戶端打開以後，並且動作校準以後再點擊 `connect`，否則可能需要重啟 blender 才能繼續實時動作捕捉。
 
-綁定的人物骨骼是驅動的 hip 節點，如果 hip 節點不是根骨個，或者無法移動 hip 節點（部分骨架強行將 hip 和 root 關聯，並且hip的local位移無法改變），那麼可能人物的屁股始終在原地。
+綁定的人物骨骼是驅動的 hip 節點，如果 hip 節點不是根骨骼，或者無法移動 hip 節點（部分骨架強行將 hip 和 root 關聯，並且hip的local位移無法改變），那麼可能人物的屁股始終在原地。
 
 :::
 

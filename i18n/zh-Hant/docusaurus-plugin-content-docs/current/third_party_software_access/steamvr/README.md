@@ -6,14 +6,14 @@ title: "SteamVR 協議接入"
 <span id="提示" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 提示
-沒有閱讀教程的情況下，閱讀這個本頁面沒有任何意義，[請首先閱讀教程](../../tutorial/README.md)！！！！
+沒有閱讀教程的情況下，閱讀本頁面沒有任何意義，[請首先閱讀教程](../../tutorial/README.md)！！！！
 
 <span id="steamvr-接入步驟" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # SteamVR 接入步驟
 1. 首次使用，打開軟體後請務必重啟 SteamVr，VR面板左上角綠色指示燈亮起則表示 VR 接入成功。[無法接入請看這裡](#vr_cannot_connect)
-2. 至少穿戴8個點位，然後點擊動作校準，其中，校準Apose期間，頭顯必須正確佩戴【特別是快速滴滴滴響起】，具體[校準流程請參考這裡](../../tutorial/connect_and_use#pose_calibration)
-    > 大腿、小腿、腰部、胸部屬於必須佩戴，腳底如果不佩戴，只能使用 [跟隨模式](../../ui_help_doc/control/connect#vr_pannel)！
+2. 推薦按 6 點模式穿戴：左右大腿、左右小腿、腰部和胸部。最低支援 5 個點位，即在 6 點模式下不佩戴胸部追蹤器。然後點擊動作校準，其中，校準 A-Pose 期間，頭顯必須正確佩戴【特別是快速滴滴滴響起時】，具體[校準流程請參考這裡](../../tutorial/connect_and_use#pose_calibration)。
+    > 未佩戴腳部追蹤器時，請開啟 AI 引擎；5 點模式下，胸部方向也由 AI 引擎預測。首次使用請按照[首頁的套裝教程](../../README.md#new-device-guide)操作。
 3. 正常校準以後，請到 SteamVR 默認界面查看跟踪器，請務必關閉 SteamVR Home，否則無法查看跟踪器！
     > 這裡建議，出現任何問題，都優先切換到 SteamVR 默認界面查看跟踪器位置是否符合預期，其它軟體中例如 VRC 因為存在IK介入，和很多配置有關，不是原始跟踪器的位置。
    - 如何關閉SteamVR Home 以及更改為白色背景請看這裡
@@ -24,7 +24,7 @@ title: "SteamVR 協議接入"
        </div>
 
 4. 佩戴頭顯後查看跟踪器位置是否符合預期
-    > 這裡可以打開 诊断功能，複製出一組跟踪器查看更方便
+    > 這裡可以打開 診斷功能，複製出一組跟踪器查看更方便
 
 5. 如果遇到錯誤，或者跟踪器消失等問題，可以重啟，建議重啟 rebocap 客戶端和 SteamVR。
     > 也非常推薦到論壇中反饋！可能是 steamvr 問題，也可能是 rebocap 的問題。如果是 rebocap 問題，我們會盡量查找問題並更新！
@@ -58,7 +58,7 @@ title: "SteamVR 協議接入"
 
 如果 3D 預覽就歪了，那麼請按照下述診斷：
 - 很有可能是發生了磁偏，或者磁場環境本身就差，如果是第一次使用，或者後續使用偶發遇到的，建議先進行磁場校準，[具體校準方法見這裡](../../ui_help_doc/control/config#magnet_calibrate)
-- 排除綁帶歪了，排除跟踪器個別跟踪器沒電關機或者意外關機
+- 排除綁帶歪了，排除個別追蹤器沒電關機或者意外關機
 - 如果是交叉腿或其他腿部問題，請仔細閱讀教程中 [綁帶部分](../../tutorial/instroction_for_straps) 以及 [動作校準部分](../../tutorial/connect_and_use#pose_calibration)。
 - 如果還是無法解決，請排除磁場干擾，強烈建議將[這篇文章讀完](../../QA/magnet)。
 
