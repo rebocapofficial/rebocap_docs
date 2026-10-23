@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "[Panel de Conexión](connect)"
+title: "Área de control"
 ---
 
 # [Panel de Conexión](connect)

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "[接続パネル](connect)"
+title: "コントロールエリア"
 ---
 
 <span id="接続パネル" class="legacy-anchor-alias" aria-hidden="true"></span>

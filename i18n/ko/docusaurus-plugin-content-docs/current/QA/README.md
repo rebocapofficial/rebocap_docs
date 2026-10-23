@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Mac 및 Linux 지원 여부"
+title: "자주 묻는 질문"
 ---
 ## Mac 및 Linux 지원 여부
 > 현재 지원되지 않으며, Linux는 향후에도 지원되지 않을 예정입니다. Mac은 향후 지원될 수 있습니다.

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Does it support Mac and Linux"
+title: "FAQ"
 ---
 ## Does it support Mac and Linux
 > Currently not supported, Linux will not be supported in the future, Mac might be supported

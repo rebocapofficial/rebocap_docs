@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "팁"
+title: "기타 소프트웨어 연동"
 ---
 
 # 팁

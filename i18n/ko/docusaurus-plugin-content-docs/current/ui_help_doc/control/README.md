@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "연결 패널"
+title: "제어 영역"
 ---
 
 # [연결 패널](connect)

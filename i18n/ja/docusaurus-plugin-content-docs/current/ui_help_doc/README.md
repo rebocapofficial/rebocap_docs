@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "UI 区分"
+title: "UI ヘルプ"
 ---
 
 <span id="ui-区分" class="legacy-anchor-alias" aria-hidden="true"></span>

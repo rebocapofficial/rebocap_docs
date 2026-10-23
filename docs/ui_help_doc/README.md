@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "UI Sections"
+title: "UI Help"
 ---
 
 <span id="ui-sections" class="legacy-anchor-alias" aria-hidden="true"></span>

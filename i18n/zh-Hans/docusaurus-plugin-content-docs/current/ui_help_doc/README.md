@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "UI 分区"
+title: "UI 帮助文档"
 ---
 
 <span id="ui-分区" class="legacy-anchor-alias" aria-hidden="true"></span>

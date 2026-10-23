@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Sections de l'interface utilisateur"
+title: "Aide de l’interface"
 ---
 
 # Sections de l'interface utilisateur

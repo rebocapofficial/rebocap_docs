@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "MacおよびLinuxのサポートについて"
+title: "よくある質問"
 ---
 ## MacおよびLinuxのサポートについて
 > 現段階ではサポートしていません。Linuxは将来的にもサポートしない予定ですが、Macはサポートする可能性があります。

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Prend-il en charge Mac et Linux"
+title: "Questions fréquentes"
 ---
 ## Prend-il en charge Mac et Linux
 > Actuellement non pris en charge, Linux ne sera pas pris en charge à l'avenir, Mac pourrait être pris en charge

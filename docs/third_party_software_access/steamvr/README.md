@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Tips"
+title: "SteamVR Integration"
 ---
 
 <span id="tips" class="legacy-anchor-alias" aria-hidden="true"></span>

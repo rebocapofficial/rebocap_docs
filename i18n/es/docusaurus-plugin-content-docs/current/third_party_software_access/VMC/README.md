@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Consejos"
+title: "Integración con VMC"
 ---
 
 # Consejos

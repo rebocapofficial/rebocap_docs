@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "是否支持Mac以及Linux"
+title: "常見問題"
 ---
 ## 是否支持Mac以及Linux
 > 當前階段不支持，linux未來也不支持，mac可能支持

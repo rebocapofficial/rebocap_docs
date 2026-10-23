@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "¿Soporta Mac y Linux?"
+title: "Preguntas frecuentes"
 ---
 ## ¿Soporta Mac y Linux?
 > Actualmente no compatible, Linux no será compatible en el futuro, Mac podría ser compatible

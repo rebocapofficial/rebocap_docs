@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "[Connection Panel](connect)"
+title: "Control Area"
 ---
 
 <span id="connection-panel" class="legacy-anchor-alias" aria-hidden="true"></span>

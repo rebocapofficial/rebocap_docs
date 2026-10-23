@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "ヒント"
+title: "SteamVR 連携"
 ---
 
 <span id="ヒント" class="legacy-anchor-alias" aria-hidden="true"></span>

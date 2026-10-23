@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "[連接面板](connect)"
+title: "控制區"
 ---
 
 <span id="連接面板" class="legacy-anchor-alias" aria-hidden="true"></span>

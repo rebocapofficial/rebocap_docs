@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "UI 섹션"
+title: "UI 도움말"
 ---
 
 # UI 섹션

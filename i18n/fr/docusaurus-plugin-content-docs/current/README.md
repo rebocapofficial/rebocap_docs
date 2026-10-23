@@ -57,3 +57,46 @@ Vous pouvez télécharger le logiciel rebocap et utiliser la fonction [Lecture h
 Nous avons remarqué que parfois certains réseaux régionaux ne peuvent pas accéder à la page web store.rebocap.site. Après vérification auprès du fournisseur de services réseau de notre boutique, ils ont signalé n'avoir aucun problème de leur côté.<br/>
 Après en avoir discuté avec des amis du secteur, nous supposons que des anomalies de l'heure du système de la station de base locale pourraient avoir causé une pollution du réseau.<br/>
 Nous recommandons d'essayer d'utiliser un VPN, de demander à des amis dans d'autres régions d'aider à vérifier, ou d'essayer de vous connecter à la page web de la boutique en utilisant un autre fournisseur de réseau.
+
+## Table des matières {#navigation_directory}
+
+### Tutoriels REBOCAP
+
+- [Guide d’utilisation](tutorial/README.md)
+  - [Kit de 6 capteurs : déballage et configuration](rebocap-tutorials/6-set-unboxing.mdx)
+  - [Kit de 15 capteurs : déballage et configuration](rebocap-tutorials/15-set-unboxing.mdx)
+  - [Présentation du matériel](tutorial/hardware_check.md)
+  - [Guide des sangles](tutorial/instroction_for_straps.md)
+  - [Téléchargement et installation du logiciel](tutorial/software_install.md)
+  - [Connexion et utilisation](tutorial/connect_and_use.md)
+  - [Guide SteamVR](rebocap-tutorials/steamvr_guide.mdx)
+### Manuel d’aide
+
+- [Aide de l’interface](ui_help_doc/README.md)
+  - [Zone de contrôle](ui_help_doc/control/README.md)
+    - [Connexion](ui_help_doc/control/connect.md)
+    - [Paramètres de capture de mouvement](ui_help_doc/control/cap_param.md)
+    - [Réglages du squelette](ui_help_doc/control/skeleton_setting.md)
+    - [Configuration](ui_help_doc/control/config.md)
+  - [Informations sur le matériel](ui_help_doc/info.md)
+  - [Aperçu des connexions du matériel](ui_help_doc/remap.md)
+  - [Aperçu 3D](ui_help_doc/view.md)
+### Questions fréquentes
+
+- [Questions fréquentes](QA/README.md)
+- [Problèmes de champ magnétique](QA/magnet.mdx)
+### Intégration logicielle
+
+- [Intégration avec d’autres logiciels](third_party_software_access/README.md)
+- [Intégration SteamVR](third_party_software_access/steamvr/README.md)
+  - [Intégration VRChat](third_party_software_access/steamvr/vrchat.md)
+- [Intégration VMC](third_party_software_access/VMC/README.md)
+  - [Intégration Warudo](third_party_software_access/VMC/warudo.md)
+### Autres ressources
+
+- [Plugins](plugins/plugins.md)
+  - [Blender](plugins/blender.md)
+  - [UE](plugins/ue.md)
+  - [Unity](plugins/unity.md)
+- [SDK](SDK/README.md)
+- [Certification du produit](product_certification/README.md)

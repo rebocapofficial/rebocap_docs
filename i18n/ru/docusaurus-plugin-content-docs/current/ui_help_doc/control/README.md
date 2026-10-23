@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "[Панель подключения](connect)"
+title: "Панель управления"
 ---
 
 # [Панель подключения](connect)

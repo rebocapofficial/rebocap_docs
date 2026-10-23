@@ -691,3 +691,11 @@ details.plain-details > div > ol {
   height: 0;
   scroll-margin-top: calc(var(--ifm-navbar-height) + 1rem);
 }
+
+/* Section captions in the reviewed Chinese sidebar. */
+.sidebar-section-label {
+  margin: 1rem .75rem .4rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: .85rem;
+  font-weight: 500;
+}

@@ -57,3 +57,46 @@ Puedes descargar el software rebocap y utilizar la función de [Reproducción si
 Hemos notado que, ocasionalmente, algunas redes regionales no pueden acceder a la página web de store.rebocap.site. Después de consultar con nuestro proveedor de servicios de red de la tienda, informaron que no hay problemas por su parte.<br/>
 Tras discutirlo con amigos de la industria, especulamos que las anomalías en el tiempo del sistema de la estación base local podrían haber causado la contaminación de la red.<br/>
 Recomendamos intentar usar una VPN, pedir a amigos en otras regiones que ayuden a verificar, o intentar iniciar sesión en la página web de la tienda utilizando un proveedor de red diferente.
+
+## Índice {#navigation_directory}
+
+### Tutoriales de REBOCAP
+
+- [Guía de uso](tutorial/README.md)
+  - [Kit de 6 rastreadores: desempaquetado y configuración](rebocap-tutorials/6-set-unboxing.mdx)
+  - [Kit de 15 rastreadores: desempaquetado y configuración](rebocap-tutorials/15-set-unboxing.mdx)
+  - [Descripción del hardware](tutorial/hardware_check.md)
+  - [Guía de correas](tutorial/instroction_for_straps.md)
+  - [Descarga e instalación del software](tutorial/software_install.md)
+  - [Conexión y uso](tutorial/connect_and_use.md)
+  - [Guía de SteamVR](rebocap-tutorials/steamvr_guide.mdx)
+### Manual de ayuda
+
+- [Ayuda de la interfaz](ui_help_doc/README.md)
+  - [Área de control](ui_help_doc/control/README.md)
+    - [Conexión](ui_help_doc/control/connect.md)
+    - [Parámetros de captura de movimiento](ui_help_doc/control/cap_param.md)
+    - [Configuración del esqueleto](ui_help_doc/control/skeleton_setting.md)
+    - [Configuración](ui_help_doc/control/config.md)
+  - [Información del hardware](ui_help_doc/info.md)
+  - [Vista de conexión del hardware](ui_help_doc/remap.md)
+  - [Vista previa 3D](ui_help_doc/view.md)
+### Preguntas frecuentes
+
+- [Preguntas frecuentes](QA/README.md)
+- [Problemas del campo magnético](QA/magnet.mdx)
+### Integración con software
+
+- [Integración con otro software](third_party_software_access/README.md)
+- [Integración con SteamVR](third_party_software_access/steamvr/README.md)
+  - [Integración con VRChat](third_party_software_access/steamvr/vrchat.md)
+- [Integración con VMC](third_party_software_access/VMC/README.md)
+  - [Integración con Warudo](third_party_software_access/VMC/warudo.md)
+### Otros recursos
+
+- [Complementos](plugins/plugins.md)
+  - [Blender](plugins/blender.md)
+  - [UE](plugins/ue.md)
+  - [Unity](plugins/unity.md)
+- [SDK](SDK/README.md)
+- [Certificación del producto](product_certification/README.md)

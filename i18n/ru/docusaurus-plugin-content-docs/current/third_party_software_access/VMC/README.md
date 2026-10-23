@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Советы"
+title: "Интеграция с VMC"
 ---
 
 # Советы

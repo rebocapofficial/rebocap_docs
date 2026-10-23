@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "提示"
+title: "VMC 协议接入"
 ---
 
 <span id="提示" class="legacy-anchor-alias" aria-hidden="true"></span>

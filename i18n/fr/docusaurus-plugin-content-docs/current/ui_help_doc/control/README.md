@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "[Panneau de connexion](connect)"
+title: "Zone de contrôle"
 ---
 
 # [Panneau de connexion](connect)

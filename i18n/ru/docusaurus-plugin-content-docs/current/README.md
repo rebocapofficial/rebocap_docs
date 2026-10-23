@@ -57,3 +57,46 @@ title: "Навигация по документации"
 Мы заметили, что иногда некоторые региональные сети не могут получить доступ к веб-странице store.rebocap.site. После проверки нашим поставщиком сетевых услуг магазина, они сообщили об отсутствии проблем с их стороны.<br/>
 После обсуждения с друзьями в отрасли, мы предполагаем, что аномалии системного времени на местных базовых станциях могли вызвать загрязнение сети.<br/>
 Мы рекомендуем попробовать использовать VPN, попросить друзей в других регионах помочь с проверкой, или попытаться войти на веб-странице магазина, используя другого интернет-провайдера.
+
+## Содержание {#navigation_directory}
+
+### Уроки REBOCAP
+
+- [Руководство пользователя](tutorial/README.md)
+  - [Комплект из 6 трекеров: распаковка и настройка](rebocap-tutorials/6-set-unboxing.mdx)
+  - [Комплект из 15 трекеров: распаковка и настройка](rebocap-tutorials/15-set-unboxing.mdx)
+  - [Обзор оборудования](tutorial/hardware_check.md)
+  - [Руководство по ремням](tutorial/instroction_for_straps.md)
+  - [Загрузка и установка ПО](tutorial/software_install.md)
+  - [Подключение и использование](tutorial/connect_and_use.md)
+  - [Руководство по SteamVR](rebocap-tutorials/steamvr_guide.mdx)
+### Справка
+
+- [Справка по интерфейсу](ui_help_doc/README.md)
+  - [Панель управления](ui_help_doc/control/README.md)
+    - [Подключение](ui_help_doc/control/connect.md)
+    - [Параметры захвата движений](ui_help_doc/control/cap_param.md)
+    - [Настройки скелета](ui_help_doc/control/skeleton_setting.md)
+    - [Конфигурация](ui_help_doc/control/config.md)
+  - [Информация об оборудовании](ui_help_doc/info.md)
+  - [Обзор подключений оборудования](ui_help_doc/remap.md)
+  - [Предпросмотр 3D](ui_help_doc/view.md)
+### Частые вопросы
+
+- [Частые вопросы](QA/README.md)
+- [Проблемы магнитного поля](QA/magnet.mdx)
+### Интеграция с ПО
+
+- [Интеграция с другим ПО](third_party_software_access/README.md)
+- [Интеграция со SteamVR](third_party_software_access/steamvr/README.md)
+  - [Интеграция с VRChat](third_party_software_access/steamvr/vrchat.md)
+- [Интеграция с VMC](third_party_software_access/VMC/README.md)
+  - [Интеграция с Warudo](third_party_software_access/VMC/warudo.md)
+### Другие ресурсы
+
+- [Плагины](plugins/plugins.md)
+  - [Blender](plugins/blender.md)
+  - [UE](plugins/ue.md)
+  - [Unity](plugins/unity.md)
+- [SDK](SDK/README.md)
+- [Сертификация продукта](product_certification/README.md)

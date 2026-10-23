@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "팁"
+title: "VMC 연동"
 ---
 
 # 팁
