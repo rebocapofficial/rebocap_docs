@@ -13,6 +13,8 @@ title: "软件下载"
 <!-- ==================== 旗帜 A：Install software 开始 ==================== -->
 <div style="border-left: 6px solid #88b49c; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
+<span id="软件下载" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## 下载 {#software-download-toc}
 <h2 class="tutorial-heading-flag" style="background: #88b49c; margin-top: 0; display: inline-block;">下载</h2>
 
@@ -233,6 +235,8 @@ title: "软件下载"
 6. 六轴开关开启关闭增加重新校准提示
 7. 修复六轴侧偏补偿问题
 
+
+<span id="todo（排名不分先后，这里只介绍大的更新点）" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### TODO（排名不分先后，这里只介绍大的更新点）
 

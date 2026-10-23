@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: "UE 插件下载"
 ---
+<span id="ue-插件下载" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # UE 插件下载
 
 以下是下载链接，插件提供源代码，可自行查看、修改和编译，目前插件只适用于 `UE5` 版本。
@@ -19,6 +21,8 @@ title: "UE 插件下载"
 <a href="/img/ue_plugin/rebocap_unreal_engine_plugin_prebuild_55_v2.zip" target="_blank" download="rebocap_unreal_engine_plugin_prebuild_55.zip">ue 5.5 plugin prebuild </a>
 
 <a href="/img/ue_plugin/rebocap_unreal_engine_plugin_prebuild_56_v2.zip" target="_blank" download="rebocap_unreal_engine_plugin_prebuild_56.zip">ue 5.6 plugin prebuild </a>
+
+<span id="ue-使用说明" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # UE 使用说明
 
@@ -92,6 +96,8 @@ title: "UE 插件下载"
 </video>
 </div>
 
+
+<span id="meta-human-或者默认-apose-人物）修改为-tpose（-apose-转-tpose" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### MetaHuman（或默认 A-Pose 人物）转为 T-Pose
 

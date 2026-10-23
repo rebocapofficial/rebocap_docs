@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: "warudo 接続"
 ---
+<span id="warudo-接続" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # warudo 接続
 VMCを受信するように設定するだけで、他の設定は変更しないでください。変更した場合は、再設定が必要です。まずはrebocapのみの接続効果を確認してください。また、必ず骨格をrebocapにアップロードしてください。[こちらを参照](README.md#vmc_instroction)。そうしないと、足元が浮いたり、全体の動きに大きな問題が生じる可能性があります。
 

@@ -3,6 +3,8 @@ sidebar_position: 4
 title: "3D 預覽功能"
 ---
 
+<span id="3d-預覽功能" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 3D 預覽功能
 - **展示動捕即時預覽畫面**
 
@@ -29,6 +31,8 @@ title: "3D 預覽功能"
 </details>
 
 ![3d preview](../../../../../static/img/3d_view_1.png)
+
+<span id="日誌功能" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 日誌功能
 用於查看是否有警告信息等

@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "Unboxing Check"
 ---
 
+<span id="unboxing-check" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## Unboxing Check&#x20;
 
 - The product currently uses a drawer color box + regular carton packaging, with air column cushions surrounding all six sides for added cushioning.
@@ -61,7 +63,7 @@ title: "Unboxing Check"
   4. The plastic shell currently has no UV plating, making it easy to leave scratches.
   5. There is a certain capacity error between different tracker batteries, which is normal. The usage time is the standard \[the battery percentage can only be used as a reference, not as an evaluation indicator].
 
-<a id="hardware_button_instroction" />
+<a id="hardware_button_instroction"></a>
 
 ## Button Instructions
 

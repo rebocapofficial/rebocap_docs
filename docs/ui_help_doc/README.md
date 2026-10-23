@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "UI Sections"
 ---
 
+<span id="ui-sections" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # UI Sections
 ## Control Area
 - [Connect](control/connect)
@@ -20,6 +22,8 @@ title: "UI Sections"
 <img src="/img/table_info-en.png" alt="3D Preview" width="30%" />
 
 ## Overall Hardware Preview Area
+
+<span id="introduction-to-ui-section-functions" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Introduction to UI Section Functions
 Click on the corresponding area of the image to jump to the introduction of the corresponding block function

@@ -57,6 +57,8 @@ title: "Mac 및 Linux 지원 여부"
 ## SteamVR에 연결할 수 없음
 > [여기를 참조하세요](../third_party_software_access/steamvr/README.md#vr_cannot_connect).
 
+<span id="골격-조정이-적용되지-않��음" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## 골격 조정이 적용되지 않음
 > [여기를 참조하세요](../ui_help_doc/control/skeleton_setting#skeleton_not_valid).
 

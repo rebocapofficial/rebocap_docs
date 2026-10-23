@@ -5,6 +5,8 @@ title: "Software Download"
 <!-- ==================== Flag A: Install software Start ==================== -->
 <div style="border-left: 6px solid #88b49c; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
+<span id="software-download" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## Download {#software-download-toc}
 <h2 class="tutorial-heading-flag" style="background: #88b49c; margin-top: 0; display: inline-block;">Download</h2>
 

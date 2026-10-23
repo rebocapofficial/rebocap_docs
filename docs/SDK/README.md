@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: "SDK Interface Description"
 ---
+<span id="sdk-interface-description" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # SDK Interface Description
 Currently, the DLL exposes a total of 8 ports, and each SDK is a wrapper around the DLL interface. You can refer to the `include/rebocap_ws_sdk/rebocap_ws_sdk.h` header file in the cpp SDK for details.
 
@@ -120,6 +122,8 @@ joints_smpl = [
 ]
 ```
 
+
+<span id="sdk-download" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # SDK Download
 ### Python SDK

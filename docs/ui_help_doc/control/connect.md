@@ -181,6 +181,8 @@ These settings do not affect VR-mode users, so VR users can skip this section.
    > 
    > If you need to create animations with the FBX, be sure to use rotation data rather than the absolute bone directions contained in the exported FBX. We will later invite community members to record tutorials on using mocap data to make animations.
 
+   <span id="offline-playback" class="legacy-anchor-alias" aria-hidden="true"></span>
+
    **Offline Playback**
    > Purpose: Load and play back exported `.rebo_anim` raw recording files offline
    > Usage: Click Offline Load, select the raw recording file, and playback starts automatically. It behaves the same as online mode. Before loading you can change the user skeleton, choose whether to use `IK`, whether to enable the `AI Engine`, etc., and the changes take effect immediately.

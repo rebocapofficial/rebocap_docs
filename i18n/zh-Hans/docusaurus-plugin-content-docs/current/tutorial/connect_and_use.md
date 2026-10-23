@@ -4,6 +4,8 @@ title: "连接指南"
 sidebar_label: "连接指南"
 ---
 
+<span id="连接" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 连接指南
 1. 点亮要连接的跟踪器
    > 支持的跟踪器组合模式见 [上一个章节](instroction_for_straps#follow_mode)
@@ -37,6 +39,8 @@ sidebar_label: "连接指南"
 * 如果使用台式机，请不要将接收器放置在机箱后边
 * 接收器旁边尽量保持5cm以上空旷区域，比如不要在接收器旁边插入U盘，如果可以，尝试延长线也许对信号有一定帮助
 
+
+<span id="校准" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 校准
 穿戴请参考下图，具体佩戴位置因人而异，原理及细节描述请参考[上一章节](instroction_for_straps#tracker_position_recomendation)
@@ -111,6 +115,8 @@ sidebar_label: "连接指南"
 
 ### 云镜虚拟直播 接入 [请看这里视频](https://www.bilibili.com/video/BV1z7hFzfEw6)
 
+
+<span id="必须了解项" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 必须了解项
 为了避免使用中遇到的各种问题（比如跟踪器莫名其妙歪了等问题），也为了您有更好的动捕体验，请务必阅读下述说明。

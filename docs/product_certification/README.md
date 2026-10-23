@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "Product and Communication Related Certifications"
 ---
 
+<span id="product-and-communication-related-certifications" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Product and Communication Related Certifications
 
 ## Low Power Certification
@@ -35,6 +37,8 @@ title: "Product and Communication Related Certifications"
 - Product and wireless certification for Europe
 - Nameplate identification: already reflected on the product nameplate
 - Certification document download <a href="/img/files/Rebocap_CE_T.zip" target="_blank" download="Rebocap_CE_T.zip">download</a>
+
+<span id="battery-related-certifications" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Battery Related Certifications
 

@@ -3,6 +3,8 @@ sidebar_position: 4
 title: "3Dプレビュー機能"
 ---
 
+<span id="3dプレビュー機能" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 3Dプレビュー機能
 - **モーションキャプチャのリアルタイムプレビュー画面を表示**
 
@@ -29,6 +31,8 @@ title: "3Dプレビュー機能"
 </details>
 
 ![3d preview](../../../../../static/img/3d_view_1.png)
+
+<span id="ログ機能" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # ログ機能
 警告情報などがあるかどうかを確認するために使用

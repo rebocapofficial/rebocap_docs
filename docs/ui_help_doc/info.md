@@ -3,6 +3,8 @@ sidebar_position: 2
 title: "Hardware List Information"
 ---
 
+<span id="hardware-list-information" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Hardware List Information
 The hardware list information is used for global preview.
 - First Column

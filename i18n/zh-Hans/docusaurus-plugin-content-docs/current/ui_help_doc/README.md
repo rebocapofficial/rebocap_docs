@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "UI 分区"
 ---
 
+<span id="ui-分区" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # UI 分区
 ## 控制区
 - [连接](control/connect)
@@ -20,6 +22,8 @@ title: "UI 分区"
 <img src="/img/table_info.png" alt="3D 预览" width="30%" />
 
 ## 硬件整体预览区
+
+<span id="ui-分区功能介绍" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # UI 分区功能介绍
 点击图片对应区域即可跳转到对应的区块功能介绍

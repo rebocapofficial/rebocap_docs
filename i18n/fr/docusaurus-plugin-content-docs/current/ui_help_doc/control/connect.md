@@ -181,6 +181,8 @@ Ces paramètres n'affectent pas les utilisateurs en mode VR, donc les utilisateu
    > 
    > Si vous devez créer des animations avec le FBX, assurez-vous d'utiliser les données de rotation plutôt que les directions d'os absolues contenues dans le FBX exporté. Nous inviterons par la suite des membres de la communauté à enregistrer des tutoriels sur l'utilisation des données mocap pour faire des animations.
 
+   <span id="offline-playback" class="legacy-anchor-alias" aria-hidden="true"></span>
+
    **Lecture Hors Ligne (Offline Playback)**
    > Objectif : Charger et lire des fichiers d'enregistrement bruts `.rebo_anim` exportés hors ligne
    > Utilisation : Cliquez sur Charger Hors Ligne (Offline Load), sélectionnez le fichier d'enregistrement brut, et la lecture commence automatiquement. Il se comporte de la même manière que le mode en ligne. Avant le chargement, vous pouvez changer de squelette utilisateur, choisir d'utiliser l'`IK` ou non, d'activer ou non le `Moteur IA (AI Engine)`, etc., et les changements prennent effet immédiatement.

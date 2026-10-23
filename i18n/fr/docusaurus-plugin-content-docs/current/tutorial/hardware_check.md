@@ -61,7 +61,7 @@ title: "Vérification du déballage"
   4. La coque en plastique n'a actuellement aucun placage UV, ce qui la rend facile à rayer.
   5. Il y a une certaine erreur de capacité entre différentes batteries de tracker, ce qui est normal. La durée d'utilisation est la norme \[le pourcentage de batterie ne peut être utilisé que comme référence, pas comme un indicateur d'évaluation].
 
-<a id="hardware_button_instroction" />
+<a id="hardware_button_instroction"></a>
 
 ## Instructions des boutons
 

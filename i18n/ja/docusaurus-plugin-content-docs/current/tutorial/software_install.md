@@ -5,6 +5,8 @@ title: "ソフトウェアダウンロード"
 <!-- ==================== Flag A: Install software Start ==================== -->
 <div style="border-left: 6px solid #88b49c; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
+<span id="ソフトウェアダウンロード" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## ダウンロード {#software-download-toc}
 <h2 class="tutorial-heading-flag" style="background: #88b49c; margin-top: 0; display: inline-block;">ダウンロード</h2>
 
@@ -219,6 +221,8 @@ title: "ソフトウェアダウンロード"
 6. 6軸スイッチのオン／オフ時に再キャリブレーションの案内を追加  
 7. 6軸の横方向バイアス補正問題を修正  
 
+
+<span id="todo（順不同・主要な更新内容のみ）" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### TODO（順不同・主要な更新内容のみ）
 

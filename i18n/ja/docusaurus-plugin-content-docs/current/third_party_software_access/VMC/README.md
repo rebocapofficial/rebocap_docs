@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "ヒント"
 ---
 
+<span id="ヒント" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # ヒント
 チュートリアルを読まずにこのページを読むことは意味がありません。[まずはチュートリアルを読んでください](../../tutorial/README.md)！！！！
 

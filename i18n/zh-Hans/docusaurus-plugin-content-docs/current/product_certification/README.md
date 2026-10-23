@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "产品及通信相关认证"
 ---
 
+<span id="产品及通信相关认证" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 产品及通信相关认证
 ## 微功率认证
 - 中国地区认证
@@ -27,6 +29,8 @@ title: "产品及通信相关认证"
 - 欧洲地区产品及无线认证
 - 铭牌标识：已经体现在产品铭牌上
 - 认证文件下载 <a href="/img/files/Rebocap_CE_T.zip" target="_blank" download="Rebocap_CE_T.zip">download</a>
+
+<span id="电池相关认证" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 电池相关认证
 ## IEC62133 & UN38.3 认证

@@ -3,12 +3,18 @@ sidebar_position: 1
 title: "UI 区分"
 ---
 
+<span id="ui-区分" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # UI 区分
+<span id="コントロ��ールエリア" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## コントロールエリア
 - [接続](control/connect)
 - [モーションキャプチャパラメータ](control/cap_param)
 - [スケルトン設定](control/skeleton_setting)
 - [設定](control/config)
+
+<span id="3d-プレビ��ューエリア" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ## 3D プレビューエリア
 [詳細はこちらをクリック](view)
@@ -20,6 +26,8 @@ title: "UI 区分"
 <img src="/img/table_info-jp.png" alt="3D プレビュー" width="30%" />
 
 ## ハードウェア全体プレビューエリア
+
+<span id="ui-区分機能紹介" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # UI 区分機能紹介
 画像の対応するエリアをクリックすると、対応するブロックの機能紹介にジャンプします

@@ -3,9 +3,13 @@ sidebar_position: 1
 title: "Tips"
 ---
 
+<span id="tips" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Tips
 Reading this page without going through the tutorial is meaningless. [Please read the tutorial first](../tutorial/README.md)!!!
 
+
+<span id="official-general-protocol-output-access" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Official General Protocol Output Access
 
@@ -14,6 +18,8 @@ Reading this page without going through the tutorial is meaningless. [Please rea
 
 ### [VMC Access](VMC/README.md)
 - [Warudo Access](VMC/warudo)
+
+<span id="other-access" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Other Access
 

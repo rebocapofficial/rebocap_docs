@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: "Blender プラグインダウンロード"
 ---
+<span id="blender-プラグインダウンロード" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Blender プラグインダウンロード
 
 下のリンクをクリックすると直接ダウンロードできます：
@@ -17,6 +19,8 @@ title: "Blender プラグインダウンロード"
 - アニメーション録画の軸に関するバグを修正
 - 骨吸着選択機能を追加
 
+<span id="blenderチュートリアルビデオ" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Blenderチュートリアルビデオ
 注記： 本動画は音声がございません。
 
@@ -26,6 +30,8 @@ title: "Blender プラグインダウンロード"
 </video>
 </div>
 
+
+<span id="blender-プラグインインストール" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Blender プラグインインストール
 
@@ -54,6 +60,8 @@ title: "Blender プラグインダウンロード"
 
 ![Blenderインストール位置示意図](../../../../../static/img/for_blender_install/blender_23.png)
 
+
+<span id="ボーンバインディング" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # ボーンバインディング
 1. VRM スケルトンの自動バインディング

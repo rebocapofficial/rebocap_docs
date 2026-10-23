@@ -48,7 +48,7 @@ title: "문서 탐색"
 
 ## 아직 기기가 없지만 소프트웨어를 테스트하고 싶을 때
 
-rebocap 소프트웨어를 다운로드하고 [오프라인 재생 (Offline Playback)] 기능을 사용하여 샘플 파일을 재생할 수 있습니다. 이렇게 하면 소프트웨어가 작동 상태가 되어 SDK 또는 플러그인 연결을 테스트할 수 있습니다.
+rebocap 소프트웨어를 다운로드하고 [오프라인 재생 (Offline Playback)](ui_help_doc/control/connect#offline-playback) 기능을 사용하여 샘플 파일을 재생할 수 있습니다. 이렇게 하면 소프트웨어가 작동 상태가 되어 SDK 또는 플러그인 연결을 테스트할 수 있습니다.
 
 
 

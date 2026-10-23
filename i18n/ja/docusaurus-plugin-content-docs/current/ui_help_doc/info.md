@@ -3,6 +3,8 @@ sidebar_position: 2
 title: "ハードウェアリスト情報"
 ---
 
+<span id="ハードウェアリスト情報" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # ハードウェアリスト情報
 ハードウェアリスト情報はグローバルプレビューに使用されます。
 - 第一列

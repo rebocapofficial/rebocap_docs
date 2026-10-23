@@ -3,8 +3,12 @@ sidebar_position: 1
 title: "提示"
 ---
 
+<span id="提示" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 提示
 沒有閱讀教程的情況下，閱讀這個本頁面沒有任何意義，[請首先閱讀教程](../tutorial/README.md)！！！！
+
+<span id="官方通用協議輸出接入" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 官方通用協議輸出接入
 
@@ -13,6 +17,8 @@ title: "提示"
 
 ### [VMC 接入](VMC/README.md)
 - [warudo 接入](VMC/warudo)
+
+<span id="其它接入" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 其它接入
 

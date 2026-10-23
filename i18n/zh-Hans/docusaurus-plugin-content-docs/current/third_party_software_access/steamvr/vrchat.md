@@ -5,6 +5,8 @@ title: "VRChat 基本设置"
 
 **阅读本教程之前，请务必[仔细阅读 SteamVR 的接入](README.md)！！！如果steamVR上 rebocap 的跟踪器图标都没有点亮过，本教程没有任何意义！！！**
 
+<span id="vrchat-基本设置" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # VRChat 基本设置
 
 ### vrchat 基础设置介绍
@@ -91,6 +93,8 @@ title: "VRChat 基本设置"
   </div>
 
 
+<span id="vrchat-遇到问题诊断步骤" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # VRChat 遇到问题诊断步骤
 > 非细节问题，细节问题一般特指：腿在某个状态下无法伸直等，这些和VRC以及骨架设置相关性比较高。后续会补充说明。
 > 
@@ -108,6 +112,8 @@ title: "VRChat 基本设置"
   > 高级玩家可以自行尝试使用 Arm 模式，然后修改 `arm vs height ratio`。
   > 
   > 这里举个极端例子方便玩家理解，比如虚拟人物的手臂有3米，人物本身的高度只有1.7米，现实中人物双臂正常下垂的位置在腰这里，但是 VRChat 必须要尊重现实中手部的位置，那么只能将虚拟人物的手臂弯曲一定的角度了。
+
+<span id="为什么我校准的时候，人物的双脚在地板下边" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### 为什么我校准的时候，人物的双脚在地板下边
 > 这里在 [如何在VRChat中进行校准](#calibration_in_vrc) 的第三点已经有说明

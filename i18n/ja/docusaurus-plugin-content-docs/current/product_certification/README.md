@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "製品および通信関連認証"
 ---
 
+<span id="製品および通信関連認証" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 製品および通信関連認証
 ## 微功率認証
 - 中国地域認証
@@ -31,6 +33,8 @@ title: "製品および通信関連認証"
 - ヨーロッパ地域製品および無線認証
 - 名札表示：製品名札に既に表示されています
 - 認証書類ダウンロード <a href="/img/files/Rebocap_CE_T.zip" target="_blank" download="Rebocap_CE_T.zip">download</a>
+
+<span id="バッテリー関連認証" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # バッテリー関連認証
 ## IEC62133 & UN38.3 認証

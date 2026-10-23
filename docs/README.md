@@ -26,6 +26,8 @@ title: "Document Navigation"
 
 <div style="border-left: 6px solid #ff8080; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
+<span id="special-statement" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## Special Statement {#special-statement-toc}
 <h2 class="tutorial-heading-flag" style="background: #ff8080; margin-top: 0; display: inline-block;">Special Statement</h2>
 <p>This section was translated from Chinese using `chatgpt`. If you have any questions, please provide feedback in the forum or community, and we will correct any inappropriate descriptions!</p>
@@ -50,7 +52,7 @@ title: "Document Navigation"
 
 ## Don't have a device yet but want to test the software
 
-You can download the rebocap software and use the [Offline Playback] feature to play a sample file. This will put the software in a working state, allowing you to test the SDK or plugin connection.
+You can download the rebocap software and use the [Offline Playback](ui_help_doc/control/connect#offline-playback) feature to play a sample file. This will put the software in a working state, allowing you to test the SDK or plugin connection.
 
 
 

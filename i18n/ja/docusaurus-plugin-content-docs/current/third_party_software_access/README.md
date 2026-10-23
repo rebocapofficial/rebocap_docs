@@ -3,9 +3,13 @@ sidebar_position: 1
 title: "ヒント"
 ---
 
+<span id="ヒント" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # ヒント
 このページを読むことには意味がありませんので、[まずはチュートリアルをお読みください](../tutorial/README.md)！！！！
 
+
+<span id="公式汎用プロトコル出力接続" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 公式汎用プロトコル出力接続
 
@@ -14,6 +18,8 @@ title: "ヒント"
 
 ### [VMC 接続](VMC/README.md)
 - [warudo 接続](VMC/warudo)
+
+<span id="その他の接続" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # その他の接続
 

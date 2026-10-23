@@ -5,6 +5,8 @@ title: "軟體下載"
 <!-- ==================== 旗帜 A：Install software 开始 ==================== -->
 <div style="border-left: 6px solid #88b49c; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
+<span id="軟體下載" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## 下載 {#software-download-toc}
 <h2 class="tutorial-heading-flag" style="background: #88b49c; margin-top: 0; display: inline-block;">下載</h2>
 
@@ -219,6 +221,8 @@ title: "軟體下載"
 6. 六軸開關開啟關閉增加重新校準提示
 7. 修復六軸側偏補償問題
 
+
+<span id="todo（排名不分先後，這裡只介紹大的更新點）" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### TODO（排名不分先後，這裡只介紹大的更新點）
 

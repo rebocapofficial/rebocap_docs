@@ -3,6 +3,8 @@ sidebar_position: 3
 title: "傳感器整體預覽"
 ---
 
+<span id="傳感器整體預覽" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 傳感器整體預覽
 
 如下圖所示，對應關節部位綠色則代表傳感器已連接，灰色則表示未連接。圖中左側即為人體自身的左側，比如下圖中左腳的傳感器沒有連接，右邊下腿的傳感器也沒有連接。

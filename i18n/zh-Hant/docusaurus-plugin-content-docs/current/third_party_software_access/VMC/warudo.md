@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: "warudo 接入"
 ---
+<span id="warudo-接入" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # warudo 接入
 配置 VMC 接收即可，其它設定不要動，如果動了，請重新設定，先查看只有 rebocap 接入的效果，另外，一定要上傳骨架到 rebocap 中，[見這裡](README.md#vmc_instroction)。否則容易導致腳底懸空，或者整體運動跟隨問題較大。
 

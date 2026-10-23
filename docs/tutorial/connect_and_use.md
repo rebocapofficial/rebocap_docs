@@ -4,6 +4,8 @@ title: "Connection Guide"
 sidebar_label: "Connection Guide"
 ---
 
+<span id="connection" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Connection Guide
 1. Power on the tracker you want to connect
    > Supported tracker combination modes can be found in the [previous chapter](instroction_for_straps#follow_mode)
@@ -36,6 +38,8 @@ sidebar_label: "Connection Guide"
 ### Weak or Unstable Signal After Connection
 * If using a desktop computer, do not place the receiver behind the chassis.
 * Try to maintain an open area of more than 5cm next to the receiver, for example, do not insert a USB drive next to the receiver. If possible, using an extension cable may help improve the signal.
+
+<span id="calibration" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Calibration
 Please refer to the image below for wearing instructions. The specific wearing position varies from person to person. For principles and details, please refer to the [previous chapter](instroction_for_straps#tracker_position_recomendation).
@@ -102,6 +106,8 @@ The images from left to right are: `APose` `TPose` `SPose` `BPose`
 
 ### VMC Protocol User Integration [refer here](../third_party_software_access/VMC/README.md)
 - warudo Integration [refer here](../third_party_software_access/VMC/warudo)
+
+<span id="must-know-items" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Must-Know Items
 To avoid various issues during use (such as trackers inexplicably tilting) and to ensure a better motion capture experience, please make sure to read the following instructions.

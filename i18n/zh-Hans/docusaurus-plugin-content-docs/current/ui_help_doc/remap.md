@@ -3,6 +3,8 @@ sidebar_position: 3
 title: "传感器整体预览"
 ---
 
+<span id="传感器整体预览" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 传感器整体预览
 
 如下图所示，对应关节部位绿色则代表传感器已连接，灰色则表示未连接。图中左侧即为人体自身的左侧，比如下图中左脚的传感器没有连接，右边下腿的传感器也没有连接。

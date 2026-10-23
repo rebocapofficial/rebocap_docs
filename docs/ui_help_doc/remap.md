@@ -3,6 +3,8 @@ sidebar_position: 3
 title: "Sensor Overview"
 ---
 
+<span id="sensor-overview" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Sensor Overview
 
 As shown in the figure below, a green color indicates that the sensor is connected to the corresponding joint, while gray indicates that it is not connected. The left side of the image represents the left side of the human body; for example, in the image below, the sensor on the left foot is not connected, and the sensor on the right lower leg is also not connected.

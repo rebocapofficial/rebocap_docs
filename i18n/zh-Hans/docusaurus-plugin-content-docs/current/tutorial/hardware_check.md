@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "硬件说明"
 ---
 
+<span id="开箱检查" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## 硬件说明
 
 - 产品目前采用抽屉彩盒+普通纸箱包装，中间采用气柱垫6面环绕来增加缓冲
@@ -61,7 +63,7 @@ title: "硬件说明"
   4. 塑料外壳目前均没有进行UV电镀，容易留下划痕
   5. 不同跟踪器电池存在一定容量误差属于正常现象，以使用时长为准【电量百分比只能作为参考，不可作为评估指标】。
 
-<a id="hardware_button_instroction" />
+<a id="hardware_button_instroction"></a>
 
 ## 按键说明
 

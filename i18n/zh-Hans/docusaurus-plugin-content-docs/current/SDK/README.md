@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: "SDK 接口说明"
 ---
+<span id="sdk-接口说明" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # SDK 接口说明
 目前 DLL 对外提供 8 个接口，各个 SDK 是对 DLL 接口的封装，具体请查看 cpp sdk 中的 `include/rebocap_ws_sdk/rebocap_ws_sdk.h` 头文件。
 
@@ -120,6 +122,8 @@ joints_smpl = [
     "R_Hand"
 ]
 ```
+
+<span id="sdk-下载" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # SDK 下载
 ### python SDK

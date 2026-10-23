@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "官方插件集合"
 ---
 
+<span id="官方插件集合" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 官方插件集合
 
 目前支持三種插件，其他插件如有需要，可以留言，官方未來會考慮開發，或者將社區開發的插件放到這裡。
@@ -13,6 +15,8 @@ title: "官方插件集合"
 
 ### [Unity 插件](unity)
 
+
+<span id="社區插件集合" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 社區插件集合
 敬請期待！

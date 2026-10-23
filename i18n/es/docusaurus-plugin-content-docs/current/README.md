@@ -48,7 +48,7 @@ title: "Navegación del Documento"
 
 ## Todavía no tengo un dispositivo pero quiero probar el software
 
-Puedes descargar el software rebocap y utilizar la función de [Reproducción sin Conexión (Offline Playback)] para reproducir un archivo de muestra. Esto pondrá el software en estado de funcionamiento, permitiéndote probar la conexión del SDK o del complemento.
+Puedes descargar el software rebocap y utilizar la función de [Reproducción sin Conexión (Offline Playback)](ui_help_doc/control/connect#offline-playback) para reproducir un archivo de muestra. Esto pondrá el software en estado de funcionamiento, permitiéndote probar la conexión del SDK o del complemento.
 
 
 

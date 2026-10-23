@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: "UE プラグインのダウンロード"
 ---
+<span id="ue-プラグインのダウンロード" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # UE プラグインのダウンロード
 
 以下はダウンロードリンクです。UEのソースコードを確認して開発し、自分でコンパイルすることができます。現在、プラグインは `UE5` バージョンにのみ対応しています。
@@ -20,6 +22,8 @@ title: "UE プラグインのダウンロード"
 
 <a href="/img/ue_plugin/rebocap_unreal_engine_plugin_prebuild_56_v2.zip" target="_blank" download="rebocap_unreal_engine_plugin_prebuild_56.zip">ue 5.6 plugin prebuild </a>
 
+
+<span id="ue-使用説明" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # UE 使用説明
 
@@ -93,6 +97,8 @@ title: "UE プラグインのダウンロード"
 </video>
 </div>
 
+
+<span id="meta-human（またはデフォルトの-apose-キャラクター）を-tpose-に変更（apose-から-tpose-への変換" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### Meta Human（またはデフォルトの Apose キャラクター）を TPose に変更（APose から TPose への変換
 

@@ -3,8 +3,12 @@ sidebar_position: 1
 title: "Tips"
 ---
 
+<span id="tips" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Tips
 Reading this page without going through the tutorial is meaningless. [Please read the tutorial first](../../tutorial/README.md)!!!!
+
+<span id="steamvr-integration-steps" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # SteamVR Integration Steps
 1. For first-time use, please be sure to restart SteamVR after opening the software. A green indicator light in the upper left corner of the VR panel indicates successful VR integration. [If you cannot connect, please see here](#vr_cannot_connect)

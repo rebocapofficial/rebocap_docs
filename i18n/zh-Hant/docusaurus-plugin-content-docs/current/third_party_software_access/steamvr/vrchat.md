@@ -5,6 +5,8 @@ title: "VRChat 基本設定"
 
 **閱讀本教程之前，請務必[仔細閱讀 SteamVR 的接入](README.md)！！！如果steamVR上 rebocap 的跟踪器圖標都沒有點亮過，本教程沒有任何意義！！！**
 
+<span id="vrchat-基本設定" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # VRChat 基本設定
 
 ### vrchat 基礎設定介紹
@@ -94,6 +96,8 @@ title: "VRChat 基本設定"
   </div>
 
 
+<span id="vrchat-遇到問題診斷步驟" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # VRChat 遇到問題診斷步驟
 > 非細節問題，細節問題一般特指：腿在某個狀態下無法伸直等，這些和VRC以及骨架設置相關性比較高。後續會補充說明。
 > 
@@ -106,11 +110,15 @@ title: "VRChat 基本設定"
     > 具體[請查看這裡](README.md#how_to_solve_tracker_slant)
 - 檢查 VRC 關鍵設置是否和上述教程一致
 
+<span id="為什麼vrc中�人物手臂無法伸直" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ### 為什麼VRC中人物手臂無法伸直
 - 和模型骨架與自身骨架不匹配導致，如果模型骨架的手臂偏短，就比較容易伸直，核心是骨骼比例和現實人物不一致導致。
   > 高級玩家可以自行嘗試使用 Arm 模式，然後修改 `arm vs height ratio`。
   > 
   > 這裡舉個極端例子方便玩家理解，比如虛擬人物的手臂有3米，人物本身的高度只有1.7米，現實中人物雙臂正常下垂的位置在腰這裡，但是 VRChat 必須要尊重現實中手部的位置，那麼只能將虛擬人物的手臂彎曲一定的角度了。
+
+<span id="為什麼我校準的時候，人物的雙腳在地板下邊" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### 為什麼我校準的時候，人物的雙腳在地板下邊
 > 這裡在 [如何在VRChat中進行校準](#calibration_in_vrc) 的第三點已經有說明

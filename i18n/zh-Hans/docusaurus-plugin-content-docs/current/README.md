@@ -33,6 +33,8 @@ title: "文档导航"
 
 <div style="border-left: 6px solid #ff8080; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
+<span id="特别声明" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## 特别声明 {#special-statement-toc}
 <h2 class="tutorial-heading-flag" style="background: #ff8080; margin-top: 0; display: inline-block;">特别声明</h2>
 <p>翻译部分基于中文使用 `chatgpt` 翻译，如有任何疑问，请在论坛或者社区反馈，我们会修正不恰当描述！</p>
@@ -60,7 +62,7 @@ title: "文档导航"
 
 
 
-可以下载rebocap软件并使用[离线播放]功能播放一段示例文件，由此软件会处于工作状态，可以测试SDK或插件的连接。
+可以下载rebocap软件并使用[离线播放](ui_help_doc/control/connect#offline-playback)功能播放一段示例文件，由此软件会处于工作状态，可以测试SDK或插件的连接。
 
 
 

@@ -181,6 +181,8 @@ Estas configuraciones no afectan a los usuarios del modo VR, por lo que los usua
    > 
    > Si necesitas crear animaciones con el FBX, asegúrate de usar datos de rotación en lugar de las direcciones absolutas de los huesos contenidas en el FBX exportado. Más adelante invitaremos a los miembros de la comunidad a grabar tutoriales sobre cómo usar datos de captura de movimiento para hacer animaciones.
 
+   <span id="offline-playback" class="legacy-anchor-alias" aria-hidden="true"></span>
+
    **Reproducción sin conexión (Offline Playback)**
    > Propósito: Cargar y reproducir archivos de grabación en bruto `.rebo_anim` exportados sin conexión
    > Uso: Haz clic en Carga Sin Conexión, selecciona el archivo de grabación en bruto y la reproducción comenzará automáticamente. Se comporta de la misma manera que el modo en línea. Antes de cargar, puedes cambiar el esqueleto del usuario, elegir si usar `IK`, si habilitar el `Motor de IA (AI Engine)`, etc., y los cambios surten efecto de inmediato.

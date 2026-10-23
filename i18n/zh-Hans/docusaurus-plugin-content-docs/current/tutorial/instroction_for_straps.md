@@ -6,6 +6,8 @@ title: "绑带安装指南"
 ## 绑带安装指南
 <a id="tracker_common_install_method"></a>
 
+<span id="跟踪器安装到绑带上" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ### 跟踪器安装通用绑法
 **要点：**
 1. 对于绑带毛面向着跟踪器底部
@@ -27,6 +29,8 @@ title: "绑带安装指南"
 
 
 <a id="tracker_complex_install_method"></a>
+
+<span id="跟�踪器安装复杂绑法" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### 跟踪器安装复杂绑法
 :::info 对比说明
@@ -142,6 +146,8 @@ title: "绑带安装指南"
 惯性传感器的跟踪器是方向传感器，不是位置传感器，因此任何肉体形变，都会改变虚拟骨骼的方向。我们的位置是根据身体每根骨骼的方向和虚拟骨骼长度计算而来，因此软件实际无法感知节点佩戴在骨骼中的相对位置。
 
 <a id="tracker_position_recomendation"></a>
+
+<span id="跟踪器佩�戴位置推荐" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### 跟踪器佩戴位置推荐
 目前没有推荐的具体部位，任何部位，只要佩戴在对应骨骼上，都可以校准并进行动捕，但是每个人的体型分布不一致，会导致在不同的部位效果不一致，因此佩戴在不同部位，效果会有比较大的出入，这里仅给出佩戴指导和说明，更多的需要自己去尝试不同部位的影响。

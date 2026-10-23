@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: "Blender Plugin Download"
 ---
+<span id="blender-plugin-download" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Blender Plugin Download
 
 Click the link below to download directly:
@@ -18,6 +20,8 @@ Update Notes:
 - Add bone adsorption selection feature
 
 
+<span id="blender-tutorial-video" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Blender Tutorial Video
 Note: There is no sound here.
 
@@ -26,6 +30,8 @@ Note: There is no sound here.
       <source id="mp4" src="/img/for_blender_install/blender_usage.mp4" type="video/mp4" />
 </video>
 </div>
+
+<span id="blender-plugin-installation" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Blender Plugin Installation
 
@@ -53,6 +59,8 @@ If some users fail to install, please find the original installation location of
 
 
 ![Blender Installation Location Diagram](../../static/img/for_blender_install/blender_23.png)
+
+<span id="skeleton-binding" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Skeleton Binding
 1. Automatic binding of VRM skeleton

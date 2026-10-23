@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "提示"
 ---
 
+<span id="提示" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 提示
 没有阅读教程的情况下，阅读本页面没有任何意义，[请首先阅读教程](../../tutorial/README.md)！！！！
 

@@ -4,6 +4,8 @@ title: "連接指南"
 sidebar_label: "連接指南"
 ---
 
+<span id="連接" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 連接指南
 1. 點亮要連接的追蹤器
    > 支援的追蹤器組合模式見 [上一個章節](instroction_for_straps#follow_mode)
@@ -37,6 +39,8 @@ sidebar_label: "連接指南"
 * 如果使用台式機，請不要將接收器放置在機箱後邊
 * 接收器旁邊儘量保持5cm以上空曠區域，比如不要在接收器旁邊插入U盤，如果可以，嘗試延長線也許對信號有一定幫助
 
+
+<span id="校準" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 校準
 穿戴請參考下圖，具體佩戴位置因人而異，原理及細節描述請參考[上一章節](instroction_for_straps#tracker_position_recomendation)
@@ -110,6 +114,8 @@ sidebar_label: "連接指南"
 ### 抖音直播伴侶接取 [請看這裡影片](https://www.bilibili.com/video/BV1fPbwzbEak)
 
 ### 雲端鏡虛擬直播 存取 [請看這裡影片](https://www.bilibili.com/video/BV1z7hFzfEw6)
+
+<span id="必須了解項" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 必須了解項
 為了避免使用中遇到的各種問題（比如跟蹤器莫名其妙歪了等問題），也為了您有更好的動捕體驗，請務必閱讀下述說明。

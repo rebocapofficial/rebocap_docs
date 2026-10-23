@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: "SDK インターフェース説明"
 ---
+<span id="sdk-インターフェース説明" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # SDK インターフェース説明
 現在、DLL全体で外部に8つのポートを公開しており、各SDKはDLLインターフェースのラッパーです。cpp sdkの `include/rebocap_ws_sdk/rebocap_ws_sdk.h` ヘッダーファイルを参照してください。
 
@@ -122,6 +124,8 @@ joints_smpl = [
     "R_Hand"
 ]
 ```
+
+<span id="sdk-ダウンロード" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # SDK ダウンロード
 ### python SDK

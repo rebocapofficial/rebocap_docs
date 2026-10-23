@@ -3,6 +3,8 @@ sidebar_position: 4
 title: "Unity Demo 包下载"
 ---
 
+<span id="unity-demo-包下载" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Unity Demo 包下载
 
 Unity 插件主要面向开发者使用，开发者可以查看具体代码二次开发，下边是下载地址。
@@ -19,6 +21,8 @@ unity sdk v3 更新日志
 
 :::
 
+
+<span id="unity-切换-vrm-模型人物示例" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Unity 切换 VRM 模型人物示例
 

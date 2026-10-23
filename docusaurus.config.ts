@@ -124,6 +124,7 @@ const config: Config = {
 
 
   plugins: [
+    require.resolve('./src/plugins/stable-ssg'),
     require.resolve('docusaurus-plugin-image-zoom'),
     require('./src/plugins/ai-search-plugin').default,
   ],

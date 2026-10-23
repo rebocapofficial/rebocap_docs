@@ -3,6 +3,8 @@ sidebar_position: 4
 title: "Unity デモパッケージのダウンロード"
 ---
 
+<span id="unity-デモパッケージのダウンロード" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Unity デモパッケージのダウンロード
 
 Unity プラグインは主に開発者向けで、開発者は具体的なコードを確認して二次開発を行うことができます。以下はダウンロードリンクです。
@@ -19,6 +21,8 @@ unity sdk v3 更新ログ
 
 :::
 
+
+<span id="unity-vrm-モデルキャラクター切り替えの例" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Unity VRM モデルキャラクター切り替えの例
 

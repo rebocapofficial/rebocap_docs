@@ -26,6 +26,8 @@ title: "文件導航"
 
 <div style="border-left: 6px solid #ff8080; padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">
 
+<span id="特別聲明" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## 特別聲明 {#special-statement-toc}
 <h2 class="tutorial-heading-flag" style="background: #ff8080; margin-top: 0; display: inline-block;">特別聲明</h2>
 <p>翻譯部分基於中文使用 `chatgpt` 翻譯，如有任何疑問，請在論壇或者社區反饋，我們會修正不恰當描述！</p>
@@ -50,7 +52,7 @@ title: "文件導航"
 
 ## 還未有設備但想測試軟體
 
-可以下載rebocap軟體並使用[離線播放]功能播放一段範例檔案，如此軟體會處於工作狀態，可以測試SDK或外掛程式的連接。
+可以下載rebocap軟體並使用[離線播放](ui_help_doc/control/connect#offline-playback)功能播放一段範例檔案，如此軟體會處於工作狀態，可以測試SDK或外掛程式的連接。
 
 
 

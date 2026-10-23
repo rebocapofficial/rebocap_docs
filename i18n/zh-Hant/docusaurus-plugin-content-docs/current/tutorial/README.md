@@ -27,6 +27,8 @@ title: "新手入門與快速指南"
 
 ---
 
+<span id="必須了解項" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## ⚠️ 2. 核心注意事項（磁場校準）
 
 - 磁場校準是保證空間追蹤精度的核心關鍵步驟。建議在**首次充電完成後**，或**更換使用房間環境後**及時進行磁場校準。
@@ -48,6 +50,8 @@ title: "新手入門與快速指南"
 
 ---
 
+<span id="video_tutorial" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## 📺 4. 影片教學與社區支援
 
 影片教學為輔助學習選項，文字版教學包含更詳細的問題排查與細節說明。
@@ -68,6 +72,8 @@ title: "新手入門與快速指南"
 :::
 
 ---
+
+<span id="首次使用務必依次閱讀本目錄下所有內容" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### 📂 單項教學快速回顧
 如需單獨查閱特定基礎模組，可訪問以下單項說明：

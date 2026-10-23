@@ -3,6 +3,8 @@ sidebar_position: 2
 title: "硬件列表信息"
 ---
 
+<span id="硬件列表信息" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 硬件列表信息
 硬件列表信息用于全局预览。
 - 第一列

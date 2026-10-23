@@ -5,6 +5,8 @@ title: "MacおよびLinuxのサポートについて"
 ## MacおよびLinuxのサポートについて
 > 現段階ではサポートしていません。Linuxは将来的にもサポートしない予定ですが、Macはサポートする可能性があります。
 
+<span id="一体型デバイスのサポートにつ�いて" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## 一体型デバイスのサポートについて
 > 将来的にはQuest & Picoをサポートする予定ですが、具体的にはデバイスがUSBレシーバー（専用の信号受信機）をどの程度サポートしているかによります。
 
@@ -42,6 +44,8 @@ title: "MacおよびLinuxのサポートについて"
 
 <a id="port_open_failed"></a>
 
+<span id="�ブロードキャストポートの起動失敗" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## ブロードキャストポートの起動失敗
 > ポートが占有されているか、前の`rebocap`インスタンスのプロセスが残っている可能性があります。`rebocap`が1つだけ起動していることを確認し、タスクマネージャーに`rebocap`プロセスが1つだけ存在することを確認してください。
 
@@ -63,6 +67,8 @@ title: "MacおよびLinuxのサポートについて"
 > [こちらを参照](../ui_help_doc/control/skeleton_setting#skeleton_not_valid)してください。
 
 <a id="firmware_version"></a>
+
+<span id="ファームウェアバージョンの更新が必要��という通知" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ## ファームウェアバージョンの更新が必要という通知
 > [こちらを参照](../ui_help_doc/control/config#firmware_update)し、ファームウェアを直接更新してください。

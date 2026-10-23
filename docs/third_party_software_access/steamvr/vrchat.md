@@ -5,6 +5,8 @@ title: "VRChat Basic Settings"
 
 **Before reading this tutorial, please make sure to [carefully read the SteamVR integration](README.md)!!! If the rebocap tracker icon on SteamVR has never lit up, this tutorial is meaningless!!!**
 
+<span id="vrchat-basic-settings" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # VRChat Basic Settings
 
 ### Introduction to VRChat Basic Settings
@@ -91,6 +93,8 @@ After completing the basic settings mentioned above, follow the steps below:
         <source id="mp4" src="/img/vrc_calibrate.mp4" type="video/mp4" />
   </video>
   </div>
+
+<span id="vrchat-troubleshooting-steps" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # VRChat Troubleshooting Steps
 > Non-detail issues generally refer to specific problems, such as legs not being able to straighten in certain states, which are highly related to VRC and skeleton settings. Further explanations will be provided later.

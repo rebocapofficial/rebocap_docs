@@ -5,6 +5,8 @@ title: "VRChat 基本設定"
 
 **このチュートリアルを読む前に、必ず[SteamVRの接続をよく読んでください](README.md)！！！もしSteamVR上でRebocapのトラッカーアイコンが一度も点灯していない場合、このチュートリアルには何の意味もありません！！！**
 
+<span id="vrchat-基本設定" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # VRChat 基本設定
 
 ### vrchat 基本設定の紹介
@@ -92,6 +94,8 @@ Rebocapでの身長測定方法を確認するには：ログを開くと履歴�
     <source id="mp4" src="/img/vrc_calibrate.mp4" type="video/mp4" />
 </video>
 </div>
+
+<span id="vrchatでの問題診断手順" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # VRChatでの問題診断手順
 > 細かい問題ではなく、一般的な問題を指します。細かい問題は通常、特定の状態で足が伸びないなど、VRCや骨格設定に関連することが多いです。後で説明を追加します。

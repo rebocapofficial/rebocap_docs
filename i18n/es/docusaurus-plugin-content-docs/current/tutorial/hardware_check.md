@@ -61,7 +61,7 @@ title: "Comprobación de desempaquetado"
   4. La carcasa de plástico actualmente no tiene revestimiento UV, lo que facilita dejar arañazos.
   5. Hay un cierto error de capacidad entre las diferentes baterías de los rastreadores, lo cual es normal. El tiempo de uso es el estándar \[el porcentaje de batería solo se puede usar como referencia, no como un indicador de evaluación].
 
-<a id="hardware_button_instroction" />
+<a id="hardware_button_instroction"></a>
 
 ## Instrucciones de botones
 

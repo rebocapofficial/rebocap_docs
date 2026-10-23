@@ -3,6 +3,8 @@ sidebar_position: 1
 title: "Tips"
 ---
 
+<span id="tips" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Tips
 Reading this page without going through the tutorial is meaningless, [please read the tutorial first](../../tutorial/README.md)!!!!
 

@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: "Blender 插件下载"
 ---
+<span id="blender-插件下载" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Blender 插件下载
 
 点击下边链接可直接下载：
@@ -18,6 +20,8 @@ title: "Blender 插件下载"
 - 增加骨骼吸附选取功能
 
 
+<span id="blender-教程视频" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Blender 教程视频
 注意：视频没有声音！
 
@@ -27,6 +31,8 @@ title: "Blender 插件下载"
 </video>
 </div>
 
+
+<span id="blender-插件安装" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Blender 插件安装
 
@@ -55,6 +61,8 @@ title: "Blender 插件下载"
 
 ![Blender安装位置示意图](../../../../../static/img/for_blender_install/blender_23.png)
 
+
+<span id="骨骼绑定" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # 骨骼绑定
 1. VRM 骨骼自动绑定

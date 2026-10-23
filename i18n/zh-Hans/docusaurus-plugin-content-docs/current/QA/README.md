@@ -67,6 +67,8 @@ title: "是否支持Mac以及Linux"
 
 <a id="cal_exception"></a>
 
+<span id="校��准异常" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## 校准异常
 - 考虑穿戴模式不符合要求，[请查看这里](../tutorial/instroction_for_straps#follow_mode)
 - 考虑底层驱动异常，需要回滚驱动后，重新插拔接收器，[请查看这里](../tutorial/connect_and_use#how_to_solve_cannot_connect)（具体方法需要展开折叠部分查看）

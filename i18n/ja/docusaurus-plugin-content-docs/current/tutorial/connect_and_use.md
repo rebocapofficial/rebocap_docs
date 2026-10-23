@@ -4,6 +4,8 @@ title: "接続ガイド"
 sidebar_label: "接続ガイド"
 ---
 
+<span id="接続" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 接続ガイド
 1. 接続するトラッカーの電源を入れる
    > サポートされているトラッカーの組み合わせモードについては [前の章](instroction_for_straps#follow_mode) を参照してください
@@ -13,6 +15,8 @@ sidebar_label: "接続ガイド"
 ![接続レシーバー](../../../../../static/img/connect-jp.gif)
 
 <a id="how_to_solve_cannot_connect"></a>
+
+<span id="接続できな��い理由と解決策" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### 接続できない理由と解決策
 <details>
@@ -37,6 +41,8 @@ sidebar_label: "接続ガイド"
 * デスクトップPCを使用している場合は、レシーバーをケースの後ろに置かないでください
 * レシーバーの横にはできるだけ5cm以上の空間を保ち、例えばレシーバーの横にUSBメモリを挿入しないでください。可能であれば、延長ケーブルを試すと信号に一定の助けになるかもしれません
 
+
+<span id="キャリブレーション" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # キャリブレーション
 装着については以下の図を参照してください。具体的な装着位置は人によって異なります。原理や詳細については[前の章](instroction_for_straps#tracker_position_recomendation)を参照してください。
@@ -96,6 +102,8 @@ sidebar_label: "接続ガイド"
 <a id="third_party"></a>
 
 # ソフトウェア接続
+<span id="steamvr-接続-こちらをご覧く��ださい" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ### SteamVr 接続 [こちらをご覧ください](../third_party_software_access/steamvr/README.md)
 - VRChat 接続 [こちらをご覧ください](../third_party_software_access/steamvr/vrchat)
 - コミュニティ接続チュートリアル [https://kdocs.cn/l/cnOltEt3BgQP](https://kdocs.cn/l/cnOltEt3BgQP)，リンクにアクセスできない場合は<a href="/img/files/RebocapVRchatTutorial-Japanese.pdf"  target="_blank" download="RebocapVRchat ガイド - 日本語.pdf">PDF ファイルをダウンロード</a>してご覧ください（オフラインファイルは最新でない場合があります）
@@ -104,8 +112,12 @@ sidebar_label: "接続ガイド"
 ### VMC プロトコルユーザー接続 [こちらをご覧ください](../third_party_software_access/VMC/README.md)
 - warudo 接続 [こちらをご覧ください](../third_party_software_access/VMC/warudo)
 
+<span id="必須事項" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 必須事項
 使用中に発生する様々な問題（例えばトラッカーが突然傾くなど）を避けるため、またより良いモーションキャプチャ体験を得るために、以下の説明を必ずお読みください。
+
+<span id="ハードウェアキ��ャリブレーション" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### ハードウェアキャリブレーション
 - [磁場キャリブレーション](../ui_help_doc/control/config#magnet_calibrate)

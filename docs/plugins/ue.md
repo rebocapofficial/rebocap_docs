@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: "UE Plugin Download"
 ---
+<span id="ue-plugin-download" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # UE Plugin Download
 
 Below are the download links. For UE source code development, you can compile it yourself. Currently, the plugin is only applicable to the `UE5` version.
@@ -20,6 +22,8 @@ Below are the download links. For UE source code development, you can compile it
 
 <a href="/img/ue_plugin/rebocap_unreal_engine_plugin_prebuild_56_v2.zip" target="_blank" download="rebocap_unreal_engine_plugin_prebuild_56.zip">ue 5.6 plugin prebuild </a>
 
+
+<span id="ue-usage-instructions" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # UE Usage Instructions
 

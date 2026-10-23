@@ -3,6 +3,8 @@ sidebar_position: 4
 title: "3D Preview Feature"
 ---
 
+<span id="3d-preview-feature" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # 3D Preview Feature
 - **Display real-time preview of motion capture**
 
@@ -29,6 +31,8 @@ title: "3D Preview Feature"
 </details>
 
 ![3d preview](../../static/img/3d_view_1.png)
+
+<span id="log-feature" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Log Feature
 Used to check for warning messages, etc.

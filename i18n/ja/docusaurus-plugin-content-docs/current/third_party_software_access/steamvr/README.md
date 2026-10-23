@@ -3,8 +3,12 @@ sidebar_position: 1
 title: "ヒント"
 ---
 
+<span id="ヒント" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # ヒント
 チュートリアルを読まずにこのページを読むことには意味がありません。[まずはチュートリアルをお読みください](../../tutorial/README.md)！！！！
+
+<span id="steamvr-接続手順" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # SteamVR 接続手順
 1. 初めて使用する場合は、ソフトウェアを開いた後、必ず SteamVR を再起動してください。VR パネルの左上隅の緑色のインジケーターが点灯していれば、VR 接続が成功したことを示します。[接続できない場合はここを参照してください](#vr_cannot_connect)
@@ -82,6 +86,8 @@ title: "ヒント"
     </div>
 
 <a id="other_notes"></a>
+
+<span id="その��他の注意事項" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### その他の注意事項
 :::info 英語以外のシステム名を使用しているユーザーへの注意！！！

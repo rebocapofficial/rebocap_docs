@@ -3,6 +3,8 @@ sidebar_position: 4
 title: "Unity Demo Package Download"
 ---
 
+<span id="unity-demo-package-download" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 # Unity Demo Package Download
 
 The Unity plugin is primarily intended for developers. Developers can view the specific code for secondary development. Below is the download link.
@@ -21,6 +23,8 @@ unity sdk v3 changelog
 :::
 
 
+
+<span id="unity-switch-vrm-model-character-example" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # Unity Switch VRM Model Character Example
 

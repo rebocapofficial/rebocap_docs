@@ -27,6 +27,8 @@ Please select the tutorial corresponding to your equipment set. The guides cover
 
 ---
 
+<span id="must-know-items" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## ⚠️ 2. Important Notice (Magnetic Field Calibration)
 
 - Magnetic field calibration is crucial to ensure spatial tracking accuracy. It is recommended to perform magnetic calibration **after the first charge**, or whenever you **move to a new room environment**.
@@ -48,6 +50,8 @@ After completing initial calibration, you can stream motion data to external sof
 
 ---
 
+<span id="video_tutorial" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## 📺 4. Video Tutorial & Community Support
 
 Video tutorials are supplementary options; the text documentation provides more detailed troubleshooting and explanations.
@@ -68,6 +72,8 @@ For optimal motion capture performance or if you encounter issues, please make s
 :::
 
 ---
+
+<span id="be-sure-to-read-all-the-contents-in-this-directory-for-the-first-use" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### 📂 Quick Review of Individual Topics
 If you need to consult specific basic modules separately:

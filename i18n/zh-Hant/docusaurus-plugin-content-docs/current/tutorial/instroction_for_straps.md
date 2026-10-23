@@ -6,6 +6,8 @@ title: "綁帶安裝指南"
 ## 綁帶安裝指南
 <a id="tracker_common_install_method"></a>
 
+<span id="跟蹤器安裝到綁帶上" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ### 跟蹤器安裝通用綁法
 **要點：**
 1. 對於綁帶毛面向著跟蹤器底部
@@ -26,6 +28,8 @@ title: "綁帶安裝指南"
   </div>
 
 <a id="tracker_complex_install_method"></a>
+
+<span id="跟�蹤器安裝複雜綁法" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### 跟蹤器安裝複雜綁法
 :::info 對比說明
@@ -141,6 +145,8 @@ title: "綁帶安裝指南"
 慣性傳感器的跟蹤器是方向傳感器，不是位置傳感器，因此任何肉體形變，都会改變虛擬骨骼的方向。我們的位置是根據身體每根骨骼的方向和虛擬骨骼長度計算而來，因此軟件實際無法感知節點佩戴在骨骼中的相對位置。
 
 <a id="tracker_position_recomendation"></a>
+
+<span id="跟蹤器佩�戴位置推薦" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### 跟蹤器佩戴位置推薦
 目前沒有推薦的具體部位，任何部位，只要佩戴在對應骨骼上，都可以校準並進行動捕，但是每個人的體型分佈不一致，會導致在不同的部位效果不一致，因此佩戴在不同部位，效果會有比較大的出入，這裡僅給出佩戴指導和說明，更多的需要自己去嘗試不同部位的影響。

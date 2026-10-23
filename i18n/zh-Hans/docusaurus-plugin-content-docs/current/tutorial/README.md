@@ -27,6 +27,8 @@ title: "新手入门与快速指南"
 
 ---
 
+<span id="必须了解项" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## ⚠️ 2. 核心注意事项（磁场校准）
 
 - 磁场校准是保证空间追踪精度的核心关键步骤。建议在**首次充电完成后**，或**更换使用房间环境后**及时进行磁场校准。
@@ -48,6 +50,8 @@ title: "新手入门与快速指南"
 
 ---
 
+<span id="video_tutorial" class="legacy-anchor-alias" aria-hidden="true"></span>
+
 ## 📺 4. 视频教程与社区支持
 
 视频教程为辅助学习选项，文字版教程包含更详细的问题排查与细节说明。
@@ -68,6 +72,8 @@ title: "新手入门与快速指南"
 :::
 
 ---
+
+<span id="首次使用务必依次阅读本目录下所有内容" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ### 📂 单项教程快速回顾
 如需单独查阅特定基础模块，可访问以下单项说明：
