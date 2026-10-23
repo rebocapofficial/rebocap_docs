@@ -14,7 +14,7 @@ title: "VRChat 基本设置"
  <img src="/img/vrchat_simple_setting.png" alt="left" width="45%" />
  </div>
 
-基础 IK 设置介绍关键点介绍：
+基础 IK 设置要点：
 1. 调节 VRChat 中的身高
 
     > 用户真实身高，这里填写和 Rebocap 中测量一致的身高即可，而不应该填写你的真实身高！因为所有的跟踪器都是按照 Rebocap 测量的高度来模拟的
@@ -31,7 +31,7 @@ title: "VRChat 基本设置"
 
 2. 调节 VRChat 测量模式
 
-    > 刚使用VRChat全身动捕的用户，统一使用 `Height` 模式！对 VRChat IK 熟悉的用户，可以考虑使用 Arm 模式，配合 Arm
+    > 刚使用VRChat全身动捕的用户，统一使用 `Height` 模式！对 VRChat IK 熟悉的用户，可以考虑使用 Arm 模式，配合下文的手臂身高比例设置使用
 
 3. 是否允许全身追踪
 
@@ -104,7 +104,7 @@ title: "VRChat 基本设置"
 - 检查 VRC 关键设置是否和上述教程一致
 
 ### 为什么VRC中人物手臂无法伸直
-- 和模型骨架与自身骨架不匹配导致，如果模型骨架的手臂偏短，就比较容易伸直，核心是骨骼比例和现实人物不一致导致。
+- 这是模型骨架与自身骨架不匹配导致的。作为对照，模型的手臂相对于真人偏短时，通常更容易伸直；相对于真人偏长时，为了让虚拟手部与现实手部的位置保持一致，虚拟人物的手臂更容易弯曲。核心原因是模型的骨骼比例与真人不一致。
   > 高级玩家可以自行尝试使用 Arm 模式，然后修改 `arm vs height ratio`。
   > 
   > 这里举个极端例子方便玩家理解，比如虚拟人物的手臂有3米，人物本身的高度只有1.7米，现实中人物双臂正常下垂的位置在腰这里，但是 VRChat 必须要尊重现实中手部的位置，那么只能将虚拟人物的手臂弯曲一定的角度了。
@@ -129,7 +129,7 @@ title: "VRChat 基本设置"
 关于1、2两个点，具体描述请仔细[阅读教程部分](../../tutorial/instroction_for_straps#tracker_position_recomendation)
 
 ### 怎么提升稳定性
-1. 绑带使用[复杂绑定方法](../../tutorial/instroction_for_straps#quick_fix_complex_install)，或者使用购买宽绑带
+1. 绑带使用[复杂绑定方法](../../tutorial/instroction_for_straps#quick_fix_complex_install)，或者使用宽绑带
 2. 脚底传感器处理比较重要，[请查看这里](../../tutorial/instroction_for_straps#tracker_position_on_body)
 3. 跳舞用户，特别是激烈的热舞，建议找到磁场环境相对较好，关闭抗磁模式使用
 

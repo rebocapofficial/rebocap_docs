@@ -16,14 +16,14 @@ title: "是否支持Mac以及Linux"
 <a id="poor_signal"></a>
 
 ## 信号质量较差怎么处理
-> 首先检查[信号强度](../ui_help_doc/info#hardware_detail)，确保接收器以及跟踪器附近没有其它较强信号干扰或者屏蔽，比如接收器不要放置再机箱背部，另外接收器附近不要有U盘等。
+> 首先检查[信号强度](../ui_help_doc/info#hardware_detail)，确保接收器以及跟踪器附近没有其它较强信号干扰或者屏蔽，比如接收器不要放置在机箱背部，另外接收器附近不要有U盘等。
 > 
 > 其次确保 `CPU` 负载不要太高，或者`CPU`本身处于省电模式，尽量保障 `CPU` 负载在 70% 以内，同时排除 `CPU` 主频太低问题，例如笔记本散热不佳，可能导致主频低于 `2.5GHz`。
 
 <a id="not_static"></a>
 
 ## 校准时未检测到人物静止
-> 一般情况下，我们保持 `Apose` 会存在前后一定幅度的前后晃动，请尽量控制，另外，校准细则请[参考这里](../tutorial/connect_and_use#pose_calibration)。
+> 一般情况下，我们保持 `Apose` 会存在一定幅度的前后晃动，请尽量控制，另外，校准细则请[参考这里](../tutorial/connect_and_use#pose_calibration)。
 
 <a id="send_failed"></a>
 
@@ -81,7 +81,7 @@ title: "是否支持Mac以及Linux"
 <a id="height_error"></a>
 
 ## 头显高度异常
-- 如果检测高度低于10cm，那么很有可能是steamvr驱动测异常，可能存在 unicode 系统名称，也就是非英文系统名称导致，后续会修复，目前的解决方案可以通过修改安装位置尝试解决（[请看这里](../third_party_software_access/steamvr/#other_notes)），如果依然无法解决这个问题，[请论坛联系](https://forum.rebocap.site)，我们会有专门技术人员协助处理。
+- 如果检测高度低于10cm，那么很有可能是SteamVR 驱动检测异常，可能存在 unicode 系统名称，也就是非英文系统名称导致，后续会修复，目前的解决方案可以通过修改安装位置尝试解决（[请看这里](../third_party_software_access/steamvr/#other_notes)），如果依然无法解决这个问题，[请论坛联系](https://forum.rebocap.site)，我们会有专门技术人员协助处理。
 - 如果是头显高度和自身不匹配，可以首先[查看这里](../ui_help_doc/control/connect#vr_pannel)，也可以看下论坛的帖子
   - [中文版本](https://forum.rebocap.site/t/rebocap/52/1)
   - [英文版本](https://forum.rebocap.site/t/how-to-solve-the-abnormal-height-detection-in-rebocap/53/1)

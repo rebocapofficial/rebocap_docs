@@ -392,7 +392,7 @@ sidebar_position: 9
 
 >  <strong>2 - Emulate SteamVR vive trackers</strong><br />
  这个功能把quest系统的AI全身追踪点传入steamvr中，但在vrchat中出现追踪点重叠，抢夺控制权。<br />
- 如果想只启用他局部指定的追踪点，可以使用插件来调整。<br />
+ 如果只想启用其中指定部位的追踪点，可以使用插件来调整。<br />
 🌐 [插件的github](https://github.com/DenTechs/Virtual_Desktop_Body_Tracking_Configurator)
 
 
@@ -617,11 +617,11 @@ sidebar_position: 9
 
 ## 设定了追踪点的部位属性但游戏无法识别到脚和腰
 
-- 一些游戏使用openVR环境来识别追踪，但目前rebocap V01/V02 版本的Steamvr驱动会因为[Relo]名称缺失导致无法别识别的BUG，<br />
+- 一些游戏使用openVR环境来识别追踪，但目前rebocap V01/V02 版本的Steamvr驱动会因为[Relo]名称缺失导致无法识别的问题，<br />
 即便steamvr中修改了对应的属性也无法识别。<br />
 目前的处理方法为更换旧版 driver_rebocap.dll 文件。
 
-该BUG等待修复等待工作组后续修复
+该问题等待工作组后续修复
 
 <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; align-items: center; margin: 15px 0;">
 <div style="flex: 1; min-width: 250px; text-align: center;">
