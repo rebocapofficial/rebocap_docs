@@ -3,10 +3,10 @@ sidebar_position: 1
 title: "常见问题"
 ---
 ## 是否支持Mac以及Linux
-> 当前阶段不支持，linux未来也不支持，mac可能支持
+> 已提供 Linux 版本，mac 可能支持。
 
 ## 是否支持一体机
-> 未来计划支持 quest & pico，具体看 设备对 USB 接收器（即专用的信号接收器）的支持程度
+> 已提供 Android 版本软件，可给 Quest、Pico 这样一体机使用。
 
 <a id="audio"></a>
 

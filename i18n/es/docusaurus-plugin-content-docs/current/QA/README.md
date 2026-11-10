@@ -3,10 +3,10 @@ sidebar_position: 1
 title: "Preguntas frecuentes"
 ---
 ## ¿Soporta Mac y Linux?
-> Actualmente no compatible, Linux no será compatible en el futuro, Mac podría ser compatible
+> Ya está disponible la versión de Linux; es posible que Mac sea compatible en el futuro.
 
 ## ¿Soporta dispositivos independientes (standalone)?
-> Planes futuros para soportar Quest y Pico, dependiendo del soporte del dispositivo para receptores USB (es decir, receptores de señal dedicados)
+> Ya está disponible la versión de Android, que se puede usar en dispositivos independientes (standalone) como Quest y Pico.
 
 <a id="audio"></a>
 

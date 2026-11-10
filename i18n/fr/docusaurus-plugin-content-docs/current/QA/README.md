@@ -3,10 +3,10 @@ sidebar_position: 1
 title: "Questions fréquentes"
 ---
 ## Prend-il en charge Mac et Linux
-> Actuellement non pris en charge, Linux ne sera pas pris en charge à l'avenir, Mac pourrait être pris en charge
+> La version Linux est désormais disponible ; macOS pourrait être pris en charge à l'avenir.
 
 ## Prend-il en charge les appareils autonomes
-> Projets futurs de prendre en charge Quest & Pico, en fonction de la prise en charge par l'appareil des récepteurs USB (c'est-à-dire des récepteurs de signaux dédiés)
+> La version Android est désormais disponible et peut être utilisée sur des appareils autonomes tels que Quest et Pico.
 
 <a id="audio"></a>
 

@@ -3,10 +3,10 @@ sidebar_position: 1
 title: "FAQ"
 ---
 ## Does it support Mac and Linux
-> Currently not supported, Linux will not be supported in the future, Mac might be supported
+> A Linux version is now available; macOS may be supported in the future.
 
 ## Does it support standalone devices
-> Future plans to support Quest & Pico, depending on the device's support for USB receivers (i.e., dedicated signal receivers)
+> An Android version is now available and can be used on standalone headsets such as Quest and Pico.
 
 <a id="audio"></a>
 

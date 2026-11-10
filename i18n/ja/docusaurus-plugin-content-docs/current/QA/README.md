@@ -3,12 +3,12 @@ sidebar_position: 1
 title: "よくある質問"
 ---
 ## MacおよびLinuxのサポートについて
-> 現段階ではサポートしていません。Linuxは将来的にもサポートしない予定ですが、Macはサポートする可能性があります。
+> Linux 版を提供しています。Mac は今後対応する可能性があります。
 
 <span id="一体型デバイスのサポートにつ�いて" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 ## 一体型デバイスのサポートについて
-> 将来的にはQuest & Picoをサポートする予定ですが、具体的にはデバイスがUSBレシーバー（専用の信号受信機）をどの程度サポートしているかによります。
+> Android 版ソフトウェアを提供しており、Quest、Pico などの一体型デバイスで使用できます。
 
 <a id="audio"></a>
 

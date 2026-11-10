@@ -1,0 +1,512 @@
+/* =============================================================
+ * 下载页 · 系统选择器（Windows / Linux / Android）
+ * -------------------------------------------------------------
+ * 设计约束（对应 AI_WARNING_MEMO.md）：
+ * 1. 本组件刻意不使用 .html-carousel 类，避免被 CarouselManager
+ *    每 10 秒自动轮播接管；切换完全由 CSS 兄弟选择器完成。
+ * 2. 类名统一以 .os-switch 前缀隔离，不覆盖站内轮播与其它组件。
+ * 3. 样式集中在本文件，由 src/css/custom.css 统一 @import；
+ *    严禁在 MDX 内写 <style> 或内联 JSX 样式对象。
+ * 4. 仅简体中文下载页使用，其它语言页面不受影响。
+ * ============================================================= */
+
+.os-switch {
+  --os-accent: #88b49c;
+  --os-accent-ink: #10261a;
+  --os-radius: 10px;
+  position: relative;
+  margin: 18px 0 10px;
+}
+
+/* 视觉隐藏但保留键盘可达性：Tab 聚焦后可用方向键切换系统 */
+.os-switch > input[type='radio'] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---------- 三段系统选择 ---------- */
+.os-switch-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.os-switch-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 0;
+  padding: 12px 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--os-radius);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  user-select: none;
+  transition: border-color 0.2s ease, background 0.2s ease,
+    box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.os-switch-tab:hover {
+  border-color: var(--os-accent);
+}
+
+.os-switch-tab-icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  color: var(--ifm-color-emphasis-700);
+  fill: currentColor;
+  transition: color 0.2s ease;
+}
+
+.os-switch-tab:hover .os-switch-tab-icon {
+  color: var(--os-accent);
+}
+
+/* 选中的 Windows 按钮本身就是绿底，hover 时必须保持深色图标 */
+.os-switch-tab-win:hover .os-switch-tab-icon {
+  color: var(--os-accent-ink);
+}
+
+.os-switch-tab-name {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ifm-font-color-base);
+  white-space: nowrap;
+}
+
+/* 选中态：默认 Windows（不依赖 checked 属性，避免受控输入被 React 复位） */
+.os-switch-tab-win {
+  border-color: var(--os-accent);
+  background: var(--os-accent);
+  box-shadow: 0 2px 10px rgba(63, 127, 92, 0.22);
+}
+
+.os-switch-tab-win .os-switch-tab-name {
+  color: var(--os-accent-ink);
+}
+
+.os-switch-tab-win .os-switch-tab-icon {
+  color: var(--os-accent-ink);
+}
+
+#os-platform-linux:checked ~ .os-switch-tabs .os-switch-tab-win,
+#os-platform-android:checked ~ .os-switch-tabs .os-switch-tab-win {
+  border-color: var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  box-shadow: none;
+}
+
+#os-platform-linux:checked ~ .os-switch-tabs .os-switch-tab-win .os-switch-tab-name,
+#os-platform-android:checked ~ .os-switch-tabs .os-switch-tab-win .os-switch-tab-name {
+  color: var(--ifm-font-color-base);
+}
+
+#os-platform-linux:checked ~ .os-switch-tabs .os-switch-tab-win .os-switch-tab-icon,
+#os-platform-android:checked ~ .os-switch-tabs .os-switch-tab-win .os-switch-tab-icon {
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Windows 未选中时，hover 仍使用绿色图标 */
+#os-platform-linux:checked ~ .os-switch-tabs .os-switch-tab-win:hover .os-switch-tab-icon,
+#os-platform-android:checked ~ .os-switch-tabs .os-switch-tab-win:hover .os-switch-tab-icon {
+  color: var(--os-accent);
+}
+
+#os-platform-linux:checked ~ .os-switch-tabs .os-switch-tab-linux,
+#os-platform-android:checked ~ .os-switch-tabs .os-switch-tab-android {
+  border-color: var(--os-accent);
+  background: var(--os-accent);
+  box-shadow: 0 2px 10px rgba(63, 127, 92, 0.22);
+}
+
+#os-platform-linux:checked ~ .os-switch-tabs .os-switch-tab-linux .os-switch-tab-name,
+#os-platform-android:checked ~ .os-switch-tabs .os-switch-tab-android .os-switch-tab-name {
+  color: var(--os-accent-ink);
+}
+
+#os-platform-linux:checked ~ .os-switch-tabs .os-switch-tab-linux .os-switch-tab-icon,
+#os-platform-android:checked ~ .os-switch-tabs .os-switch-tab-android .os-switch-tab-icon {
+  color: var(--os-accent-ink);
+}
+
+/* 键盘聚焦提示 */
+#os-platform-win:focus-visible ~ .os-switch-tabs .os-switch-tab-win,
+#os-platform-linux:focus-visible ~ .os-switch-tabs .os-switch-tab-linux,
+#os-platform-android:focus-visible ~ .os-switch-tabs .os-switch-tab-android {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* ---------- 内容面板 ---------- */
+.os-switch-panel {
+  display: none;
+  margin-top: 10px;
+  padding: 16px 18px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.os-switch-panel-win {
+  display: block;
+}
+
+#os-platform-win:checked ~ .os-switch-panel-win {
+  animation: os-switch-fade 0.18s ease-out;
+}
+
+#os-platform-linux:checked ~ .os-switch-panel-win,
+#os-platform-android:checked ~ .os-switch-panel-win {
+  display: none;
+}
+
+#os-platform-linux:checked ~ .os-switch-panel-linux,
+#os-platform-android:checked ~ .os-switch-panel-android {
+  display: block;
+  animation: os-switch-fade 0.18s ease-out;
+}
+
+@keyframes os-switch-fade {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #os-platform-win:checked ~ .os-switch-panel-win,
+  #os-platform-linux:checked ~ .os-switch-panel-linux,
+  #os-platform-android:checked ~ .os-switch-panel-android {
+    animation: none;
+  }
+}
+
+/* ---------- 软件安装：跟随顶部系统选择 ---------- */
+.os-switch-install {
+  display: none;
+}
+
+/* Linux 权限命令较长，允许换行，避免右侧被截断 */
+.os-switch-install-linux pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.os-switch-install-linux pre code {
+  white-space: inherit;
+}
+
+.os-switch-install-win {
+  display: block;
+}
+
+body:has(#os-platform-linux:checked) .os-switch-install-win,
+body:has(#os-platform-android:checked) .os-switch-install-win {
+  display: none;
+}
+
+body:has(#os-platform-linux:checked) .os-switch-install-linux,
+body:has(#os-platform-android:checked) .os-switch-install-android {
+  display: block;
+  animation: os-switch-fade 0.18s ease-out;
+}
+
+body:has(#os-platform-win:checked) .os-switch-install-win {
+  display: block;
+  animation: os-switch-fade 0.18s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body:has(#os-platform-win:checked) .os-switch-install-win,
+  body:has(#os-platform-linux:checked) .os-switch-install-linux,
+  body:has(#os-platform-android:checked) .os-switch-install-android {
+    animation: none;
+  }
+}
+
+.os-switch-panel > :first-child {
+  margin-top: 0;
+}
+
+.os-switch-panel > :last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Windows 下载卡片 ---------- */
+.os-switch-downloads {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin: 14px 0 16px;
+}
+
+/* Linux / Android 目前各只有一个安装包，卡片不铺满整行 */
+.os-switch-panel-linux .os-switch-downloads,
+.os-switch-panel-android .os-switch-downloads {
+  grid-template-columns: minmax(0, 420px);
+}
+
+.os-switch-download {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 56px 14px 16px;
+  border: 2px solid var(--os-accent);
+  border-radius: 12px;
+  background: var(--ifm-background-color);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(63, 127, 92, 0.12);
+  transition: border-color 0.2s ease, background 0.2s ease,
+    box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.os-switch-download::after {
+  content: "↓";
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #e8f2ec;
+  color: #2f6b4f;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+  pointer-events: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.os-switch-download:hover,
+.os-switch-download:focus-visible {
+  background: #3f7f5c;
+  border-color: #3f7f5c;
+  box-shadow: 0 8px 18px rgba(63, 127, 92, 0.28);
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.os-switch-download:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.os-switch-download:hover .os-switch-download-main,
+.os-switch-download:focus-visible .os-switch-download-main {
+  color: #ffffff;
+}
+
+.os-switch-download:hover .os-switch-download-meta,
+.os-switch-download:focus-visible .os-switch-download-meta {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.os-switch-download:hover::after,
+.os-switch-download:focus-visible::after {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.os-switch-download-main {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #3f7f5c;
+  transition: color 0.2s ease;
+}
+
+/* 日语卡片标题较长，避免「ダウンロード」在桌面端被拆行 */
+html[lang='ja'] .os-switch-download-main {
+  font-size: 14px;
+}
+
+.os-switch-download-meta {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--ifm-color-emphasis-600);
+  transition: color 0.2s ease;
+}
+
+/* ---------- Android 配套工具 ---------- */
+.os-switch-aux {
+  margin: 16px 0 6px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--ifm-color-emphasis-300);
+}
+
+.os-switch-aux-title {
+  margin-bottom: 8px;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.os-switch-aux-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.os-switch-aux-tool {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  background: var(--ifm-background-color);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.os-switch-aux-tool:hover {
+  border-color: var(--os-accent);
+  background: #f3f8f5;
+  box-shadow: 0 4px 12px rgba(63, 127, 92, 0.14);
+  color: inherit;
+  text-decoration: none;
+}
+
+.os-switch-aux-info {
+  min-width: 0;
+}
+
+.os-switch-aux-name {
+  display: block;
+  color: #3f7f5c;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.os-switch-aux-meta {
+  display: block;
+  margin-top: 2px;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.os-switch-aux-btn {
+  flex: 0 0 auto;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #e8f2ec;
+  color: #2f6b4f;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.os-switch-aux-tool:hover .os-switch-aux-btn {
+  background: #3f7f5c;
+  color: #ffffff;
+}
+
+/* ---------- 暗色主题 ---------- */
+[data-theme='dark'] .os-switch-download-main {
+  color: #a8d8bd;
+}
+
+[data-theme='dark'] .os-switch-aux-name {
+  color: #a8d8bd;
+}
+
+[data-theme='dark'] .os-switch-aux-tool:hover {
+  background: rgba(136, 180, 156, 0.12);
+}
+
+[data-theme='dark'] .os-switch-aux-btn {
+  background: rgba(136, 180, 156, 0.18);
+  color: #a8d8bd;
+}
+
+[data-theme='dark'] .os-switch-aux-tool:hover .os-switch-aux-btn {
+  background: #3f7f5c;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .os-switch-tab-win,
+[data-theme='dark'] #os-platform-linux:checked ~ .os-switch-tabs .os-switch-tab-linux,
+[data-theme='dark'] #os-platform-android:checked ~ .os-switch-tabs .os-switch-tab-android {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* 触屏设备没有 hover，下载卡保持实心绿，避免按钮感消失 */
+@media (hover: none) {
+  .os-switch-download {
+    background: #3f7f5c;
+    border-color: #3f7f5c;
+  }
+
+  .os-switch-download .os-switch-download-main {
+    color: #ffffff;
+  }
+
+  .os-switch-download .os-switch-download-meta {
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .os-switch-download::after {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+}
+
+/* ---------- 移动端 ---------- */
+@media (max-width: 520px) {
+  .os-switch-tabs {
+    gap: 6px;
+  }
+
+  .os-switch-tab {
+    padding: 10px 4px;
+    border-radius: 8px;
+  }
+
+  .os-switch-tab-name {
+    font-size: 14px;
+  }
+
+  .os-switch-panel {
+    padding: 14px;
+  }
+
+  .os-switch-downloads,
+  .os-switch-panel-linux .os-switch-downloads,
+  .os-switch-panel-android .os-switch-downloads {
+    grid-template-columns: 1fr;
+  }
+
+  .os-switch-aux-grid {
+    grid-template-columns: 1fr;
+  }
+}

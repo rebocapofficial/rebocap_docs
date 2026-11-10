@@ -47,6 +47,14 @@ function initCarousels() {
       if(e.target.type === 'radio') {
         timeElapsed = 0;
         updateProgress();
+        const activeIdx = getActiveIndex();
+        const slides = carousel.querySelectorAll('.html-carousel-slide');
+        slides.forEach((slide, idx) => {
+          if (idx !== activeIdx) {
+            const v = slide.querySelector('video');
+            if (v && !v.paused) v.pause();
+          }
+        });
       }
     });
 
@@ -54,10 +62,12 @@ function initCarousels() {
     carousel.addEventListener('mouseenter', () => isHovered = true);
     carousel.addEventListener('mouseleave', () => isHovered = false);
     
-    const videos = carousel.querySelectorAll('video');
-    videos.forEach(v => {
-       v.addEventListener('play', () => { timeElapsed = 0; updateProgress(); });
-    });
+    carousel.addEventListener('play', (e) => {
+      if (e.target && e.target.tagName && e.target.tagName.toLowerCase() === 'video') {
+        timeElapsed = 0;
+        updateProgress();
+      }
+    }, true);
 
     function tick(now) {
       if (!document.body.contains(carousel)) return;
