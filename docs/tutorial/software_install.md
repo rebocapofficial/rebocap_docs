@@ -40,11 +40,11 @@ The Beta version is a public test build that performs better in areas with signi
 <span class="os-switch-download-main">Download Rebocap V01</span>
 <span class="os-switch-download-meta">Stable version · Current Release</span>
 </a>
-<a class="os-switch-download" style="display: none;" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
 <span class="os-switch-download-main">Download Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Beta version · Public test</span>
 </a>
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
 <span class="os-switch-download-main">Download Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Beta version · Gray release</span>
 </a>
@@ -171,7 +171,7 @@ Linux is currently a Preview version. This release is mainly intended to observe
 If you encounter bugs while using it, feel free to leave feedback on the relevant Twitter (X) posts and Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap-linux-preview-0.1-1.run">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Download Rebocap Linux Preview 0.1</span>
 <span class="os-switch-download-meta">Linux · Preview version</span>
 </a>
@@ -245,7 +245,7 @@ Android is currently a Preview version. This release is mainly intended to obser
 If you encounter bugs while using it, feel free to leave feedback on the relevant Twitter (X) posts and Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/ReboCapAndroid-Preview-0.1.apk">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Download Rebocap Android Preview 0.1</span>
 <span class="os-switch-download-meta">Android · Preview version</span>
 </a>
@@ -254,14 +254,14 @@ If you encounter bugs while using it, feel free to leave feedback on the relevan
 <div class="os-switch-aux">
 <div class="os-switch-aux-title">Companion tools (optional)</div>
 <div class="os-switch-aux-grid">
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/img/files/RebocapTransmitter-v1.0.18.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.18.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Rebocap Receiver Bridge App</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.18</span>
 </div>
 <span class="os-switch-aux-btn">Download ↓</span>
 </a>
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/img/files/RBC_OSC_forward_v1.0.0.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RBC_OSC_forward_v1.0.0.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">VRChat OSC Forwarding App</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.0</span>

@@ -38,11 +38,11 @@ title: "Загрузка ПО"
 <span class="os-switch-download-main">Скачать Rebocap V01</span>
 <span class="os-switch-download-meta">Стабильная версия · текущий Release</span>
 </a>
-<a class="os-switch-download" style="display: none;" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
 <span class="os-switch-download-main">Скачать Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Бета-версия · публичное тестирование</span>
 </a>
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
 <span class="os-switch-download-main">Скачать Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Бета-версия · поэтапное тестирование</span>
 </a>
@@ -176,7 +176,7 @@ title: "Загрузка ПО"
 Если при использовании вы столкнетесь с ошибками, оставляйте комментарии в соответствующих публикациях в Twitter (X) и в Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap-linux-preview-0.1-1.run">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Скачать Rebocap Linux Preview 0.1</span>
 <span class="os-switch-download-meta">Linux · предварительная версия Preview</span>
 </a>
@@ -252,7 +252,7 @@ title: "Загрузка ПО"
 Если при использовании вы столкнетесь с ошибками, оставляйте комментарии в соответствующих публикациях в Twitter (X) и в Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/ReboCapAndroid-Preview-0.1.apk">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Скачать Rebocap Android Preview 0.1</span>
 <span class="os-switch-download-meta">Android · предварительная версия Preview</span>
 </a>
@@ -261,14 +261,14 @@ title: "Загрузка ПО"
 <div class="os-switch-aux">
 <div class="os-switch-aux-title">Дополнительные инструменты (опционально)</div>
 <div class="os-switch-aux-grid">
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/img/files/RebocapTransmitter-v1.0.18.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.18.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Приложение-мост для приёмника Rebocap</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.18</span>
 </div>
 <span class="os-switch-aux-btn">Скачать ↓</span>
 </a>
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/img/files/RBC_OSC_forward_v1.0.0.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RBC_OSC_forward_v1.0.0.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Приложение для OSC-пересылки VRChat</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.0</span>

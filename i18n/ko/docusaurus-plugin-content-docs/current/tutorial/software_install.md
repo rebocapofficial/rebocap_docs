@@ -39,11 +39,11 @@ title: "소프트웨어 다운로드"
 <span class="os-switch-download-main">Rebocap V01 다운로드</span>
 <span class="os-switch-download-meta">정식 버전 · 현재 Release</span>
 </a>
-<a class="os-switch-download" style="display: none;" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
 <span class="os-switch-download-main">Rebocap V02 Beta02 다운로드</span>
 <span class="os-switch-download-meta">Beta 버전 · 공개 테스트</span>
 </a>
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
 <span class="os-switch-download-main">Rebocap V02 Beta02.2 다운로드</span>
 <span class="os-switch-download-meta">Beta 버전 · 그레이 테스트</span>
 </a>
@@ -176,7 +176,7 @@ Linux는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 Linux
 사용 중 Bug가 발생하면 Twitter(X)의 관련 게시물과 Discord에 남겨 주세요.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap-linux-preview-0.1-1.run">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Rebocap Linux Preview 0.1 다운로드</span>
 <span class="os-switch-download-meta">Linux · Preview 프리뷰 버전</span>
 </a>
@@ -252,7 +252,7 @@ Android는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 And
 사용 중 Bug가 발생하면 Twitter(X)의 관련 게시물과 Discord에 남겨 주세요.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/ReboCapAndroid-Preview-0.1.apk">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Rebocap Android Preview 0.1 다운로드</span>
 <span class="os-switch-download-meta">Android · Preview 프리뷰 버전</span>
 </a>
@@ -261,14 +261,14 @@ Android는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 And
 <div class="os-switch-aux">
 <div class="os-switch-aux-title">보조 도구 (선택 사항)</div>
 <div class="os-switch-aux-grid">
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/img/files/RebocapTransmitter-v1.0.18.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.18.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Rebocap 리시버 브리지 앱</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.18</span>
 </div>
 <span class="os-switch-aux-btn">다운로드 ↓</span>
 </a>
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/img/files/RBC_OSC_forward_v1.0.0.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RBC_OSC_forward_v1.0.0.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">VRChat OSC 포워딩 앱</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.0</span>

@@ -48,11 +48,11 @@ Beta 版は公開テスト版であり、磁場干渉が顕著なエリアでの
 <span class="os-switch-download-main">Rebocap V01 をダウンロード</span>
 <span class="os-switch-download-meta">正式版 · 現在の Release</span>
 </a>
-<a class="os-switch-download" style="display: none;" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
 <span class="os-switch-download-main">Rebocap V02 Beta02 をダウンロード</span>
 <span class="os-switch-download-meta">Beta 版 · 公開テスト</span>
 </a>
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
 <span class="os-switch-download-main">Rebocap V02 Beta02.2 をダウンロード</span>
 <span class="os-switch-download-meta">Beta 版 · グレーリリース</span>
 </a>
@@ -185,7 +185,7 @@ Linux は現在 Preview プレビュー版です。今回のリリースは、Li
 使用中に Bug が発生した場合は、Twitter（X）の関連投稿や Discord へのコメントをお待ちしています。
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap-linux-preview-0.1-1.run">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Rebocap Linux Preview 0.1 をダウンロード</span>
 <span class="os-switch-download-meta">Linux · Preview プレビュー版</span>
 </a>
@@ -261,7 +261,7 @@ Android は現在 Preview プレビュー版です。今回のリリースは、
 使用中に Bug が発生した場合は、Twitter（X）の関連投稿や Discord へのコメントをお待ちしています。
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/ReboCapAndroid-Preview-0.1.apk">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Rebocap Android Preview 0.1 をダウンロード</span>
 <span class="os-switch-download-meta">Android · Preview プレビュー版</span>
 </a>
@@ -270,14 +270,14 @@ Android は現在 Preview プレビュー版です。今回のリリースは、
 <div class="os-switch-aux">
 <div class="os-switch-aux-title">補助ツール（任意）</div>
 <div class="os-switch-aux-grid">
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/img/files/RebocapTransmitter-v1.0.18.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.18.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Rebocap レシーバーブリッジ App</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.18</span>
 </div>
 <span class="os-switch-aux-btn">ダウンロード ↓</span>
 </a>
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/img/files/RBC_OSC_forward_v1.0.0.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RBC_OSC_forward_v1.0.0.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">VRChat OSC 転送 App</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.0</span>

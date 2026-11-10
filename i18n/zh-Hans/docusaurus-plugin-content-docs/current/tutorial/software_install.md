@@ -48,11 +48,11 @@ Beta 版本为公开测试版本，应对磁场干扰明显的区域效果更好
 <span class="os-switch-download-main">下载 Rebocap V01</span>
 <span class="os-switch-download-meta">正式版本 · 当前 Release</span>
 </a>
-<a class="os-switch-download" style="display: none;" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
 <span class="os-switch-download-main">下载 Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Beta 版本 · 公开测试</span>
 </a>
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
 <span class="os-switch-download-main">下载 Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Beta 版本 · 灰度测试</span>
 </a>
@@ -185,7 +185,7 @@ Linux 目前为 Preview 预览版，本次发布主要用于观察程序核心�
 使用中如遇到 Bug，欢迎到 Twitter（X）的相关贴文和 Discord 留言。
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap-linux-preview-0.1-1.run">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">下载 Rebocap Linux Preview 0.1</span>
 <span class="os-switch-download-meta">Linux · Preview 预览版</span>
 </a>
@@ -261,7 +261,7 @@ Android 目前为 Preview 预览版，本次发布主要用于观察程序核心
 使用中如遇到 Bug，欢迎到 Twitter（X）的相关贴文和 Discord 留言。
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/img/files/ReboCapAndroid-Preview-0.1.apk">
+<a class="os-switch-download" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">下载 Rebocap Android Preview 0.1</span>
 <span class="os-switch-download-meta">Android · Preview 预览版</span>
 </a>
@@ -270,14 +270,14 @@ Android 目前为 Preview 预览版，本次发布主要用于观察程序核心
 <div class="os-switch-aux">
 <div class="os-switch-aux-title">配套工具（可选）</div>
 <div class="os-switch-aux-grid">
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/img/files/RebocapTransmitter-v1.0.18.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.18.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Rebocap 接收器桥接 App</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.18</span>
 </div>
 <span class="os-switch-aux-btn">下载 ↓</span>
 </a>
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/img/files/RBC_OSC_forward_v1.0.0.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RBC_OSC_forward_v1.0.0.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">VRChat OSC 转发 App</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.0</span>
