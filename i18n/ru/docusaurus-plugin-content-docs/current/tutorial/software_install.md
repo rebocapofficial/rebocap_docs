@@ -278,6 +278,12 @@ title: "Загрузка ПО"
 </div>
 </div>
 
+<div class="os-switch-otg">
+<span class="os-switch-otg-label">Купить OTG-кабель:</span>
+<a class="os-switch-otg-link" href="https://store.rebocap.site/products/otg-adapter-with-pd-charging">Международный магазин</a>
+</div>
+
+
 
 
 <!-- ==================== Details Start ==================== -->

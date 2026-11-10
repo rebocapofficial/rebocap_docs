@@ -431,6 +431,42 @@ html[lang='ja'] .os-switch-download-main {
   color: #ffffff;
 }
 
+/* ---------- Android OTG 数据线购买 ---------- */
+.os-switch-otg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.os-switch-otg-label {
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 600;
+}
+
+.os-switch-otg-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border: 1px solid var(--os-accent);
+  border-radius: 999px;
+  background: #f3f8f5;
+  color: #2f6b4f;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.os-switch-otg-link:hover {
+  border-color: #3f7f5c;
+  background: #3f7f5c;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /* ---------- 暗色主题 ---------- */
 [data-theme='dark'] .os-switch-download-main {
   color: #a8d8bd;
@@ -450,6 +486,20 @@ html[lang='ja'] .os-switch-download-main {
 }
 
 [data-theme='dark'] .os-switch-aux-tool:hover .os-switch-aux-btn {
+  background: #3f7f5c;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .os-switch-otg-label {
+  color: var(--ifm-color-emphasis-600);
+}
+
+[data-theme='dark'] .os-switch-otg-link {
+  background: rgba(136, 180, 156, 0.12);
+  color: #a8d8bd;
+}
+
+[data-theme='dark'] .os-switch-otg-link:hover {
   background: #3f7f5c;
   color: #ffffff;
 }

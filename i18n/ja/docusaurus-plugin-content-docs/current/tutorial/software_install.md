@@ -287,6 +287,12 @@ Android は現在 Preview プレビュー版です。今回のリリースは、
 </div>
 </div>
 
+<div class="os-switch-otg">
+<span class="os-switch-otg-label">OTG ケーブルを購入：</span>
+<a class="os-switch-otg-link" href="https://store.rebocap.site/products/otg-adapter-with-pd-charging">国際ストア</a>
+</div>
+
+
 
 
 <!-- ==================== Details Start ==================== -->

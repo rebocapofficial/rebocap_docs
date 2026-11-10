@@ -287,6 +287,13 @@ Android 目前為 Preview 預覽版，本次發布主要用於觀察程式核心
 </div>
 </div>
 
+<div class="os-switch-otg">
+<span class="os-switch-otg-label">OTG 數據線購買：</span>
+<a class="os-switch-otg-link" href="https://store.rebocap.site/products/otg-adapter-with-pd-charging">國際購物站</a>
+<a class="os-switch-otg-link" href="https://item.taobao.com/item.htm?id=1095599547785">淘寶</a>
+</div>
+
+
 
 
 <!-- ==================== 折叠页 开始 ==================== -->

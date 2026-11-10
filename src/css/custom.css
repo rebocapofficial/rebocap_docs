@@ -70,6 +70,22 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* ── Page canvas ─────────────────────────────────────────────────────────
+ * Infima sets --ifm-background-color to transparent in light mode. On a
+ * normal browser the default canvas is white, but some mobile WebViews
+ * (in-app browsers / forced dark mode) use a black canvas, which makes
+ * the page background look black while the navbar/cards stay white.
+ * Give html/body an explicit page color instead. */
+html,
+body {
+  background-color: #ffffff;
+}
+
+html[data-theme='dark'],
+html[data-theme='dark'] body {
+  background-color: #1b1b1d;
+}
+
 /* ── Typography ────────────────────────────────────────────────────────── */
 .markdown h1 {
   font-size: 2rem;

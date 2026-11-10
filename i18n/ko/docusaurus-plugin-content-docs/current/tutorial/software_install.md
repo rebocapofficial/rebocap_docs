@@ -278,6 +278,12 @@ Android는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 And
 </div>
 </div>
 
+<div class="os-switch-otg">
+<span class="os-switch-otg-label">OTG 케이블 구매:</span>
+<a class="os-switch-otg-link" href="https://store.rebocap.site/products/otg-adapter-with-pd-charging">국제 스토어</a>
+</div>
+
+
 
 
 <!-- ==================== Details Start ==================== -->

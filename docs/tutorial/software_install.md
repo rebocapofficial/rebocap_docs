@@ -271,6 +271,12 @@ If you encounter bugs while using it, feel free to leave feedback on the relevan
 </div>
 </div>
 
+<div class="os-switch-otg">
+<span class="os-switch-otg-label">Buy an OTG cable:</span>
+<a class="os-switch-otg-link" href="https://store.rebocap.site/products/otg-adapter-with-pd-charging">International Store</a>
+</div>
+
+
 
 
 <!-- ==================== Details Start ==================== -->
