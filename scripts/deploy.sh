@@ -50,7 +50,10 @@ notify_feishu() {
 
 # Trap unexpected errors
 trap 'code=$?; if [ $code -ne 0 ] && [ "$LAST_ERROR" != "sent" ]; then
-  notify_feishu "failure" "脚本异常退出 (exit code=$code)，请检查服务器日志。ssh 执行: journalctl -u rebocap-deploy --no-pager -n 80"
+  # 净化失败命令里的 " 与 \，否则下方 JSON 载荷会被破坏、告警本身丢失
+  _fail_cmd=${BASH_COMMAND//\"/}
+  _fail_cmd=${_fail_cmd//\\/}
+  notify_feishu "failure" "脚本异常退出 (exit code=$code)：第 ${LINENO} 行 → ${_fail_cmd}。请检查服务器日志。ssh 执行: journalctl -u rebocap-deploy --no-pager -n 80"
 fi; exit $code' ERR
 
 FORCE=false
@@ -90,6 +93,61 @@ export PATH="$NODE_DIR:$PATH"
 cd "$PROJECT_DIR"
 log() { echo "[$(date '+%H:%M:%S')] $*"; }
 
+# ─── Disk guard & pre-build cleanup (D + C) ─────────────────
+# 目的：磁盘写满时 git 只会抛 "fatal: ..." 并以 128 退出，告警里看不出是磁盘问题。
+#       这里在写入磁盘之前显式检查，并在构建前清掉无上限增长的构建缓存。
+# 边界：只删缓存与异常中止遗留的半成品，不碰 git 工作树、不碰线上目录 $OUTPUT_DIR。
+
+du_mb() {
+  local p="$1" v
+  v="$(du -sm "$p" 2>/dev/null | awk '{print $1}')" || v="?"
+  printf '%s' "${v:-?}"
+}
+
+disk_avail_mb() {
+  local p="$1"
+  { df -Pm "$p" 2>/dev/null || true; } | awk 'NR==2 {print $4}' | tr -dc '0-9'
+}
+
+require_disk() {
+  local need_mb="$1" path="$2" purpose="$3" avail
+  avail="$(disk_avail_mb "$path")"
+  if [ -z "$avail" ]; then
+    log "WARN: 无法读取 $path 的可用空间，跳过磁盘预检"
+    return 0
+  fi
+  log "Disk: ${path} 可用 ${avail} MB（${purpose} 需 >= ${need_mb} MB）"
+  if [ "$avail" -lt "$need_mb" ]; then
+    LAST_ERROR="sent"
+    notify_feishu "failure" "${purpose}：磁盘空间不足。${path} 仅剩 ${avail} MB，至少需要 ${need_mb} MB。已中止，未改动任何文件。"
+    exit 1
+  fi
+}
+
+cleanup_before_build() {
+  local before after cache_mb left_mb
+  before="$(disk_avail_mb "$PROJECT_DIR")"
+
+  # webpack / TinaCMS 构建缓存：无上限增长，`npx docusaurus clear` 不会清它
+  if [ -d node_modules/.cache ]; then
+    cache_mb="$(du_mb node_modules/.cache)"
+    log "Cleanup: 删除构建缓存 node_modules/.cache (${cache_mb} MB)"
+    rm -rf node_modules/.cache
+  fi
+
+  # 上一次异常中止遗留的产物（线上目录不受影响）
+  for d in "$STAGING_DIR" build; do
+    if [ -e "$d" ]; then
+      left_mb="$(du_mb "$d")"
+      log "Cleanup: 删除遗留产物 ${d} (${left_mb} MB)"
+      rm -rf "$d"
+    fi
+  done
+
+  after="$(disk_avail_mb "$PROJECT_DIR")"
+  log "Cleanup 完成：可用空间 ${before} MB → ${after} MB"
+}
+
 # ─── Proxy (for GitHub access) ──────────────────────────────
 PROXY_URL="http://127.0.0.1:${PROXY_PORT}"
 
@@ -102,6 +160,9 @@ else
 fi
 
 log "=== Deploy start ==="
+
+# D-1：git 同步前的最低空间检查。磁盘写满时 git 会以 128 退出，先把原因讲清楚。
+require_disk "${GIT_MIN_FREE_MB:-512}" "$PROJECT_DIR" "git 同步"
 
 # ═══════════════════════════════════════════════════════════
 # Step 1 — Sync with remote (deploy server must match remote exactly)
@@ -119,6 +180,11 @@ if [ "$FORCE" = false ]; then
   log "New commits: ${LOCAL:0:7} → ${REMOTE:0:7}"
   REMOTE_COMMIT_FOR_MSG="${REMOTE:0:7}"
 fi
+
+# D-2 + C：先清理缓存与遗留产物腾出空间，再按构建真实需求预检。
+# 顺序不可颠倒：磁盘将满时若先要求 7 GB 才清理，会「因没有空间而无法腾空间」。
+cleanup_before_build
+require_disk "${BUILD_MIN_FREE_MB:-7000}" "$PROJECT_DIR" "Docusaurus 全量构建"
 
 # Abort any in-progress merge, discard ALL local changes, force-sync to remote
 git merge --abort 2>/dev/null || true
