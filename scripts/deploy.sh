@@ -148,6 +148,39 @@ cleanup_before_build() {
   log "Cleanup 完成：可用空间 ${before} MB → ${after} MB"
 }
 
+# ─── git fetch：重试 + 直连兜底 + 把 git 原始报错送进告警 ───────────
+# 背景：fetch 失败只会得到 "exit code=128"，看不出是代理、网络还是凭证。
+# 这里把 git 的 stderr 原文截取后写进日志与飞书，并在代理失败时改试直连。
+git_fetch_with_retry() {
+  local attempt rc err safe
+  for attempt in 1 2; do
+    err="$(git fetch origin 2>&1)" && rc=0 || rc=$?
+    if [ "$rc" -eq 0 ]; then
+      log "git fetch OK（第 ${attempt} 次尝试）"
+      return 0
+    fi
+    log "git fetch 失败（第 ${attempt} 次，rc=${rc}）：${err}"
+    if [ "$attempt" -eq 1 ]; then
+      sleep 10
+    fi
+  done
+
+  if [ -n "${https_proxy:-}" ] || [ -n "${http_proxy:-}" ]; then
+    log "代理方式失败，改试直连（清空 https_proxy/http_proxy）..."
+    if err="$(https_proxy= http_proxy= git fetch origin 2>&1)"; then
+      log "直连 git fetch OK"
+      return 0
+    fi
+    log "直连也失败：${err}"
+  fi
+
+  safe="${err//\"/}"
+  safe="${safe//\\/}"
+  LAST_ERROR="sent"
+  notify_feishu "failure" "git fetch 失败，服务器无法访问 GitHub：${safe:0:200}"
+  return 1
+}
+
 # ─── Proxy (for GitHub access) ──────────────────────────────
 PROXY_URL="http://127.0.0.1:${PROXY_PORT}"
 
@@ -167,7 +200,8 @@ require_disk "${GIT_MIN_FREE_MB:-512}" "$PROJECT_DIR" "git 同步"
 # ═══════════════════════════════════════════════════════════
 # Step 1 — Sync with remote (deploy server must match remote exactly)
 # ═══════════════════════════════════════════════════════════
-git fetch origin 2>&1
+# 失败时不再抛裸 128，由函数把 git 原文写进日志与飞书
+git_fetch_with_retry || exit 1
 
 if [ "$FORCE" = false ]; then
   LOCAL=$(git rev-parse HEAD)
