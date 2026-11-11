@@ -4,6 +4,7 @@ import type RootType from "@theme/Root";
 import type { WrapperProps } from "@docusaurus/types";
 import CarouselManager from '@site/src/components/CarouselManager';
 import {loadVideo} from '@site/src/components/onDemandVideo';
+import {installGrayReleaseWarning} from '@site/src/components/GrayReleaseWarning';
 
 function BackToTop(): JSX.Element {
   const [visible, setVisible] = useState(false);
@@ -56,6 +57,7 @@ type Props = WrapperProps<typeof RootType>;
 
 export default function RootWrapper({ children }: Props): JSX.Element {
   useEffect(() => {
+    const uninstallGrayReleaseWarning = installGrayReleaseWarning();
     const handleZoomClick = (e: MouseEvent) => {
       const target = (e.target as HTMLElement)?.closest('img') as HTMLImageElement | null;
       if (
@@ -405,6 +407,7 @@ export default function RootWrapper({ children }: Props): JSX.Element {
     return () => {
       document.removeEventListener('click', handleZoomClick, true);
       observer.disconnect();
+      uninstallGrayReleaseWarning();
     };
   }, []);
 

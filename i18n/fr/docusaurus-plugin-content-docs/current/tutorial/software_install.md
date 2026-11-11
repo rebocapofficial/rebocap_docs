@@ -42,7 +42,7 @@ La version Beta est une version de test publique ; elle est plus efficace dans l
 <span class="os-switch-download-main">Télécharger Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Version Beta · Test public</span>
 </a>
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
 <span class="os-switch-download-main">Télécharger Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Version Beta · Déploiement progressif</span>
 </a>
@@ -73,7 +73,7 @@ La version Beta est une version de test publique ; elle est plus efficace dans l
 
    &emsp;&emsp;&emsp; (Non publié) release_v02 beta02.1 - ◼️tracker : V16  ,  📡récepteur : V6 / V7 / V8 <br /> 
 
-   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️tracker : V16 / V17 ,  📡récepteur : V6 / V7 / V8 <br /> 
+   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️tracker : V16 ,  📡récepteur : V6 / V7 / V8 <br /> 
 
 
 
@@ -174,7 +174,7 @@ Linux est actuellement en version Preview ; cette publication vise principalemen
 Si vous rencontrez des bugs lors de l'utilisation, n'hésitez pas à laisser un commentaire sur la publication correspondante sur Twitter (X) et sur Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Télécharger Rebocap Linux Preview 0.1</span>
 <span class="os-switch-download-meta">Linux · Version Preview</span>
 </a>
@@ -248,7 +248,7 @@ Android est actuellement en version Preview ; cette publication vise principalem
 Si vous rencontrez des bugs lors de l'utilisation, n'hésitez pas à laisser un commentaire sur la publication correspondante sur Twitter (X) et sur Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Télécharger Rebocap Android Preview 0.1</span>
 <span class="os-switch-download-meta">Android · Version Preview</span>
 </a>
@@ -278,6 +278,7 @@ Si vous rencontrez des bugs lors de l'utilisation, n'hésitez pas à laisser un 
 <span class="os-switch-otg-label">Acheter un câble OTG :</span>
 <a class="os-switch-otg-link" href="https://store.rebocap.site/products/otg-adapter-with-pd-charging">Boutique internationale</a>
 </div>
+<p class="os-switch-otg-note">Remarque : le câble OTG est destiné aux casques autonomes Quest ou Pico et n’est pas fourni par défaut. Le câble OTG de la boutique officielle prend en charge la recharge PD. Si vous n’avez pas besoin de charger le casque, vous pouvez acheter un adaptateur OTG standard ou un câble adaptateur. Si la recharge PD n’est pas nécessaire (par exemple avec Quest 2), un câble OTG de charge standard (5 V/2 A) convient aussi.</p>
 
 
 
@@ -412,8 +413,8 @@ La version Android utilise le paquet d'installation `.apk` :
 1. 📡Firmware du récepteur V8 :
     > Abandon du pilote de port série CDC traditionnel au profit du mode vendor ; le débit de transmission est plus rapide (impact quasi nul),<br> la raison principale étant que le pilote de port série est facilement perturbé par d'autres programmes du système, ou influencé par des composants du système, ce qui rend sa stabilité très mauvaise.<br>Attention : une fois le nouveau firmware installé, seul le logiciel le plus récent peut être utilisé ; les anciennes versions ne le reconnaissent pas et il faut rétrograder le firmware du récepteur pour pouvoir utiliser les anciennes versions du logiciel.
 
-2. ◼️Firmware des trackers V17 :
-    > Correction du problème d'orientation par défaut incohérente entre l'ancien et le nouvel algorithme (avec le firmware v15, le tracker pointe vers la droite à 90° après un redémarrage par le bouton),<br>prise en charge du mode non anti-magnétique (auparavant, le commutateur anti-magnétique était sans effet sur le firmware v15, ce qui le rendait inadapté à la danse),<br>correction du problème d'affichage anormal lorsque le biais du magnétomètre dépasse 400 (car des utilisateurs approchaient le tracker d'un aimant).
+2. ◼️Firmware des trackers V16 :
+    > Correction du problème d'orientation par défaut incohérente entre l'ancien et le nouvel algorithme (avec le firmware v15, le tracker pointe vers la droite à 90° après un redémarrage par le bouton),<br>prise en charge du mode non anti-magnétique (auparavant, le commutateur anti-magnétique était sans effet sur le firmware v15, ce qui le rendait inadapté à la danse).
 
 **Logiciel**
 1. Ajout des versions Linux et Android, principalement pour observer si des bugs de cœur apparaissent, ainsi que pour modifier la logique de manipulation d'une partie de l'interface utilisateur

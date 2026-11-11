@@ -44,7 +44,7 @@ The Beta version is a public test build that performs better in areas with signi
 <span class="os-switch-download-main">Download Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Beta version · Public test</span>
 </a>
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
 <span class="os-switch-download-main">Download Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Beta version · Gray release</span>
 </a>
@@ -75,7 +75,7 @@ The Beta version is a public test build that performs better in areas with signi
 
    &emsp;&emsp;&emsp; (Unpublished) release_v02 beta02.1 - ◼️tracker : V16  ,  📡receiver : V6 / V7 / V8 <br /> 
 
-   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️tracker : V16 / V17  ,  📡receiver : V6 / V7 / V8 <br /> 
+   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️tracker : V16  ,  📡receiver : V6 / V7 / V8 <br /> 
 
 
 
@@ -171,7 +171,7 @@ Linux is currently a Preview version. This release is mainly intended to observe
 If you encounter bugs while using it, feel free to leave feedback on the relevant Twitter (X) posts and Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Download Rebocap Linux Preview 0.1</span>
 <span class="os-switch-download-meta">Linux · Preview version</span>
 </a>
@@ -245,7 +245,7 @@ Android is currently a Preview version. This release is mainly intended to obser
 If you encounter bugs while using it, feel free to leave feedback on the relevant Twitter (X) posts and Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Download Rebocap Android Preview 0.1</span>
 <span class="os-switch-download-meta">Android · Preview version</span>
 </a>
@@ -275,6 +275,7 @@ If you encounter bugs while using it, feel free to leave feedback on the relevan
 <span class="os-switch-otg-label">Buy an OTG cable:</span>
 <a class="os-switch-otg-link" href="https://store.rebocap.site/products/otg-adapter-with-pd-charging">International Store</a>
 </div>
+<p class="os-switch-otg-note">Note: This OTG cable is intended for Quest or Pico standalone headsets and is not included by default. The OTG cable in the official store supports PD charging. If you do not need charging, you can buy a standard OTG adapter or adapter cable yourself. If you do not need PD charging (for example, Quest 2), a regular OTG charging cable (5 V/2 A) is also an option.</p>
 
 
 
@@ -410,8 +411,8 @@ The Android version uses an `.apk` installer package:
 1. 📡 Receiver firmware V8:
     > Dropped the traditional CDC serial port driver and switched to vendor mode, giving a faster transfer rate (basically no impact),<br> mainly because the serial port driver is easily disturbed by other programs on the system, or affected by system components, and its stability is too poor.<br>Note: Once upgraded to the new firmware, only the latest software version can be used. Older versions cannot recognize it, and the receiver firmware must be rolled back to use older software.
 
-2. ◼️ Tracker firmware V17:
-    > Fixed the inconsistent default orientation between the new and old algorithms (with v15 firmware, the tracker faces 90° to the right after a button restart),<br>added support for non-anti-magnetic mode (previously the anti-magnetic switch had no effect on v15 firmware, making it unsuitable for dancing),<br>fixed the abnormal display when the magnetometer bias exceeds 400 (because someone held the tracker close to a magnet).
+2. ◼️ Tracker firmware V16:
+    > Fixed the inconsistent default orientation between the new and old algorithms (with v15 firmware, the tracker faces 90° to the right after a button restart),<br>added support for non-anti-magnetic mode (previously the anti-magnetic switch had no effect on v15 firmware, making it unsuitable for dancing).
 
 **Software**
 1. Added Linux and Android versions, mainly to observe whether users encounter core bugs, and changed the operation logic of some UI

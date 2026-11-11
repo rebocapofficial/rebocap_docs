@@ -42,7 +42,7 @@ title: "Загрузка ПО"
 <span class="os-switch-download-main">Скачать Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Бета-версия · публичное тестирование</span>
 </a>
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
 <span class="os-switch-download-main">Скачать Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Бета-версия · поэтапное тестирование</span>
 </a>
@@ -70,7 +70,7 @@ title: "Загрузка ПО"
 
    &emsp;&emsp;&emsp; (Не опубликовано) release_v02 beta02.1 - ◼️трекер : V16  ,  📡приемник : V6 / V7 / V8 <br /> 
 
-   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️трекер : V16 / V17 ,  📡приемник : V6 / V7 / V8 <br /> 
+   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️трекер : V16 ,  📡приемник : V6 / V7 / V8 <br /> 
 
 
 
@@ -176,7 +176,7 @@ title: "Загрузка ПО"
 Если при использовании вы столкнетесь с ошибками, оставляйте комментарии в соответствующих публикациях в Twitter (X) и в Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Скачать Rebocap Linux Preview 0.1</span>
 <span class="os-switch-download-meta">Linux · предварительная версия Preview</span>
 </a>
@@ -252,7 +252,7 @@ title: "Загрузка ПО"
 Если при использовании вы столкнетесь с ошибками, оставляйте комментарии в соответствующих публикациях в Twitter (X) и в Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Скачать Rebocap Android Preview 0.1</span>
 <span class="os-switch-download-meta">Android · предварительная версия Preview</span>
 </a>
@@ -282,6 +282,7 @@ title: "Загрузка ПО"
 <span class="os-switch-otg-label">Купить OTG-кабель:</span>
 <a class="os-switch-otg-link" href="https://store.rebocap.site/products/otg-adapter-with-pd-charging">Международный магазин</a>
 </div>
+<p class="os-switch-otg-note">Примечание: OTG-кабель предназначен для автономных гарнитур Quest или Pico и по умолчанию не входит в комплект. OTG-кабель в официальном магазине поддерживает зарядку PD. Если зарядка во время использования не нужна, можно самостоятельно приобрести обычный OTG-переходник или кабель-переходник. Если PD-зарядка не требуется (например, для Quest 2), подойдет и обычный OTG-кабель для зарядки (5 В/2 А).</p>
 
 
 
@@ -413,8 +414,8 @@ sudo bash ~/.local/opt/rebocap/linux/install_linux_permissions.sh --install --us
 1. 📡Прошивка приемника V8:
     > Отказались от традиционного драйвера последовательного порта CDC и перешли на режим vendor — скорость передачи выше (на практике это почти не заметно).<br>Основная причина в том, что драйвер последовательного порта легко подвергается помехам со стороны других программ системы или влиянию системных компонентов, а его стабильность слишком низкая.<br>Внимание: после обновления до новой прошивки можно использовать только самую новую версию программного обеспечения; старые версии ее не распознают, поэтому для использования старых версий придется откатить прошивку приемника.
 
-2. ◼️Прошивка трекера V17:
-    > Исправлена проблема несовпадения направления по умолчанию между новым и старым алгоритмами (прошивка v15 после перезапуска кнопкой поворачивается вправо на 90°),<br>добавлена поддержка режима без антимагнитной коррекции (ранее антимагнитный переключатель не действовал на прошивку v15, из-за чего она не подходила для танцев),<br>исправлено некорректное отображение при смещении магнитометра более 400 (из-за того, что некоторые подносили трекер к магниту).
+2. ◼️Прошивка трекера V16:
+    > Исправлена проблема несовпадения направления по умолчанию между новым и старым алгоритмами (прошивка v15 после перезапуска кнопкой поворачивается вправо на 90°),<br>добавлена поддержка режима без антимагнитной коррекции (ранее антимагнитный переключатель не действовал на прошивку v15, из-за чего она не подходила для танцев).
 
 **Программное обеспечение**
 1. Добавлены версии для Linux и Android — прежде всего, чтобы проверить, не возникнут ли у пользователей критические ошибки; также изменена логика работы части UI

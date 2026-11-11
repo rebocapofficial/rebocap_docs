@@ -42,7 +42,7 @@ La versión Beta es una versión de prueba pública, que funciona mejor en área
 <span class="os-switch-download-main">Descargar Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Versión Beta · Prueba pública</span>
 </a>
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
 <span class="os-switch-download-main">Descargar Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Versión Beta · Prueba gradual</span>
 </a>
@@ -73,7 +73,7 @@ La versión Beta es una versión de prueba pública, que funciona mejor en área
 
    &emsp;&emsp;&emsp; (No publicado) release_v02 beta02.1 - ◼️tracker : V16  ,  📡receiver : V6 / V7 / V8 <br /> 
 
-   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️tracker : V16 / V17 ,  📡receiver : V6 / V7 / V8 <br /> 
+   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️tracker : V16 ,  📡receiver : V6 / V7 / V8 <br /> 
 
 
 
@@ -171,7 +171,7 @@ Linux es actualmente una versión preliminar Preview; esta versión se publica p
 Si encuentra algún Bug durante el uso, le invitamos a dejar un comentario en la publicación correspondiente de Twitter (X) y en Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Descargar Rebocap Linux Preview 0.1</span>
 <span class="os-switch-download-meta">Linux · Versión preliminar Preview</span>
 </a>
@@ -245,7 +245,7 @@ Android es actualmente una versión preliminar Preview; esta versión se publica
 Si encuentra algún Bug durante el uso, le invitamos a dejar un comentario en la publicación correspondiente de Twitter (X) y en Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Descargar Rebocap Android Preview 0.1</span>
 <span class="os-switch-download-meta">Android · Versión preliminar Preview</span>
 </a>
@@ -275,6 +275,7 @@ Si encuentra algún Bug durante el uso, le invitamos a dejar un comentario en la
 <span class="os-switch-otg-label">Comprar un cable OTG:</span>
 <a class="os-switch-otg-link" href="https://store.rebocap.site/products/otg-adapter-with-pd-charging">Tienda internacional</a>
 </div>
+<p class="os-switch-otg-note">Nota: el cable OTG está pensado para visores autónomos Quest o Pico y no se incluye de forma predeterminada. El cable OTG de la tienda oficial admite carga PD. Si no necesita cargar el visor, puede comprar por su cuenta un adaptador OTG normal o un cable adaptador. Si no necesita carga PD (por ejemplo, con Quest 2), también puede usar un cable de carga OTG normal (5 V/2 A).</p>
 
 
 
@@ -412,8 +413,8 @@ La versión Android utiliza el paquete de instalación `.apk`:
 1. 📡Firmware del receptor V8:
     > Se abandona el controlador de puerto serie CDC tradicional y se utiliza el modo vendor, con una velocidad de transmisión más rápida (prácticamente sin impacto),<br> principalmente porque el controlador de puerto serie se ve fácilmente interferido por otros programas del sistema, o afectado por componentes del sistema, y su estabilidad es demasiado baja.<br>Nota: una vez actualizado al nuevo firmware, solo se puede usar la versión más reciente del software; las versiones antiguas no lo reconocen, y solo se puede volver a usar el software antiguo revirtiendo el firmware del receptor.
 
-2. ◼️Firmware del rastreador V17:
-    > Se corrige el problema de dirección predeterminada inconsistente entre el algoritmo nuevo y el antiguo (el firmware v15 gira 90° a la derecha después de reiniciar con el botón),<br>se admite el modo no antimagnético (antes, el interruptor antimagnético no tenía efecto en el firmware v15, por lo que no era adecuado para bailar),<br>se corrige el problema de visualización anómala cuando la desviación del magnetómetro supera 400 (porque alguien acercó el rastreador a un imán).
+2. ◼️Firmware del rastreador V16:
+    > Se corrige el problema de dirección predeterminada inconsistente entre el algoritmo nuevo y el antiguo (el firmware v15 gira 90° a la derecha después de reiniciar con el botón),<br>se admite el modo no antimagnético (antes, el interruptor antimagnético no tenía efecto en el firmware v15, por lo que no era adecuado para bailar).
 
 **Software**
 1. Se agregan las versiones para Linux y Android, principalmente para observar si aparecen bugs en el núcleo, y se modifica la lógica de operación de parte de la UI

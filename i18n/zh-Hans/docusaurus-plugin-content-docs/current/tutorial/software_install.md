@@ -52,7 +52,7 @@ Beta 版本为公开测试版本，应对磁场干扰明显的区域效果更好
 <span class="os-switch-download-main">下载 Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Beta 版本 · 公开测试</span>
 </a>
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
 <span class="os-switch-download-main">下载 Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Beta 版本 · 灰度测试</span>
 </a>
@@ -83,7 +83,7 @@ Beta 版本为公开测试版本，应对磁场干扰明显的区域效果更好
 
    &emsp;&emsp;&emsp; (未公开) release_v02 beta02.1 - ◼️tracker : V16  ,  📡receiver : V6 / V7 / V8 <br /> 
 
-   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️tracker : V16 / V17 ,  📡receiver : V6 / V7 / V8 <br /> 
+   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️tracker : V16 ,  📡receiver : V6 / V7 / V8 <br /> 
 
 
 
@@ -185,7 +185,7 @@ Linux 目前为 Preview 预览版，本次发布主要用于观察程序核心�
 使用中如遇到 Bug，欢迎到 Twitter（X）的相关贴文和 Discord 留言。
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">下载 Rebocap Linux Preview 0.1</span>
 <span class="os-switch-download-meta">Linux · Preview 预览版</span>
 </a>
@@ -261,7 +261,7 @@ Android 目前为 Preview 预览版，本次发布主要用于观察程序核心
 使用中如遇到 Bug，欢迎到 Twitter（X）的相关贴文和 Discord 留言。
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">下载 Rebocap Android Preview 0.1</span>
 <span class="os-switch-download-meta">Android · Preview 预览版</span>
 </a>
@@ -289,9 +289,9 @@ Android 目前为 Preview 预览版，本次发布主要用于观察程序核心
 
 <div class="os-switch-otg">
 <span class="os-switch-otg-label">OTG 数据线购买：</span>
-<a class="os-switch-otg-link" href="https://store.rebocap.site/products/otg-adapter-with-pd-charging">国际购物站</a>
 <a class="os-switch-otg-link" href="https://item.taobao.com/item.htm?id=1095599547785">淘宝</a>
 </div>
+<p class="os-switch-otg-note">说明：OTG 数据线仅适用于 Quest 或 Pico 一体机，官方默认不随设备附赠。官方商店提供的 OTG 数据线兼具 PD 充电功能；如果不需要充电，可以自行购买普通 OTG 转接头或转接线。如果不需要 PD 充电（例如 Quest 2），也可以使用普通 OTG 充电线（5V/2A）。</p>
 
 
 
@@ -431,8 +431,8 @@ Android 版使用 `.apk` 安装包：
 1. 📡接收器固件 V8 ：
     > 丢弃传统的 CDC 串口驱动，使用 vendor 模式，传输速率更快（基本无影响），<br> 主要是串口驱动容易被系统其它程序干扰，或者容易被系统组件影响，稳定性太差。<br>注意：一旦升级到新固件，只能用最新版本软件，老版本无法识别，只能回退接收器固件才能使用老版本软件。
 
-2. ◼️追踪器固件 V17：
-    > 修改新老算法默认方向不一致问题（v15固件按钮重启后会朝右90°）,<br>支持非抗磁模式（之前抗磁开关对v15固件无效，导致不适合用于跳舞），<br>修复磁力计偏置超过400显示异常的问题（因为有人拿着追踪器靠近磁铁）。
+2. ◼️追踪器固件 V16：
+    > 修改新老算法默认方向不一致问题（v15固件按钮重启后会朝右90°）,<br>支持非抗磁模式（之前抗磁开关对v15固件无效，导致不适合用于跳舞），。
 
 **软件**
 1. 新增Linux和Android端，主要观察大家是否会出现核心bug，以及改动部分ui的操作逻辑

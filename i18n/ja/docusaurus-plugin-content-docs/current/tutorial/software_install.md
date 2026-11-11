@@ -52,7 +52,7 @@ Beta 版は公開テスト版であり、磁場干渉が顕著なエリアでの
 <span class="os-switch-download-main">Rebocap V02 Beta02 をダウンロード</span>
 <span class="os-switch-download-meta">Beta 版 · 公開テスト</span>
 </a>
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
 <span class="os-switch-download-main">Rebocap V02 Beta02.2 をダウンロード</span>
 <span class="os-switch-download-meta">Beta 版 · グレーリリース</span>
 </a>
@@ -83,7 +83,7 @@ Beta 版は公開テスト版であり、磁場干渉が顕著なエリアでの
 
    &emsp;&emsp;&emsp; (未公開) release_v02 beta02.1 - ◼️tracker : V16  ,  📡receiver : V6 / V7 / V8 <br /> 
 
-   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️tracker : V16 / V17  ,  📡receiver : V6 / V7 / V8 <br /> 
+   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️tracker : V16  ,  📡receiver : V6 / V7 / V8 <br /> 
 
 
 
@@ -185,7 +185,7 @@ Linux は現在 Preview プレビュー版です。今回のリリースは、Li
 使用中に Bug が発生した場合は、Twitter（X）の関連投稿や Discord へのコメントをお待ちしています。
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Rebocap Linux Preview 0.1 をダウンロード</span>
 <span class="os-switch-download-meta">Linux · Preview プレビュー版</span>
 </a>
@@ -261,7 +261,7 @@ Android は現在 Preview プレビュー版です。今回のリリースは、
 使用中に Bug が発生した場合は、Twitter（X）の関連投稿や Discord へのコメントをお待ちしています。
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Rebocap Android Preview 0.1 をダウンロード</span>
 <span class="os-switch-download-meta">Android · Preview プレビュー版</span>
 </a>
@@ -291,6 +291,7 @@ Android は現在 Preview プレビュー版です。今回のリリースは、
 <span class="os-switch-otg-label">OTG ケーブルを購入：</span>
 <a class="os-switch-otg-link" href="https://store.rebocap.site/products/otg-adapter-with-pd-charging">国際ストア</a>
 </div>
+<p class="os-switch-otg-note">注：OTGケーブルはQuestまたはPicoの一体型VRヘッドセット専用で、標準では付属しません。公式ストアのOTGケーブルはPD充電に対応しています。充電が不要な場合は、一般的なOTGアダプターまたは変換ケーブルを別途ご購入ください。PD充電が不要な場合（Quest 2など）は、一般的なOTG充電ケーブル（5V/2A）も使用できます。</p>
 
 
 
@@ -430,8 +431,8 @@ Android 版は `.apk` インストールパッケージを使用します：
 1. 📡レシーバーファームウェア V8 ：
     > 従来の CDC シリアルポートドライバを廃止し、vendor モードを使用することで転送速度がより高速になります（基本的に影響はありません）。<br> 主な理由は、シリアルポートドライバが他のシステムプログラムやシステムコンポーネントの影響を受けやすく、安定性が非常に悪いためです。<br>注意：一度新しいファームウェアにアップグレードすると、最新バージョンのソフトウェアでしか使用できません。古いバージョンでは認識されないため、古いバージョンのソフトウェアを使用するにはレシーバーのファームウェアをダウングレードする必要があります。
 
-2. ◼️トラッカーファームウェア V17：
-    > 新旧のアルゴリズムでデフォルトの向きが一致しない問題を修正（v15 ファームウェアではボタンで再起動すると右へ90°回転していました）、<br>非耐磁モードをサポート（従来は耐磁スイッチが v15 ファームウェアに効かず、ダンスに適していませんでした）、<br>磁力計のバイアスが400を超えると表示が異常になる問題を修正（トラッカーを磁石に近づける人がいたため）。
+2. ◼️トラッカーファームウェア V16：
+    > 新旧のアルゴリズムでデフォルトの向きが一致しない問題を修正（v15 ファームウェアではボタンで再起動すると右へ90°回転していました）、<br>非耐磁モードをサポート（従来は耐磁スイッチが v15 ファームウェアに効かず、ダンスに適していませんでした）、。
 
 **ソフトウェア**
 1. Linux 版と Android 版を新規追加。主に、コアのバグが発生するかどうか、および一部 UI の操作ロジックの変更点を観察するためです。

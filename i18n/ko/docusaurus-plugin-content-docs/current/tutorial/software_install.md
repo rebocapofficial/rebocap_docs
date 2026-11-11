@@ -43,7 +43,7 @@ title: "소프트웨어 다운로드"
 <span class="os-switch-download-main">Rebocap V02 Beta02 다운로드</span>
 <span class="os-switch-download-meta">Beta 버전 · 공개 테스트</span>
 </a>
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
 <span class="os-switch-download-main">Rebocap V02 Beta02.2 다운로드</span>
 <span class="os-switch-download-meta">Beta 버전 · 그레이 테스트</span>
 </a>
@@ -74,7 +74,7 @@ title: "소프트웨어 다운로드"
 
    &emsp;&emsp;&emsp; (미공개) release_v02 beta02.1 - ◼️트래커 : V16  ,  📡리시버 : V6 / V7 / V8 <br /> 
 
-   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️트래커 : V16 / V17 ,  📡리시버 : V6 / V7 / V8 <br /> 
+   &emsp;&emsp;&emsp; release_v02 beta02.2 - ◼️트래커 : V16 ,  📡리시버 : V6 / V7 / V8 <br /> 
 
 
 
@@ -176,7 +176,7 @@ Linux는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 Linux
 사용 중 Bug가 발생하면 Twitter(X)의 관련 게시물과 Discord에 남겨 주세요.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Rebocap Linux Preview 0.1 다운로드</span>
 <span class="os-switch-download-meta">Linux · Preview 프리뷰 버전</span>
 </a>
@@ -252,7 +252,7 @@ Android는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 And
 사용 중 Bug가 발생하면 Twitter(X)의 관련 게시물과 Discord에 남겨 주세요.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Rebocap Android Preview 0.1 다운로드</span>
 <span class="os-switch-download-meta">Android · Preview 프리뷰 버전</span>
 </a>
@@ -282,6 +282,7 @@ Android는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 And
 <span class="os-switch-otg-label">OTG 케이블 구매:</span>
 <a class="os-switch-otg-link" href="https://store.rebocap.site/products/otg-adapter-with-pd-charging">국제 스토어</a>
 </div>
+<p class="os-switch-otg-note">참고: OTG 케이블은 Quest 또는 Pico 올인원 헤드셋 전용이며 기본 구성품에 포함되지 않습니다. 공식 스토어의 OTG 케이블은 PD 충전을 지원합니다. 사용 중 충전이 필요하지 않으면 일반 OTG 어댑터나 변환 케이블을 별도로 구매할 수 있습니다. PD 충전이 필요하지 않은 경우(예: Quest 2) 일반 OTG 충전 케이블(5V/2A)도 사용할 수 있습니다.</p>
 
 
 
@@ -422,8 +423,8 @@ Android 버전은 `.apk` 설치 패키지를 사용합니다:
 1. 📡리시버 펌웨어 V8 :
     > 기존 CDC 시리얼 드라이버를 버리고 vendor 모드를 사용하여 전송 속도가 더 빠릅니다(기본적으로 영향 없음).<br> 주로 시리얼 드라이버가 시스템의 다른 프로그램에 간섭받거나 시스템 구성 요소의 영향을 받기 쉬워 안정성이 너무 떨어지기 때문입니다.<br>주의: 새 펌웨어로 업그레이드하면 최신 버전 소프트웨어만 사용할 수 있으며, 이전 버전에서는 인식되지 않으므로 리시버 펌웨어를 롤백해야만 이전 버전 소프트웨어를 사용할 수 있습니다.
 
-2. ◼️트래커 펌웨어 V17:
-    > 신구 알고리즘의 기본 방향이 일치하지 않는 문제 수정(v15 펌웨어는 버튼으로 재시작하면 오른쪽으로 90° 향함),<br>내자기장 비활성 모드 지원(이전에는 내자기장 스위치가 v15 펌웨어에서 효과가 없어 춤에 적합하지 않았음),<br>자력계 바이어스가 400을 초과할 때 표시가 비정상인 문제 수정(누군가 트래커를 자석 가까이 가져갔기 때문).
+2. ◼️트래커 펌웨어 V16:
+    > 신구 알고리즘의 기본 방향이 일치하지 않는 문제 수정(v15 펌웨어는 버튼으로 재시작하면 오른쪽으로 90° 향함),<br>내자기장 비활성 모드 지원(이전에는 내자기장 스위치가 v15 펌웨어에서 효과가 없어 춤에 적합하지 않았음).
 
 **소프트웨어**
 1. Linux 및 Android 버전 추가, 주로 핵심 버그가 발생하는지 관찰하고 일부 UI 조작 로직 변경
