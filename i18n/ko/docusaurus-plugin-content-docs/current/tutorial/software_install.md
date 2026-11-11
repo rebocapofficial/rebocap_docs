@@ -43,7 +43,7 @@ title: "소프트웨어 다운로드"
 <span class="os-switch-download-main">Rebocap V02 Beta02 다운로드</span>
 <span class="os-switch-download-meta">Beta 버전 · 공개 테스트</span>
 </a>
-<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_v02_beta02.2_gray02-2.exe">
 <span class="os-switch-download-main">Rebocap V02 Beta02.2 다운로드</span>
 <span class="os-switch-download-meta">Beta 버전 · 그레이 테스트</span>
 </a>

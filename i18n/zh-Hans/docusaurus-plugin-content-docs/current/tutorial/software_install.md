@@ -52,7 +52,7 @@ Beta 版本为公开测试版本，应对磁场干扰明显的区域效果更好
 <span class="os-switch-download-main">下载 Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Beta 版本 · 公开测试</span>
 </a>
-<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_v02_beta02.2_gray02-2.exe">
 <span class="os-switch-download-main">下载 Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Beta 版本 · 灰度测试</span>
 </a>
@@ -432,7 +432,7 @@ Android 版使用 `.apk` 安装包：
     > 丢弃传统的 CDC 串口驱动，使用 vendor 模式，传输速率更快（基本无影响），<br> 主要是串口驱动容易被系统其它程序干扰，或者容易被系统组件影响，稳定性太差。<br>注意：一旦升级到新固件，只能用最新版本软件，老版本无法识别，只能回退接收器固件才能使用老版本软件。
 
 2. ◼️追踪器固件 V16：
-    > 修改新老算法默认方向不一致问题（v15固件按钮重启后会朝右90°）,<br>支持非抗磁模式（之前抗磁开关对v15固件无效，导致不适合用于跳舞），。
+    > 修改新老算法默认方向不一致问题（v15固件按钮重启后会朝右90°）,<br>支持非抗磁模式（之前抗磁开关对v15固件无效，导致不适合用于跳舞）。
 
 **软件**
 1. 新增Linux和Android端，主要观察大家是否会出现核心bug，以及改动部分ui的操作逻辑

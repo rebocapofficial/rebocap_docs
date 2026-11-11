@@ -52,7 +52,7 @@ Beta 版本為公開測試版本，應對磁場干擾明顯的區域效果更好
 <span class="os-switch-download-main">下載 Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Beta 版本 · 公開測試</span>
 </a>
-<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_v02_beta02.2_gray02-2.exe">
 <span class="os-switch-download-main">下載 Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Beta 版本 · 灰度測試</span>
 </a>
@@ -432,7 +432,7 @@ Android 版使用 `.apk` 安裝包：
     > 捨棄傳統的 CDC 序列埠驅動程式，改用 vendor 模式，傳輸速率更快（基本上無影響），<br> 主要是序列埠驅動程式容易被系統其他程式干擾，或者容易被系統元件影響，穩定性太差。<br>注意：一旦升級到新韌體，就只能使用最新版本軟體，舊版本無法識別，必須降級接收器韌體才能使用舊版本軟體。
 
 2. ◼️追蹤器韌體 V16：
-    > 修正新舊演算法預設方向不一致的問題（v15 韌體按鈕重啟後會朝右 90°），<br>支援非抗磁模式（之前抗磁開關對 v15 韌體無效，導致不適合用於跳舞），。
+    > 修正新舊演算法預設方向不一致的問題（v15 韌體按鈕重啟後會朝右 90°），<br>支援非抗磁模式（之前抗磁開關對 v15 韌體無效，導致不適合用於跳舞）。
 
 **軟體**
 1. 新增 Linux 與 Android 版本，主要觀察大家是否會出現核心 bug，以及調整部分 UI 的操作邏輯

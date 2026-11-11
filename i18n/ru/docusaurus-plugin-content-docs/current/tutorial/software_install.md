@@ -42,7 +42,7 @@ title: "Загрузка ПО"
 <span class="os-switch-download-main">Скачать Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Бета-версия · публичное тестирование</span>
 </a>
-<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_v02_beta02.2_gray02-2.exe">
 <span class="os-switch-download-main">Скачать Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Бета-версия · поэтапное тестирование</span>
 </a>

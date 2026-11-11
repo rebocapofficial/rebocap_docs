@@ -44,7 +44,7 @@ The Beta version is a public test build that performs better in areas with signi
 <span class="os-switch-download-main">Download Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Beta version · Public test</span>
 </a>
-<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_v02_beta02.2_gray02-2.exe">
 <span class="os-switch-download-main">Download Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Beta version · Gray release</span>
 </a>

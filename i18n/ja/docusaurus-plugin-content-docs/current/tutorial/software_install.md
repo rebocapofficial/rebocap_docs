@@ -52,7 +52,7 @@ Beta 版は公開テスト版であり、磁場干渉が顕著なエリアでの
 <span class="os-switch-download-main">Rebocap V02 Beta02 をダウンロード</span>
 <span class="os-switch-download-meta">Beta 版 · 公開テスト</span>
 </a>
-<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_release_v02%20beta02.2_gray02-1.exe">
+<a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_v02_beta02.2_gray02-2.exe">
 <span class="os-switch-download-main">Rebocap V02 Beta02.2 をダウンロード</span>
 <span class="os-switch-download-meta">Beta 版 · グレーリリース</span>
 </a>
@@ -432,7 +432,7 @@ Android 版は `.apk` インストールパッケージを使用します：
     > 従来の CDC シリアルポートドライバを廃止し、vendor モードを使用することで転送速度がより高速になります（基本的に影響はありません）。<br> 主な理由は、シリアルポートドライバが他のシステムプログラムやシステムコンポーネントの影響を受けやすく、安定性が非常に悪いためです。<br>注意：一度新しいファームウェアにアップグレードすると、最新バージョンのソフトウェアでしか使用できません。古いバージョンでは認識されないため、古いバージョンのソフトウェアを使用するにはレシーバーのファームウェアをダウングレードする必要があります。
 
 2. ◼️トラッカーファームウェア V16：
-    > 新旧のアルゴリズムでデフォルトの向きが一致しない問題を修正（v15 ファームウェアではボタンで再起動すると右へ90°回転していました）、<br>非耐磁モードをサポート（従来は耐磁スイッチが v15 ファームウェアに効かず、ダンスに適していませんでした）、。
+    > 新旧のアルゴリズムでデフォルトの向きが一致しない問題を修正（v15 ファームウェアではボタンで再起動すると右へ90°回転していました）、<br>非耐磁モードをサポート（従来は耐磁スイッチが v15 ファームウェアに効かず、ダンスに適していませんでした）。
 
 **ソフトウェア**
 1. Linux 版と Android 版を新規追加。主に、コアのバグが発生するかどうか、および一部 UI の操作ロジックの変更点を観察するためです。
