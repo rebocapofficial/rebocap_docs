@@ -747,3 +747,8 @@ details.plain-details > div > ol {
   font-size: .85rem;
   font-weight: 500;
 }
+
+/* Standalone legal page: keep long policy text readable without a docs sidebar. */
+.privacy-policy-page main.container {
+  max-width: 960px;
+}
