@@ -47,14 +47,17 @@ Beta 版本為公開測試版本，應對磁場干擾明顯的區域效果更好
 <a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v01.exe">
 <span class="os-switch-download-main">下載 Rebocap V01</span>
 <span class="os-switch-download-meta">正式版本 · 目前 Release</span>
+<span class="os-switch-download-date">上傳時間：2025.12.03</span>
 </a>
 <a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
 <span class="os-switch-download-main">下載 Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Beta 版本 · 公開測試</span>
+<span class="os-switch-download-date">上傳時間：2026.02.24</span>
 </a>
 <a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_v02_beta02.2_gray02-2.exe">
 <span class="os-switch-download-main">下載 Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Beta 版本 · 灰度測試</span>
+<span class="os-switch-download-date">上傳時間：2026.11.11</span>
 </a>
 </div>
 
@@ -188,6 +191,7 @@ Linux 目前為 Preview 預覽版，本次發布主要用於觀察程式核心�
 <a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">下載 Rebocap Linux Preview 0.1</span>
 <span class="os-switch-download-meta">Linux · Preview 預覽版</span>
+<span class="os-switch-download-date">上傳時間：2026.11.11</span>
 </a>
 </div>
 
@@ -264,6 +268,7 @@ Android 目前為 Preview 預覽版，本次發布主要用於觀察程式核心
 <a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">下載 Rebocap Android Preview 0.1</span>
 <span class="os-switch-download-meta">Android · Preview 預覽版</span>
+<span class="os-switch-download-date">上傳時間：2026.11.11</span>
 </a>
 </div>
 
@@ -274,6 +279,7 @@ Android 目前為 Preview 預覽版，本次發布主要用於觀察程式核心
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Rebocap 接收器橋接 App</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.18</span>
+<span class="os-switch-aux-date">上傳時間：2026.11.11</span>
 </div>
 <span class="os-switch-aux-btn">下載 ↓</span>
 </a>
@@ -281,6 +287,7 @@ Android 目前為 Preview 預覽版，本次發布主要用於觀察程式核心
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">VRChat OSC 轉發 App</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.0</span>
+<span class="os-switch-aux-date">上傳時間：2026.11.11</span>
 </div>
 <span class="os-switch-aux-btn">下載 ↓</span>
 </a>

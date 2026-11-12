@@ -38,14 +38,17 @@ title: "소프트웨어 다운로드"
 <a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v01.exe">
 <span class="os-switch-download-main">Rebocap V01 다운로드</span>
 <span class="os-switch-download-meta">정식 버전 · 현재 Release</span>
+<span class="os-switch-download-date">업로드 날짜: 2025.12.03</span>
 </a>
 <a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
 <span class="os-switch-download-main">Rebocap V02 Beta02 다운로드</span>
 <span class="os-switch-download-meta">Beta 버전 · 공개 테스트</span>
+<span class="os-switch-download-date">업로드 날짜: 2026.02.24</span>
 </a>
 <a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_v02_beta02.2_gray02-2.exe">
 <span class="os-switch-download-main">Rebocap V02 Beta02.2 다운로드</span>
 <span class="os-switch-download-meta">Beta 버전 · 그레이 테스트</span>
+<span class="os-switch-download-date">업로드 날짜: 2026.11.11</span>
 </a>
 </div>
 
@@ -179,6 +182,7 @@ Linux는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 Linux
 <a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Rebocap Linux Preview 0.1 다운로드</span>
 <span class="os-switch-download-meta">Linux · Preview 프리뷰 버전</span>
+<span class="os-switch-download-date">업로드 날짜: 2026.11.11</span>
 </a>
 </div>
 
@@ -255,6 +259,7 @@ Android는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 And
 <a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Rebocap Android Preview 0.1 다운로드</span>
 <span class="os-switch-download-meta">Android · Preview 프리뷰 버전</span>
+<span class="os-switch-download-date">업로드 날짜: 2026.11.11</span>
 </a>
 </div>
 
@@ -265,6 +270,7 @@ Android는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 And
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Rebocap 리시버 브리지 앱</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.18</span>
+<span class="os-switch-aux-date">업로드 날짜: 2026.11.11</span>
 </div>
 <span class="os-switch-aux-btn">다운로드 ↓</span>
 </a>
@@ -272,6 +278,7 @@ Android는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 And
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">VRChat OSC 포워딩 앱</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.0</span>
+<span class="os-switch-aux-date">업로드 날짜: 2026.11.11</span>
 </div>
 <span class="os-switch-aux-btn">다운로드 ↓</span>
 </a>

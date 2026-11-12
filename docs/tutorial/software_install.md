@@ -39,14 +39,17 @@ The Beta version is a public test build that performs better in areas with signi
 <a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v01.exe">
 <span class="os-switch-download-main">Download Rebocap V01</span>
 <span class="os-switch-download-meta">Stable version · Current Release</span>
+<span class="os-switch-download-date">Uploaded: 2025.12.03</span>
 </a>
 <a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
 <span class="os-switch-download-main">Download Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Beta version · Public test</span>
+<span class="os-switch-download-date">Uploaded: 2026.02.24</span>
 </a>
 <a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_v02_beta02.2_gray02-2.exe">
 <span class="os-switch-download-main">Download Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Beta version · Gray release</span>
+<span class="os-switch-download-date">Uploaded: 2026.11.11</span>
 </a>
 </div>
 
@@ -174,6 +177,7 @@ If you encounter bugs while using it, feel free to leave feedback on the relevan
 <a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Download Rebocap Linux Preview 0.1</span>
 <span class="os-switch-download-meta">Linux · Preview version</span>
+<span class="os-switch-download-date">Uploaded: 2026.11.11</span>
 </a>
 </div>
 
@@ -248,6 +252,7 @@ If you encounter bugs while using it, feel free to leave feedback on the relevan
 <a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Download Rebocap Android Preview 0.1</span>
 <span class="os-switch-download-meta">Android · Preview version</span>
+<span class="os-switch-download-date">Uploaded: 2026.11.11</span>
 </a>
 </div>
 
@@ -258,6 +263,7 @@ If you encounter bugs while using it, feel free to leave feedback on the relevan
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Rebocap Receiver Bridge App</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.18</span>
+<span class="os-switch-aux-date">Uploaded: 2026.11.11</span>
 </div>
 <span class="os-switch-aux-btn">Download ↓</span>
 </a>
@@ -265,6 +271,7 @@ If you encounter bugs while using it, feel free to leave feedback on the relevan
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">VRChat OSC Forwarding App</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.0</span>
+<span class="os-switch-aux-date">Uploaded: 2026.11.11</span>
 </div>
 <span class="os-switch-aux-btn">Download ↓</span>
 </a>

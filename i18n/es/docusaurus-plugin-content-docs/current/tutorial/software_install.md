@@ -37,14 +37,17 @@ La versión Beta es una versión de prueba pública, que funciona mejor en área
 <a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v01.exe">
 <span class="os-switch-download-main">Descargar Rebocap V01</span>
 <span class="os-switch-download-meta">Versión estable · Release actual</span>
+<span class="os-switch-download-date">Fecha de carga: 2025.12.03</span>
 </a>
 <a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
 <span class="os-switch-download-main">Descargar Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Versión Beta · Prueba pública</span>
+<span class="os-switch-download-date">Fecha de carga: 2026.02.24</span>
 </a>
 <a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_v02_beta02.2_gray02-2.exe">
 <span class="os-switch-download-main">Descargar Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Versión Beta · Prueba gradual</span>
+<span class="os-switch-download-date">Fecha de carga: 2026.11.11</span>
 </a>
 </div>
 
@@ -174,6 +177,7 @@ Si encuentra algún Bug durante el uso, le invitamos a dejar un comentario en la
 <a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Descargar Rebocap Linux Preview 0.1</span>
 <span class="os-switch-download-meta">Linux · Versión preliminar Preview</span>
+<span class="os-switch-download-date">Fecha de carga: 2026.11.11</span>
 </a>
 </div>
 
@@ -248,6 +252,7 @@ Si encuentra algún Bug durante el uso, le invitamos a dejar un comentario en la
 <a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
 <span class="os-switch-download-main">Descargar Rebocap Android Preview 0.1</span>
 <span class="os-switch-download-meta">Android · Versión preliminar Preview</span>
+<span class="os-switch-download-date">Fecha de carga: 2026.11.11</span>
 </a>
 </div>
 
@@ -258,6 +263,7 @@ Si encuentra algún Bug durante el uso, le invitamos a dejar un comentario en la
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">App de puente del receptor Rebocap</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.18</span>
+<span class="os-switch-aux-date">Fecha de carga: 2026.11.11</span>
 </div>
 <span class="os-switch-aux-btn">Descargar ↓</span>
 </a>
@@ -265,6 +271,7 @@ Si encuentra algún Bug durante el uso, le invitamos a dejar un comentario en la
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">App de reenvío OSC para VRChat</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.0</span>
+<span class="os-switch-aux-date">Fecha de carga: 2026.11.11</span>
 </div>
 <span class="os-switch-aux-btn">Descargar ↓</span>
 </a>
