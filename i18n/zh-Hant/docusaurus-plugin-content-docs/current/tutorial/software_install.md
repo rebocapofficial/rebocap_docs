@@ -265,21 +265,21 @@ Android 目前為 Preview 預覽版，本次發布主要用於觀察程式核心
 使用中如遇到 Bug，歡迎到 Twitter（X）的相關貼文和 Discord 留言。
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
-<span class="os-switch-download-main">下載 Rebocap Android Preview 0.1</span>
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
+<span class="os-switch-download-main">下載 Rebocap Android Preview 0.2</span>
 <span class="os-switch-download-meta">Android · Preview 預覽版</span>
-<span class="os-switch-download-date">上傳時間：2026.11.11</span>
+<span class="os-switch-download-date">上傳時間：2026.11.13</span>
 </a>
 </div>
 
 <div class="os-switch-aux">
 <div class="os-switch-aux-title">配套工具（選用）</div>
 <div class="os-switch-aux-grid">
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.18.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.21.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Rebocap 接收器橋接 App</span>
-<span class="os-switch-aux-meta">Android APK · v1.0.18</span>
-<span class="os-switch-aux-date">上傳時間：2026.11.11</span>
+<span class="os-switch-aux-meta">Android APK · v1.0.21</span>
+<span class="os-switch-aux-date">上傳時間：2026.11.13</span>
 </div>
 <span class="os-switch-aux-btn">下載 ↓</span>
 </a>
@@ -313,7 +313,7 @@ Android 目前為 Preview 預覽版，本次發布主要用於觀察程式核心
    &emsp;&emsp; 當切換回舊版軟體時，需要相應地降級韌體。<br /> 
 
 
-   &emsp;&emsp;&emsp; Android Preview 0.1 - ◼️tracker : V16 / V17 ,  📡receiver : V6 / V7 / V8 <br /> 
+   &emsp;&emsp;&emsp; Android Preview 0.2 - ◼️tracker : V16 / V17 ,  📡receiver : V6 / V7 / V8 <br /> 
 
 
 
@@ -421,7 +421,7 @@ sudo bash ~/.local/opt/rebocap/linux/install_linux_permissions.sh --install --us
 
 Android 版使用 `.apk` 安裝包：
 
-1. 將 `ReboCapAndroid-Preview-0.1.apk` 傳輸到手機並點擊安裝
+1. 將 `ReboCapAndroid-Preview-0.2.apk` 傳輸到手機並點擊安裝
 2. 如系統提示，請允許「安裝未知應用程式」
 3. 安裝完成後開啟 Rebocap
 4. 使用 OTG 數據線連接 USB 接收器，並依軟體提示完成連接

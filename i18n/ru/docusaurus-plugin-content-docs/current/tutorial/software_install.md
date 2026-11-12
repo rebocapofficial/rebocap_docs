@@ -256,21 +256,21 @@ title: "Загрузка ПО"
 Если при использовании вы столкнетесь с ошибками, оставляйте комментарии в соответствующих публикациях в Twitter (X) и в Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
-<span class="os-switch-download-main">Скачать Rebocap Android Preview 0.1</span>
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
+<span class="os-switch-download-main">Скачать Rebocap Android Preview 0.2</span>
 <span class="os-switch-download-meta">Android · предварительная версия Preview</span>
-<span class="os-switch-download-date">Дата загрузки: 2026.11.11</span>
+<span class="os-switch-download-date">Дата загрузки: 2026.11.13</span>
 </a>
 </div>
 
 <div class="os-switch-aux">
 <div class="os-switch-aux-title">Дополнительные инструменты (опционально)</div>
 <div class="os-switch-aux-grid">
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.18.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.21.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Приложение-мост для приёмника Rebocap</span>
-<span class="os-switch-aux-meta">Android APK · v1.0.18</span>
-<span class="os-switch-aux-date">Дата загрузки: 2026.11.11</span>
+<span class="os-switch-aux-meta">Android APK · v1.0.21</span>
+<span class="os-switch-aux-date">Дата загрузки: 2026.11.13</span>
 </div>
 <span class="os-switch-aux-btn">Скачать ↓</span>
 </a>
@@ -304,7 +304,7 @@ title: "Загрузка ПО"
    &emsp;&emsp; При возврате к более старой версии программного обеспечения прошивку необходимо соответствующим образом понизить.<br /> 
 
 
-   &emsp;&emsp;&emsp; Android Preview 0.1 - ◼️трекер : V16 / V17 ,  📡приемник : V6 / V7 / V8 <br /> 
+   &emsp;&emsp;&emsp; Android Preview 0.2 - ◼️трекер : V16 / V17 ,  📡приемник : V6 / V7 / V8 <br /> 
 
 
 
@@ -404,7 +404,7 @@ sudo bash ~/.local/opt/rebocap/linux/install_linux_permissions.sh --install --us
 
 Версия для Android использует установочный пакет `.apk`:
 
-1. Передайте `ReboCapAndroid-Preview-0.1.apk` на телефон и нажмите для установки
+1. Передайте `ReboCapAndroid-Preview-0.2.apk` на телефон и нажмите для установки
 2. Если система запросит, разрешите «установку неизвестных приложений»
 3. После завершения установки откройте Rebocap
 4. Подключите USB-приемник с помощью кабеля OTG и завершите подключение, следуя подсказкам программного обеспечения

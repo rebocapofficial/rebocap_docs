@@ -252,21 +252,21 @@ Android est actuellement en version Preview ; cette publication vise principalem
 Si vous rencontrez des bugs lors de l'utilisation, n'hésitez pas à laisser un commentaire sur la publication correspondante sur Twitter (X) et sur Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
-<span class="os-switch-download-main">Télécharger Rebocap Android Preview 0.1</span>
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
+<span class="os-switch-download-main">Télécharger Rebocap Android Preview 0.2</span>
 <span class="os-switch-download-meta">Android · Version Preview</span>
-<span class="os-switch-download-date">Date de mise en ligne : 2026.11.11</span>
+<span class="os-switch-download-date">Date de mise en ligne : 2026.11.13</span>
 </a>
 </div>
 
 <div class="os-switch-aux">
 <div class="os-switch-aux-title">Outils complémentaires (facultatif)</div>
 <div class="os-switch-aux-grid">
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.18.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.21.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Application de pont du récepteur Rebocap</span>
-<span class="os-switch-aux-meta">Android APK · v1.0.18</span>
-<span class="os-switch-aux-date">Date de mise en ligne : 2026.11.11</span>
+<span class="os-switch-aux-meta">Android APK · v1.0.21</span>
+<span class="os-switch-aux-date">Date de mise en ligne : 2026.11.13</span>
 </div>
 <span class="os-switch-aux-btn">Télécharger ↓</span>
 </a>
@@ -300,7 +300,7 @@ Si vous rencontrez des bugs lors de l'utilisation, n'hésitez pas à laisser un 
    &emsp;&emsp; Lors du retour à une ancienne version du logiciel, le firmware doit être rétrogradé en conséquence.<br /> 
 
 
-   &emsp;&emsp;&emsp; Android Preview 0.1 - ◼️tracker : V16 / V17 ,  📡récepteur : V6 / V7 / V8 <br /> 
+   &emsp;&emsp;&emsp; Android Preview 0.2 - ◼️tracker : V16 / V17 ,  📡récepteur : V6 / V7 / V8 <br /> 
 
 
 
@@ -403,7 +403,7 @@ Après l'exécution, débranchez puis rebranchez le récepteur une fois, puis d�
 
 La version Android utilise le paquet d'installation `.apk` :
 
-1. Transférez `ReboCapAndroid-Preview-0.1.apk` sur votre téléphone et touchez-le pour l'installer
+1. Transférez `ReboCapAndroid-Preview-0.2.apk` sur votre téléphone et touchez-le pour l'installer
 2. Si le système vous le demande, autorisez « l'installation d'applications inconnues »
 3. Une fois l'installation terminée, ouvrez Rebocap
 4. Connectez le récepteur USB à l'aide d'un câble OTG, puis suivez les indications du logiciel pour établir la connexion

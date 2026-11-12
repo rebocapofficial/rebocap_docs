@@ -256,21 +256,21 @@ Android는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 And
 사용 중 Bug가 발생하면 Twitter(X)의 관련 게시물과 Discord에 남겨 주세요.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.1.apk">
-<span class="os-switch-download-main">Rebocap Android Preview 0.1 다운로드</span>
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
+<span class="os-switch-download-main">Rebocap Android Preview 0.2 다운로드</span>
 <span class="os-switch-download-meta">Android · Preview 프리뷰 버전</span>
-<span class="os-switch-download-date">업로드 날짜: 2026.11.11</span>
+<span class="os-switch-download-date">업로드 날짜: 2026.11.13</span>
 </a>
 </div>
 
 <div class="os-switch-aux">
 <div class="os-switch-aux-title">보조 도구 (선택 사항)</div>
 <div class="os-switch-aux-grid">
-<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.18.apk">
+<a class="os-switch-aux-tool" href="https://doc.rebocap.com/files/RebocapTransmitter-v1.0.21.apk">
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Rebocap 리시버 브리지 앱</span>
-<span class="os-switch-aux-meta">Android APK · v1.0.18</span>
-<span class="os-switch-aux-date">업로드 날짜: 2026.11.11</span>
+<span class="os-switch-aux-meta">Android APK · v1.0.21</span>
+<span class="os-switch-aux-date">업로드 날짜: 2026.11.13</span>
 </div>
 <span class="os-switch-aux-btn">다운로드 ↓</span>
 </a>
@@ -304,7 +304,7 @@ Android는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 And
    &emsp;&emsp; 이전 소프트웨어 버전으로 다시 전환할 때는 펌웨어도 그에 맞게 다운그레이드해야 합니다.<br /> 
 
 
-   &emsp;&emsp;&emsp; Android Preview 0.1 - ◼️트래커 : V16 / V17 ,  📡리시버 : V6 / V7 / V8 <br /> 
+   &emsp;&emsp;&emsp; Android Preview 0.2 - ◼️트래커 : V16 / V17 ,  📡리시버 : V6 / V7 / V8 <br /> 
 
 
 
@@ -413,7 +413,7 @@ sudo bash ~/.local/opt/rebocap/linux/install_linux_permissions.sh --install --us
 
 Android 버전은 `.apk` 설치 패키지를 사용합니다:
 
-1. `ReboCapAndroid-Preview-0.1.apk`를 휴대폰으로 전송하고 클릭하여 설치합니다
+1. `ReboCapAndroid-Preview-0.2.apk`를 휴대폰으로 전송하고 클릭하여 설치합니다
 2. 시스템에서 요청하는 경우 "알 수 없는 앱 설치"를 허용합니다
 3. 설치가 완료되면 Rebocap을 엽니다
 4. OTG 데이터 케이블로 USB 리시버를 연결하고 소프트웨어의 안내에 따라 연결을 완료합니다
