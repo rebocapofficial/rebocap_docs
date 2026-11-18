@@ -126,23 +126,21 @@ joints_smpl = [
 <span id="sdk-下载" class="legacy-anchor-alias" aria-hidden="true"></span>
 
 # SDK 下载
+
+## Windows
+
 ### python SDK
-> 适用于 python3.6~python3.14
+> 64 位 CPython 3.6～3.14 · 需安装 Microsoft Visual C++ 2015–2022 x64 运行库
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/rebocap_python_sdk_v3.zip" download="rebocap_python_sdk_v3.zip">
+<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_Python_v3.zip" download="Rebocap_Windows_x64_Python_v3.zip">
 <span class="os-switch-download-main">下载 Python SDK v3</span>
-<span class="os-switch-download-meta">Python 3.6 – 3.14</span>
+<span class="os-switch-download-meta">Python 3.6 – 3.14 · x64</span>
 <span class="os-switch-download-date">更新时间：2026.11.18</span>
 </a>
 </div>
 
-python sdk v3 更新内容：
-> Python 支持更新至 3.14
-> 
-> 内部代码微调，稳定性进一步提升
-
-<details class="plain-details"><summary>历史版本（v2）</summary>
+<details class="plain-details sdk-history"><summary>历史版本</summary>
 <div style="margin-top: 10px;">
 <p><strong>Python SDK v2</strong>（兼容 python3.6~python3.12）：<a href="/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">下载</a></p>
 <p>修复 <code>get_last_msg</code> 接口造成的死锁问题；增加所有 python 版本</p>
@@ -150,53 +148,54 @@ python sdk v3 更新内容：
 </details>
 
 ### C# SDK
-> 具体请查看下载文件中的 README.md
-> 
-> 用法上，可以参考 Unity 项目
+> Windows x64 · .NET Framework 4.8 示例 · 需安装 Microsoft Visual C++ 2015–2022 x64 运行库
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">
-<span class="os-switch-download-main">下载 C# SDK v2</span>
-<span class="os-switch-download-meta">C# · Unity 示例</span>
-<span class="os-switch-download-date">更新时间：2024.06.03</span>
+<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_CSharp_v3.zip" download="Rebocap_Windows_x64_CSharp_v3.zip">
+<span class="os-switch-download-main">下载 C# SDK v3</span>
+<span class="os-switch-download-meta">C# · .NET Framework 4.8</span>
+<span class="os-switch-download-date">更新时间：2026.11.18</span>
 </a>
 </div>
 
-c# sdk v2 更新内容：
-> 修复`get_last_msg`接口造成的死锁问题
-
+<details class="plain-details sdk-history"><summary>历史版本</summary>
+<div style="margin-top: 10px;">
+<p><strong>C# SDK v2</strong>（含 Unity 示例）：<a href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">下载</a></p>
+<p>修复 <code>get_last_msg</code> 接口造成的死锁问题</p>
+</div>
+</details>
 
 ### CPP SDK
-> 具体请查看下载文件中的 README.md
-> 
-> 用法上，可以参考 UE 项目
+> Windows x64 · C++17 · 需安装 Microsoft Visual C++ 2015–2022 x64 运行库
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/rebocap_cpp_sdk_v03.zip" download="rebocap_cpp_sdk_v3.zip">
+<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_CPP_v3.zip" download="Rebocap_Windows_x64_CPP_v3.zip">
 <span class="os-switch-download-main">下载 CPP SDK v3</span>
-<span class="os-switch-download-meta">C++ · UE 示例</span>
-<span class="os-switch-download-date">更新时间：2024.06.05</span>
+<span class="os-switch-download-meta">C++ · C++17 · x64</span>
+<span class="os-switch-download-date">更新时间：2026.11.18</span>
 </a>
 </div>
 
-c++ sdk v3 更新内容：
-> 修复`get_last_msg`接口造成的死锁问题
+## Linux
 
-
-### Linux SDK
-> Linux x86_64 · C++ SDK 与 Python 3.12 SDK。<br />最低支持系统：Ubuntu 22.04（glibc 2.35+）
-> 
-> 具体请查看下载文件中的 README
+### Python SDK（Linux）
+> Linux x86-64 · CPython 3.6～3.14 · 基于 Ubuntu 22.04 构建，需 GLIBC 2.34+ 与 GLIBCXX 3.4.29+
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/rebocap-ws-sdk-linux-ubuntu22-py312.tar.gz" download="rebocap_ws_sdk_linux_ubuntu22_py312.tar.gz">
-<span class="os-switch-download-main">下载 Linux SDK</span>
-<span class="os-switch-download-meta">Ubuntu 22.04+ · C++ 与 Python 3.12</span>
-<span class="os-switch-download-date">更新时间：2026.11.08</span>
+<a class="os-switch-download" href="/img/files/Rebocap_Linux_x86_64_Python.tar.gz" download="Rebocap_Linux_x86_64_Python.tar.gz">
+<span class="os-switch-download-main">下载 Linux Python SDK</span>
+<span class="os-switch-download-meta">Python 3.6 – 3.14 · Ubuntu 22.04+</span>
+<span class="os-switch-download-date">更新时间：2026.11.18</span>
 </a>
 </div>
 
-Linux sdk 文件说明：
-> `cpp/`：C++ 库 `librebocap_ws_sdk_cpp.so`、头文件 `rebocap_ws_sdk_cpp.h` 及示例
-> `lib/librebocap_ws_sdk.so`：C ABI 动态库，可用于自行编写其他语言的绑定
-> `python/rebocap_ws_sdk/`：Python 封装及本地扩展，含调用示例
+### CPP SDK（Linux）
+> Linux x86-64 · C++17 · 基于 Ubuntu 22.04 构建，需 GLIBC 2.34+ 与 GLIBCXX 3.4.29+
+
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/Rebocap_Linux_x86_64_CPP.tar.gz" download="Rebocap_Linux_x86_64_CPP.tar.gz">
+<span class="os-switch-download-main">下载 Linux CPP SDK</span>
+<span class="os-switch-download-meta">C++ · C++17 · Ubuntu 22.04+</span>
+<span class="os-switch-download-date">更新时间：2026.11.18</span>
+</a>
+</div>

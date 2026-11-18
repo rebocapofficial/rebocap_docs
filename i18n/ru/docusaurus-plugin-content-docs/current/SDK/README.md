@@ -122,23 +122,21 @@ joints_smpl = [
 
 
 # Скачать SDK
+
+## Windows
+
 ### Python SDK
-> Совместимо с python3.6~python3.14
+> 64-битный CPython 3.6 – 3.14 · требуется Microsoft Visual C++ 2015–2022 x64
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/rebocap_python_sdk_v3.zip" download="rebocap_python_sdk_v3.zip">
+<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_Python_v3.zip" download="Rebocap_Windows_x64_Python_v3.zip">
 <span class="os-switch-download-main">Скачать Python SDK v3</span>
-<span class="os-switch-download-meta">Python 3.6 – 3.14</span>
+<span class="os-switch-download-meta">Python 3.6 – 3.14 · x64</span>
 <span class="os-switch-download-date">Дата обновления: 2026.11.18</span>
 </a>
 </div>
 
-Содержание обновления Python sdk v3:
-> Поддержка Python обновлена до 3.14
-> 
-> Внутренние доработки кода для большей стабильности
-
-<details class="plain-details"><summary>Предыдущие версии (v2)</summary>
+<details class="plain-details sdk-history"><summary>Предыдущие версии</summary>
 <div style="margin-top: 10px;">
 <p><strong>Python SDK v2</strong> (совместимо с python3.6~python3.12): <a href="/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">скачать</a></p>
 <p>исправлено взаимоблокирование <code>get_last_msg</code>; добавлены все версии python</p>
@@ -146,55 +144,56 @@ joints_smpl = [
 </details>
 
 ### C# SDK
-> Пожалуйста, обратитесь к README.md в загруженном файле
-> 
-> Для использования вы можете обратиться к проекту Unity
+> Windows x64 · пример на .NET Framework 4.8 · требуется Microsoft Visual C++ 2015–2022 x64
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">
-<span class="os-switch-download-main">Скачать C# SDK v2</span>
-<span class="os-switch-download-meta">C# · демо Unity</span>
-<span class="os-switch-download-date">Дата обновления: 2024.06.03</span>
+<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_CSharp_v3.zip" download="Rebocap_Windows_x64_CSharp_v3.zip">
+<span class="os-switch-download-main">Скачать C# SDK v3</span>
+<span class="os-switch-download-meta">C# · .NET Framework 4.8</span>
+<span class="os-switch-download-date">Дата обновления: 2026.11.18</span>
 </a>
 </div>
 
-Содержание обновления C# sdk v2:
-> Исправлена проблема взаимоблокировки, вызванная интерфейсом `get_last_msg`
-
+<details class="plain-details sdk-history"><summary>Предыдущие версии</summary>
+<div style="margin-top: 10px;">
+<p><strong>C# SDK v2</strong> (с демо Unity): <a href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">скачать</a></p>
+<p>исправлено взаимоблокирование <code>get_last_msg</code></p>
+</div>
+</details>
 
 ### CPP SDK
-> Пожалуйста, обратитесь к README.md в загруженном файле
-> 
-> Для использования вы можете обратиться к проекту UE
+> Windows x64 · C++17 · требуется Microsoft Visual C++ 2015–2022 x64
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/rebocap_cpp_sdk_v03.zip" download="rebocap_cpp_sdk_v3.zip">
+<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_CPP_v3.zip" download="Rebocap_Windows_x64_CPP_v3.zip">
 <span class="os-switch-download-main">Скачать CPP SDK v3</span>
-<span class="os-switch-download-meta">C++ · пример UE</span>
-<span class="os-switch-download-date">Дата обновления: 2024.06.05</span>
+<span class="os-switch-download-meta">C++ · C++17 · x64</span>
+<span class="os-switch-download-date">Дата обновления: 2026.11.18</span>
 </a>
 </div>
 
-Содержание обновления C++ sdk v3:
-> Исправлена проблема взаимоблокировки, вызванная интерфейсом `get_last_msg`
+## Linux
 
-
-### Linux SDK
-> Для Linux x86_64 · SDK C++ и SDK Python 3.12.<br />Минимальная система: Ubuntu 22.04 (glibc 2.35 и новее)
-> 
-> Подробности см. в README внутри скачанного файла
+### Python SDK (Linux)
+> Linux x86-64 · CPython 3.6 – 3.14 · собрано на Ubuntu 22.04, требуется GLIBC 2.34+ и GLIBCXX 3.4.29+
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/rebocap-ws-sdk-linux-ubuntu22-py312.tar.gz" download="rebocap_ws_sdk_linux_ubuntu22_py312.tar.gz">
-<span class="os-switch-download-main">Скачать Linux SDK</span>
-<span class="os-switch-download-meta">Ubuntu 22.04+ · C++ и Python 3.12</span>
-<span class="os-switch-download-date">Дата обновления: 2026.11.08</span>
+<a class="os-switch-download" href="/img/files/Rebocap_Linux_x86_64_Python.tar.gz" download="Rebocap_Linux_x86_64_Python.tar.gz">
+<span class="os-switch-download-main">Скачать Python SDK (Linux)</span>
+<span class="os-switch-download-meta">Python 3.6 – 3.14 · Ubuntu 22.04+</span>
+<span class="os-switch-download-date">Дата обновления: 2026.11.18</span>
 </a>
 </div>
 
-Состав linux sdk:
-> `cpp/`: библиотека C++ `librebocap_ws_sdk_cpp.so`, заголовок `rebocap_ws_sdk_cpp.h` и пример
-> `lib/librebocap_ws_sdk.so`: разделяемая библиотека с C ABI для привязок к другим языкам
-> `python/rebocap_ws_sdk/`: обёртка Python и локальное расширение, с примером
+### CPP SDK (Linux)
+> Linux x86-64 · C++17 · собрано на Ubuntu 22.04, требуется GLIBC 2.34+ и GLIBCXX 3.4.29+
+
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/Rebocap_Linux_x86_64_CPP.tar.gz" download="Rebocap_Linux_x86_64_CPP.tar.gz">
+<span class="os-switch-download-main">Скачать CPP SDK (Linux)</span>
+<span class="os-switch-download-meta">C++ · C++17 · Ubuntu 22.04+</span>
+<span class="os-switch-download-date">Дата обновления: 2026.11.18</span>
+</a>
+</div>
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

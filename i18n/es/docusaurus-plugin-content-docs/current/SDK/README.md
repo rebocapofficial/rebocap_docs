@@ -122,79 +122,78 @@ joints_smpl = [
 
 
 # Descarga del SDK
+
+## Windows
+
 ### SDK de Python
-> Compatible con python3.6~python3.14
+> CPython 3.6 – 3.14 de 64 bits · requiere Microsoft Visual C++ 2015–2022 x64
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/rebocap_python_sdk_v3.zip" download="rebocap_python_sdk_v3.zip">
+<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_Python_v3.zip" download="Rebocap_Windows_x64_Python_v3.zip">
 <span class="os-switch-download-main">Descargar SDK de Python v3</span>
-<span class="os-switch-download-meta">Python 3.6 – 3.14</span>
+<span class="os-switch-download-meta">Python 3.6 – 3.14 · x64</span>
 <span class="os-switch-download-date">Fecha de actualización: 2026.11.18</span>
 </a>
 </div>
 
-Contenido de la actualización de Python sdk v3:
-> Se actualizó el soporte de Python a 3.14
-> 
-> Ajustes internos del código para mayor estabilidad
-
-<details class="plain-details"><summary>Versiones anteriores (v2)</summary>
+<details class="plain-details sdk-history"><summary>Versiones anteriores</summary>
 <div style="margin-top: 10px;">
-<p><strong>Python SDK v2</strong> (compatible con python3.6~python3.12): <a href="/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">descargar</a></p>
-<p>se solucionó el interbloqueo de <code>get_last_msg</code>; se añadió compatibilidad con todas las versiones de python</p>
+<p><strong>SDK de Python v2</strong> (compatible con python3.6~python3.12): <a href="/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">descargar</a></p>
+<p>se solucionó el interbloqueo de <code>get_last_msg</code>; se añadieron todas las versiones de python</p>
 </div>
 </details>
 
 ### SDK de C#
-> Por favor, consulta el README.md en el archivo descargado
-> 
-> Para su uso, puedes consultar el proyecto de Unity
+> Windows x64 · ejemplo con .NET Framework 4.8 · requiere Microsoft Visual C++ 2015–2022 x64
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">
-<span class="os-switch-download-main">Descargar SDK de C# v2</span>
-<span class="os-switch-download-meta">C# · demo de Unity</span>
-<span class="os-switch-download-date">Fecha de actualización: 2024.06.03</span>
+<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_CSharp_v3.zip" download="Rebocap_Windows_x64_CSharp_v3.zip">
+<span class="os-switch-download-main">Descargar SDK de C# v3</span>
+<span class="os-switch-download-meta">C# · .NET Framework 4.8</span>
+<span class="os-switch-download-date">Fecha de actualización: 2026.11.18</span>
 </a>
 </div>
 
-Contenido de la actualización de C# sdk v2:
-> Se solucionó el problema de interbloqueo causado por la interfaz `get_last_msg`
-
+<details class="plain-details sdk-history"><summary>Versiones anteriores</summary>
+<div style="margin-top: 10px;">
+<p><strong>SDK de C# v2</strong> (con demo de Unity): <a href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">descargar</a></p>
+<p>se solucionó el interbloqueo de <code>get_last_msg</code></p>
+</div>
+</details>
 
 ### SDK de CPP
-> Por favor, consulta el README.md en el archivo descargado
-> 
-> Para su uso, puedes consultar el proyecto de UE
+> Windows x64 · C++17 · requiere Microsoft Visual C++ 2015–2022 x64
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/rebocap_cpp_sdk_v03.zip" download="rebocap_cpp_sdk_v3.zip">
+<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_CPP_v3.zip" download="Rebocap_Windows_x64_CPP_v3.zip">
 <span class="os-switch-download-main">Descargar SDK de CPP v3</span>
-<span class="os-switch-download-meta">C++ · ejemplo de UE</span>
-<span class="os-switch-download-date">Fecha de actualización: 2024.06.05</span>
+<span class="os-switch-download-meta">C++ · C++17 · x64</span>
+<span class="os-switch-download-date">Fecha de actualización: 2026.11.18</span>
 </a>
 </div>
 
-Contenido de la actualización de C++ sdk v3:
-> Se solucionó el problema de interbloqueo causado por la interfaz `get_last_msg`
+## Linux
 
-
-### Linux SDK
-> Linux x86_64 · SDK de C++ y SDK de Python 3.12.<br />Sistema mínimo: Ubuntu 22.04 (glibc 2.35 y posteriores)
-> 
-> Consulta el README del archivo descargado
+### SDK de Python (Linux)
+> Linux x86-64 · CPython 3.6 – 3.14 · compilado en Ubuntu 22.04, requiere GLIBC 2.34+ y GLIBCXX 3.4.29+
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/rebocap-ws-sdk-linux-ubuntu22-py312.tar.gz" download="rebocap_ws_sdk_linux_ubuntu22_py312.tar.gz">
-<span class="os-switch-download-main">Descargar SDK de Linux</span>
-<span class="os-switch-download-meta">Ubuntu 22.04+ · C++ y Python 3.12</span>
-<span class="os-switch-download-date">Fecha de actualización: 2026.11.08</span>
+<a class="os-switch-download" href="/img/files/Rebocap_Linux_x86_64_Python.tar.gz" download="Rebocap_Linux_x86_64_Python.tar.gz">
+<span class="os-switch-download-main">Descargar SDK de Python (Linux)</span>
+<span class="os-switch-download-meta">Python 3.6 – 3.14 · Ubuntu 22.04+</span>
+<span class="os-switch-download-date">Fecha de actualización: 2026.11.18</span>
 </a>
 </div>
 
-Contenido del linux sdk:
-> `cpp/`: biblioteca C++ `librebocap_ws_sdk_cpp.so`, cabecera `rebocap_ws_sdk_cpp.h` y un ejemplo
-> `lib/librebocap_ws_sdk.so`: biblioteca compartida con ABI de C, para crear bindings en otros lenguajes
-> `python/rebocap_ws_sdk/`: envoltorio de Python y extensión local, con ejemplo
+### SDK de CPP (Linux)
+> Linux x86-64 · C++17 · compilado en Ubuntu 22.04, requiere GLIBC 2.34+ y GLIBCXX 3.4.29+
+
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/Rebocap_Linux_x86_64_CPP.tar.gz" download="Rebocap_Linux_x86_64_CPP.tar.gz">
+<span class="os-switch-download-main">Descargar SDK de CPP (Linux)</span>
+<span class="os-switch-download-meta">C++ · C++17 · Ubuntu 22.04+</span>
+<span class="os-switch-download-date">Fecha de actualización: 2026.11.18</span>
+</a>
+</div>
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

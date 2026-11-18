@@ -122,23 +122,21 @@ joints_smpl = [
 
 
 # SDK 다운로드
+
+## Windows
+
 ### Python SDK
-> python3.6~python3.14와 호환
+> 64비트 CPython 3.6 – 3.14 · Microsoft Visual C++ 2015–2022 x64 런타임 필요
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/rebocap_python_sdk_v3.zip" download="rebocap_python_sdk_v3.zip">
+<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_Python_v3.zip" download="Rebocap_Windows_x64_Python_v3.zip">
 <span class="os-switch-download-main">Python SDK v3 다운로드</span>
-<span class="os-switch-download-meta">Python 3.6 – 3.14</span>
+<span class="os-switch-download-meta">Python 3.6 – 3.14 · x64</span>
 <span class="os-switch-download-date">업데이트 날짜: 2026.11.18</span>
 </a>
 </div>
 
-Python sdk v3 업데이트 내용:
-> Python 지원 버전을 3.14까지 업데이트
-> 
-> 내부 코드 미세 조정으로 안정성 향상
-
-<details class="plain-details"><summary>이전 버전 (v2)</summary>
+<details class="plain-details sdk-history"><summary>이전 버전</summary>
 <div style="margin-top: 10px;">
 <p><strong>Python SDK v2</strong> (python3.6~python3.12 호환): <a href="/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">다운로드</a></p>
 <p><code>get_last_msg</code> 교착 문제 수정; 모든 python 버전 지원 추가</p>
@@ -146,55 +144,56 @@ Python sdk v3 업데이트 내용:
 </details>
 
 ### C# SDK
-> 다운로드한 파일의 README.md를 참조하세요
-> 
-> 사용법은 Unity 프로젝트를 참조할 수 있습니다
+> Windows x64 · .NET Framework 4.8 예제 · Microsoft Visual C++ 2015–2022 x64 런타임 필요
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">
-<span class="os-switch-download-main">C# SDK v2 다운로드</span>
-<span class="os-switch-download-meta">C# · Unity 예제</span>
-<span class="os-switch-download-date">업데이트 날짜: 2024.06.03</span>
+<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_CSharp_v3.zip" download="Rebocap_Windows_x64_CSharp_v3.zip">
+<span class="os-switch-download-main">C# SDK v3 다운로드</span>
+<span class="os-switch-download-meta">C# · .NET Framework 4.8</span>
+<span class="os-switch-download-date">업데이트 날짜: 2026.11.18</span>
 </a>
 </div>
 
-C# sdk v2 업데이트 내용:
-> `get_last_msg` 인터페이스로 인해 발생한 교착 상태 문제 수정
-
+<details class="plain-details sdk-history"><summary>이전 버전</summary>
+<div style="margin-top: 10px;">
+<p><strong>C# SDK v2</strong> (Unity 예제 포함): <a href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">다운로드</a></p>
+<p><code>get_last_msg</code> 교착 문제 수정</p>
+</div>
+</details>
 
 ### CPP SDK
-> 다운로드한 파일의 README.md를 참조하세요
-> 
-> 사용법은 UE 프로젝트를 참조할 수 있습니다
+> Windows x64 · C++17 · Microsoft Visual C++ 2015–2022 x64 런타임 필요
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/rebocap_cpp_sdk_v03.zip" download="rebocap_cpp_sdk_v3.zip">
+<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_CPP_v3.zip" download="Rebocap_Windows_x64_CPP_v3.zip">
 <span class="os-switch-download-main">CPP SDK v3 다운로드</span>
-<span class="os-switch-download-meta">C++ · UE 예제</span>
-<span class="os-switch-download-date">업데이트 날짜: 2024.06.05</span>
+<span class="os-switch-download-meta">C++ · C++17 · x64</span>
+<span class="os-switch-download-date">업데이트 날짜: 2026.11.18</span>
 </a>
 </div>
 
-C++ sdk v3 업데이트 내용:
-> `get_last_msg` 인터페이스로 인해 발생한 교착 상태 문제 수정
+## Linux
 
-
-### Linux SDK
-> Linux x86_64용 · C++ SDK 및 Python 3.12 SDK.<br />최소 지원 시스템: Ubuntu 22.04(glibc 2.35 이상)
-> 
-> 자세한 내용은 다운로드한 파일의 README를 참고하세요
+### Python SDK (Linux)
+> Linux x86-64 · CPython 3.6 – 3.14 · Ubuntu 22.04에서 빌드, GLIBC 2.34+ 및 GLIBCXX 3.4.29+ 필요
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/rebocap-ws-sdk-linux-ubuntu22-py312.tar.gz" download="rebocap_ws_sdk_linux_ubuntu22_py312.tar.gz">
-<span class="os-switch-download-main">Linux SDK 다운로드</span>
-<span class="os-switch-download-meta">Ubuntu 22.04+ · C++ 및 Python 3.12</span>
-<span class="os-switch-download-date">업데이트 날짜: 2026.11.08</span>
+<a class="os-switch-download" href="/img/files/Rebocap_Linux_x86_64_Python.tar.gz" download="Rebocap_Linux_x86_64_Python.tar.gz">
+<span class="os-switch-download-main">Linux Python SDK 다운로드</span>
+<span class="os-switch-download-meta">Python 3.6 – 3.14 · Ubuntu 22.04+</span>
+<span class="os-switch-download-date">업데이트 날짜: 2026.11.18</span>
 </a>
 </div>
 
-Linux sdk 구성:
-> `cpp/`: C++ 라이브러리 `librebocap_ws_sdk_cpp.so`, 헤더 `rebocap_ws_sdk_cpp.h` 및 예제
-> `lib/librebocap_ws_sdk.so`: C ABI 공유 라이브러리, 다른 언어 바인딩 작성용
-> `python/rebocap_ws_sdk/`: Python 래퍼와 로컬 확장, 예제 포함
+### CPP SDK (Linux)
+> Linux x86-64 · C++17 · Ubuntu 22.04에서 빌드, GLIBC 2.34+ 및 GLIBCXX 3.4.29+ 필요
+
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/Rebocap_Linux_x86_64_CPP.tar.gz" download="Rebocap_Linux_x86_64_CPP.tar.gz">
+<span class="os-switch-download-main">Linux CPP SDK 다운로드</span>
+<span class="os-switch-download-meta">C++ · C++17 · Ubuntu 22.04+</span>
+<span class="os-switch-download-date">업데이트 날짜: 2026.11.18</span>
+</a>
+</div>
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

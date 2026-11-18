@@ -720,6 +720,11 @@ details.plain-details > div > ol {
   padding-top: 0 !important;
 }
 
+/* SDK 页「历史版本」折叠栏：标题继承自 .markdown details summary 的 600，这里改回常规字重 */
+details.plain-details.sdk-history summary {
+  font-weight: 400;
+}
+
 /* 隐藏专门给 TOC 用的纯文本占位大标题（保证正文排版只显示自定义色块标题） */
 #new-device-guide,
 #software-download-toc,
