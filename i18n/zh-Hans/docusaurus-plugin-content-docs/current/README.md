@@ -44,7 +44,7 @@ title: "文档导航"
 <a id="community"></a>
 
 #### 社区链接
-- 中文社区：https://qm.qq.com/q/7DcjVNrwX0
+- 中文社区：https://qm.qq.com/q/rnU5J9XQzu
 - 英文或其它语言社区：
   1. discord1：https://discord.com/invite/YKFXTfVe7K
   2. discord2：https://discord.com/invite/rCpbcUaPVc

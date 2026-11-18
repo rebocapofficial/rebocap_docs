@@ -33,7 +33,7 @@ title: "Navegación del Documento"
 <a id="community"></a>
 
 #### Enlaces a la Comunidad
-- Comunidad china: https://qm.qq.com/q/7DcjVNrwX0
+- Comunidad china: https://qm.qq.com/q/rnU5J9XQzu
 - Inglés u otras comunidades de idiomas:
   1. discord1: https://discord.com/invite/YKFXTfVe7K
   2. discord2: https://discord.com/invite/rCpbcUaPVc

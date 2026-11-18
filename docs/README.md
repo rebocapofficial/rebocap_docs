@@ -37,7 +37,7 @@ title: "Document Navigation"
 <a id="community"></a>
 
 #### Community Links
-- Chinese community: https://qm.qq.com/q/7DcjVNrwX0
+- Chinese community: https://qm.qq.com/q/rnU5J9XQzu
 - English or other language communities:
   1. discord1: https://discord.com/invite/YKFXTfVe7K
   2. discord2: https://discord.com/invite/rCpbcUaPVc

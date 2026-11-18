@@ -37,17 +37,17 @@ title: "Загрузка ПО"
 <a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v01.exe">
 <span class="os-switch-download-main">Скачать Rebocap V01</span>
 <span class="os-switch-download-meta">Стабильная версия · текущий Release</span>
-<span class="os-switch-download-date">Дата загрузки: 2025.12.03</span>
+<span class="os-switch-download-date">Дата обновления: 2025.12.03</span>
 </a>
 <a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_release_v02_beta02.exe">
 <span class="os-switch-download-main">Скачать Rebocap V02 Beta02</span>
 <span class="os-switch-download-meta">Бета-версия · публичное тестирование</span>
-<span class="os-switch-download-date">Дата загрузки: 2026.02.24</span>
+<span class="os-switch-download-date">Дата обновления: 2026.02.24</span>
 </a>
 <a class="os-switch-download" data-gray-release-download="true" href="https://doc.rebocap.com/files/rebocap_v02_beta02.2_gray02-2.exe">
 <span class="os-switch-download-main">Скачать Rebocap V02 Beta02.2</span>
 <span class="os-switch-download-meta">Бета-версия · поэтапное тестирование</span>
-<span class="os-switch-download-date">Дата загрузки: 2026.11.11</span>
+<span class="os-switch-download-date">Дата обновления: 2026.11.11</span>
 </a>
 </div>
 
@@ -182,7 +182,7 @@ title: "Загрузка ПО"
 <a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/rebocap-linux-preview-0.1-1.run">
 <span class="os-switch-download-main">Скачать Rebocap Linux Preview 0.1</span>
 <span class="os-switch-download-meta">Linux · предварительная версия Preview</span>
-<span class="os-switch-download-date">Дата загрузки: 2026.11.11</span>
+<span class="os-switch-download-date">Дата обновления: 2026.11.11</span>
 </a>
 </div>
 
@@ -259,7 +259,7 @@ title: "Загрузка ПО"
 <a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
 <span class="os-switch-download-main">Скачать Rebocap Android Preview 0.2</span>
 <span class="os-switch-download-meta">Android · предварительная версия Preview</span>
-<span class="os-switch-download-date">Дата загрузки: 2026.11.13</span>
+<span class="os-switch-download-date">Дата обновления: 2026.11.13</span>
 </a>
 </div>
 
@@ -270,7 +270,7 @@ title: "Загрузка ПО"
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Приложение-мост для приёмника Rebocap</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.21</span>
-<span class="os-switch-aux-date">Дата загрузки: 2026.11.13</span>
+<span class="os-switch-aux-date">Дата обновления: 2026.11.13</span>
 </div>
 <span class="os-switch-aux-btn">Скачать ↓</span>
 </a>
@@ -278,7 +278,7 @@ title: "Загрузка ПО"
 <div class="os-switch-aux-info">
 <span class="os-switch-aux-name">Приложение для OSC-пересылки VRChat</span>
 <span class="os-switch-aux-meta">Android APK · v1.0.0</span>
-<span class="os-switch-aux-date">Дата загрузки: 2026.11.11</span>
+<span class="os-switch-aux-date">Дата обновления: 2026.11.11</span>
 </div>
 <span class="os-switch-aux-btn">Скачать ↓</span>
 </a>

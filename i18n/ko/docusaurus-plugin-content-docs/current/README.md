@@ -33,7 +33,7 @@ title: "문서 탐색"
 <a id="community"></a>
 
 #### 커뮤니티 링크
-- 중국어 커뮤니티: https://qm.qq.com/q/7DcjVNrwX0
+- 중국어 커뮤니티: https://qm.qq.com/q/rnU5J9XQzu
 - 영어 또는 기타 언어 커뮤니티:
   1. discord1: https://discord.com/invite/YKFXTfVe7K
   2. discord2: https://discord.com/invite/rCpbcUaPVc

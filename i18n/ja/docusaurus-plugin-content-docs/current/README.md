@@ -37,7 +37,7 @@ title: "ドキュメントナビゲーション"
 <a id="community"></a>
 
 #### コミュニティリンク
-- 中国語コミュニティ：https://qm.qq.com/q/7DcjVNrwX0
+- 中国語コミュニティ：https://qm.qq.com/q/rnU5J9XQzu
 - 英語またはその他の言語のコミュニティ：
   1. discord1：https://discord.com/invite/YKFXTfVe7K
   2. discord2：https://discord.com/invite/rCpbcUaPVc

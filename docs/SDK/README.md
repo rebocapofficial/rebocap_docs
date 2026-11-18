@@ -127,20 +127,40 @@ joints_smpl = [
 
 # SDK Download
 ### Python SDK
-> Compatible with python3.6~python3.12
+> Compatible with python3.6~python3.14
 
-<a href="/img/files/rebocap_ws_sdk_python_v2.zip" target="_blank" download="rebocap_python_sdk_v2.zip">download python sdk v2</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap_python_sdk_v3.zip" download="rebocap_python_sdk_v3.zip">
+<span class="os-switch-download-main">Download Python SDK v3</span>
+<span class="os-switch-download-meta">Python 3.6 – 3.14</span>
+<span class="os-switch-download-date">Updated: 2026.11.18</span>
+</a>
+</div>
 
-Python sdk v2 update content:
-> Fixed the deadlock issue caused by the `get_last_msg` interface
-> Added support for all `python` versions
+Python sdk v3 update content:
+> Python support updated to 3.14
+> 
+> Internal code refinements for better stability
+
+<details class="plain-details"><summary>Previous versions (v2)</summary>
+<div style="margin-top: 10px;">
+<p><strong>Python SDK v2</strong> (compatible with python3.6~python3.12): <a href="/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">download</a></p>
+<p><code>get_last_msg</code> deadlock fixed; support for all <code>python</code> versions added</p>
+</div>
+</details>
 
 ### C# SDK
 > Please refer to the README.md in the downloaded file
 > 
 > For usage, you can refer to the Unity project
 
-<a href="/img/files/csharp_sdk_with_demo_v2.zip" target="_blank" download="rebocap_csharp_sdk_v2.zip">download csharp sdk v2</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">
+<span class="os-switch-download-main">Download C# SDK v2</span>
+<span class="os-switch-download-meta">C# · Unity demo</span>
+<span class="os-switch-download-date">Updated: 2024.06.03</span>
+</a>
+</div>
 
 C# sdk v2 update content:
 > Fixed the deadlock issue caused by the `get_last_msg` interface
@@ -151,10 +171,34 @@ C# sdk v2 update content:
 > 
 > For usage, you can refer to the UE project
 
-<a href="/img/files/rebocap_cpp_sdk_v03.zip" target="_blank" download="rebocap_cpp_sdk_v3.zip">download cpp sdk v3</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap_cpp_sdk_v03.zip" download="rebocap_cpp_sdk_v3.zip">
+<span class="os-switch-download-main">Download CPP SDK v3</span>
+<span class="os-switch-download-meta">C++ · UE sample</span>
+<span class="os-switch-download-date">Updated: 2024.06.05</span>
+</a>
+</div>
 
 C++ sdk v3 update content:
 > Fixed the deadlock issue caused by the `get_last_msg` interface
 
+
+### Linux SDK
+> Linux x86_64 · C++ SDK and Python 3.12 SDK.<br />Minimum supported system: Ubuntu 22.04 (glibc 2.35 and later)
+> 
+> Please refer to the README in the downloaded file
+
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap-ws-sdk-linux-ubuntu22-py312.tar.gz" download="rebocap_ws_sdk_linux_ubuntu22_py312.tar.gz">
+<span class="os-switch-download-main">Download Linux SDK</span>
+<span class="os-switch-download-meta">Ubuntu 22.04+ · C++ & Python 3.12</span>
+<span class="os-switch-download-date">Updated: 2026.11.08</span>
+</a>
+</div>
+
+Linux sdk content:
+> `cpp/`: C++ library `librebocap_ws_sdk_cpp.so`, header `rebocap_ws_sdk_cpp.h` and an example
+> `lib/librebocap_ws_sdk.so`: C ABI shared library, for writing bindings in other languages
+> `python/rebocap_ws_sdk/`: Python wrapper and local extension, with an example
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

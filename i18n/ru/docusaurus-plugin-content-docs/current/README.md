@@ -33,7 +33,7 @@ title: "Навигация по документации"
 <a id="community"></a>
 
 #### Ссылки на сообщество
-- Китайское сообщество: https://qm.qq.com/q/7DcjVNrwX0
+- Китайское сообщество: https://qm.qq.com/q/rnU5J9XQzu
 - Английские или другие языковые сообщества:
   1. discord1: https://discord.com/invite/YKFXTfVe7K
   2. discord2: https://discord.com/invite/rCpbcUaPVc

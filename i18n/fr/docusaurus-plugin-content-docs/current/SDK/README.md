@@ -123,20 +123,40 @@ joints_smpl = [
 
 # Téléchargement du SDK
 ### SDK Python
-> Compatible avec python3.6~python3.12
+> Compatible avec python3.6~python3.14
 
-<a href="/img/files/rebocap_ws_sdk_python_v2.zip" target="_blank" download="rebocap_python_sdk_v2.zip">télécharger le sdk python v2</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap_python_sdk_v3.zip" download="rebocap_python_sdk_v3.zip">
+<span class="os-switch-download-main">Télécharger le SDK Python v3</span>
+<span class="os-switch-download-meta">Python 3.6 – 3.14</span>
+<span class="os-switch-download-date">Date de mise à jour : 2026.11.18</span>
+</a>
+</div>
 
-Contenu de la mise à jour du sdk Python v2 :
-> Correction du problème de blocage causé par l'interface `get_last_msg`
-> Ajout de la prise en charge de toutes les versions de `python`
+Contenu de la mise à jour du sdk Python v3 :
+> Prise en charge de Python mise à jour vers 3.14
+> 
+> Ajustements internes du code pour une meilleure stabilité
+
+<details class="plain-details"><summary>Versions précédentes (v2)</summary>
+<div style="margin-top: 10px;">
+<p><strong>Python SDK v2</strong> (compatible avec python3.6~python3.12): <a href="/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">télécharger</a></p>
+<p>correction du blocage de <code>get_last_msg</code> ; ajout de toutes les versions de python</p>
+</div>
+</details>
 
 ### SDK C#
 > Veuillez vous référer au fichier README.md dans le fichier téléchargé
 > 
 > Pour l'utilisation, vous pouvez vous référer au projet Unity
 
-<a href="/img/files/csharp_sdk_with_demo_v2.zip" target="_blank" download="rebocap_csharp_sdk_v2.zip">télécharger le sdk csharp v2</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">
+<span class="os-switch-download-main">Télécharger le SDK C# v2</span>
+<span class="os-switch-download-meta">C# · démo Unity</span>
+<span class="os-switch-download-date">Date de mise à jour : 2024.06.03</span>
+</a>
+</div>
 
 Contenu de la mise à jour du sdk C# v2 :
 > Correction du problème de blocage causé par l'interface `get_last_msg`
@@ -147,10 +167,34 @@ Contenu de la mise à jour du sdk C# v2 :
 > 
 > Pour l'utilisation, vous pouvez vous référer au projet UE
 
-<a href="/img/files/rebocap_cpp_sdk_v03.zip" target="_blank" download="rebocap_cpp_sdk_v3.zip">télécharger le sdk cpp v3</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap_cpp_sdk_v03.zip" download="rebocap_cpp_sdk_v3.zip">
+<span class="os-switch-download-main">Télécharger le SDK CPP v3</span>
+<span class="os-switch-download-meta">C++ · exemple UE</span>
+<span class="os-switch-download-date">Date de mise à jour : 2024.06.05</span>
+</a>
+</div>
 
 Contenu de la mise à jour du sdk C++ v3 :
 > Correction du problème de blocage causé par l'interface `get_last_msg`
 
+
+### Linux SDK
+> Linux x86_64 · SDK C++ et SDK Python 3.12.<br />Système minimal : Ubuntu 22.04 (glibc 2.35 et suivants)
+> 
+> Consultez le README du fichier téléchargé
+
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap-ws-sdk-linux-ubuntu22-py312.tar.gz" download="rebocap_ws_sdk_linux_ubuntu22_py312.tar.gz">
+<span class="os-switch-download-main">Télécharger le SDK Linux</span>
+<span class="os-switch-download-meta">Ubuntu 22.04+ · C++ et Python 3.12</span>
+<span class="os-switch-download-date">Date de mise à jour : 2026.11.08</span>
+</a>
+</div>
+
+Contenu du linux sdk :
+> `cpp/` : bibliothèque C++ `librebocap_ws_sdk_cpp.so`, en-tête `rebocap_ws_sdk_cpp.h` et un exemple
+> `lib/librebocap_ws_sdk.so` : bibliothèque partagée ABI C, pour écrire des bindings dans d'autres langages
+> `python/rebocap_ws_sdk/` : paquet Python et extension locale, avec exemple
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

@@ -37,7 +37,7 @@ title: "文件導航"
 <a id="community"></a>
 
 #### 社區連結
-- 中文社區：https://qm.qq.com/q/7DcjVNrwX0
+- 中文社區：https://qm.qq.com/q/rnU5J9XQzu
 - 英文或其它語言社區：
   1. discord1：https://discord.com/invite/YKFXTfVe7K
   2. discord2：https://discord.com/invite/rCpbcUaPVc

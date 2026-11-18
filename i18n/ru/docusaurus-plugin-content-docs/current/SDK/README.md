@@ -123,20 +123,40 @@ joints_smpl = [
 
 # Скачать SDK
 ### Python SDK
-> Совместимо с python3.6~python3.12
+> Совместимо с python3.6~python3.14
 
-<a href="/img/files/rebocap_ws_sdk_python_v2.zip" target="_blank" download="rebocap_python_sdk_v2.zip">скачать python sdk v2</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap_python_sdk_v3.zip" download="rebocap_python_sdk_v3.zip">
+<span class="os-switch-download-main">Скачать Python SDK v3</span>
+<span class="os-switch-download-meta">Python 3.6 – 3.14</span>
+<span class="os-switch-download-date">Дата обновления: 2026.11.18</span>
+</a>
+</div>
 
-Содержание обновления Python sdk v2:
-> Исправлена проблема взаимоблокировки, вызванная интерфейсом `get_last_msg`
-> Добавлена поддержка всех версий `python`
+Содержание обновления Python sdk v3:
+> Поддержка Python обновлена до 3.14
+> 
+> Внутренние доработки кода для большей стабильности
+
+<details class="plain-details"><summary>Предыдущие версии (v2)</summary>
+<div style="margin-top: 10px;">
+<p><strong>Python SDK v2</strong> (совместимо с python3.6~python3.12): <a href="/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">скачать</a></p>
+<p>исправлено взаимоблокирование <code>get_last_msg</code>; добавлены все версии python</p>
+</div>
+</details>
 
 ### C# SDK
 > Пожалуйста, обратитесь к README.md в загруженном файле
 > 
 > Для использования вы можете обратиться к проекту Unity
 
-<a href="/img/files/csharp_sdk_with_demo_v2.zip" target="_blank" download="rebocap_csharp_sdk_v2.zip">скачать csharp sdk v2</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">
+<span class="os-switch-download-main">Скачать C# SDK v2</span>
+<span class="os-switch-download-meta">C# · демо Unity</span>
+<span class="os-switch-download-date">Дата обновления: 2024.06.03</span>
+</a>
+</div>
 
 Содержание обновления C# sdk v2:
 > Исправлена проблема взаимоблокировки, вызванная интерфейсом `get_last_msg`
@@ -147,10 +167,34 @@ joints_smpl = [
 > 
 > Для использования вы можете обратиться к проекту UE
 
-<a href="/img/files/rebocap_cpp_sdk_v03.zip" target="_blank" download="rebocap_cpp_sdk_v3.zip">скачать cpp sdk v3</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap_cpp_sdk_v03.zip" download="rebocap_cpp_sdk_v3.zip">
+<span class="os-switch-download-main">Скачать CPP SDK v3</span>
+<span class="os-switch-download-meta">C++ · пример UE</span>
+<span class="os-switch-download-date">Дата обновления: 2024.06.05</span>
+</a>
+</div>
 
 Содержание обновления C++ sdk v3:
 > Исправлена проблема взаимоблокировки, вызванная интерфейсом `get_last_msg`
 
+
+### Linux SDK
+> Для Linux x86_64 · SDK C++ и SDK Python 3.12.<br />Минимальная система: Ubuntu 22.04 (glibc 2.35 и новее)
+> 
+> Подробности см. в README внутри скачанного файла
+
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap-ws-sdk-linux-ubuntu22-py312.tar.gz" download="rebocap_ws_sdk_linux_ubuntu22_py312.tar.gz">
+<span class="os-switch-download-main">Скачать Linux SDK</span>
+<span class="os-switch-download-meta">Ubuntu 22.04+ · C++ и Python 3.12</span>
+<span class="os-switch-download-date">Дата обновления: 2026.11.08</span>
+</a>
+</div>
+
+Состав linux sdk:
+> `cpp/`: библиотека C++ `librebocap_ws_sdk_cpp.so`, заголовок `rebocap_ws_sdk_cpp.h` и пример
+> `lib/librebocap_ws_sdk.so`: разделяемая библиотека с C ABI для привязок к другим языкам
+> `python/rebocap_ws_sdk/`: обёртка Python и локальное расширение, с примером
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

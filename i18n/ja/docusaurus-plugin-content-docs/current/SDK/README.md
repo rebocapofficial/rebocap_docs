@@ -129,20 +129,40 @@ joints_smpl = [
 
 # SDK ダウンロード
 ### python SDK
-> python3.6~python3.12に適用
+> python3.6~python3.14に適用
 
-<a href="/img/files/rebocap_ws_sdk_python_v2.zip" target="_blank" download="rebocap_python_sdk_v2.zip">download python sdk v2</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap_python_sdk_v3.zip" download="rebocap_python_sdk_v3.zip">
+<span class="os-switch-download-main">Python SDK v3 をダウンロード</span>
+<span class="os-switch-download-meta">Python 3.6～3.14</span>
+<span class="os-switch-download-date">更新日：2026.11.18</span>
+</a>
+</div>
 
-python sdk v2 更新内容：
-> `get_last_msg`インターフェースによるデッドロック問題を修正
-> すべての`python`バージョンを追加
+python sdk v3 更新内容：
+> Python のサポートを 3.14 に更新
+> 
+> 内部コードを微調整し、安定性を向上
+
+<details class="plain-details"><summary>旧バージョン（v2）</summary>
+<div style="margin-top: 10px;">
+<p><strong>Python SDK v2</strong>（python3.6~python3.12対応）：<a href="/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">ダウンロード</a></p>
+<p><code>get_last_msg</code> インターフェースによるデッドロック問題を修正；すべての python バージョンを追加</p>
+</div>
+</details>
 
 ### C# SDK
 > 詳細はダウンロードファイル内のREADME.mdを参照してください。
 > 
 > 使用法については、Unityプロジェクトを参照できます。
 
-<a href="/img/files/csharp_sdk_with_demo_v2.zip" target="_blank" download="rebocap_csharp_sdk_v2.zip">download csharp sdk v2</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">
+<span class="os-switch-download-main">C# SDK v2 をダウンロード</span>
+<span class="os-switch-download-meta">C# · Unity サンプル</span>
+<span class="os-switch-download-date">更新日：2024.06.03</span>
+</a>
+</div>
 
 c# sdk v2 更新内容：
 > `get_last_msg`インターフェースによるデッドロック問題を修正
@@ -153,10 +173,34 @@ c# sdk v2 更新内容：
 > 
 > 使用法については、UEプロジェクトを参照できます。
 
-<a href="/img/files/rebocap_cpp_sdk_v03.zip" target="_blank" download="rebocap_cpp_sdk_v3.zip">download cpp sdk v3</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap_cpp_sdk_v03.zip" download="rebocap_cpp_sdk_v3.zip">
+<span class="os-switch-download-main">CPP SDK v3 をダウンロード</span>
+<span class="os-switch-download-meta">C++ · UE サンプル</span>
+<span class="os-switch-download-date">更新日：2024.06.05</span>
+</a>
+</div>
 
 c++ sdk v3 更新内容：
 > `get_last_msg`インターフェースによるデッドロック問題を修正
 
+
+### Linux SDK
+> Linux x86_64 向け · C++ SDK と Python 3.12 SDK。<br />最低対応システム：Ubuntu 22.04（glibc 2.35 以降）
+> 
+> 詳細はダウンロードしたファイル内の README を参照してください
+
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap-ws-sdk-linux-ubuntu22-py312.tar.gz" download="rebocap_ws_sdk_linux_ubuntu22_py312.tar.gz">
+<span class="os-switch-download-main">Linux SDK をダウンロード</span>
+<span class="os-switch-download-meta">Ubuntu 22.04+ · C++ と Python 3.12</span>
+<span class="os-switch-download-date">更新日：2026.11.08</span>
+</a>
+</div>
+
+Linux sdk の内容：
+> `cpp/`：C++ ライブラリ `librebocap_ws_sdk_cpp.so`、ヘッダー `rebocap_ws_sdk_cpp.h`、サンプル
+> `lib/librebocap_ws_sdk.so`：C ABI 共有ライブラリ。他言語のバインディング作成に利用できます
+> `python/rebocap_ws_sdk/`：Python ラッパーとローカル拡張（サンプル付き）
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

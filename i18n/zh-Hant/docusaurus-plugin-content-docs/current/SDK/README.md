@@ -127,20 +127,40 @@ joints_smpl = [
 
 # SDK 下載
 ### python SDK
-> 適用於 python3.6~python3.12
+> 適用於 python3.6~python3.14
 
-<a href="/img/files/rebocap_ws_sdk_python_v2.zip" target="_blank" download="rebocap_python_sdk_v2.zip">download python sdk v2</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap_python_sdk_v3.zip" download="rebocap_python_sdk_v3.zip">
+<span class="os-switch-download-main">下載 Python SDK v3</span>
+<span class="os-switch-download-meta">Python 3.6 – 3.14</span>
+<span class="os-switch-download-date">更新時間：2026.11.18</span>
+</a>
+</div>
 
-python sdk v2 更新內容：
-> 修復`get_last_msg`接口造成的死鎖問題
-> 增加所有`python`版本
+python sdk v3 更新內容：
+> Python 支援更新至 3.14
+> 
+> 內部程式碼微調，穩定性進一步提升
+
+<details class="plain-details"><summary>歷史版本（v2）</summary>
+<div style="margin-top: 10px;">
+<p><strong>Python SDK v2</strong>（兼容 python3.6~python3.12）：<a href="/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">下載</a></p>
+<p>修復 <code>get_last_msg</code> 接口造成的死鎖問題；增加所有 python 版本</p>
+</div>
+</details>
 
 ### C# SDK
 > 具體請查看下載文件中的 README.md
 > 
 > 用法上，可以參考 Unity 項目
 
-<a href="/img/files/csharp_sdk_with_demo_v2.zip" target="_blank" download="rebocap_csharp_sdk_v2.zip">download csharp sdk v2</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">
+<span class="os-switch-download-main">下載 C# SDK v2</span>
+<span class="os-switch-download-meta">C# · Unity 範例</span>
+<span class="os-switch-download-date">更新時間：2024.06.03</span>
+</a>
+</div>
 
 c# sdk v2 更新內容：
 > 修復`get_last_msg`接口造成的死鎖問題
@@ -151,10 +171,34 @@ c# sdk v2 更新內容：
 > 
 > 用法上，可以參考 UE 項目
 
-<a href="/img/files/rebocap_cpp_sdk_v03.zip" target="_blank" download="rebocap_cpp_sdk_v3.zip">download cpp sdk v3</a>
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap_cpp_sdk_v03.zip" download="rebocap_cpp_sdk_v3.zip">
+<span class="os-switch-download-main">下載 CPP SDK v3</span>
+<span class="os-switch-download-meta">C++ · UE 範例</span>
+<span class="os-switch-download-date">更新時間：2024.06.05</span>
+</a>
+</div>
 
 c++ sdk v3 更新內容：
 > 修復`get_last_msg`接口造成的死鎖問題
 
+
+### Linux SDK
+> Linux x86_64 · C++ SDK 與 Python 3.12 SDK。<br />最低支援系統：Ubuntu 22.04（glibc 2.35+）
+> 
+> 具體請查看下載檔案中的 README
+
+<div class="os-switch-downloads sdk-downloads">
+<a class="os-switch-download" href="/img/files/rebocap-ws-sdk-linux-ubuntu22-py312.tar.gz" download="rebocap_ws_sdk_linux_ubuntu22_py312.tar.gz">
+<span class="os-switch-download-main">下載 Linux SDK</span>
+<span class="os-switch-download-meta">Ubuntu 22.04+ · C++ 與 Python 3.12</span>
+<span class="os-switch-download-date">更新時間：2026.11.08</span>
+</a>
+</div>
+
+Linux sdk 檔案說明：
+> `cpp/`：C++ 函式庫 `librebocap_ws_sdk_cpp.so`、標頭檔 `rebocap_ws_sdk_cpp.h` 及範例
+> `lib/librebocap_ws_sdk.so`：C ABI 動態函式庫，可自行撰寫其他語言的綁定
+> `python/rebocap_ws_sdk/`：Python 封裝及本地擴充，含呼叫範例
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
