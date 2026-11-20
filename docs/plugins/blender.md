@@ -7,9 +7,17 @@ title: "Blender Plugin Download"
 # Blender Plugin Download
 
 Click the link below to download directly:
-- **Blender Plugin Beta 9**
-<a href="/img/files/rebocap_blender_plugin_v9.zip" target="_blank" download="rebocap_blender_plugin_v9.zip">blender with python 3.6~3.12</a>
-Update Notes:
+
+**Blender Plugin Beta 11.20** (2026.11.21)
+
+[Blender 3.6 and later](/img/blender_plugin/rebocap_blender_plugin_Beta11_20_release_20261121.zip)
+
+**Blender Plugin Beta 9** (previous version)
+
+[blender with python 3.6~3.12](/img/files/rebocap_blender_plugin_v9.zip)
+
+Beta 9 update notes:
+
 - Compatible with Blender 4.4 and above
 - Fix process residue bug in rebocap plugin
 - Fix the skeleton export bug to stabilize the feet in real-time driver scenarios.
@@ -18,7 +26,6 @@ Update Notes:
 - Fixed bug with fbx model drivers
 - Fixed bug with animation recording axis
 - Add bone adsorption selection feature
-
 
 <span id="blender-tutorial-video" class="legacy-anchor-alias" aria-hidden="true"></span>
 

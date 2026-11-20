@@ -256,10 +256,10 @@ Android는 현재 Preview 프리뷰 버전이며, 이번 릴리스는 주로 And
 사용 중 Bug가 발생하면 Twitter(X)의 관련 게시물과 Discord에 남겨 주세요.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
-<span class="os-switch-download-main">Rebocap Android Preview 0.2 다운로드</span>
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.1.apk">
+<span class="os-switch-download-main">Rebocap Android Preview 0.2.1 다운로드</span>
 <span class="os-switch-download-meta">Android · Preview 프리뷰 버전</span>
-<span class="os-switch-download-date">업데이트 날짜: 2026.11.13</span>
+<span class="os-switch-download-date">업데이트 날짜: 2026.11.21</span>
 </a>
 </div>
 
@@ -422,7 +422,9 @@ Android 버전은 `.apk` 설치 패키지를 사용합니다:
 
 ## 소프트웨어 업데이트 노트
 
-### 변경 로그
+<div class="os-changelog os-changelog-windows">
+
+<p class="os-changelog-title">Windows 업데이트 내역</p>
 
 #### 2026-11-11 업데이트
 
@@ -521,6 +523,36 @@ Android 버전은 `.apk` 설치 패키지를 사용합니다:
 6. 6축 스위치를 켜거나 끌 때 재보정 프롬프트 추가.
 7. 6축 측면 기울기 보상 문제 수정.
 
+</div>
+
+<div class="os-changelog os-changelog-linux">
+
+<p class="os-changelog-title">Linux 업데이트 내역</p>
+
+#### 2026-11-11 업데이트: Linux Preview 0.1
+
+1. Linux 첫 프리뷰 빌드이며 UI는 Windows 버전과 동일합니다.
+2. Windows와 같은 펌웨어를 사용합니다(tracker V16 / V17, receiver V6 / V7 / V8). Linux 환경에서 코어 안정성을 확인하는 것이 목적입니다.
+
+</div>
+
+<div class="os-changelog os-changelog-android">
+
+<p class="os-changelog-title">Android 업데이트 내역</p>
+
+#### 2026-11-21 업데이트: Android Preview 0.2.1
+
+1. 모션 캘리브레이션과 탭 배정이 Windows 버전과 동일하게 맞춰졌습니다.
+2. 소리 문제를 수정했습니다. 이전에는 '삐삐' 알림음이 시스템 알림음으로 출력되었습니다.
+3. 자기장 캘리브레이션 화면에서 영상이 표시되지 않던 문제를 수정했습니다.
+4. 앱 내 버전 표시가 실제로 preview 0.2로 표시됩니다.
+
+#### 2026-11-13 업데이트: Android Preview 0.2
+
+1. 첫 공개 프리뷰입니다. Android에 맞춰 UI를 새로 설계했고 세로/가로 전환을 지원하며 조작 흐름은 Windows와 비슷합니다.
+2. Android 환경에서 코어 안정성을 확인하는 것이 목적입니다.
+
+</div>
 
 ### TODO (순서 무관, 여기서는 주요 업데이트 사항만 나열)
 

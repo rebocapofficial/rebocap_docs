@@ -113,12 +113,6 @@
     "height": 540,
     "sha256": "ce25555be3153a64a14c5e62503414df94600803e9a53bfc129cc58cf4bbe3ba"
   },
-  "/img/ue_plugin/ue_user_guide.mp4": {
-    "poster": "/img/video-posters/a9a4a4b2182dc9c82310.jpg",
-    "width": 960,
-    "height": 502,
-    "sha256": "a9a4a4b2182dc9c8231057c2975dd8f6709442e9bb6745058882325d8ee42d79"
-  },
   "/img/unity_replace_vrm.mp4": {
     "poster": "/img/video-posters/e249496880ec87d4682b.jpg",
     "width": 960,
@@ -130,5 +124,11 @@
     "width": 960,
     "height": 562,
     "sha256": "1d22f9fe8d8f02cf4891870feadfe48a6a1e230106b9657bf67b3700fcdbf9d2"
+  },
+  "https://doc.rebocap.com/files/img/ue_plugins_guide_video.mp4": {
+    "poster": "/img/video-posters/5016cf6678e6f053d0d4.jpg",
+    "width": 960,
+    "height": 540,
+    "sha256": "5016cf6678e6f053d0d47b7b9a3584ee3190cbbaf30a9921e0a52cc43b575f2b"
   }
 }

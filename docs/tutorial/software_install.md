@@ -249,10 +249,10 @@ Android is currently a Preview version. This release is mainly intended to obser
 If you encounter bugs while using it, feel free to leave feedback on the relevant Twitter (X) posts and Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
-<span class="os-switch-download-main">Download Rebocap Android Preview 0.2</span>
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.1.apk">
+<span class="os-switch-download-main">Download Rebocap Android Preview 0.2.1</span>
 <span class="os-switch-download-meta">Android · Preview version</span>
-<span class="os-switch-download-date">Updated: 2026.11.13</span>
+<span class="os-switch-download-date">Updated: 2026.11.21</span>
 </a>
 </div>
 
@@ -410,7 +410,9 @@ The Android version uses an `.apk` installer package:
 
 ## Software Update Notes
 
-### Changelog
+<div class="os-changelog os-changelog-windows">
+
+<p class="os-changelog-title">Windows update notes</p>
 
 #### 2026-11-11 Update
 
@@ -509,6 +511,36 @@ Other updates：
 6. Added a recalibration prompt when toggling the six-axis switch on or off  
 7. Fixed the six-axis lateral tilt compensation issue  
 
+</div>
+
+<div class="os-changelog os-changelog-linux">
+
+<p class="os-changelog-title">Linux update notes</p>
+
+#### 2026-11-11 Update: Linux Preview 0.1
+
+1. First Linux preview build; the UI matches the Windows version.
+2. Shares the same firmware set as Windows (tracker V16 / V17, receiver V6 / V7 / V8); mainly to observe core stability on Linux.
+
+</div>
+
+<div class="os-changelog os-changelog-android">
+
+<p class="os-changelog-title">Android update notes</p>
+
+#### 2026-11-21 Update: Android Preview 0.2.1
+
+1. Motion calibration and tap assignment now match the Windows version.
+2. Fixed audio: the beep prompt used to be routed to the system notification channel.
+3. Fixed the magnetic-field calibration page not showing its video.
+4. The in-app version number now really reads preview 0.2.
+
+#### 2026-11-13 Update: Android Preview 0.2
+
+1. First public preview: the UI is redesigned for Android with portrait/landscape support, and the interaction flow stays close to Windows.
+2. Mainly to observe core stability on the Android environment.
+
+</div>
 
 ### TODO (in no particular order, only major update points are listed here)
 

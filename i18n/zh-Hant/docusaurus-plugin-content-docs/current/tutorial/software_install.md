@@ -265,10 +265,10 @@ Android 目前為 Preview 預覽版，本次發布主要用於觀察程式核心
 使用中如遇到 Bug，歡迎到 Twitter（X）的相關貼文和 Discord 留言。
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
-<span class="os-switch-download-main">下載 Rebocap Android Preview 0.2</span>
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.1.apk">
+<span class="os-switch-download-main">下載 Rebocap Android Preview 0.2.1</span>
 <span class="os-switch-download-meta">Android · Preview 預覽版</span>
-<span class="os-switch-download-date">更新時間：2026.11.13</span>
+<span class="os-switch-download-date">更新時間：2026.11.21</span>
 </a>
 </div>
 
@@ -430,7 +430,9 @@ Android 版使用 `.apk` 安裝包：
 
 ## 軟體更新說明
 
-### 更新日誌
+<div class="os-changelog os-changelog-windows">
+
+<p class="os-changelog-title">Windows 更新日誌</p>
 
 #### 2026-11-11 更新
 
@@ -531,6 +533,37 @@ Android 版使用 `.apk` 安裝包：
 
 
 <span id="todo（排名不分先後，這裡只介紹大的更新點）" class="legacy-anchor-alias" aria-hidden="true"></span>
+
+</div>
+
+<div class="os-changelog os-changelog-linux">
+
+<p class="os-changelog-title">Linux 更新日誌</p>
+
+#### 2026-11-11 更新：Linux Preview 0.1
+
+1. 首個 Linux 預覽版，介面與 Windows 版一致。
+2. 與 Windows 版共用同一套韌體（tracker V16 / V17，receiver V6 / V7 / V8），主要用於觀察程式核心在 Linux 環境下的穩定性。
+
+</div>
+
+<div class="os-changelog os-changelog-android">
+
+<p class="os-changelog-title">Android 更新日誌</p>
+
+#### 2026-11-21 更新：Android Preview 0.2.1
+
+1. 動作校準、敲擊分配與 Windows 版對齊。
+2. 修正音效問題：先前「嗶嗶」提示音被錯誤輸出到系統提示音通道。
+3. 修正磁場校準頁面不顯示影片的問題。
+4. 軟體內版本號真實顯示為 preview 0.2。
+
+#### 2026-11-13 更新：Android Preview 0.2
+
+1. 首個公開預覽版：介面依 Android 重新設計，支援直式／橫式切換，操作動線與 Windows 版相近。
+2. 主要用於觀察程式核心在 Android 環境下的穩定性。
+
+</div>
 
 ### TODO（排名不分先後，這裡只介紹大的更新點）
 

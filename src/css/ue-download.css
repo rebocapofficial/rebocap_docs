@@ -1,0 +1,520 @@
+/* =============================================================
+ * UE 插件下载页 · 版本切换（V2.1 / V2）+ 引擎版本条
+ * -------------------------------------------------------------
+ * 交互骨架复刻 tutorial/software_install 的 os-switch：
+ *   隐藏 radio + label + 兄弟选择器，纯 CSS 切换，无 JS。
+ * 但使用独立 id（ue-ver-*）与独立类（ue-*），
+ * 绝不与 os-platform-* 的三段系统切换互相干扰。
+ *
+ * 约定（对应 AI_WARNING_MEMO.md）：
+ * 1. 样式只在本文件，由 src/css/custom.css 统一 @import；
+ *    严禁 MDX 内写 <style> 或内联 JSX 样式对象。
+ * 2. 卡片里的文字一律写在 HTML 中（8 语言要能翻译），
+ *    不用 CSS content 注入任何文字。
+ * 3. V2 旧版区块是过渡态：新版稳定后，删掉对应 panel
+ *    与 #ue-ver-v3 相关选择器即可。
+ * ============================================================= */
+
+/* ---------- 页签：两段（V2.1 / V2） ---------- */
+.ue-switch .ue-switch-tabs {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ue-switch .ue-tab {
+  flex-direction: row;
+  gap: 8px;
+  padding: 11px 10px;
+}
+
+.ue-switch .ue-tab-name {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ifm-font-color-base);
+  white-space: nowrap;
+}
+
+.ue-switch .ue-tab-note {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ifm-color-emphasis-600);
+  white-space: nowrap;
+}
+
+/* 默认（未选中任何 radio）高亮 V2.1 */
+.ue-switch .ue-tab-v3 {
+  border-color: var(--os-accent);
+  background: var(--os-accent);
+  box-shadow: 0 2px 10px rgba(63, 127, 92, 0.22);
+}
+
+.ue-switch .ue-tab-v3 .ue-tab-name {
+  color: var(--os-accent-ink);
+}
+
+.ue-switch .ue-tab-v3 .ue-tab-note {
+  color: rgba(16, 38, 26, 0.7);
+}
+
+/* 选中 V2：换高亮 */
+#ue-ver-v3:focus-visible ~ .ue-switch-tabs .ue-tab-v3,
+/* ---------- 面板：默认 V2.1 ---------- */
+.ue-switch .ue-panel-v3 {
+  display: block;
+}
+
+#ue-ver-v3:checked ~ .ue-panel-v3 {
+  display: block;
+  animation: ue-switch-fade 0.18s ease-out;
+}
+
+@keyframes ue-switch-fade {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  }
+
+.ue-switch .os-switch-panel > :first-child {
+  margin-top: 0;
+}
+
+.ue-switch .ue-panel-v3 > p,
+.ue-switch .ue-panel-v3 > p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* 分组小标题：纯视觉加粗标题（role=heading，不进右侧目录） */
+.ue-switch .ue-section-title {
+  margin: 14px 0 7px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--ifm-font-color-base);
+}
+
+/* ---------- 引擎版本条 ---------- */
+.ue-version-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  gap: 10px;
+  margin: 12px 0 6px;
+}
+
+.ue-version-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 13px 10px 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: var(--ifm-background-color);
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background 0.2s ease,
+    box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.ue-version-card:hover,
+.ue-version-card:focus-visible {
+  border-color: #3f7f5c;
+  background: #f3f8f5;
+  box-shadow: 0 6px 16px rgba(63, 127, 92, 0.18);
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.ue-version-card:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.ue-version-card-name {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #3f7f5c;
+}
+
+.ue-version-card-meta {
+  font-size: 11px;
+  line-height: 1.3;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.ue-version-card-badge {
+  position: absolute;
+  top: -8px;
+  right: 8px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #3f7f5c;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.ue-version-card-latest {
+  border-color: #3f7f5c;
+}
+
+.ue-version-card-ue4 .ue-version-card-badge {
+  background: var(--ifm-color-emphasis-600);
+}
+
+/* ---------- 紧凑小方块（中文页的预编译包按钮） ---------- */
+.ue-version-strip-sq {
+  grid-template-columns: repeat(auto-fill, 64px);
+  justify-content: start;
+  gap: 6px;
+  margin: 10px 0 4px;
+}
+
+.ue-version-card-sq {
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  gap: 0;
+  border-radius: 10px;
+}
+
+.ue-version-card-sq .ue-version-card-name {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+/* 小方块里只放版本号：最新版用绿色描边区分 */
+.ue-version-card-sq.ue-version-card-latest {
+  border-width: 2px;
+  border-color: #3f7f5c;
+}
+
+/* V2 旧版：整体降饱和，避免抢新版注意力 */
+.ue-version-strip-legacy .ue-version-card-name {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.ue-version-strip-legacy .ue-version-card:hover .ue-version-card-name,
+.ue-version-strip-legacy .ue-version-card:focus-visible .ue-version-card-name {
+  color: #3f7f5c;
+}
+
+/* 源码卡不铺满整行：给固定上限，和版本卡保持同一克重 */
+.ue-version-strip-source {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 240px));
+  justify-content: start;
+  margin-top: 2px;
+}
+
+/* 源码卡名称按正文粗细，不加粗 */
+.ue-version-strip-source .ue-version-card-name {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ---------- 使用说明：新版 / 旧版 切换 ----------
+ * 与下载区同一套页签，但面板不画卡片外框，正文直接落在页面上。
+ * 默认显示「新版」；旧版保留给老版本用户对照。
+ * ------------------------------------------------------------ */
+.ue-switch-doc .os-switch-panel {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin-top: 14px;
+}
+
+.ue-doc-wrap .os-switch-panel {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin-top: 14px;
+}
+
+.ue-doc-wrap .ue-panel-doc-new {
+  display: block;
+}
+
+/* 使用说明页签高亮：默认落在「新版」 */
+.ue-switch .ue-tab-doc-new {
+  border-color: var(--os-accent);
+  background: var(--os-accent);
+  box-shadow: 0 2px 10px rgba(63, 127, 92, 0.22);
+}
+
+.ue-switch .ue-tab-doc-new .ue-tab-name {
+  color: var(--os-accent-ink);
+}
+
+.ue-switch .ue-tab-doc-new .ue-tab-note {
+  color: rgba(16, 38, 26, 0.7);
+}
+
+/* ---------- 使用说明：图文 / 视频 切换 ---------- */
+/* 与「软件下载」页的系统切换同款：整行两栏卡片、图标在上、名称在下 */
+.ue-doc-switch .ue-switch-tabs {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: none;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.ue-doc-switch .ue-tab {
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 8px;
+  border-radius: 10px;
+}
+
+.ue-doc-switch .ue-tab-name {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* 图标用线性描边，不跟随 os-switch 的实心填充 */
+.ue-doc-switch .os-switch-tab-icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* 默认显示图文 */
+.ue-doc-switch .ue-panel-guide {
+  display: block;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin-top: 6px;
+}
+
+.ue-doc-switch .ue-panel-video {
+  display: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin-top: 14px;
+}
+
+#ue-view-video:checked ~ .ue-panel-guide {
+  display: none;
+}
+
+#ue-view-video:checked ~ .ue-panel-video {
+  display: block;
+  animation: ue-switch-fade 0.18s ease-out;
+}
+
+#ue-view-guide:checked ~ .ue-panel-guide {
+  display: block;
+}
+
+#ue-view-guide:checked ~ .ue-panel-video {
+  display: none;
+}
+
+/* 页签高亮：默认「图文教程」 */
+.ue-doc-switch .ue-tab-guide {
+  border-color: var(--os-accent);
+  background: var(--os-accent);
+  box-shadow: 0 2px 10px rgba(63, 127, 92, 0.22);
+}
+
+.ue-doc-switch .ue-tab-guide .ue-tab-name {
+  color: var(--os-accent-ink);
+}
+
+#ue-view-video:checked ~ .ue-switch-tabs .ue-tab-guide {
+  border-color: var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  box-shadow: none;
+}
+
+#ue-view-video:checked ~ .ue-switch-tabs .ue-tab-guide .ue-tab-name {
+  color: var(--ifm-font-color-base);
+}
+
+#ue-view-video:checked ~ .ue-switch-tabs .ue-tab-video {
+  border-color: var(--os-accent);
+  background: var(--os-accent);
+  box-shadow: 0 2px 10px rgba(63, 127, 92, 0.22);
+}
+
+#ue-view-video:checked ~ .ue-switch-tabs .ue-tab-video .ue-tab-name {
+  color: var(--os-accent-ink);
+}
+
+#ue-view-guide:focus-visible ~ .ue-switch-tabs .ue-tab-guide,
+#ue-view-video:focus-visible ~ .ue-switch-tabs .ue-tab-video {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* 新版说明：一级小节 = 绿色竖线 + 实心标题旗 */
+.ue-doc-wrap .ue-doc-sec {
+  margin: 30px 0;
+  padding-left: 18px;
+  border-left: 6px solid #88b49c;
+}
+
+.ue-doc-wrap .ue-doc-sec:first-child {
+  margin-top: 10px;
+}
+
+.ue-doc-wrap .ue-doc-h {
+  display: inline-block;
+  margin: 0 0 8px -18px;
+  padding: 6px 16px;
+  border-radius: 0 8px 8px 0;
+  background: #88b49c;
+  color: #10261a;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+/* 二级小节：L 型下划线（左侧短竖 + 底部细线），不用底色 */
+.ue-doc-wrap .ue-doc-subsec {
+  margin: 26px 0 18px;
+}
+
+.ue-doc-wrap .ue-doc-sub {
+  position: relative;
+  display: block;
+  margin: 0 0 12px;
+  padding: 0 0 8px 13px;
+  border-bottom: 2px solid #b9d6c6;
+  color: #2f6b4f;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.ue-doc-wrap .ue-doc-sub::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  border-radius: 2px 2px 0 0;
+  background: #88b49c;
+}
+
+[data-theme='dark'] .ue-doc-wrap .ue-doc-h {
+  background: #88b49c;
+  color: #10261a;
+}
+
+[data-theme='dark'] .ue-doc-wrap .ue-doc-sub {
+  color: #a8d8bd;
+  border-bottom-color: rgba(136, 180, 156, 0.45);
+}
+
+[data-theme='dark'] .ue-doc-wrap .ue-doc-sub::before {
+  background: #88b49c;
+}
+
+/* ---------- 暗色主题 ---------- */
+[data-theme='dark'] .ue-version-card:hover,
+[data-theme='dark'] .ue-version-card:focus-visible {
+  background: rgba(136, 180, 156, 0.12);
+}
+
+[data-theme='dark'] .ue-version-card-name {
+  color: #a8d8bd;
+}
+
+[data-theme='dark'] .ue-version-card-badge {
+  background: #88b49c;
+  color: #10261a;
+}
+
+[data-theme='dark'] .ue-tab-v3,
+[data-theme='dark'] [data-theme='dark'] .ue-version-card-latest {
+  border-color: #88b49c;
+}
+
+[data-theme='dark'] .ue-note {
+  border-left-color: #e0b55c;
+  background: rgba(224, 181, 92, 0.1);
+}
+
+/* ---------- 触屏：没有 hover，保留点击反馈 ---------- */
+@media (hover: none) {
+  .ue-version-card:active {
+    border-color: #3f7f5c;
+    background: #f3f8f5;
+  }
+}
+
+/* ---------- 移动端 ---------- */
+@media (max-width: 520px) {
+  .ue-switch .ue-tab {
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 6px;
+  }
+
+  .ue-switch .ue-tab-name {
+    font-size: 14px;
+  }
+
+  .ue-version-strip,
+  .ue-version-strip-source {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  /* 小方块保持原尺寸，不随移动端两列拉伸 */
+  .ue-version-strip-sq {
+    grid-template-columns: repeat(auto-fill, 64px);
+    gap: 6px;
+  }
+
+  .ue-version-card {
+    padding: 11px 8px 10px;
+  }
+
+  .ue-version-card-name {
+    font-size: 15px;
+  }
+
+  .ue-version-card-sq {
+    width: 64px;
+    height: 64px;
+    padding: 0;
+  }
+
+  .ue-version-card-sq .ue-version-card-name {
+    font-size: 14px;
+  }
+}

@@ -8,18 +8,25 @@ title: "Blender 插件下載"
 # Blender 插件下載
 
 點擊下邊鏈接可直接下載：
-- **Blender Plugin Beta 9**
-<a href="/img/files/rebocap_blender_plugin_v9.zip" target="_blank" download="rebocap_blender_plugin_v9.zip">blender with python 3.6~3.12</a>
-> 更新說明：
-> -相容於 Blender 4.4 及以上版本
-> -修復 rebocap 插件進程殘留 bug
-> -修復骨架導出 BUG，解決實時驅動情況下腳底不穩定的問題。
-> -支持所有 Python 3 的版本，例如可以支持 Blender 4.1
-> -支援直接使用 Mixamo 骨架，並可自動綁定
-> -修復 FBX 模型驅動的 bug
-> -修復動畫錄製軸向 bug
-> -增加骨骼吸附選取功能
 
+**Blender Plugin Beta 11.20**（2026.11.21）
+
+[Blender 3.6 或以上](/img/blender_plugin/rebocap_blender_plugin_Beta11_20_release_20261121.zip)
+
+**Blender Plugin Beta 9**（歷史版本）
+
+[blender with python 3.6~3.12](/img/files/rebocap_blender_plugin_v9.zip)
+
+Beta 9 更新說明：
+
+- 相容於 Blender 4.4 及以上版本
+- 修復 rebocap 插件進程殘留 bug
+- 修復骨架導出 BUG，解決實時驅動情況下腳底不穩定的問題。
+- 支持所有 Python 3 的版本，例如可以支持 Blender 4.1
+- 支援直接使用 Mixamo 骨架，並可自動綁定
+- 修復 FBX 模型驅動的 bug
+- 修復動畫錄製軸向 bug
+- 增加骨骼吸附選取功能
 
 <span id="blender-教程视频" class="legacy-anchor-alias" aria-hidden="true"></span>
 

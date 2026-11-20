@@ -1007,12 +1007,6 @@
         "tag": "h1",
         "text": "UE 使用说明",
         "occurrence": 0
-      },
-      {
-        "id": "meta-human-或者默认-apose-人物）修改为-tpose（-apose-转-tpose",
-        "tag": "h3",
-        "text": "Meta Human (或者默认 Apose 人物)修改为 TPose( APose 转 TPose",
-        "occurrence": 0
       }
     ]
   },
@@ -1472,12 +1466,6 @@
         "id": "ue-使用說明",
         "tag": "h1",
         "text": "UE 使用說明",
-        "occurrence": 0
-      },
-      {
-        "id": "meta-human（或者預設-apose-人物）修改為-tpose（apose-轉-tpose",
-        "tag": "h3",
-        "text": "Meta Human(或者預設 Apose 人物)修改為 TPose(APose 轉 TPose",
         "occurrence": 0
       }
     ]

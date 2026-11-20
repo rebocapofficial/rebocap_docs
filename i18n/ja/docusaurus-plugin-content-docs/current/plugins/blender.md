@@ -7,9 +7,17 @@ title: "Blender プラグインダウンロード"
 # Blender プラグインダウンロード
 
 下のリンクをクリックすると直接ダウンロードできます：
-- **Blender Plugin Beta 9**
-<a href="/img/files/rebocap_blender_plugin_v9.zip" target="_blank" download="rebocap_blender_plugin_v9.zip">blender with python 3.6~3.12</a>
-更新情報：
+
+**Blender Plugin Beta 11.20**（2026.11.21）
+
+[Blender 3.6 以降](/img/blender_plugin/rebocap_blender_plugin_Beta11_20_release_20261121.zip)
+
+**Blender Plugin Beta 9**（過去のバージョン）
+
+[blender with python 3.6~3.12](/img/files/rebocap_blender_plugin_v9.zip)
+
+Beta 9 の更新情報：
+
 - Blender 4.4 以降に対応
 - rebocapプラグインのプロセス残留バグを修正
 - 骨格のエクスポートバグを修正し、リアルタイムドライバーの状況で足元の不安定さを解消します。

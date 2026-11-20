@@ -5,9 +5,17 @@ title: "Скачать плагин Blender"
 # Скачать плагин Blender
 
 Нажмите на ссылку ниже для прямой загрузки:
-- **Blender Plugin Beta 9**
-<a href="/img/files/rebocap_blender_plugin_v9.zip" target="_blank" download="rebocap_blender_plugin_v9.zip">blender with python 3.6~3.12</a>
-Обновления:
+
+**Blender Plugin Beta 11.20** (2026.11.21)
+
+[Blender 3.6 и новее](/img/blender_plugin/rebocap_blender_plugin_Beta11_20_release_20261121.zip)
+
+**Blender Plugin Beta 9** (предыдущая версия)
+
+[blender with python 3.6~3.12](/img/files/rebocap_blender_plugin_v9.zip)
+
+Обновления Beta 9:
+
 - Совместим с Blender 4.4 и выше
 - Исправлена ошибка с остатками процесса в плагине rebocap
 - Исправлена ошибка экспорта скелета для стабилизации ног в сценариях драйвера в реальном времени.
@@ -16,7 +24,6 @@ title: "Скачать плагин Blender"
 - Исправлена ошибка с драйверами модели fbx
 - Исправлена ошибка с осью записи анимации
 - Добавлена функция выбора адсорбции костей
-
 
 # Обучающее видео по Blender
 Примечание: Здесь нет звука.

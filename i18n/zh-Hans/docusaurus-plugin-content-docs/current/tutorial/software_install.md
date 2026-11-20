@@ -265,10 +265,10 @@ Android 目前为 Preview 预览版，本次发布主要用于观察程序核心
 使用中如遇到 Bug，欢迎到 Twitter（X）的相关贴文和 Discord 留言。
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
-<span class="os-switch-download-main">下载 Rebocap Android Preview 0.2</span>
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.1.apk">
+<span class="os-switch-download-main">下载 Rebocap Android Preview 0.2.1</span>
 <span class="os-switch-download-meta">Android · Preview 预览版</span>
-<span class="os-switch-download-date">更新时间：2026.11.13</span>
+<span class="os-switch-download-date">更新时间：2026.11.21</span>
 </a>
 </div>
 
@@ -430,7 +430,9 @@ Android 版使用 `.apk` 安装包：
 
 ## 软件更新说明
 
-### 更新日志
+<div class="os-changelog os-changelog-windows">
+
+<p class="os-changelog-title">Windows 更新日志</p>
 
 #### 2026-11-11 更新
 
@@ -528,6 +530,37 @@ Android 版使用 `.apk` 安装包：
 5. 默认骨架修改为社区推荐的默认骨架，以及其它默认参数修改
 6. 六轴开关开启关闭增加重新校准提示
 7. 修复六轴侧偏补偿问题
+
+</div>
+
+<div class="os-changelog os-changelog-linux">
+
+<p class="os-changelog-title">Linux 更新日志</p>
+
+#### 2026-11-11 更新：Linux Preview 0.1
+
+1. 首个 Linux 预览版，界面与 Windows 版保持一致。
+2. 与 Windows 版共用同一套固件（tracker V16 / V17，receiver V6 / V7 / V8），主要用于观察程序核心在 Linux 环境下的稳定性。
+
+</div>
+
+<div class="os-changelog os-changelog-android">
+
+<p class="os-changelog-title">Android 更新日志</p>
+
+#### 2026-11-21 更新：Android Preview 0.2.1
+
+1. 动作校准、敲击分配与 Windows 版对齐。
+2. 修复声音问题：此前“滴滴”提示音被错误地输出到系统提示音通道。
+3. 修复磁场校准页面不显示视频的问题。
+4. 软件内版本号真实显示为 preview 0.2。
+
+#### 2026-11-13 更新：Android Preview 0.2
+
+1. 首个公开预览版：界面按 Android 重新设计，支持竖屏 / 横屏切换，操作动线与 Windows 版保持相近。
+2. 主要用于观察程序核心在 Android 环境下的稳定性。
+
+</div>
 
 
 <span id="todo（排名不分先后，这里只介绍大的更新点）" class="legacy-anchor-alias" aria-hidden="true"></span>

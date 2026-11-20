@@ -733,3 +733,46 @@ html[data-theme='dark'] .gray-release-dialog-cancel {
     flex-direction: column-reverse;
   }
 }
+
+
+/* ---------- 更新日志：跟随顶部系统选择切换 ---------- */
+.os-changelog {
+  display: none;
+}
+
+/* 默认与下载面板一致：Windows（双类提高优先级，避免被 .os-changelog 的 display:none 覆盖） */
+.os-changelog.os-changelog-windows {
+  display: block;
+}
+
+body:has(#os-platform-linux:checked) .os-changelog-windows,
+body:has(#os-platform-android:checked) .os-changelog-windows {
+  display: none;
+}
+
+body:has(#os-platform-linux:checked) .os-changelog-linux,
+body:has(#os-platform-android:checked) .os-changelog-android {
+  display: block;
+  animation: os-switch-fade 0.18s ease-out;
+}
+
+.os-changelog-title {
+  margin: 2px 0 10px;
+  padding-left: 10px;
+  border-left: 4px solid #88b49c;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #3f7f5c;
+}
+
+[data-theme='dark'] .os-changelog-title {
+  color: #a8d8bd;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body:has(#os-platform-linux:checked) .os-changelog-linux,
+  body:has(#os-platform-android:checked) .os-changelog-android {
+    animation: none;
+  }
+}

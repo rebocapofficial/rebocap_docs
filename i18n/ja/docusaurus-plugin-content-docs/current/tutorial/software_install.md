@@ -265,10 +265,10 @@ Android は現在 Preview プレビュー版です。今回のリリースは、
 使用中に Bug が発生した場合は、Twitter（X）の関連投稿や Discord へのコメントをお待ちしています。
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
-<span class="os-switch-download-main">Rebocap Android Preview 0.2 をダウンロード</span>
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.1.apk">
+<span class="os-switch-download-main">Rebocap Android Preview 0.2.1 をダウンロード</span>
 <span class="os-switch-download-meta">Android · Preview プレビュー版</span>
-<span class="os-switch-download-date">更新日：2026.11.13</span>
+<span class="os-switch-download-date">更新日：2026.11.21</span>
 </a>
 </div>
 
@@ -430,7 +430,9 @@ Android 版は `.apk` インストールパッケージを使用します：
 
 ## ソフトウェア更新情報
 
-### 更新履歴
+<div class="os-changelog os-changelog-windows">
+
+<p class="os-changelog-title">Windows の更新履歴</p>
 
 #### 2026-11-11 更新
 
@@ -531,6 +533,37 @@ Android 版は `.apk` インストールパッケージを使用します：
 
 
 <span id="todo（順不同・主要な更新内容のみ）" class="legacy-anchor-alias" aria-hidden="true"></span>
+
+</div>
+
+<div class="os-changelog os-changelog-linux">
+
+<p class="os-changelog-title">Linux の更新履歴</p>
+
+#### 2026-11-11 更新：Linux Preview 0.1
+
+1. Linux の最初のプレビュー版です。UI は Windows 版と共通です。
+2. ファームウェアは Windows 版と共通（tracker V16 / V17、receiver V6 / V7 / V8）。Linux 環境でのコア安定性の確認が目的です。
+
+</div>
+
+<div class="os-changelog os-changelog-android">
+
+<p class="os-changelog-title">Android の更新履歴</p>
+
+#### 2026-11-21 更新：Android Preview 0.2.1
+
+1. モーションキャリブレーションとタップ割り当てを Windows 版に合わせました。
+2. 音の問題を修正しました。これまで「ピピッ」という通知音がシステム通知音として出力されていました。
+3. 磁場キャリブレーション画面で動画が表示されない問題を修正しました。
+4. アプリ内のバージョン表記が実際に preview 0.2 と表示されるようになりました。
+
+#### 2026-11-13 更新：Android Preview 0.2
+
+1. 最初の公開プレビュー版です。Android 向けに UI を再設計し、縦画面／横画面の切り替えに対応しました。操作の流れは Windows 版に近づけています。
+2. Android 環境でのコア安定性の確認が目的です。
+
+</div>
 
 ### TODO（順不同・主要な更新内容のみ）
 

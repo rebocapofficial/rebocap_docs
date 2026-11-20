@@ -5,9 +5,18 @@ title: "Blender 플러그인 다운로드"
 # Blender 플러그인 다운로드
 
 직접 다운로드하려면 아래 링크를 클릭하세요:
-- **Blender 플러그인 Beta 9**
-<a href="/img/files/rebocap_blender_plugin_v9.zip" target="_blank" download="rebocap_blender_plugin_v9.zip">blender with python 3.6~3.12</a>
-업데이트 내용:
+
+**Blender Plugin Beta 11.20** (2026.11.21)
+
+[Blender 3.6 이상](/img/blender_plugin/rebocap_blender_plugin_Beta11_20_release_20261121.zip)
+
+**Blender Plugin Beta 9** (이전 버전)
+
+[blender with python 3.6~3.12](/img/files/rebocap_blender_plugin_v9.zip)
+
+Beta 9 업데이트 내용:
+
+- **Blender 플러그인 Beta 9** (이전 버전)
 - Blender 4.4 이상과 호환 가능
 - rebocap 플러그인의 프로세스 잔류 버그 수정
 - 실시간 구동 시나리오에서 발을 안정시키기 위한 뼈대 내보내기 버그 수정
@@ -16,7 +25,6 @@ title: "Blender 플러그인 다운로드"
 - fbx 모델 구동 버그 수정
 - 애니메이션 기록 축 버그 수정
 - 뼈대 흡착 선택 기능 추가
-
 
 # Blender 튜토리얼 비디오
 참고: 소리가 없습니다.

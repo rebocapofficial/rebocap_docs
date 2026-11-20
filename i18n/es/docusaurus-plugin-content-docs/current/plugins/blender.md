@@ -5,9 +5,17 @@ title: "Descarga del Plugin de Blender"
 # Descarga del Plugin de Blender
 
 Haz clic en el enlace a continuación para descargar directamente:
-- **Blender Plugin Beta 9**
-<a href="/img/files/rebocap_blender_plugin_v9.zip" target="_blank" download="rebocap_blender_plugin_v9.zip">blender con python 3.6~3.12</a>
-Notas de actualización:
+
+**Blender Plugin Beta 11.20** (2026.11.21)
+
+[Blender 3.6 y posteriores](/img/blender_plugin/rebocap_blender_plugin_Beta11_20_release_20261121.zip)
+
+**Blender Plugin Beta 9** (versión anterior)
+
+[blender con python 3.6~3.12](/img/files/rebocap_blender_plugin_v9.zip)
+
+Notas de la Beta 9:
+
 - Compatible con Blender 4.4 y superior
 - Corrige el error de residuo de proceso en el plugin rebocap
 - Corrige el error de exportación del esqueleto para estabilizar los pies en escenarios de conducción en tiempo real.
@@ -16,7 +24,6 @@ Notas de actualización:
 - Se corrigió el error con los controladores de modelos fbx
 - Se corrigió el error con el eje de grabación de animación
 - Agrega la característica de selección de adsorción de huesos
-
 
 # Video Tutorial de Blender
 Nota: No hay sonido aquí.

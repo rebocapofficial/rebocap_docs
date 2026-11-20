@@ -7,9 +7,17 @@ title: "Blender 插件下载"
 # Blender 插件下载
 
 点击下边链接可直接下载：
-- **Blender Plugin Beta 9**
-<a href="/img/files/rebocap_blender_plugin_v9.zip" target="_blank" download="rebocap_blender_plugin_v9.zip">blender with python 3.6~3.12</a>
-更新说明: 
+
+**Blender Plugin Beta 11.20**（2026.11.21）
+
+[Blender 3.6 及以上](/img/blender_plugin/rebocap_blender_plugin_Beta11_20_release_20261121.zip)
+
+**Blender Plugin Beta 9**（历史版本）
+
+[blender with python 3.6~3.12](/img/files/rebocap_blender_plugin_v9.zip)
+
+Beta 9 更新说明：
+
 - 兼容 Blender4.4 及以上版本
 - 修复 rebocap 插件进程残留 bug
 - 修复骨架导出时导致实时驱动脚底不稳定的问题。
@@ -18,7 +26,6 @@ title: "Blender 插件下载"
 - 修复 fbx 模型驱动的 bug
 - 修复动画录制轴向 bug
 - 增加骨骼吸附选取功能
-
 
 <span id="blender-教程视频" class="legacy-anchor-alias" aria-hidden="true"></span>
 

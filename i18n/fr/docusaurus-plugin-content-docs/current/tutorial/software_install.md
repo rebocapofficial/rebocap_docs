@@ -252,10 +252,10 @@ Android est actuellement en version Preview ; cette publication vise principalem
 Si vous rencontrez des bugs lors de l'utilisation, n'hésitez pas à laisser un commentaire sur la publication correspondante sur Twitter (X) et sur Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
-<span class="os-switch-download-main">Télécharger Rebocap Android Preview 0.2</span>
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.1.apk">
+<span class="os-switch-download-main">Télécharger Rebocap Android Preview 0.2.1</span>
 <span class="os-switch-download-meta">Android · Version Preview</span>
-<span class="os-switch-download-date">Date de mise à jour : 2026.11.13</span>
+<span class="os-switch-download-date">Date de mise à jour : 2026.11.21</span>
 </a>
 </div>
 
@@ -412,7 +412,9 @@ La version Android utilise le paquet d'installation `.apk` :
 
 ## Notes de Mise à Jour du Logiciel
 
-### Journal des modifications
+<div class="os-changelog os-changelog-windows">
+
+<p class="os-changelog-title">Notes de mise à jour Windows</p>
 
 #### Mise à jour du 2026-11-11
 
@@ -511,6 +513,36 @@ Autres mises à jour :
 6. Ajout d'une invite de recalibration lors de l'activation ou de la désactivation du commutateur six axes  
 7. Correction du problème de compensation de l'inclinaison latérale à six axes  
 
+</div>
+
+<div class="os-changelog os-changelog-linux">
+
+<p class="os-changelog-title">Notes de mise à jour Linux</p>
+
+#### Mise à jour du 2026-11-11 : Linux Preview 0.1
+
+1. Première version d’aperçu Linux ; l’interface est identique à celle de Windows.
+2. Même firmware que Windows (tracker V16 / V17, récepteur V6 / V7 / V8) ; objectif : vérifier la stabilité du cœur sous Linux.
+
+</div>
+
+<div class="os-changelog os-changelog-android">
+
+<p class="os-changelog-title">Notes de mise à jour Android</p>
+
+#### Mise à jour du 2026-11-21 : Android Preview 0.2.1
+
+1. La calibration des mouvements et l’affectation par tapotements sont alignées sur la version Windows.
+2. Correction audio : le bip était envoyé vers le canal des sons système.
+3. Correction de la page de calibration magnétique qui n’affichait pas la vidéo.
+4. Le numéro de version affiché dans l’application indique désormais réellement preview 0.2.
+
+#### Mise à jour du 2026-11-13 : Android Preview 0.2
+
+1. Premier aperçu public : interface repensée pour Android, portrait et paysage pris en charge, parcours proche de Windows.
+2. Objectif : vérifier la stabilité du cœur sous Android.
+
+</div>
 
 ### À FAIRE (sans ordre particulier, seuls les points de mise à jour majeurs sont listés ici)
 

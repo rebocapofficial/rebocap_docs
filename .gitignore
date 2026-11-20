@@ -54,3 +54,6 @@ backups/
 
 # AI Warning Memo (Local reference only, DO NOT COMMIT/PUSH)
 AI_WARNING_MEMO.md
+
+# 测试素材（已验证，稳定后换成 CDN 链接，不入库）
+static/img/ue_plugin/ue插件_无声.mp4

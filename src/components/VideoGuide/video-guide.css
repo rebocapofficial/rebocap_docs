@@ -1,0 +1,852 @@
+/**
+ * video-guide.css
+ * ------------------------------------------------------------------
+ * 本文件由 VideoGuide 组件专用。
+ * 由 src/css/custom.css 统一 @import 引入，不要在 MDX 里内联样式。
+ *
+ * DOM 契约：
+ * .vg / .vg-host / .vg-video / .vg-timeline / .vg-chapters / .vg-chapter
+ * .vg-playhead / .vg-bubble / .vg-steps / .vg-step / .vg-step-media
+ * .vg-step-body / .vg-step-kicker / .vg-step-title / .vg-step-text
+ * .vg-step-time / .vg-status
+ *
+ * 状态：
+ * .vg.is-ready / .vg.is-playing / .vg.is-dragging
+ * .vg-chapter.is-active / .vg-step.is-active
+ */
+
+/* ======================================================================
+ * 1. 作用域与设计变量
+ * ====================================================================== */
+
+.vg {
+  --vg-track: var(--ifm-color-emphasis-300);
+  --vg-chip-bg: var(--ifm-color-emphasis-100);
+  --vg-chip-hover: var(--ifm-color-emphasis-300);
+  --vg-chip-text: var(--ifm-font-color-base);
+  --vg-active-bg: var(--ifm-color-primary);
+  --vg-active-bg-hover: var(--ifm-color-primary-dark);
+  --vg-card-bg: var(--ifm-color-emphasis-100);
+  --vg-card-border: var(--ifm-color-emphasis-200);
+  --vg-body: var(--ifm-font-color-base);
+  --vg-heading: var(--ifm-font-color-base);
+  --vg-kicker: var(--ifm-color-primary);
+  --vg-playhead: var(--ifm-color-primary);
+  --vg-focus: var(--ifm-color-primary);
+  --vg-pill-bg: rgba(136, 180, 156, 0.16);
+  --vg-pill-border: rgba(63, 127, 92, 0.28);
+  --vg-pill-text: #3f7f5c;
+  --vg-pill-hover-bg: #3f7f5c;
+  --vg-pill-hover-text: #ffffff;
+  --vg-bubble-bg: #10261a;
+  --vg-bubble-text: #ffffff;
+  --vg-motion: 0.2s;
+
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  color: var(--vg-body);
+  font-family: var(--ifm-font-family-base);
+  line-height: 1.5;
+}
+
+/* React 增强 UI 的挂载点。 */
+.vg .vg-host {
+  display: block;
+  min-width: 0;
+}
+
+/* 视频始终占满容器；未挂载时也保留原生 controls 可用。 */
+.vg .vg-video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: #10261a;
+  vertical-align: top;
+}
+
+/* ======================================================================
+ * 2. 时间轴外壳与章节块
+ * ====================================================================== */
+
+.vg .vg-timeline {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin-top: 12px;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 8px;
+  background: var(--vg-track);
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 仅在增强器挂载后提示该区域可交互。is-ready 与现有 data 标记都兼容。 */
+.vg.is-ready .vg-timeline,
+.vg[data-vg-ready='true'] .vg-timeline {
+  cursor: pointer;
+}
+
+.vg.is-dragging .vg-timeline {
+  cursor: grabbing;
+}
+
+.vg .vg-chapters {
+  display: flex;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+}
+
+.vg .vg-chapter {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  flex: 0 1 calc(var(--w));
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--w));
+  min-width: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 0;
+  border-radius: 8px;
+  background: var(--vg-chip-bg);
+  color: var(--vg-chip-text);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    background-color var(--vg-motion) ease,
+    color var(--vg-motion) ease,
+    transform var(--vg-motion) ease;
+}
+
+.vg .vg-chapter-label {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vg .vg-chapter.is-active {
+  background: var(--vg-active-bg);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.vg .vg-chapter:hover {
+  background: var(--vg-chip-hover);
+}
+
+.vg .vg-chapter.is-active:hover {
+  background: var(--vg-active-bg-hover);
+}
+
+.vg .vg-chapter:active {
+  transform: translateY(1px);
+}
+
+/* ======================================================================
+ * 3. 进度指针与时间气泡
+ * ====================================================================== */
+
+.vg .vg-playhead {
+  position: absolute;
+  top: 0;
+  left: var(--pos, 0%);
+  z-index: 2;
+  width: 3px;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--vg-playhead);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35);
+  transform: translateX(-50%);
+  pointer-events: none;
+  transition:
+    background-color var(--vg-motion) ease,
+    transform var(--vg-motion) ease;
+}
+
+.vg .vg-playhead::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--vg-playhead);
+  box-shadow: 0 0 0 2px var(--ifm-background-surface-color);
+  transform: translateX(-50%);
+}
+
+.vg .vg-bubble {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: clamp(42px, var(--pos, 50%), calc(100% - 42px));
+  display: none;
+  z-index: 3;
+  min-width: 2.9em;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: var(--vg-bubble-bg);
+  color: var(--vg-bubble-text);
+  font-size: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 4px);
+  pointer-events: none;
+  transition:
+    opacity var(--vg-motion) ease,
+    transform var(--vg-motion) ease,
+    visibility var(--vg-motion) ease;
+}
+
+.vg .vg-bubble::after {
+  content: '';
+  position: absolute;
+  top: auto;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top-color: transparent;
+  border-bottom-color: var(--vg-bubble-bg);
+  transform: translateX(-50%);
+}
+
+.vg.is-dragging .vg-bubble {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%);
+}
+
+/* ======================================================================
+ * 4. 步骤卡
+ * ====================================================================== */
+
+.vg .vg-steps {
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+  overflow: hidden;
+  /* 卡片高度由最高那张决定，切换时页面不再上下抖 */
+}
+
+.vg .vg-steps-track {
+  display: flex;
+  align-items: stretch;
+  height: 372px;
+  transform: translateX(calc(var(--i, 0) * -100%));
+  transition: transform 0.42s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+
+.vg .vg-step {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--vg-card-border);
+  border-radius: 12px;
+  background: var(--vg-card-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vg .vg-steps-track {
+    transition: none;
+  }
+}
+
+.vg .vg-step-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.vg .vg-step-media img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.vg .vg-step-body {
+  min-width: 0;
+}
+
+/* 纯文字步骤没有配图时，正文占满整张卡片。 */
+.vg .vg-step-body:only-child {
+  grid-column: 1 / -1;
+}
+
+.vg .vg-step-kicker {
+  margin: 0 0 4px;
+  color: var(--vg-kicker);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.vg .vg-step-title {
+  margin: 0 0 6px;
+  color: var(--vg-heading);
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.vg .vg-step-text {
+  margin: 0 0 12px;
+  color: var(--vg-body);
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}
+
+.vg .vg-step-time {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  margin: 0;
+  padding: 5px 11px;
+  box-sizing: border-box;
+  border: 1px solid var(--vg-pill-border);
+  border-radius: 999px;
+  background: var(--vg-pill-bg);
+  color: var(--vg-pill-text);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--vg-motion) ease,
+    border-color var(--vg-motion) ease,
+    color var(--vg-motion) ease,
+    transform var(--vg-motion) ease;
+}
+
+.vg .vg-step-time:hover {
+  border-color: var(--vg-pill-hover-bg);
+  background: var(--vg-pill-hover-bg);
+  color: var(--vg-pill-hover-text);
+}
+
+.vg .vg-step-time:active {
+  transform: translateY(1px);
+}
+
+/* 组件提供的调试/无障碍时间文本，视觉隐藏但保留可读性。 */
+.vg .vg-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* ======================================================================
+ * 5. 焦点可见
+ * ====================================================================== */
+
+.vg .vg-timeline:focus-visible,
+.vg .vg-chapter:focus-visible,
+.vg .vg-step-time:focus-visible {
+  outline: 2px solid var(--vg-focus);
+  outline-offset: 2px;
+}
+
+/* ======================================================================
+ * 6. 响应式：窄屏
+ * ====================================================================== */
+
+@media (max-width: 720px) {
+  .vg .vg-timeline {
+    height: 94px;
+  }
+
+  .vg .vg-chapters {
+    top: 30px;
+  }
+
+  .vg .vg-ticks {
+    top: 36px;
+  }
+
+  .vg .vg-playhead {
+    top: 39px;
+  }
+
+  .vg .vg-chapter {
+    padding: 0 5px;
+    font-size: 12px;
+  }
+
+  .vg .vg-chapter:not(.is-active) .vg-chapter-label {
+    opacity: 0;
+  }
+
+  .vg .vg-chapter.is-active .vg-chapter-label {
+    opacity: 1;
+  }
+
+  .vg .vg-step {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
+    height: 100%;
+  }
+
+  .vg .vg-steps-track {
+    height: 468px;
+  }
+
+  .vg .vg-step-media {
+    height: auto;
+    max-height: 208px;
+  }
+
+  .vg .vg-step-media img {
+    max-height: 208px;
+  }
+
+  .vg .vg-step-body:only-child {
+    grid-column: auto;
+  }
+
+  .vg .vg-bubble {
+    top: 66px;
+    font-size: 11px;
+  }
+}
+
+/* ======================================================================
+ * 7. 暗色主题
+ * ====================================================================== */
+
+html[data-theme='dark'] .vg {
+  --vg-chip-text: #c5cad3;
+  --vg-body: #c5cad3;
+  --vg-kicker: #88b49c;
+  --vg-playhead: #88b49c;
+  --vg-pill-bg: rgba(136, 180, 156, 0.14);
+  --vg-pill-border: rgba(136, 180, 156, 0.32);
+  --vg-pill-text: #88b49c;
+  --vg-pill-hover-bg: #3f7f5c;
+}
+
+html[data-theme='dark'] .vg .vg-chapter.is-active,
+html[data-theme='dark'] .vg .vg-chapter.is-active:hover {
+  background: #3f7f5c;
+  color: #ffffff;
+}
+
+html[data-theme='dark'] .vg .vg-step {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+html[data-theme='dark'] .vg .vg-step-title {
+  color: var(--ifm-font-color-base);
+}
+
+html[data-theme='dark'] .vg .vg-step-text {
+  color: #c5cad3;
+}
+
+html[data-theme='dark'] .vg .vg-step-time:hover {
+  border-color: #3f7f5c;
+  background: #3f7f5c;
+  color: #ffffff;
+}
+
+/* ======================================================================
+ * 8. 减少动效
+ * ====================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .vg .vg-chapter,
+  .vg .vg-playhead,
+  .vg .vg-bubble,
+  .vg .vg-step-time {
+    transition: none;
+  }
+}
+
+/* =============================================================
+ * 时间轴：刻度风格（唯一）
+ * -------------------------------------------------------------
+ * 章节名排在轨道上方，当前章节加粗并带绿色下划线；
+ * 步骤用细刻线标在轨道上，不显示文字。
+ * ============================================================= */
+
+/* ---------- 共用：右上角时间读数 ---------- */
+.vg .vg-meta {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 2px 6px;
+}
+
+.vg .vg-time {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ifm-color-emphasis-700);
+  font-variant-numeric: tabular-nums;
+}
+
+.vg .vg-time em {
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.55;
+  margin-left: 2px;
+}
+
+html[data-theme='dark'] .vg .vg-time {
+  color: #c5cad3;
+}
+
+/* =============================================================
+ * 时间轴 v2：分段色带
+ * -------------------------------------------------------------
+ * 设计要点：
+ *  1) 每章一块连续色带，深浅交替 + 1px 分隔，一眼看出分段
+ *  2) 只有一种刻度：块内极细竖线标步骤边界，不再有"大刻度下划线"
+ *  3) 去掉圆角小色块残留，只有整条色带首尾是圆角
+ *  4) 章节名分两行错开常驻显示，短章节也不会被截断或推迟出现
+ * ============================================================= */
+
+.vg {
+  --vg-accent: #88b49c;
+  --vg-accent-deep: #3f7f5c;
+  --vg-seg-a: #e3eee7;
+  --vg-seg-b: #d3e3da;
+  --vg-seg-line: rgba(255, 255, 255, 0.92);
+  --vg-tick: rgba(63, 127, 92, 0.34);
+  --vg-label: #4a5350;
+  --vg-label-active: #2f6b4f;
+}
+
+/* 时间轴本体 */
+.vg .vg-timeline {
+  position: relative;
+  display: block;
+  overflow: visible;
+  width: 100%;
+  height: 112px;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  background: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: none;
+}
+
+/* 色带 */
+.vg .vg-chapters {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 0;
+  height: 34px;
+  overflow: visible;
+  background: none;
+}
+
+.vg .vg-chapter {
+  position: relative;
+  display: block;
+  overflow: visible;
+  flex: 0 0 var(--w);
+  width: var(--w);
+  min-width: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--vg-seg-a);
+  font-size: 0;
+  transition: background-color 0.18s ease;
+}
+
+.vg .vg-chapter:nth-child(even) {
+  background: var(--vg-seg-b);
+}
+
+.vg .vg-chapter:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.vg .vg-chapter:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.vg .vg-chapter:hover {
+  background: var(--vg-seg-hover, #c5dbd0);
+}
+
+.vg .vg-chapter.is-active,
+.vg .vg-chapter.is-active:hover {
+  background: var(--vg-accent);
+  box-shadow: none;
+}
+
+/* 章节名：两行错开，常驻可见 */
+.vg .vg-chapter-label {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 7px);
+  padding-left: 6px;
+  display: block;
+  max-width: none;
+  min-width: 0;
+  overflow: visible;
+  white-space: nowrap;
+  text-overflow: clip;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--vg-label);
+  pointer-events: none;
+}
+
+.vg .vg-chapter:nth-child(odd) .vg-chapter-label {
+  bottom: calc(100% + 26px);
+}
+
+.vg .vg-chapter.is-active .vg-chapter-label {
+  color: var(--vg-label-active);
+  font-weight: 800;
+}
+
+/* 标签到色带的引线，明确归属 */
+.vg .vg-chapter-label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 2px;
+  height: 41px;
+  background: var(--vg-tick);
+}
+
+.vg .vg-chapter:nth-child(odd) .vg-chapter-label::after {
+  height: 60px;
+}
+
+/* 子刻度：块内细线 */
+.vg .vg-ticks {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  height: 26px;
+  pointer-events: none;
+}
+
+.vg .vg-tick {
+  position: absolute;
+  left: var(--p);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  height: auto;
+  border-radius: 0;
+  background: var(--vg-tick);
+  transform: none;
+}
+
+/* 指针：色带上的一枚圆环 */
+.vg .vg-playhead {
+  position: absolute;
+  top: 55px;
+  left: clamp(8px, var(--pos, 0%), calc(100% - 8px));
+  width: 0;
+  height: 16px;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.vg .vg-playhead::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 3px solid var(--vg-accent-deep);
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  transform: translateX(-50%);
+}
+
+/* 拖动气泡 */
+.vg .vg-bubble {
+  position: absolute;
+  top: 82px;
+  bottom: auto;
+  left: clamp(42px, var(--pos, 50%), calc(100% - 42px));
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%);
+  min-width: 3em;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: #10261a;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.3;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.vg.is-dragging .vg-bubble {
+  background: #3f7f5c;
+}
+
+/* 暗色 */
+html[data-theme='dark'] .vg {
+  --vg-seg-a: #2d353b;
+  --vg-seg-b: #22282d;
+  --vg-seg-line: rgba(0, 0, 0, 0.45);
+  --vg-tick: rgba(200, 220, 210, 0.26);
+  --vg-label: #b7c0bd;
+  --vg-label-active: #a8d8bd;
+  --vg-accent: #4e8a6c;
+  --vg-accent-deep: #88b49c;
+}
+
+html[data-theme='dark'] .vg .vg-chapter.is-active {
+  background: #3f7f5c;
+}
+
+html[data-theme='dark'] .vg .vg-playhead::after {
+  background: #10261a;
+  border-color: #d7ece0;
+}
+
+html[data-theme='dark'] .vg .vg-chapter-label {
+  color: var(--vg-label);
+}
+
+html[data-theme='dark'] .vg .vg-bubble {
+  background: #3a5c4c;
+}
+
+html[data-theme='dark'] .vg .vg-bubble::after {
+  border-bottom-color: #3a5c4c;
+}
+
+/* 断线重连提示：平时不占位，出错时才出现 */
+.vg .vg-net {
+  display: none;
+}
+
+.vg .vg-net.is-recovering,
+.vg .vg-net.is-failed {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-800);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.vg .vg-net.is-recovering::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: vg-net-pulse 1s ease-in-out infinite;
+}
+
+.vg .vg-net.is-failed {
+  background: #fdecec;
+  color: #a12a2a;
+}
+
+@keyframes vg-net-pulse {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 1; }
+}

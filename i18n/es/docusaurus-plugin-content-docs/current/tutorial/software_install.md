@@ -249,10 +249,10 @@ Android es actualmente una versión preliminar Preview; esta versión se publica
 Si encuentra algún Bug durante el uso, le invitamos a dejar un comentario en la publicación correspondiente de Twitter (X) y en Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
-<span class="os-switch-download-main">Descargar Rebocap Android Preview 0.2</span>
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.1.apk">
+<span class="os-switch-download-main">Descargar Rebocap Android Preview 0.2.1</span>
 <span class="os-switch-download-meta">Android · Versión preliminar Preview</span>
-<span class="os-switch-download-date">Fecha de actualización: 2026.11.13</span>
+<span class="os-switch-download-date">Fecha de actualización: 2026.11.21</span>
 </a>
 </div>
 
@@ -412,7 +412,9 @@ La versión Android utiliza el paquete de instalación `.apk`:
 
 ## Notas de Actualización del Software
 
-### Registro de Cambios
+<div class="os-changelog os-changelog-windows">
+
+<p class="os-changelog-title">Notas de actualización de Windows</p>
 
 #### Actualización 2026-11-11
 
@@ -511,6 +513,36 @@ Otras actualizaciones:
 6. Se agregó un mensaje de recalibración al activar o desactivar el interruptor de seis ejes
 7. Se corrigió el problema de compensación de inclinación lateral de seis ejes
 
+</div>
+
+<div class="os-changelog os-changelog-linux">
+
+<p class="os-changelog-title">Notas de actualización de Linux</p>
+
+#### Actualización del 2026-11-11: Linux Preview 0.1
+
+1. Primera compilación de vista previa para Linux; la interfaz es la misma que en Windows.
+2. Comparte el mismo firmware que Windows (tracker V16 / V17, receptor V6 / V7 / V8); sirve para comprobar la estabilidad del núcleo en Linux.
+
+</div>
+
+<div class="os-changelog os-changelog-android">
+
+<p class="os-changelog-title">Notas de actualización de Android</p>
+
+#### Actualización del 2026-11-21: Android Preview 0.2.1
+
+1. La calibración de movimiento y la asignación por toques ya coinciden con la versión de Windows.
+2. Corregido el audio: el pitido se enviaba al canal de sonidos del sistema.
+3. Corregido que la página de calibración magnética no mostrara el vídeo.
+4. El número de versión de la app ahora muestra realmente preview 0.2.
+
+#### Actualización del 2026-11-13: Android Preview 0.2
+
+1. Primera vista previa pública: interfaz rediseñada para Android con soporte vertical y horizontal, y un flujo de uso cercano a Windows.
+2. Su objetivo es comprobar la estabilidad del núcleo en Android.
+
+</div>
 
 ### POR HACER (sin orden en particular, solo se enumeran los puntos de actualización importantes)
 

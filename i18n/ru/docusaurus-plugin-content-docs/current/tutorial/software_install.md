@@ -256,10 +256,10 @@ title: "Загрузка ПО"
 Если при использовании вы столкнетесь с ошибками, оставляйте комментарии в соответствующих публикациях в Twitter (X) и в Discord.
 
 <div class="os-switch-downloads">
-<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.apk">
-<span class="os-switch-download-main">Скачать Rebocap Android Preview 0.2</span>
+<a class="os-switch-download" data-preview-download="true" href="https://doc.rebocap.com/files/ReboCapAndroid-Preview-0.2.1.apk">
+<span class="os-switch-download-main">Скачать Rebocap Android Preview 0.2.1</span>
 <span class="os-switch-download-meta">Android · предварительная версия Preview</span>
-<span class="os-switch-download-date">Дата обновления: 2026.11.13</span>
+<span class="os-switch-download-date">Дата обновления: 2026.11.21</span>
 </a>
 </div>
 
@@ -413,7 +413,9 @@ sudo bash ~/.local/opt/rebocap/linux/install_linux_permissions.sh --install --us
 
 ## Примечания к обновлению программного обеспечения
 
-### Список изменений
+<div class="os-changelog os-changelog-windows">
+
+<p class="os-changelog-title">Обновления Windows</p>
 
 #### Обновление от 2026-11-11
 
@@ -512,6 +514,36 @@ sudo bash ~/.local/opt/rebocap/linux/install_linux_permissions.sh --install --us
 6. Добавлен запрос на повторную калибровку при включении или выключении переключателя с шестью осями  
 7. Исправлена проблема компенсации бокового наклона с шестью осями  
 
+</div>
+
+<div class="os-changelog os-changelog-linux">
+
+<p class="os-changelog-title">Обновления Linux</p>
+
+#### Обновление 2026-11-11: Linux Preview 0.1
+
+1. Первая предварительная сборка для Linux; интерфейс совпадает с версией для Windows.
+2. Тот же набор прошивок, что и в Windows (tracker V16 / V17, receiver V6 / V7 / V8); цель — проверить стабильность ядра в Linux.
+
+</div>
+
+<div class="os-changelog os-changelog-android">
+
+<p class="os-changelog-title">Обновления Android</p>
+
+#### Обновление 2026-11-21: Android Preview 0.2.1
+
+1. Калибровка движений и назначение постукиваний приведены в соответствие с версией для Windows.
+2. Исправлен звук: раньше звуковой сигнал уходил в системный канал уведомлений.
+3. Исправлено отсутствие видео на странице калибровки магнитного поля.
+4. Номер версии в приложении теперь действительно отображается как preview 0.2.
+
+#### Обновление 2026-11-13: Android Preview 0.2
+
+1. Первая публичная предварительная версия: интерфейс переработан под Android, поддержаны портрет и ландшафт, логика близка к Windows.
+2. Цель — проверить стабильность ядра в Android.
+
+</div>
 
 ### TODO (в произвольном порядке, здесь перечислены только основные пункты обновления)
 
