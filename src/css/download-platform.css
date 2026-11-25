@@ -69,6 +69,13 @@
   transition: color 0.2s ease;
 }
 
+.os-switch-tab-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
 .os-switch-tab:hover .os-switch-tab-icon {
   color: var(--os-accent);
 }
@@ -326,8 +333,17 @@ body:has(#os-platform-win:checked) .os-switch-install-win {
 }
 
 .os-switch-download:hover .os-switch-download-date,
-.os-switch-download:focus-visible .os-switch-download-date {
-  color: rgba(255, 255, 255, 0.72);
+.os-switch-download:focus-visible .os-switch-download-date,
+.os-switch-download:hover .os-switch-download-version,
+.os-switch-download:focus-visible .os-switch-download-version,
+.os-switch-download:hover .os-switch-download-note,
+.os-switch-download:focus-visible .os-switch-download-note {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.os-switch-download:hover .os-switch-download-note,
+.os-switch-download:focus-visible .os-switch-download-note {
+  border-top-color: rgba(255, 255, 255, 0.32);
 }
 
 .os-switch-download:hover::after,
@@ -361,6 +377,23 @@ html[lang='ja'] .os-switch-download-main {
   line-height: 1.35;
   color: var(--ifm-color-emphasis-600);
   transition: color 0.2s ease;
+}
+
+.os-switch-download-version {
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--ifm-color-emphasis-600);
+  transition: color 0.2s ease;
+}
+
+.os-switch-download-note {
+  margin-top: 2px;
+  padding-top: 4px;
+  border-top: 1px dashed var(--ifm-color-emphasis-300);
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--ifm-color-emphasis-600);
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 /* ---------- SDK 页：复用下载卡外观（单张、无系统页签） ---------- */
@@ -567,6 +600,15 @@ html[lang='ja'] .os-switch-download-main {
     color: rgba(255, 255, 255, 0.72);
   }
 
+  .os-switch-download .os-switch-download-version,
+  .os-switch-download .os-switch-download-note {
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .os-switch-download .os-switch-download-note {
+    border-top-color: rgba(255, 255, 255, 0.32);
+  }
+
   .os-switch-download::after {
     background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
@@ -588,6 +630,10 @@ html[lang='ja'] .os-switch-download-main {
     font-size: 14px;
   }
 
+  .os-switch-tab-android .os-switch-tab-name {
+    font-size: 13px;
+  }
+
   .os-switch-panel {
     padding: 14px;
   }
@@ -604,6 +650,18 @@ html[lang='ja'] .os-switch-download-main {
 
   .os-switch-aux-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .os-switch-tab-android .os-switch-tab-name {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 330px) {
+  .os-switch-tab-android .os-switch-tab-name {
+    font-size: 10px;
   }
 }
 
@@ -775,4 +833,27 @@ body:has(#os-platform-android:checked) .os-changelog-android {
   body:has(#os-platform-android:checked) .os-changelog-android {
     animation: none;
   }
+}
+
+/* Meta 商店按钮：与下载卡同款，但用 Meta 图标 + 外链箭头 */
+.os-switch-download-store .os-switch-download-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.os-switch-download-logo {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.os-switch-download-store::after {
+  content: "\2197";
+}
+
+.os-switch-download-store:hover .os-switch-download-logo,
+.os-switch-download-store:focus-visible .os-switch-download-logo {
+  fill: currentColor;
 }
