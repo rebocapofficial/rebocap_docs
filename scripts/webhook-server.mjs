@@ -21,6 +21,7 @@ const PORT = parseInt(process.env.WEBHOOK_PORT || "9000", 10);
 const SECRET = process.env.WEBHOOK_SECRET;
 const FEISHU_WEBHOOK = process.env.FEISHU_WEBHOOK || "";
 const DEPLOY_SCRIPT = "bash scripts/deploy.sh";
+const MAX_PAYLOAD_BYTES = 25 * 1024 * 1024; // GitHub 单次投递上限约 25 MB
 
 if (!SECRET) {
   console.error("FATAL: WEBHOOK_SECRET env var is required.");
@@ -44,10 +45,16 @@ function notifyFeishu(title, detail) {
 // ─── Signature verification ──────────────────────────────────────────────────
 
 function verifySignature(payload, signature) {
-  if (!signature) return false;
+  if (!signature || typeof signature !== "string") return false;
+  // payload 必须是收到的原始字节（Buffer）。先转字符串再校验会在多字节 UTF-8
+  // 被 chunk 边界切断时算错 HMAC，表现为“签名验证失败”，但其实是中文提交信息把
+  // 字节切坏了，跟 WEBHOOK_SECRET 是否一致无关。
   const expected = "sha256=" + createHmac("sha256", SECRET).update(payload).digest("hex");
+  const expectedBuf = Buffer.from(expected);
+  const actualBuf = Buffer.from(signature);
+  if (expectedBuf.length !== actualBuf.length) return false;
   try {
-    return timingSafeEqual(Buffer.from(expected), Buffer.from(signature));
+    return timingSafeEqual(expectedBuf, actualBuf);
   } catch {
     return false;
   }
@@ -83,18 +90,37 @@ const server = createServer((req, res) => {
     const signature = req.headers["x-hub-signature-256"];
     const event = req.headers["x-github-event"];
 
-    let body = "";
-    req.on("data", (chunk) => (body += chunk));
+    // 按字节累积：逐块转字符串会切断多字节字符（中文提交信息），导致签名对不上
+    const chunks = [];
+    let size = 0;
+    req.on("data", (chunk) => {
+      size += chunk.length;
+      if (size > MAX_PAYLOAD_BYTES) {
+        req.destroy();
+        return;
+      }
+      chunks.push(chunk);
+    });
     req.on("end", () => {
+      const raw = Buffer.concat(chunks);
       // Verify signature
-      if (!verifySignature(body, signature)) {
-        console.log(`[${new Date().toISOString()}] Invalid signature — rejected`);
-        notifyFeishu("failure", "GitHub Webhook 签名验证失败，请检查 WEBHOOK_SECRET 是否一致");
+      if (!verifySignature(raw, signature)) {
+        const sigInfo = signature ? `${signature.slice(0, 12)}…` : "missing";
+        console.log(
+          `[${new Date().toISOString()}] Invalid signature — rejected ` +
+            `(payloadBytes=${raw.length}, signature=${sigInfo}, secretLength=${SECRET.length})`,
+        );
+        notifyFeishu(
+          "failure",
+          `GitHub Webhook 签名验证失败（payload ${raw.length} 字节，签名 ${sigInfo}）。` +
+            `多半是 WEBHOOK_SECRET 与 GitHub 上配置的不一致；若是大 payload 偶发失败，则可能是旧版本按字符串拼接切坏了 UTF-8。`,
+        );
         res.writeHead(401);
         res.end("Invalid signature");
         return;
       }
 
+      const body = raw.toString("utf8");
       // Only handle push events
       if (event !== "push") {
         res.writeHead(200);
