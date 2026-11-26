@@ -9,9 +9,13 @@ title: "Blender 插件下載"
 
 點擊下邊鏈接可直接下載：
 
-**Blender Plugin Beta 11.16**（2026.11.26）
-
-[Blender 3.6 或以上](https://doc.rebocap.com/img/blender_plugin/rebocap_blender_plugin_Beta11_16.zip)
+<div class="os-switch-downloads">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/blender_plugin/rebocap_blender_plugin_Beta11_16.zip" download="rebocap_blender_plugin_Beta11_16.zip">
+<span class="os-switch-download-main">下載 Blender Plugin Beta 11.16</span>
+<span class="os-switch-download-meta">Blender 3.6 或以上 · Python3.6~3.14</span>
+<span class="os-switch-download-date">更新時間：2026.11.26</span>
+</a>
+</div>
 
 :::warning 暫時回退到 Beta 11.16
 
@@ -19,9 +23,14 @@ Beta 11.20 收到異常執行回報，已暫停提供下載；問題定位並修
 
 :::
 
-**Blender Plugin Beta 9**（歷史版本）
+**歷史版本**
 
-[blender with python 3.6~3.12](https://doc.rebocap.com/img/files/rebocap_blender_plugin_v9.zip)
+<div class="os-switch-downloads">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_blender_plugin_v9.zip" download="rebocap_blender_plugin_v9.zip">
+<span class="os-switch-download-main">下載 Blender Plugin Beta 9</span>
+<span class="os-switch-download-meta">歷史版本 · blender with python 3.6~3.12</span>
+</a>
+</div>
 
 Beta 9 更新說明：
 

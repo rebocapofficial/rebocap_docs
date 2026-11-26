@@ -8,9 +8,13 @@ title: "Blender プラグインダウンロード"
 
 下のリンクをクリックすると直接ダウンロードできます：
 
-**Blender Plugin Beta 11.16**（2026.11.26）
-
-[Blender 3.6 以降](https://doc.rebocap.com/img/blender_plugin/rebocap_blender_plugin_Beta11_16.zip)
+<div class="os-switch-downloads">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/blender_plugin/rebocap_blender_plugin_Beta11_16.zip" download="rebocap_blender_plugin_Beta11_16.zip">
+<span class="os-switch-download-main">Blender Plugin Beta 11.16 をダウンロード</span>
+<span class="os-switch-download-meta">Blender 3.6 以降 · Python3.6~3.14</span>
+<span class="os-switch-download-date">更新日：2026.11.26</span>
+</a>
+</div>
 
 :::warning 一時的に Beta 11.16 へ戻しました
 
@@ -18,9 +22,14 @@ Beta 11.20 で異常動作の報告があったため、ダウンロードを停
 
 :::
 
-**Blender Plugin Beta 9**（過去のバージョン）
+**過去のバージョン**
 
-[blender with python 3.6~3.12](https://doc.rebocap.com/img/files/rebocap_blender_plugin_v9.zip)
+<div class="os-switch-downloads">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_blender_plugin_v9.zip" download="rebocap_blender_plugin_v9.zip">
+<span class="os-switch-download-main">Blender Plugin Beta 9 をダウンロード</span>
+<span class="os-switch-download-meta">過去のバージョン · blender with python 3.6~3.12</span>
+</a>
+</div>
 
 Beta 9 の更新情報：
 

@@ -6,9 +6,13 @@ title: "Téléchargement du Plugin Blender"
 
 Cliquez sur le lien ci-dessous pour télécharger directement :
 
-**Blender Plugin Beta 11.16** (2026.11.26)
-
-[Blender 3.6 et versions ultérieures](https://doc.rebocap.com/img/blender_plugin/rebocap_blender_plugin_Beta11_16.zip)
+<div class="os-switch-downloads">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/blender_plugin/rebocap_blender_plugin_Beta11_16.zip" download="rebocap_blender_plugin_Beta11_16.zip">
+<span class="os-switch-download-main">Télécharger Blender Plugin Beta 11.16</span>
+<span class="os-switch-download-meta">Blender 3.6 et versions ultérieures · Python3.6~3.14</span>
+<span class="os-switch-download-date">Date de mise à jour : 2026.11.26</span>
+</a>
+</div>
 
 :::warning Retour temporaire à Beta 11.16
 
@@ -16,9 +20,14 @@ Des rapports de dysfonctionnement ont été reçus pour Beta 11.20, son téléch
 
 :::
 
-**Blender Plugin Beta 9** (version précédente)
+**Version précédente**
 
-[blender avec python 3.6~3.12](https://doc.rebocap.com/img/files/rebocap_blender_plugin_v9.zip)
+<div class="os-switch-downloads">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_blender_plugin_v9.zip" download="rebocap_blender_plugin_v9.zip">
+<span class="os-switch-download-main">Télécharger Blender Plugin Beta 9</span>
+<span class="os-switch-download-meta">Version précédente · blender with python 3.6~3.12</span>
+</a>
+</div>
 
 Notes de la Beta 9 :
 

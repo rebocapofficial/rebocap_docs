@@ -857,3 +857,10 @@ body:has(#os-platform-android:checked) .os-changelog-android {
 .os-switch-download-store:focus-visible .os-switch-download-logo {
   fill: currentColor;
 }
+
+/* 下载卡也可以脱离 .os-switch 容器单独使用（例如 Blender 插件页） */
+.os-switch-downloads {
+  --os-accent: #88b49c;
+  --os-accent-ink: #10261a;
+  --os-radius: 10px;
+}

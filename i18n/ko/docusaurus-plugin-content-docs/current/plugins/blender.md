@@ -6,9 +6,13 @@ title: "Blender 플러그인 다운로드"
 
 직접 다운로드하려면 아래 링크를 클릭하세요:
 
-**Blender Plugin Beta 11.16** (2026.11.26)
-
-[Blender 3.6 이상](https://doc.rebocap.com/img/blender_plugin/rebocap_blender_plugin_Beta11_16.zip)
+<div class="os-switch-downloads">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/blender_plugin/rebocap_blender_plugin_Beta11_16.zip" download="rebocap_blender_plugin_Beta11_16.zip">
+<span class="os-switch-download-main">Blender Plugin Beta 11.16 다운로드</span>
+<span class="os-switch-download-meta">Blender 3.6 이상 · Python3.6~3.14</span>
+<span class="os-switch-download-date">업데이트 날짜: 2026.11.26</span>
+</a>
+</div>
 
 :::warning Beta 11.16으로 임시 롤백
 
@@ -16,9 +20,14 @@ Beta 11.20에서 비정상 동작 보고가 있어 다운로드를 중단했습�
 
 :::
 
-**Blender Plugin Beta 9** (이전 버전)
+**이전 버전**
 
-[blender with python 3.6~3.12](https://doc.rebocap.com/img/files/rebocap_blender_plugin_v9.zip)
+<div class="os-switch-downloads">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/rebocap_blender_plugin_v9.zip" download="rebocap_blender_plugin_v9.zip">
+<span class="os-switch-download-main">Blender Plugin Beta 9 다운로드</span>
+<span class="os-switch-download-meta">이전 버전 · blender with python 3.6~3.12</span>
+</a>
+</div>
 
 Beta 9 업데이트 내용:
 
