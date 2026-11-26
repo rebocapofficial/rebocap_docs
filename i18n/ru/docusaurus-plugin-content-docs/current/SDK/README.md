@@ -129,7 +129,7 @@ joints_smpl = [
 > 64-битный CPython 3.6 – 3.14 · требуется Microsoft Visual C++ 2015–2022 x64
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_Python_v3.zip" download="Rebocap_Windows_x64_Python_v3.zip">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/Rebocap_Windows_x64_Python_v3.zip" download="Rebocap_Windows_x64_Python_v3.zip">
 <span class="os-switch-download-main">Скачать Python SDK v3</span>
 <span class="os-switch-download-meta">Python 3.6 – 3.14 · x64</span>
 <span class="os-switch-download-date">Дата обновления: 2026.11.18</span>
@@ -138,7 +138,7 @@ joints_smpl = [
 
 <details class="plain-details sdk-history"><summary>Предыдущие версии</summary>
 <div style="margin-top: 10px;">
-<p><strong>Python SDK v2</strong> (совместимо с python3.6~python3.12): <a href="/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">скачать</a></p>
+<p><strong>Python SDK v2</strong> (совместимо с python3.6~python3.12): <a href="https://doc.rebocap.com/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">скачать</a></p>
 <p>исправлено взаимоблокирование <code>get_last_msg</code>; добавлены все версии python</p>
 </div>
 </details>
@@ -147,7 +147,7 @@ joints_smpl = [
 > Windows x64 · пример на .NET Framework 4.8 · требуется Microsoft Visual C++ 2015–2022 x64
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_CSharp_v3.zip" download="Rebocap_Windows_x64_CSharp_v3.zip">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/Rebocap_Windows_x64_CSharp_v3.zip" download="Rebocap_Windows_x64_CSharp_v3.zip">
 <span class="os-switch-download-main">Скачать C# SDK v3</span>
 <span class="os-switch-download-meta">C# · .NET Framework 4.8</span>
 <span class="os-switch-download-date">Дата обновления: 2026.11.18</span>
@@ -156,7 +156,7 @@ joints_smpl = [
 
 <details class="plain-details sdk-history"><summary>Предыдущие версии</summary>
 <div style="margin-top: 10px;">
-<p><strong>C# SDK v2</strong> (с демо Unity): <a href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">скачать</a></p>
+<p><strong>C# SDK v2</strong> (с демо Unity): <a href="https://doc.rebocap.com/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">скачать</a></p>
 <p>исправлено взаимоблокирование <code>get_last_msg</code></p>
 </div>
 </details>
@@ -165,7 +165,7 @@ joints_smpl = [
 > Windows x64 · C++17 · требуется Microsoft Visual C++ 2015–2022 x64
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_CPP_v3.zip" download="Rebocap_Windows_x64_CPP_v3.zip">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/Rebocap_Windows_x64_CPP_v3.zip" download="Rebocap_Windows_x64_CPP_v3.zip">
 <span class="os-switch-download-main">Скачать CPP SDK v3</span>
 <span class="os-switch-download-meta">C++ · C++17 · x64</span>
 <span class="os-switch-download-date">Дата обновления: 2026.11.18</span>
@@ -178,7 +178,7 @@ joints_smpl = [
 > Linux x86-64 · CPython 3.6 – 3.14 · собрано на Ubuntu 22.04, требуется GLIBC 2.34+ и GLIBCXX 3.4.29+
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/Rebocap_Linux_x86_64_Python.tar.gz" download="Rebocap_Linux_x86_64_Python.tar.gz">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/Rebocap_Linux_x86_64_Python.tar.gz" download="Rebocap_Linux_x86_64_Python.tar.gz">
 <span class="os-switch-download-main">Скачать Python SDK (Linux)</span>
 <span class="os-switch-download-meta">Python 3.6 – 3.14 · Ubuntu 22.04+</span>
 <span class="os-switch-download-date">Дата обновления: 2026.11.18</span>
@@ -189,7 +189,7 @@ joints_smpl = [
 > Linux x86-64 · C++17 · собрано на Ubuntu 22.04, требуется GLIBC 2.34+ и GLIBCXX 3.4.29+
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/Rebocap_Linux_x86_64_CPP.tar.gz" download="Rebocap_Linux_x86_64_CPP.tar.gz">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/Rebocap_Linux_x86_64_CPP.tar.gz" download="Rebocap_Linux_x86_64_CPP.tar.gz">
 <span class="os-switch-download-main">Скачать CPP SDK (Linux)</span>
 <span class="os-switch-download-meta">C++ · C++17 · Ubuntu 22.04+</span>
 <span class="os-switch-download-date">Дата обновления: 2026.11.18</span>

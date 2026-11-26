@@ -14,24 +14,24 @@ title: "UE 插件下載"
 <p>提供預編譯與原始碼下載，開發者可以自行使用原始碼製作額外功能。</p>
 <p class="ue-section-title" role="heading" aria-level="3">預編譯包</p>
 <div class="ue-version-strip ue-version-strip-sq">
-<a class="ue-version-card ue-version-card-sq ue-version-card-latest" href="/img/ue_plugin/v3/rebocap_UE_5.9_V3.zip" download="rebocap_UE_5.9_V3.zip"><span class="ue-version-card-name">UE 5.9</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.8_V3.zip" download="rebocap_UE_5.8_V3.zip"><span class="ue-version-card-name">UE 5.8</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.7_V3.zip" download="rebocap_UE_5.7_V3.zip"><span class="ue-version-card-name">UE 5.7</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.6_V3.zip" download="rebocap_UE_5.6_V3.zip"><span class="ue-version-card-name">UE 5.6</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.5_V3.zip" download="rebocap_UE_5.5_V3.zip"><span class="ue-version-card-name">UE 5.5</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.4_V3.zip" download="rebocap_UE_5.4_V3.zip"><span class="ue-version-card-name">UE 5.4</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.3_V3.zip" download="rebocap_UE_5.3_V3.zip"><span class="ue-version-card-name">UE 5.3</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.2_V3.zip" download="rebocap_UE_5.2_V3.zip"><span class="ue-version-card-name">UE 5.2</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.1_V3.zip" download="rebocap_UE_5.1_V3.zip"><span class="ue-version-card-name">UE 5.1</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.0_V3.zip" download="rebocap_UE_5.0_V3.zip"><span class="ue-version-card-name">UE 5.0</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_4.27_V3.zip" download="rebocap_UE_4.27_V3.zip"><span class="ue-version-card-name">UE 4.27</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_4.26_V3.zip" download="rebocap_UE_4.26_V3.zip"><span class="ue-version-card-name">UE 4.26</span></a>
+<a class="ue-version-card ue-version-card-sq ue-version-card-latest" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.9_V3.zip" download="rebocap_UE_5.9_V3.zip"><span class="ue-version-card-name">UE 5.9</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.8_V3.zip" download="rebocap_UE_5.8_V3.zip"><span class="ue-version-card-name">UE 5.8</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.7_V3.zip" download="rebocap_UE_5.7_V3.zip"><span class="ue-version-card-name">UE 5.7</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.6_V3.zip" download="rebocap_UE_5.6_V3.zip"><span class="ue-version-card-name">UE 5.6</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.5_V3.zip" download="rebocap_UE_5.5_V3.zip"><span class="ue-version-card-name">UE 5.5</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.4_V3.zip" download="rebocap_UE_5.4_V3.zip"><span class="ue-version-card-name">UE 5.4</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.3_V3.zip" download="rebocap_UE_5.3_V3.zip"><span class="ue-version-card-name">UE 5.3</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.2_V3.zip" download="rebocap_UE_5.2_V3.zip"><span class="ue-version-card-name">UE 5.2</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.1_V3.zip" download="rebocap_UE_5.1_V3.zip"><span class="ue-version-card-name">UE 5.1</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.0_V3.zip" download="rebocap_UE_5.0_V3.zip"><span class="ue-version-card-name">UE 5.0</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_4.27_V3.zip" download="rebocap_UE_4.27_V3.zip"><span class="ue-version-card-name">UE 4.27</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_4.26_V3.zip" download="rebocap_UE_4.26_V3.zip"><span class="ue-version-card-name">UE 4.26</span></a>
 </div>
 <p class="ue-note"><strong>對於藍圖專案，UE 要求版本必須匹配。</strong>引擎版本不符時，外掛會被 <code>out-of-date modules</code> 跳過。清單中沒有你所用的版本時，可以下載原始碼包自行編譯。</p>
 <p class="ue-section-title" role="heading" aria-level="3">原始碼（開發者自行編譯）</p>
 <div class="ue-version-strip ue-version-strip-source">
-<a class="ue-version-card" href="/img/ue_plugin/v3/Rebocap_Universal_Source_V3.zip" download="Rebocap_Universal_Source_V3.zip"><span class="ue-version-card-name">UE5 原始碼</span><span class="ue-version-card-meta">5.0 – 5.9 · 1.5 MB</span></a>
-<a class="ue-version-card" href="/img/ue_plugin/v3/Rebocap_UE4_Source_V3.zip" download="Rebocap_UE4_Source_V3.zip"><span class="ue-version-card-name">UE4 原始碼</span><span class="ue-version-card-meta">4.26 – 4.27 · 2.6 MB</span></a>
+<a class="ue-version-card" href="https://doc.rebocap.com/img/ue_plugin/v3/Rebocap_Universal_Source_V3.zip" download="Rebocap_Universal_Source_V3.zip"><span class="ue-version-card-name">UE5 原始碼</span><span class="ue-version-card-meta">5.0 – 5.9 · 1.5 MB</span></a>
+<a class="ue-version-card" href="https://doc.rebocap.com/img/ue_plugin/v3/Rebocap_UE4_Source_V3.zip" download="Rebocap_UE4_Source_V3.zip"><span class="ue-version-card-name">UE4 原始碼</span><span class="ue-version-card-meta">4.26 – 4.27 · 2.6 MB</span></a>
 </div>
 </div>
 
@@ -537,4 +537,4 @@ title: "UE 插件下載"
 
 > 注意：A-Pose 必須與官方一致，否則建議自行手動調整角度，將 A-Pose 處理成 T-Pose 的臨時角度檔保存；詳細做法請參考下方壓縮檔內的教學。
 
-<a href="/img/files/metahuman_change_tpose.zip" target="_blank" download="ue_ht_tpose.zip">下載</a>
+<a href="https://doc.rebocap.com/img/files/metahuman_change_tpose.zip" target="_blank" download="ue_ht_tpose.zip">下載</a>

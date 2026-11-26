@@ -12,24 +12,24 @@ title: "Descarga del Plugin de UE"
 <p>Se ofrecen paquetes precompilados y código fuente; los desarrolladores pueden crear funciones adicionales a partir del código.</p>
 <p class="ue-section-title" role="heading" aria-level="3">Paquetes precompilados</p>
 <div class="ue-version-strip ue-version-strip-sq">
-<a class="ue-version-card ue-version-card-sq ue-version-card-latest" href="/img/ue_plugin/v3/rebocap_UE_5.9_V3.zip" download="rebocap_UE_5.9_V3.zip"><span class="ue-version-card-name">UE 5.9</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.8_V3.zip" download="rebocap_UE_5.8_V3.zip"><span class="ue-version-card-name">UE 5.8</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.7_V3.zip" download="rebocap_UE_5.7_V3.zip"><span class="ue-version-card-name">UE 5.7</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.6_V3.zip" download="rebocap_UE_5.6_V3.zip"><span class="ue-version-card-name">UE 5.6</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.5_V3.zip" download="rebocap_UE_5.5_V3.zip"><span class="ue-version-card-name">UE 5.5</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.4_V3.zip" download="rebocap_UE_5.4_V3.zip"><span class="ue-version-card-name">UE 5.4</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.3_V3.zip" download="rebocap_UE_5.3_V3.zip"><span class="ue-version-card-name">UE 5.3</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.2_V3.zip" download="rebocap_UE_5.2_V3.zip"><span class="ue-version-card-name">UE 5.2</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.1_V3.zip" download="rebocap_UE_5.1_V3.zip"><span class="ue-version-card-name">UE 5.1</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_5.0_V3.zip" download="rebocap_UE_5.0_V3.zip"><span class="ue-version-card-name">UE 5.0</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_4.27_V3.zip" download="rebocap_UE_4.27_V3.zip"><span class="ue-version-card-name">UE 4.27</span></a>
-<a class="ue-version-card ue-version-card-sq" href="/img/ue_plugin/v3/rebocap_UE_4.26_V3.zip" download="rebocap_UE_4.26_V3.zip"><span class="ue-version-card-name">UE 4.26</span></a>
+<a class="ue-version-card ue-version-card-sq ue-version-card-latest" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.9_V3.zip" download="rebocap_UE_5.9_V3.zip"><span class="ue-version-card-name">UE 5.9</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.8_V3.zip" download="rebocap_UE_5.8_V3.zip"><span class="ue-version-card-name">UE 5.8</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.7_V3.zip" download="rebocap_UE_5.7_V3.zip"><span class="ue-version-card-name">UE 5.7</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.6_V3.zip" download="rebocap_UE_5.6_V3.zip"><span class="ue-version-card-name">UE 5.6</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.5_V3.zip" download="rebocap_UE_5.5_V3.zip"><span class="ue-version-card-name">UE 5.5</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.4_V3.zip" download="rebocap_UE_5.4_V3.zip"><span class="ue-version-card-name">UE 5.4</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.3_V3.zip" download="rebocap_UE_5.3_V3.zip"><span class="ue-version-card-name">UE 5.3</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.2_V3.zip" download="rebocap_UE_5.2_V3.zip"><span class="ue-version-card-name">UE 5.2</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.1_V3.zip" download="rebocap_UE_5.1_V3.zip"><span class="ue-version-card-name">UE 5.1</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_5.0_V3.zip" download="rebocap_UE_5.0_V3.zip"><span class="ue-version-card-name">UE 5.0</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_4.27_V3.zip" download="rebocap_UE_4.27_V3.zip"><span class="ue-version-card-name">UE 4.27</span></a>
+<a class="ue-version-card ue-version-card-sq" href="https://doc.rebocap.com/img/ue_plugin/v3/rebocap_UE_4.26_V3.zip" download="rebocap_UE_4.26_V3.zip"><span class="ue-version-card-name">UE 4.26</span></a>
 </div>
 <p class="ue-note"><strong>En proyectos de Blueprint la versión del motor debe coincidir exactamente.</strong> Un paquete de otra versión se omite con <code>out-of-date modules</code>. Si tu versión no aparece, descarga el código fuente y compílalo.</p>
 <p class="ue-section-title" role="heading" aria-level="3">Código fuente (compílalo tú mismo)</p>
 <div class="ue-version-strip ue-version-strip-source">
-<a class="ue-version-card" href="/img/ue_plugin/v3/Rebocap_Universal_Source_V3.zip" download="Rebocap_Universal_Source_V3.zip"><span class="ue-version-card-name">Fuente UE5</span><span class="ue-version-card-meta">5.0 – 5.9 · 1,5 MB</span></a>
-<a class="ue-version-card" href="/img/ue_plugin/v3/Rebocap_UE4_Source_V3.zip" download="Rebocap_UE4_Source_V3.zip"><span class="ue-version-card-name">Fuente UE4</span><span class="ue-version-card-meta">4.26 – 4.27 · 2,6 MB</span></a>
+<a class="ue-version-card" href="https://doc.rebocap.com/img/ue_plugin/v3/Rebocap_Universal_Source_V3.zip" download="Rebocap_Universal_Source_V3.zip"><span class="ue-version-card-name">Fuente UE5</span><span class="ue-version-card-meta">5.0 – 5.9 · 1,5 MB</span></a>
+<a class="ue-version-card" href="https://doc.rebocap.com/img/ue_plugin/v3/Rebocap_UE4_Source_V3.zip" download="Rebocap_UE4_Source_V3.zip"><span class="ue-version-card-name">Fuente UE4</span><span class="ue-version-card-meta">4.26 – 4.27 · 2,6 MB</span></a>
 </div>
 </div>
 

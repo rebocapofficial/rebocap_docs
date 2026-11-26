@@ -133,7 +133,7 @@ joints_smpl = [
 > 64-bit CPython 3.6 – 3.14 · requires the Microsoft Visual C++ 2015–2022 x64 runtime
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_Python_v3.zip" download="Rebocap_Windows_x64_Python_v3.zip">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/Rebocap_Windows_x64_Python_v3.zip" download="Rebocap_Windows_x64_Python_v3.zip">
 <span class="os-switch-download-main">Download Python SDK v3</span>
 <span class="os-switch-download-meta">Python 3.6 – 3.14 · x64</span>
 <span class="os-switch-download-date">Updated: 2026.11.18</span>
@@ -142,7 +142,7 @@ joints_smpl = [
 
 <details class="plain-details sdk-history"><summary>Previous versions</summary>
 <div style="margin-top: 10px;">
-<p><strong>Python SDK v2</strong> (compatible with python3.6~python3.12): <a href="/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">download</a></p>
+<p><strong>Python SDK v2</strong> (compatible with python3.6~python3.12): <a href="https://doc.rebocap.com/img/files/rebocap_ws_sdk_python_v2.zip" download="rebocap_python_sdk_v2.zip">download</a></p>
 <p>get_last_msg deadlock fixed; support for all <code>python</code> versions added</p>
 </div>
 </details>
@@ -151,7 +151,7 @@ joints_smpl = [
 > Windows x64 · .NET Framework 4.8 example · requires the Microsoft Visual C++ 2015–2022 x64 runtime
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_CSharp_v3.zip" download="Rebocap_Windows_x64_CSharp_v3.zip">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/Rebocap_Windows_x64_CSharp_v3.zip" download="Rebocap_Windows_x64_CSharp_v3.zip">
 <span class="os-switch-download-main">Download C# SDK v3</span>
 <span class="os-switch-download-meta">C# · .NET Framework 4.8</span>
 <span class="os-switch-download-date">Updated: 2026.11.18</span>
@@ -160,7 +160,7 @@ joints_smpl = [
 
 <details class="plain-details sdk-history"><summary>Previous versions</summary>
 <div style="margin-top: 10px;">
-<p><strong>C# SDK v2</strong> (with Unity demo): <a href="/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">download</a></p>
+<p><strong>C# SDK v2</strong> (with Unity demo): <a href="https://doc.rebocap.com/img/files/csharp_sdk_with_demo_v2.zip" download="rebocap_csharp_sdk_v2.zip">download</a></p>
 <p>get_last_msg deadlock fixed</p>
 </div>
 </details>
@@ -169,7 +169,7 @@ joints_smpl = [
 > Windows x64 · C++17 · requires the Microsoft Visual C++ 2015–2022 x64 runtime
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/Rebocap_Windows_x64_CPP_v3.zip" download="Rebocap_Windows_x64_CPP_v3.zip">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/Rebocap_Windows_x64_CPP_v3.zip" download="Rebocap_Windows_x64_CPP_v3.zip">
 <span class="os-switch-download-main">Download CPP SDK v3</span>
 <span class="os-switch-download-meta">C++ · C++17 · x64</span>
 <span class="os-switch-download-date">Updated: 2026.11.18</span>
@@ -182,7 +182,7 @@ joints_smpl = [
 > Linux x86-64 · CPython 3.6 – 3.14 · built on Ubuntu 22.04, requires GLIBC 2.34+ and GLIBCXX 3.4.29+
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/Rebocap_Linux_x86_64_Python.tar.gz" download="Rebocap_Linux_x86_64_Python.tar.gz">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/Rebocap_Linux_x86_64_Python.tar.gz" download="Rebocap_Linux_x86_64_Python.tar.gz">
 <span class="os-switch-download-main">Download Python SDK (Linux)</span>
 <span class="os-switch-download-meta">Python 3.6 – 3.14 · Ubuntu 22.04+</span>
 <span class="os-switch-download-date">Updated: 2026.11.18</span>
@@ -193,7 +193,7 @@ joints_smpl = [
 > Linux x86-64 · C++17 · built on Ubuntu 22.04, requires GLIBC 2.34+ and GLIBCXX 3.4.29+
 
 <div class="os-switch-downloads sdk-downloads">
-<a class="os-switch-download" href="/img/files/Rebocap_Linux_x86_64_CPP.tar.gz" download="Rebocap_Linux_x86_64_CPP.tar.gz">
+<a class="os-switch-download" href="https://doc.rebocap.com/img/files/Rebocap_Linux_x86_64_CPP.tar.gz" download="Rebocap_Linux_x86_64_CPP.tar.gz">
 <span class="os-switch-download-main">Download CPP SDK (Linux)</span>
 <span class="os-switch-download-meta">C++ · C++17 · Ubuntu 22.04+</span>
 <span class="os-switch-download-date">Updated: 2026.11.18</span>
