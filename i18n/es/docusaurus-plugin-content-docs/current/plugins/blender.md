@@ -6,13 +6,19 @@ title: "Descarga del Plugin de Blender"
 
 Haz clic en el enlace a continuación para descargar directamente:
 
-**Blender Plugin Beta 11.20** (2026.11.21)
+**Blender Plugin Beta 11.16** (2026.11.26)
 
-[Blender 3.6 y posteriores](/img/blender_plugin/rebocap_blender_plugin_Beta11_20_release_20261121.zip)
+[Blender 3.6 y posteriores](https://doc.rebocap.com/img/blender_plugin/rebocap_blender_plugin_Beta11_16.zip)
+
+:::warning Vuelta temporal a Beta 11.16
+
+Hemos recibido informes de funcionamiento anómalo en Beta 11.20, por lo que su descarga está pausada. Usa Beta 11.16 hasta que se publique la corrección.
+
+:::
 
 **Blender Plugin Beta 9** (versión anterior)
 
-[blender con python 3.6~3.12](/img/files/rebocap_blender_plugin_v9.zip)
+[blender con python 3.6~3.12](https://doc.rebocap.com/img/files/rebocap_blender_plugin_v9.zip)
 
 Notas de la Beta 9:
 

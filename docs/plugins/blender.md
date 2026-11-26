@@ -8,13 +8,19 @@ title: "Blender Plugin Download"
 
 Click the link below to download directly:
 
-**Blender Plugin Beta 11.20** (2026.11.21)
+**Blender Plugin Beta 11.16** (2026.11.26)
 
-[Blender 3.6 and later](/img/blender_plugin/rebocap_blender_plugin_Beta11_20_release_20261121.zip)
+[Blender 3.6 and later](https://doc.rebocap.com/img/blender_plugin/rebocap_blender_plugin_Beta11_16.zip)
+
+:::warning Temporarily rolled back to Beta 11.16
+
+We have received reports of abnormal behaviour in Beta 11.20, so its download has been paused. Please keep using Beta 11.16 until a fix is released.
+
+:::
 
 **Blender Plugin Beta 9** (previous version)
 
-[blender with python 3.6~3.12](/img/files/rebocap_blender_plugin_v9.zip)
+[blender with python 3.6~3.12](https://doc.rebocap.com/img/files/rebocap_blender_plugin_v9.zip)
 
 Beta 9 update notes:
 
