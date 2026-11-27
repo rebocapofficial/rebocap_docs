@@ -15,6 +15,9 @@
 /* ── 通用视频时间轴模块（VideoGuide） ──────────────────────────────────────── */
 @import '../components/VideoGuide/video-guide.css';
 
+/* ── 公告系统：浮卡 / 胶囊 / 公告总览页 ────────────────────────────────────── */
+@import './announcements.css';
+
 /* ── Font Stack ───────────────────────────────────────────────────────────
  * System fonts optimized for CJK + Latin scripts across all platforms.
  * No web font downloads — uses what's already installed on the user's OS.

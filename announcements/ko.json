@@ -1,0 +1,137 @@
+{
+  "locale": "ko",
+  "ui": {
+    "all": "전체",
+    "version": "버전 업데이트",
+    "notice": "중요 공지",
+    "maintenance": "점검",
+    "event": "이벤트",
+    "empty": "이 분류에는 아직 공지가 없습니다.",
+    "close": "닫기",
+    "details": "자세히 보기",
+    "pill": "공지",
+    "monthFormat": "{y}년 {m}월"
+  },
+  "items": [
+    {
+      "id": "2026-11-28-receiver-v8",
+      "type": "notice",
+      "level": "important",
+      "backfill": false,
+      "pinned": true,
+      "publishAt": "2026-11-28T10:00:00+08:00",
+      "expireAt": null,
+      "title": "리시버 V8 펌웨어 연결 끊김 문제",
+      "summary": "V8 펌웨어에서 USB 연결이 자주 끊깁니다. V7을 유지하고, 이미 업데이트했다면 V7로 되돌리세요.",
+      "body": [
+        "증상: 사용 중 리시버 연결이 끊기고, USB를 뽑았다 다시 꽂아야 복구됩니다.",
+        "조치: V7 펌웨어를 유지하세요. 이미 V8로 올린 리시버는 V7로 되돌려야 합니다.",
+        "향후: V9 펌웨어를 수정 중이며, 공개 시 이 페이지에서 다시 공지합니다."
+      ],
+      "link": {
+        "label": "펌웨어 안내 및 다운로드",
+        "href": "/ko/docs/tutorial/software_install#software-download"
+      }
+    },
+    {
+      "id": "2026-11-26-blender-rollback",
+      "type": "notice",
+      "level": "important",
+      "backfill": false,
+      "pinned": false,
+      "publishAt": "2026-11-26T18:00:00+08:00",
+      "expireAt": null,
+      "title": "Blender 플러그인 Beta 11.20 배포 중단",
+      "summary": "Beta 11.20에서 이상 동작이 보고되어 다운로드를 중단했습니다. Beta 11.16을 사용하세요.",
+      "body": [
+        "Beta 11.20의 이상 동작 보고를 받아 해당 버전의 다운로드를 내렸습니다.",
+        "수정 버전이 나올 때까지 Beta 11.16을 계속 사용하세요.",
+        "다른 경로로 11.20을 설치했다면 삭제하고 11.16으로 되돌리세요."
+      ],
+      "link": {
+        "label": "Blender 플러그인 다운로드",
+        "href": "/ko/docs/plugins/blender"
+      }
+    },
+    {
+      "id": "2026-11-21-ue-v3",
+      "type": "version",
+      "level": "normal",
+      "backfill": false,
+      "pinned": false,
+      "publishAt": "2026-11-21T12:00:00+08:00",
+      "expireAt": null,
+      "title": "UE 플러그인 V3 공개",
+      "summary": "V3는 UE 4.26 – 5.9를 지원합니다. 애니메이션 노드는 연결이 끊긴 뒤 자동으로 다시 연결되지 않습니다.",
+      "body": [
+        "지원 범위: UE 4.26 – 5.9, 버전별 zip과 UE5 / UE4 소스 패키지를 제공합니다.",
+        "동작 변경: V3부터 Live Link 연결이 끊기면 애니메이션 노드가 자동으로 다시 연결되지 않으니 수동으로 연결하세요.",
+        "업그레이드: 플러그인 폴더를 교체하고 에디터를 다시 시작한 뒤 Plugins에서 V3인지 확인하세요."
+      ],
+      "link": {
+        "label": "UE 플러그인 다운로드",
+        "href": "/ko/docs/plugins/ue#ue-plugin-download"
+      }
+    },
+    {
+      "id": "2026-11-21-android-preview-02",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-21T18:00:00+08:00",
+      "expireAt": null,
+      "title": "Android Preview 0.2 및 Meta 초대 링크 업데이트",
+      "summary": "Android Preview 0.2를 사용할 수 있습니다. Meta Horizon Store 베타 초대 링크도 갱신했습니다.",
+      "body": [
+        "Android Preview 0.2는 트래커 V16 / V17, 리시버 V6 / V7 / V8을 지원합니다.",
+        "Meta Horizon Store 베타 초대 링크가 갱신되었습니다. 다운로드 페이지의 새 카드를 사용하세요.",
+        "다운로드 페이지에서 Android와 Meta가 별도 탭으로 분리되었습니다."
+      ],
+      "link": {
+        "label": "Android / Meta 다운로드",
+        "href": "/ko/docs/tutorial/software_install#software-download"
+      }
+    },
+    {
+      "id": "2026-11-18-sdk-v3",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-18T12:00:00+08:00",
+      "expireAt": null,
+      "title": "SDK v3 빌드 업데이트 (Windows / Linux)",
+      "summary": "Python, C#, C++ 새 빌드가 올라왔고 Linux 패키지는 별도 구역으로 분리되었습니다.",
+      "body": [
+        "다운로드가 Windows와 Linux로 나뉘어 플랫폼을 혼동할 일이 없습니다.",
+        "Python, C#, C++ 빌드를 갱신했으며 이전 빌드는 접이식 기록에 남아 있습니다.",
+        "각 다운로드에 업데이트 날짜가 표시됩니다."
+      ],
+      "link": {
+        "label": "SDK 다운로드",
+        "href": "/ko/docs/SDK/"
+      }
+    },
+    {
+      "id": "2026-11-11-v02-beta022",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-11T12:00:00+08:00",
+      "expireAt": null,
+      "title": "Rebocap V02 Beta02.2(gray02-2) 그레이 배포",
+      "summary": "강한 자기 간섭 환경과 새 UI 모듈을 위한 그레이 버전입니다. 처음 사용자는 V01을 쓰세요.",
+      "body": [
+        "트래커 V16, 리시버 V6 / V7 / V8을 지원합니다.",
+        "금속이 많은 곳이나 트램폴린처럼 자기장 환경이 나쁜 장소, 새 UI 모듈을 먼저 써보려는 사용자에게 적합합니다.",
+        "그레이 버전이므로 처음 사용하는 분은 안정 버전 V01을 먼저 사용하세요."
+      ],
+      "link": {
+        "label": "소프트웨어 다운로드",
+        "href": "/ko/docs/tutorial/software_install#software-download"
+      }
+    }
+  ]
+}

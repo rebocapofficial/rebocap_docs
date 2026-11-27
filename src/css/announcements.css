@@ -1,0 +1,752 @@
+/**
+ * Rebocap 公告系统样式
+ * 所有类名统一加 ann- 前缀，避免和文档正文的通用类（date / badge / chip）打架。
+ * 颜色尽量走 Infima 变量，暗色模式自动适配。
+ */
+
+:root {
+  --ann-color-version: #2e8555;
+  --ann-color-notice: #b42318;
+  --ann-color-maintenance: #175cd3;
+  --ann-color-event: #a4349b;
+  --ann-radius: 14px;
+  --ann-shadow: 0 18px 44px -18px rgba(16, 24, 40, 0.3), 0 3px 10px -4px rgba(16, 24, 40, 0.1);
+}
+
+[data-theme='dark'] {
+  --ann-color-version: #46c98a;
+  --ann-color-notice: #ff9086;
+  --ann-color-maintenance: #7db4ff;
+  --ann-color-event: #e39bdc;
+  --ann-shadow: 0 18px 44px -18px rgba(0, 0, 0, 0.85), 0 3px 10px -4px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================================
+   浮卡（默认形态）：左下角，不遮正文、不锁滚动
+   ============================================================ */
+.ann-card {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 70;
+  width: 360px;
+  padding: 15px 16px 13px;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ann-radius);
+  box-shadow: var(--ann-shadow);
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  animation: ann-card-in 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.ann-card:hover {
+  transform: translateY(-2px);
+}
+
+@keyframes ann-card-in {
+  from { opacity: 0; transform: translateY(14px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+.ann-card__accent {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, #d373aa, #8b7fd0 48%, #6d97cf);
+}
+
+.ann-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 2px 0 7px;
+}
+
+.ann-card__date {
+  font-size: 11.5px;
+  color: var(--ifm-color-emphasis-600);
+  font-variant-numeric: tabular-nums;
+}
+
+.ann-card__title {
+  margin: 0 0 5px;
+  font-size: 14.5px;
+  font-weight: 700;
+  line-height: 1.42;
+  letter-spacing: -0.01em;
+  color: var(--ifm-font-color-base);
+  padding-right: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ann-card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 拉伸链接：点卡片任意位置都进公告页 */
+.ann-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.ann-card__sum {
+  margin: 0 0 11px;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-700);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ann-card__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ann-card__dots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.ann-card__dot {
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-300);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ann-card__dot.is-active {
+  width: 14px;
+  background: var(--ifm-color-primary);
+}
+
+.ann-card__go {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ifm-color-primary-dark);
+}
+
+.ann-card__go svg {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.16s;
+}
+
+.ann-card:hover .ann-card__go svg {
+  transform: translateX(2px);
+}
+
+.ann-card__close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  z-index: 2;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ifm-color-emphasis-600);
+  cursor: pointer;
+}
+
+.ann-card__close:hover {
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-font-color-base);
+}
+
+.ann-card__close svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* 12 秒倒计时（悬停暂停；收起由 JS 计时器负责） */
+.ann-card__progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 45%, transparent);
+  transform-origin: left;
+  animation: ann-progress 12s linear forwards;
+}
+
+.ann-card:hover .ann-card__progress {
+  animation-play-state: paused;
+}
+
+@keyframes ann-progress {
+  from { transform: scaleX(1); }
+  to { transform: scaleX(0); }
+}
+
+/* 收起后的胶囊 */
+.ann-pill {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 70;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 13px 0 9px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 999px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-emphasis-800);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 26px -12px rgba(16, 24, 40, 0.35);
+  animation: ann-card-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.ann-pill:hover {
+  transform: translateY(-1px);
+}
+
+.ann-pill__icon {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(140deg, #d373aa, #6d97cf);
+  color: #fff;
+}
+
+.ann-pill__icon svg {
+  width: 12px;
+  height: 12px;
+}
+
+.ann-pill__num {
+  min-width: 17px;
+  height: 17px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: #e5484d;
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: center;
+}
+
+/* ============================================================
+   文档首页顶部的公告条：一次一条，来回滚动
+   ============================================================ */
+.ann-ticker {
+  position: relative;
+  margin: 0 0 20px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+  overflow: hidden;
+}
+
+.ann-ticker__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 46px;
+  padding: 0 14px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.ann-ticker__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+  height: 22px;
+  padding-right: 12px;
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ifm-color-primary-dark);
+}
+
+.ann-ticker__label svg {
+  width: 14px;
+  height: 14px;
+}
+
+.ann-ticker__viewport {
+  flex: 1;
+  min-width: 0;
+  height: 46px;
+  overflow: hidden;
+}
+
+.ann-ticker__track {
+  display: block; /* inline 元素上的 transform 不生效，必须 block */
+  height: 100%;
+  transition: transform 0.96s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ann-ticker__track.is-static {
+  transition: none;
+}
+
+.ann-ticker__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.ann-ticker__date {
+  flex: none;
+  font-size: 12px;
+  color: var(--ifm-color-emphasis-600);
+  font-variant-numeric: tabular-nums;
+}
+
+.ann-ticker__badge {
+  flex: none;
+  height: 19px;
+  padding: 0 7px;
+  font-size: 11px;
+}
+
+.ann-ticker__title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ifm-font-color-base);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ann-ticker__link:hover .ann-ticker__title {
+  color: var(--ifm-color-primary-dark);
+}
+
+.ann-ticker__more {
+  flex: none;
+  font-size: 14px;
+  color: var(--ifm-color-emphasis-500);
+}
+
+/* 进度条：沿用 SteamVR 轮播（.html-carousel-progress-bar）的观感 */
+.ann-ticker__progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  overflow: hidden;
+  opacity: 0.6;
+  background: rgba(128, 128, 128, 0.2);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+
+.ann-ticker__progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--ifm-color-primary, #555);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: ann-ticker-progress var(--ann-dwell, 4000ms) linear forwards;
+}
+
+.ann-ticker.is-paused .ann-ticker__progress::after {
+  animation-play-state: paused;
+}
+
+@keyframes ann-ticker-progress {
+  to { transform: scaleX(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ann-ticker__progress::after {
+    animation: none;
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 720px) {
+  .ann-ticker__link {
+    height: 42px;
+    gap: 10px;
+    padding: 0 12px;
+  }
+
+  .ann-ticker__viewport {
+    height: 42px;
+  }
+
+  .ann-ticker__date {
+    display: none;
+  }
+
+  .ann-ticker__title {
+    font-size: 12.5px;
+  }
+}
+
+/* ============================================================
+   徽章
+   ============================================================ */
+.ann-badge {
+  --ann-c: var(--ifm-color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 21px;
+  padding: 0 8px;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ann-c);
+  background: color-mix(in srgb, var(--ann-c) 11%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ann-c) 22%, transparent);
+}
+
+.ann-badge--version { --ann-c: var(--ann-color-version); }
+.ann-badge--notice { --ann-c: var(--ann-color-notice); }
+.ann-badge--maintenance { --ann-c: var(--ann-color-maintenance); }
+.ann-badge--event { --ann-c: var(--ann-color-event); }
+
+.ann-new {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background: linear-gradient(135deg, #e8739e, #d373aa);
+  border-radius: 4px;
+  padding: 2px 5px;
+  line-height: 1.25;
+}
+
+/* ============================================================
+   公告总览页
+   ============================================================ */
+.ann-page {
+  margin: 4px 0 40px;
+}
+
+.ann-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 24px;
+}
+
+.ann-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 32px;
+  padding: 0 13px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-emphasis-700);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ann-chip:hover {
+  border-color: var(--ifm-color-emphasis-500);
+  color: var(--ifm-font-color-base);
+}
+
+.ann-chip[aria-selected='true'] {
+  /* 注意：本站 light mode 的 --ifm-background-color 是 transparent，不能拿来当文字色 */
+  background: var(--ifm-font-color-base);
+  border-color: var(--ifm-font-color-base);
+  color: var(--ifm-background-surface-color);
+  font-weight: 600;
+}
+
+.ann-chip__num {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.ann-month {
+  margin: 26px 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ifm-color-emphasis-600);
+  text-transform: uppercase;
+}
+
+.ann-group:first-of-type .ann-month {
+  margin-top: 8px;
+}
+
+.ann-item {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  scroll-margin-top: 84px;
+}
+
+.ann-item__head {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr) 18px;
+  gap: 16px;
+  align-items: start;
+  width: 100%;
+  padding: 16px 8px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.ann-item__head:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.ann-item__date {
+  display: block;
+  padding-top: 2px;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-700);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.ann-item__inline-date {
+  display: none;
+  font-size: 11.5px;
+  color: var(--ifm-color-emphasis-600);
+  font-variant-numeric: tabular-nums;
+}
+
+.ann-item__main {
+  min-width: 0;
+}
+
+.ann-item__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.ann-item__title {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: var(--ifm-font-color-base);
+}
+
+.ann-item__head:hover .ann-item__title {
+  color: var(--ifm-color-primary-dark);
+}
+
+.ann-item__sum {
+  display: block;
+  font-size: 13px;
+  color: var(--ifm-color-emphasis-700);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.ann-item__chev {
+  padding-top: 5px;
+  color: var(--ifm-color-emphasis-600);
+  transition: transform 0.18s;
+}
+
+.ann-item__chev svg {
+  width: 15px;
+  height: 15px;
+}
+
+.ann-item.is-open .ann-item__chev {
+  transform: rotate(90deg);
+  color: var(--ifm-color-primary);
+}
+
+.ann-item__body {
+  padding: 2px 8px 20px 76px;
+}
+
+.ann-item__body ul {
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 7px;
+}
+
+.ann-item__body li {
+  position: relative;
+  padding-left: 15px;
+  font-size: 13.2px;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.ann-item__body li::before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--ifm-color-primary) 55%, transparent);
+}
+
+.ann-item__go {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+}
+
+.ann-item__go svg {
+  width: 13px;
+  height: 13px;
+}
+
+.ann-empty {
+  padding: 40px 0;
+  text-align: center;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 13.5px;
+}
+
+/* ============================================================
+   窄屏：浮卡变贴底短条（只占 ~58px，不压正文段落）
+   ============================================================ */
+@media (max-width: 1100px) {
+  .ann-card {
+    left: 10px;
+    right: 10px;
+    bottom: calc(10px + env(safe-area-inset-bottom));
+    width: auto;
+    min-height: 58px;
+    padding: 11px 40px 11px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .ann-card__meta {
+    margin: 0;
+    order: 2;
+  }
+
+  .ann-card__title {
+    order: 1;
+    margin: 0;
+    padding-right: 0;
+    font-size: 13.5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+  }
+
+  .ann-card__sum,
+  .ann-card__foot {
+    display: none;
+  }
+
+  .ann-card__close {
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+  }
+
+  .ann-pill {
+    left: auto;
+    right: 12px;
+    bottom: calc(76px + env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-width: 720px) {
+  .ann-card {
+    padding-right: 38px;
+  }
+
+  /* 手机上收掉日期列，日期并进 meta 行，避免挤占标题宽度 */
+  .ann-item__head {
+    grid-template-columns: minmax(0, 1fr) 16px;
+    gap: 8px;
+    padding: 14px 0;
+  }
+
+  .ann-item__date {
+    display: none;
+  }
+
+  .ann-item__inline-date {
+    display: inline;
+  }
+
+  .ann-item__title {
+    font-size: 15px;
+  }
+
+  .ann-item__body {
+    padding: 2px 0 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ann-card,
+  .ann-pill,
+  .ann-card__progress {
+    animation: none;
+  }
+}

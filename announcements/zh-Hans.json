@@ -1,0 +1,137 @@
+{
+  "locale": "zh-Hans",
+  "ui": {
+    "all": "全部",
+    "version": "版本更新",
+    "notice": "重要通知",
+    "maintenance": "维护",
+    "event": "活动",
+    "empty": "这个分类下还没有公告",
+    "close": "关闭",
+    "details": "查看详情",
+    "pill": "公告",
+    "monthFormat": "{y} 年 {m} 月"
+  },
+  "items": [
+    {
+      "id": "2026-11-28-receiver-v8",
+      "type": "notice",
+      "level": "important",
+      "backfill": false,
+      "pinned": true,
+      "publishAt": "2026-11-28T10:00:00+08:00",
+      "expireAt": null,
+      "title": "接收器 V8 固件断连问题说明",
+      "summary": "V8 固件会导致 USB 频繁断连。请保持在 V7，已升级的请回刷 V7。",
+      "body": [
+        "现象：接收器会在使用中异常断连，需要反复拔插 USB 才能恢复。",
+        "处理：请保持在 V7 固件；已经升级到 V8 的接收器，请回刷 V7。",
+        "后续：V9 固件正在修复，发布后会在本页再次公告。"
+      ],
+      "link": {
+        "label": "查看固件说明与下载",
+        "href": "/zh-Hans/docs/tutorial/software_install#software-download"
+      }
+    },
+    {
+      "id": "2026-11-26-blender-rollback",
+      "type": "notice",
+      "level": "important",
+      "backfill": false,
+      "pinned": false,
+      "publishAt": "2026-11-26T18:00:00+08:00",
+      "expireAt": null,
+      "title": "Blender 插件 Beta 11.20 暂停下载",
+      "summary": "Beta 11.20 收到异常反馈，下载已暂停。请继续使用 Beta 11.16。",
+      "body": [
+        "已收到 Beta 11.20 的异常行为反馈，该版本的下载入口已下架。",
+        "请继续使用 Beta 11.16，直到修复版发布。",
+        "已从其他渠道安装 11.20 的，建议卸载并换回 11.16。"
+      ],
+      "link": {
+        "label": "查看 Blender 插件下载",
+        "href": "/zh-Hans/docs/plugins/blender"
+      }
+    },
+    {
+      "id": "2026-11-21-ue-v3",
+      "type": "version",
+      "level": "normal",
+      "backfill": false,
+      "pinned": false,
+      "publishAt": "2026-11-21T12:00:00+08:00",
+      "expireAt": null,
+      "title": "UE 插件 V3 发布",
+      "summary": "V3 已上线，覆盖 UE 4.26 – 5.9。注意：动画节点断线后不再自动重连。",
+      "body": [
+        "支持范围：UE 4.26 – 5.9，提供逐版本 zip 与 UE5 / UE4 源码包。",
+        "行为变更：V3 起，Live Link 断开后动画节点不会自动重连，需要手动重连。",
+        "升级方式：替换插件目录，重启编辑器，在 Plugins 中确认版本为 V3。"
+      ],
+      "link": {
+        "label": "查看 UE 插件下载",
+        "href": "/zh-Hans/docs/plugins/ue#ue-plugin-download"
+      }
+    },
+    {
+      "id": "2026-11-21-android-preview-02",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-21T18:00:00+08:00",
+      "expireAt": null,
+      "title": "Android Preview 0.2 与 Meta 邀请链接更新",
+      "summary": "Android Preview 0.2 已可下载，Meta Horizon Store 测试邀请链接已更新。",
+      "body": [
+        "Android Preview 0.2 支持追踪器 V16 / V17、接收器 V6 / V7 / V8。",
+        "Meta Horizon Store 测试邀请链接已更新，请使用下载页的新卡片。",
+        "下载页的 Android 与 Meta 已拆成独立分页。"
+      ],
+      "link": {
+        "label": "查看 Android / Meta 下载",
+        "href": "/zh-Hans/docs/tutorial/software_install#software-download"
+      }
+    },
+    {
+      "id": "2026-11-18-sdk-v3",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-18T12:00:00+08:00",
+      "expireAt": null,
+      "title": "SDK v3 构建更新（Windows / Linux）",
+      "summary": "Python、C#、C++ 新构建包上线，Linux 包已单独分区。",
+      "body": [
+        "下载区按 Windows / Linux 分开，避免拿错平台。",
+        "Python、C#、C++ 构建包已更新，旧版本仍保留在折叠的历史版本中。",
+        "每个下载项都标注了更新时间。"
+      ],
+      "link": {
+        "label": "查看 SDK 下载",
+        "href": "/zh-Hans/docs/SDK/"
+      }
+    },
+    {
+      "id": "2026-11-11-v02-beta022",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-11T12:00:00+08:00",
+      "expireAt": null,
+      "title": "Rebocap V02 Beta02.2（gray02-2）灰度开放",
+      "summary": "面向强磁干扰环境与新 UI 模块的灰度版本；新手请先用 V01 正式版。",
+      "body": [
+        "支持追踪器 V16、接收器 V6 / V7 / V8。",
+        "适合金属多、蹦床等磁场环境较差的场地，以及想尝鲜新 UI 模块的用户。",
+        "这是灰度版本，新用户建议先使用稳定的 V01。"
+      ],
+      "link": {
+        "label": "查看软件下载",
+        "href": "/zh-Hans/docs/tutorial/software_install#software-download"
+      }
+    }
+  ]
+}

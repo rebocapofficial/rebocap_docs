@@ -1,0 +1,137 @@
+{
+  "locale": "en",
+  "ui": {
+    "all": "All",
+    "version": "Version update",
+    "notice": "Important",
+    "maintenance": "Maintenance",
+    "event": "Event",
+    "empty": "No announcements in this category yet.",
+    "close": "Close",
+    "details": "View details",
+    "pill": "Notices",
+    "monthFormat": "{y}-{m}"
+  },
+  "items": [
+    {
+      "id": "2026-11-28-receiver-v8",
+      "type": "notice",
+      "level": "important",
+      "backfill": false,
+      "pinned": true,
+      "publishAt": "2026-11-28T10:00:00+08:00",
+      "expireAt": null,
+      "title": "Receiver firmware V8: disconnection issue",
+      "summary": "Firmware V8 causes frequent USB disconnects. Stay on V7; if you already updated, flash back to V7.",
+      "body": [
+        "Symptom: the receiver disconnects during use and only recovers after unplugging and replugging the USB receiver.",
+        "Action: stay on V7. Receivers already on V8 should be flashed back to V7.",
+        "Next: V9 is being fixed and will be announced here when released."
+      ],
+      "link": {
+        "label": "Firmware notes and downloads",
+        "href": "/docs/tutorial/software_install#software-download"
+      }
+    },
+    {
+      "id": "2026-11-26-blender-rollback",
+      "type": "notice",
+      "level": "important",
+      "backfill": false,
+      "pinned": false,
+      "publishAt": "2026-11-26T18:00:00+08:00",
+      "expireAt": null,
+      "title": "Blender plugin Beta 11.20 paused",
+      "summary": "Beta 11.20 has abnormal behaviour reports; its download is paused. Keep using Beta 11.16.",
+      "body": [
+        "We received reports of abnormal behaviour in Beta 11.20, so its download has been taken down.",
+        "Keep using Beta 11.16 until a fixed build is released.",
+        "If you installed 11.20 from another source, uninstall it and go back to 11.16."
+      ],
+      "link": {
+        "label": "Blender plugin downloads",
+        "href": "/docs/plugins/blender"
+      }
+    },
+    {
+      "id": "2026-11-21-ue-v3",
+      "type": "version",
+      "level": "normal",
+      "backfill": false,
+      "pinned": false,
+      "publishAt": "2026-11-21T12:00:00+08:00",
+      "expireAt": null,
+      "title": "Rebocap for UE plugin V3 released",
+      "summary": "V3 is live for UE 4.26 – 5.9. Note: the anim node no longer reconnects automatically.",
+      "body": [
+        "Supported engines: UE 4.26 – 5.9, with per-version zips plus UE5 / UE4 source packages.",
+        "Behaviour change: since V3 the anim node does not reconnect automatically after Live Link disconnects; reconnect manually.",
+        "To upgrade: replace the plugin folder, restart the editor, and check that Plugins shows V3."
+      ],
+      "link": {
+        "label": "UE plugin downloads",
+        "href": "/docs/plugins/ue#ue-plugin-download"
+      }
+    },
+    {
+      "id": "2026-11-21-android-preview-02",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-21T18:00:00+08:00",
+      "expireAt": null,
+      "title": "Android Preview 0.2 and Meta invite link",
+      "summary": "Android Preview 0.2 is available; the Meta Horizon Store beta invite link has been updated.",
+      "body": [
+        "Android Preview 0.2 supports tracker V16 / V17 and receiver V6 / V7 / V8.",
+        "The Meta Horizon Store beta invite link has been refreshed — use the new card on the download page.",
+        "Android and Meta now have separate tabs on the download page."
+      ],
+      "link": {
+        "label": "Android / Meta downloads",
+        "href": "/docs/tutorial/software_install#software-download"
+      }
+    },
+    {
+      "id": "2026-11-18-sdk-v3",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-18T12:00:00+08:00",
+      "expireAt": null,
+      "title": "SDK v3 builds updated (Windows / Linux)",
+      "summary": "New Python, C# and C++ builds; Linux packages are now listed separately.",
+      "body": [
+        "Downloads are now split into Windows and Linux sections, so you cannot pick the wrong platform.",
+        "Python, C# and C++ builds have been refreshed; older builds stay in the collapsed history sections.",
+        "Every download shows its update date."
+      ],
+      "link": {
+        "label": "SDK downloads",
+        "href": "/docs/SDK/"
+      }
+    },
+    {
+      "id": "2026-11-11-v02-beta022",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-11T12:00:00+08:00",
+      "expireAt": null,
+      "title": "Rebocap V02 Beta02.2 (gray02-2) gray release",
+      "summary": "A gray release for strong magnetic interference and the new UI modules. New users should stay on V01.",
+      "body": [
+        "Supports tracker V16 and receiver V6 / V7 / V8.",
+        "Recommended for areas with heavy metal or trampolines, and for trying the new UI modules.",
+        "This is a gray release; if you are new to Rebocap, use the stable V01 first."
+      ],
+      "link": {
+        "label": "Software downloads",
+        "href": "/docs/tutorial/software_install#software-download"
+      }
+    }
+  ]
+}

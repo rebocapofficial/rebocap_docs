@@ -36,7 +36,8 @@
     "UE": "UE",
     "Unity": "Unity",
     "SDK": "SDK",
-    "产品认证": "产品认证"
+    "产品认证": "产品认证",
+    "公告": "公告"
   },
   "en": {
     "REBOCAP 文档": "REBOCAP Documentation",
@@ -75,7 +76,8 @@
     "UE": "UE",
     "Unity": "Unity",
     "SDK": "SDK",
-    "产品认证": "Product Certification"
+    "产品认证": "Product Certification",
+    "公告": "Announcements"
   },
   "zh-Hant": {
     "REBOCAP 文档": "REBOCAP 文件",
@@ -114,7 +116,8 @@
     "UE": "UE",
     "Unity": "Unity",
     "SDK": "SDK",
-    "产品认证": "產品認證"
+    "产品认证": "產品認證",
+    "公告": "公告"
   },
   "ja": {
     "REBOCAP 文档": "REBOCAP ドキュメント",
@@ -153,7 +156,8 @@
     "UE": "UE",
     "Unity": "Unity",
     "SDK": "SDK",
-    "产品认证": "製品認証"
+    "产品认证": "製品認証",
+    "公告": "お知らせ"
   },
   "es": {
     "REBOCAP 文档": "Documentación de REBOCAP",
@@ -192,7 +196,8 @@
     "UE": "UE",
     "Unity": "Unity",
     "SDK": "SDK",
-    "产品认证": "Certificación del producto"
+    "产品认证": "Certificación del producto",
+    "公告": "Anuncios"
   },
   "fr": {
     "REBOCAP 文档": "Documentation REBOCAP",
@@ -231,7 +236,8 @@
     "UE": "UE",
     "Unity": "Unity",
     "SDK": "SDK",
-    "产品认证": "Certification du produit"
+    "产品认证": "Certification du produit",
+    "公告": "Annonces"
   },
   "ko": {
     "REBOCAP 文档": "REBOCAP 문서",
@@ -270,7 +276,8 @@
     "UE": "UE",
     "Unity": "Unity",
     "SDK": "SDK",
-    "产品认证": "제품 인증"
+    "产品认证": "제품 인증",
+    "公告": "공지사항"
   },
   "ru": {
     "REBOCAP 文档": "Документация REBOCAP",
@@ -309,6 +316,7 @@
     "UE": "UE",
     "Unity": "Unity",
     "SDK": "SDK",
-    "产品认证": "Сертификация продукта"
+    "产品认证": "Сертификация продукта",
+    "公告": "Объявления"
   }
 }

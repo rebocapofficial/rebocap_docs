@@ -1,0 +1,137 @@
+{
+  "locale": "ja",
+  "ui": {
+    "all": "すべて",
+    "version": "バージョン更新",
+    "notice": "重要なお知らせ",
+    "maintenance": "メンテナンス",
+    "event": "イベント",
+    "empty": "このカテゴリにはまだお知らせがありません。",
+    "close": "閉じる",
+    "details": "詳細を見る",
+    "pill": "お知らせ",
+    "monthFormat": "{y}年{m}月"
+  },
+  "items": [
+    {
+      "id": "2026-11-28-receiver-v8",
+      "type": "notice",
+      "level": "important",
+      "backfill": false,
+      "pinned": true,
+      "publishAt": "2026-11-28T10:00:00+08:00",
+      "expireAt": null,
+      "title": "レシーバー V8 ファームウェアの切断問題",
+      "summary": "V8 ファームウェアで USB 切断が頻発します。V7 のままにするか、V8 の場合は V7 に戻してください。",
+      "body": [
+        "症状：使用中にレシーバーが切断され、USB を抜き差ししないと復帰しません。",
+        "対応：V7 のままご利用ください。V8 に更新済みのレシーバーは V7 に戻してください。",
+        "今後：V9 ファームウェアを修正中です。公開時に本ページで再度お知らせします。"
+      ],
+      "link": {
+        "label": "ファームウェアの説明とダウンロード",
+        "href": "/ja/docs/tutorial/software_install#software-download"
+      }
+    },
+    {
+      "id": "2026-11-26-blender-rollback",
+      "type": "notice",
+      "level": "important",
+      "backfill": false,
+      "pinned": false,
+      "publishAt": "2026-11-26T18:00:00+08:00",
+      "expireAt": null,
+      "title": "Blender プラグイン Beta 11.20 を一時停止",
+      "summary": "Beta 11.20 で異常報告があったためダウンロードを停止しました。Beta 11.16 をご利用ください。",
+      "body": [
+        "Beta 11.20 の異常動作の報告を受け、該当バージョンのダウンロードを停止しました。",
+        "修正版が公開されるまで Beta 11.16 をご利用ください。",
+        "他の経路で 11.20 を導入済みの場合は、アンインストールして 11.16 に戻してください。"
+      ],
+      "link": {
+        "label": "Blender プラグインのダウンロード",
+        "href": "/ja/docs/plugins/blender"
+      }
+    },
+    {
+      "id": "2026-11-21-ue-v3",
+      "type": "version",
+      "level": "normal",
+      "backfill": false,
+      "pinned": false,
+      "publishAt": "2026-11-21T12:00:00+08:00",
+      "expireAt": null,
+      "title": "UE プラグイン V3 を公開",
+      "summary": "V3 は UE 4.26 – 5.9 に対応。アニメノードは切断後に自動再接続しなくなります。",
+      "body": [
+        "対応範囲：UE 4.26 – 5.9。バージョン別 zip と UE5 / UE4 のソースパッケージを用意しています。",
+        "動作変更：V3 以降、Live Link 切断後にアニメノードは自動再接続しません。手動で再接続してください。",
+        "アップグレード：プラグインフォルダを置き換え、エディタを再起動し、Plugins で V3 を確認してください。"
+      ],
+      "link": {
+        "label": "UE プラグインのダウンロード",
+        "href": "/ja/docs/plugins/ue#ue-plugin-download"
+      }
+    },
+    {
+      "id": "2026-11-21-android-preview-02",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-21T18:00:00+08:00",
+      "expireAt": null,
+      "title": "Android Preview 0.2 と Meta 招待リンクを更新",
+      "summary": "Android Preview 0.2 を公開しました。Meta Horizon Store のベータ招待リンクも更新しています。",
+      "body": [
+        "Android Preview 0.2 はトラッカー V16 / V17、レシーバー V6 / V7 / V8 に対応します。",
+        "Meta Horizon Store のベータ招待リンクを更新しました。ダウンロードページの新しいカードをご利用ください。",
+        "ダウンロードページの Android と Meta は別タブに分かれました。"
+      ],
+      "link": {
+        "label": "Android / Meta のダウンロード",
+        "href": "/ja/docs/tutorial/software_install#software-download"
+      }
+    },
+    {
+      "id": "2026-11-18-sdk-v3",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-18T12:00:00+08:00",
+      "expireAt": null,
+      "title": "SDK v3 ビルドを更新（Windows / Linux）",
+      "summary": "Python・C#・C++ の新しいビルドを公開。Linux パッケージは別セクションになりました。",
+      "body": [
+        "ダウンロードを Windows と Linux に分け、プラットフォームの取り違えを防ぎます。",
+        "Python・C#・C++ のビルドを更新しました。旧ビルドは折りたたみの履歴に残しています。",
+        "各ダウンロードに更新日を表示しています。"
+      ],
+      "link": {
+        "label": "SDK のダウンロード",
+        "href": "/ja/docs/SDK/"
+      }
+    },
+    {
+      "id": "2026-11-11-v02-beta022",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-11T12:00:00+08:00",
+      "expireAt": null,
+      "title": "Rebocap V02 Beta02.2（gray02-2）グレー公開",
+      "summary": "強い磁気干渉環境と新しい UI モジュール向けのグレー版です。初めての方は V01 をご利用ください。",
+      "body": [
+        "トラッカー V16、レシーバー V6 / V7 / V8 に対応します。",
+        "金属が多い場所やトランポリンなど磁場環境の悪い場所、新しい UI を試したい方向けです。",
+        "グレー版のため、初めての方は安定版 V01 を先にご利用ください。"
+      ],
+      "link": {
+        "label": "ソフトウェアのダウンロード",
+        "href": "/ja/docs/tutorial/software_install#software-download"
+      }
+    }
+  ]
+}

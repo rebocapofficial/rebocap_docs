@@ -7,6 +7,7 @@ const sidebars: SidebarsConfig = {
     {type:'html', value:'<div class="sidebar-section-label">REBOCAP 文档</div>'},
     {type:'doc', id:'README', label:'文档介绍'},
     {type:'link', label:'目录', href:'/zh-Hans/docs/#navigation_directory'},
+    {type:'doc', id:'announcements', label:'公告'},
     {type:'html', value:'<div class="sidebar-section-label">REBOCAP 教程</div>'},
     {
       type:'category', label:'使用教程', collapsed:true,

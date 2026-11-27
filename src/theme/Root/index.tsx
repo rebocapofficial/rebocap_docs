@@ -6,6 +6,7 @@ import CarouselManager from '@site/src/components/CarouselManager';
 import {loadVideo} from '@site/src/components/onDemandVideo';
 import {installGrayReleaseWarning} from '@site/src/components/GrayReleaseWarning';
 import {installVideoGuides} from '@site/src/components/VideoGuide';
+import AnnouncementRoot from '@site/src/components/Announcements/AnnouncementRoot';
 
 function BackToTop(): JSX.Element {
   const [visible, setVisible] = useState(false);
@@ -419,6 +420,7 @@ export default function RootWrapper({ children }: Props): JSX.Element {
       <OriginalRoot>{children}</OriginalRoot>
       <BackToTop />
       <CarouselManager />
+      <AnnouncementRoot />
     </>
   );
 }

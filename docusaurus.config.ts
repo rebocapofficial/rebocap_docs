@@ -133,6 +133,7 @@ const config: Config = {
     require.resolve('./src/plugins/stable-ssg'),
     require.resolve('docusaurus-plugin-image-zoom'),
     require('./src/plugins/ai-search-plugin').default,
+    require('./src/plugins/announcements-plugin').default,
   ],
 
 

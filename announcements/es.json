@@ -1,0 +1,137 @@
+{
+  "locale": "es",
+  "ui": {
+    "all": "Todos",
+    "version": "Actualización",
+    "notice": "Aviso importante",
+    "maintenance": "Mantenimiento",
+    "event": "Evento",
+    "empty": "Todavía no hay anuncios en esta categoría.",
+    "close": "Cerrar",
+    "details": "Ver detalles",
+    "pill": "Anuncios",
+    "monthFormat": "{m}/{y}"
+  },
+  "items": [
+    {
+      "id": "2026-11-28-receiver-v8",
+      "type": "notice",
+      "level": "important",
+      "backfill": false,
+      "pinned": true,
+      "publishAt": "2026-11-28T10:00:00+08:00",
+      "expireAt": null,
+      "title": "Firmware V8 del receptor: problema de desconexión",
+      "summary": "El firmware V8 provoca desconexiones USB frecuentes. Mantenga V7; si ya actualizó, vuelva a V7.",
+      "body": [
+        "Síntoma: el receptor se desconecta durante el uso y solo se recupera desenchufando y volviendo a enchufar el USB.",
+        "Acción: mantenga la versión V7. Los receptores ya actualizados a V8 deben volver a V7.",
+        "Siguiente: V9 está en corrección y se anunciará aquí cuando se publique."
+      ],
+      "link": {
+        "label": "Notas de firmware y descargas",
+        "href": "/es/docs/tutorial/software_install#software-download"
+      }
+    },
+    {
+      "id": "2026-11-26-blender-rollback",
+      "type": "notice",
+      "level": "important",
+      "backfill": false,
+      "pinned": false,
+      "publishAt": "2026-11-26T18:00:00+08:00",
+      "expireAt": null,
+      "title": "Complemento de Blender Beta 11.20 en pausa",
+      "summary": "Beta 11.20 presenta comportamientos anómalos; su descarga está pausada. Siga usando Beta 11.16.",
+      "body": [
+        "Hemos recibido informes de comportamiento anómalo en Beta 11.20, por lo que su descarga se ha retirado.",
+        "Siga usando Beta 11.16 hasta que se publique una versión corregida.",
+        "Si instaló 11.20 desde otra fuente, desinstálelo y vuelva a 11.16."
+      ],
+      "link": {
+        "label": "Descargas del complemento de Blender",
+        "href": "/es/docs/plugins/blender"
+      }
+    },
+    {
+      "id": "2026-11-21-ue-v3",
+      "type": "version",
+      "level": "normal",
+      "backfill": false,
+      "pinned": false,
+      "publishAt": "2026-11-21T12:00:00+08:00",
+      "expireAt": null,
+      "title": "Publicado el complemento V3 para UE",
+      "summary": "V3 ya está disponible para UE 4.26 – 5.9. El nodo de animación ya no se reconecta automáticamente.",
+      "body": [
+        "Motores compatibles: UE 4.26 – 5.9, con zip por versión y paquetes de código fuente UE5 / UE4.",
+        "Cambio de comportamiento: desde V3 el nodo de animación no se reconecta solo tras desconectarse Live Link; reconecte manualmente.",
+        "Para actualizar: sustituya la carpeta del complemento, reinicie el editor y compruebe que Plugins muestre V3."
+      ],
+      "link": {
+        "label": "Descargas del complemento UE",
+        "href": "/es/docs/plugins/ue#ue-plugin-download"
+      }
+    },
+    {
+      "id": "2026-11-21-android-preview-02",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-21T18:00:00+08:00",
+      "expireAt": null,
+      "title": "Android Preview 0.2 y enlace de invitación de Meta",
+      "summary": "Android Preview 0.2 ya está disponible; el enlace de invitación beta de Meta Horizon Store se actualizó.",
+      "body": [
+        "Android Preview 0.2 admite rastreadores V16 / V17 y receptores V6 / V7 / V8.",
+        "El enlace de invitación beta de Meta Horizon Store se ha renovado: use la nueva tarjeta de la página de descargas.",
+        "Android y Meta ahora tienen pestañas separadas en la página de descargas."
+      ],
+      "link": {
+        "label": "Descargas de Android / Meta",
+        "href": "/es/docs/tutorial/software_install#software-download"
+      }
+    },
+    {
+      "id": "2026-11-18-sdk-v3",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-18T12:00:00+08:00",
+      "expireAt": null,
+      "title": "SDK v3: compilaciones actualizadas (Windows / Linux)",
+      "summary": "Nuevas compilaciones de Python, C# y C++; los paquetes de Linux ahora están en una sección aparte.",
+      "body": [
+        "Las descargas se dividen en Windows y Linux para no confundir plataformas.",
+        "Las compilaciones de Python, C# y C++ se han actualizado; las anteriores siguen en el historial plegable.",
+        "Cada descarga muestra su fecha de actualización."
+      ],
+      "link": {
+        "label": "Descargas del SDK",
+        "href": "/es/docs/SDK/"
+      }
+    },
+    {
+      "id": "2026-11-11-v02-beta022",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-11T12:00:00+08:00",
+      "expireAt": null,
+      "title": "Rebocap V02 Beta02.2 (gray02-2): versión gradual",
+      "summary": "Versión gradual para interferencia magnética fuerte y los nuevos módulos de UI. Los nuevos usuarios deben usar V01.",
+      "body": [
+        "Compatible con rastreador V16 y receptor V6 / V7 / V8.",
+        "Recomendada para zonas con mucho metal o camas elásticas, y para probar los nuevos módulos de UI.",
+        "Es una versión gradual; si empieza con Rebocap, use primero la V01 estable."
+      ],
+      "link": {
+        "label": "Descargas de software",
+        "href": "/es/docs/tutorial/software_install#software-download"
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "locale": "zh-Hant",
+  "ui": {
+    "all": "全部",
+    "version": "版本更新",
+    "notice": "重要通知",
+    "maintenance": "維護",
+    "event": "活動",
+    "empty": "這個分類下還沒有公告",
+    "close": "關閉",
+    "details": "查看詳情",
+    "pill": "公告",
+    "monthFormat": "{y} 年 {m} 月"
+  },
+  "items": [
+    {
+      "id": "2026-11-28-receiver-v8",
+      "type": "notice",
+      "level": "important",
+      "backfill": false,
+      "pinned": true,
+      "publishAt": "2026-11-28T10:00:00+08:00",
+      "expireAt": null,
+      "title": "接收器 V8 韌體斷連問題說明",
+      "summary": "V8 韌體會導致 USB 頻繁斷連。請維持在 V7，已升級的請回刷 V7。",
+      "body": [
+        "現象：接收器會在使用中異常斷連，需要反覆拔插 USB 才能恢復。",
+        "處理：請維持在 V7 韌體；已經升級到 V8 的接收器，請回刷 V7。",
+        "後續：V9 韌體正在修復，發佈後會在本頁再次公告。"
+      ],
+      "link": {
+        "label": "查看韌體說明與下載",
+        "href": "/zh-Hant/docs/tutorial/software_install#software-download"
+      }
+    },
+    {
+      "id": "2026-11-26-blender-rollback",
+      "type": "notice",
+      "level": "important",
+      "backfill": false,
+      "pinned": false,
+      "publishAt": "2026-11-26T18:00:00+08:00",
+      "expireAt": null,
+      "title": "Blender 外掛 Beta 11.20 暫停下載",
+      "summary": "Beta 11.20 收到異常回報，下載已暫停。請繼續使用 Beta 11.16。",
+      "body": [
+        "已收到 Beta 11.20 的異常行為回報，該版本的下載入口已下架。",
+        "請繼續使用 Beta 11.16，直到修復版發佈。",
+        "已從其他管道安裝 11.20 的，建議解除安裝並換回 11.16。"
+      ],
+      "link": {
+        "label": "查看 Blender 外掛下載",
+        "href": "/zh-Hant/docs/plugins/blender"
+      }
+    },
+    {
+      "id": "2026-11-21-ue-v3",
+      "type": "version",
+      "level": "normal",
+      "backfill": false,
+      "pinned": false,
+      "publishAt": "2026-11-21T12:00:00+08:00",
+      "expireAt": null,
+      "title": "UE 外掛 V3 發佈",
+      "summary": "V3 已上線，支援 UE 4.26 – 5.9。注意：動畫節點斷線後不再自動重連。",
+      "body": [
+        "支援範圍：UE 4.26 – 5.9，提供逐版本 zip 與 UE5 / UE4 原始碼包。",
+        "行為變更：V3 起，Live Link 斷開後動畫節點不會自動重連，需要手動重連。",
+        "升級方式：替換外掛目錄，重新啟動編輯器，在 Plugins 中確認版本為 V3。"
+      ],
+      "link": {
+        "label": "查看 UE 外掛下載",
+        "href": "/zh-Hant/docs/plugins/ue#ue-plugin-download"
+      }
+    },
+    {
+      "id": "2026-11-21-android-preview-02",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-21T18:00:00+08:00",
+      "expireAt": null,
+      "title": "Android Preview 0.2 與 Meta 邀請連結更新",
+      "summary": "Android Preview 0.2 已可下載，Meta Horizon Store 測試邀請連結已更新。",
+      "body": [
+        "Android Preview 0.2 支援追蹤器 V16 / V17、接收器 V6 / V7 / V8。",
+        "Meta Horizon Store 測試邀請連結已更新，請使用下載頁的新卡片。",
+        "下載頁的 Android 與 Meta 已拆成獨立分頁。"
+      ],
+      "link": {
+        "label": "查看 Android / Meta 下載",
+        "href": "/zh-Hant/docs/tutorial/software_install#software-download"
+      }
+    },
+    {
+      "id": "2026-11-18-sdk-v3",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-18T12:00:00+08:00",
+      "expireAt": null,
+      "title": "SDK v3 建置更新（Windows / Linux）",
+      "summary": "Python、C#、C++ 新建置包上線，Linux 套件已獨立分區。",
+      "body": [
+        "下載區依 Windows / Linux 分開，避免拿錯平台。",
+        "Python、C#、C++ 建置包已更新，舊版本仍保留在折疊的歷史版本中。",
+        "每個下載項目都標註了更新時間。"
+      ],
+      "link": {
+        "label": "查看 SDK 下載",
+        "href": "/zh-Hant/docs/SDK/"
+      }
+    },
+    {
+      "id": "2026-11-11-v02-beta022",
+      "type": "version",
+      "level": "normal",
+      "backfill": true,
+      "pinned": false,
+      "publishAt": "2026-11-11T12:00:00+08:00",
+      "expireAt": null,
+      "title": "Rebocap V02 Beta02.2（gray02-2）灰度開放",
+      "summary": "面向強磁干擾環境與新 UI 模組的灰度版本；新手請先用 V01 正式版。",
+      "body": [
+        "支援追蹤器 V16、接收器 V6 / V7 / V8。",
+        "適合金屬多、彈簧床等磁場環境較差的場地，以及想嘗鮮新 UI 模組的使用者。",
+        "這是灰度版本，新使用者建議先使用穩定的 V01。"
+      ],
+      "link": {
+        "label": "查看軟體下載",
+        "href": "/zh-Hant/docs/tutorial/software_install#software-download"
+      }
+    }
+  ]
+}
