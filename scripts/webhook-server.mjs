@@ -67,7 +67,7 @@ function runDeploy() {
   try {
     execSync(DEPLOY_SCRIPT, {
       stdio: "inherit",
-      timeout: 30 * 60 * 1000, // 30 min timeout
+      timeout: 120 * 60 * 1000, // 120 min timeout（临时放宽：冷编译可能远超 30 分钟）
     });
   } catch (err) {
     console.error(`[${new Date().toISOString()}] Deploy FAILED:`, err.message);
