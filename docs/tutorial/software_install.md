@@ -53,6 +53,8 @@ The Beta version is a public test build that performs better in areas with signi
 </a>
 </div>
 
+<p class="os-firmware-warning">A disconnection bug has been found in receiver firmware V8, causing frequent need to unplug and replug the USB receiver.<br>Please stay on V7 or wait for the V9 firmware release.<br>Receivers already on V8 should be flashed back to V7.</p>
+
 
 
 

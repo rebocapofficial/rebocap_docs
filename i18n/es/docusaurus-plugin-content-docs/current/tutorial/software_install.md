@@ -51,6 +51,8 @@ La versión Beta es una versión de prueba pública, que funciona mejor en área
 </a>
 </div>
 
+<p class="os-firmware-warning">Se ha detectado un error de desconexión anómala en el firmware V8 del receptor, lo que obliga a desconectar y volver a conectar el receptor USB con frecuencia.<br>Mantente en V7 o espera al lanzamiento del firmware V9.<br>Los receptores que ya estén en V8 deben volver a V7.</p>
+
 
 
 

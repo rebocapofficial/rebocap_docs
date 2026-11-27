@@ -51,6 +51,8 @@ La version Beta est une version de test publique ; elle est plus efficace dans l
 </a>
 </div>
 
+<p class="os-firmware-warning">Un bug de déconnexion anormale a été détecté dans le firmware V8 du récepteur, obligeant à débrancher et rebrancher fréquemment le récepteur USB.<br>Restez en V7 ou attendez la sortie du firmware V9.<br>Les récepteurs déjà en V8 doivent être reflashés en V7.</p>
+
 
 
 

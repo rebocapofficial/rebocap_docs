@@ -403,6 +403,23 @@ html[lang='ja'] .os-switch-download-main {
   grid-template-columns: minmax(0, 420px);
 }
 
+/* ---------- Firmware warning ---------- */
+.os-firmware-warning {
+  margin: 0 0 14px;
+  color: #c62828;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.55;
+  text-decoration: underline;
+  text-decoration-color: #c62828;
+  text-underline-offset: 2px;
+}
+
+[data-theme='dark'] .os-firmware-warning {
+  color: #ff8a80;
+  text-decoration-color: #ff8a80;
+}
+
 /* ---------- Android 配套工具 ---------- */
 .os-switch-aux {
   margin: 16px 0 6px;
